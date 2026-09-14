@@ -280,6 +280,46 @@
       "source_file": "regenerate-2026-09-14.png",
       "source_sha256": "5f6695f5849c8e5266076ea06e84d2e1ffd4585de454c0cd6a11e22c5b9a55f0",
       "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
+    },
+    {
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "browser": "Firefox",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop": [
+        355,
+        245,
+        4300,
+        2470
+      ],
+      "notes": "Actual Gemma 4 26B A4B IT response to the exact workshop car wash question. Firefox dark mode at 140% zoom for capture; restored to 100% afterward. Regenerate verified in native accessibility state. Browser chrome and profile avatar excluded by crop. Model response and timing preserved.",
+      "file": "regenerate-gemma-2026-09-14.png",
+      "sha256": "c2009c45e8eb613eefec5bbb736457ad89582c1ea42e051e25e49316cd65f62f",
+      "source_capture_sha256": "535f5524bc91ca1cc27902800c04eadb211f9021e8e5c5332764dcc15dde3f62"
+    },
+    {
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "browser": "Firefox",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop": [
+        355,
+        245,
+        4300,
+        2470
+      ],
+      "notes": "Actual Gemma 4 26B A4B IT response to the exact workshop car wash question. Firefox dark mode at 140% zoom for capture; restored to 100% afterward. Regenerate verified in native accessibility state. Browser chrome and profile avatar excluded by crop. Model response and timing preserved.",
+      "file": "regenerate-gemma-2026-09-14-annotated.svg",
+      "sha256": "3118ad9d56b0b13f29997e5bd619427a2191775ccb36d51081ef7e525a7594ca",
+      "source_file": "regenerate-gemma-2026-09-14.png",
+      "source_sha256": "c2009c45e8eb613eefec5bbb736457ad89582c1ea42e051e25e49316cd65f62f",
+      "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
     }
   ]
 }

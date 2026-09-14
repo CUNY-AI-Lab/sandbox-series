@@ -258,7 +258,7 @@ Leave your original question, selected models, and other settings unchanged.
 
 ### Regenerate Responses
 
-![Original question, model response, and message box with Regenerate button marked by an arrow](images/current/regenerate-2026-09-14-annotated.svg)
+![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
 
 After adding system prompt instructions, select Regenerate beneath each original response.
 

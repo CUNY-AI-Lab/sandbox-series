@@ -1,0 +1,64 @@
+diff --git a/index.html b/index.html
+index bba52bc..76dc830 100644
+--- a/index.html
++++ b/index.html
+@@ -29,7 +29,7 @@
+ <section aria-label="Slide 15: Add System Prompt" aria-roledescription="slide" class="slide layout-content" data-group="Prompt" data-title="Add System Prompt" role="group" tabindex="-1"><div class="slide-inner"><h2>Add System Prompt</h2><p>Paste this into in-chat <strong>System Prompt</strong> under <strong>Controls</strong> at top right.</p><div class="template"><button class="copy-btn" data-copy="sample-system">Copy prompt</button><pre class="prompt-block" id="sample-system">Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.</pre></div></div></section>
+ <section aria-label="Slide 16: Open Chat Controls" aria-roledescription="slide" class="slide screenshot-slide" data-group="Prompt" data-source-slide="4" data-title="Open Chat Controls" role="group" tabindex="-1"><div class="slide-inner"><h1>Open Chat Controls</h1><figure><img alt="Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow" class="screenshot-img" src="images/current/chat-controls-2026-09-14-annotated.svg"/><figcaption>Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.</figcaption></figure><div class="slide-notes" hidden=""><div class="content"><ol><li>Open your chat.</li><li>Select <strong>Controls</strong> at top right.</li><li>Add sample instructions in <strong>System Prompt</strong>. Close Controls, then select <strong>Regenerate</strong> beneath each original response.</li></ol><p class="note">Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.</p></div><div class="stage"></div></div></div></section>
+ <section aria-label="Slide 17: Test System Prompts" aria-roledescription="slide" class="slide layout-content" data-group="Prompt" data-title="Test System Prompts" role="group" tabindex="-1"><div class="slide-inner"><h2>Test System Prompts</h2><button class="copy-btn" data-copy="sample-system">Copy system prompt</button><ol class="steps"><li>Copy sample instructions from <a href="#15">Add System Prompt</a>.</li><li>Open <strong>Controls</strong> at top right of your chat. Add instructions in <strong>System Prompt</strong>.</li><li>Close Controls. Select <strong>Regenerate</strong> beneath each original response.</li></ol><p class="note">Leave your original question, selected models, and other settings unchanged.</p></div></section>
+-<section aria-label="Slide 18: Regenerate Responses" aria-roledescription="slide" class="slide screenshot-slide" data-group="Prompt" data-title="Regenerate Responses" role="group" tabindex="-1"><div class="slide-inner"><h1>Regenerate Responses</h1><figure><img alt="Original question, model response, and message box with Regenerate button marked by an arrow" class="screenshot-img" src="images/current/regenerate-2026-09-14-annotated.svg"/><figcaption>After adding system prompt instructions, select Regenerate beneath each original response.</figcaption></figure></div></section>
++<section aria-label="Slide 18: Regenerate Responses" aria-roledescription="slide" class="slide screenshot-slide" data-group="Prompt" data-title="Regenerate Responses" role="group" tabindex="-1"><div class="slide-inner"><h1>Regenerate Responses</h1><figure><img alt="Original question, Gemma response, and message box with Regenerate button marked by an arrow" class="screenshot-img" src="images/current/regenerate-gemma-2026-09-14-annotated.svg"/><figcaption>After adding system prompt instructions, select Regenerate beneath each original response.</figcaption></figure></div></section>
+ <section aria-label="Slide 19: Compare Responses" aria-roledescription="slide" class="slide layout-content" data-group="Prompt" data-source-slide="5" data-title="Compare Responses" role="group" tabindex="-1"><div class="slide-inner"><h2>Compare Responses</h2><ol class="steps"><li>Compare responses before and after adding system prompt instructions.</li><li>Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?</li><li>Repeat our opening question about who was late. Do these instructions help identify ambiguity?</li></ol><p class="note">Keep base models and other settings unchanged. Record any differences you cannot control.</p></div></section>
+ <section aria-label="Slide 20: Open Workspace" aria-roledescription="slide" class="slide layout-content" data-group="Workspace" data-title="Open Workspace" role="group" tabindex="-1"><div class="slide-inner"><h2>Open Workspace</h2><p>Open <strong>Workspace → Models</strong>.</p><p>Open a sample model and review its <strong>Base Model</strong> and <strong>System Prompt</strong>. Compare those instructions with your tested prompt.</p><p class="note">Continue in chat if Workspace is unavailable.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/models/" rel="noopener" target="_blank">Custom Models</a></p></div></section>
+ <section aria-label="Slide 21: Workspace Tabs" aria-roledescription="slide" class="slide screenshot-slide" data-group="Workspace" data-title="Workspace Tabs" role="group" tabindex="-1"><div class="slide-inner"><h1>Workspace Tabs</h1><figure><img alt="Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create" class="screenshot-img" src="images/current/workspace-header.png"/><figcaption>Select a Workspace tab, then choose Create.</figcaption></figure><div class="slide-notes" hidden=""><div class="columns"><div><h3>Custom Models</h3><p>Open a model to view its base model and system prompt. Select <strong>Create</strong> to configure your own.</p></div><div><h3>Knowledge and Tools</h3><p>Attach documents under Knowledge. Add reusable instructions under Skills and operations such as web search under Tools.</p></div></div></div></div></section>
+diff --git a/review/screenshot-sources.json b/review/screenshot-sources.json
+index b2910f9..080669e 100644
+--- a/review/screenshot-sources.json
++++ b/review/screenshot-sources.json
+@@ -280,6 +280,46 @@
+       "source_file": "regenerate-2026-09-14.png",
+       "source_sha256": "5f6695f5849c8e5266076ea06e84d2e1ffd4585de454c0cd6a11e22c5b9a55f0",
+       "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
++    },
++    {
++      "captured": "2026-09-14",
++      "source": "https://chat.ailab.gc.cuny.edu/",
++      "browser": "Firefox",
++      "source_dimensions": [
++        4416,
++        2618
++      ],
++      "crop": [
++        355,
++        245,
++        4300,
++        2470
++      ],
++      "notes": "Actual Gemma 4 26B A4B IT response to the exact workshop car wash question. Firefox dark mode at 140% zoom for capture; restored to 100% afterward. Regenerate verified in native accessibility state. Browser chrome and profile avatar excluded by crop. Model response and timing preserved.",
++      "file": "regenerate-gemma-2026-09-14.png",
++      "sha256": "c2009c45e8eb613eefec5bbb736457ad89582c1ea42e051e25e49316cd65f62f",
++      "source_capture_sha256": "535f5524bc91ca1cc27902800c04eadb211f9021e8e5c5332764dcc15dde3f62"
++    },
++    {
++      "captured": "2026-09-14",
++      "source": "https://chat.ailab.gc.cuny.edu/",
++      "browser": "Firefox",
++      "source_dimensions": [
++        4416,
++        2618
++      ],
++      "crop": [
++        355,
++        245,
++        4300,
++        2470
++      ],
++      "notes": "Actual Gemma 4 26B A4B IT response to the exact workshop car wash question. Firefox dark mode at 140% zoom for capture; restored to 100% afterward. Regenerate verified in native accessibility state. Browser chrome and profile avatar excluded by crop. Model response and timing preserved.",
++      "file": "regenerate-gemma-2026-09-14-annotated.svg",
++      "sha256": "3118ad9d56b0b13f29997e5bd619427a2191775ccb36d51081ef7e525a7594ca",
++      "source_file": "regenerate-gemma-2026-09-14.png",
++      "source_sha256": "c2009c45e8eb613eefec5bbb736457ad89582c1ea42e051e25e49316cd65f62f",
++      "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
+     }
+   ]
+ }

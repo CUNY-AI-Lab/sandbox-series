@@ -1,6 +1,8 @@
 # Copy Review
 
-Latest revisions — [System prompt instructions](terminology-review.md) · [Direct diff](terminology.diff).
+Latest revisions — [Gemma screenshot](gemma-screenshot-review.md) · [Direct diff](gemma-screenshot.diff).
+
+Previous revisions — [System prompt instructions](terminology-review.md) · [Direct diff](terminology.diff).
 
 Previous revisions — [Short system prompt](short-prompt-review.md) · [Direct diff](short-prompt.diff).
 
