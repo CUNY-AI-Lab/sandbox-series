@@ -1,0 +1,2 @@
+*.diff -whitespace
+review/**/source.html -whitespace

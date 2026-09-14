@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Customizing Skills &amp; Tools | CUNY AI Lab</title>
+<link href="../css/styles.css" rel="stylesheet"/>
+<link href="../css/responsive.css" rel="stylesheet"/>
+<link href="../css/animations.css" rel="stylesheet"/>
+</head>
+<body data-workshop="skills">
+<a class="skip-link" href="#deck">Skip to slides</a>
+<div aria-atomic="true" aria-live="polite" class="sr-only" id="slide-announcer"></div>
+<div aria-label="Customizing Skills &amp; Tools presentation" aria-roledescription="slide deck" id="deck" role="region" tabindex="-1"><section aria-label="Slide 1: Customizing Skills &amp; Tools" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="Customizing Skills &amp; Tools" role="group" tabindex="-1"><div class="slide-inner"><h2>Customizing Skills &amp; Tools</h2><p class="subtitle">Writing procedures and testing model actions</p><p>CUNY AI Lab Sandbox</p><p class="small">Developed by Stefano Morello and Zach Muhlbauer</p></div></section><section aria-label="Slide 2: Write and test procedures" aria-roledescription="slide" class="slide layout-content" data-agenda="skills" data-group="Explore" data-title="Write and test procedures" role="group" tabindex="-1"><div class="slide-inner"><h2>Write and test procedures</h2><ol class="agenda"><li>Confirm Skills and Tools access</li><li>Choose recurring procedures</li><li>Write skill instructions</li><li>Attach skills and enable native calling</li><li>Inspect tool calls and results</li><li>Retest complete configurations</li></ol><p class="note">Require individual access and Sandbox sign-in from Workshop 1, plus Skills and Tools access. Request Workspace authoring access for creation and editing.</p><p class="small">Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.</p></div></section>
+<section aria-label="Slide 3: Continue with a tested task" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="Continue with a tested task" role="group" tabindex="-1"><div class="slide-inner"><h2>Continue with a tested task</h2><p>Bring your system prompt, collection, and saved tests. Choose a repeatable procedure you use in teaching or research.</p><p>Today you will write it as a skill, connect it to a card, and check what happens when the model needs a tool.</p><p>Keep the earlier configuration as a baseline.</p></div></section>
+<section aria-label="Slide 4: Choose one procedure" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="Choose one procedure" role="group" tabindex="-1"><div class="slide-inner"><h2>Choose one procedure</h2><ul><li>For teaching, guide a student through a source one question at a time.</li><li>For research, compare a claim with its source or apply a codebook to an excerpt.</li><li>Define what a successful response would show before writing the skill.</li></ul><p class="note">The procedure should be specific enough that another person can inspect whether it was followed.</p></div></section>
+<section aria-label="Slide 5: What is a skill?" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="What is a skill?" role="group" tabindex="-1"><div class="slide-inner"><h2>What is a skill?</h2><p>A skill is a reusable set of instructions for a particular task. It can describe when to act, what steps to follow, and how to present the result.</p><p>The system prompt establishes the general role and constraints. A skill gives a recurring procedure its own place to be edited and reused.</p><p>Loading the instructions and following them are both behaviors to test.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/">Tools &amp; Skills</a></p></div></section>
+<section aria-label="Slide 6: Create the skill" aria-roledescription="slide" class="slide screenshot-slide" data-group="Explore" data-title="Create the skill" role="group" tabindex="-1"><div class="slide-inner"><h1>Create the skill</h1><figure><img alt="Current Skill editor showing name, ID, description, Access, and instructions" class="screenshot-img" src="../images/current/skill-editor.png"/><figcaption>The blank editor was captured in Firefox. Save &amp; Create appears below the instruction field.</figcaption></figure><div class="slide-notes" hidden=""><div class="content"><ol class="steps"><li>Open <strong>Workspace → Skills → Create</strong>.</li><li>Enter a name, identifier, and description that explain when to use it.</li><li>Write the instructions, review <strong>Access</strong>, and choose <strong>Save &amp; Create</strong>.</li></ol><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/">Create and attach a skill</a></p></div><div class="stage"></div></div></div></section>
+<section aria-label="Slide 7: Attach it and check loading" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="Attach it and check loading" role="group" tabindex="-1"><div class="slide-inner"><h2>Attach it and check loading</h2><ol class="steps"><li>Open your card in <strong>Workspace → Models</strong>.</li><li>Select the skill in <strong>Skills</strong>.</li><li>Under <strong>Advanced Params</strong>, set <strong>Function Calling → Native</strong> as described in the Sandbox docs.</li><li>Use <strong>Save &amp; Update</strong>, start a fresh chat, and test the skill’s trigger.</li></ol><p class="note">Choose an available model that supports the required tool calling. Inspect whether the skill was loaded and whether its steps were followed.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/">Skill configuration and native function calling</a></p></div></section>
+<section aria-label="Slide 8: Compare the procedure in use" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="Compare the procedure in use" role="group" tabindex="-1"><div class="slide-inner"><h2>Compare the procedure in use</h2><p>Try the same request before and after attaching the skill. Keep the base model, sources, and system prompt fixed.</p><ul><li>Did the model use the intended procedure?</li><li>Did it stop at the planned point for a response?</li><li>Did it preserve evidence and uncertainty?</li></ul><p>Use the examples that follow as procedures to adapt and test. Their “Before” and “After” labels describe the instruction drafts, not measured outcomes.</p></div></section>
+<section aria-label="Slide 9: What is a tool?" aria-roledescription="slide" class="slide screenshot-slide" data-group="Explore" data-title="What is a tool?" role="group" tabindex="-1"><div class="slide-inner"><h1>What is a tool?</h1><figure><img alt="Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter" class="screenshot-img" src="../images/current/integrations.png"/><figcaption>The menu is beside the plus button in the message composer.</figcaption></figure><div class="slide-notes" hidden=""><div class="content"><p>A tool runs an operation, such as a search, a calculation, or a query of a source collection.</p><p>Open <strong>Integrations</strong> beside the plus button for available chat capabilities. Attach reusable tools under <strong>Tools</strong> in the model editor.</p><p>Availability depends on account permissions, configuration, and model support.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/">Enable tools in chat or on a model</a></p></div><div class="stage"></div></div></div></section>
+<section aria-label="Slide 10: Match the procedure to its capabilities" aria-roledescription="slide" class="slide layout-content" data-group="Explore" data-title="Match the procedure to its capabilities" role="group" tabindex="-1"><div class="slide-inner"><h2>Match the procedure to its capabilities</h2><dl class="feature-list"><div><dt>Skill instructions</dt><dd>Describe how to search, evaluate a result, or ask the next question.</dd></div><div><dt>Tool operation</dt><dd>Retrieves material or performs a computation the model can inspect.</dd></div><div><dt>Your evaluation</dt><dd>Checks the operation, its result, and the claim made from it.</dd></div></dl><p>Workspace tools can run server-side Python. External MCP or OpenAPI tools connect to other services. Use reviewed tools made available by the Lab.</p></div></section>
+<div aria-label="Slide 11: Establishing Stasis" aria-roledescription="slide" class="slide layout-divider" data-group="Draft" data-original="skills:10" data-slide="part1" data-title="Establishing Stasis" role="group" tabindex="-1"><div class="slide-inner">
+<span class="section-label">Example 1</span>
+<h2>Establishing Stasis</h2>
+<p class="divider-sub">Composition — Stasis Theory</p>
+<div class="divider-line"></div>
+</div></div>
+<div aria-label="Slide 12: Before" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:11" data-slide="comp-instruction" data-title="Before" role="group" tabindex="-1"><div class="slide-inner">
+<div class="progression-header">
+<span class="label label-blue">Composition &amp; Writing</span>
+<div aria-hidden="true" class="progression-dots">
+<div class="progression-dot dot-mid dot-active"></div>
+<div class="progression-dot"></div>
+</div>
+</div>
+<h2>Before</h2>
+<div class="prompt-block prompt-mid"><span class="prompt-label">Starting Point</span>When a student is developing a research topic, walk them through four stages — conjecture, definition, quality, and policy — to help them narrow their question. Ask one stasis at a time.</div>
+<div>
+<ol class="stream-list">
+<li>Model walks through all four stages in a single response instead of pausing at each</li>
+<li>No procedure for connecting the student’s working topic to each stasis question</li>
+<li>Treats stasis as a checklist rather than a deliberative process</li>
+<li>No mechanism to let the student reformulate before moving on</li>
+<li>Does not help the student identify which stasis their argument addresses</li>
+</ol>
+</div>
+</div></div>
+<div aria-label="Slide 13: After" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:12" data-slide="comp-good" data-title="After" role="group" tabindex="-1"><div class="slide-inner">
+<div class="progression-header">
+<span class="label label-blue">Composition &amp; Writing</span>
+<div aria-hidden="true" class="progression-dots">
+<div class="progression-dot dot-mid"></div>
+<div class="progression-dot dot-good dot-active"></div>
+</div>
+</div>
+<h2>After</h2>
+<div class="prompt-block prompt-good"><span class="prompt-label">Strong</span><strong>Skill: Establishing Stasis for a Research Topic</strong>
+When a student is developing or narrowing a research topic, follow this procedure:
+
+<strong>Procedure:</strong>
+1. Ask the student to state their topic in one sentence. Do not evaluate or refine it yet.
+2. Conjecture: “What has happened or is happening that makes this worth investigating?” Wait for their answer. Use what they say to sharpen the next question.
+3. Definition: Point to a key term in their response. “How are you defining [term]? What kind of problem is this — legal, ethical, empirical, cultural?” Wait.
+4. Quality: “What’s at stake, and for whom? What makes this serious enough to argue about in an 8-page paper?” If their scope is too broad, ask them to name one specific population or context. Wait.
+5. Policy: “What should be done, and by whom?” Help the student see whether their argument is making a factual claim, a definitional claim, a value judgment, or a policy proposal.
+6. Ask: “Which of these four questions does your argument most need to answer?” Guide them toward a thesis grounded in that stasis.
+
+<strong>Format:</strong>
+Your topic: [student’s stated topic]
+
+[One stasis question, tied to a specific phrase the student used]
+[1–2 sentences explaining why this question matters for their project]
+</div>
+</div></div>
+<div aria-label="Slide 14: Sourcing a Document" aria-roledescription="slide" class="slide layout-divider" data-group="Draft" data-original="skills:13" data-slide="history-intro" data-title="Sourcing a Document" role="group" tabindex="-1"><div class="slide-inner">
+<span class="section-label">Example 2</span>
+<h2>Sourcing a Document</h2>
+<p class="divider-sub">History — The Sourcing Heuristic</p>
+<div class="divider-line"></div>
+</div></div>
+<div aria-label="Slide 15: Before" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:14" data-slide="hist-instruction" data-title="Before" role="group" tabindex="-1"><div class="slide-inner">
+<div class="progression-header">
+<span class="label label-blue">History</span>
+<div aria-hidden="true" class="progression-dots">
+<div class="progression-dot dot-mid dot-active"></div>
+<div class="progression-dot"></div>
+</div>
+</div>
+<h2>Before</h2>
+<div class="prompt-block prompt-mid"><span class="prompt-label">Starting Point</span>When a student asks about a primary source, retrieve it from the knowledge collection and walk them through its rhetorical situation using SOAPS. Ask questions one element at a time rather than summarizing.</div>
+<div>
+<ol class="stream-list">
+<li>Model paraphrases the source instead of quoting from the uploaded document</li>
+<li>No procedure for retrieving and presenting specific passages as evidence</li>
+<li>Rushes through all SOAPS dimensions in a single response</li>
+<li>Student receives a finished reading rather than a structured inquiry</li>
+<li>No requirement to ground each analytical move in the source’s own language</li>
+</ol>
+</div>
+</div></div>
+<div aria-label="Slide 16: After" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:15" data-slide="hist-good" data-title="After" role="group" tabindex="-1"><div class="slide-inner">
+<div class="progression-header">
+<span class="label label-blue">History</span>
+<div aria-hidden="true" class="progression-dots">
+<div class="progression-dot dot-mid"></div>
+<div class="progression-dot dot-good dot-active"></div>
+</div>
+</div>
+<h2>After</h2>
+<div class="prompt-block prompt-good"><span class="prompt-label">Strong</span><strong>Skill: Sourcing a Primary Document</strong>
+When a student asks about or encounters a primary source from the course, follow this procedure:
+
+<strong>Procedure:</strong>
+1. Retrieve the document from the knowledge collection. Quote a key passage — do not paraphrase or summarize.
+2. Present the passage in a block quote with its metadata (title, date, author) drawn from the uploaded file.
+3. Ask: “Who created this document, and what was their position or stake?” Wait for the student’s answer.
+4. After they respond, point to a <em>specific phrase</em> in the quoted passage that supports, complicates, or challenges their answer.
+5. Ask: “When and where was this written? What was happening at that moment that shaped what the author could say?” Wait.
+6. Ask: “Who was the intended audience? How does knowing that change what the document means?” Wait.
+7. After all three sourcing moves, ask: “Given what you now know about the author, the moment, and the audience — what can this source tell us, and what can’t it?”
+
+<strong>Format:</strong>
+&gt; [quoted passage from uploaded source]
+— [Author], [Title], [Date]
+
+[One sourcing question]
+[1–2 sentences connecting the question to a specific phrase in the passage]
+</div>
+</div></div>
+<div aria-label="Slide 17: Reading the Frame" aria-roledescription="slide" class="slide layout-divider" data-group="Draft" data-original="skills:16" data-slide="lit-intro" data-title="Reading the Frame" role="group" tabindex="-1"><div class="slide-inner">
+<span class="section-label">Example 3</span>
+<h2>Reading the Frame</h2>
+<p class="divider-sub">Literature — Cinematic Mise-en-Scène</p>
+<div class="divider-line"></div>
+</div></div>
+<div aria-label="Slide 18: Before" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:17" data-slide="lit-instruction" data-title="Before" role="group" tabindex="-1"><div class="slide-inner">
+<div class="progression-header">
+<span class="label label-blue">Literature &amp; Cultural Studies</span>
+<div aria-hidden="true" class="progression-dots">
+<div class="progression-dot dot-mid dot-active"></div>
+<div class="progression-dot"></div>
+</div>
+</div>
+<h2>Before</h2>
+<div class="prompt-block prompt-mid"><span class="prompt-label">Starting Point</span>When a student shares a film still or visual artifact, guide them from describing formal elements — composition, lighting, framing — toward interpreting how those choices construct meaning in context.</div>
+<div>
+<ol class="stream-list">
+<li>Model describes the image for the student instead of directing their attention</li>
+<li>No scaffolding from observation to formal analysis to interpretive claim</li>
+<li>Treats all visual elements at once rather than isolating one per turn</li>
+<li>No mechanism to keep the student doing the looking and the arguing</li>
+<li>Skips the gap between “what’s in the frame” and “what argument it makes”</li>
+</ol>
+</div>
+</div></div>
+<div aria-label="Slide 19: After" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:18" data-slide="lit-good" data-title="After" role="group" tabindex="-1"><div class="slide-inner">
+<div class="progression-header">
+<span class="label label-blue">Literature &amp; Cultural Studies</span>
+<div aria-hidden="true" class="progression-dots">
+<div class="progression-dot dot-mid"></div>
+<div class="progression-dot dot-good dot-active"></div>
+</div>
+</div>
+<h2>After</h2>
+<div class="prompt-block prompt-good"><span class="prompt-label">Strong</span><strong>Skill: Reading Cinematic Images</strong>
+When a student uploads a film still, photograph, or visual artifact — or asks about an image from the knowledge collection — follow this procedure:
+
+<strong>Procedure:</strong>
+1. Use an uploaded image only when the selected model can inspect images. If the visual is unavailable, ask the student to upload it or describe it. Do not assume text retrieval from a knowledge collection provides the original image.
+2. Ask: “What do you notice first?” Let the student describe before you respond.
+3. After their description, direct attention to one formal element they haven’t mentioned — composition, lighting, color, framing, depth of field, or gaze. Ask what it does.
+4. Ask how that formal choice shapes the viewer’s experience. Move from <em>what</em> is in the frame to <em>how</em> the image is constructed.
+5. Introduce context: ask the student to connect the visual choices to the cultural moment, genre, or argument of the work. If relevant context exists in the knowledge collection, quote it.
+6. Guide them toward an interpretive claim: “Based on what you’ve observed, what argument is this image making?”
+
+<strong>Framework: Description → Analysis → Interpretation</strong>
+• Description: What is literally in the frame?
+• Analysis: How do formal elements (light, angle, placement) create meaning?
+• Interpretation: What claim can the student make, grounded in visual evidence?
+</div>
+</div></div>
+<div aria-label="Slide 20: Writing Your Own Skills" aria-roledescription="slide" class="slide layout-divider" data-group="Draft" data-original="skills:19" data-slide="part2" data-title="Writing Your Own Skills" role="group" tabindex="-1"><div class="slide-inner">
+<span class="section-label">Building Blocks</span>
+<h2>Writing Your Own Skills</h2>
+<div class="divider-line"></div>
+</div></div>
+<div aria-label="Slide 21: Anatomy of a Skill" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:20" data-slide="anatomy" data-title="Anatomy of a Skill" role="group" style="justify-content: center; align-items: center; text-align: center;" tabindex="-1"><div class="slide-inner">
+<span class="label label-cyan">Structure</span>
+<h2>Anatomy of a Skill</h2>
+<p>Use three parts to draft this skill.</p>
+<ol class="stream-list">
+<li><strong>Trigger</strong> — When should this skill activate?</li>
+<li><strong>Procedure</strong> — What steps does the model follow, in order?</li>
+<li><strong>Format</strong> — What should the output look like?</li>
+</ol>
+</div></div>
+<div aria-label="Slide 22: Trigger" aria-roledescription="slide" class="slide layout-split" data-group="Draft" data-original="skills:21" data-slide="comp-trigger" data-title="Trigger" role="group" tabindex="-1"><div class="slide-inner">
+<div class="content">
+<span class="label label-cyan">Component 1</span>
+<h2>Trigger</h2>
+<p>Define when this skill should activate. Test the trigger with a matching request and an unrelated request.</p>
+<ul>
+<li>What student action starts this workflow?</li>
+<li>Does it activate when they share a draft? Ask about a source? Upload an image?</li>
+<li>Should it run automatically, or only when the student asks?</li>
+</ul>
+</div>
+<div class="stage">
+<div>
+<button class="copy-btn" data-copy="skills-tpl-trigger" title="Copy template">Copy</button>
+<pre class="prompt-block prompt-mid" id="skills-tpl-trigger">Skill: [Skill Name]
+When a student [specific action or input], follow this procedure:</pre>
+</div>
+<div class="tip-box">
+<p><strong>Your turn</strong> What pedagogical move are you trying to teach the model? Name the student action that should trigger it.</p>
+</div>
+</div>
+</div></div>
+<div aria-label="Slide 23: Procedure" aria-roledescription="slide" class="slide layout-split" data-group="Draft" data-original="skills:22" data-slide="comp-procedure" data-title="Procedure" role="group" tabindex="-1"><div class="slide-inner">
+<div class="content">
+<span class="label label-cyan">Component 2</span>
+<h2>Procedure</h2>
+<p>The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.</p>
+<ul>
+<li>What should happen first? What comes next?</li>
+<li>Where should the model wait for the student before continuing?</li>
+<li>Should it quote, cite, or reference specific materials?</li>
+</ul>
+</div>
+<div class="stage">
+<div>
+<button class="copy-btn" data-copy="skills-tpl-procedure" title="Copy template">Copy</button>
+<pre class="prompt-block prompt-mid" id="skills-tpl-procedure">Procedure:
+1. [First step — what does the model do or ask?]
+2. [After the student responds, what comes next?]
+3. [Continue the sequence — include wait points]
+4. [Final step — synthesis, next action, or handoff]</pre>
+</div>
+<div class="tip-box">
+<p><strong>Your turn</strong> Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.</p>
+</div>
+</div>
+</div></div>
+<div aria-label="Slide 24: Format" aria-roledescription="slide" class="slide layout-split" data-group="Draft" data-original="skills:23" data-slide="comp-format" data-title="Format" role="group" tabindex="-1"><div class="slide-inner">
+<div class="content">
+<span class="label label-cyan">Component 3</span>
+<h2>Format</h2>
+<p>Specify what the output should look like. Without a format, the model structures responses however it wants.</p>
+<ul>
+<li>Should the model quote the student’s text?</li>
+<li>Should each response end with a question?</li>
+<li>How long should a response be?</li>
+</ul>
+</div>
+<div class="stage">
+<div>
+<button class="copy-btn" data-copy="skills-tpl-format" title="Copy template">Copy</button>
+<pre class="prompt-block prompt-mid" id="skills-tpl-format">Format:
+&gt; [quoted excerpt from student work or source document]
+
+[1-2 sentences: what you observe]
+[One question for the student]</pre>
+</div>
+<div class="tip-box">
+<p><strong>Your turn</strong> Write a short format template. What should each response from the model actually look like?</p>
+</div>
+</div>
+</div></div>
+<div aria-label="Slide 25: Write Your First Skill" aria-roledescription="slide" class="slide layout-divider" data-group="Draft" data-original="skills:24" data-slide="part5" data-title="Write Your First Skill" role="group" tabindex="-1"><div class="slide-inner">
+<span class="section-label">Hands-On</span>
+<h2>Write Your First Skill</h2>
+<p class="divider-sub">Choose a teaching or research procedure and write steps that another person can inspect.</p>
+<div class="divider-line"></div>
+</div></div>
+<div aria-label="Slide 26: Choose Your Move" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-original="skills:25" data-slide="exercise-choose" data-title="Choose Your Move" role="group" style="justify-content: center; align-items: center; text-align: center;" tabindex="-1"><div class="slide-inner">
+<span class="label label-cyan">Exercise</span>
+<h2>Choose Your Move</h2>
+<p>Which is closest to the skill you want to build?</p>
+<div class="grid-2">
+<div class="card card-cyan">
+<h4>Establishing Stasis</h4>
+<p>Narrow a research topic one question at a time</p>
+</div>
+<div class="card">
+<h4>Sourcing a Document</h4>
+<p>Quote, then ask who, when, for whom</p>
+</div>
+<div class="card card-navy">
+<h4>Reading the Frame</h4>
+<p>Describe → analyze → interpret</p>
+</div>
+<div class="card card-cyan">
+<h4>Something Else</h4>
+<p>A repeatable teaching or research procedure</p>
+</div>
+</div>
+</div></div>
+<div aria-label="Slide 27: Write Your Skill" aria-roledescription="slide" class="slide layout-split" data-group="Draft" data-original="skills:26" data-slide="exercise-write" data-title="Write Your Skill" role="group" tabindex="-1"><div class="slide-inner">
+<div class="content">
+<span class="label label-cyan">Draft It</span>
+<h2>Write Your Skill</h2>
+<p>Use the three-part structure to write a skill for the move you chose.</p>
+<div class="card card-cyan">
+<h4>1. Trigger</h4>
+<p>What student action starts this?</p>
+</div>
+<div class="card">
+<h4>2. Procedure</h4>
+<p>3–5 numbered steps with wait points.</p>
+</div>
+<div class="card">
+<h4>3. Format</h4>
+<p>What does each response look like?</p>
+</div>
+</div>
+<div class="stage">
+<div>
+<button class="copy-btn" data-copy="skills-tpl-full-skill" title="Copy template">Copy</button>
+<pre class="prompt-block prompt-mid" id="skills-tpl-full-skill">Skill: [Name]
+When a student [trigger action], follow this procedure:
+
+Procedure:
+1. [First step]
+2. [Second step — include wait points]
+3. [Third step]
+
+Format:
+&gt; [quoted text from student or source]
+
+[Observation in 1-2 sentences]
+[One question]</pre>
+</div>
+</div>
+</div></div>
+<section aria-label="Slide 28: A research skill to adapt" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-title="A research skill to adapt" role="group" tabindex="-1"><div class="slide-inner"><h2>A research skill to adapt</h2><p>Use this draft to check an interpretation against a source passage.</p><div class="template"><button class="copy-btn" data-copy="research-skill">Copy template</button><pre class="prompt-block" id="research-skill">When the user asks whether a passage supports a claim, ask for both if either is missing.
+
+1. Quote the relevant passage and identify its source. Do not invent missing metadata.
+2. State what the passage directly supports.
+3. Identify an inference or competing reading that needs further evidence.
+4. Ask one question that would help resolve the difference, then wait.
+
+Keep the quotation separate from your interpretation. If the source is unavailable, explain what cannot be checked.</pre></div><p class="small">Test it with supported, overstated, and unsupported claims from public or approved material.</p></div></section>
+<section aria-label="Slide 29: Save and test the skill" aria-roledescription="slide" class="slide layout-content" data-group="Test" data-title="Save and test the skill" role="group" tabindex="-1"><div class="slide-inner"><h2>Save and test the skill</h2><p>Create the skill, attach it to your model, confirm native function calling, and save the card. Open a fresh chat with the card.</p><ol class="steps"><li>Send a request that should trigger the skill.</li><li>Reply once and check whether the procedure continues appropriately.</li><li>Send an unrelated request and check whether the skill is applied unnecessarily.</li></ol><p>Record the result before revising the trigger or a procedural step.</p></div></section>
+<section aria-label="Slide 30: Watch a tool call" aria-roledescription="slide" class="slide layout-content" data-group="Test" data-title="Watch a tool call" role="group" tabindex="-1"><div class="slide-inner"><h2>Watch a tool call</h2><p>With an available search tool, ask for the title and link of a source relevant to a narrow question. Open the returned page and verify the claim.</p><p>With an available code tool, use a small calculation whose answer you can check independently.</p><p class="note">Look for the actual call and returned result. The sentence “I searched” or “I calculated” does not establish that a tool ran.</p></div></section>
+<section aria-label="Slide 31: Test a tool result against a known answer" aria-roledescription="slide" class="slide layout-content" data-group="Test" data-title="Test a tool result against a known answer" role="group" tabindex="-1"><div class="slide-inner"><h2>Test a tool result against a known answer</h2><p>For Code Interpreter, use this small, invented dataset.</p><div class="template"><button class="copy-btn" data-copy="tool-test">Copy template</button><pre class="prompt-block" id="tool-test">Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.</pre></div><p>The expected median is <strong>8</strong>. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.</p><p class="small">Use only a capability enabled for the workshop. The facilitator can demonstrate if participant access differs.</p></div></section>
+<section aria-label="Slide 32: Keep the evidence with the configuration" aria-roledescription="slide" class="slide layout-content" data-group="Test" data-title="Keep the evidence with the configuration" role="group" tabindex="-1"><div class="slide-inner"><h2>Keep the evidence with the configuration</h2><table class="rubric"><thead><tr><th>Record</th><th>Include</th></tr></thead><tbody><tr><td>Configuration</td><td>Model, prompt, collection version, skill text, enabled tools.</td></tr><tr><td>Action</td><td>Input, skill loading, tool call, result, final response.</td></tr><tr><td>Judgment</td><td>Expected behavior, observed behavior, evidence, next revision.</td></tr></tbody></table><p>Before sharing, test access to every dependency with the intended audience. Repeat relevant tests after a model or tool update.</p></div></section>
+<section aria-label="Slide 33: Continue testing your configuration" aria-roledescription="slide" class="slide layout-content" data-group="Next" data-title="Continue testing your configuration" role="group" tabindex="-1"><div class="slide-inner"><h2>Continue testing your configuration</h2><ul class="agenda"><li>Save prompts, sources, skills, and tool settings</li><li>Compare expected and observed behavior</li><li>Revise instructions from recorded failures</li><li>Verify shared access with intended users</li><li>Retest after model or tool updates</li></ul><p><a href="../examples.html">Browse system-prompt examples</a> · <a href="../">Return to Composing System Prompts</a></p></div></section>
+</div>
+<nav aria-label="Slide navigation" id="nav-bar"><button aria-label="Choose workshop" id="series-button">Series</button><button aria-label="Previous slide" id="arrow-prev"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m14 6-6 6 6 6"></path></svg></button><span class="nav-info"><span id="nav-current">1</span> / <span id="nav-total"></span></span><button aria-label="Next slide" id="arrow-next"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m10 6 6 6-6 6"></path></svg></button><input aria-label="Slide progress" id="slide-progress" max="1" min="1" type="range" value="1"/><button aria-label="Open slide outline" id="overview-button">Outline</button><button aria-label="Show facilitator notes" aria-pressed="false" id="notes-button">Notes</button></nav>
+<dialog aria-label="Expanded screenshot" id="image-dialog"><button aria-label="Close expanded screenshot" id="close-image">Close</button><img alt=""/><p></p></dialog><dialog aria-label="Workshop outline" id="outline-dialog"><div class="dialog-heading"><h2>Workshop outline</h2><button id="close-outline">Close</button></div><ol id="outline-list"></ol></dialog><aside hidden="" id="facilitator-notes"><h2>Facilitator notes</h2><p id="note-text"></p><a href="../WORKSHOP.md">Full facilitation plan</a></aside><script defer="" src="../js/deck-engine.js"></script><script defer="" src="../js/lightbox.js"></script><dialog aria-label="Sandbox workshop series" id="series-dialog"><div class="dialog-heading"><h2>Sandbox workshop series</h2><button id="close-series">Close</button></div><ol class="series-links"><li><a href="../">Composing System Prompts</a></li><li><a href="../knowledge/">Curating Knowledge Collections</a></li><li><a aria-current="page" href="../skills/">Customizing Skills &amp; Tools</a></li></ol><p class="small"><a href="../WORKSHOP.md">Lesson plans</a> · <a href="../SLIDES.md">Full slide copy</a> · <a href="../examples.html">Prompt examples</a></p></dialog></body>
+</html>
