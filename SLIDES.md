@@ -34,9 +34,9 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Request individual access and sign in
 
-- Compare responses from small models
+- Define system prompts
 
-- Compare outputs
+- Compare responses from small models
 
 - Revise in-chat system prompts
 
@@ -66,147 +66,9 @@ Before attending, request individual access and sign into Sandbox.
 
 ## Compose System Prompts — 5
 
-### Select Models
-
-![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
-
-Select model ID on bottom right of message box.
-
-Select model ID on bottom right of message box.
-
-Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
-
-[Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/)
-
----
-
-## Compose System Prompts — 6
-
-### Chat Controls
-
-Upload Files (+)
-
-Attach images, PDFs, or documents.
-
-Integrations
-
-Choose tools and skills for this chat.
-
-Message actions
-
-Copy, edit, or regenerate a response. Open More (⋯) for additional actions.
-
-[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
-
----
-
-## Compose System Prompts — 7
-
-### Compare Models
-
-![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
-
-Select Compare beside search field, then choose two models.
-
-Open model selector. Select **Compare** beside search field, then choose two models.
-
-If Compare is unavailable, send identical prompts in separate new chats.
-
-Start a new chat before comparing models.
-
----
-
-## Compose System Prompts — 8
-
-### Who Was Late?
-
-Compare how two small models interpret this sentence.
-
-```text
-The nurse yelled at the doctor because she was late. Who was late?
-```
-
-Send this question to both models.
-
----
-
-## Compose System Prompts — 9
-
-### Examine Assumptions
-
-“She” could refer to either person. This sentence does not establish who was late.
-
-- Does each model acknowledge ambiguity?
-
-- What assumption supports its answer?
-
-- Does either explanation add information absent from this sentence?
-
----
-
-## Compose System Prompts — 10
-
-### Compare Outputs
-
-Ask both models this question.
-
-```text
-The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
-```
-
-What do you think this person wants to accomplish?
-
----
-
-## Compose System Prompts — 11
-
-### Gemma’s Response
-
-![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
-
----
-
-## Compose System Prompts — 12
-
-### Qwen’s Response
-
-![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
-
----
-
-## Compose System Prompts — 13
-
-### Compare Models
-
-- Send your original question to two models. Save both responses.
-
-- Add system instructions in Chat Controls.
-
-- Regenerate responses to your original prompt. Compare outputs before and after adding instructions.
-
----
-
-## Compose System Prompts — 14
-
-### Evaluate Responses
-
-Compare how each model interprets your question and explains its recommendation.
-
-- Which assumptions does each response make?
-
-- Does either response invent information?
-
-- How do outputs change after you edit system instructions?
-
-Save both responses with your prompt and selected model IDs.
-
----
-
-## Compose System Prompts — 15
-
 ### System Prompts
 
-A system prompt defines how a model should behave throughout a conversation.
+A system prompt gives a model instructions for its role, behavior, and focus.
 
 ### User Prompts
 
@@ -224,29 +86,135 @@ Test whether your selected model follows these instructions.
 
 ---
 
-## Compose System Prompts — 16
+## Compose System Prompts — 6
 
-### Open Chat Controls
+### Select Models
 
-![Current chat Controls panel with its System Prompt field](images/current/chat-controls.png)
+![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
 
-Enter instructions in System Prompt under Chat Controls.
+Select model ID on bottom right of message box.
 
-- Open your chat.
+Select model ID on bottom right of message box.
 
-- Select **Controls** at top right.
+Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
 
-- Enter sample instructions in **System Prompt**, then regenerate responses to your original prompt.
-
-Use Chat Controls for this exercise. Defaults in Settings apply across chats.
+[Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/)
 
 ---
 
-## Compose System Prompts — 17
+## Compose System Prompts — 7
 
-### Test System Prompts
+### Chat Features
 
-Add these instructions in System Prompt under Chat Controls. Regenerate responses to your original prompt.
+Upload Files (+)
+
+Attach images, PDFs, or documents.
+
+Integrations
+
+Choose tools and skills for this chat.
+
+Message actions
+
+Find actions beneath each response to copy, edit, or regenerate it. Open More (⋯) for additional actions.
+
+[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
+
+---
+
+## Compose System Prompts — 8
+
+### Compare Models
+
+![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
+
+Select Compare beside search field, then choose two models.
+
+Open model selector. Select **Compare** beside search field, then choose two models.
+
+If Compare is unavailable, send identical prompts in separate new chats.
+
+Start a new chat before comparing models.
+
+---
+
+## Compose System Prompts — 9
+
+### Who Was Late?
+
+Compare how two small models interpret this sentence.
+
+```text
+The nurse yelled at the doctor because she was late. Who was late?
+```
+
+Send this question to both models.
+
+---
+
+## Compose System Prompts — 10
+
+### Examine Assumptions
+
+“She” could refer to either person. This sentence does not establish who was late.
+
+- Does each model acknowledge ambiguity?
+
+- What assumption supports its answer?
+
+- Does either explanation add information absent from this sentence?
+
+---
+
+## Compose System Prompts — 11
+
+### Compare Outputs
+
+Ask both models this question.
+
+```text
+The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
+```
+
+What do you think this person wants to accomplish?
+
+---
+
+## Compose System Prompts — 12
+
+### Gemma’s Response
+
+![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
+
+---
+
+## Compose System Prompts — 13
+
+### Qwen’s Response
+
+![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
+
+---
+
+## Compose System Prompts — 14
+
+### Compare Models
+
+Start a new chat, select two models, and send this question.
+
+```text
+The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
+```
+
+Save both responses with your question and selected model IDs before adding system instructions.
+
+---
+
+## Compose System Prompts — 15
+
+### Read System Prompt
+
+Read these instructions. What should change in each model’s response?
 
 ```text
 Help the user examine a question before settling on an answer.
@@ -258,13 +226,55 @@ Give a concise answer that states its assumptions. Do not invent missing context
 
 ---
 
+## Compose System Prompts — 16
+
+### Open Chat Controls
+
+![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
+
+Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
+
+- Open your chat.
+
+- Select **Controls** at top right.
+
+- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response.
+
+Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
+
+---
+
+## Compose System Prompts — 17
+
+### Test System Prompts
+
+- Copy sample instructions from [Read System Prompt](#15).
+
+- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
+
+- Close Controls. Select **Regenerate** beneath each original response.
+
+Leave your original question, selected models, and other settings unchanged.
+
+---
+
 ## Compose System Prompts — 18
+
+### Regenerate Responses
+
+![Original question, model response, and message box with Regenerate button marked by an arrow](images/current/regenerate-2026-09-14-annotated.svg)
+
+After adding system instructions, select Regenerate beneath each original response.
+
+---
+
+## Compose System Prompts — 19
 
 ### Compare Responses
 
 - Compare responses before and after adding system instructions.
 
-- Check whether each response identifies your goal, states assumptions, and answers without unnecessary questions.
+- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
 
 - Repeat our opening question about who was late. Do these instructions help identify ambiguity?
 
@@ -272,7 +282,7 @@ Keep base models and other settings unchanged. Record any differences you cannot
 
 ---
 
-## Compose System Prompts — 19
+## Compose System Prompts — 20
 
 ### Open Workspace
 
@@ -286,7 +296,7 @@ Continue in chat if Workspace is unavailable.
 
 ---
 
-## Compose System Prompts — 20
+## Compose System Prompts — 21
 
 ### Workspace Tabs
 
@@ -304,7 +314,7 @@ Attach documents under Knowledge. Add reusable instructions under Skills and ope
 
 ---
 
-## Compose System Prompts — 21
+## Compose System Prompts — 22
 
 ### Model Configuration
 
@@ -324,7 +334,7 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ---
 
-## Compose System Prompts — 22
+## Compose System Prompts — 23
 
 ### Create Custom Models
 
@@ -342,7 +352,7 @@ Students select your custom model to use its instructions and resources.
 
 ---
 
-## Compose System Prompts — 23
+## Compose System Prompts — 24
 
 Examples
 
@@ -350,7 +360,7 @@ Examples
 
 ---
 
-## Compose System Prompts — 24
+## Compose System Prompts — 25
 
 Example 1
 
@@ -358,7 +368,7 @@ Example 1
 
 ---
 
-## Compose System Prompts — 25
+## Compose System Prompts — 26
 
 Composition & Writing
 
@@ -380,7 +390,7 @@ Help students write better.
 
 ---
 
-## Compose System Prompts — 26
+## Compose System Prompts — 27
 
 Composition & Writing
 
@@ -410,7 +420,7 @@ You are a writing scaffold for a college composition course. Help students devel
 
 ---
 
-## Compose System Prompts — 27
+## Compose System Prompts — 28
 
 Composition & Writing
 
@@ -439,7 +449,7 @@ Scroll within this prompt to read more.
 
 ---
 
-## Compose System Prompts — 28
+## Compose System Prompts — 29
 
 Example 2
 
@@ -447,7 +457,7 @@ Example 2
 
 ---
 
-## Compose System Prompts — 29
+## Compose System Prompts — 30
 
 History
 
@@ -469,7 +479,7 @@ Analyze historical documents.
 
 ---
 
-## Compose System Prompts — 30
+## Compose System Prompts — 31
 
 History
 
@@ -499,7 +509,7 @@ You are a history source-analysis tool. Help students analyze primary sources fr
 
 ---
 
-## Compose System Prompts — 31
+## Compose System Prompts — 32
 
 History
 
@@ -536,7 +546,7 @@ Scroll within this prompt to read more.
 
 ---
 
-## Compose System Prompts — 32
+## Compose System Prompts — 33
 
 Example 3
 
@@ -544,7 +554,7 @@ Example 3
 
 ---
 
-## Compose System Prompts — 33
+## Compose System Prompts — 34
 
 Literature & Cultural Studies
 
@@ -566,7 +576,7 @@ Help with literary analysis.
 
 ---
 
-## Compose System Prompts — 34
+## Compose System Prompts — 35
 
 Literature & Cultural Studies
 
@@ -596,7 +606,7 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
 
 ---
 
-## Compose System Prompts — 35
+## Compose System Prompts — 36
 
 Literature & Cultural Studies
 
@@ -631,7 +641,7 @@ Scroll within this prompt to read more.
 
 ---
 
-## Compose System Prompts — 36
+## Compose System Prompts — 37
 
 ### Adapt Research Prompts
 
@@ -647,13 +657,13 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Compose System Prompts — 37
+## Compose System Prompts — 38
 
 ### Draft System Prompts
 
 ---
 
-## Compose System Prompts — 38
+## Compose System Prompts — 39
 
 Structure
 
@@ -673,7 +683,7 @@ Draft a system prompt using these components.
 
 ---
 
-## Compose System Prompts — 39
+## Compose System Prompts — 40
 
 Component 1
 
@@ -698,7 +708,7 @@ The core problem: [specific learning challenge].
 
 ---
 
-## Compose System Prompts — 40
+## Compose System Prompts — 41
 
 Component 2
 
@@ -723,7 +733,7 @@ Procedure:
 
 ---
 
-## Compose System Prompts — 41
+## Compose System Prompts — 42
 
 Component 3
 
@@ -748,7 +758,7 @@ Constraints:
 
 ---
 
-## Compose System Prompts — 42
+## Compose System Prompts — 43
 
 Component 4
 
@@ -770,7 +780,7 @@ Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[examp
 
 ---
 
-## Compose System Prompts — 43
+## Compose System Prompts — 44
 
 Component 5
 
@@ -796,7 +806,7 @@ Question: [something for the student to consider]
 
 ---
 
-## Compose System Prompts — 44
+## Compose System Prompts — 45
 
 Refine
 
@@ -804,7 +814,7 @@ Refine
 
 ---
 
-## Compose System Prompts — 45
+## Compose System Prompts — 46
 
 ### Extend Instructions
 
@@ -826,7 +836,7 @@ Refine
 
 ---
 
-## Compose System Prompts — 46
+## Compose System Prompts — 47
 
 Watch Out
 
@@ -850,7 +860,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Compose System Prompts — 47
+## Compose System Prompts — 48
 
 ### Save Prompts
 
@@ -864,7 +874,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Compose System Prompts — 48
+## Compose System Prompts — 49
 
 ### Share Custom Models
 
@@ -878,7 +888,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Compose System Prompts — 49
+## Compose System Prompts — 50
 
 ### Record Comparisons
 
@@ -896,7 +906,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Compose System Prompts — 50
+## Compose System Prompts — 51
 
 ### Prepare Source Documents
 

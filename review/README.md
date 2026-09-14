@@ -1,5 +1,7 @@
 # Copy Review
 
+Latest revisions — [Prompt sequence and annotated controls](prompt-sequence-review.md) · [Direct diff](prompt-sequence.diff).
+
 The consolidated series preserves the three-workshop order and the substantive disciplinary progressions. Complete before/after passages and direct diffs are retained here.
 
 | Workshop | Original copy | Revised copy | Direct diff |
