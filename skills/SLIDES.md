@@ -84,6 +84,8 @@ Loading the instructions and following them are both behaviors to test.
 
 The blank editor was captured in Firefox. Save & Create appears below the instruction field.
 
+#### Supporting notes
+
 - Open **Workspace → Skills → Create**.
 
 - Enter a name, identifier, and description that explain when to use it.
@@ -136,6 +138,8 @@ Use the examples that follow as procedures to adapt and test. Their “Before”
 
 The menu is beside the plus button in the message composer.
 
+#### Supporting notes
+
 A tool runs an operation, such as a search, a calculation, or a query of a source collection.
 
 Open **Integrations** beside the plus button for available chat capabilities. Attach reusable tools under **Tools** in the model editor.
@@ -182,6 +186,8 @@ Composition & Writing
 
 ### Before
 
+**Starting Point**
+
 ```text
 When a student is developing a research topic, walk them through four stages — conjecture, definition, quality, and policy — to help them narrow their question. Ask one stasis at a time.
 ```
@@ -203,6 +209,8 @@ When a student is developing a research topic, walk them through four stages —
 Composition & Writing
 
 ### After
+
+**Strong**
 
 ```text
 Skill: Establishing Stasis for a Research Topic
@@ -241,6 +249,8 @@ History
 
 ### Before
 
+**Starting Point**
+
 ```text
 When a student asks about a primary source, retrieve it from the knowledge collection and walk them through its rhetorical situation using SOAPS. Ask questions one element at a time rather than summarizing.
 ```
@@ -262,6 +272,8 @@ When a student asks about a primary source, retrieve it from the knowledge colle
 History
 
 ### After
+
+**Strong**
 
 ```text
 Skill: Sourcing a Primary Document
@@ -302,6 +314,8 @@ Literature & Cultural Studies
 
 ### Before
 
+**Starting Point**
+
 ```text
 When a student shares a film still or visual artifact, guide them from describing formal elements — composition, lighting, framing — toward interpreting how those choices construct meaning in context.
 ```
@@ -323,6 +337,8 @@ When a student shares a film still or visual artifact, guide them from describin
 Literature & Cultural Studies
 
 ### After
+
+**Strong**
 
 ```text
 Skill: Reading Cinematic Images

@@ -58,6 +58,8 @@ Require individual access approval and Sandbox sign-in before attending. Workspa
 
 The access choices linked from the published Sandbox documentation.
 
+#### Supporting notes
+
 - Open the [access application](https://ailab.gc.cuny.edu/request-access/?kind=individual) and choose **My own access**.
 
 - Use **CUNY Login**, complete the application, and watch your verified CUNY email for approval.
@@ -78,6 +80,8 @@ message box
 ![Current Sandbox new chat with the model selector inside the message box](images/current/chat-page.png)
 
 Current Sandbox. Model names and available controls depend on your account.
+
+#### Supporting notes
 
 Select the model name **on the right inside the message box**.
 
@@ -117,6 +121,8 @@ you can use
 ![Current model selector with search and the Compare toggle](images/current/model-selector.png)
 
 Compare is in the model selector. This capture is filtered to show base-model entries.
+
+#### Supporting notes
 
 Open the model selector. Turn on **Compare**, then choose two available base models.
 
@@ -178,6 +184,8 @@ Before reading the responses, write down what you think the user wants to accomp
 
 GCDI showcase, May 2026. The obsolete top selector has been cropped out.
 
+#### Supporting notes
+
 The response shown recommends walking. Read its recommendation against the purpose of the trip.
 
 ---
@@ -189,6 +197,8 @@ The response shown recommends walking. Read its recommendation against the purpo
 ![Archived car-wash prompt and Qwen response saying to take the car](images/showcase/car-wash-qwen.png)
 
 GCDI showcase, May 2026. Original response labels and timings are retained.
+
+#### Supporting notes
 
 This response recommends taking the car. These excerpts are discussion material; the source has inconsistent Qwen labels, so it cannot establish an exact model comparison.
 
@@ -253,6 +263,8 @@ in a chat
 
 The System Prompt field in a new chat. Sample text follows on the next slide.
 
+#### Supporting notes
+
 - Open a fresh chat with one of the models you compared.
 
 - Select **Controls** at the top right.
@@ -315,6 +327,8 @@ If access is delayed, follow the facilitator and continue testing in chat. Confi
 
 The shared Create button acts on the selected Workspace tab.
 
+#### Supporting notes
+
 ### Models
 
 Watch the facilitator open the prepared sample and locate Create.
@@ -333,6 +347,8 @@ together
 ![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
 
 Read-only capture of the editor. The facilitator prepares the named sample before the workshop.
+
+#### Supporting notes
 
 - **Name** what students will recognize.
 
@@ -390,6 +406,8 @@ Composition & Writing
 
 ### The Vague Prompt
 
+**Weak**
+
 ```text
 Help students write better.
 ```
@@ -409,6 +427,8 @@ Help students write better.
 Composition & Writing
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 You are a writing scaffold for a college composition course. Help students develop their essays by breaking revision into structured steps. Ask them to identify their thesis before giving feedback. Don't write essays for them.
@@ -437,6 +457,8 @@ You are a writing scaffold for a college composition course. Help students devel
 Composition & Writing
 
 ### A Prompt That Supports Revision
+
+**Strong**
 
 ```text
 You are a writing scaffold for an English 101 composition course at a public urban university. Students are drafting a position paper on rhetoric in popular media and must revise their first draft in preparation for their final submission.
@@ -473,6 +495,8 @@ History
 
 ### The Vague Prompt
 
+**Weak**
+
 ```text
 Analyze historical documents.
 ```
@@ -492,6 +516,8 @@ Analyze historical documents.
 History
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 You are a history source-analysis tool. Help students analyze primary sources from American history. Ask them to consider the author, audience, and context of each document. Don't just summarize the document for them.
@@ -520,6 +546,8 @@ You are a history source-analysis tool. Help students analyze primary sources fr
 History
 
 ### A Prompt That Fosters Historical Thinking
+
+**Strong**
 
 ```text
 You are a source-analysis tool for an undergraduate U.S. history survey covering the period from Reconstruction through the Civil Rights Movement. Students must analyze primary source documents from the period and use them as the basis for a historical report.
@@ -564,6 +592,8 @@ Literature & Cultural Studies
 
 ### The Vague Prompt
 
+**Weak**
+
 ```text
 Help with literary analysis.
 ```
@@ -583,6 +613,8 @@ Help with literary analysis.
 Literature & Cultural Studies
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 You are a close-reading scaffold. Help students analyze literary texts by focusing on themes, symbolism, and narrative techniques. Don't just summarize the plot. Ask students to point to specific passages.
@@ -611,6 +643,8 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
 Literature & Cultural Studies
 
 ### A Prompt That Fosters Close Reading
+
+**Strong**
 
 ```text
 You are a close-reading tool designed for an introductory English course that focuses on cultural studies and literary analysis. Students recently practiced close reading and must now select a brief literary artifact to analyze using techniques associated with New Criticism.
@@ -975,6 +1009,8 @@ Keep your baseline response so you can compare the effect of adding those source
 
 Select Models to edit the configuration, or Knowledge to create a collection.
 
+#### Supporting notes
+
 Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
 
 If you are joining here, use the sample prompt from the first workshop and choose a base model you can test.
@@ -992,6 +1028,8 @@ Workspace authoring access is arranged separately from ordinary chat access.
 ![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 
 Knowledge attaches in the same editor as the base model and system prompt.
+
+#### Supporting notes
 
 Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
 
@@ -1022,6 +1060,8 @@ Retrieval does not guarantee that the right passage will be found or that the an
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 
 Blank form captured in Firefox. No collection was created for this screenshot.
+
+#### Supporting notes
 
 - Open **Workspace → Knowledge → Create**.
 
@@ -1101,6 +1141,8 @@ Composition & Writing
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • syllabus.pdf (14 pages, full course syllabus)
@@ -1121,6 +1163,8 @@ Collection contents:
 Composition & Writing
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -1152,6 +1196,8 @@ Collection contents:
 Composition & Writing
 
 ### A Collection That Grounds Revision
+
+**Strong**
 
 ```text
 Collection contents:
@@ -1186,6 +1232,8 @@ History
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • textbook-chapter-12.pdf (42 pages)
@@ -1206,6 +1254,8 @@ Collection contents:
 History
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -1238,6 +1288,8 @@ Collection contents:
 History
 
 ### A Collection for Historical Inquiry
+
+**Strong**
 
 ```text
 Collection contents:
@@ -1273,6 +1325,8 @@ Literature & Cultural Studies
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • course-reader.pdf (180 pages, all readings for the semester)
@@ -1293,6 +1347,8 @@ Collection contents:
 Literature & Cultural Studies
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -1325,6 +1381,8 @@ Collection contents:
 Literature & Cultural Studies
 
 ### A Collection for Close Reading
+
+**Strong**
 
 ```text
 Collection contents:
@@ -1668,6 +1726,8 @@ Loading the instructions and following them are both behaviors to test.
 
 The blank editor was captured in Firefox. Save & Create appears below the instruction field.
 
+#### Supporting notes
+
 - Open **Workspace → Skills → Create**.
 
 - Enter a name, identifier, and description that explain when to use it.
@@ -1720,6 +1780,8 @@ Use the examples that follow as procedures to adapt and test. Their “Before”
 
 The menu is beside the plus button in the message composer.
 
+#### Supporting notes
+
 A tool runs an operation, such as a search, a calculation, or a query of a source collection.
 
 Open **Integrations** beside the plus button for available chat capabilities. Attach reusable tools under **Tools** in the model editor.
@@ -1766,6 +1828,8 @@ Composition & Writing
 
 ### Before
 
+**Starting Point**
+
 ```text
 When a student is developing a research topic, walk them through four stages — conjecture, definition, quality, and policy — to help them narrow their question. Ask one stasis at a time.
 ```
@@ -1787,6 +1851,8 @@ When a student is developing a research topic, walk them through four stages —
 Composition & Writing
 
 ### After
+
+**Strong**
 
 ```text
 Skill: Establishing Stasis for a Research Topic
@@ -1825,6 +1891,8 @@ History
 
 ### Before
 
+**Starting Point**
+
 ```text
 When a student asks about a primary source, retrieve it from the knowledge collection and walk them through its rhetorical situation using SOAPS. Ask questions one element at a time rather than summarizing.
 ```
@@ -1846,6 +1914,8 @@ When a student asks about a primary source, retrieve it from the knowledge colle
 History
 
 ### After
+
+**Strong**
 
 ```text
 Skill: Sourcing a Primary Document
@@ -1886,6 +1956,8 @@ Literature & Cultural Studies
 
 ### Before
 
+**Starting Point**
+
 ```text
 When a student shares a film still or visual artifact, guide them from describing formal elements — composition, lighting, framing — toward interpreting how those choices construct meaning in context.
 ```
@@ -1907,6 +1979,8 @@ When a student shares a film still or visual artifact, guide them from describin
 Literature & Cultural Studies
 
 ### After
+
+**Strong**
 
 ```text
 Skill: Reading Cinematic Images
