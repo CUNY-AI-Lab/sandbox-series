@@ -30,13 +30,13 @@ Use documents you are permitted to upload and share for collection and skill exe
 
 ## Compose System Prompts
 
-Participants compare responses and test system instructions before saving a custom model for reuse. Begin with two small models interpreting a sentence about a nurse and doctor. Then ask whether to walk or drive to a car wash. Participants edit system instructions in Chat Controls and regenerate responses to their original prompt.
+Participants learn how user prompts and system prompts differ before comparing models. A system prompt gives a model instructions for its role, behavior, and focus. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants save both responses, read sample system instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
 
 ### Workshop Agenda
 
 - Request individual access and sign in
+- Define system prompts
 - Compare responses from small models
-- Compare outputs
 - Revise in-chat system prompts
 - Explore Workspace models
 - Save prompts for reuse
@@ -45,11 +45,11 @@ Participants compare responses and test system instructions before saving a cust
 
 | Minutes | Facilitation and participant activity | Evidence to retain |
 | --- | --- | --- |
-| 0–10 | Introduce the series and agenda. Confirm sign-in. Locate the model selector inside the message box, More, Integrations, message actions, and Controls. | Account readiness and selected model names |
+| 0–10 | Introduce the series and agenda. Confirm sign-in. Define system prompts through model role, behavior, and focus, and distinguish them from user questions or tasks. Locate the model selector inside the message box, Integrations, and message actions. | Account readiness and distinction between user and system prompts |
 | 10–18 | Demonstrate two small models answering the nurse question. Ask participants to read both responses and identify assumptions. | Exact inputs, model identifiers, responses |
 | 18–25 | Ask whether to walk or drive to a car wash. Show Gemma’s and Qwen’s responses after comparing models live. Ask participants what they think this person wants to accomplish. | Assumptions and evidence supporting each judgment |
-| 25–35 | Ask participants to send this question to two models and save both responses. Introduce System Prompt in Chat Controls. | Original responses and system instructions |
-| 35–45 | Add sample instructions through Controls → System Prompt. Regenerate responses to participants’ original prompt without changing base models or other settings. Compare outputs, then revisit our opening question about who was late. | Before-and-after comparison using the same criteria |
+| 25–35 | Ask participants to start a new chat, send the car wash question to two models, and save both responses. Read the sample system prompt and ask what should change in each response. Show Controls at the top right of chat and its System Prompt field before participants add instructions. | Original responses and expected effects of system instructions |
+| 35–45 | Keep the control location visible with the exercise steps. Participants open Controls, add the sample instructions in System Prompt, close Controls, and select Regenerate beneath each original response. Leave the original question, selected models, and other settings unchanged. Compare outputs, then revisit the question about who was late. | Before-and-after comparison using the same criteria |
 | 45–55 | Enable the arranged Workspace access. Participants refresh and inspect a prepared custom model with the facilitator. Read Base Model and System Prompt together, then connect those settings to the in-chat exercise. | Prompt text and model choice to carry forward |
 | 55–75 | Discuss one disciplinary progression from the examples page. Participants adapt context, procedure, constraints, tone, and format for one teaching or research task. Keep other examples as reference material. | Draft prompt and private custom model when Workspace access is confirmed |
 | 75–85 | Test a normal request, an incomplete request, and a request that conflicts with the intended procedure. Revise one instruction and repeat. | Failure, revision, and retest |
@@ -67,7 +67,7 @@ Send exactly this question to two small models with matching context. Ask which 
 
 Screenshot provenance and inconsistent Qwen labels are documented in [source history](review/showcase-sources.json). Discuss these responses without treating screenshot labels or timings as reliable model identifiers or comparative measurements.
 
-Ask “What do you think this person wants to accomplish?” Participants save both original responses, add system instructions in Chat Controls, and regenerate responses to their unchanged prompt. Compare assumptions, explanations, and any change in recommendations.
+Ask “What do you think this person wants to accomplish?” Participants save both original responses and read the sample system prompt before changing settings. Ask what should change in each response. Show Controls at the top right of chat and its System Prompt field alongside the exercise instructions. Participants add the sample instructions, close Controls, and select Regenerate beneath each original response, leaving their question unchanged. Compare assumptions, explanations, and any change in recommendations.
 
 | Criterion | Model A evidence | Model B evidence |
 | --- | --- | --- |

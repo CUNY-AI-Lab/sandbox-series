@@ -200,6 +200,86 @@
       "source_sha256": "a08bea5b020c092b0d223731dc7ee1184880f47812b40704eeaf0cb39e27e346",
       "processing": "SVG embeds unchanged screenshot pixels and adds a white Compare label, arrow, and circle. Annotation points to Compare without covering it.",
       "sha256": "608dbc58afe373f605eab85c6ca6470ecc7597f7b1814a2425d848d0c8a144c1"
+    },
+    {
+      "file": "chat-controls-2026-09-14.png",
+      "sha256": "d45a072a56aab505307494bab847025a432bb5cfd5d500b0276f9b73aa9955ec",
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "browser": "Firefox",
+      "source_dimensions": [
+        2528,
+        2618
+      ],
+      "crop": [
+        210,
+        250,
+        2418,
+        1570
+      ],
+      "notes": "Firefox at 100% zoom in dark mode. Controls open in a new chat; no instructions entered.",
+      "source_capture_sha256": "6e792a61ae0315272f058183398297d7226ffd1bbbb4e579564756fd5acac3ea"
+    },
+    {
+      "file": "chat-controls-2026-09-14-annotated.svg",
+      "sha256": "94a25848fee757e44575eeb0fc1406e2bf633d1725b81440b7950a504f751fb1",
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "browser": "Firefox",
+      "source_dimensions": [
+        2528,
+        2618
+      ],
+      "crop": [
+        210,
+        250,
+        2418,
+        1570
+      ],
+      "notes": "Firefox at 100% zoom in dark mode. Controls open in a new chat; no instructions entered.",
+      "source_file": "chat-controls-2026-09-14.png",
+      "source_sha256": "d45a072a56aab505307494bab847025a432bb5cfd5d500b0276f9b73aa9955ec",
+      "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
+    },
+    {
+      "file": "regenerate-2026-09-14.png",
+      "sha256": "5f6695f5849c8e5266076ea06e84d2e1ffd4585de454c0cd6a11e22c5b9a55f0",
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "browser": "Firefox",
+      "source_dimensions": [
+        4832,
+        2618
+      ],
+      "crop": [
+        1450,
+        380,
+        3520,
+        2450
+      ],
+      "notes": "Firefox at 100% zoom in dark mode. Response generated from the exact workshop car wash question. Controls closed; Regenerate verified in native accessibility state.",
+      "source_capture_sha256": "0201eb0585dc4e467bbaa4d926cd3ae0eef34d39ae28aed19bb3c1e2d6f52e73"
+    },
+    {
+      "file": "regenerate-2026-09-14-annotated.svg",
+      "sha256": "0089862c3e40edbcb43bb93e046a8c4892770f125280f2582e302e1f6b27de88",
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "browser": "Firefox",
+      "source_dimensions": [
+        4832,
+        2618
+      ],
+      "crop": [
+        1450,
+        380,
+        3520,
+        2450
+      ],
+      "notes": "Firefox at 100% zoom in dark mode. Response generated from the exact workshop car wash question. Controls closed; Regenerate verified in native accessibility state.",
+      "source_file": "regenerate-2026-09-14.png",
+      "source_sha256": "5f6695f5849c8e5266076ea06e84d2e1ffd4585de454c0cd6a11e22c5b9a55f0",
+      "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
     }
   ]
 }

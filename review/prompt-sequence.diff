@@ -1,0 +1,595 @@
+diff --git a/PROMPTS.md b/PROMPTS.md
+index 0ce0e02..458a61b 100644
+--- a/PROMPTS.md
++++ b/PROMPTS.md
+@@ -34,9 +34,9 @@ Developed by Stefano Morello and Zach Muhlbauer
+ 
+ - Request individual access and sign in
+ 
+-- Compare responses from small models
++- Define system prompts
+ 
+-- Compare outputs
++- Compare responses from small models
+ 
+ - Revise in-chat system prompts
+ 
+@@ -64,7 +64,29 @@ Before attending, request individual access and sign into Sandbox.
+ 
+ ---
+ 
+-## Slide 5: Select Models
++## Slide 5: System Prompts
++
++### System Prompts
++
++A system prompt gives a model instructions for its role, behavior, and focus.
++
++### User Prompts
++
++Questions or tasks you enter in chat.
++
++### System Prompts
++
++Instructions defining model behavior, tone, boundaries, and response style.
++
++Test whether your selected model follows these instructions.
++
++[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
++
++[Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
++
++---
++
++## Slide 6: Select Models
+ 
+ ### Select Models
+ 
+@@ -80,9 +102,9 @@ Type a request, send it, then ask a follow-up. Open **New Chat** when you want t
+ 
+ ---
+ 
+-## Slide 6: Chat Controls
++## Slide 7: Chat Features
+ 
+-### Chat Controls
++### Chat Features
+ 
+ Upload Files (+)
+ 
+@@ -94,13 +116,13 @@ Choose tools and skills for this chat.
+ 
+ Message actions
+ 
+-Copy, edit, or regenerate a response. Open More (⋯) for additional actions.
++Find actions beneath each response to copy, edit, or regenerate it. Open More (⋯) for additional actions.
+ 
+ [Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
+ 
+ ---
+ 
+-## Slide 7: Compare Models
++## Slide 8: Compare Models
+ 
+ ### Compare Models
+ 
+@@ -116,7 +138,7 @@ Start a new chat before comparing models.
+ 
+ ---
+ 
+-## Slide 8: Who Was Late?
++## Slide 9: Who Was Late?
+ 
+ ### Who Was Late?
+ 
+@@ -130,7 +152,7 @@ Send this question to both models.
+ 
+ ---
+ 
+-## Slide 9: Examine Assumptions
++## Slide 10: Examine Assumptions
+ 
+ ### Examine Assumptions
+ 
+@@ -144,7 +166,7 @@ Send this question to both models.
+ 
+ ---
+ 
+-## Slide 10: Compare Outputs
++## Slide 11: Compare Outputs
+ 
+ ### Compare Outputs
+ 
+@@ -158,7 +180,7 @@ What do you think this person wants to accomplish?
+ 
+ ---
+ 
+-## Slide 11: Gemma’s Response
++## Slide 12: Gemma’s Response
+ 
+ ### Gemma’s Response
+ 
+@@ -166,7 +188,7 @@ What do you think this person wants to accomplish?
+ 
+ ---
+ 
+-## Slide 12: Qwen’s Response
++## Slide 13: Qwen’s Response
+ 
+ ### Qwen’s Response
+ 
+@@ -174,53 +196,33 @@ What do you think this person wants to accomplish?
+ 
+ ---
+ 
+-## Slide 13: Compare Models
++## Slide 14: Compare Models
+ 
+ ### Compare Models
+ 
+-- Send your original question to two models. Save both responses.
+-
+-- Add system instructions in Chat Controls.
+-
+-- Regenerate responses to your original prompt. Compare outputs before and after adding instructions.
+-
+----
+-
+-## Slide 14: Evaluate Responses
+-
+-### Evaluate Responses
+-
+-Compare how each model interprets your question and explains its recommendation.
+-
+-- Which assumptions does each response make?
+-
+-- Does either response invent information?
++Start a new chat, select two models, and send this question.
+ 
+-- How do outputs change after you edit system instructions?
++```text
++The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
++```
+ 
+-Save both responses with your prompt and selected model IDs.
++Save both responses with your question and selected model IDs before adding system instructions.
+ 
+ ---
+ 
+-## Slide 15: System Prompts
+-
+-### System Prompts
+-
+-A system prompt defines how a model should behave throughout a conversation.
+-
+-### User Prompts
+-
+-Questions or tasks you enter in chat.
++## Slide 15: Read System Prompt
+ 
+-### System Prompts
++### Read System Prompt
+ 
+-Instructions defining model behavior, tone, boundaries, and response style.
++Read these instructions. What should change in each model’s response?
+ 
+-Test whether your selected model follows these instructions.
++```text
++Help the user examine a question before settling on an answer.
+ 
+-[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
++Identify the goal and the information stated in the question. Separate those facts from assumptions needed to answer it. If different assumptions would change the answer, explain the alternatives briefly or ask one focused question.
+ 
+-[Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
++Give a concise answer that states its assumptions. Do not invent missing context. Revise the answer when the user adds relevant information.
++```
+ 
+ ---
+ 
+@@ -228,17 +230,17 @@ Test whether your selected model follows these instructions.
+ 
+ ### Open Chat Controls
+ 
+-![Current chat Controls panel with its System Prompt field](images/current/chat-controls.png)
++![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
+ 
+-Enter instructions in System Prompt under Chat Controls.
++Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
+ 
+ - Open your chat.
+ 
+ - Select **Controls** at top right.
+ 
+-- Enter sample instructions in **System Prompt**, then regenerate responses to your original prompt.
++- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response.
+ 
+-Use Chat Controls for this exercise. Defaults in Settings apply across chats.
++Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
+ 
+ ---
+ 
+@@ -246,25 +248,33 @@ Use Chat Controls for this exercise. Defaults in Settings apply across chats.
+ 
+ ### Test System Prompts
+ 
+-Add these instructions in System Prompt under Chat Controls. Regenerate responses to your original prompt.
++- Copy sample instructions from [Read System Prompt](#15).
+ 
+-```text
+-Help the user examine a question before settling on an answer.
++- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
+ 
+-Identify the goal and the information stated in the question. Separate those facts from assumptions needed to answer it. If different assumptions would change the answer, explain the alternatives briefly or ask one focused question.
++- Close Controls. Select **Regenerate** beneath each original response.
+ 
+-Give a concise answer that states its assumptions. Do not invent missing context. Revise the answer when the user adds relevant information.
+-```
++Leave your original question, selected models, and other settings unchanged.
++
++---
++
++## Slide 18: Regenerate Responses
++
++### Regenerate Responses
++
++![Original question, model response, and message box with Regenerate button marked by an arrow](images/current/regenerate-2026-09-14-annotated.svg)
++
++After adding system instructions, select Regenerate beneath each original response.
+ 
+ ---
+ 
+-## Slide 18: Compare Responses
++## Slide 19: Compare Responses
+ 
+ ### Compare Responses
+ 
+ - Compare responses before and after adding system instructions.
+ 
+-- Check whether each response identifies your goal, states assumptions, and answers without unnecessary questions.
++- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
+ 
+ - Repeat our opening question about who was late. Do these instructions help identify ambiguity?
+ 
+@@ -272,7 +282,7 @@ Keep base models and other settings unchanged. Record any differences you cannot
+ 
+ ---
+ 
+-## Slide 19: Open Workspace
++## Slide 20: Open Workspace
+ 
+ ### Open Workspace
+ 
+@@ -286,7 +296,7 @@ Continue in chat if Workspace is unavailable.
+ 
+ ---
+ 
+-## Slide 20: Workspace Tabs
++## Slide 21: Workspace Tabs
+ 
+ ### Workspace Tabs
+ 
+@@ -304,7 +314,7 @@ Attach documents under Knowledge. Add reusable instructions under Skills and ope
+ 
+ ---
+ 
+-## Slide 21: Model Configuration
++## Slide 22: Model Configuration
+ 
+ ### Model Configuration
+ 
+@@ -324,7 +334,7 @@ A custom model combines these choices. Creating it does not train a new base mod
+ 
+ ---
+ 
+-## Slide 22: Create Custom Models
++## Slide 23: Create Custom Models
+ 
+ ### Create Custom Models
+ 
+@@ -342,7 +352,7 @@ Students select your custom model to use its instructions and resources.
+ 
+ ---
+ 
+-## Slide 23: Structure System Prompts
++## Slide 24: Structure System Prompts
+ 
+ Examples
+ 
+@@ -350,7 +360,7 @@ Examples
+ 
+ ---
+ 
+-## Slide 24: Teach Composition
++## Slide 25: Teach Composition
+ 
+ Example 1
+ 
+@@ -358,7 +368,7 @@ Example 1
+ 
+ ---
+ 
+-## Slide 25: Vague Prompts
++## Slide 26: Vague Prompts
+ 
+ Composition & Writing
+ 
+@@ -380,7 +390,7 @@ Help students write better.
+ 
+ ---
+ 
+-## Slide 26: Add Specifics
++## Slide 27: Add Specifics
+ 
+ Composition & Writing
+ 
+@@ -410,7 +420,7 @@ You are a writing scaffold for a college composition course. Help students devel
+ 
+ ---
+ 
+-## Slide 27: Guide Revision
++## Slide 28: Guide Revision
+ 
+ Composition & Writing
+ 
+@@ -439,7 +449,7 @@ Scroll within this prompt to read more.
+ 
+ ---
+ 
+-## Slide 28: Analyze Primary Sources
++## Slide 29: Analyze Primary Sources
+ 
+ Example 2
+ 
+@@ -447,7 +457,7 @@ Example 2
+ 
+ ---
+ 
+-## Slide 29: Vague Prompts
++## Slide 30: Vague Prompts
+ 
+ History
+ 
+@@ -469,7 +479,7 @@ Analyze historical documents.
+ 
+ ---
+ 
+-## Slide 30: Add Specifics
++## Slide 31: Add Specifics
+ 
+ History
+ 
+@@ -499,7 +509,7 @@ You are a history source-analysis tool. Help students analyze primary sources fr
+ 
+ ---
+ 
+-## Slide 31: Analyze Primary Sources
++## Slide 32: Analyze Primary Sources
+ 
+ History
+ 
+@@ -536,7 +546,7 @@ Scroll within this prompt to read more.
+ 
+ ---
+ 
+-## Slide 32: Analyze Literary Texts
++## Slide 33: Analyze Literary Texts
+ 
+ Example 3
+ 
+@@ -544,7 +554,7 @@ Example 3
+ 
+ ---
+ 
+-## Slide 33: Vague Prompts
++## Slide 34: Vague Prompts
+ 
+ Literature & Cultural Studies
+ 
+@@ -566,7 +576,7 @@ Help with literary analysis.
+ 
+ ---
+ 
+-## Slide 34: Add Specifics
++## Slide 35: Add Specifics
+ 
+ Literature & Cultural Studies
+ 
+@@ -596,7 +606,7 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
+ 
+ ---
+ 
+-## Slide 35: Analyze Literary Texts
++## Slide 36: Analyze Literary Texts
+ 
+ Literature & Cultural Studies
+ 
+@@ -631,7 +641,7 @@ Scroll within this prompt to read more.
+ 
+ ---
+ 
+-## Slide 36: Adapt Research Prompts
++## Slide 37: Adapt Research Prompts
+ 
+ ### Adapt Research Prompts
+ 
+@@ -647,13 +657,13 @@ Save your source material, prompt, response, and assessment together.
+ 
+ ---
+ 
+-## Slide 37: Draft System Prompts
++## Slide 38: Draft System Prompts
+ 
+ ### Draft System Prompts
+ 
+ ---
+ 
+-## Slide 38: Define Prompt Components
++## Slide 39: Define Prompt Components
+ 
+ Structure
+ 
+@@ -673,7 +683,7 @@ Draft a system prompt using these components.
+ 
+ ---
+ 
+-## Slide 39: Define Context
++## Slide 40: Define Context
+ 
+ Component 1
+ 
+@@ -698,7 +708,7 @@ The core problem: [specific learning challenge].
+ 
+ ---
+ 
+-## Slide 40: Write Procedures
++## Slide 41: Write Procedures
+ 
+ Component 2
+ 
+@@ -723,7 +733,7 @@ Procedure:
+ 
+ ---
+ 
+-## Slide 41: Set Constraints
++## Slide 42: Set Constraints
+ 
+ Component 3
+ 
+@@ -748,7 +758,7 @@ Constraints:
+ 
+ ---
+ 
+-## Slide 42: Set Tone
++## Slide 43: Set Tone
+ 
+ Component 4
+ 
+@@ -770,7 +780,7 @@ Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[examp
+ 
+ ---
+ 
+-## Slide 43: Specify Format
++## Slide 44: Specify Format
+ 
+ Component 5
+ 
+@@ -796,7 +806,7 @@ Question: [something for the student to consider]
+ 
+ ---
+ 
+-## Slide 44: Refine Instructions
++## Slide 45: Refine Instructions
+ 
+ Refine
+ 
+@@ -804,7 +814,7 @@ Refine
+ 
+ ---
+ 
+-## Slide 45: Extend Instructions
++## Slide 46: Extend Instructions
+ 
+ ### Extend Instructions
+ 
+@@ -826,7 +836,7 @@ Refine
+ 
+ ---
+ 
+-## Slide 46: Review Common Problems
++## Slide 47: Review Common Problems
+ 
+ Watch Out
+ 
+@@ -850,7 +860,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
+ 
+ ---
+ 
+-## Slide 47: Save Prompts
++## Slide 48: Save Prompts
+ 
+ ### Save Prompts
+ 
+@@ -864,7 +874,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
+ 
+ ---
+ 
+-## Slide 48: Share Custom Models
++## Slide 49: Share Custom Models
+ 
+ ### Share Custom Models
+ 
+@@ -878,7 +888,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
+ 
+ ---
+ 
+-## Slide 49: Record Comparisons
++## Slide 50: Record Comparisons
+ 
+ ### Record Comparisons
+ 
+@@ -896,7 +906,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
+ 
+ ---
+ 
+-## Slide 50: Prepare Source Documents
++## Slide 51: Prepare Source Documents
+ 
+ ### Prepare Source Documents
+ 
+diff --git a/README.md b/README.md
+index 9ec772e..4d9a61b 100644
+--- a/README.md
++++ b/README.md
+@@ -11,7 +11,7 @@ Compose System Prompts begins the series. Use **Outline** to move to Curate Know
+ 
+ Workshop 1 requires individual access and Sandbox sign-in. Workshop 2 adds Workspace and Knowledge collection access. Workshop 3 adds Skills and Tools access, with Workspace authoring permissions for creation and editing. Knowledge access is needed in Workshop 3 when a chosen procedure retrieves from a collection.
+ 
+-Participants first compare how two small models interpret a sentence about a nurse and doctor. They then ask whether to walk or drive to a car wash, edit system instructions, and regenerate responses to their original prompt. Participants compare responses, check citations, and test tools in teaching and research tasks. Long disciplinary examples remain available as reference material; the lesson plans identify a shorter path for live sessions.
++Participants learn how user prompts and system prompts differ, then compare how two small models interpret a sentence about a nurse and doctor. They ask whether to walk or drive to a car wash and save both responses. After reading sample system instructions, participants locate System Prompt in Chat Controls, add those instructions, and regenerate responses to their original prompt. Participants compare responses, check citations, and test tools in teaching and research tasks. Long disciplinary examples remain available as reference material; the lesson plans identify a shorter path for live sessions.
+ 
+ ## Development
+ 
+diff --git a/WORKSHOP.md b/WORKSHOP.md
+index 3ea7957..c96da90 100644
+--- a/WORKSHOP.md
++++ b/WORKSHOP.md
+@@ -30,13 +30,13 @@ Use documents you are permitted to upload and share for collection and skill exe
+ 
+ ## Compose System Prompts
+ 
+-Participants compare responses and test system instructions before saving a custom model for reuse. Begin with two small models interpreting a sentence about a nurse and doctor. Then ask whether to walk or drive to a car wash. Participants edit system instructions in Chat Controls and regenerate responses to their original prompt.
++Participants learn how user prompts and system prompts differ before comparing models. A system prompt gives a model instructions for its role, behavior, and focus. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants save both responses, read sample system instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
+ 
+ ### Workshop Agenda
+ 
+ - Request individual access and sign in
++- Define system prompts
+ - Compare responses from small models
+-- Compare outputs
+ - Revise in-chat system prompts
+ - Explore Workspace models
+ - Save prompts for reuse
+@@ -45,11 +45,11 @@ Participants compare responses and test system instructions before saving a cust
+ 
+ | Minutes | Facilitation and participant activity | Evidence to retain |
+ | --- | --- | --- |
+-| 0–10 | Introduce the series and agenda. Confirm sign-in. Locate the model selector inside the message box, More, Integrations, message actions, and Controls. | Account readiness and selected model names |
++| 0–10 | Introduce the series and agenda. Confirm sign-in. Define system prompts through model role, behavior, and focus, and distinguish them from user questions or tasks. Locate the model selector inside the message box, Integrations, and message actions. | Account readiness and distinction between user and system prompts |
+ | 10–18 | Demonstrate two small models answering the nurse question. Ask participants to read both responses and identify assumptions. | Exact inputs, model identifiers, responses |
+ | 18–25 | Ask whether to walk or drive to a car wash. Show Gemma’s and Qwen’s responses after comparing models live. Ask participants what they think this person wants to accomplish. | Assumptions and evidence supporting each judgment |
+-| 25–35 | Ask participants to send this question to two models and save both responses. Introduce System Prompt in Chat Controls. | Original responses and system instructions |
+-| 35–45 | Add sample instructions through Controls → System Prompt. Regenerate responses to participants’ original prompt without changing base models or other settings. Compare outputs, then revisit our opening question about who was late. | Before-and-after comparison using the same criteria |
++| 25–35 | Ask participants to start a new chat, send the car wash question to two models, and save both responses. Read the sample system prompt and ask what should change in each response. Show Controls at the top right of chat and its System Prompt field before participants add instructions. | Original responses and expected effects of system instructions |
++| 35–45 | Keep the control location visible with the exercise steps. Participants open Controls, add the sample instructions in System Prompt, close Controls, and select Regenerate beneath each original response. Leave the original question, selected models, and other settings unchanged. Compare outputs, then revisit the question about who was late. | Before-and-after comparison using the same criteria |
+ | 45–55 | Enable the arranged Workspace access. Participants refresh and inspect a prepared custom model with the facilitator. Read Base Model and System Prompt together, then connect those settings to the in-chat exercise. | Prompt text and model choice to carry forward |
+ | 55–75 | Discuss one disciplinary progression from the examples page. Participants adapt context, procedure, constraints, tone, and format for one teaching or research task. Keep other examples as reference material. | Draft prompt and private custom model when Workspace access is confirmed |
+ | 75–85 | Test a normal request, an incomplete request, and a request that conflicts with the intended procedure. Revise one instruction and repeat. | Failure, revision, and retest |
+@@ -67,7 +67,7 @@ Send exactly this question to two small models with matching context. Ask which
+ 
+ Screenshot provenance and inconsistent Qwen labels are documented in [source history](review/showcase-sources.json). Discuss these responses without treating screenshot labels or timings as reliable model identifiers or comparative measurements.
+ 
+-Ask “What do you think this person wants to accomplish?” Participants save both original responses, add system instructions in Chat Controls, and regenerate responses to their unchanged prompt. Compare assumptions, explanations, and any change in recommendations.
++Ask “What do you think this person wants to accomplish?” Participants save both original responses and read the sample system prompt before changing settings. Ask what should change in each response. Show Controls at the top right of chat and its System Prompt field alongside the exercise instructions. Participants add the sample instructions, close Controls, and select Regenerate beneath each original response, leaving their question unchanged. Compare assumptions, explanations, and any change in recommendations.
+ 
+ | Criterion | Model A evidence | Model B evidence |
+ | --- | --- | --- |

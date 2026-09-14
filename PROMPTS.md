@@ -34,9 +34,9 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Request individual access and sign in
 
-- Compare responses from small models
+- Define system prompts
 
-- Compare outputs
+- Compare responses from small models
 
 - Revise in-chat system prompts
 
@@ -64,149 +64,11 @@ Before attending, request individual access and sign into Sandbox.
 
 ---
 
-## Slide 5: Select Models
-
-### Select Models
-
-![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
-
-Select model ID on bottom right of message box.
-
-Select model ID on bottom right of message box.
-
-Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
-
-[Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/)
-
----
-
-## Slide 6: Chat Controls
-
-### Chat Controls
-
-Upload Files (+)
-
-Attach images, PDFs, or documents.
-
-Integrations
-
-Choose tools and skills for this chat.
-
-Message actions
-
-Copy, edit, or regenerate a response. Open More (⋯) for additional actions.
-
-[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
-
----
-
-## Slide 7: Compare Models
-
-### Compare Models
-
-![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
-
-Select Compare beside search field, then choose two models.
-
-Open model selector. Select **Compare** beside search field, then choose two models.
-
-If Compare is unavailable, send identical prompts in separate new chats.
-
-Start a new chat before comparing models.
-
----
-
-## Slide 8: Who Was Late?
-
-### Who Was Late?
-
-Compare how two small models interpret this sentence.
-
-```text
-The nurse yelled at the doctor because she was late. Who was late?
-```
-
-Send this question to both models.
-
----
-
-## Slide 9: Examine Assumptions
-
-### Examine Assumptions
-
-“She” could refer to either person. This sentence does not establish who was late.
-
-- Does each model acknowledge ambiguity?
-
-- What assumption supports its answer?
-
-- Does either explanation add information absent from this sentence?
-
----
-
-## Slide 10: Compare Outputs
-
-### Compare Outputs
-
-Ask both models this question.
-
-```text
-The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
-```
-
-What do you think this person wants to accomplish?
-
----
-
-## Slide 11: Gemma’s Response
-
-### Gemma’s Response
-
-![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
-
----
-
-## Slide 12: Qwen’s Response
-
-### Qwen’s Response
-
-![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
-
----
-
-## Slide 13: Compare Models
-
-### Compare Models
-
-- Send your original question to two models. Save both responses.
-
-- Add system instructions in Chat Controls.
-
-- Regenerate responses to your original prompt. Compare outputs before and after adding instructions.
-
----
-
-## Slide 14: Evaluate Responses
-
-### Evaluate Responses
-
-Compare how each model interprets your question and explains its recommendation.
-
-- Which assumptions does each response make?
-
-- Does either response invent information?
-
-- How do outputs change after you edit system instructions?
-
-Save both responses with your prompt and selected model IDs.
-
----
-
-## Slide 15: System Prompts
+## Slide 5: System Prompts
 
 ### System Prompts
 
-A system prompt defines how a model should behave throughout a conversation.
+A system prompt gives a model instructions for its role, behavior, and focus.
 
 ### User Prompts
 
@@ -224,29 +86,135 @@ Test whether your selected model follows these instructions.
 
 ---
 
-## Slide 16: Open Chat Controls
+## Slide 6: Select Models
 
-### Open Chat Controls
+### Select Models
 
-![Current chat Controls panel with its System Prompt field](images/current/chat-controls.png)
+![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
 
-Enter instructions in System Prompt under Chat Controls.
+Select model ID on bottom right of message box.
 
-- Open your chat.
+Select model ID on bottom right of message box.
 
-- Select **Controls** at top right.
+Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
 
-- Enter sample instructions in **System Prompt**, then regenerate responses to your original prompt.
-
-Use Chat Controls for this exercise. Defaults in Settings apply across chats.
+[Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/)
 
 ---
 
-## Slide 17: Test System Prompts
+## Slide 7: Chat Features
 
-### Test System Prompts
+### Chat Features
 
-Add these instructions in System Prompt under Chat Controls. Regenerate responses to your original prompt.
+Upload Files (+)
+
+Attach images, PDFs, or documents.
+
+Integrations
+
+Choose tools and skills for this chat.
+
+Message actions
+
+Find actions beneath each response to copy, edit, or regenerate it. Open More (⋯) for additional actions.
+
+[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
+
+---
+
+## Slide 8: Compare Models
+
+### Compare Models
+
+![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
+
+Select Compare beside search field, then choose two models.
+
+Open model selector. Select **Compare** beside search field, then choose two models.
+
+If Compare is unavailable, send identical prompts in separate new chats.
+
+Start a new chat before comparing models.
+
+---
+
+## Slide 9: Who Was Late?
+
+### Who Was Late?
+
+Compare how two small models interpret this sentence.
+
+```text
+The nurse yelled at the doctor because she was late. Who was late?
+```
+
+Send this question to both models.
+
+---
+
+## Slide 10: Examine Assumptions
+
+### Examine Assumptions
+
+“She” could refer to either person. This sentence does not establish who was late.
+
+- Does each model acknowledge ambiguity?
+
+- What assumption supports its answer?
+
+- Does either explanation add information absent from this sentence?
+
+---
+
+## Slide 11: Compare Outputs
+
+### Compare Outputs
+
+Ask both models this question.
+
+```text
+The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
+```
+
+What do you think this person wants to accomplish?
+
+---
+
+## Slide 12: Gemma’s Response
+
+### Gemma’s Response
+
+![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
+
+---
+
+## Slide 13: Qwen’s Response
+
+### Qwen’s Response
+
+![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
+
+---
+
+## Slide 14: Compare Models
+
+### Compare Models
+
+Start a new chat, select two models, and send this question.
+
+```text
+The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
+```
+
+Save both responses with your question and selected model IDs before adding system instructions.
+
+---
+
+## Slide 15: Read System Prompt
+
+### Read System Prompt
+
+Read these instructions. What should change in each model’s response?
 
 ```text
 Help the user examine a question before settling on an answer.
@@ -258,13 +226,55 @@ Give a concise answer that states its assumptions. Do not invent missing context
 
 ---
 
-## Slide 18: Compare Responses
+## Slide 16: Open Chat Controls
+
+### Open Chat Controls
+
+![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
+
+Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
+
+- Open your chat.
+
+- Select **Controls** at top right.
+
+- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response.
+
+Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
+
+---
+
+## Slide 17: Test System Prompts
+
+### Test System Prompts
+
+- Copy sample instructions from [Read System Prompt](#15).
+
+- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
+
+- Close Controls. Select **Regenerate** beneath each original response.
+
+Leave your original question, selected models, and other settings unchanged.
+
+---
+
+## Slide 18: Regenerate Responses
+
+### Regenerate Responses
+
+![Original question, model response, and message box with Regenerate button marked by an arrow](images/current/regenerate-2026-09-14-annotated.svg)
+
+After adding system instructions, select Regenerate beneath each original response.
+
+---
+
+## Slide 19: Compare Responses
 
 ### Compare Responses
 
 - Compare responses before and after adding system instructions.
 
-- Check whether each response identifies your goal, states assumptions, and answers without unnecessary questions.
+- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
 
 - Repeat our opening question about who was late. Do these instructions help identify ambiguity?
 
@@ -272,7 +282,7 @@ Keep base models and other settings unchanged. Record any differences you cannot
 
 ---
 
-## Slide 19: Open Workspace
+## Slide 20: Open Workspace
 
 ### Open Workspace
 
@@ -286,7 +296,7 @@ Continue in chat if Workspace is unavailable.
 
 ---
 
-## Slide 20: Workspace Tabs
+## Slide 21: Workspace Tabs
 
 ### Workspace Tabs
 
@@ -304,7 +314,7 @@ Attach documents under Knowledge. Add reusable instructions under Skills and ope
 
 ---
 
-## Slide 21: Model Configuration
+## Slide 22: Model Configuration
 
 ### Model Configuration
 
@@ -324,7 +334,7 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ---
 
-## Slide 22: Create Custom Models
+## Slide 23: Create Custom Models
 
 ### Create Custom Models
 
@@ -342,7 +352,7 @@ Students select your custom model to use its instructions and resources.
 
 ---
 
-## Slide 23: Structure System Prompts
+## Slide 24: Structure System Prompts
 
 Examples
 
@@ -350,7 +360,7 @@ Examples
 
 ---
 
-## Slide 24: Teach Composition
+## Slide 25: Teach Composition
 
 Example 1
 
@@ -358,7 +368,7 @@ Example 1
 
 ---
 
-## Slide 25: Vague Prompts
+## Slide 26: Vague Prompts
 
 Composition & Writing
 
@@ -380,7 +390,7 @@ Help students write better.
 
 ---
 
-## Slide 26: Add Specifics
+## Slide 27: Add Specifics
 
 Composition & Writing
 
@@ -410,7 +420,7 @@ You are a writing scaffold for a college composition course. Help students devel
 
 ---
 
-## Slide 27: Guide Revision
+## Slide 28: Guide Revision
 
 Composition & Writing
 
@@ -439,7 +449,7 @@ Scroll within this prompt to read more.
 
 ---
 
-## Slide 28: Analyze Primary Sources
+## Slide 29: Analyze Primary Sources
 
 Example 2
 
@@ -447,7 +457,7 @@ Example 2
 
 ---
 
-## Slide 29: Vague Prompts
+## Slide 30: Vague Prompts
 
 History
 
@@ -469,7 +479,7 @@ Analyze historical documents.
 
 ---
 
-## Slide 30: Add Specifics
+## Slide 31: Add Specifics
 
 History
 
@@ -499,7 +509,7 @@ You are a history source-analysis tool. Help students analyze primary sources fr
 
 ---
 
-## Slide 31: Analyze Primary Sources
+## Slide 32: Analyze Primary Sources
 
 History
 
@@ -536,7 +546,7 @@ Scroll within this prompt to read more.
 
 ---
 
-## Slide 32: Analyze Literary Texts
+## Slide 33: Analyze Literary Texts
 
 Example 3
 
@@ -544,7 +554,7 @@ Example 3
 
 ---
 
-## Slide 33: Vague Prompts
+## Slide 34: Vague Prompts
 
 Literature & Cultural Studies
 
@@ -566,7 +576,7 @@ Help with literary analysis.
 
 ---
 
-## Slide 34: Add Specifics
+## Slide 35: Add Specifics
 
 Literature & Cultural Studies
 
@@ -596,7 +606,7 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
 
 ---
 
-## Slide 35: Analyze Literary Texts
+## Slide 36: Analyze Literary Texts
 
 Literature & Cultural Studies
 
@@ -631,7 +641,7 @@ Scroll within this prompt to read more.
 
 ---
 
-## Slide 36: Adapt Research Prompts
+## Slide 37: Adapt Research Prompts
 
 ### Adapt Research Prompts
 
@@ -647,13 +657,13 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Slide 37: Draft System Prompts
+## Slide 38: Draft System Prompts
 
 ### Draft System Prompts
 
 ---
 
-## Slide 38: Define Prompt Components
+## Slide 39: Define Prompt Components
 
 Structure
 
@@ -673,7 +683,7 @@ Draft a system prompt using these components.
 
 ---
 
-## Slide 39: Define Context
+## Slide 40: Define Context
 
 Component 1
 
@@ -698,7 +708,7 @@ The core problem: [specific learning challenge].
 
 ---
 
-## Slide 40: Write Procedures
+## Slide 41: Write Procedures
 
 Component 2
 
@@ -723,7 +733,7 @@ Procedure:
 
 ---
 
-## Slide 41: Set Constraints
+## Slide 42: Set Constraints
 
 Component 3
 
@@ -748,7 +758,7 @@ Constraints:
 
 ---
 
-## Slide 42: Set Tone
+## Slide 43: Set Tone
 
 Component 4
 
@@ -770,7 +780,7 @@ Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[examp
 
 ---
 
-## Slide 43: Specify Format
+## Slide 44: Specify Format
 
 Component 5
 
@@ -796,7 +806,7 @@ Question: [something for the student to consider]
 
 ---
 
-## Slide 44: Refine Instructions
+## Slide 45: Refine Instructions
 
 Refine
 
@@ -804,7 +814,7 @@ Refine
 
 ---
 
-## Slide 45: Extend Instructions
+## Slide 46: Extend Instructions
 
 ### Extend Instructions
 
@@ -826,7 +836,7 @@ Refine
 
 ---
 
-## Slide 46: Review Common Problems
+## Slide 47: Review Common Problems
 
 Watch Out
 
@@ -850,7 +860,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Slide 47: Save Prompts
+## Slide 48: Save Prompts
 
 ### Save Prompts
 
@@ -864,7 +874,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 48: Share Custom Models
+## Slide 49: Share Custom Models
 
 ### Share Custom Models
 
@@ -878,7 +888,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 49: Record Comparisons
+## Slide 50: Record Comparisons
 
 ### Record Comparisons
 
@@ -896,7 +906,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 50: Prepare Source Documents
+## Slide 51: Prepare Source Documents
 
 ### Prepare Source Documents
 
