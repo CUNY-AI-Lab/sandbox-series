@@ -4,9 +4,9 @@ This repository is the consolidated CUNY AI Lab Sandbox workshop series. HTML is
 
 - Read the frontend-design skill before visual changes.
 - Keep H1 and H2 at 32px maximum on desktop, with existing smaller mobile sizes. Preserve the neutral dark palette.
-- Give screenshots nearly the whole slide. Keep supporting instructions in Notes and the complete transcript.
+- Give screenshots nearly the whole slide. Keep supporting instructions in the complete transcript, linked through Outline.
 - Keep mini-agendas and next steps short, beginning with action verbs and containing no definite or indefinite articles.
-- Workshop 1 requires only individual access and Sandbox sign-in before attending. Workspace access is enabled during guided practice there. Later access requirements are recorded in WORKSHOP.md.
+- Workshop 1 requires only individual access and Sandbox sign-in before attending. Later access requirements are recorded in WORKSHOP.md.
 - Preserve exact demonstration prompts and substantive disciplinary examples. Record justified corrections in review manifests.
 - Keep full copy and direct diffs synchronized with `python3 scripts/check_series.py --write`; run without `--write` to verify.
 - Use actual screenshots, with documented crops. Never reconstruct platform UI or invent model outputs.
@@ -14,3 +14,7 @@ This repository is the consolidated CUNY AI Lab Sandbox workshop series. HTML is
 - Do not add Co-Authored-By lines to commits.
 
 Routes are `/`, `/knowledge/`, `/skills/`, and `/examples.html` within the Pages project. Shared assets live in css/, js/, images/, and examples/. Each deck opens directly without a build step.
+
+- Use 2–3 words for slide headings. Omit articles and gerunds. Use documented terms; do not invent conceptual labels.
+- Base platform descriptions on the Sandbox docs and Open WebUI docs. Preserve original workshop examples.
+- Keep Notes and Series out of the footer. Do not bind slide navigation to content swipes or text-selection gestures.

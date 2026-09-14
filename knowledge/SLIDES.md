@@ -1,12 +1,12 @@
-# Curating Knowledge Collections
+# Curate Knowledge Collections
 
-Generated from index.html. Screenshot instructions appear in Notes during presentation.
+Generated from index.html. Screenshot instructions are included below.
 
-## Curating Knowledge Collections — 1
+## Curate Knowledge Collections — 1
 
-### Curating Knowledge Collections
+### Curate Knowledge Collections
 
-Selecting and testing sources for teaching and research
+Upload documents for models to reference in teaching and research
 
 CUNY AI Lab Sandbox
 
@@ -14,9 +14,9 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Curating Knowledge Collections — 2
+## Curate Knowledge Collections — 2
 
-### Curate and check evidence
+### Workshop Agenda
 
 - Confirm Workspace and Knowledge access
 
@@ -26,33 +26,33 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Attach collections to model cards
 
-- Check retrieved evidence
+- Check source citations
 
-- Prepare sources for procedural tasks
+- Choose procedures for skills
 
-Require individual access and Sandbox sign-in from Workshop 1, plus Workspace and Knowledge collection access.
-
----
-
-## Curating Knowledge Collections — 3
-
-### Continue with your configuration
-
-Bring the card and prompt from Composing System Prompts. Today you will add a small collection of sources and examine what the model retrieves.
-
-A teaching project might use an assignment and readings. A research project might use a method, a codebook, and a few source documents.
-
-Keep your baseline response so you can compare the effect of adding those sources.
+Before attending, confirm individual access, Sandbox sign-in, Workspace access, and Knowledge collection access.
 
 ---
 
-## Curating Knowledge Collections — 4
+## Curate Knowledge Collections — 3
 
-### Confirm access and open Workspace
+### Review Custom Models
+
+Open the custom model you used in Workshop 1. You will attach documents and test whether the model can find and cite relevant passages.
+
+Bring course materials, research papers, or other documents you know well enough to check.
+
+Use [system-prompt examples](../examples.html) if you need a prompt to begin.
+
+---
+
+## Curate Knowledge Collections — 4
+
+### Open Workspace
 
 ![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)
 
-Select Models to edit the configuration, or Knowledge to create a collection.
+Open Workspace and select Knowledge to create a collection.
 
 #### Supporting notes
 
@@ -66,13 +66,13 @@ Workspace authoring access is arranged separately from ordinary chat access.
 
 ---
 
-## Curating Knowledge Collections — 5
+## Curate Knowledge Collections — 5
 
-### Keep the model and prompt fixed
+### Review Model Settings
 
 ![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 
-Knowledge attaches in the same editor as the base model and system prompt.
+Review Base Model and System Prompt before attaching documents.
 
 #### Supporting notes
 
@@ -84,27 +84,27 @@ Ask a question that depends on your source material. Save the response before at
 
 ---
 
-## Curating Knowledge Collections — 6
+## Curate Knowledge Collections — 6
 
-### What is a knowledge collection?
+### Knowledge Collections
 
-A knowledge collection holds documents that the Sandbox can retrieve for a model to use as context.
+A knowledge collection contains uploaded documents that a model can search when responding to questions.
 
-Your system prompt describes how to work with evidence. The collection makes selected source material available to that process.
-
-Retrieval does not guarantee that the right passage will be found or that the answer will interpret it accurately.
+Collections support PDFs, Markdown, and plain text. Attach a collection to a custom model under **Knowledge**.
 
 [Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
+[Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
+
 ---
 
-## Curating Knowledge Collections — 7
+## Curate Knowledge Collections — 7
 
-### Create a collection
+### Create Knowledge Collections
 
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 
-Blank form captured in Firefox. No collection was created for this screenshot.
+Enter a collection name and description, set access, and select Create Knowledge.
 
 #### Supporting notes
 
@@ -118,13 +118,13 @@ Blank form captured in Firefox. No collection was created for this screenshot.
 
 ---
 
-## Curating Knowledge Collections — 8
+## Curate Knowledge Collections — 8
 
-### What changes when a source is available?
+### Check Citations
 
 Ask a question with a verifiable answer in one of your documents.
 
-### Teaching example
+### Course Example
 
 What does the assignment require as evidence for the midterm essay?
 
@@ -136,55 +136,55 @@ Check the answer against the original passage. A plausible summary alone does no
 
 ---
 
-## Curating Knowledge Collections — 9
+## Curate Knowledge Collections — 9
 
-### Choose material you can inspect
+### Select Documents
 
-Start with a few readable PDFs, Markdown files, or plain-text documents. Use material you are permitted to process and share.
+Choose documents with clear headings and readable text.
 
-- Include titles, authors, dates, and section headings.
+- Course syllabi, readings, or assignment instructions
 
-- Check extracted text, especially scans and multi-column PDFs.
+- Research papers, methods, or annotated bibliographies
 
-- Keep a source copy so quotations and page references can be checked.
+- Markdown, plain text, or well-formatted PDFs
 
-Uploading a dataset as text does not perform a reliable numerical analysis. Use a suitable tool and verify its computation when the task requires it.
+Check scans and complex PDFs before uploading. Convert them to text if necessary.
 
----
-
-## Curating Knowledge Collections — 10
-
-### How documents reach the model
-
-- The Sandbox extracts text and divides it into passages.
-
-- Retrieval selects passages relevant to a question or search.
-
-- The selected passages become context for a response.
-
-- You check the response against the cited source.
-
-The configuration may use automatic retrieval or a native knowledge tool. Inspect the actual retrieval or tool result rather than assuming every file was read.
-
-[Retrieval and indexing](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
-## Curating Knowledge Collections — 11
+## Curate Knowledge Collections — 10
+
+### Retrieve Source Passages
+
+- Uploaded documents are divided into passages and indexed for search.
+
+- Retrieval finds passages relevant to a question.
+
+- The model uses those passages to generate a response.
+
+Check that retrieved passages address your question and support the response.
+
+[Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
+
+---
+
+## Curate Knowledge Collections — 11
 
 Example 1
 
-### What Makes an Effective Knowledge Collection?
+### Organize Source Documents
 
 Starting with Composition & Writing
 
 ---
 
-## Curating Knowledge Collections — 12
+## Curate Knowledge Collections — 12
 
 Composition & Writing
 
-### The Bare Minimum
+### Incomplete Collections
 
 **Weak**
 
@@ -193,7 +193,7 @@ Collection contents:
 • syllabus.pdf (14 pages, full course syllabus)
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - The syllabus may not contain the evidence needed for a revision question. Check which passages are retrieved.
 
@@ -203,11 +203,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 13
+## Curate Knowledge Collections — 13
 
 Composition & Writing
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -218,7 +218,7 @@ Collection contents:
 • mla-style-guide.pdf
 ```
 
-### What improved?
+### Compare Improvements
 
 - Separate documents let the model find what it needs
 
@@ -226,7 +226,7 @@ Collection contents:
 
 - Style guide helps with formatting questions
 
-### What's still missing?
+### Add Detail
 
 - No course readings for the model to reference during analysis
 
@@ -236,11 +236,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 14
+## Curate Knowledge Collections — 14
 
 Composition & Writing
 
-### A Collection That Grounds Revision
+### Support Revision
 
 **Strong**
 
@@ -263,19 +263,19 @@ Reference Materials
 
 ---
 
-## Curating Knowledge Collections — 15
+## Curate Knowledge Collections — 15
 
 Example 2
 
-### Primary Source Analysis
+### Analyze Primary Sources
 
 ---
 
-## Curating Knowledge Collections — 16
+## Curate Knowledge Collections — 16
 
 History
 
-### The Bare Minimum
+### Incomplete Collections
 
 **Weak**
 
@@ -284,7 +284,7 @@ Collection contents:
 • textbook-chapter-12.pdf (42 pages)
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - A general textbook chapter may not answer a question about a particular primary source.
 
@@ -294,11 +294,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 17
+## Curate Knowledge Collections — 17
 
 History
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -310,7 +310,7 @@ Collection contents:
 • primary-source-2.pdf (Congressional testimony, 1871)
 ```
 
-### What improved?
+### Compare Improvements
 
 - Includes actual primary sources students are working with
 
@@ -318,7 +318,7 @@ Collection contents:
 
 - Documents are separate and focused
 
-### What's still missing?
+### Add Detail
 
 - No contextual background for the model to draw on when students ask about the period
 
@@ -328,11 +328,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 18
+## Curate Knowledge Collections — 18
 
 History
 
-### A Collection for Historical Inquiry
+### Compare Primary Sources
 
 **Strong**
 
@@ -356,19 +356,19 @@ Reference Materials
 
 ---
 
-## Curating Knowledge Collections — 19
+## Curate Knowledge Collections — 19
 
 Example 3
 
-### Close Reading & Literary Analysis
+### Analyze Literary Texts
 
 ---
 
-## Curating Knowledge Collections — 20
+## Curate Knowledge Collections — 20
 
 Literature & Cultural Studies
 
-### The Bare Minimum
+### Incomplete Collections
 
 **Weak**
 
@@ -377,7 +377,7 @@ Collection contents:
 • course-reader.pdf (180 pages, all readings for the semester)
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - An omnibus reader can make it harder to identify the relevant text. Check whether retrieval selects the intended source.
 
@@ -387,11 +387,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 21
+## Curate Knowledge Collections — 21
 
 Literature & Cultural Studies
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -403,7 +403,7 @@ Collection contents:
 • new-criticism-overview.pdf
 ```
 
-### What improved?
+### Compare Improvements
 
 - Individual literary text rather than an omnibus reader
 
@@ -411,7 +411,7 @@ Collection contents:
 
 - Critical framework document gives the model methodological grounding
 
-### What's still missing?
+### Add Detail
 
 - No annotated examples showing how to move from observation to interpretation
 
@@ -421,11 +421,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 22
+## Curate Knowledge Collections — 22
 
 Literature & Cultural Studies
 
-### A Collection for Close Reading
+### Support Textual Analysis
 
 **Strong**
 
@@ -447,41 +447,39 @@ Literary Texts (Current Unit)
 
 ---
 
-## Curating Knowledge Collections — 23
+## Curate Knowledge Collections — 23
 
-### A research collection
+### Compare Research Methods
 
-For a small qualitative coding exercise, begin with a codebook, a methods note, and a few public or approved excerpts.
+Build a collection from research papers or methods you want to compare.
 
-- Keep definitions and exclusion criteria with the codebook.
+- Identify a question that requires consulting those sources.
 
-- Identify each excerpt and preserve enough context to interpret it.
+- Ask the model to compare specific claims or methods.
 
-- Record competing codes and the evidence for each judgment.
+- Check its citations against the uploaded documents.
 
-Test whether the model distinguishes source language from its own interpretation. Compare its suggestion with your independent reading.
-
----
-
-## Curating Knowledge Collections — 24
-
-### Curate around the task
-
-Begin with a small set of sources you know well. Add documents when a test reveals a specific gap.
-
-- Use descriptive names and headings, then inspect retrieval.
-
-- Keep versions visible when a syllabus, protocol, or codebook changes.
-
-- Add notes that explain how the sources relate to the task.
-
-Focused files can make a collection easier to maintain. Their length alone does not establish retrieval quality.
+[Knowledge collections for research](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
-## Curating Knowledge Collections — 25
+## Curate Knowledge Collections — 24
 
-### Diagnose a weak answer
+### Organize Documents
+
+Begin with a small collection so you can test how the model uses your materials.
+
+- Name files so students or colleagues can identify them.
+
+- Use headings to distinguish sections.
+
+- Check whether the model retrieves the passages you need before adding more documents.
+
+---
+
+## Curate Knowledge Collections — 25
+
+### Check Retrieval Problems
 
 | Observation | Next check |
 | --- | --- |
@@ -493,20 +491,19 @@ Save the failed response before making one change.
 
 ---
 
-## Curating Knowledge Collections — 26
+## Curate Knowledge Collections — 26
 
 Part IV
 
-### Building Your
-Knowledge Collection
+### Build Knowledge Collections
 
 Three types of references to consider, then steps for how to create, curate, and use your first collection.
 
 ---
 
-## Curating Knowledge Collections — 27
+## Curate Knowledge Collections — 27
 
-### Types of Reference Material
+### Choose Reference Materials
 
 Think about which type of course document you would add first
 
@@ -518,11 +515,11 @@ Think about which type of course document you would add first
 
 ---
 
-## Curating Knowledge Collections — 28
+## Curate Knowledge Collections — 28
 
 Type 1
 
-### Course Context
+### Describe Course Context
 
 These documents describe course goals, structure, and methods students are expected to use.
 
@@ -547,11 +544,11 @@ Recommended uploads:
 
 ---
 
-## Curating Knowledge Collections — 29
+## Curate Knowledge Collections — 29
 
 Type 2
 
-### Assignment Materials
+### Describe Assignments
 
 These documents define the current task and help the model align its responses with your specific learning objectives.
 
@@ -578,11 +575,11 @@ Recommended uploads:
 
 ---
 
-## Curating Knowledge Collections — 30
+## Curate Knowledge Collections — 30
 
 Type 3
 
-### Source Materials
+### Identify Sources
 
 Upload the readings and reference materials students are working with in the current unit. This grounds the model in the actual texts.
 
@@ -610,29 +607,29 @@ Recommended uploads:
 
 ---
 
-## Curating Knowledge Collections — 31
+## Curate Knowledge Collections — 31
 
-### Use the same structure for research
+### Select Research Materials
 
-The preceding templates use course materials. For a research task, substitute the following documents.
+Use the preceding templates to describe research materials.
 
-Project context
+Research context
 
-Research question, scope, method, and definitions.
+Describe your question, scope, and method.
 
-Task criteria
+Instructions
 
-Codebook, inclusion criteria, or comparison procedure.
+Include a codebook, protocol, or criteria for comparing sources.
 
 Sources
 
-Public or approved excerpts with stable identifiers and provenance.
+Identify the documents and passages you want to examine.
 
 ---
 
-## Curating Knowledge Collections — 32
+## Curate Knowledge Collections — 32
 
-### Upload, inspect, and attach
+### Attach Knowledge Collections
 
 - Open your collection and upload the first few documents. Wait for processing to finish.
 
@@ -646,9 +643,9 @@ Public or approved excerpts with stable identifiers and provenance.
 
 ---
 
-## Curating Knowledge Collections — 33
+## Curate Knowledge Collections — 33
 
-### Test evidence and absence
+### Test Retrieval
 
 - Ask a question answered by one source. Verify the answer and quotation.
 
@@ -660,23 +657,25 @@ Repeat the baseline question with the model and prompt unchanged. Record the col
 
 ---
 
-## Curating Knowledge Collections — 34
+## Curate Knowledge Collections — 34
 
-### Share the collection deliberately
+### Share Knowledge Collections
 
-Check access to the card, base model, and collection with an ordinary participant account.
+Share the knowledge collection with the people who will use the custom model.
 
-Give the intended group read access when the materials are ready. Public access, where available, means signed-in Sandbox users.
+- Use **Add Access** to grant users or groups **Read** access.
 
-Retrieved passages enter the model request and can appear in responses. Provider retention settings do not make the source confidential from the people who can use or administer the chat.
+- Check that participants can use the model and retrieve from the collection.
 
-[Sharing and permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+- Choose **Public** only for documents intended for all signed-in Sandbox users.
+
+[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
 ---
 
-## Curating Knowledge Collections — 35
+## Curate Knowledge Collections — 35
 
-### Prepare for Skills & Tools
+### Prepare Skill Instructions
 
 - Save source lists and retrieval tests
 
@@ -686,4 +685,4 @@ Retrieved passages enter the model request and can appear in responses. Provider
 
 - Review [system-prompt examples](../examples.html)
 
-- Continue to [Customizing Skills & Tools](../skills/)
+- Continue to [Skills & Tools](../skills/)

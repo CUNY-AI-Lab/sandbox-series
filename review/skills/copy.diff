@@ -1,19 +1,22 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,284 +1,176 @@
+@@ -1,296 +1,190 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
-+# Customizing Skills & Tools
-+
-+Generated from index.html. Screenshot instructions appear in Notes during presentation.
-+
-+## Customizing Skills & Tools — 1
- 
- ### Customizing Skills & Tools
- 
+-
+-### Customizing Skills & Tools
+-
 -A Workshop for the [CUNY AI Lab Sandbox](https://chat.ailab.gc.cuny.edu)
 -
 -March 30, 2026
-+Writing procedures and testing model actions
++# Skills & Tools
++
++Generated from index.html. Screenshot instructions are included below.
++
++## Skills & Tools — 1
++
++### Skills & Tools
++
++Add tools and reusable instructions for teaching and research
 +
 +CUNY AI Lab Sandbox
  
@@ -290,9 +293,9 @@
 -Create from descriptions
 -
 ----
-+## Customizing Skills & Tools — 2
++## Skills & Tools — 2
 +
-+### Write and test procedures
++### Workshop Agenda
 +
 +- Confirm Skills and Tools access
 +
@@ -300,33 +303,33 @@
 +
 +- Write skill instructions
 +
-+- Attach skills and enable native calling
++- Attach skills to models
 +
 +- Inspect tool calls and results
 +
-+- Retest complete configurations
++- Test models with skills and tools
 +
-+Require individual access and Sandbox sign-in from Workshop 1, plus Skills and Tools access. Request Workspace authoring access for creation and editing.
++Before attending, confirm individual access, Sandbox sign-in, and Skills and Tools access. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.
 +
 +Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.
 +
 +---
 +
-+## Customizing Skills & Tools — 3
++## Skills & Tools — 3
 +
-+### Continue with a tested task
++### Review Previous Work
 +
-+Bring your system prompt, collection, and saved tests. Choose a repeatable procedure you use in teaching or research.
++Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
 +
-+Today you will write it as a skill, connect it to a card, and check what happens when the model needs a tool.
++You will write skill instructions, attach them to the model, and test a request that uses them.
 +
-+Keep the earlier configuration as a baseline.
++Bring a knowledge collection if the procedure needs to search your documents.
 +
 +---
 +
-+## Customizing Skills & Tools — 4
++## Skills & Tools — 4
 +
-+### Choose one procedure
++### Choose Procedures
 +
 +- For teaching, guide a student through a source one question at a time.
 +
@@ -338,27 +341,29 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 5
++## Skills & Tools — 5
 +
-+### What is a skill?
++### Define Skills
 +
-+A skill is a reusable set of instructions for a particular task. It can describe when to act, what steps to follow, and how to present the result.
++Skills contain reusable Markdown instructions for tasks or procedures.
 +
-+The system prompt establishes the general role and constraints. A skill gives a recurring procedure its own place to be edited and reused.
++The model receives a skill’s name and description and can load its full instructions when needed.
 +
-+Loading the instructions and following them are both behaviors to test.
++Describe when the skill should be used and what steps it should follow.
 +
 +[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 +
++[Open WebUI Skills](https://docs.openwebui.com/features/workspace/skills/)
++
 +---
 +
-+## Customizing Skills & Tools — 6
++## Skills & Tools — 6
 +
-+### Create the skill
++### Create Skills
 +
 +![Current Skill editor showing name, ID, description, Access, and instructions](../images/current/skill-editor.png)
 +
-+The blank editor was captured in Firefox. Save & Create appears below the instruction field.
++Enter a name, description, and instructions, then select Save & Create.
 +
 +#### Supporting notes
 +
@@ -372,27 +377,27 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 7
++## Skills & Tools — 7
 +
-+### Attach it and check loading
++### Attach Skills
 +
-+- Open your card in **Workspace → Models**.
++- Open **Workspace → Models** and edit your model.
 +
-+- Select the skill in **Skills**.
++- Select the skill under **Skills**.
 +
-+- Under **Advanced Params**, set **Function Calling → Native** as described in the Sandbox docs.
++- Set **Function Calling** to **Native** under **Advanced Parameters**.
 +
-+- Use **Save & Update**, start a fresh chat, and test the skill’s trigger.
++- Select **Save & Update** and test a request that uses the skill.
 +
-+Choose an available model that supports the required tool calling. Inspect whether the skill was loaded and whether its steps were followed.
++Use a model that supports tool calling.
 +
-+[Skill configuration and native function calling](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++[Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 +
 +---
 +
-+## Customizing Skills & Tools — 8
++## Skills & Tools — 8
 +
-+### Compare the procedure in use
++### Compare Responses
 +
 +Try the same request before and after attaching the skill. Keep the base model, sources, and system prompt fixed.
 +
@@ -406,13 +411,13 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 9
++## Skills & Tools — 9
 +
-+### What is a tool?
++### Enable Tools
 +
 +![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
 +
-+The menu is beside the plus button in the message composer.
++Open Integrations beside the plus button to enable tools for this chat.
 +
 +#### Supporting notes
 +
@@ -426,40 +431,45 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 10
++## Skills & Tools — 10
 +
-+### Match the procedure to its capabilities
++### Tools & Skills
 +
-+Skill instructions
++Skills
 +
-+Describe how to search, evaluate a result, or ask the next question.
++Instructions the model can load for a task or procedure.
 +
-+Tool operation
++Tools
 +
-+Retrieves material or performs a computation the model can inspect.
++Operations the model can call, such as web search, code execution, or database queries.
 +
-+Your evaluation
++Test a request that needs the skill or tool. Check what the model used and whether its response is correct.
 +
-+Checks the operation, its result, and the claim made from it.
-+
-+Workspace tools can run server-side Python. External MCP or OpenAPI tools connect to other services. Use reviewed tools made available by the Lab.
++[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 +
 +---
 +
-+## Customizing Skills & Tools — 11
++## Skills & Tools — 11
  
  Example 1
  
-@@ -288,6 +180,8 @@
+-### Establishing Stasis
++### Establish Stasis
+ 
+ Composition — Stasis Theory
  
  ---
  
-+## Customizing Skills & Tools — 12
++## Skills & Tools — 12
 +
  Composition & Writing
  
- ### Before
-@@ -306,9 +200,11 @@
+-### Before
++### Original Instructions
+ 
+ **Starting Point**
+ 
+@@ -306,13 +200,15 @@
  
  - No mechanism to let the student reformulate before moving on
  
@@ -470,63 +480,88 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 13
++## Skills & Tools — 13
  
  Composition & Writing
  
-@@ -337,6 +233,8 @@
+-### After
++### Revised Instructions
+ 
+ **Strong**
+ 
+@@ -337,17 +233,21 @@
  
  ---
  
-+## Customizing Skills & Tools — 14
++## Skills & Tools — 14
 +
  Example 2
  
- ### Sourcing a Document
-@@ -345,6 +243,8 @@
+-### Sourcing a Document
++### Examine Documents
+ 
+ History — The Sourcing Heuristic
  
  ---
  
-+## Customizing Skills & Tools — 15
++## Skills & Tools — 15
 +
  History
  
- ### Before
-@@ -366,6 +266,8 @@
- - No requirement to ground each analytical move in the source’s own language
+-### Before
++### Original Instructions
+ 
+ **Starting Point**
+ 
+@@ -367,9 +267,11 @@
  
  ---
-+
-+## Customizing Skills & Tools — 16
  
++## Skills & Tools — 16
++
  History
  
-@@ -396,6 +298,8 @@
+-### After
++### Revised Instructions
+ 
+ **Strong**
+ 
+@@ -396,17 +298,21 @@
  
  ---
  
-+## Customizing Skills & Tools — 17
++## Skills & Tools — 17
 +
  Example 3
  
- ### Reading the Frame
-@@ -404,6 +308,8 @@
+-### Reading the Frame
++### Analyze Images
+ 
+ Literature — Cinematic Mise-en-Scène
  
  ---
  
-+## Customizing Skills & Tools — 18
++## Skills & Tools — 18
 +
  Literature & Cultural Studies
  
- ### Before
-@@ -425,6 +331,8 @@
- - Skips the gap between “what’s in the frame” and “what argument it makes”
+-### Before
++### Original Instructions
+ 
+ **Starting Point**
+ 
+@@ -426,9 +332,11 @@
  
  ---
-+
-+## Customizing Skills & Tools — 19
  
++## Skills & Tools — 19
++
  Literature & Cultural Studies
+ 
+-### After
++### Revised Instructions
+ 
+ **Strong**
  
 @@ -437,7 +345,7 @@
  When a student uploads a film still, photograph, or visual artifact — or asks about an image from the knowledge collection — follow this procedure:
@@ -541,21 +576,26 @@
  
  ---
  
-+## Customizing Skills & Tools — 20
++## Skills & Tools — 20
 +
  Building Blocks
  
- ### Writing Your Own Skills
- 
- ---
- 
-+## Customizing Skills & Tools — 21
+-### Writing Your Own Skills
+-
+----
++### Write Skills
 +
++---
++
++## Skills & Tools — 21
+ 
  Structure
  
- ### Anatomy of a Skill
- 
+-### Anatomy of a Skill
+-
 -Every skill has three parts.
++### Structure Skills
++
 +Use three parts to draft this skill.
  
  - **Trigger** — When should this skill activate?
@@ -564,18 +604,20 @@
  
  ---
  
-+## Customizing Skills & Tools — 22
++## Skills & Tools — 22
 +
  Component 1
  
- ### Trigger
- 
+-### Trigger
+-
 -Define when this skill should activate. A clear trigger keeps the model from applying the wrong procedure to the wrong task.
++### Define Triggers
++
 +Define when this skill should activate. Test the trigger with a matching request and an unrelated request.
  
  - What student action starts this workflow?
  
-@@ -489,9 +403,11 @@
+@@ -489,13 +403,15 @@
  When a student [specific action or input], follow this procedure:
  ```
  
@@ -586,11 +628,16 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 23
++## Skills & Tools — 23
  
  Component 2
  
-@@ -513,9 +429,11 @@
+-### Procedure
++### Write Procedures
+ 
+ The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.
+ 
+@@ -513,13 +429,15 @@
  4. [Final step — synthesis, next action, or handoff]
  ```
  
@@ -601,11 +648,16 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 24
++## Skills & Tools — 24
  
  Component 3
  
-@@ -537,17 +455,21 @@
+-### Format
++### Specify Format
+ 
+ Specify what the output should look like. Without a format, the model structures responses however it wants.
+ 
+@@ -537,57 +455,63 @@
  [One question for the student]
  ```
  
@@ -616,44 +668,82 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 25
++## Skills & Tools — 25
  
  Hands-On
  
- ### Write Your First Skill
- 
+-### Write Your First Skill
+-
 -Pick one pedagogical move from your course and turn it into a step-by-step recipe.
 -
 ----
++### Draft Skills
++
 +Choose a teaching or research procedure and write steps that another person can inspect.
 +
 +---
 +
-+## Customizing Skills & Tools — 26
++## Skills & Tools — 26
  
  Exercise
  
-@@ -569,15 +491,17 @@
+-### Choose Your Move
++### Choose Procedures
  
- ### Something Else
+ Which is closest to the skill you want to build?
  
+-### Establishing Stasis
++### Establish Stasis
+ 
+ Narrow a research topic one question at a time
+ 
+-### Sourcing a Document
++### Examine Documents
+ 
+ Quote, then ask who, when, for whom
+ 
+-### Reading the Frame
++### Analyze Images
+ 
+ Describe → analyze → interpret
+ 
+-### Something Else
+-
 -Any repeatable pedagogical move
 -
 ----
++### Choose Alternatives
++
 +A repeatable teaching or research procedure
 +
 +---
 +
-+## Customizing Skills & Tools — 27
++## Skills & Tools — 27
  
  Draft It
  
- ### Write Your Skill
- 
+-### Write Your Skill
+-
 -Use the four-part structure to write a skill for the move you chose.
+-
+-### 1. Trigger
++### Write Instructions
++
 +Use the three-part structure to write a skill for the move you chose.
++
++### Define Triggers
  
- ### 1. Trigger
+ What student action starts this?
+ 
+-### 2. Procedure
++### Write Procedures
+ 
+ 3–5 numbered steps with wait points.
+ 
+-### 3. Format
++### Specify Format
+ 
+ What does each response look like?
  
 @@ -609,69 +533,97 @@
  
@@ -725,9 +815,9 @@
 -That way, you can see what each component contributes and where to focus before you introduce it in the classroom.
 -
 -[ailab.gc.cuny.edu](https://ailab.gc.cuny.edu)
-+## Customizing Skills & Tools — 28
++## Skills & Tools — 28
 +
-+### A research skill to adapt
++### Check Source Claims
 +
 +Use this draft to check an interpretation against a source passage.
 +
@@ -746,9 +836,9 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 29
++## Skills & Tools — 29
 +
-+### Save and test the skill
++### Test Skills
 +
 +Create the skill, attach it to your model, confirm native function calling, and save the card. Open a fresh chat with the card.
 +
@@ -762,9 +852,9 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 30
++## Skills & Tools — 30
 +
-+### Watch a tool call
++### Inspect Tool Results
 +
 +With an available search tool, ask for the title and link of a source relevant to a narrow question. Open the returned page and verify the claim.
 +
@@ -774,9 +864,9 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 31
++## Skills & Tools — 31
 +
-+### Test a tool result against a known answer
++### Check Calculations
 +
 +For Code Interpreter, use this small, invented dataset.
 +
@@ -790,9 +880,9 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 32
++## Skills & Tools — 32
 +
-+### Keep the evidence with the configuration
++### Record Test Results
 +
 +| Record | Include |
 +| --- | --- |
@@ -804,9 +894,9 @@
 +
 +---
 +
-+## Customizing Skills & Tools — 33
++## Skills & Tools — 33
 +
-+### Continue testing your configuration
++### Repeat Tests
 +
 +- Save prompts, sources, skills, and tool settings
 +
@@ -818,4 +908,4 @@
 +
 +- Retest after model or tool updates
 +
-+[Browse system-prompt examples](../examples.html) · [Return to Composing System Prompts](../)
++[Browse system-prompt examples](../examples.html) · [Return to Compose System Prompts](../)

@@ -30,7 +30,7 @@ font-size:21px}
 --body:21px;
 --heading:26px}
 #deck{
-height:calc(100dvh - 62px)}
+height:calc(100dvh - 112px)}
 .slide-inner{
 padding:28px 23px;
 justify-content:flex-start;
@@ -101,16 +101,26 @@ border:0;
 padding:4px 0;
 font-size:20px}
 #nav-bar{
-height:62px;
-gap:3px;
-padding:0 10px;
-font-size:14px}
+height:112px;
+display:grid;
+grid-template-columns:44px 60px 44px 1fr;
+grid-template-rows:44px 44px;
+gap:4px 8px;
+padding:8px 16px;
+font-size:15px}
 #nav-bar button{
-font-size:14px;
-padding:7px;
-min-height:42px}
+font-size:15px;
+padding:8px;
+min-width:44px;
+min-height:44px}
 #slide-progress{
-margin:0 6px}
+grid-column:1 / -1;
+grid-row:1;
+width:100%;
+min-width:0;
+height:44px;
+margin:0}
+#overview-button{justify-self:end}
 .nav-info{
 min-width:50px}
 #nav-bar svg{
@@ -154,7 +164,7 @@ color:black;
 font-size:14pt}
 #deck{
 height:auto}
-#nav-bar,dialog,#facilitator-notes,.copy-btn,.skip-link,.sr-only{
+#nav-bar,dialog,.copy-btn,.skip-link,.sr-only{
 display:none!important}
 .slide{
 display:block!important;
@@ -218,6 +228,5 @@ max-height:none}
 .slide-notes[hidden] { display:none; }
 .agenda { display:grid; gap:12px; }
 .agenda li+li { margin:0; }
-#facilitator-notes #note-text { white-space:pre-line; }
 @media(max-width:600px) { .screenshot-slide .slide-inner { padding:16px 10px 8px; gap:10px; } .screenshot-slide h1 { font-size:28px; } .screenshot-slide figcaption { font-size:13px; } }
 @media print { .screenshot-slide .slide-inner { height:auto; } .screenshot-slide .screenshot-img { height:auto; max-height:70vh; } .slide-notes[hidden] { display:block; } }
