@@ -1,18 +1,39 @@
 #!/usr/bin/env python3
 """Validate all decks and keep complete copy/diffs synchronized. Standard library only."""
 from pathlib import Path
-import re,json,difflib,hashlib,sys,subprocess
+import re,json,difflib,hashlib,sys,subprocess,posixpath
 from check_workshop import Parser,Node,render
 R=Path(__file__).resolve().parents[1];write='--write' in sys.argv;issues=[];sections=[]
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
+def check_title(title,location):
+ words=re.findall(r"[\w]+(?:[’'-][\w]+)*",title)
+ if not 2 <= len(words) <= 3:issues.append(location+' heading length: '+title)
+ if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(location+' article in heading: '+title)
+ # Slide headings use short nouns or action verbs, without -ing forms.
+ if any(w.lower().endswith('ing') for w in words):issues.append(location+' -ing form in heading: '+title)
+
+def participant_text(node):
+ if isinstance(node,str):return node
+ if node.tag in {'pre','script','style'} or node.has_class('prompt-block'):return ''
+ return ' '.join(participant_text(child) for child in node.children)
+
+def check_participant_copy(tree,location):
+ for heading in tree.all(lambda n:n.tag in {'h1','h2','h3','h4'}):check_title(heading.text().strip(),location)
+ for slide in tree.all(lambda n:n.has_class('slide')):
+  check_title(slide.attrs.get('data-title',''),location+' outline')
+  headings=slide.all(lambda n:n.tag in {'h1','h2'})
+  if not headings or headings[0].text().strip()!=slide.attrs.get('data-title'):issues.append(location+' heading and outline disagree')
+ text=participant_text(tree)
+ if re.search(r'\b(facilitator|presenter)\b',text,re.I):issues.append(location+' presenter directions in participant copy')
+ for phrase in ['preserve their original disciplinary purposes','instruction drafts, not measured outcomes','these excerpts are discussion material']:
+  if phrase in text.lower():issues.append(location+' editorial commentary in participant copy: '+phrase)
+ if tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')):issues.append(location+' presenter plan linked from participant material')
+
 retained=json.loads((R/'review/imported-copy.json').read_text()); found={};count=0
 for route,label in [('', 'Compose System Prompts'),('knowledge','Curate Knowledge Collections'),('skills','Skills & Tools')]:
  base=R/route;tree=Parser((base/'index.html').read_text()).root;slides=tree.all(lambda n:n.has_class('slide'));count+=len(slides)
- for heading in tree.all(lambda n:n.tag in {'h1','h2','h3','h4'}):
-  title=heading.text().strip()
-  if not 2 <= len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title)) <= 3:issues.append(route+' heading length: '+title)
-  if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(route+' article in heading: '+title)
+ check_participant_copy(tree,route or 'prompts')
  if tree.all(lambda n:n.attrs.get('id') in {'notes-button','series-button'}):issues.append(route+' removed footer control returned')
  ids=[n.attrs['id'] for n in tree.all(lambda n:'id' in n.attrs)]
  if len(ids)!=len(set(ids)):issues.append(route+' duplicate ids')
@@ -34,9 +55,9 @@ for route,label in [('', 'Compose System Prompts'),('knowledge','Curate Knowledg
    if not p.exists():issues.append(route+' missing resource '+target)
  content='\n\n---\n\n'.join('## '+label+' — '+str(i)+'\n\n'+re.sub(r'\n{3,}','\n\n',render(s)).strip() for i,s in enumerate(slides,1))+'\n'
  content=clean(content)
- sections.append(content)
+ sections.append(re.sub(r'\]\((?!https?:|mailto:|#)([^)]+)\)',lambda m:']('+posixpath.normpath(route+'/'+m.group(1))+')',content) if route else content)
  if route:
-  mirror='# '+label+'\n\nGenerated from index.html. Screenshot instructions are included below.\n\n'+content
+  mirror='# '+label+'\n\n'+content
   dest=base/'SLIDES.md'
   if write:dest.write_text(mirror)
   elif not dest.exists() or dest.read_text()!=mirror:issues.append(route+' mirror out of sync')
@@ -54,13 +75,11 @@ for key,record in retained.items():
 for manifest,folder in [('screenshot-sources.json','current'),('showcase-sources.json','showcase')]:
  for x in json.loads((R/'review'/manifest).read_text())['images']:
   if hashlib.sha256((R/'images'/folder/x['file']).read_bytes()).hexdigest()!=x['sha256']:issues.append('Image hash mismatch '+x['file'])
-full='# Sandbox workshop series — full slide copy\n\nGenerated from all three HTML decks. This includes screenshot captions and supporting instructions.\n\n'+'\n\n'.join(sections)
+full='# Sandbox Workshops\n\n'+'\n\n'.join(sections)
 if write:(R/'SLIDES.md').write_text(full)
 elif not (R/'SLIDES.md').exists() or (R/'SLIDES.md').read_text()!=full:issues.append('Full copy out of sync')
 example_tree=Parser((R/'examples.html').read_text()).root
-for heading in example_tree.all(lambda n:n.tag in {'h1','h2','h3','h4'}):
- title=heading.text().strip()
- if not 2 <= len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title)) <= 3 or re.search(r'\b(a|an|the)\b',title,re.I):issues.append('examples heading: '+title)
+check_participant_copy(example_tree,'examples')
 r=subprocess.run([sys.executable,str(R/'scripts/check_workshop.py')]+(['--write'] if write else []),capture_output=True,text=True)
 if r.returncode:issues.append(r.stdout)
 print(f'{count} slides across three workshops; {len(retained)} imported sections checked; image provenance and links checked.')

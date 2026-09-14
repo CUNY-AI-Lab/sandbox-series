@@ -1,7 +1,5 @@
 # Curate Knowledge Collections
 
-Generated from index.html. Screenshot instructions are included below.
-
 ## Curate Knowledge Collections — 1
 
 ### Curate Knowledge Collections
@@ -38,7 +36,7 @@ Before attending, confirm individual access, Sandbox sign-in, Workspace access, 
 
 ### Review Custom Models
 
-Open the custom model you used in Workshop 1. You will attach documents and test whether the model can find and cite relevant passages.
+Open the custom model you used in Workshop 1. Attach documents and test whether the model can find and cite relevant passages.
 
 Bring course materials, research papers, or other documents you know well enough to check.
 
@@ -54,13 +52,11 @@ Use [system-prompt examples](../examples.html) if you need a prompt to begin.
 
 Open Workspace and select Knowledge to create a collection.
 
-#### Supporting notes
-
 Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
 
-If you are joining here, use the sample prompt from the first workshop and choose a base model you can test.
+To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](../examples.html).
 
-Workspace authoring access is arranged separately from ordinary chat access.
+Request Workspace access from the CUNY AI Lab if the tab is unavailable.
 
 [Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
@@ -73,8 +69,6 @@ Workspace authoring access is arranged separately from ordinary chat access.
 ![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 
 Review Base Model and System Prompt before attaching documents.
-
-#### Supporting notes
 
 Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
 
@@ -105,8 +99,6 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 
 Enter a collection name and description, set access, and select Create Knowledge.
-
-#### Supporting notes
 
 - Open **Workspace → Knowledge → Create**.
 
@@ -175,8 +167,6 @@ Check that retrieved passages address your question and support the response.
 Example 1
 
 ### Organize Source Documents
-
-Starting with Composition & Writing
 
 ---
 
@@ -493,11 +483,9 @@ Save the failed response before making one change.
 
 ## Curate Knowledge Collections — 26
 
-Part IV
-
 ### Build Knowledge Collections
 
-Three types of references to consider, then steps for how to create, curate, and use your first collection.
+Choose documents that explain your course or research project, define the task, and provide source material.
 
 ---
 
@@ -611,7 +599,7 @@ Recommended uploads:
 
 ### Select Research Materials
 
-Use the preceding templates to describe research materials.
+Describe your research project and the sources you want the model to use.
 
 Research context
 
@@ -665,7 +653,7 @@ Share the knowledge collection with the people who will use the custom model.
 
 - Use **Add Access** to grant users or groups **Read** access.
 
-- Check that participants can use the model and retrieve from the collection.
+- Check access with someone you shared the model and collection with.
 
 - Choose **Public** only for documents intended for all signed-in Sandbox users.
 

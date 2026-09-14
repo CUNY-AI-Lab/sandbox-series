@@ -18,3 +18,6 @@ Routes are `/`, `/knowledge/`, `/skills/`, and `/examples.html` within the Pages
 - Use 2–3 words for slide headings. Omit articles and gerunds. Use documented terms; do not invent conceptual labels.
 - Base platform descriptions on the Sandbox docs and Open WebUI docs. Preserve original workshop examples.
 - Keep Notes and Series out of the footer. Do not bind slide navigation to content swipes or text-selection gestures.
+
+- Address participants in all slide text, captions, image alternatives, and prompt-reference introductions, including hidden instructions reproduced in transcripts. Keep presenter directions and editorial commentary in WORKSHOP.md or review files, outside participant navigation.
+- Verify every slide heading and Outline title uses 2–3 words without articles or gerunds. Keep both titles identical.
