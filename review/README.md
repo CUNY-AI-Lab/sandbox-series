@@ -1,6 +1,8 @@
 # Copy Review
 
-Latest revisions — [Short system prompt](short-prompt-review.md) · [Direct diff](short-prompt.diff).
+Latest revisions — [System prompt instructions](terminology-review.md) · [Direct diff](terminology.diff).
+
+Previous revisions — [Short system prompt](short-prompt-review.md) · [Direct diff](short-prompt.diff).
 
 Previous revisions — [Prompt sequence and annotated controls](prompt-sequence-review.md) · [Direct diff](prompt-sequence.diff).
 
