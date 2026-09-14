@@ -1,47 +1,47 @@
-# Sandbox workshop series
+# Sandbox Workshops
 
-Three connected workshops introduce the CUNY AI Lab Sandbox through tasks participants can inspect and revise. Composing System Prompts begins with chat controls and model comparison, then uses an in-chat system prompt to examine how instructions affect a response. Curating Knowledge Collections adds selected source material and checks the evidence behind answers. Customizing Skills & Tools adds reusable procedures and tests whether models carry out the required actions.
+The CUNY AI Lab Sandbox supports teaching, research, and experimentation with open-weight models. These workshops introduce its chat interface, custom models, knowledge collections, skills, and tools through demonstrations and guided exercises.
 
-Teaching and research provide contexts for the work throughout. Evaluation develops through saved comparisons, source checks, and observed tool results. Participants retain inputs, configuration versions, responses, and judgments so they can explain why they changed something.
+Participants first compare models and test system prompts, then upload documents for models to reference. The final workshop introduces reusable skill instructions and tools for operations such as web search and code execution. Participants compare responses, check citations, and test whether models follow their instructions.
 
 [Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read all slide copy](SLIDES.md) · [Browse system-prompt examples](examples.html) · [Review copy changes](review/README.md)
 
-## Roadmap
+## Workshop Roadmap
 
 | Workshop | Activity | Required access | Next steps |
 | --- | --- | --- | --- |
-| Composing System Prompts | Compare models and shape responses through instructions | Individual access approval and Sandbox sign-in | Save tested prompts; request Workspace and Knowledge access |
-| Curating Knowledge Collections | Select sources and check retrieved evidence | Workshop 1 access, Workspace, Knowledge collection access | Save retrieval tests; request Skills and Tools access |
-| Customizing Skills & Tools | Write procedures and inspect model actions | Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing | Save configurations; verify shared access; retest after changes |
+| Compose System Prompts | Configure model behavior with system prompts | Individual access approval and Sandbox sign-in | Save tested prompts; request Workspace and Knowledge access |
+| Curate Knowledge Collections | Upload documents so models can reference them | Workshop 1 access, Workspace, Knowledge collection access | Save retrieval tests; request Skills and Tools access |
+| Skills & Tools | Add web search, code execution, and reusable instructions | Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing | Save configurations; verify shared access; retest after changes |
 
 Workshop 3 needs Knowledge access when the selected procedure retrieves from a collection. Its standalone skill and calculation exercises can be completed without a collection.
 
-## Prepare access and materials
+## Prepare Workshop Access
 
-For individual access, follow [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) to the Lab’s [access application](https://ailab.gc.cuny.edu/request-access/?kind=individual). Choose **My own access**, use CUNY Login, complete the application, and check the verified CUNY email for approval. Then enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Participants do not need an API key for these chat exercises.
+For individual access, follow [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) to the Lab’s [access application](https://ailab.gc.cuny.edu/request-access/). Choose **My own access**, use CUNY Login, complete the application, and check the verified CUNY email for approval. Then enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Participants do not need an API key for these chat exercises.
 
 Workshop 1 requires only individual access and sign-in. The facilitator enables the arranged Workspace access during the midpoint exercise. Participants refresh, inspect the sample card, and can save their tested prompt as a private configuration. If access is delayed, participants follow the demonstration and continue testing in chat. Before Workshop 2, arrange Workspace and Knowledge access with the Lab. Before Workshop 3, arrange Skills and Tools access, including authoring permissions for participants who will create or edit resources. Confirm which base models and capabilities are available to the group.
 
-Prepare **Question & Assumption Check** as a demonstration card using [this sample prompt](examples/assumption-check.txt) and a tested base model. The published screenshots show blank editors and do not establish that this live card has been created. Keep a plain-text copy available if the demonstration account cannot open it.
+Prepare **Examine Assumptions** as a demonstration card using [this sample prompt](examples/assumption-check.txt) and a tested base model. Keep a plain-text copy available if the demonstration account cannot open it.
 
 Choose two available small models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.
 
-Use public or approved documents for collection and skill exercises. Verify sharing through an ordinary participant account, including access to the card, base model, and attached resources. Course enrollment has a separate invitation route in the documentation; it is not a prerequisite for Workshop 1.
+Use documents you are permitted to upload and share for collection and skill exercises. Verify sharing through an ordinary participant account, including access to the card, base model, and attached resources. Course enrollment has a separate invitation route in the documentation; it is not a prerequisite for Workshop 1.
 
-## Workshop 1 — Composing System Prompts
+## Compose System Prompts
 
 Participants compare model responses, examine assumptions, and test instructions before seeing how a Workspace card can preserve a configuration for reuse. The facilitator models the comparison process on the nurse question, then introduces the car-wash task. Participants take over that task, save a baseline, and compare it with a response shaped by an in-chat system prompt.
 
-### Agenda
+### Workshop Agenda
 
 - Request individual access and sign in
-- Compare small-model responses
-- Test car-wash assumptions
+- Compare responses from small models
+- Compare car-wash responses
 - Revise in-chat system prompts
-- Inspect Workspace configuration
+- Explore Workspace models
 - Save prompts for reuse
 
-### Suggested 90-minute lesson plan
+### Lesson Plan
 
 | Minutes | Facilitation and participant activity | Evidence to retain |
 | --- | --- | --- |
@@ -55,13 +55,13 @@ Participants compare model responses, examine assumptions, and test instructions
 | 75–85 | Test a normal request, an incomplete request, and a request that conflicts with the intended procedure. Revise one instruction and repeat. | Failure, revision, and retest |
 | 85–90 | Share one supported observation. Save prompt versions and comparison notes. Review access needed for Workshop 2. | Next question and access request |
 
-### Opening demonstration
+### Compare Small Models
 
 > The nurse yelled at the doctor because she was late. Who was late?
 
 Send exactly this question to two small models with matching context. Ask which interpretation each response chooses and whether it acknowledges ambiguity. Either person can be the referent of “she”; the sentence does not establish a unique answer. A plausible interpretation is different from information established by the wording. Avoid turning this single item into a claim about model-wide bias or ability.
 
-### Car-wash demonstration and handoff
+### Compare Car-Wash Responses
 
 > The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
 
@@ -76,22 +76,22 @@ Ask participants to write down their interpretation of the trip’s purpose befo
 | Give reasons that support recommendation | | |
 | Respond appropriately to clarification | | |
 
-For the in-chat system-prompt exercise, use [Question & Assumption Check](examples/assumption-check.txt). It asks the model to examine facts and assumptions without prescribing either demonstration answer. Check whether the added instructions help, cause unnecessary questions, or fail on the second task. Retain the baseline before changing anything.
+For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assumption-check.txt). It asks the model to examine facts and assumptions without prescribing either demonstration answer. Check whether the added instructions help, cause unnecessary questions, or fail on the second task. Retain the baseline before changing anything.
 
-## Workshop 2 — Curating Knowledge Collections
+## Curate Knowledge Collections
 
-Participants build a small collection for a known teaching or research task, inspect its documents, attach it to a model card, and check how the model uses retrieved evidence. The disciplinary examples preserve the original course contexts. A research route uses project context, task criteria, and identified source excerpts in the same exercise structure.
+Participants upload documents to a knowledge collection and attach it to a custom model. They ask questions about those materials and check whether the model retrieves relevant passages and cites them accurately. Course examples use assignments and readings; research examples compare claims and methods across source documents.
 
-### Agenda
+### Workshop Agenda
 
 - Confirm Workspace and Knowledge access
 - Select source documents
 - Create knowledge collections
 - Attach collections to model cards
-- Check retrieved evidence
-- Prepare sources for procedural tasks
+- Check source citations
+- Choose procedures for skills
 
-### Suggested 90-minute lesson plan
+### Lesson Plan
 
 | Minutes | Facilitation and participant activity | Evidence to retain |
 | --- | --- | --- |
@@ -113,22 +113,22 @@ A generic or incorrect answer can arise from processing, retrieval, access, inst
 - Request Skills and Tools access
 - Choose recurring teaching or research procedures
 - Review system-prompt examples
-- Continue to Customizing Skills & Tools
+- Continue to Skills & Tools
 
-## Workshop 3 — Customizing Skills & Tools
+## Skills & Tools
 
-Participants turn a recurring procedure into skill instructions, connect it to a model, and test both procedure-following and actual tool use. The session distinguishes written instructions from operations that retrieve or compute information. Comparison continues through a baseline, a skill-enabled response, and inspection of tool calls and results.
+Participants write reusable Markdown instructions for a teaching or research procedure, attach the skill to a model, and test whether the model loads and follows it. They then enable an available tool for web search or code execution, inspect its results, and check the final response.
 
-### Agenda
+### Workshop Agenda
 
 - Confirm Skills and Tools access
 - Choose recurring procedures
 - Write skill instructions
-- Attach skills and enable native calling
+- Attach skills to models
 - Inspect tool calls and results
-- Retest complete configurations
+- Test models with skills and tools
 
-### Suggested 90-minute lesson plan
+### Lesson Plan
 
 | Minutes | Facilitation and participant activity | Evidence to retain |
 | --- | --- | --- |
@@ -152,10 +152,12 @@ The cinematic-image skill includes a necessary correction to the older instructi
 - Verify shared access with intended users
 - Retest after model or tool updates
 
-## Documentation and evidence
+## Source Documentation
 
 Interface instructions draw on the published [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/), especially [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/), [Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/), [Models](https://ailab.gc.cuny.edu/sandbox-docs/models/), [Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/), [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/), and [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/).
 
 The live interface was inspected in Firefox on September 13, 2026. [Screenshot provenance](review/screenshot-sources.json) records source hashes and crop coordinates. [Showcase provenance](review/showcase-sources.json) distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.
 
 Provider requests are described in the docs as configured for zero retention with training use prohibited. Sandbox history can still be stored and visible to administrators or its shared audience. Retrieved passages enter the model request and may appear in its response. Use materials appropriate for those conditions.
+
+Open WebUI’s [Models](https://docs.openwebui.com/features/workspace/models/), [Knowledge](https://docs.openwebui.com/features/workspace/knowledge/), and [Skills](https://docs.openwebui.com/features/workspace/skills/) documentation supports the descriptions of custom configurations, retrieval, and skill loading. The Sandbox docs govern local access and sign-in instructions.

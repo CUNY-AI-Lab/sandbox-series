@@ -1,14 +1,14 @@
 # Sandbox workshop series — full slide copy
 
-Generated from all three HTML decks. This includes screenshot captions and supporting Notes.
+Generated from all three HTML decks. This includes screenshot captions and supporting instructions.
 
-## Composing System Prompts — 1
+## Compose System Prompts — 1
 
 Workshop 1 of 3
 
-### Composing System Prompts
+### Compose System Prompts
 
-Comparing and configuring models for teaching and research
+Compare and configure models for teaching and research
 
 CUNY AI Lab Sandbox
 
@@ -16,70 +16,63 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Composing System Prompts — 2
+## Compose System Prompts — 2
 
-### The Sandbox workshop series
+### Workshop Roadmap
 
-- **Composing System Prompts**  Compare models and shape responses through instructions.
+- **Compose System Prompts** Configure model behavior with system prompts.
 
-- **Curating Knowledge Collections**  Select sources and check retrieved evidence.
+- **Curate Knowledge Collections** Upload documents so models can reference them.
 
-- **Customizing Skills & Tools**  Write procedures and inspect model actions.
+- **Skills & Tools** Add web search, code execution, and reusable instructions.
 
-Keep a record of what changes as you build. Evaluation runs through all three workshops.
+[Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
 
 ---
 
-## Composing System Prompts — 3
+## Compose System Prompts — 3
 
-### Compare and compose
+### Workshop Agenda
 
 - Request individual access and sign in
 
-- Compare small-model responses
+- Compare responses from small models
 
-- Test car-wash assumptions
+- Compare car-wash responses
 
 - Revise in-chat system prompts
 
-- Inspect Workspace configuration
+- Explore Workspace models
 
 - Save prompts for reuse
 
-Require individual access approval and Sandbox sign-in before attending. Workspace access is enabled during guided practice.
+Before attending, request individual access and sign into the Sandbox.
 
 ---
 
-## Composing System Prompts — 4
+## Compose System Prompts — 4
 
-### Get access, then sign in
+### Request Access
 
-![Current access application with individual and class choices](images/current/access-application.png)
+[ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)
 
-The access choices linked from the published Sandbox documentation.
+- Choose **My own access** and sign in with **CUNY Login**.
 
-#### Supporting notes
+- Complete your details, select **CAIL Sandbox**, and submit the application.
 
-- Open the [access application](https://ailab.gc.cuny.edu/request-access/?kind=individual) and choose **My own access**.
+- After approval, open [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/) and select **Continue with CUNY Login**.
 
-- Use **CUNY Login**, complete the application, and watch your verified CUNY email for approval.
-
-- Open [the Sandbox](https://chat.ailab.gc.cuny.edu/) and select **Continue with CUNY Login**.
-
-Begin with individual access and Sandbox sign-in. The facilitator arranges Workspace access for the guided exercise midway through this session.
-
-[Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 
-## Composing System Prompts — 5
+## Compose System Prompts — 5
 
-### Start in the
-message box
+### Select Models
 
 ![Current Sandbox new chat with the model selector inside the message box](images/current/chat-page.png)
 
-Current Sandbox. Model names and available controls depend on your account.
+Select the model name on the right inside the message box.
 
 #### Supporting notes
 
@@ -91,36 +84,33 @@ Type a request, send it, then ask a follow-up. Open **New Chat** when you want t
 
 ---
 
-## Composing System Prompts — 6
+## Compose System Prompts — 6
 
-### A few controls to try first
+### Chat Controls
 
-More (+)
+Upload Files (+)
 
-Add a file or other context to this chat.
+Attach images, PDFs, or documents.
 
 Integrations
 
-Choose available tools, skills, and capabilities.
+Choose tools and skills for this chat.
 
 Message actions
 
-Copy, edit, or regenerate where available. A regenerated answer can differ.
-
-For the first comparison, use the provided text and keep optional capabilities unchanged.
+Copy, edit, or regenerate a response. Open the three-dot menu for additional actions.
 
 [Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
 
 ---
 
-## Composing System Prompts — 7
+## Compose System Prompts — 7
 
-### Compare the models
-you can use
+### Compare Models
 
 ![Current model selector with search and the Compare toggle](images/current/model-selector.png)
 
-Compare is in the model selector. This capture is filtered to show base-model entries.
+Open the model selector, turn on Compare, and select two models.
 
 #### Supporting notes
 
@@ -132,23 +122,23 @@ Switching models midway carries the conversation history forward. Use fresh chat
 
 ---
 
-## Composing System Prompts — 8
+## Compose System Prompts — 8
 
-### Who was late?
+### Who Was Late?
 
-The facilitator sends the same question to two small models. Read both responses before discussing them.
+The facilitator sends this question to two small models. Read both responses.
 
 ```text
 The nurse yelled at the doctor because she was late. Who was late?
 ```
 
-Record the exact model names and settings. Keep the input and conversation context the same.
+Use the same prompt and chat history for both models. Note which models you selected.
 
 ---
 
-## Composing System Prompts — 9
+## Compose System Prompts — 9
 
-### What does the sentence establish?
+### Examine Assumptions
 
 “She” could refer to either person. Readers may prefer one interpretation, but the sentence does not establish a unique answer.
 
@@ -162,9 +152,9 @@ Compare the evidence in the answers. A confident explanation can still rest on a
 
 ---
 
-## Composing System Prompts — 10
+## Compose System Prompts — 10
 
-### Now consider the car wash
+### Compare Recommendations
 
 Use the same two-model comparison for this question.
 
@@ -176,13 +166,13 @@ Before reading the responses, write down what you think the user wants to accomp
 
 ---
 
-## Composing System Prompts — 11
+## Compose System Prompts — 11
 
-### A comparison from the GCDI showcase
+### Read Gemma’s Response
 
 ![Archived car-wash prompt and Gemma response saying to walk](images/showcase/car-wash-gemma.png)
 
-GCDI showcase, May 2026. The obsolete top selector has been cropped out.
+GCDI showcase, May 2026. Gemma recommends walking.
 
 #### Supporting notes
 
@@ -190,13 +180,13 @@ The response shown recommends walking. Read its recommendation against the purpo
 
 ---
 
-## Composing System Prompts — 12
+## Compose System Prompts — 12
 
-### Read the other recommendation
+### Read Qwen’s Response
 
 ![Archived car-wash prompt and Qwen response saying to take the car](images/showcase/car-wash-qwen.png)
 
-GCDI showcase, May 2026. Original response labels and timings are retained.
+GCDI showcase, May 2026. Qwen recommends taking the car.
 
 #### Supporting notes
 
@@ -204,9 +194,9 @@ This response recommends taking the car. These excerpts are discussion material;
 
 ---
 
-## Composing System Prompts — 13
+## Compose System Prompts — 13
 
-### Your turn with the car wash
+### Try Model Comparison
 
 - In a fresh chat, send the car-wash prompt to two available models. Save both responses.
 
@@ -218,50 +208,51 @@ If the purpose is to wash the car, the car must get there. The original wording 
 
 ---
 
-## Composing System Prompts — 14
+## Compose System Prompts — 14
 
-### Make a claim you can support
+### Evaluate Responses
 
-Identify a difference you can point to in the responses. Explain which answer is better suited to the stated task and why.
+Compare how each model interprets the question and explains its recommendation.
 
-- Separate correctness, useful clarification, and preferred writing style.
+- Which assumptions does each response make?
 
-- Keep exact prompts, responses, model identifiers, and settings with your notes.
+- Does either response invent information?
 
-- Try another case before carrying the result into a teaching or research decision.
+- How does each model respond when you clarify your purpose?
 
-These examples introduce comparison. A research evaluation also needs a defined set of cases and a consistent method of judging them.
-
----
-
-## Composing System Prompts — 15
-
-### What is a system prompt?
-
-A system prompt gives the model instructions for its role, actions, boundaries, and response style.
-
-### User prompt
-
-The request someone types into the conversation.
-
-### System prompt
-
-The guidance you configure to shape how the model responds across that conversation.
-
-Instructions guide behavior but do not guarantee it. A system prompt is not a secure place to hide sensitive information.
-
-[System Prompts as Instructional Design](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
+Save the responses with the prompt and model names so you can repeat the comparison.
 
 ---
 
-## Composing System Prompts — 16
+## Compose System Prompts — 15
 
-### Try the guidance
-in a chat
+### System Prompts
+
+A system prompt defines how a model should behave throughout a conversation.
+
+### User Prompts
+
+Questions or tasks you enter in chat.
+
+### System Prompts
+
+Instructions for the model’s role, tone, boundaries, and response style.
+
+Test whether the selected model follows your instructions.
+
+[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
+
+[Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
+
+---
+
+## Compose System Prompts — 16
+
+### Open Chat Controls
 
 ![Current chat Controls panel with its System Prompt field](images/current/chat-controls.png)
 
-The System Prompt field in a new chat. Sample text follows on the next slide.
+Enter instructions in the System Prompt field under Chat Controls.
 
 #### Supporting notes
 
@@ -275,9 +266,9 @@ Use the conversation’s Controls for this exercise. Personal defaults under Set
 
 ---
 
-## Composing System Prompts — 17
+## Compose System Prompts — 17
 
-### Try a short system prompt
+### Test System Prompts
 
 Keep one base model fixed. Add these instructions through the in-chat System Prompt field, then repeat the car-wash prompt in a fresh chat.
 
@@ -293,9 +284,9 @@ The instructions address assumptions across tasks. They do not prescribe a car-w
 
 ---
 
-## Composing System Prompts — 18
+## Compose System Prompts — 18
 
-### Compare before and after
+### Compare Responses
 
 - Compare the saved baseline with the response produced using the system prompt.
 
@@ -307,46 +298,47 @@ Keep the model, optional features, and other defaults consistent. Record any dif
 
 ---
 
-## Composing System Prompts — 19
+## Compose System Prompts — 19
 
-### Open Workspace during guided practice
+### Open Workspace
 
-After the facilitator confirms Workspace access, refresh the Sandbox and open **Workspace → Models** and inspect the prepared sample card.
+Open **Workspace → Models** after the facilitator confirms access.
 
-Read the base model and system prompt together. Compare the saved configuration with the in-chat prompt you just tested.
+Open the sample model and review its **Base Model** and **System Prompt**. Compare those instructions with the prompt you tested in chat.
 
-If access is delayed, follow the facilitator and continue testing in chat. Confirm Workspace and Knowledge access before Workshop 2.
+Continue in chat if Workspace is unavailable.
+
+[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
 ---
 
-## Composing System Prompts — 20
+## Compose System Prompts — 20
 
-### A place to configure the tool
+### Workspace Tabs
 
 ![Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create](images/current/workspace-header.png)
 
-The shared Create button acts on the selected Workspace tab.
+Select a Workspace tab, then choose Create.
 
 #### Supporting notes
 
-### Models
+### Custom Models
 
 Watch the facilitator open the prepared sample and locate Create.
 
-### Later in the series
+### Knowledge and Tools
 
 Knowledge adds sources. Skills and Tools extend the methods and capabilities available to the model.
 
 ---
 
-## Composing System Prompts — 21
+## Compose System Prompts — 21
 
-### Read the configuration
-together
+### Model Configuration
 
 ![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
 
-Read-only capture of the editor. The facilitator prepares the named sample before the workshop.
+Choose a name and base model, then enter a system prompt.
 
 #### Supporting notes
 
@@ -362,49 +354,45 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ---
 
-## Composing System Prompts — 22
+## Compose System Prompts — 22
 
-### Give the task a recognizable home
+### Create Custom Models
 
-Card name
+Custom models combine a base model with instructions, documents, and tools.
 
-Question & Assumption Check
+- Enter a name and description that students or colleagues will recognize.
 
-Description
+- Select a base model and add your tested system prompt.
 
-Examine what a question states and what an answer assumes.
+- Add prompt suggestions for tasks the model should support.
 
-Starter suggestion
+Students select the custom model to use the instructions and resources you configured.
 
-“Help me examine the assumptions in this question.”
-
-Students can start from a course card. Researchers can keep a named configuration for a recurring task and record revisions.
-
-The card combines a base model and instructions. Authors configure it in Workspace; its intended users select it in chat.
+[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
 ---
 
-## Composing System Prompts — 23
+## Compose System Prompts — 23
 
 Examples
 
-### The Anatomy of a Good System Prompt
+### Structure System Prompts
 
 ---
 
-## Composing System Prompts — 24
+## Compose System Prompts — 24
 
 Example 1
 
-### Composition & Writing
+### Teach Composition
 
 ---
 
-## Composing System Prompts — 25
+## Compose System Prompts — 25
 
 Composition & Writing
 
-### The Vague Prompt
+### Vague Prompts
 
 **Weak**
 
@@ -412,7 +400,7 @@ Composition & Writing
 Help students write better.
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - No role assignment to contextualize the model for specific workflows or domain-knowledge
 
@@ -422,11 +410,11 @@ Help students write better.
 
 ---
 
-## Composing System Prompts — 26
+## Compose System Prompts — 26
 
 Composition & Writing
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -434,7 +422,7 @@ Composition & Writing
 You are a writing scaffold for a college composition course. Help students develop their essays by breaking revision into structured steps. Ask them to identify their thesis before giving feedback. Don't write essays for them.
 ```
 
-### What improved?
+### Compare Improvements
 
 - Assigns a role and disciplinary context
 
@@ -442,7 +430,7 @@ You are a writing scaffold for a college composition course. Help students devel
 
 - Sets one boundary
 
-### What's still missing?
+### Add Detail
 
 - No procedural instructions for *how* to give feedback
 
@@ -452,11 +440,11 @@ You are a writing scaffold for a college composition course. Help students devel
 
 ---
 
-## Composing System Prompts — 27
+## Compose System Prompts — 27
 
 Composition & Writing
 
-### A Prompt That Supports Revision
+### Guide Revision
 
 **Strong**
 
@@ -481,19 +469,19 @@ Scroll to read the full prompt. The complete text is also in the workshop handou
 
 ---
 
-## Composing System Prompts — 28
+## Compose System Prompts — 28
 
 Example 2
 
-### Primary Source Analysis
+### Analyze Primary Sources
 
 ---
 
-## Composing System Prompts — 29
+## Compose System Prompts — 29
 
 History
 
-### The Vague Prompt
+### Vague Prompts
 
 **Weak**
 
@@ -501,7 +489,7 @@ History
 Analyze historical documents.
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - No methodological framework
 
@@ -511,11 +499,11 @@ Analyze historical documents.
 
 ---
 
-## Composing System Prompts — 30
+## Compose System Prompts — 30
 
 History
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -523,7 +511,7 @@ History
 You are a history source-analysis tool. Help students analyze primary sources from American history. Ask them to consider the author, audience, and context of each document. Don't just summarize the document for them.
 ```
 
-### What improved?
+### Compare Improvements
 
 - Assigns a role and disciplinary scope
 
@@ -531,7 +519,7 @@ You are a history source-analysis tool. Help students analyze primary sources fr
 
 - Sets a boundary against summarization
 
-### What's still missing?
+### Add Detail
 
 - No procedural steps for guiding analysis
 
@@ -541,11 +529,11 @@ You are a history source-analysis tool. Help students analyze primary sources fr
 
 ---
 
-## Composing System Prompts — 31
+## Compose System Prompts — 31
 
 History
 
-### A Prompt That Fosters Historical Thinking
+### Analyze Primary Sources
 
 **Strong**
 
@@ -578,19 +566,19 @@ Scroll to read the full prompt. The complete text is also in the workshop handou
 
 ---
 
-## Composing System Prompts — 32
+## Compose System Prompts — 32
 
 Example 3
 
-### Close Reading & Literary Analysis
+### Analyze Literary Texts
 
 ---
 
-## Composing System Prompts — 33
+## Compose System Prompts — 33
 
 Literature & Cultural Studies
 
-### The Vague Prompt
+### Vague Prompts
 
 **Weak**
 
@@ -598,7 +586,7 @@ Literature & Cultural Studies
 Help with literary analysis.
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - Defaults to plot summary
 
@@ -608,11 +596,11 @@ Help with literary analysis.
 
 ---
 
-## Composing System Prompts — 34
+## Compose System Prompts — 34
 
 Literature & Cultural Studies
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -620,7 +608,7 @@ Literature & Cultural Studies
 You are a close-reading scaffold. Help students analyze literary texts by focusing on themes, symbolism, and narrative techniques. Don't just summarize the plot. Ask students to point to specific passages.
 ```
 
-### What improved?
+### Compare Improvements
 
 - Names specific analytical categories
 
@@ -628,7 +616,7 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
 
 - Requires textual evidence
 
-### What's still missing?
+### Add Detail
 
 - No procedural steps for scaffolding analysis
 
@@ -638,11 +626,11 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
 
 ---
 
-## Composing System Prompts — 35
+## Compose System Prompts — 35
 
 Literature & Cultural Studies
 
-### A Prompt That Fosters Close Reading
+### Analyze Literary Texts
 
 **Strong**
 
@@ -673,9 +661,9 @@ Scroll to read the full prompt. The complete text is also in the workshop handou
 
 ---
 
-## Composing System Prompts — 36
+## Compose System Prompts — 36
 
-### Adapt the structure for research
+### Adapt Research Prompts
 
 Choose a bounded task such as comparing article abstracts, checking a coding decision, or documenting a method.
 
@@ -689,19 +677,19 @@ Keep the source material, prompt version, output, and your judgment together. Th
 
 ---
 
-## Composing System Prompts — 37
+## Compose System Prompts — 37
 
 Drafting exercise
 
-### Drafting Your System Prompt
+### Draft System Prompts
 
 ---
 
-## Composing System Prompts — 38
+## Compose System Prompts — 38
 
 Structure
 
-### Core Components of a System Prompt
+### Define Prompt Components
 
 Each system prompt is built from modular components. We’ll draft yours one piece at a time.
 
@@ -717,11 +705,11 @@ Each system prompt is built from modular components. We’ll draft yours one pie
 
 ---
 
-## Composing System Prompts — 39
+## Compose System Prompts — 39
 
 Component 1
 
-### Context & Problem
+### Define Context
 
 Name the tool, the course, the students, and the specific learning challenge. Everything else follows from this.
 
@@ -742,11 +730,11 @@ The core problem: [specific learning challenge].
 
 ---
 
-## Composing System Prompts — 40
+## Compose System Prompts — 40
 
 Component 2
 
-### Procedure
+### Write Procedures
 
 Tell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.
 
@@ -767,11 +755,11 @@ Procedure:
 
 ---
 
-## Composing System Prompts — 41
+## Compose System Prompts — 41
 
 Component 3
 
-### Constraints
+### Set Constraints
 
 Define what the tool should not do and how it redirects when students push against those limits.
 
@@ -792,11 +780,11 @@ Constraints:
 
 ---
 
-## Composing System Prompts — 42
+## Compose System Prompts — 42
 
 Component 4
 
-### Tone
+### Set Tone
 
 One sentence on tone shapes how the tool communicates with every student it encounters.
 
@@ -814,11 +802,11 @@ Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[examp
 
 ---
 
-## Composing System Prompts — 43
+## Compose System Prompts — 43
 
 Component 5
 
-### Output Format
+### Specify Format
 
 Optional, but useful when consistent structure helps students know what to expect from each response.
 
@@ -840,63 +828,63 @@ Question: [something for the student to consider]
 
 ---
 
-## Composing System Prompts — 44
+## Compose System Prompts — 44
 
 Refine
 
-### Advanced Strategies & Tips
+### Refine Instructions
 
 ---
 
-## Composing System Prompts — 45
+## Compose System Prompts — 45
 
-### Going Further
+### Extend Instructions
 
-### Conditional Behavior
+### Set Conditions
 
 “If the student submits a draft, focus on structure before style. If they ask a yes/no question, reframe it as an open one. If they ask you to just give them the answer, ask what they’ve tried first.”
 
-### Conversational Brevity
+### Request Concise Responses
 
 “Respond to one thing at a time. Do not front-load your full analysis. Ask one question, wait for the student’s response, then proceed.”
 
-### Epistemic Guardrails
+### Acknowledge Uncertainty
 
 “If you are not certain about a factual claim, explicitly state your uncertainty. Never fabricate citations or attribute quotes.”
 
-### Multilingual Support
+### Support Multiple Languages
 
 “If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.” Test language support with the base model and languages your students will use.
 
 ---
 
-## Composing System Prompts — 46
+## Compose System Prompts — 46
 
 Watch Out
 
-### Common Pitfalls
+### Review Common Problems
 
-### Too Long & Too Detailed
+### Prioritize Instructions
 
 Keep instructions clear and check for conflicts. If the prompt grows, prioritize its essential procedures and test whether the model follows them.
 
-### Contradictory Instructions
+### Resolve Contradictions
 
 “Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
 
-### Forgetting the Student’s Perspective
+### Consider Student Questions
 
 Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
 
-### Set It and Forget It
+### Retest Revised Prompts
 
 Save the prompt version with the responses it produced. Revise when a test reveals a problem, then repeat that test.
 
 ---
 
-## Composing System Prompts — 47
+## Compose System Prompts — 47
 
-### Save prompts for reuse
+### Save Prompts
 
 - Save your prompt text with the model name and responses it produced.
 
@@ -908,25 +896,23 @@ With Workspace access confirmed, save the tested prompt in a private model card.
 
 ---
 
-## Composing System Prompts — 48
+## Compose System Prompts — 48
 
-### Check access with the intended audience
+### Share Custom Models
 
-- When ready, use **Access → Add Access** for the intended course or research group.
+- Open **Access → Add Access** and select users or a course group.
 
-- Give readers access to use the card. Reserve write access for its maintainers.
+- Grant **Read** access to people who will use the model and **Write** access to people who will edit it.
 
-- Verify access to the card and its base model using an ordinary participant account.
-
-A student-facing card can provide a stable starting point for an activity. Check its Knowledge, Skills, and Tools permissions as those are added.
+- Check that participants can use the base model and any attached collections, skills, or tools.
 
 [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
 ---
 
-## Composing System Prompts — 49
+## Compose System Prompts — 49
 
-### Keep a record of your decisions
+### Record Comparisons
 
 Leave with a tested prompt, a base-model choice, and one question to investigate next.
 
@@ -942,9 +928,9 @@ Use public or approved material. The docs describe zero-retention provider reque
 
 ---
 
-## Composing System Prompts — 50
+## Compose System Prompts — 50
 
-### Prepare for Knowledge Collections
+### Prepare Source Documents
 
 - Save prompt versions and comparison notes
 
@@ -954,14 +940,14 @@ Use public or approved material. The docs describe zero-retention provider reque
 
 - Review [system-prompt examples](examples.html)
 
-- Continue to [Curating Knowledge Collections](knowledge/)
+- Continue to [Curate Knowledge Collections](knowledge/)
 
 
-## Curating Knowledge Collections — 1
+## Curate Knowledge Collections — 1
 
-### Curating Knowledge Collections
+### Curate Knowledge Collections
 
-Selecting and testing sources for teaching and research
+Upload documents for models to reference in teaching and research
 
 CUNY AI Lab Sandbox
 
@@ -969,9 +955,9 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Curating Knowledge Collections — 2
+## Curate Knowledge Collections — 2
 
-### Curate and check evidence
+### Workshop Agenda
 
 - Confirm Workspace and Knowledge access
 
@@ -981,33 +967,33 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Attach collections to model cards
 
-- Check retrieved evidence
+- Check source citations
 
-- Prepare sources for procedural tasks
+- Choose procedures for skills
 
-Require individual access and Sandbox sign-in from Workshop 1, plus Workspace and Knowledge collection access.
-
----
-
-## Curating Knowledge Collections — 3
-
-### Continue with your configuration
-
-Bring the card and prompt from Composing System Prompts. Today you will add a small collection of sources and examine what the model retrieves.
-
-A teaching project might use an assignment and readings. A research project might use a method, a codebook, and a few source documents.
-
-Keep your baseline response so you can compare the effect of adding those sources.
+Before attending, confirm individual access, Sandbox sign-in, Workspace access, and Knowledge collection access.
 
 ---
 
-## Curating Knowledge Collections — 4
+## Curate Knowledge Collections — 3
 
-### Confirm access and open Workspace
+### Review Custom Models
+
+Open the custom model you used in Workshop 1. You will attach documents and test whether the model can find and cite relevant passages.
+
+Bring course materials, research papers, or other documents you know well enough to check.
+
+Use [system-prompt examples](../examples.html) if you need a prompt to begin.
+
+---
+
+## Curate Knowledge Collections — 4
+
+### Open Workspace
 
 ![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)
 
-Select Models to edit the configuration, or Knowledge to create a collection.
+Open Workspace and select Knowledge to create a collection.
 
 #### Supporting notes
 
@@ -1021,13 +1007,13 @@ Workspace authoring access is arranged separately from ordinary chat access.
 
 ---
 
-## Curating Knowledge Collections — 5
+## Curate Knowledge Collections — 5
 
-### Keep the model and prompt fixed
+### Review Model Settings
 
 ![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 
-Knowledge attaches in the same editor as the base model and system prompt.
+Review Base Model and System Prompt before attaching documents.
 
 #### Supporting notes
 
@@ -1039,27 +1025,27 @@ Ask a question that depends on your source material. Save the response before at
 
 ---
 
-## Curating Knowledge Collections — 6
+## Curate Knowledge Collections — 6
 
-### What is a knowledge collection?
+### Knowledge Collections
 
-A knowledge collection holds documents that the Sandbox can retrieve for a model to use as context.
+A knowledge collection contains uploaded documents that a model can search when responding to questions.
 
-Your system prompt describes how to work with evidence. The collection makes selected source material available to that process.
-
-Retrieval does not guarantee that the right passage will be found or that the answer will interpret it accurately.
+Collections support PDFs, Markdown, and plain text. Attach a collection to a custom model under **Knowledge**.
 
 [Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
+[Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
+
 ---
 
-## Curating Knowledge Collections — 7
+## Curate Knowledge Collections — 7
 
-### Create a collection
+### Create Knowledge Collections
 
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 
-Blank form captured in Firefox. No collection was created for this screenshot.
+Enter a collection name and description, set access, and select Create Knowledge.
 
 #### Supporting notes
 
@@ -1073,13 +1059,13 @@ Blank form captured in Firefox. No collection was created for this screenshot.
 
 ---
 
-## Curating Knowledge Collections — 8
+## Curate Knowledge Collections — 8
 
-### What changes when a source is available?
+### Check Citations
 
 Ask a question with a verifiable answer in one of your documents.
 
-### Teaching example
+### Course Example
 
 What does the assignment require as evidence for the midterm essay?
 
@@ -1091,55 +1077,55 @@ Check the answer against the original passage. A plausible summary alone does no
 
 ---
 
-## Curating Knowledge Collections — 9
+## Curate Knowledge Collections — 9
 
-### Choose material you can inspect
+### Select Documents
 
-Start with a few readable PDFs, Markdown files, or plain-text documents. Use material you are permitted to process and share.
+Choose documents with clear headings and readable text.
 
-- Include titles, authors, dates, and section headings.
+- Course syllabi, readings, or assignment instructions
 
-- Check extracted text, especially scans and multi-column PDFs.
+- Research papers, methods, or annotated bibliographies
 
-- Keep a source copy so quotations and page references can be checked.
+- Markdown, plain text, or well-formatted PDFs
 
-Uploading a dataset as text does not perform a reliable numerical analysis. Use a suitable tool and verify its computation when the task requires it.
+Check scans and complex PDFs before uploading. Convert them to text if necessary.
 
----
-
-## Curating Knowledge Collections — 10
-
-### How documents reach the model
-
-- The Sandbox extracts text and divides it into passages.
-
-- Retrieval selects passages relevant to a question or search.
-
-- The selected passages become context for a response.
-
-- You check the response against the cited source.
-
-The configuration may use automatic retrieval or a native knowledge tool. Inspect the actual retrieval or tool result rather than assuming every file was read.
-
-[Retrieval and indexing](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
-## Curating Knowledge Collections — 11
+## Curate Knowledge Collections — 10
+
+### Retrieve Source Passages
+
+- Uploaded documents are divided into passages and indexed for search.
+
+- Retrieval finds passages relevant to a question.
+
+- The model uses those passages to generate a response.
+
+Check that retrieved passages address your question and support the response.
+
+[Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
+
+---
+
+## Curate Knowledge Collections — 11
 
 Example 1
 
-### What Makes an Effective Knowledge Collection?
+### Organize Source Documents
 
 Starting with Composition & Writing
 
 ---
 
-## Curating Knowledge Collections — 12
+## Curate Knowledge Collections — 12
 
 Composition & Writing
 
-### The Bare Minimum
+### Incomplete Collections
 
 **Weak**
 
@@ -1148,7 +1134,7 @@ Collection contents:
 • syllabus.pdf (14 pages, full course syllabus)
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - The syllabus may not contain the evidence needed for a revision question. Check which passages are retrieved.
 
@@ -1158,11 +1144,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 13
+## Curate Knowledge Collections — 13
 
 Composition & Writing
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -1173,7 +1159,7 @@ Collection contents:
 • mla-style-guide.pdf
 ```
 
-### What improved?
+### Compare Improvements
 
 - Separate documents let the model find what it needs
 
@@ -1181,7 +1167,7 @@ Collection contents:
 
 - Style guide helps with formatting questions
 
-### What's still missing?
+### Add Detail
 
 - No course readings for the model to reference during analysis
 
@@ -1191,11 +1177,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 14
+## Curate Knowledge Collections — 14
 
 Composition & Writing
 
-### A Collection That Grounds Revision
+### Support Revision
 
 **Strong**
 
@@ -1218,19 +1204,19 @@ Reference Materials
 
 ---
 
-## Curating Knowledge Collections — 15
+## Curate Knowledge Collections — 15
 
 Example 2
 
-### Primary Source Analysis
+### Analyze Primary Sources
 
 ---
 
-## Curating Knowledge Collections — 16
+## Curate Knowledge Collections — 16
 
 History
 
-### The Bare Minimum
+### Incomplete Collections
 
 **Weak**
 
@@ -1239,7 +1225,7 @@ Collection contents:
 • textbook-chapter-12.pdf (42 pages)
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - A general textbook chapter may not answer a question about a particular primary source.
 
@@ -1249,11 +1235,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 17
+## Curate Knowledge Collections — 17
 
 History
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -1265,7 +1251,7 @@ Collection contents:
 • primary-source-2.pdf (Congressional testimony, 1871)
 ```
 
-### What improved?
+### Compare Improvements
 
 - Includes actual primary sources students are working with
 
@@ -1273,7 +1259,7 @@ Collection contents:
 
 - Documents are separate and focused
 
-### What's still missing?
+### Add Detail
 
 - No contextual background for the model to draw on when students ask about the period
 
@@ -1283,11 +1269,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 18
+## Curate Knowledge Collections — 18
 
 History
 
-### A Collection for Historical Inquiry
+### Compare Primary Sources
 
 **Strong**
 
@@ -1311,19 +1297,19 @@ Reference Materials
 
 ---
 
-## Curating Knowledge Collections — 19
+## Curate Knowledge Collections — 19
 
 Example 3
 
-### Close Reading & Literary Analysis
+### Analyze Literary Texts
 
 ---
 
-## Curating Knowledge Collections — 20
+## Curate Knowledge Collections — 20
 
 Literature & Cultural Studies
 
-### The Bare Minimum
+### Incomplete Collections
 
 **Weak**
 
@@ -1332,7 +1318,7 @@ Collection contents:
 • course-reader.pdf (180 pages, all readings for the semester)
 ```
 
-### What goes wrong?
+### Identify Problems
 
 - An omnibus reader can make it harder to identify the relevant text. Check whether retrieval selects the intended source.
 
@@ -1342,11 +1328,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 21
+## Curate Knowledge Collections — 21
 
 Literature & Cultural Studies
 
-### Getting Warmer
+### Add Specifics
 
 **Getting There**
 
@@ -1358,7 +1344,7 @@ Collection contents:
 • new-criticism-overview.pdf
 ```
 
-### What improved?
+### Compare Improvements
 
 - Individual literary text rather than an omnibus reader
 
@@ -1366,7 +1352,7 @@ Collection contents:
 
 - Critical framework document gives the model methodological grounding
 
-### What's still missing?
+### Add Detail
 
 - No annotated examples showing how to move from observation to interpretation
 
@@ -1376,11 +1362,11 @@ Collection contents:
 
 ---
 
-## Curating Knowledge Collections — 22
+## Curate Knowledge Collections — 22
 
 Literature & Cultural Studies
 
-### A Collection for Close Reading
+### Support Textual Analysis
 
 **Strong**
 
@@ -1402,41 +1388,39 @@ Literary Texts (Current Unit)
 
 ---
 
-## Curating Knowledge Collections — 23
+## Curate Knowledge Collections — 23
 
-### A research collection
+### Compare Research Methods
 
-For a small qualitative coding exercise, begin with a codebook, a methods note, and a few public or approved excerpts.
+Build a collection from research papers or methods you want to compare.
 
-- Keep definitions and exclusion criteria with the codebook.
+- Identify a question that requires consulting those sources.
 
-- Identify each excerpt and preserve enough context to interpret it.
+- Ask the model to compare specific claims or methods.
 
-- Record competing codes and the evidence for each judgment.
+- Check its citations against the uploaded documents.
 
-Test whether the model distinguishes source language from its own interpretation. Compare its suggestion with your independent reading.
-
----
-
-## Curating Knowledge Collections — 24
-
-### Curate around the task
-
-Begin with a small set of sources you know well. Add documents when a test reveals a specific gap.
-
-- Use descriptive names and headings, then inspect retrieval.
-
-- Keep versions visible when a syllabus, protocol, or codebook changes.
-
-- Add notes that explain how the sources relate to the task.
-
-Focused files can make a collection easier to maintain. Their length alone does not establish retrieval quality.
+[Knowledge collections for research](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
-## Curating Knowledge Collections — 25
+## Curate Knowledge Collections — 24
 
-### Diagnose a weak answer
+### Organize Documents
+
+Begin with a small collection so you can test how the model uses your materials.
+
+- Name files so students or colleagues can identify them.
+
+- Use headings to distinguish sections.
+
+- Check whether the model retrieves the passages you need before adding more documents.
+
+---
+
+## Curate Knowledge Collections — 25
+
+### Check Retrieval Problems
 
 | Observation | Next check |
 | --- | --- |
@@ -1448,20 +1432,19 @@ Save the failed response before making one change.
 
 ---
 
-## Curating Knowledge Collections — 26
+## Curate Knowledge Collections — 26
 
 Part IV
 
-### Building Your
-Knowledge Collection
+### Build Knowledge Collections
 
 Three types of references to consider, then steps for how to create, curate, and use your first collection.
 
 ---
 
-## Curating Knowledge Collections — 27
+## Curate Knowledge Collections — 27
 
-### Types of Reference Material
+### Choose Reference Materials
 
 Think about which type of course document you would add first
 
@@ -1473,11 +1456,11 @@ Think about which type of course document you would add first
 
 ---
 
-## Curating Knowledge Collections — 28
+## Curate Knowledge Collections — 28
 
 Type 1
 
-### Course Context
+### Describe Course Context
 
 These documents describe course goals, structure, and methods students are expected to use.
 
@@ -1502,11 +1485,11 @@ Recommended uploads:
 
 ---
 
-## Curating Knowledge Collections — 29
+## Curate Knowledge Collections — 29
 
 Type 2
 
-### Assignment Materials
+### Describe Assignments
 
 These documents define the current task and help the model align its responses with your specific learning objectives.
 
@@ -1533,11 +1516,11 @@ Recommended uploads:
 
 ---
 
-## Curating Knowledge Collections — 30
+## Curate Knowledge Collections — 30
 
 Type 3
 
-### Source Materials
+### Identify Sources
 
 Upload the readings and reference materials students are working with in the current unit. This grounds the model in the actual texts.
 
@@ -1565,29 +1548,29 @@ Recommended uploads:
 
 ---
 
-## Curating Knowledge Collections — 31
+## Curate Knowledge Collections — 31
 
-### Use the same structure for research
+### Select Research Materials
 
-The preceding templates use course materials. For a research task, substitute the following documents.
+Use the preceding templates to describe research materials.
 
-Project context
+Research context
 
-Research question, scope, method, and definitions.
+Describe your question, scope, and method.
 
-Task criteria
+Instructions
 
-Codebook, inclusion criteria, or comparison procedure.
+Include a codebook, protocol, or criteria for comparing sources.
 
 Sources
 
-Public or approved excerpts with stable identifiers and provenance.
+Identify the documents and passages you want to examine.
 
 ---
 
-## Curating Knowledge Collections — 32
+## Curate Knowledge Collections — 32
 
-### Upload, inspect, and attach
+### Attach Knowledge Collections
 
 - Open your collection and upload the first few documents. Wait for processing to finish.
 
@@ -1601,9 +1584,9 @@ Public or approved excerpts with stable identifiers and provenance.
 
 ---
 
-## Curating Knowledge Collections — 33
+## Curate Knowledge Collections — 33
 
-### Test evidence and absence
+### Test Retrieval
 
 - Ask a question answered by one source. Verify the answer and quotation.
 
@@ -1615,23 +1598,25 @@ Repeat the baseline question with the model and prompt unchanged. Record the col
 
 ---
 
-## Curating Knowledge Collections — 34
+## Curate Knowledge Collections — 34
 
-### Share the collection deliberately
+### Share Knowledge Collections
 
-Check access to the card, base model, and collection with an ordinary participant account.
+Share the knowledge collection with the people who will use the custom model.
 
-Give the intended group read access when the materials are ready. Public access, where available, means signed-in Sandbox users.
+- Use **Add Access** to grant users or groups **Read** access.
 
-Retrieved passages enter the model request and can appear in responses. Provider retention settings do not make the source confidential from the people who can use or administer the chat.
+- Check that participants can use the model and retrieve from the collection.
 
-[Sharing and permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+- Choose **Public** only for documents intended for all signed-in Sandbox users.
+
+[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
 ---
 
-## Curating Knowledge Collections — 35
+## Curate Knowledge Collections — 35
 
-### Prepare for Skills & Tools
+### Prepare Skill Instructions
 
 - Save source lists and retrieval tests
 
@@ -1641,14 +1626,14 @@ Retrieved passages enter the model request and can appear in responses. Provider
 
 - Review [system-prompt examples](../examples.html)
 
-- Continue to [Customizing Skills & Tools](../skills/)
+- Continue to [Skills & Tools](../skills/)
 
 
-## Customizing Skills & Tools — 1
+## Skills & Tools — 1
 
-### Customizing Skills & Tools
+### Skills & Tools
 
-Writing procedures and testing model actions
+Add tools and reusable instructions for teaching and research
 
 CUNY AI Lab Sandbox
 
@@ -1656,9 +1641,9 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Customizing Skills & Tools — 2
+## Skills & Tools — 2
 
-### Write and test procedures
+### Workshop Agenda
 
 - Confirm Skills and Tools access
 
@@ -1666,33 +1651,33 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Write skill instructions
 
-- Attach skills and enable native calling
+- Attach skills to models
 
 - Inspect tool calls and results
 
-- Retest complete configurations
+- Test models with skills and tools
 
-Require individual access and Sandbox sign-in from Workshop 1, plus Skills and Tools access. Request Workspace authoring access for creation and editing.
+Before attending, confirm individual access, Sandbox sign-in, and Skills and Tools access. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.
 
 Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.
 
 ---
 
-## Customizing Skills & Tools — 3
+## Skills & Tools — 3
 
-### Continue with a tested task
+### Review Previous Work
 
-Bring your system prompt, collection, and saved tests. Choose a repeatable procedure you use in teaching or research.
+Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
 
-Today you will write it as a skill, connect it to a card, and check what happens when the model needs a tool.
+You will write skill instructions, attach them to the model, and test a request that uses them.
 
-Keep the earlier configuration as a baseline.
+Bring a knowledge collection if the procedure needs to search your documents.
 
 ---
 
-## Customizing Skills & Tools — 4
+## Skills & Tools — 4
 
-### Choose one procedure
+### Choose Procedures
 
 - For teaching, guide a student through a source one question at a time.
 
@@ -1704,27 +1689,29 @@ The procedure should be specific enough that another person can inspect whether 
 
 ---
 
-## Customizing Skills & Tools — 5
+## Skills & Tools — 5
 
-### What is a skill?
+### Define Skills
 
-A skill is a reusable set of instructions for a particular task. It can describe when to act, what steps to follow, and how to present the result.
+Skills contain reusable Markdown instructions for tasks or procedures.
 
-The system prompt establishes the general role and constraints. A skill gives a recurring procedure its own place to be edited and reused.
+The model receives a skill’s name and description and can load its full instructions when needed.
 
-Loading the instructions and following them are both behaviors to test.
+Describe when the skill should be used and what steps it should follow.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
+[Open WebUI Skills](https://docs.openwebui.com/features/workspace/skills/)
+
 ---
 
-## Customizing Skills & Tools — 6
+## Skills & Tools — 6
 
-### Create the skill
+### Create Skills
 
 ![Current Skill editor showing name, ID, description, Access, and instructions](../images/current/skill-editor.png)
 
-The blank editor was captured in Firefox. Save & Create appears below the instruction field.
+Enter a name, description, and instructions, then select Save & Create.
 
 #### Supporting notes
 
@@ -1738,27 +1725,27 @@ The blank editor was captured in Firefox. Save & Create appears below the instru
 
 ---
 
-## Customizing Skills & Tools — 7
+## Skills & Tools — 7
 
-### Attach it and check loading
+### Attach Skills
 
-- Open your card in **Workspace → Models**.
+- Open **Workspace → Models** and edit your model.
 
-- Select the skill in **Skills**.
+- Select the skill under **Skills**.
 
-- Under **Advanced Params**, set **Function Calling → Native** as described in the Sandbox docs.
+- Set **Function Calling** to **Native** under **Advanced Parameters**.
 
-- Use **Save & Update**, start a fresh chat, and test the skill’s trigger.
+- Select **Save & Update** and test a request that uses the skill.
 
-Choose an available model that supports the required tool calling. Inspect whether the skill was loaded and whether its steps were followed.
+Use a model that supports tool calling.
 
-[Skill configuration and native function calling](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+[Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
 ---
 
-## Customizing Skills & Tools — 8
+## Skills & Tools — 8
 
-### Compare the procedure in use
+### Compare Responses
 
 Try the same request before and after attaching the skill. Keep the base model, sources, and system prompt fixed.
 
@@ -1772,13 +1759,13 @@ Use the examples that follow as procedures to adapt and test. Their “Before”
 
 ---
 
-## Customizing Skills & Tools — 9
+## Skills & Tools — 9
 
-### What is a tool?
+### Enable Tools
 
 ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
 
-The menu is beside the plus button in the message composer.
+Open Integrations beside the plus button to enable tools for this chat.
 
 #### Supporting notes
 
@@ -1792,41 +1779,39 @@ Availability depends on account permissions, configuration, and model support.
 
 ---
 
-## Customizing Skills & Tools — 10
+## Skills & Tools — 10
 
-### Match the procedure to its capabilities
+### Tools & Skills
 
-Skill instructions
+Skills
 
-Describe how to search, evaluate a result, or ask the next question.
+Instructions the model can load for a task or procedure.
 
-Tool operation
+Tools
 
-Retrieves material or performs a computation the model can inspect.
+Operations the model can call, such as web search, code execution, or database queries.
 
-Your evaluation
+Test a request that needs the skill or tool. Check what the model used and whether its response is correct.
 
-Checks the operation, its result, and the claim made from it.
-
-Workspace tools can run server-side Python. External MCP or OpenAPI tools connect to other services. Use reviewed tools made available by the Lab.
+[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
 ---
 
-## Customizing Skills & Tools — 11
+## Skills & Tools — 11
 
 Example 1
 
-### Establishing Stasis
+### Establish Stasis
 
 Composition — Stasis Theory
 
 ---
 
-## Customizing Skills & Tools — 12
+## Skills & Tools — 12
 
 Composition & Writing
 
-### Before
+### Original Instructions
 
 **Starting Point**
 
@@ -1846,11 +1831,11 @@ When a student is developing a research topic, walk them through four stages —
 
 ---
 
-## Customizing Skills & Tools — 13
+## Skills & Tools — 13
 
 Composition & Writing
 
-### After
+### Revised Instructions
 
 **Strong**
 
@@ -1875,21 +1860,21 @@ Your topic: [student’s stated topic]
 
 ---
 
-## Customizing Skills & Tools — 14
+## Skills & Tools — 14
 
 Example 2
 
-### Sourcing a Document
+### Examine Documents
 
 History — The Sourcing Heuristic
 
 ---
 
-## Customizing Skills & Tools — 15
+## Skills & Tools — 15
 
 History
 
-### Before
+### Original Instructions
 
 **Starting Point**
 
@@ -1909,11 +1894,11 @@ When a student asks about a primary source, retrieve it from the knowledge colle
 
 ---
 
-## Customizing Skills & Tools — 16
+## Skills & Tools — 16
 
 History
 
-### After
+### Revised Instructions
 
 **Strong**
 
@@ -1940,21 +1925,21 @@ Format:
 
 ---
 
-## Customizing Skills & Tools — 17
+## Skills & Tools — 17
 
 Example 3
 
-### Reading the Frame
+### Analyze Images
 
 Literature — Cinematic Mise-en-Scène
 
 ---
 
-## Customizing Skills & Tools — 18
+## Skills & Tools — 18
 
 Literature & Cultural Studies
 
-### Before
+### Original Instructions
 
 **Starting Point**
 
@@ -1974,11 +1959,11 @@ When a student shares a film still or visual artifact, guide them from describin
 
 ---
 
-## Customizing Skills & Tools — 19
+## Skills & Tools — 19
 
 Literature & Cultural Studies
 
-### After
+### Revised Instructions
 
 **Strong**
 
@@ -2002,19 +1987,19 @@ Framework: Description → Analysis → Interpretation
 
 ---
 
-## Customizing Skills & Tools — 20
+## Skills & Tools — 20
 
 Building Blocks
 
-### Writing Your Own Skills
+### Write Skills
 
 ---
 
-## Customizing Skills & Tools — 21
+## Skills & Tools — 21
 
 Structure
 
-### Anatomy of a Skill
+### Structure Skills
 
 Use three parts to draft this skill.
 
@@ -2026,11 +2011,11 @@ Use three parts to draft this skill.
 
 ---
 
-## Customizing Skills & Tools — 22
+## Skills & Tools — 22
 
 Component 1
 
-### Trigger
+### Define Triggers
 
 Define when this skill should activate. Test the trigger with a matching request and an unrelated request.
 
@@ -2049,11 +2034,11 @@ When a student [specific action or input], follow this procedure:
 
 ---
 
-## Customizing Skills & Tools — 23
+## Skills & Tools — 23
 
 Component 2
 
-### Procedure
+### Write Procedures
 
 The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.
 
@@ -2075,11 +2060,11 @@ Procedure:
 
 ---
 
-## Customizing Skills & Tools — 24
+## Skills & Tools — 24
 
 Component 3
 
-### Format
+### Specify Format
 
 Specify what the output should look like. Without a format, the model structures responses however it wants.
 
@@ -2101,59 +2086,59 @@ Format:
 
 ---
 
-## Customizing Skills & Tools — 25
+## Skills & Tools — 25
 
 Hands-On
 
-### Write Your First Skill
+### Draft Skills
 
 Choose a teaching or research procedure and write steps that another person can inspect.
 
 ---
 
-## Customizing Skills & Tools — 26
+## Skills & Tools — 26
 
 Exercise
 
-### Choose Your Move
+### Choose Procedures
 
 Which is closest to the skill you want to build?
 
-### Establishing Stasis
+### Establish Stasis
 
 Narrow a research topic one question at a time
 
-### Sourcing a Document
+### Examine Documents
 
 Quote, then ask who, when, for whom
 
-### Reading the Frame
+### Analyze Images
 
 Describe → analyze → interpret
 
-### Something Else
+### Choose Alternatives
 
 A repeatable teaching or research procedure
 
 ---
 
-## Customizing Skills & Tools — 27
+## Skills & Tools — 27
 
 Draft It
 
-### Write Your Skill
+### Write Instructions
 
 Use the three-part structure to write a skill for the move you chose.
 
-### 1. Trigger
+### Define Triggers
 
 What student action starts this?
 
-### 2. Procedure
+### Write Procedures
 
 3–5 numbered steps with wait points.
 
-### 3. Format
+### Specify Format
 
 What does each response look like?
 
@@ -2175,9 +2160,9 @@ Format:
 
 ---
 
-## Customizing Skills & Tools — 28
+## Skills & Tools — 28
 
-### A research skill to adapt
+### Check Source Claims
 
 Use this draft to check an interpretation against a source passage.
 
@@ -2196,9 +2181,9 @@ Test it with supported, overstated, and unsupported claims from public or approv
 
 ---
 
-## Customizing Skills & Tools — 29
+## Skills & Tools — 29
 
-### Save and test the skill
+### Test Skills
 
 Create the skill, attach it to your model, confirm native function calling, and save the card. Open a fresh chat with the card.
 
@@ -2212,9 +2197,9 @@ Record the result before revising the trigger or a procedural step.
 
 ---
 
-## Customizing Skills & Tools — 30
+## Skills & Tools — 30
 
-### Watch a tool call
+### Inspect Tool Results
 
 With an available search tool, ask for the title and link of a source relevant to a narrow question. Open the returned page and verify the claim.
 
@@ -2224,9 +2209,9 @@ Look for the actual call and returned result. The sentence “I searched” or �
 
 ---
 
-## Customizing Skills & Tools — 31
+## Skills & Tools — 31
 
-### Test a tool result against a known answer
+### Check Calculations
 
 For Code Interpreter, use this small, invented dataset.
 
@@ -2240,9 +2225,9 @@ Use only a capability enabled for the workshop. The facilitator can demonstrate 
 
 ---
 
-## Customizing Skills & Tools — 32
+## Skills & Tools — 32
 
-### Keep the evidence with the configuration
+### Record Test Results
 
 | Record | Include |
 | --- | --- |
@@ -2254,9 +2239,9 @@ Before sharing, test access to every dependency with the intended audience. Repe
 
 ---
 
-## Customizing Skills & Tools — 33
+## Skills & Tools — 33
 
-### Continue testing your configuration
+### Repeat Tests
 
 - Save prompts, sources, skills, and tool settings
 
@@ -2268,4 +2253,4 @@ Before sharing, test access to every dependency with the intended audience. Repe
 
 - Retest after model or tool updates
 
-[Browse system-prompt examples](../examples.html) · [Return to Composing System Prompts](../)
+[Browse system-prompt examples](../examples.html) · [Return to Compose System Prompts](../)

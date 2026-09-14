@@ -113,7 +113,7 @@ def main():
         if target and not re.match(r'^(https?:|mailto:|#)',target):
             path=target.split('#')[0].split('?')[0]
             if path and not (ROOT/path).exists():issues.append('Missing local resource: '+path)
-    header='# Composing System Prompts\n\nCUNY AI Lab Sandbox workshop. Generated from index.html; do not edit this mirror directly.\n\n'
+    header='# Compose System Prompts\n\nCUNY AI Lab Sandbox workshop. Generated from index.html; do not edit this mirror directly.\n\n'
     mirror=header+'\n\n---\n\n'.join(f'## Slide {i}: '+s.attrs['data-title']+'\n\n'+re.sub(r'\n{3,}','\n\n',render(s)).strip() for i,s in enumerate(slides,1))+'\n'
     mirror=re.sub(r'\n{3,}','\n\n','\n'.join(line.rstrip() for line in mirror.splitlines()))+'\n'
     before=(ROOT/'review/before.md').read_text()
