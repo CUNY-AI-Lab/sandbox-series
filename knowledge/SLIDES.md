@@ -54,6 +54,8 @@ Keep your baseline response so you can compare the effect of adding those source
 
 Select Models to edit the configuration, or Knowledge to create a collection.
 
+#### Supporting notes
+
 Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
 
 If you are joining here, use the sample prompt from the first workshop and choose a base model you can test.
@@ -71,6 +73,8 @@ Workspace authoring access is arranged separately from ordinary chat access.
 ![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 
 Knowledge attaches in the same editor as the base model and system prompt.
+
+#### Supporting notes
 
 Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
 
@@ -101,6 +105,8 @@ Retrieval does not guarantee that the right passage will be found or that the an
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 
 Blank form captured in Firefox. No collection was created for this screenshot.
+
+#### Supporting notes
 
 - Open **Workspace → Knowledge → Create**.
 
@@ -180,6 +186,8 @@ Composition & Writing
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • syllabus.pdf (14 pages, full course syllabus)
@@ -200,6 +208,8 @@ Collection contents:
 Composition & Writing
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -231,6 +241,8 @@ Collection contents:
 Composition & Writing
 
 ### A Collection That Grounds Revision
+
+**Strong**
 
 ```text
 Collection contents:
@@ -265,6 +277,8 @@ History
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • textbook-chapter-12.pdf (42 pages)
@@ -285,6 +299,8 @@ Collection contents:
 History
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -317,6 +333,8 @@ Collection contents:
 History
 
 ### A Collection for Historical Inquiry
+
+**Strong**
 
 ```text
 Collection contents:
@@ -352,6 +370,8 @@ Literature & Cultural Studies
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • course-reader.pdf (180 pages, all readings for the semester)
@@ -372,6 +392,8 @@ Collection contents:
 Literature & Cultural Studies
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -404,6 +426,8 @@ Collection contents:
 Literature & Cultural Studies
 
 ### A Collection for Close Reading
+
+**Strong**
 
 ```text
 Collection contents:

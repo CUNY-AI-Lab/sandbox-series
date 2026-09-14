@@ -6,7 +6,7 @@ This repository is the consolidated CUNY AI Lab Sandbox workshop series. HTML is
 - Keep H1 and H2 at 32px maximum on desktop, with existing smaller mobile sizes. Preserve the neutral dark palette.
 - Give screenshots nearly the whole slide. Keep supporting instructions in Notes and the complete transcript.
 - Keep mini-agendas and next steps short, beginning with action verbs and containing no definite or indefinite articles.
-- Workshop 1 requires only individual access and Sandbox sign-in. Workspace is a facilitator demonstration there. Later access requirements are recorded in WORKSHOP.md.
+- Workshop 1 requires only individual access and Sandbox sign-in before attending. Workspace access is enabled during guided practice there. Later access requirements are recorded in WORKSHOP.md.
 - Preserve exact demonstration prompts and substantive disciplinary examples. Record justified corrections in review manifests.
 - Keep full copy and direct diffs synchronized with `python3 scripts/check_series.py --write`; run without `--write` to verify.
 - Use actual screenshots, with documented crops. Never reconstruct platform UI or invent model outputs.

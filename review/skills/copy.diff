@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,284 +1,172 @@
+@@ -1,284 +1,176 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 +# Customizing Skills & Tools
 +
@@ -360,6 +360,8 @@
 +
 +The blank editor was captured in Firefox. Save & Create appears below the instruction field.
 +
++#### Supporting notes
++
 +- Open **Workspace → Skills → Create**.
 +
 +- Enter a name, identifier, and description that explain when to use it.
@@ -412,6 +414,8 @@
 +
 +The menu is beside the plus button in the message composer.
 +
++#### Supporting notes
++
 +A tool runs an operation, such as a search, a calculation, or a query of a source collection.
 +
 +Open **Integrations** beside the plus button for available chat capabilities. Attach reusable tools under **Tools** in the model editor.
@@ -446,7 +450,7 @@
  
  Example 1
  
-@@ -288,6 +176,8 @@
+@@ -288,6 +180,8 @@
  
  ---
  
@@ -455,7 +459,7 @@
  Composition & Writing
  
  ### Before
-@@ -304,9 +194,11 @@
+@@ -306,9 +200,11 @@
  
  - No mechanism to let the student reformulate before moving on
  
@@ -470,7 +474,7 @@
  
  Composition & Writing
  
-@@ -333,6 +225,8 @@
+@@ -337,6 +233,8 @@
  
  ---
  
@@ -479,7 +483,7 @@
  Example 2
  
  ### Sourcing a Document
-@@ -341,6 +235,8 @@
+@@ -345,6 +243,8 @@
  
  ---
  
@@ -488,7 +492,7 @@
  History
  
  ### Before
-@@ -360,6 +256,8 @@
+@@ -366,6 +266,8 @@
  - No requirement to ground each analytical move in the source’s own language
  
  ---
@@ -497,7 +501,7 @@
  
  History
  
-@@ -388,6 +286,8 @@
+@@ -396,6 +298,8 @@
  
  ---
  
@@ -506,7 +510,7 @@
  Example 3
  
  ### Reading the Frame
-@@ -396,6 +296,8 @@
+@@ -404,6 +308,8 @@
  
  ---
  
@@ -515,7 +519,7 @@
  Literature & Cultural Studies
  
  ### Before
-@@ -415,6 +317,8 @@
+@@ -425,6 +331,8 @@
  - Skips the gap between “what’s in the frame” and “what argument it makes”
  
  ---
@@ -524,7 +528,7 @@
  
  Literature & Cultural Studies
  
-@@ -425,7 +329,7 @@
+@@ -437,7 +345,7 @@
  When a student uploads a film still, photograph, or visual artifact — or asks about an image from the knowledge collection — follow this procedure:
  
  Procedure:
@@ -533,7 +537,7 @@
  2. Ask: “What do you notice first?” Let the student describe before you respond.
  3. After their description, direct attention to one formal element they haven’t mentioned — composition, lighting, color, framing, depth of field, or gaze. Ask what it does.
  4. Ask how that formal choice shapes the viewer’s experience. Move from what is in the frame to how the image is constructed.
-@@ -440,17 +344,21 @@
+@@ -452,17 +360,21 @@
  
  ---
  
@@ -556,7 +560,7 @@
  
  - **Trigger** — When should this skill activate?
  
-@@ -460,11 +368,13 @@
+@@ -472,11 +384,13 @@
  
  ---
  
@@ -571,7 +575,7 @@
  
  - What student action starts this workflow?
  
-@@ -477,9 +387,11 @@
+@@ -489,9 +403,11 @@
  When a student [specific action or input], follow this procedure:
  ```
  
@@ -586,7 +590,7 @@
  
  Component 2
  
-@@ -501,9 +413,11 @@
+@@ -513,9 +429,11 @@
  4. [Final step — synthesis, next action, or handoff]
  ```
  
@@ -601,7 +605,7 @@
  
  Component 3
  
-@@ -525,17 +439,21 @@
+@@ -537,17 +455,21 @@
  [One question for the student]
  ```
  
@@ -629,7 +633,7 @@
  
  Exercise
  
-@@ -557,15 +475,17 @@
+@@ -569,15 +491,17 @@
  
  ### Something Else
  
@@ -651,7 +655,7 @@
  
  ### 1. Trigger
  
-@@ -597,69 +517,97 @@
+@@ -609,69 +533,97 @@
  
  ---
  

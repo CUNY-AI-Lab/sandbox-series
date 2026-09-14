@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,336 +1,172 @@
+@@ -1,336 +1,178 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 +# Curating Knowledge Collections
 +
@@ -382,6 +382,8 @@
 +
 +Select Models to edit the configuration, or Knowledge to create a collection.
 +
++#### Supporting notes
++
 +Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
 +
 +If you are joining here, use the sample prompt from the first workshop and choose a base model you can test.
@@ -399,6 +401,8 @@
 +![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 +
 +Knowledge attaches in the same editor as the base model and system prompt.
++
++#### Supporting notes
 +
 +Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
 +
@@ -429,6 +433,8 @@
 +![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 +
 +Blank form captured in Firefox. No collection was created for this screenshot.
++
++#### Supporting notes
 +
 +- Open **Workspace → Knowledge → Create**.
 +
@@ -498,7 +504,7 @@
  
  ### What Makes an Effective Knowledge Collection?
  
-@@ -338,6 +174,8 @@
+@@ -338,6 +180,8 @@
  
  ---
  
@@ -507,7 +513,7 @@
  Composition & Writing
  
  ### The Bare Minimum
-@@ -349,13 +187,15 @@
+@@ -351,13 +195,15 @@
  
  ### What goes wrong?
  
@@ -524,7 +530,7 @@
  
  Composition & Writing
  
-@@ -385,6 +225,8 @@
+@@ -389,6 +235,8 @@
  - No instructor notes on what substantive revision looks like in this course
  
  ---
@@ -533,7 +539,7 @@
  
  Composition & Writing
  
-@@ -409,12 +251,16 @@
+@@ -415,12 +263,16 @@
  
  ---
  
@@ -550,7 +556,7 @@
  History
  
  ### The Bare Minimum
-@@ -426,13 +272,15 @@
+@@ -434,13 +286,15 @@
  
  ### What goes wrong?
  
@@ -567,7 +573,7 @@
  
  History
  
-@@ -464,9 +312,11 @@
+@@ -474,9 +328,11 @@
  
  ---
  
@@ -578,9 +584,9 @@
 -### A Collection That Fosters Historical Thinking
 +### A Collection for Historical Inquiry
  
- ```text
- Collection contents:
-@@ -488,12 +338,16 @@
+ **Strong**
+ 
+@@ -500,12 +356,16 @@
  
  ---
  
@@ -597,7 +603,7 @@
  Literature & Cultural Studies
  
  ### The Bare Minimum
-@@ -505,13 +359,15 @@
+@@ -519,13 +379,15 @@
  
  ### What goes wrong?
  
@@ -614,7 +620,7 @@
  
  Literature & Cultural Studies
  
-@@ -543,9 +399,11 @@
+@@ -559,9 +421,11 @@
  
  ---
  
@@ -625,9 +631,9 @@
 -### A Collection That Fosters Close Reading
 +### A Collection for Close Reading
  
- ```text
- Collection contents:
-@@ -565,56 +423,53 @@
+ **Strong**
+ 
+@@ -583,56 +447,53 @@
  
  ---
  
@@ -731,7 +737,7 @@
  
  Part IV
  
-@@ -625,23 +480,27 @@
+@@ -643,23 +504,27 @@
  
  ---
  
@@ -767,7 +773,7 @@
  
  - What are the course’s learning objectives?
  
-@@ -660,9 +519,11 @@
+@@ -678,9 +543,11 @@
     - Write it out in plain language with definitions
  ```
  
@@ -782,7 +788,7 @@
  
  Type 2
  
-@@ -689,9 +550,11 @@
+@@ -707,9 +574,11 @@
     - Excerpts showing what strong work looks like
  ```
  
@@ -797,7 +803,7 @@
  
  Type 3
  
-@@ -719,92 +582,84 @@
+@@ -737,92 +606,84 @@
     - Citation style guide, glossary, or timeline
  ```
  

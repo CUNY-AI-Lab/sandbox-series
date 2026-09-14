@@ -342,6 +342,8 @@ Composition & Writing
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • syllabus.pdf (14 pages, full course syllabus)
@@ -360,6 +362,8 @@ Collection contents:
 Composition & Writing
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -390,6 +394,8 @@ Composition & Writing
 
 ### A Collection That Grounds Revision
 
+**Strong**
+
 ```text
 Collection contents:
 
@@ -419,6 +425,8 @@ History
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • textbook-chapter-12.pdf (42 pages)
@@ -437,6 +445,8 @@ Collection contents:
 History
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -468,6 +478,8 @@ History
 
 ### A Collection That Fosters Historical Thinking
 
+**Strong**
+
 ```text
 Collection contents:
 
@@ -498,6 +510,8 @@ Literature & Cultural Studies
 
 ### The Bare Minimum
 
+**Weak**
+
 ```text
 Collection contents:
 • course-reader.pdf (180 pages, all readings for the semester)
@@ -516,6 +530,8 @@ Collection contents:
 Literature & Cultural Studies
 
 ### Getting Warmer
+
+**Getting There**
 
 ```text
 Collection contents:
@@ -546,6 +562,8 @@ Collection contents:
 Literature & Cultural Studies
 
 ### A Collection That Fosters Close Reading
+
+**Strong**
 
 ```text
 Collection contents:
