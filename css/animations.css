@@ -1,0 +1,9 @@
+/* Slides change without autoplay or staged text. All teaching copy is visible. */
+button,a{
+  transition:background-color .12s ease,border-color .12s ease}
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{
+      animation:none!important;
+      transition:none!important;
+      scroll-behavior:auto!important}
+    }

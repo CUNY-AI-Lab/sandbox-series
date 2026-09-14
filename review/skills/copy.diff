@@ -1,0 +1,817 @@
+--- before original HTML
++++ after consolidated workshop
+@@ -1,284 +1,172 @@
+-![CUNY AI Lab](images/logo-horizontal.png)
++# Customizing Skills & Tools
++
++Generated from index.html. Screenshot instructions appear in Notes during presentation.
++
++## Customizing Skills & Tools — 1
+ 
+ ### Customizing Skills & Tools
+ 
+-A Workshop for the [CUNY AI Lab Sandbox](https://chat.ailab.gc.cuny.edu)
+-
+-March 30, 2026
++Writing procedures and testing model actions
++
++CUNY AI Lab Sandbox
+ 
+ Developed by Stefano Morello and Zach Muhlbauer
+ 
+ ---
+ 
+-Workshop Series
+-
+-### Three Weeks, Three Skills
+-
+-March 16
+-
+-### [Composing System Prompts ✓](https://cuny-ai-lab.github.io/system-prompting)
+-
+-Defined how the AI thinks, responds, and engages with students
+-
+-March 23
+-
+-### [Curating Knowledge Collections ✓](https://cuny-ai-lab.github.io/knowledge-collections)
+-
+-Grounded the model in course materials so it can reference real documents
+-
+-March 30 (This Week)
+-
+-### Customizing Skills & Tools
+-
+-Build specialized skills, tools, and workflows tailored to your courses
+-
+----
+-
+-Quick Check
+-
+-### Pre-Flight
+-
+-Verify your setup, then identify the move you’ll build today.
+-
+-- **System Prompt** — What role and constraints did you set? Have you revised or tested it?
+-
+-- **Knowledge Collection** — Is it attached? Does the model draw on it when you test?
+-
+-- **Name One Pedagogical Move** — Something you do as an instructor that follows a repeatable pattern (e.g., narrowing a research topic one question at a time, walking a student through a source, guiding them from description to interpretation).
+-**Skills enable the model to mimic those moves.**
+-
+----
+-
+-The Basics
+-
+-### What Is a Skill?
+-
+-A **skill** is a structured procedure you write in markdown or plain text. It tells the model how to handle a task your system prompt can’t cover on its own.
+-
+-Think of it as a **recipe** for a move you’d make as an instructor — establishing stasis, sourcing a document, reading a cinematic frame — written so the model executes it consistently.
+-
+-**Key distinction:** The system prompt sets general behavior. A skill decomposes a *specific* task into steps the model won’t follow unprompted.
+-
+-What you build
+-
+-Week 1
+-
+-System Prompt
+-
+-behavior & constraints
+-
+-+
+-
+-Week 2
+-
+-Knowledge
+-
+-syllabus, rubric…
+-
+-+
+-
+-New
+-
+-Skill
+-
+-step-by-step recipe
+-
+-student never sees above
+-
+-👤  Student   “Can you look at this paragraph from my draft?”
+-
+-🤖
+-
+-AI Model
+-
+-Follows the skill’s procedure to respond
+-
+-🤖  Response   “Here’s what I notice in your passage…”
+-*(quotes the excerpt, responds below it)*
+-
+-What the student sees
+-
+----
+-
+-Skills in Open WebUI
+-
+-### Activating Skills
+-
+-A skill is worth making when the move has a **repeatable structure** (trigger, steps, output shape) that you want the model to follow every time.
+-
+-### 1. Create the skill
+-
+-Go to **Workspace → Skills** and click **+ New Skill**. Write or paste your skill text.
+-
+-### 2. Add it to your model
+-
+-Open your model card in **Workspace → Models**. Scroll to the **Skills** section and toggle the skill on. It activates automatically in every chat with that model.
+-
+-### 3. Reference it in your system prompt
+-
+-At the bottom of your system prompt, tell the model which skills to follow — e.g., “Follow the Stasis Theory skill when a student is narrowing a topic.”
+-
+-### Alternative: Paste into System Prompt
+-
+-You *can* append skill text directly to your system prompt, but this crowds the prompt and makes it harder to maintain.
+-
+-![Workspace Skills page showing existing skills and the New Skill button](images/5-0.png)
+-
+-**Step 1: Workspace → Skills**
+-Open Workspace (1), click the Skills tab (2), then **+ New Skill** (3) to create one.
+-
+-![Workspace Models page showing custom models in the Sandbox](images/5a.png)
+-
+-**Step 2: Workspace → Models**
+-Open your model card (1), then scroll to the Skills section (2).
+-
+-![Model card editor with Skills section highlighted at the bottom](images/5b.png)
+-
+-**Step 2: Toggle On**
+-Toggle the skill on at the bottom of your model card. It activates for every chat with this model.
+-
+----
+-
+-Why Bother?
+-
+-### Why Skills Matter
+-
+-A student types: *“I want to write about social media and mental health.”*
+-
+-### Without a Skill
+-
+-“That’s a great topic! You could narrow it by focusing on a specific platform, age group, or type of mental health impact. Consider looking at recent studies on Instagram and anxiety, or TikTok and body image. You’ll also want a clear thesis statement.”
+-
+-Lists options instead of asking questions. The student still has no method for choosing among them.
+-
+-### With a Stasis Theory Skill
+-
+-“Your topic: *social media and mental health.*
+-
+-Let’s start with the facts. What specific situation are you responding to — something you’ve read, noticed, or experienced? What has happened that makes this a question worth asking right now?”
+-
+-Opens with one stasis question (conjecture), grounded in the student’s own words. The skill told the model *how* to narrow, not just to narrow.
+-
+----
+-
+-The Problem
+-
+-### The Gap Skills Fill
+-
+-Models can do many things, but not unless you spell it out. Certain moves need a **step-by-step recipe** to work consistently.
+-
+-### What models won’t do without a skill:
+-
+-- Walk through stasis theory one question at a time
+-
+-- Quote a passage from an uploaded source before asking a question
+-
+-- Ask *one* focused question instead of listing five
+-
+-- Build on what the student just said
+-
+-- Scaffold from description to analysis to interpretation
+-
+-System Prompt Alone
+-
+-“Help students develop research topics”
+-
+-Model knows *what* to do, not *how*
+-
+-System Prompt + Skill
+-
+-“Ask one stasis question, build on the student’s last answer”
+-
+-Model knows *what* and *how*
+-
+----
+-
+-Tools in Open WebUI
+-
+-### What Is a Tool?
+-
+-A **tool** is a function the model can call to do something it can’t do with language alone — search the web, query your uploaded files, run code, or generate an image.
+-
+-Some tools are **built in** (Web Search, Code Interpreter). Others are **custom**: written in Python or imported from the [community library](https://openwebui.com/search?sort=top&t=all&page=1&type=tool) via **Workspace → Tools**. There are plenty of community-built tools available — browse what others have shared.
+-
+-You can enable tools two ways:
+-
+-### Per Chat
+-
+-Click the **controls** icon  (sliders, next to +)  next to the message bar (1) to open the tools menu (2). Toggle individual tools on for that conversation.
+-
+-### Per Model
+-
+-Open your model card in **Workspace → Models**. Scroll to the **Tools** section to attach custom tools permanently.
+-
+-**Caveat:** Smaller models (e.g. Gemma 3 27B) call tools inconsistently. Use Kimi K2.5 or GLM 5 for reliable tool use.
+-
+-![Open WebUI chat interface showing the gear icon next to the message bar and the tools menu with Web Search and Code Interpreter](images/8a.png)
+-
+-**Per Chat**
+-Click the controls icon (1) to reveal available tools (2). Toggle them on for this conversation.
+-
+-![Workspace Models page showing custom models in the Sandbox](images/8-2a.png)
+-
+-**Per Model — Step 1**
+-Go to Workspace (1) and open your model card (2).
+-
+-![Model card editor with Tools section highlighted showing custom tools attached](images/8-2b.png)
+-
+-**Per Model — Step 2**
+-**Capabilities** at the bottom are tools native to the Sandbox. Custom tools (written in Python or imported) appear under **Tools**. To create or import them, go to the **Tools** tab at the top of Workspace.
+-
+----
+-
+-The Difference
+-
+-### Skills vs. Tools
+-
+-A **skill** is a document you write in plain text: a procedure the model follows. A **tool** is code: a function the model calls. Both extend what your custom model can do, but they work differently.
+-
+-### Skill
+-
+-You write it. Plain text, no code. Tells the model *how* to handle a specific pedagogical move step by step.
+-
+-### Tool
+-
+-Pre-built or imported. Code that runs behind the scenes. Gives the model abilities it doesn’t have on its own — like searching the web or running a calculation.
+-
+-**Today’s focus:** Skills. Tools are ready to use out of the box. Skills are what you build.
+-
+-Skill  (plain text)
+-
+-“Walk through stasis one question at a time”
+-
+-You write it • Shapes how the model responds
+-
+-vs.
+-
+-Tool  (code)
+-
+-Search the web, query files, run code, generate images
+-
+-Pre-built • Gives the model new capabilities
+-
+-Built-in tools
+-
+-Web Search
+-
+-Current information
+-
+-Knowledge Query
+-
+-Search uploaded files
+-
+-Code Execution
+-
+-Run code in a sandbox
+-
+-Image Generation
+-
+-Create from descriptions
+-
+----
++## Customizing Skills & Tools — 2
++
++### Write and test procedures
++
++- Confirm Skills and Tools access
++
++- Choose recurring procedures
++
++- Write skill instructions
++
++- Attach skills and enable native calling
++
++- Inspect tool calls and results
++
++- Retest complete configurations
++
++Require individual access and Sandbox sign-in from Workshop 1, plus Skills and Tools access. Request Workspace authoring access for creation and editing.
++
++Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.
++
++---
++
++## Customizing Skills & Tools — 3
++
++### Continue with a tested task
++
++Bring your system prompt, collection, and saved tests. Choose a repeatable procedure you use in teaching or research.
++
++Today you will write it as a skill, connect it to a card, and check what happens when the model needs a tool.
++
++Keep the earlier configuration as a baseline.
++
++---
++
++## Customizing Skills & Tools — 4
++
++### Choose one procedure
++
++- For teaching, guide a student through a source one question at a time.
++
++- For research, compare a claim with its source or apply a codebook to an excerpt.
++
++- Define what a successful response would show before writing the skill.
++
++The procedure should be specific enough that another person can inspect whether it was followed.
++
++---
++
++## Customizing Skills & Tools — 5
++
++### What is a skill?
++
++A skill is a reusable set of instructions for a particular task. It can describe when to act, what steps to follow, and how to present the result.
++
++The system prompt establishes the general role and constraints. A skill gives a recurring procedure its own place to be edited and reused.
++
++Loading the instructions and following them are both behaviors to test.
++
++[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++
++---
++
++## Customizing Skills & Tools — 6
++
++### Create the skill
++
++![Current Skill editor showing name, ID, description, Access, and instructions](../images/current/skill-editor.png)
++
++The blank editor was captured in Firefox. Save & Create appears below the instruction field.
++
++- Open **Workspace → Skills → Create**.
++
++- Enter a name, identifier, and description that explain when to use it.
++
++- Write the instructions, review **Access**, and choose **Save & Create**.
++
++[Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++
++---
++
++## Customizing Skills & Tools — 7
++
++### Attach it and check loading
++
++- Open your card in **Workspace → Models**.
++
++- Select the skill in **Skills**.
++
++- Under **Advanced Params**, set **Function Calling → Native** as described in the Sandbox docs.
++
++- Use **Save & Update**, start a fresh chat, and test the skill’s trigger.
++
++Choose an available model that supports the required tool calling. Inspect whether the skill was loaded and whether its steps were followed.
++
++[Skill configuration and native function calling](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++
++---
++
++## Customizing Skills & Tools — 8
++
++### Compare the procedure in use
++
++Try the same request before and after attaching the skill. Keep the base model, sources, and system prompt fixed.
++
++- Did the model use the intended procedure?
++
++- Did it stop at the planned point for a response?
++
++- Did it preserve evidence and uncertainty?
++
++Use the examples that follow as procedures to adapt and test. Their “Before” and “After” labels describe the instruction drafts, not measured outcomes.
++
++---
++
++## Customizing Skills & Tools — 9
++
++### What is a tool?
++
++![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
++
++The menu is beside the plus button in the message composer.
++
++A tool runs an operation, such as a search, a calculation, or a query of a source collection.
++
++Open **Integrations** beside the plus button for available chat capabilities. Attach reusable tools under **Tools** in the model editor.
++
++Availability depends on account permissions, configuration, and model support.
++
++[Enable tools in chat or on a model](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++
++---
++
++## Customizing Skills & Tools — 10
++
++### Match the procedure to its capabilities
++
++Skill instructions
++
++Describe how to search, evaluate a result, or ask the next question.
++
++Tool operation
++
++Retrieves material or performs a computation the model can inspect.
++
++Your evaluation
++
++Checks the operation, its result, and the claim made from it.
++
++Workspace tools can run server-side Python. External MCP or OpenAPI tools connect to other services. Use reviewed tools made available by the Lab.
++
++---
++
++## Customizing Skills & Tools — 11
+ 
+ Example 1
+ 
+@@ -288,6 +176,8 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 12
++
+ Composition & Writing
+ 
+ ### Before
+@@ -304,9 +194,11 @@
+ 
+ - No mechanism to let the student reformulate before moving on
+ 
+-- Skips the key move: helping the student see which stasis their argument lives in
+-
+----
++- Does not help the student identify which stasis their argument addresses
++
++---
++
++## Customizing Skills & Tools — 13
+ 
+ Composition & Writing
+ 
+@@ -333,6 +225,8 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 14
++
+ Example 2
+ 
+ ### Sourcing a Document
+@@ -341,6 +235,8 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 15
++
+ History
+ 
+ ### Before
+@@ -360,6 +256,8 @@
+ - No requirement to ground each analytical move in the source’s own language
+ 
+ ---
++
++## Customizing Skills & Tools — 16
+ 
+ History
+ 
+@@ -388,6 +286,8 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 17
++
+ Example 3
+ 
+ ### Reading the Frame
+@@ -396,6 +296,8 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 18
++
+ Literature & Cultural Studies
+ 
+ ### Before
+@@ -415,6 +317,8 @@
+ - Skips the gap between “what’s in the frame” and “what argument it makes”
+ 
+ ---
++
++## Customizing Skills & Tools — 19
+ 
+ Literature & Cultural Studies
+ 
+@@ -425,7 +329,7 @@
+ When a student uploads a film still, photograph, or visual artifact — or asks about an image from the knowledge collection — follow this procedure:
+ 
+ Procedure:
+-1. If the student uploaded an image, use it directly. If they reference a visual from the course, retrieve it from the knowledge collection and present it. If the image is not in the collection, say so.
++1. Use an uploaded image only when the selected model can inspect images. If the visual is unavailable, ask the student to upload it or describe it. Do not assume text retrieval from a knowledge collection provides the original image.
+ 2. Ask: “What do you notice first?” Let the student describe before you respond.
+ 3. After their description, direct attention to one formal element they haven’t mentioned — composition, lighting, color, framing, depth of field, or gaze. Ask what it does.
+ 4. Ask how that formal choice shapes the viewer’s experience. Move from what is in the frame to how the image is constructed.
+@@ -440,17 +344,21 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 20
++
+ Building Blocks
+ 
+ ### Writing Your Own Skills
+ 
+ ---
+ 
++## Customizing Skills & Tools — 21
++
+ Structure
+ 
+ ### Anatomy of a Skill
+ 
+-Every skill has three parts.
++Use three parts to draft this skill.
+ 
+ - **Trigger** — When should this skill activate?
+ 
+@@ -460,11 +368,13 @@
+ 
+ ---
+ 
++## Customizing Skills & Tools — 22
++
+ Component 1
+ 
+ ### Trigger
+ 
+-Define when this skill should activate. A clear trigger keeps the model from applying the wrong procedure to the wrong task.
++Define when this skill should activate. Test the trigger with a matching request and an unrelated request.
+ 
+ - What student action starts this workflow?
+ 
+@@ -477,9 +387,11 @@
+ When a student [specific action or input], follow this procedure:
+ ```
+ 
+-**Your turn:** What pedagogical move are you trying to teach the model? Name the student action that should trigger it.
+-
+----
++**Your turn** What pedagogical move are you trying to teach the model? Name the student action that should trigger it.
++
++---
++
++## Customizing Skills & Tools — 23
+ 
+ Component 2
+ 
+@@ -501,9 +413,11 @@
+ 4. [Final step — synthesis, next action, or handoff]
+ ```
+ 
+-**Your turn:** Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.
+-
+----
++**Your turn** Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.
++
++---
++
++## Customizing Skills & Tools — 24
+ 
+ Component 3
+ 
+@@ -525,17 +439,21 @@
+ [One question for the student]
+ ```
+ 
+-**Your turn:** Write a short format template. What should each response from the model actually look like?
+-
+----
++**Your turn** Write a short format template. What should each response from the model actually look like?
++
++---
++
++## Customizing Skills & Tools — 25
+ 
+ Hands-On
+ 
+ ### Write Your First Skill
+ 
+-Pick one pedagogical move from your course and turn it into a step-by-step recipe.
+-
+----
++Choose a teaching or research procedure and write steps that another person can inspect.
++
++---
++
++## Customizing Skills & Tools — 26
+ 
+ Exercise
+ 
+@@ -557,15 +475,17 @@
+ 
+ ### Something Else
+ 
+-Any repeatable pedagogical move
+-
+----
++A repeatable teaching or research procedure
++
++---
++
++## Customizing Skills & Tools — 27
+ 
+ Draft It
+ 
+ ### Write Your Skill
+ 
+-Use the four-part structure to write a skill for the move you chose.
++Use the three-part structure to write a skill for the move you chose.
+ 
+ ### 1. Trigger
+ 
+@@ -597,69 +517,97 @@
+ 
+ ---
+ 
+-Integrate It
+-
+-### Add Your Skill
+-
+-Connect the skill you wrote to the model you built in the previous workshops. Follow the same steps from [slide 5](#4).
+-
+-- **Create the skill** — Go to **Workspace → Skills**, click **+ New Skill**, and paste in what you wrote.
+-
+-- **Add it to your model** — Open your model card in **Workspace → Models**. Scroll to the **Skills** section and toggle it on.
+-
+-### Test It
+-
+-Open a new chat. Trigger the skill with realistic student input. Does it follow the procedure?
+-
+-**Iterate:** If the model skips steps, add wait points. If it dumps everything, add “one per turn.”
+-
+-System Prompt
+-
+-Role, constraints, tone
+-
+-+
+-
+-Knowledge Collection
+-
+-Syllabus, rubric, readings, sources
+-
+-+
+-
+-Your Skill
+-
+-Step-by-step recipe for a specific move
+-
+-✅
+-
+-Your Complete AI Tool
+-
+-Directive + sources + workflows
+-
+----
+-
+-Workshop Complete
+-
+-### What You’ve Built
+-
+-March 16
+-
+-### System Prompts ✓
+-
+-Role, constraints, tone
+-
+-March 23
+-
+-### Knowledge Collections ✓
+-
+-Grounded in your materials
+-
+-March 30 (Today)
+-
+-### Skills & Tools ✓
+-
+-Step-by-step workflows
+-
+-You now have a custom AI tool with three modular layers that can be tested as a configuration and refined iteratively.
+-That way, you can see what each component contributes and where to focus before you introduce it in the classroom.
+-
+-[ailab.gc.cuny.edu](https://ailab.gc.cuny.edu)
++## Customizing Skills & Tools — 28
++
++### A research skill to adapt
++
++Use this draft to check an interpretation against a source passage.
++
++```text
++When the user asks whether a passage supports a claim, ask for both if either is missing.
++
++1. Quote the relevant passage and identify its source. Do not invent missing metadata.
++2. State what the passage directly supports.
++3. Identify an inference or competing reading that needs further evidence.
++4. Ask one question that would help resolve the difference, then wait.
++
++Keep the quotation separate from your interpretation. If the source is unavailable, explain what cannot be checked.
++```
++
++Test it with supported, overstated, and unsupported claims from public or approved material.
++
++---
++
++## Customizing Skills & Tools — 29
++
++### Save and test the skill
++
++Create the skill, attach it to your model, confirm native function calling, and save the card. Open a fresh chat with the card.
++
++- Send a request that should trigger the skill.
++
++- Reply once and check whether the procedure continues appropriately.
++
++- Send an unrelated request and check whether the skill is applied unnecessarily.
++
++Record the result before revising the trigger or a procedural step.
++
++---
++
++## Customizing Skills & Tools — 30
++
++### Watch a tool call
++
++With an available search tool, ask for the title and link of a source relevant to a narrow question. Open the returned page and verify the claim.
++
++With an available code tool, use a small calculation whose answer you can check independently.
++
++Look for the actual call and returned result. The sentence “I searched” or “I calculated” does not establish that a tool ran.
++
++---
++
++## Customizing Skills & Tools — 31
++
++### Test a tool result against a known answer
++
++For Code Interpreter, use this small, invented dataset.
++
++```text
++Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
++```
++
++The expected median is **8**. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.
++
++Use only a capability enabled for the workshop. The facilitator can demonstrate if participant access differs.
++
++---
++
++## Customizing Skills & Tools — 32
++
++### Keep the evidence with the configuration
++
++| Record | Include |
++| --- | --- |
++| Configuration | Model, prompt, collection version, skill text, enabled tools. |
++| Action | Input, skill loading, tool call, result, final response. |
++| Judgment | Expected behavior, observed behavior, evidence, next revision. |
++
++Before sharing, test access to every dependency with the intended audience. Repeat relevant tests after a model or tool update.
++
++---
++
++## Customizing Skills & Tools — 33
++
++### Continue testing your configuration
++
++- Save prompts, sources, skills, and tool settings
++
++- Compare expected and observed behavior
++
++- Revise instructions from recorded failures
++
++- Verify shared access with intended users
++
++- Retest after model or tool updates
++
++[Browse system-prompt examples](../examples.html) · [Return to Composing System Prompts](../)
