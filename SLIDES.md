@@ -36,7 +36,7 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Compare responses from small models
 
-- Compare car-wash responses
+- Compare outputs
 
 - Revise in-chat system prompts
 
@@ -44,7 +44,7 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Save prompts for reuse
 
-Before attending, request individual access and sign into the Sandbox.
+Before attending, request individual access and sign into Sandbox.
 
 ---
 
@@ -56,7 +56,7 @@ Before attending, request individual access and sign into the Sandbox.
 
 - Choose **My own access** and sign in with **CUNY Login**.
 
-- Complete your details, select **CAIL Sandbox**, and submit the application.
+- Complete your details, select **CAIL Sandbox**, and submit your application.
 
 - After approval, open [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/) and select **Continue with CUNY Login**.
 
@@ -68,11 +68,11 @@ Before attending, request individual access and sign into the Sandbox.
 
 ### Select Models
 
-![Current Sandbox new chat with the model selector inside the message box](images/current/chat-page.png)
+![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
 
-Select the model name on the right inside the message box.
+Select model ID on bottom right of message box.
 
-Select the model name **on the right inside the message box**.
+Select model ID on bottom right of message box.
 
 Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
 
@@ -94,7 +94,7 @@ Choose tools and skills for this chat.
 
 Message actions
 
-Copy, edit, or regenerate a response. Open the three-dot menu for additional actions.
+Copy, edit, or regenerate a response. Open More (⋯) for additional actions.
 
 [Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
 
@@ -104,15 +104,15 @@ Copy, edit, or regenerate a response. Open the three-dot menu for additional act
 
 ### Compare Models
 
-![Current model selector with search and the Compare toggle](images/current/model-selector.png)
+![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
 
-Open the model selector, turn on Compare, and select two models.
+Select Compare beside search field, then choose two models.
 
-Open the model selector. Turn on **Compare**, then choose two available base models.
+Open model selector. Select **Compare** beside search field, then choose two models.
 
-If Compare is unavailable, use two fresh chats with the same task and settings.
+If Compare is unavailable, send identical prompts in separate new chats.
 
-Switching models midway carries the conversation history forward. Use fresh chats for a clearer initial comparison.
+Start a new chat before comparing models.
 
 ---
 
@@ -126,7 +126,7 @@ Compare how two small models interpret this sentence.
 The nurse yelled at the doctor because she was late. Who was late?
 ```
 
-Use the same prompt and chat history for both models. Note which models you selected.
+Send this question to both models.
 
 ---
 
@@ -134,67 +134,55 @@ Use the same prompt and chat history for both models. Note which models you sele
 
 ### Examine Assumptions
 
-“She” could refer to either person. Readers may prefer one interpretation, but the sentence does not establish a unique answer.
+“She” could refer to either person. This sentence does not establish who was late.
 
-- Does each model acknowledge the ambiguity?
+- Does each model acknowledge ambiguity?
 
 - What assumption supports its answer?
 
-- Does the explanation add information absent from the sentence?
-
-Compare the evidence in the answers. A confident explanation can still rest on an unsupported assumption.
+- Does either explanation add information absent from this sentence?
 
 ---
 
 ## Compose System Prompts — 10
 
-### Compare Recommendations
+### Compare Outputs
 
-Use the same two-model comparison for this question.
+Ask both models this question.
 
 ```text
 The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
 ```
 
-Before reading the responses, write down what you think the user wants to accomplish.
+What do you think this person wants to accomplish?
 
 ---
 
 ## Compose System Prompts — 11
 
-### Read Gemma’s Response
+### Gemma’s Response
 
-![Archived car-wash prompt and Gemma response saying to walk](images/showcase/car-wash-gemma.png)
-
-GCDI showcase, May 2026. Gemma recommends walking.
-
-The response shown recommends walking. Read its recommendation against the purpose of the trip.
+![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
 
 ---
 
 ## Compose System Prompts — 12
 
-### Read Qwen’s Response
+### Qwen’s Response
 
-![Archived car-wash prompt and Qwen response saying to take the car](images/showcase/car-wash-qwen.png)
-
-GCDI showcase, May 2026. Qwen recommends taking the car.
-
-Compare this recommendation with Gemma’s. What does each response assume about the trip?
+![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
 
 ---
 
 ## Compose System Prompts — 13
 
-### Try Model Comparison
+### Compare Models
 
-- In a fresh chat, send the car-wash prompt to two available models. Save both responses.
+- Send your original question to two models. Save both responses.
 
-- Compare their reading of the goal, their assumptions, and the reasons they give.
+- Add system instructions in Chat Controls.
 
-- Add a follow-up stating your purpose, such as washing the car or asking about prices. Does the recommendation change appropriately?
-
-If the purpose is to wash the car, the car must get there. The original wording leaves the purpose unstated.
+- Regenerate responses to your original prompt. Compare outputs before and after adding instructions.
 
 ---
 
@@ -202,15 +190,15 @@ If the purpose is to wash the car, the car must get there. The original wording 
 
 ### Evaluate Responses
 
-Compare how each model interprets the question and explains its recommendation.
+Compare how each model interprets your question and explains its recommendation.
 
 - Which assumptions does each response make?
 
 - Does either response invent information?
 
-- How does each model respond when you clarify your purpose?
+- How do outputs change after you edit system instructions?
 
-Save the responses with the prompt and model names so you can repeat the comparison.
+Save both responses with your prompt and selected model IDs.
 
 ---
 
@@ -226,9 +214,9 @@ Questions or tasks you enter in chat.
 
 ### System Prompts
 
-Instructions for the model’s role, tone, boundaries, and response style.
+Instructions defining model behavior, tone, boundaries, and response style.
 
-Test whether the selected model follows your instructions.
+Test whether your selected model follows these instructions.
 
 [System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
 
@@ -242,15 +230,15 @@ Test whether the selected model follows your instructions.
 
 ![Current chat Controls panel with its System Prompt field](images/current/chat-controls.png)
 
-Enter instructions in the System Prompt field under Chat Controls.
+Enter instructions in System Prompt under Chat Controls.
 
-- Open a fresh chat with one of the models you compared.
+- Open your chat.
 
-- Select **Controls** at the top right.
+- Select **Controls** at top right.
 
-- Enter the sample in **System Prompt** before sending the task.
+- Enter sample instructions in **System Prompt**, then regenerate responses to your original prompt.
 
-Use the conversation’s Controls for this exercise. Personal defaults under Settings have a wider scope.
+Use Chat Controls for this exercise. Defaults in Settings apply across chats.
 
 ---
 
@@ -258,7 +246,7 @@ Use the conversation’s Controls for this exercise. Personal defaults under Set
 
 ### Test System Prompts
 
-Keep one base model fixed. Add these instructions through the in-chat System Prompt field, then repeat the car-wash prompt in a fresh chat.
+Add these instructions in System Prompt under Chat Controls. Regenerate responses to your original prompt.
 
 ```text
 Help the user examine a question before settling on an answer.
@@ -274,13 +262,13 @@ Give a concise answer that states its assumptions. Do not invent missing context
 
 ### Compare Responses
 
-- Compare the saved baseline with the response produced using the system prompt.
+- Compare responses before and after adding system instructions.
 
-- Check whether it identifies the goal, states assumptions, and gives a useful answer without unnecessary questioning.
+- Check whether each response identifies your goal, states assumptions, and answers without unnecessary questions.
 
-- Try the nurse question again. Does the instruction help with ambiguity in a different form?
+- Repeat our opening question about who was late. Do these instructions help identify ambiguity?
 
-Keep the model, optional features, and other defaults consistent. Record any differences you cannot control.
+Keep base models and other settings unchanged. Record any differences you cannot control.
 
 ---
 
@@ -290,7 +278,7 @@ Keep the model, optional features, and other defaults consistent. Record any dif
 
 Open **Workspace → Models**.
 
-Open the sample model and review its **Base Model** and **System Prompt**. Compare those instructions with the prompt you tested in chat.
+Open a sample model and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
 
 Continue in chat if Workspace is unavailable.
 
@@ -312,7 +300,7 @@ Open a model to view its base model and system prompt. Select **Create** to conf
 
 ### Knowledge and Tools
 
-Knowledge adds sources. Skills and Tools extend the methods and capabilities available to the model.
+Attach documents under Knowledge. Add reusable instructions under Skills and operations such as web search under Tools.
 
 ---
 
@@ -328,11 +316,11 @@ Choose a name and base model, then enter a system prompt.
 
 - **Base Model** — Choose a model you have tested.
 
-- **System Prompt** — Add the instructions you tested in chat.
+- **System Prompt** — Add instructions you tested in chat.
 
 A custom model combines these choices. Creating it does not train a new base model.
 
-[The model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
 ---
 
@@ -346,9 +334,9 @@ Custom models combine a base model with instructions, documents, and tools.
 
 - Select a base model and add your tested system prompt.
 
-- Add prompt suggestions for tasks the model should support.
+- Add prompt suggestions for tasks your model should support.
 
-Students select the custom model to use the instructions and resources you configured.
+Students select your custom model to use its instructions and resources.
 
 [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
@@ -384,11 +372,11 @@ Help students write better.
 
 ### Identify Problems
 
-- No role assignment to contextualize the model for specific workflows or domain-knowledge
+- No specified role or disciplinary context
 
-- No boundaries or pedagogical guidance to constrain the model from doing work for students
+- No limits on writing for students
 
-- No success criteria for the model to optimize toward
+- No criteria for assessing responses
 
 ---
 
@@ -447,7 +435,7 @@ Constraints:
 - Tone: Warm and direct. Use “I notice...” and “What if you tried...”
 ```
 
-Scroll within the prompt to read more.
+Scroll within this prompt to read more.
 
 ---
 
@@ -544,7 +532,7 @@ Constraints:
 - Tone: Patient and curious.
 ```
 
-Scroll within the prompt to read more.
+Scroll within this prompt to read more.
 
 ---
 
@@ -594,7 +582,7 @@ You are a close-reading scaffold. Help students analyze literary texts by focusi
 
 - Names specific analytical categories
 
-- Addresses the plot-summary problem
+- Discourages plot summary
 
 - Requires textual evidence
 
@@ -639,7 +627,7 @@ Constraints:
 Tone: Encouraging and accessible. Affirm observations, then push deeper.
 ```
 
-Scroll within the prompt to read more.
+Scroll within this prompt to read more.
 
 ---
 
@@ -649,11 +637,11 @@ Scroll within the prompt to read more.
 
 Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
 
-- State the research question and material the model may use.
+- State your research question and identify permitted source material.
 
-- Specify the procedure and what counts as evidence.
+- Specify steps and what counts as evidence.
 
-- Ask the model to explain uncertainty and consider other interpretations.
+- Ask your model to explain uncertainty and consider other interpretations.
 
 Save your source material, prompt, response, and assessment together.
 
@@ -675,7 +663,7 @@ Draft a system prompt using these components.
 
 - **Context & Problem** — What course, what students, what learning challenge?
 
-- **Procedure** — What steps should the tool follow?
+- **Procedure** — What steps should your model follow?
 
 - **Constraints** — What should it refuse to do, and how should it redirect?
 
@@ -691,7 +679,7 @@ Component 1
 
 ### Define Context
 
-Name the tool, the course, the students, and the specific learning challenge.
+Describe your course, students, and learning challenge.
 
 - What kind of tool is this?
 
@@ -706,7 +694,7 @@ Students are [relevant context].
 The core problem: [specific learning challenge].
 ```
 
-**Your turn** Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.
+**Your turn** Copy this template. Describe what your model should help students do.
 
 ---
 
@@ -716,9 +704,9 @@ Component 2
 
 ### Write Procedures
 
-Tell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.
+Write numbered steps for your model to follow.
 
-- What should the tool request before responding?
+- What should your model request before responding?
 
 - What should it prioritize?
 
@@ -731,7 +719,7 @@ Procedure:
 3. For each issue, [specific action, e.g. ask a question rather than fix it].
 ```
 
-**Your turn** Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.
+**Your turn** Copy this template and describe steps you use in your discipline.
 
 ---
 
@@ -741,7 +729,7 @@ Component 3
 
 ### Set Constraints
 
-Define what the tool should not do and how it redirects when students push against those limits.
+Define tasks your model should decline and alternatives it should suggest.
 
 - What will students ask it to do *for* them?
 
@@ -756,7 +744,7 @@ Constraints:
 - If uncertain about [domain content], say so explicitly.
 ```
 
-**Your turn** Copy this template and fill in the placeholders. Keep the tool from doing work students should do themselves.
+**Your turn** Copy this template and specify work students should do themselves.
 
 ---
 
@@ -766,19 +754,19 @@ Component 4
 
 ### Set Tone
 
-Describe how the model should address your students.
+Describe how your model should address students.
 
 - What register fits your students?
 
 - Should it feel warm, direct, encouraging?
 
-- Are there phrases that model the right affect?
+- Which phrases demonstrate your intended tone?
 
 ```text
 Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[example phrase]."
 ```
 
-**Your turn** Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?
+**Your turn** Copy this template. What language helps your students feel supported?
 
 ---
 
@@ -804,7 +792,7 @@ Next step: [a specific, actionable suggestion]
 Question: [something for the student to consider]
 ```
 
-**Your turn** Copy this template and fill in the placeholders. Not every prompt needs an output format section.
+**Your turn** Copy this template if your task requires a consistent response format.
 
 ---
 
@@ -834,7 +822,7 @@ Refine
 
 ### Support Multiple Languages
 
-“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.” Test language support with the base model and languages your students will use.
+“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.”  Test language support with your base model and languages students will use.
 
 ---
 
@@ -846,7 +834,7 @@ Watch Out
 
 ### Prioritize Instructions
 
-Keep instructions clear and check for conflicts. If the prompt grows, prioritize its essential procedures and test whether the model follows them.
+Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
 
 ### Resolve Contradictions
 
@@ -854,11 +842,11 @@ Keep instructions clear and check for conflicts. If the prompt grows, prioritize
 
 ### Consider Student Questions
 
-Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
+Test your prompt with questions students ask in your course.
 
 ### Retest Revised Prompts
 
-Save the prompt version with the responses it produced. Revise when a test reveals a problem, then repeat that test.
+Save each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.
 
 ---
 
@@ -866,13 +854,13 @@ Save the prompt version with the responses it produced. Revise when a test revea
 
 ### Save Prompts
 
-- Save your prompt text with the model name and responses it produced.
+- Save your prompt text, model ID, and responses.
 
 - Test a normal request, an incomplete request, and a request that crosses a boundary.
 
-- Revise one instruction and repeat the test in a fresh chat.
+- Revise one instruction and repeat your test in a new chat.
 
-Save your tested prompt in a private custom model. Choose the base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
+Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
 
 ---
 
@@ -882,9 +870,9 @@ Save your tested prompt in a private custom model. Choose the base model, review
 
 - Open **Access → Add Access** and select users or a course group.
 
-- Grant **Read** access to people who will use the model and **Write** access to people who will edit it.
+- Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
 
-- Check that the people you share with can use the base model and any attached collections, skills, or tools.
+- Confirm everyone you share with can access your base model and attached collections, skills, and tools.
 
 [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
@@ -894,13 +882,13 @@ Save your tested prompt in a private custom model. Choose the base model, review
 
 ### Record Comparisons
 
-Record your prompt and model settings alongside the responses you compared.
+Save your prompt, model settings, and responses.
 
 | Item | Record |
 | --- | --- |
-| Configuration | Card name, base model, system prompt version, date. |
+| Configuration | Custom model name, base model, system prompt, settings, and date. |
 | Test | User request, enabled features, saved response. |
-| Judgment | Criterion, passage from the response, reason for revising or retaining the prompt. |
+| Judgment | What you checked, evidence from each response, and any change you plan to test. |
 
 Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
 
@@ -945,7 +933,7 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Create knowledge collections
 
-- Attach collections to model cards
+- Attach collections to custom models
 
 - Check source citations
 
@@ -959,7 +947,7 @@ Before attending, confirm individual access, Sandbox sign-in, Workspace access, 
 
 ### Review Custom Models
 
-Open the custom model you used in Workshop 1. Attach documents and test whether the model can find and cite relevant passages.
+Open your custom model from Workshop 1. Attach documents and test whether it can find and cite relevant passages.
 
 Bring course materials, research papers, or other documents you know well enough to check.
 
@@ -975,11 +963,11 @@ Use [system-prompt examples](examples.html) if you need a prompt to begin.
 
 Open Workspace and select Knowledge to create a collection.
 
-Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
+Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
 
 To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](examples.html).
 
-Request Workspace access from the CUNY AI Lab if the tab is unavailable.
+Request Workspace access from CUNY AI Lab if Workspace is unavailable.
 
 [Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
@@ -993,9 +981,9 @@ Request Workspace access from the CUNY AI Lab if the tab is unavailable.
 
 Review Base Model and System Prompt before attaching documents.
 
-Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
+Review **Base Model (From)** and **System Prompt**. Start a new chat. Select your custom model inside message box.
 
-Ask a question that depends on your source material. Save the response before attaching the collection.
+Ask a question about your source material. Save this response before attaching documents.
 
 [Model configuration](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
@@ -1025,7 +1013,7 @@ Enter a collection name and description, set access, and select Create Knowledge
 
 - Open **Workspace → Knowledge → Create**.
 
-- Name the collection and describe its contents and purpose.
+- Name your collection and describe its contents and purpose.
 
 - Keep it **Private** while building, then choose **Create Knowledge**.
 
@@ -1041,13 +1029,13 @@ Ask a question with a verifiable answer in one of your documents.
 
 ### Course Example
 
-What does the assignment require as evidence for the midterm essay?
+What evidence does this assignment require for our midterm essay?
 
 ### Research example
 
-How does this methods section define the study population?
+How does this methods section define who was studied?
 
-Check the answer against the original passage. A plausible summary alone does not show that retrieval worked.
+Check each answer against its source passage.
 
 ---
 
@@ -1077,9 +1065,9 @@ Check scans and complex PDFs before uploading. Convert them to text if necessary
 
 - Retrieval finds passages relevant to a question.
 
-- The model uses those passages to generate a response.
+- Your model uses retrieved passages to generate a response.
 
-Check that retrieved passages address your question and support the response.
+Check whether retrieved passages address your question and support claims in each response.
 
 [Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
 
@@ -1108,11 +1096,11 @@ Collection contents:
 
 ### Identify Problems
 
-- The syllabus may not contain the evidence needed for a revision question. Check which passages are retrieved.
+- A syllabus may not explain how to revise an essay. Check which passages are retrieved.
 
-- No assignment context for the revision task
+- No assignment instructions for revision
 
-- No readings or reference materials for the model to draw on
+- No readings or reference materials to consult
 
 ---
 
@@ -1133,15 +1121,15 @@ Collection contents:
 
 ### Compare Improvements
 
-- Separate documents let the model find what it needs
+- Separate documents distinguish individual sources
 
-- Assignment prompt gives the model context for the revision task
+- Assignment instructions describe what revision requires
 
 - Style guide helps with formatting questions
 
 ### Add Detail
 
-- No course readings for the model to reference during analysis
+- No course readings to reference during analysis
 
 - No common feedback patterns to guide revision
 
@@ -1201,9 +1189,9 @@ Collection contents:
 
 - A general textbook chapter may not answer a question about a particular primary source.
 
-- No primary sources for the model to help students analyze
+- No primary sources for students to analyze
 
-- No framework like SOAPS for the model to scaffold source analysis
+- No framework like SOAPS to guide source analysis
 
 ---
 
@@ -1227,13 +1215,13 @@ Collection contents:
 
 - Includes actual primary sources students are working with
 
-- Assignment prompt gives the model task-specific context
+- Assignment instructions explain what students should do
 
 - Documents are separate and focused
 
 ### Add Detail
 
-- No contextual background for the model to draw on when students ask about the period
+- No historical context for questions about this period
 
 - No SOAPS framework or equivalent to guide source analysis
 
@@ -1292,7 +1280,7 @@ Collection contents:
 
 ### Identify Problems
 
-- An omnibus reader can make it harder to identify the relevant text. Check whether retrieval selects the intended source.
+- An omnibus reader can make individual texts harder to identify. Check whether retrieval selects relevant passages.
 
 - No assignment context or close-reading framework
 
@@ -1322,13 +1310,13 @@ Collection contents:
 
 - Assignment prompt provides task-specific context
 
-- Critical framework document gives the model methodological grounding
+- A document explains how to use a critical framework
 
 ### Add Detail
 
 - No annotated examples showing how to move from observation to interpretation
 
-- No key terms for the current unit (e.g., tension, irony, ambiguity)
+- No key terms for this unit (e.g., tension, irony, ambiguity)
 
 - No instructor notes on what close reading looks like in this course
 
@@ -1368,9 +1356,9 @@ Build a collection from research papers or methods you want to compare.
 
 - Identify a question that requires consulting those sources.
 
-- Ask the model to compare specific claims or methods.
+- Ask your model to compare specific claims or methods.
 
-- Check its citations against the uploaded documents.
+- Check its citations against your uploaded documents.
 
 [Knowledge collections for research](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
@@ -1380,13 +1368,13 @@ Build a collection from research papers or methods you want to compare.
 
 ### Organize Documents
 
-Begin with a small collection so you can test how the model uses your materials.
+Begin with a few documents and test how your model uses them.
 
 - Name files so students or colleagues can identify them.
 
 - Use headings to distinguish sections.
 
-- Check whether the model retrieves the passages you need before adding more documents.
+- Check whether your model retrieves relevant passages before adding more documents.
 
 ---
 
@@ -1396,11 +1384,11 @@ Begin with a small collection so you can test how the model uses your materials.
 
 | Observation | Next check |
 | --- | --- |
-| No relevant source appears | Check processing, attachment, access, and the retrieval query. |
-| The source is present but misread | Compare the answer with the full passage and revise instructions. |
-| The answer invents a citation | Open the source and verify the quotation and location. |
+| No relevant source appears | Check whether files finished processing, are attached, and are accessible. Review your search query. |
+| A source is present but misread | Read cited passages in full and revise instructions. |
+| A response invents a citation | Open cited documents and verify quotations and page numbers. |
 
-Save the failed response before making one change.
+Save unsuccessful responses before revising anything.
 
 ---
 
@@ -1408,7 +1396,7 @@ Save the failed response before making one change.
 
 ### Build Knowledge Collections
 
-Choose documents that explain your course or research project, define the task, and provide source material.
+Choose documents that explain your course or research project and describe what you want to examine.
 
 ---
 
@@ -1434,11 +1422,11 @@ Type 1
 
 These documents describe course goals, structure, and methods students are expected to use.
 
-- What are the course’s learning objectives?
+- What are your course’s learning objectives?
 
-- What analytical framework or methodology is central to the course?
+- Which methods do students use in your course?
 
-- What course-level context would help the model support those goals?
+- Which course details would help your model support those goals?
 
 ```text
 Recommended uploads:
@@ -1451,7 +1439,7 @@ Recommended uploads:
    - Write it out in plain language with definitions
 ```
 
-**Consider** Is there a framework or methodology central to your course? If so, a short document (1-2 pages) explaining it in the terms you use with students could be a strong addition.
+**Consider** Add a short document (1–2 pages) explaining a method you teach, using language familiar to your students.
 
 ---
 
@@ -1461,9 +1449,9 @@ Type 2
 
 ### Describe Assignments
 
-These documents define the current task and help the model align its responses with your specific learning objectives.
+Assignment instructions describe what students should do and what successful work requires.
 
-- What does the assignment ask students to do?
+- What does your assignment ask students to do?
 
 - What does strong work on this assignment look like?
 
@@ -1492,7 +1480,7 @@ Type 3
 
 ### Identify Sources
 
-Upload the readings and reference materials students are working with in the current unit. This grounds the model in the actual texts.
+Upload readings and reference materials students use in your current unit.
 
 - What texts are students reading for this assignment?
 
@@ -1522,7 +1510,7 @@ Recommended uploads:
 
 ### Select Research Materials
 
-Describe your research project and the sources you want the model to use.
+Describe your research project and identify sources your model should use.
 
 Research context
 
@@ -1534,7 +1522,7 @@ Include a codebook, protocol, or criteria for comparing sources.
 
 Sources
 
-Identify the documents and passages you want to examine.
+Identify documents and passages you want to examine.
 
 ---
 
@@ -1542,13 +1530,13 @@ Identify the documents and passages you want to examine.
 
 ### Attach Knowledge Collections
 
-- Open your collection and upload the first few documents. Wait for processing to finish.
+- Open your collection and upload a few documents. Wait for processing to finish.
 
-- Check the extracted text against each source.
+- Check extracted text against each source.
 
-- Return to **Workspace → Models**, open your card, and select the collection under **Knowledge**.
+- Return to **Workspace → Models**, open your custom model, and select your collection under **Knowledge**.
 
-- Choose **Save & Update**, then start a fresh chat with that card.
+- Choose **Save & Update**, then start a new chat with your custom model.
 
 [Upload and attach source material](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
@@ -1558,13 +1546,13 @@ Identify the documents and passages you want to examine.
 
 ### Test Retrieval
 
-- Ask a question answered by one source. Verify the answer and quotation.
+- Ask a question answered by one source. Verify each answer and quotation.
 
 - Ask a question that needs two sources. Check whether both are used accurately.
 
-- Ask a question the collection cannot answer. Check whether the response states that limit.
+- Ask about something absent from your documents. Check whether your model acknowledges missing information.
 
-Repeat the baseline question with the model and prompt unchanged. Record the collection version and passages retrieved with your judgment.
+Repeat your first question without changing models or system prompts. Record which documents you used, which passages were retrieved, and whether those passages support your model’s response.
 
 ---
 
@@ -1572,11 +1560,11 @@ Repeat the baseline question with the model and prompt unchanged. Record the col
 
 ### Share Knowledge Collections
 
-Share the knowledge collection with the people who will use the custom model.
+Share your collection with people who will use your custom model.
 
 - Use **Add Access** to grant users or groups **Read** access.
 
-- Check access with someone you shared the model and collection with.
+- Ask someone you shared with to check access to your model and collection.
 
 - Choose **Public** only for documents intended for all signed-in Sandbox users.
 
@@ -1637,9 +1625,9 @@ Before attending, confirm individual access, Sandbox sign-in, and Skills and Too
 
 Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
 
-Write instructions for the procedure, attach the skill to your model, and test it.
+Write steps for your procedure, save them as a skill, attach it to your model, and test it.
 
-Bring a knowledge collection if the procedure needs to search your documents.
+Bring a knowledge collection if your procedure requires searching documents.
 
 ---
 
@@ -1651,9 +1639,9 @@ Bring a knowledge collection if the procedure needs to search your documents.
 
 - For research, compare a claim with its source or apply a codebook to an excerpt.
 
-- Define what a successful response would show before writing the skill.
+- Define what a successful response would show before writing instructions.
 
-The procedure should be specific enough that another person can inspect whether it was followed.
+Write steps another person can follow and check.
 
 ---
 
@@ -1663,9 +1651,9 @@ The procedure should be specific enough that another person can inspect whether 
 
 Skills contain reusable Markdown instructions for tasks or procedures.
 
-The model receives a skill’s name and description and can load its full instructions when needed.
+Models receive a skill’s name and description and can load its full instructions when needed.
 
-Describe when the skill should be used and what steps it should follow.
+Describe when to use your skill and which steps to follow.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -1685,7 +1673,7 @@ Enter a name, description, and instructions, then select Save & Create.
 
 - Enter a name, identifier, and description that explain when to use it.
 
-- Write the instructions, review **Access**, and choose **Save & Create**.
+- Write instructions, review **Access**, and choose **Save & Create**.
 
 [Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -1697,11 +1685,11 @@ Enter a name, description, and instructions, then select Save & Create.
 
 - Open **Workspace → Models** and edit your model.
 
-- Select the skill under **Skills**.
+- Select your skill under **Skills**.
 
 - Set **Function Calling** to **Native** under **Advanced Parameters**.
 
-- Select **Save & Update** and test a request that uses the skill.
+- Select **Save & Update** and test a request that uses your skill.
 
 Use a model that supports tool calling.
 
@@ -1713,11 +1701,11 @@ Use a model that supports tool calling.
 
 ### Compare Responses
 
-Try the same request before and after attaching the skill. Keep the base model, sources, and system prompt fixed.
+Repeat a request before and after attaching your skill. Keep base model, sources, and system prompt unchanged.
 
-- Did the model use the intended procedure?
+- Did your model follow your instructions?
 
-- Did it stop at the planned point for a response?
+- Did it pause where you specified?
 
 - Did it preserve evidence and uncertainty?
 
@@ -1729,11 +1717,11 @@ Try the same request before and after attaching the skill. Keep the base model, 
 
 ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](images/current/integrations.png)
 
-Open Integrations beside the plus button to enable tools for this chat.
+Open Integrations beside + to enable tools for this chat.
 
-A tool runs an operation, such as a search, a calculation, or a query of a source collection.
+A tool runs an operation, such as a search, a calculation, or a search within a knowledge collection.
 
-Open **Integrations** beside the plus button for available chat capabilities. Attach reusable tools under **Tools** in the model editor.
+Open **Integrations** beside + to choose tools for this chat. Attach reusable tools under **Tools** in your model editor.
 
 Availability depends on account permissions, configuration, and model support.
 
@@ -1747,13 +1735,13 @@ Availability depends on account permissions, configuration, and model support.
 
 Skills
 
-Instructions the model can load for a task or procedure.
+Reusable instructions for tasks or procedures.
 
 Tools
 
-Operations the model can call, such as web search, code execution, or database queries.
+Operations such as web search, code execution, or database queries.
 
-Test a request that needs the skill or tool. Check what the model used and whether its response is correct.
+Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -1783,13 +1771,13 @@ When a student is developing a research topic, walk them through four stages —
 
 - Model walks through all four stages in a single response instead of pausing at each
 
-- No procedure for connecting the student’s working topic to each stasis question
+- No steps connecting a student’s topic to each stasis question
 
 - Treats stasis as a checklist rather than a deliberative process
 
-- No mechanism to let the student reformulate before moving on
+- No pause for students to revise their question
 
-- Does not help the student identify which stasis their argument addresses
+- Does not help students identify which stasis their argument addresses
 
 ---
 
@@ -1828,7 +1816,7 @@ Example 2
 
 ### Examine Documents
 
-History — The Sourcing Heuristic
+History — Source Analysis
 
 ---
 
@@ -1844,7 +1832,7 @@ History
 When a student asks about a primary source, retrieve it from the knowledge collection and walk them through its rhetorical situation using SOAPS. Ask questions one element at a time rather than summarizing.
 ```
 
-- Model paraphrases the source instead of quoting from the uploaded document
+- Paraphrases source material without quoting uploaded documents
 
 - No procedure for retrieving and presenting specific passages as evidence
 
@@ -1852,7 +1840,7 @@ When a student asks about a primary source, retrieve it from the knowledge colle
 
 - Student receives a finished reading rather than a structured inquiry
 
-- No requirement to ground each analytical move in the source’s own language
+- No requirement to support interpretations with quotations
 
 ---
 
@@ -1909,15 +1897,15 @@ Literature & Cultural Studies
 When a student shares a film still or visual artifact, guide them from describing formal elements — composition, lighting, framing — toward interpreting how those choices construct meaning in context.
 ```
 
-- Model describes the image for the student instead of directing their attention
+- Describes images without asking students what they notice
 
 - No scaffolding from observation to formal analysis to interpretive claim
 
 - Treats all visual elements at once rather than isolating one per turn
 
-- No mechanism to keep the student doing the looking and the arguing
+- No questions prompting students to observe and interpret
 
-- Skips the gap between “what’s in the frame” and “what argument it makes”
+- Does not connect visual details with interpretive claims
 
 ---
 
@@ -1965,9 +1953,9 @@ Use three parts to draft this skill.
 
 - **Trigger** — When should this skill activate?
 
-- **Procedure** — What steps does the model follow, in order?
+- **Procedure** — Which steps should your model follow?
 
-- **Format** — What should the output look like?
+- **Format** — How should responses appear?
 
 ---
 
@@ -1977,20 +1965,20 @@ Component 1
 
 ### Define Triggers
 
-Define when this skill should activate. Test the trigger with a matching request and an unrelated request.
+Describe when to use your skill. Test a relevant request and an unrelated request.
 
 - What student action starts this workflow?
 
 - Does it activate when they share a draft? Ask about a source? Upload an image?
 
-- Should it run automatically, or only when the student asks?
+- Should it run automatically, or only when students ask?
 
 ```text
 Skill: [Skill Name]
 When a student [specific action or input], follow this procedure:
 ```
 
-**Your turn** What pedagogical move are you trying to teach the model? Name the student action that should trigger it.
+**Your turn** Name a student action your skill should respond to.
 
 ---
 
@@ -2000,11 +1988,11 @@ Component 2
 
 ### Write Procedures
 
-The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.
+Write numbered steps specifying what your model should do and when it should pause.
 
 - What should happen first? What comes next?
 
-- Where should the model wait for the student before continuing?
+- When should your model wait for a student response?
 
 - Should it quote, cite, or reference specific materials?
 
@@ -2012,11 +2000,11 @@ The core of every skill. Numbered steps that tell the model what to do, in what 
 Procedure:
 1. [First step — what does the model do or ask?]
 2. [After the student responds, what comes next?]
-3. [Continue the sequence — include wait points]
+3. [Continue these steps — specify when to wait for a student response]
 4. [Final step — synthesis, next action, or handoff]
 ```
 
-**Your turn** Write 3–5 numbered steps. Use the sequence you follow when performing this task yourself.
+**Your turn** Write 3–5 numbered steps in an order you would follow yourself.
 
 ---
 
@@ -2026,9 +2014,9 @@ Component 3
 
 ### Specify Format
 
-Specify what the output should look like. Without a format, the model structures responses however it wants.
+Specify how responses should be organized.
 
-- Should the model quote the student’s text?
+- Should responses quote student writing?
 
 - Should each response end with a question?
 
@@ -2042,7 +2030,7 @@ Format:
 [One question for the student]
 ```
 
-**Your turn** Write a short format template. What should each response from the model actually look like?
+**Your turn** Write a template showing how each response should be organized.
 
 ---
 
@@ -2062,7 +2050,7 @@ Exercise
 
 ### Choose Procedures
 
-Which is closest to the skill you want to build?
+Which procedure would you like to use?
 
 ### Establish Stasis
 
@@ -2076,9 +2064,9 @@ Quote, then ask who, when, for whom
 
 Describe → analyze → interpret
 
-### Choose Alternatives
+### Choose Another Procedure
 
-A repeatable teaching or research procedure
+Use a procedure from your teaching or research.
 
 ---
 
@@ -2088,7 +2076,7 @@ Draft It
 
 ### Write Instructions
 
-Use the three-part structure to write a skill for the move you chose.
+Describe when to use your skill, which steps to follow, and how responses should appear.
 
 ### Define Triggers
 
@@ -2096,7 +2084,7 @@ What student action starts this?
 
 ### Write Procedures
 
-3–5 numbered steps with wait points.
+Write 3–5 steps and specify when to pause.
 
 ### Specify Format
 
@@ -2108,7 +2096,7 @@ When a student [trigger action], follow this procedure:
 
 Procedure:
 1. [First step]
-2. [Second step — include wait points]
+2. [Second step — specify when to wait for a student response]
 3. [Third step]
 
 Format:
@@ -2122,7 +2110,7 @@ Format:
 
 ## Skills & Tools — 28
 
-### Check Source Claims
+### Check Interpretations
 
 Use this draft to check an interpretation against a source passage.
 
@@ -2145,15 +2133,15 @@ Test it with supported, overstated, and unsupported claims from public or approv
 
 ### Test Skills
 
-Create the skill, attach it to your model, confirm native function calling, and save the card. Open a fresh chat with the card.
+Create your skill, attach it to your custom model, and confirm native function calling. Save your model and start a new chat.
 
-- Send a request that should trigger the skill.
+- Send a request that should use your skill.
 
-- Reply once and check whether the procedure continues appropriately.
+- Reply once and check whether your model follows your next step.
 
-- Send an unrelated request and check whether the skill is applied unnecessarily.
+- Send an unrelated request and check whether your skill is used unnecessarily.
 
-Record the result before revising the trigger or a procedural step.
+Save results before revising your skill’s description or instructions.
 
 ---
 
@@ -2161,11 +2149,11 @@ Record the result before revising the trigger or a procedural step.
 
 ### Inspect Tool Results
 
-With an available search tool, ask for the title and link of a source relevant to a narrow question. Open the returned page and verify the claim.
+Use a search tool to find a source relevant to your question. Open its link and check whether it supports your model’s claim.
 
 With an available code tool, use a small calculation whose answer you can check independently.
 
-Look for the actual call and returned result. The sentence “I searched” or “I calculated” does not establish that a tool ran.
+Inspect tool calls and results. Check whether a tool ran when your model says it searched or calculated.
 
 ---
 
@@ -2179,7 +2167,7 @@ Run this calculation with Code Interpreter.
 Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
 ```
 
-The expected median is **8**. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.
+Expected median is **8**. Check calculation output and final answer. If execution fails, your model should report that.
 
 ---
 
@@ -2189,11 +2177,11 @@ The expected median is **8**. Check the execution result and the final answer. I
 
 | Record | Include |
 | --- | --- |
-| Configuration | Model, prompt, collection version, skill text, enabled tools. |
-| Action | Input, skill loading, tool call, result, final response. |
-| Judgment | Expected behavior, observed behavior, evidence, next revision. |
+| Configuration | Model ID, system prompt, documents, skill instructions, and enabled tools. |
+| Action | Request, instructions used, tool calls and results, and final response. |
+| Judgment | What you expected, what happened, and any change you plan to test. |
 
-Before sharing, check that the people you share with can use the model and its collections, skills, and tools. Repeat relevant tests after a model or tool update.
+Before sharing, confirm others can access your model, collections, skills, and tools. Repeat relevant tests after updates.
 
 ---
 

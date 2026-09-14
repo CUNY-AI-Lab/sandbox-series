@@ -62,3 +62,5 @@ The [September 14 copy review](2026-09-14-review.md) links the prior published c
 ## Participant Revision
 
 [Review participant-copy changes](participant-copy-review.md). Presenter instructions and editorial commentary have been removed from the slides, transcript, and examples page. Presenter lesson plans remain in WORKSHOP.md and are no longer linked from participant navigation.
+
+[Latest full before/after copy review](plain-language-review.md) · [Latest direct diff](plain-language.diff)

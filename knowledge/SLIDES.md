@@ -22,7 +22,7 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 - Create knowledge collections
 
-- Attach collections to model cards
+- Attach collections to custom models
 
 - Check source citations
 
@@ -36,7 +36,7 @@ Before attending, confirm individual access, Sandbox sign-in, Workspace access, 
 
 ### Review Custom Models
 
-Open the custom model you used in Workshop 1. Attach documents and test whether the model can find and cite relevant passages.
+Open your custom model from Workshop 1. Attach documents and test whether it can find and cite relevant passages.
 
 Bring course materials, research papers, or other documents you know well enough to check.
 
@@ -52,11 +52,11 @@ Use [system-prompt examples](../examples.html) if you need a prompt to begin.
 
 Open Workspace and select Knowledge to create a collection.
 
-Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
+Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
 
 To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](../examples.html).
 
-Request Workspace access from the CUNY AI Lab if the tab is unavailable.
+Request Workspace access from CUNY AI Lab if Workspace is unavailable.
 
 [Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
@@ -70,9 +70,9 @@ Request Workspace access from the CUNY AI Lab if the tab is unavailable.
 
 Review Base Model and System Prompt before attaching documents.
 
-Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
+Review **Base Model (From)** and **System Prompt**. Start a new chat. Select your custom model inside message box.
 
-Ask a question that depends on your source material. Save the response before attaching the collection.
+Ask a question about your source material. Save this response before attaching documents.
 
 [Model configuration](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
@@ -102,7 +102,7 @@ Enter a collection name and description, set access, and select Create Knowledge
 
 - Open **Workspace → Knowledge → Create**.
 
-- Name the collection and describe its contents and purpose.
+- Name your collection and describe its contents and purpose.
 
 - Keep it **Private** while building, then choose **Create Knowledge**.
 
@@ -118,13 +118,13 @@ Ask a question with a verifiable answer in one of your documents.
 
 ### Course Example
 
-What does the assignment require as evidence for the midterm essay?
+What evidence does this assignment require for our midterm essay?
 
 ### Research example
 
-How does this methods section define the study population?
+How does this methods section define who was studied?
 
-Check the answer against the original passage. A plausible summary alone does not show that retrieval worked.
+Check each answer against its source passage.
 
 ---
 
@@ -154,9 +154,9 @@ Check scans and complex PDFs before uploading. Convert them to text if necessary
 
 - Retrieval finds passages relevant to a question.
 
-- The model uses those passages to generate a response.
+- Your model uses retrieved passages to generate a response.
 
-Check that retrieved passages address your question and support the response.
+Check whether retrieved passages address your question and support claims in each response.
 
 [Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
 
@@ -185,11 +185,11 @@ Collection contents:
 
 ### Identify Problems
 
-- The syllabus may not contain the evidence needed for a revision question. Check which passages are retrieved.
+- A syllabus may not explain how to revise an essay. Check which passages are retrieved.
 
-- No assignment context for the revision task
+- No assignment instructions for revision
 
-- No readings or reference materials for the model to draw on
+- No readings or reference materials to consult
 
 ---
 
@@ -210,15 +210,15 @@ Collection contents:
 
 ### Compare Improvements
 
-- Separate documents let the model find what it needs
+- Separate documents distinguish individual sources
 
-- Assignment prompt gives the model context for the revision task
+- Assignment instructions describe what revision requires
 
 - Style guide helps with formatting questions
 
 ### Add Detail
 
-- No course readings for the model to reference during analysis
+- No course readings to reference during analysis
 
 - No common feedback patterns to guide revision
 
@@ -278,9 +278,9 @@ Collection contents:
 
 - A general textbook chapter may not answer a question about a particular primary source.
 
-- No primary sources for the model to help students analyze
+- No primary sources for students to analyze
 
-- No framework like SOAPS for the model to scaffold source analysis
+- No framework like SOAPS to guide source analysis
 
 ---
 
@@ -304,13 +304,13 @@ Collection contents:
 
 - Includes actual primary sources students are working with
 
-- Assignment prompt gives the model task-specific context
+- Assignment instructions explain what students should do
 
 - Documents are separate and focused
 
 ### Add Detail
 
-- No contextual background for the model to draw on when students ask about the period
+- No historical context for questions about this period
 
 - No SOAPS framework or equivalent to guide source analysis
 
@@ -369,7 +369,7 @@ Collection contents:
 
 ### Identify Problems
 
-- An omnibus reader can make it harder to identify the relevant text. Check whether retrieval selects the intended source.
+- An omnibus reader can make individual texts harder to identify. Check whether retrieval selects relevant passages.
 
 - No assignment context or close-reading framework
 
@@ -399,13 +399,13 @@ Collection contents:
 
 - Assignment prompt provides task-specific context
 
-- Critical framework document gives the model methodological grounding
+- A document explains how to use a critical framework
 
 ### Add Detail
 
 - No annotated examples showing how to move from observation to interpretation
 
-- No key terms for the current unit (e.g., tension, irony, ambiguity)
+- No key terms for this unit (e.g., tension, irony, ambiguity)
 
 - No instructor notes on what close reading looks like in this course
 
@@ -445,9 +445,9 @@ Build a collection from research papers or methods you want to compare.
 
 - Identify a question that requires consulting those sources.
 
-- Ask the model to compare specific claims or methods.
+- Ask your model to compare specific claims or methods.
 
-- Check its citations against the uploaded documents.
+- Check its citations against your uploaded documents.
 
 [Knowledge collections for research](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
@@ -457,13 +457,13 @@ Build a collection from research papers or methods you want to compare.
 
 ### Organize Documents
 
-Begin with a small collection so you can test how the model uses your materials.
+Begin with a few documents and test how your model uses them.
 
 - Name files so students or colleagues can identify them.
 
 - Use headings to distinguish sections.
 
-- Check whether the model retrieves the passages you need before adding more documents.
+- Check whether your model retrieves relevant passages before adding more documents.
 
 ---
 
@@ -473,11 +473,11 @@ Begin with a small collection so you can test how the model uses your materials.
 
 | Observation | Next check |
 | --- | --- |
-| No relevant source appears | Check processing, attachment, access, and the retrieval query. |
-| The source is present but misread | Compare the answer with the full passage and revise instructions. |
-| The answer invents a citation | Open the source and verify the quotation and location. |
+| No relevant source appears | Check whether files finished processing, are attached, and are accessible. Review your search query. |
+| A source is present but misread | Read cited passages in full and revise instructions. |
+| A response invents a citation | Open cited documents and verify quotations and page numbers. |
 
-Save the failed response before making one change.
+Save unsuccessful responses before revising anything.
 
 ---
 
@@ -485,7 +485,7 @@ Save the failed response before making one change.
 
 ### Build Knowledge Collections
 
-Choose documents that explain your course or research project, define the task, and provide source material.
+Choose documents that explain your course or research project and describe what you want to examine.
 
 ---
 
@@ -511,11 +511,11 @@ Type 1
 
 These documents describe course goals, structure, and methods students are expected to use.
 
-- What are the course’s learning objectives?
+- What are your course’s learning objectives?
 
-- What analytical framework or methodology is central to the course?
+- Which methods do students use in your course?
 
-- What course-level context would help the model support those goals?
+- Which course details would help your model support those goals?
 
 ```text
 Recommended uploads:
@@ -528,7 +528,7 @@ Recommended uploads:
    - Write it out in plain language with definitions
 ```
 
-**Consider** Is there a framework or methodology central to your course? If so, a short document (1-2 pages) explaining it in the terms you use with students could be a strong addition.
+**Consider** Add a short document (1–2 pages) explaining a method you teach, using language familiar to your students.
 
 ---
 
@@ -538,9 +538,9 @@ Type 2
 
 ### Describe Assignments
 
-These documents define the current task and help the model align its responses with your specific learning objectives.
+Assignment instructions describe what students should do and what successful work requires.
 
-- What does the assignment ask students to do?
+- What does your assignment ask students to do?
 
 - What does strong work on this assignment look like?
 
@@ -569,7 +569,7 @@ Type 3
 
 ### Identify Sources
 
-Upload the readings and reference materials students are working with in the current unit. This grounds the model in the actual texts.
+Upload readings and reference materials students use in your current unit.
 
 - What texts are students reading for this assignment?
 
@@ -599,7 +599,7 @@ Recommended uploads:
 
 ### Select Research Materials
 
-Describe your research project and the sources you want the model to use.
+Describe your research project and identify sources your model should use.
 
 Research context
 
@@ -611,7 +611,7 @@ Include a codebook, protocol, or criteria for comparing sources.
 
 Sources
 
-Identify the documents and passages you want to examine.
+Identify documents and passages you want to examine.
 
 ---
 
@@ -619,13 +619,13 @@ Identify the documents and passages you want to examine.
 
 ### Attach Knowledge Collections
 
-- Open your collection and upload the first few documents. Wait for processing to finish.
+- Open your collection and upload a few documents. Wait for processing to finish.
 
-- Check the extracted text against each source.
+- Check extracted text against each source.
 
-- Return to **Workspace → Models**, open your card, and select the collection under **Knowledge**.
+- Return to **Workspace → Models**, open your custom model, and select your collection under **Knowledge**.
 
-- Choose **Save & Update**, then start a fresh chat with that card.
+- Choose **Save & Update**, then start a new chat with your custom model.
 
 [Upload and attach source material](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
@@ -635,13 +635,13 @@ Identify the documents and passages you want to examine.
 
 ### Test Retrieval
 
-- Ask a question answered by one source. Verify the answer and quotation.
+- Ask a question answered by one source. Verify each answer and quotation.
 
 - Ask a question that needs two sources. Check whether both are used accurately.
 
-- Ask a question the collection cannot answer. Check whether the response states that limit.
+- Ask about something absent from your documents. Check whether your model acknowledges missing information.
 
-Repeat the baseline question with the model and prompt unchanged. Record the collection version and passages retrieved with your judgment.
+Repeat your first question without changing models or system prompts. Record which documents you used, which passages were retrieved, and whether those passages support your model’s response.
 
 ---
 
@@ -649,11 +649,11 @@ Repeat the baseline question with the model and prompt unchanged. Record the col
 
 ### Share Knowledge Collections
 
-Share the knowledge collection with the people who will use the custom model.
+Share your collection with people who will use your custom model.
 
 - Use **Add Access** to grant users or groups **Read** access.
 
-- Check access with someone you shared the model and collection with.
+- Ask someone you shared with to check access to your model and collection.
 
 - Choose **Public** only for documents intended for all signed-in Sandbox users.
 

@@ -167,6 +167,39 @@
       "source_sha256": "7be8624a7a7046b0ffcd1a097e66f1f41fa690bb8592e8cfb0c0644a5fbeac50",
       "processing": "Rectangular crop only",
       "sha256": "0d542f95a7072538f0a25cec88cdc49511a2b5880a7acb368647bd28d4eb90ff"
+    },
+    {
+      "file": "model-selector-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "capture": "Native Firefox window, 100% zoom, Dark theme. Search field focused so Compare tooltip is absent.",
+      "source_dimensions": [
+        2528,
+        2618
+      ],
+      "crop_xyxy": [
+        210,
+        250,
+        2440,
+        2290
+      ],
+      "source_sha256": "cf0466dcde21fb2edb89c57c647d106ebf408c3223531803f699760546d7061b",
+      "processing": "Rectangular crop retains CUNY AI Lab logo, message box, and open model selector.",
+      "sha256": "a08bea5b020c092b0d223731dc7ee1184880f47812b40704eeaf0cb39e27e346",
+      "observed_date": "2026-09-14",
+      "verified_control": "Compare toggle changed from off to on, then back to off during Firefox verification."
+    },
+    {
+      "file": "model-selector-compare-2026-09-14.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-14",
+      "source_file": "model-selector-2026-09-14.png",
+      "source_dimensions": [
+        2230,
+        2040
+      ],
+      "source_sha256": "a08bea5b020c092b0d223731dc7ee1184880f47812b40704eeaf0cb39e27e346",
+      "processing": "SVG embeds unchanged screenshot pixels and adds a white Compare label, arrow, and circle. Annotation points to Compare without covering it.",
+      "sha256": "608dbc58afe373f605eab85c6ca6470ecc7597f7b1814a2425d848d0c8a144c1"
     }
   ]
 }

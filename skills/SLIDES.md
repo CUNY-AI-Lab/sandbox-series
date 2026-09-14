@@ -38,9 +38,9 @@ Before attending, confirm individual access, Sandbox sign-in, and Skills and Too
 
 Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
 
-Write instructions for the procedure, attach the skill to your model, and test it.
+Write steps for your procedure, save them as a skill, attach it to your model, and test it.
 
-Bring a knowledge collection if the procedure needs to search your documents.
+Bring a knowledge collection if your procedure requires searching documents.
 
 ---
 
@@ -52,9 +52,9 @@ Bring a knowledge collection if the procedure needs to search your documents.
 
 - For research, compare a claim with its source or apply a codebook to an excerpt.
 
-- Define what a successful response would show before writing the skill.
+- Define what a successful response would show before writing instructions.
 
-The procedure should be specific enough that another person can inspect whether it was followed.
+Write steps another person can follow and check.
 
 ---
 
@@ -64,9 +64,9 @@ The procedure should be specific enough that another person can inspect whether 
 
 Skills contain reusable Markdown instructions for tasks or procedures.
 
-The model receives a skill’s name and description and can load its full instructions when needed.
+Models receive a skill’s name and description and can load its full instructions when needed.
 
-Describe when the skill should be used and what steps it should follow.
+Describe when to use your skill and which steps to follow.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -86,7 +86,7 @@ Enter a name, description, and instructions, then select Save & Create.
 
 - Enter a name, identifier, and description that explain when to use it.
 
-- Write the instructions, review **Access**, and choose **Save & Create**.
+- Write instructions, review **Access**, and choose **Save & Create**.
 
 [Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -98,11 +98,11 @@ Enter a name, description, and instructions, then select Save & Create.
 
 - Open **Workspace → Models** and edit your model.
 
-- Select the skill under **Skills**.
+- Select your skill under **Skills**.
 
 - Set **Function Calling** to **Native** under **Advanced Parameters**.
 
-- Select **Save & Update** and test a request that uses the skill.
+- Select **Save & Update** and test a request that uses your skill.
 
 Use a model that supports tool calling.
 
@@ -114,11 +114,11 @@ Use a model that supports tool calling.
 
 ### Compare Responses
 
-Try the same request before and after attaching the skill. Keep the base model, sources, and system prompt fixed.
+Repeat a request before and after attaching your skill. Keep base model, sources, and system prompt unchanged.
 
-- Did the model use the intended procedure?
+- Did your model follow your instructions?
 
-- Did it stop at the planned point for a response?
+- Did it pause where you specified?
 
 - Did it preserve evidence and uncertainty?
 
@@ -130,11 +130,11 @@ Try the same request before and after attaching the skill. Keep the base model, 
 
 ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
 
-Open Integrations beside the plus button to enable tools for this chat.
+Open Integrations beside + to enable tools for this chat.
 
-A tool runs an operation, such as a search, a calculation, or a query of a source collection.
+A tool runs an operation, such as a search, a calculation, or a search within a knowledge collection.
 
-Open **Integrations** beside the plus button for available chat capabilities. Attach reusable tools under **Tools** in the model editor.
+Open **Integrations** beside + to choose tools for this chat. Attach reusable tools under **Tools** in your model editor.
 
 Availability depends on account permissions, configuration, and model support.
 
@@ -148,13 +148,13 @@ Availability depends on account permissions, configuration, and model support.
 
 Skills
 
-Instructions the model can load for a task or procedure.
+Reusable instructions for tasks or procedures.
 
 Tools
 
-Operations the model can call, such as web search, code execution, or database queries.
+Operations such as web search, code execution, or database queries.
 
-Test a request that needs the skill or tool. Check what the model used and whether its response is correct.
+Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -184,13 +184,13 @@ When a student is developing a research topic, walk them through four stages —
 
 - Model walks through all four stages in a single response instead of pausing at each
 
-- No procedure for connecting the student’s working topic to each stasis question
+- No steps connecting a student’s topic to each stasis question
 
 - Treats stasis as a checklist rather than a deliberative process
 
-- No mechanism to let the student reformulate before moving on
+- No pause for students to revise their question
 
-- Does not help the student identify which stasis their argument addresses
+- Does not help students identify which stasis their argument addresses
 
 ---
 
@@ -229,7 +229,7 @@ Example 2
 
 ### Examine Documents
 
-History — The Sourcing Heuristic
+History — Source Analysis
 
 ---
 
@@ -245,7 +245,7 @@ History
 When a student asks about a primary source, retrieve it from the knowledge collection and walk them through its rhetorical situation using SOAPS. Ask questions one element at a time rather than summarizing.
 ```
 
-- Model paraphrases the source instead of quoting from the uploaded document
+- Paraphrases source material without quoting uploaded documents
 
 - No procedure for retrieving and presenting specific passages as evidence
 
@@ -253,7 +253,7 @@ When a student asks about a primary source, retrieve it from the knowledge colle
 
 - Student receives a finished reading rather than a structured inquiry
 
-- No requirement to ground each analytical move in the source’s own language
+- No requirement to support interpretations with quotations
 
 ---
 
@@ -310,15 +310,15 @@ Literature & Cultural Studies
 When a student shares a film still or visual artifact, guide them from describing formal elements — composition, lighting, framing — toward interpreting how those choices construct meaning in context.
 ```
 
-- Model describes the image for the student instead of directing their attention
+- Describes images without asking students what they notice
 
 - No scaffolding from observation to formal analysis to interpretive claim
 
 - Treats all visual elements at once rather than isolating one per turn
 
-- No mechanism to keep the student doing the looking and the arguing
+- No questions prompting students to observe and interpret
 
-- Skips the gap between “what’s in the frame” and “what argument it makes”
+- Does not connect visual details with interpretive claims
 
 ---
 
@@ -366,9 +366,9 @@ Use three parts to draft this skill.
 
 - **Trigger** — When should this skill activate?
 
-- **Procedure** — What steps does the model follow, in order?
+- **Procedure** — Which steps should your model follow?
 
-- **Format** — What should the output look like?
+- **Format** — How should responses appear?
 
 ---
 
@@ -378,20 +378,20 @@ Component 1
 
 ### Define Triggers
 
-Define when this skill should activate. Test the trigger with a matching request and an unrelated request.
+Describe when to use your skill. Test a relevant request and an unrelated request.
 
 - What student action starts this workflow?
 
 - Does it activate when they share a draft? Ask about a source? Upload an image?
 
-- Should it run automatically, or only when the student asks?
+- Should it run automatically, or only when students ask?
 
 ```text
 Skill: [Skill Name]
 When a student [specific action or input], follow this procedure:
 ```
 
-**Your turn** What pedagogical move are you trying to teach the model? Name the student action that should trigger it.
+**Your turn** Name a student action your skill should respond to.
 
 ---
 
@@ -401,11 +401,11 @@ Component 2
 
 ### Write Procedures
 
-The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.
+Write numbered steps specifying what your model should do and when it should pause.
 
 - What should happen first? What comes next?
 
-- Where should the model wait for the student before continuing?
+- When should your model wait for a student response?
 
 - Should it quote, cite, or reference specific materials?
 
@@ -413,11 +413,11 @@ The core of every skill. Numbered steps that tell the model what to do, in what 
 Procedure:
 1. [First step — what does the model do or ask?]
 2. [After the student responds, what comes next?]
-3. [Continue the sequence — include wait points]
+3. [Continue these steps — specify when to wait for a student response]
 4. [Final step — synthesis, next action, or handoff]
 ```
 
-**Your turn** Write 3–5 numbered steps. Use the sequence you follow when performing this task yourself.
+**Your turn** Write 3–5 numbered steps in an order you would follow yourself.
 
 ---
 
@@ -427,9 +427,9 @@ Component 3
 
 ### Specify Format
 
-Specify what the output should look like. Without a format, the model structures responses however it wants.
+Specify how responses should be organized.
 
-- Should the model quote the student’s text?
+- Should responses quote student writing?
 
 - Should each response end with a question?
 
@@ -443,7 +443,7 @@ Format:
 [One question for the student]
 ```
 
-**Your turn** Write a short format template. What should each response from the model actually look like?
+**Your turn** Write a template showing how each response should be organized.
 
 ---
 
@@ -463,7 +463,7 @@ Exercise
 
 ### Choose Procedures
 
-Which is closest to the skill you want to build?
+Which procedure would you like to use?
 
 ### Establish Stasis
 
@@ -477,9 +477,9 @@ Quote, then ask who, when, for whom
 
 Describe → analyze → interpret
 
-### Choose Alternatives
+### Choose Another Procedure
 
-A repeatable teaching or research procedure
+Use a procedure from your teaching or research.
 
 ---
 
@@ -489,7 +489,7 @@ Draft It
 
 ### Write Instructions
 
-Use the three-part structure to write a skill for the move you chose.
+Describe when to use your skill, which steps to follow, and how responses should appear.
 
 ### Define Triggers
 
@@ -497,7 +497,7 @@ What student action starts this?
 
 ### Write Procedures
 
-3–5 numbered steps with wait points.
+Write 3–5 steps and specify when to pause.
 
 ### Specify Format
 
@@ -509,7 +509,7 @@ When a student [trigger action], follow this procedure:
 
 Procedure:
 1. [First step]
-2. [Second step — include wait points]
+2. [Second step — specify when to wait for a student response]
 3. [Third step]
 
 Format:
@@ -523,7 +523,7 @@ Format:
 
 ## Skills & Tools — 28
 
-### Check Source Claims
+### Check Interpretations
 
 Use this draft to check an interpretation against a source passage.
 
@@ -546,15 +546,15 @@ Test it with supported, overstated, and unsupported claims from public or approv
 
 ### Test Skills
 
-Create the skill, attach it to your model, confirm native function calling, and save the card. Open a fresh chat with the card.
+Create your skill, attach it to your custom model, and confirm native function calling. Save your model and start a new chat.
 
-- Send a request that should trigger the skill.
+- Send a request that should use your skill.
 
-- Reply once and check whether the procedure continues appropriately.
+- Reply once and check whether your model follows your next step.
 
-- Send an unrelated request and check whether the skill is applied unnecessarily.
+- Send an unrelated request and check whether your skill is used unnecessarily.
 
-Record the result before revising the trigger or a procedural step.
+Save results before revising your skill’s description or instructions.
 
 ---
 
@@ -562,11 +562,11 @@ Record the result before revising the trigger or a procedural step.
 
 ### Inspect Tool Results
 
-With an available search tool, ask for the title and link of a source relevant to a narrow question. Open the returned page and verify the claim.
+Use a search tool to find a source relevant to your question. Open its link and check whether it supports your model’s claim.
 
 With an available code tool, use a small calculation whose answer you can check independently.
 
-Look for the actual call and returned result. The sentence “I searched” or “I calculated” does not establish that a tool ran.
+Inspect tool calls and results. Check whether a tool ran when your model says it searched or calculated.
 
 ---
 
@@ -580,7 +580,7 @@ Run this calculation with Code Interpreter.
 Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
 ```
 
-The expected median is **8**. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.
+Expected median is **8**. Check calculation output and final answer. If execution fails, your model should report that.
 
 ---
 
@@ -590,11 +590,11 @@ The expected median is **8**. Check the execution result and the final answer. I
 
 | Record | Include |
 | --- | --- |
-| Configuration | Model, prompt, collection version, skill text, enabled tools. |
-| Action | Input, skill loading, tool call, result, final response. |
-| Judgment | Expected behavior, observed behavior, evidence, next revision. |
+| Configuration | Model ID, system prompt, documents, skill instructions, and enabled tools. |
+| Action | Request, instructions used, tool calls and results, and final response. |
+| Judgment | What you expected, what happened, and any change you plan to test. |
 
-Before sharing, check that the people you share with can use the model and its collections, skills, and tools. Repeat relevant tests after a model or tool update.
+Before sharing, confirm others can access your model, collections, skills, and tools. Repeat relevant tests after updates.
 
 ---
 
