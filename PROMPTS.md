@@ -206,7 +206,7 @@ Start a new chat, select two models, and send this question.
 The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
 ```
 
-Save both responses with your question and selected model IDs before adding system instructions.
+Save both responses with your question and selected model IDs before adding system prompt instructions.
 
 ---
 
@@ -260,7 +260,7 @@ Leave your original question, selected models, and other settings unchanged.
 
 ![Original question, model response, and message box with Regenerate button marked by an arrow](images/current/regenerate-2026-09-14-annotated.svg)
 
-After adding system instructions, select Regenerate beneath each original response.
+After adding system prompt instructions, select Regenerate beneath each original response.
 
 ---
 
@@ -268,7 +268,7 @@ After adding system instructions, select Regenerate beneath each original respon
 
 ### Compare Responses
 
-- Compare responses before and after adding system instructions.
+- Compare responses before and after adding system prompt instructions.
 
 - Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
 
