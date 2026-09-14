@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,921 @@
+@@ -1,487 +1,917 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -345,18 +345,14 @@
 +
 +---
 +
-+## Slide 15: Read System Prompt
++## Slide 15: Add System Prompt
 +
-+### Read System Prompt
++### Add System Prompt
 +
-+Read these instructions. What should change in each model’s response?
++Paste this into in-chat **System Prompt** under **Controls** at top right.
 +
 +```text
-+Help the user examine a question before settling on an answer.
-+
-+Identify the goal and the information stated in the question. Separate those facts from assumptions needed to answer it. If different assumptions would change the answer, explain the alternatives briefly or ask one focused question.
-+
-+Give a concise answer that states its assumptions. Do not invent missing context. Revise the answer when the user adds relevant information.
++Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
 +```
 +
 +---
@@ -383,7 +379,7 @@
 +
 +### Test System Prompts
 +
-+- Copy sample instructions from [Read System Prompt](#15).
++- Copy sample instructions from [Add System Prompt](#15).
 +
 +- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
 +
