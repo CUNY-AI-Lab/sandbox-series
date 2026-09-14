@@ -15,7 +15,8 @@ def check_title(title,location):
 
 def participant_text(node):
  if isinstance(node,str):return node
- if node.tag in {'pre','script','style'} or node.has_class('prompt-block'):return ''
+ if node.tag in {'pre','script','style'} or node.has_class('prompt-block') or node.has_class('quoted-prompt'):return ''
+ if node.tag=='img':return node.attrs.get('alt','')
  return ' '.join(participant_text(child) for child in node.children)
 
 def check_participant_copy(tree,location):
@@ -25,6 +26,7 @@ def check_participant_copy(tree,location):
   headings=slide.all(lambda n:n.tag in {'h1','h2'})
   if not headings or headings[0].text().strip()!=slide.attrs.get('data-title'):issues.append(location+' heading and outline disagree')
  text=participant_text(tree)
+ if re.search(r'\bthe\b',text,re.I):issues.append(location+' definite article in participant copy outside quoted prompts')
  if re.search(r'\b(facilitator|presenter)\b',text,re.I):issues.append(location+' presenter directions in participant copy')
  for phrase in ['preserve their original disciplinary purposes','instruction drafts, not measured outcomes','these excerpts are discussion material']:
   if phrase in text.lower():issues.append(location+' editorial commentary in participant copy: '+phrase)

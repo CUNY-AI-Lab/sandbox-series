@@ -11,7 +11,7 @@ Compose System Prompts begins the series. Use **Outline** to move to Curate Know
 
 Workshop 1 requires individual access and Sandbox sign-in. Workshop 2 adds Workspace and Knowledge collection access. Workshop 3 adds Skills and Tools access, with Workspace authoring permissions for creation and editing. Knowledge access is needed in Workshop 3 when a chosen procedure retrieves from a collection.
 
-The first session demonstrates two small models on the nurse question before the car-wash demonstration and handoff. Participants compare responses, check citations, and test tools in teaching and research tasks. Long disciplinary examples remain available as reference material; the lesson plans identify a shorter path for live sessions.
+Participants first compare how two small models interpret a sentence about a nurse and doctor. They then ask whether to walk or drive to a car wash, edit system instructions, and regenerate responses to their original prompt. Participants compare responses, check citations, and test tools in teaching and research tasks. Long disciplinary examples remain available as reference material; the lesson plans identify a shorter path for live sessions.
 
 ## Development
 
@@ -30,4 +30,4 @@ Use arrow keys, the slider, or **Outline** to navigate. On mobile, the slider oc
 
 Developed from [system-prompting](https://github.com/CUNY-AI-Lab/system-prompting), [knowledge-collections](https://github.com/CUNY-AI-Lab/knowledge-collections), and [skills-tools](https://github.com/CUNY-AI-Lab/skills-tools), originally developed by Stefano Morello and Zach Muhlbauer. Original repositories remain available.
 
-Platform instructions follow the [CUNY AI Lab Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/). Current UI screenshots were captured in Firefox. GCDI comparison excerpts are labeled as archival and cropped to remove the obsolete top selector. See the review folder for provenance and the source-label limitation.
+Platform instructions follow the [CUNY AI Lab Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/). Current UI screenshots were captured in Firefox. Reused comparison screenshots exclude obsolete controls. Capture provenance and source limitations remain in review files.

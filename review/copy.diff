@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,923 @@
+@@ -1,487 +1,911 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -171,7 +171,7 @@
 +
 +- Compare responses from small models
 +
-+- Compare car-wash responses
++- Compare outputs
 +
 +- Revise in-chat system prompts
 +
@@ -179,7 +179,7 @@
 +
 +- Save prompts for reuse
 +
-+Before attending, request individual access and sign into the Sandbox.
++Before attending, request individual access and sign into Sandbox.
 +
 +---
 +
@@ -191,7 +191,7 @@
 +
 +- Choose **My own access** and sign in with **CUNY Login**.
 +
-+- Complete your details, select **CAIL Sandbox**, and submit the application.
++- Complete your details, select **CAIL Sandbox**, and submit your application.
 +
 +- After approval, open [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/) and select **Continue with CUNY Login**.
 +
@@ -203,11 +203,11 @@
 +
 +### Select Models
 +
-+![Current Sandbox new chat with the model selector inside the message box](images/current/chat-page.png)
++![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
 +
-+Select the model name on the right inside the message box.
++Select model ID on bottom right of message box.
 +
-+Select the model name **on the right inside the message box**.
++Select model ID on bottom right of message box.
 +
 +Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
 +
@@ -229,7 +229,7 @@
 +
 +Message actions
 +
-+Copy, edit, or regenerate a response. Open the three-dot menu for additional actions.
++Copy, edit, or regenerate a response. Open More (⋯) for additional actions.
 +
 +[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
 +
@@ -239,15 +239,15 @@
 +
 +### Compare Models
 +
-+![Current model selector with search and the Compare toggle](images/current/model-selector.png)
++![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
 +
-+Open the model selector, turn on Compare, and select two models.
++Select Compare beside search field, then choose two models.
 +
-+Open the model selector. Turn on **Compare**, then choose two available base models.
++Open model selector. Select **Compare** beside search field, then choose two models.
 +
-+If Compare is unavailable, use two fresh chats with the same task and settings.
++If Compare is unavailable, send identical prompts in separate new chats.
 +
-+Switching models midway carries the conversation history forward. Use fresh chats for a clearer initial comparison.
++Start a new chat before comparing models.
 +
 +---
 +
@@ -261,7 +261,7 @@
 +The nurse yelled at the doctor because she was late. Who was late?
 +```
 +
-+Use the same prompt and chat history for both models. Note which models you selected.
++Send this question to both models.
 +
 +---
 +
@@ -269,67 +269,55 @@
 +
 +### Examine Assumptions
 +
-+“She” could refer to either person. Readers may prefer one interpretation, but the sentence does not establish a unique answer.
++“She” could refer to either person. This sentence does not establish who was late.
 +
-+- Does each model acknowledge the ambiguity?
++- Does each model acknowledge ambiguity?
 +
 +- What assumption supports its answer?
 +
-+- Does the explanation add information absent from the sentence?
-+
-+Compare the evidence in the answers. A confident explanation can still rest on an unsupported assumption.
++- Does either explanation add information absent from this sentence?
 +
 +---
 +
-+## Slide 10: Compare Recommendations
++## Slide 10: Compare Outputs
 +
-+### Compare Recommendations
++### Compare Outputs
 +
-+Use the same two-model comparison for this question.
++Ask both models this question.
 +
 +```text
 +The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
 +```
 +
-+Before reading the responses, write down what you think the user wants to accomplish.
++What do you think this person wants to accomplish?
 +
 +---
 +
-+## Slide 11: Read Gemma’s Response
++## Slide 11: Gemma’s Response
 +
-+### Read Gemma’s Response
++### Gemma’s Response
 +
-+![Archived car-wash prompt and Gemma response saying to walk](images/showcase/car-wash-gemma.png)
-+
-+GCDI showcase, May 2026. Gemma recommends walking.
-+
-+The response shown recommends walking. Read its recommendation against the purpose of the trip.
++![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
 +
 +---
 +
-+## Slide 12: Read Qwen’s Response
++## Slide 12: Qwen’s Response
 +
-+### Read Qwen’s Response
++### Qwen’s Response
 +
-+![Archived car-wash prompt and Qwen response saying to take the car](images/showcase/car-wash-qwen.png)
-+
-+GCDI showcase, May 2026. Qwen recommends taking the car.
-+
-+Compare this recommendation with Gemma’s. What does each response assume about the trip?
++![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
 +
 +---
 +
-+## Slide 13: Try Model Comparison
++## Slide 13: Compare Models
 +
-+### Try Model Comparison
++### Compare Models
 +
-+- In a fresh chat, send the car-wash prompt to two available models. Save both responses.
++- Send your original question to two models. Save both responses.
 +
-+- Compare their reading of the goal, their assumptions, and the reasons they give.
++- Add system instructions in Chat Controls.
 +
-+- Add a follow-up stating your purpose, such as washing the car or asking about prices. Does the recommendation change appropriately?
-+
-+If the purpose is to wash the car, the car must get there. The original wording leaves the purpose unstated.
++- Regenerate responses to your original prompt. Compare outputs before and after adding instructions.
 +
 +---
 +
@@ -337,15 +325,15 @@
 +
 +### Evaluate Responses
 +
-+Compare how each model interprets the question and explains its recommendation.
++Compare how each model interprets your question and explains its recommendation.
 +
 +- Which assumptions does each response make?
 +
 +- Does either response invent information?
 +
-+- How does each model respond when you clarify your purpose?
++- How do outputs change after you edit system instructions?
 +
-+Save the responses with the prompt and model names so you can repeat the comparison.
++Save both responses with your prompt and selected model IDs.
 +
 +---
 +
@@ -361,9 +349,9 @@
 +
 +### System Prompts
 +
-+Instructions for the model’s role, tone, boundaries, and response style.
++Instructions defining model behavior, tone, boundaries, and response style.
 +
-+Test whether the selected model follows your instructions.
++Test whether your selected model follows these instructions.
 +
 +[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
 +
@@ -377,15 +365,15 @@
 +
 +![Current chat Controls panel with its System Prompt field](images/current/chat-controls.png)
 +
-+Enter instructions in the System Prompt field under Chat Controls.
++Enter instructions in System Prompt under Chat Controls.
 +
-+- Open a fresh chat with one of the models you compared.
++- Open your chat.
 +
-+- Select **Controls** at the top right.
++- Select **Controls** at top right.
 +
-+- Enter the sample in **System Prompt** before sending the task.
++- Enter sample instructions in **System Prompt**, then regenerate responses to your original prompt.
 +
-+Use the conversation’s Controls for this exercise. Personal defaults under Settings have a wider scope.
++Use Chat Controls for this exercise. Defaults in Settings apply across chats.
 +
 +---
 +
@@ -393,7 +381,7 @@
 +
 +### Test System Prompts
 +
-+Keep one base model fixed. Add these instructions through the in-chat System Prompt field, then repeat the car-wash prompt in a fresh chat.
++Add these instructions in System Prompt under Chat Controls. Regenerate responses to your original prompt.
 +
 +```text
 +Help the user examine a question before settling on an answer.
@@ -409,13 +397,13 @@
 +
 +### Compare Responses
 +
-+- Compare the saved baseline with the response produced using the system prompt.
++- Compare responses before and after adding system instructions.
 +
-+- Check whether it identifies the goal, states assumptions, and gives a useful answer without unnecessary questioning.
++- Check whether each response identifies your goal, states assumptions, and answers without unnecessary questions.
 +
-+- Try the nurse question again. Does the instruction help with ambiguity in a different form?
++- Repeat our opening question about who was late. Do these instructions help identify ambiguity?
 +
-+Keep the model, optional features, and other defaults consistent. Record any differences you cannot control.
++Keep base models and other settings unchanged. Record any differences you cannot control.
 +
 +---
 +
@@ -425,7 +413,7 @@
 +
 +Open **Workspace → Models**.
 +
-+Open the sample model and review its **Base Model** and **System Prompt**. Compare those instructions with the prompt you tested in chat.
++Open a sample model and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
 +
 +Continue in chat if Workspace is unavailable.
 +
@@ -447,7 +435,7 @@
 +
 +### Knowledge and Tools
 +
-+Knowledge adds sources. Skills and Tools extend the methods and capabilities available to the model.
++Attach documents under Knowledge. Add reusable instructions under Skills and operations such as web search under Tools.
 +
 +---
 +
@@ -463,11 +451,11 @@
 +
 +- **Base Model** — Choose a model you have tested.
 +
-+- **System Prompt** — Add the instructions you tested in chat.
++- **System Prompt** — Add instructions you tested in chat.
 +
 +A custom model combines these choices. Creating it does not train a new base model.
 +
-+[The model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
++[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 +
 +---
 +
@@ -481,9 +469,9 @@
 +
 +- Select a base model and add your tested system prompt.
 +
-+- Add prompt suggestions for tasks the model should support.
++- Add prompt suggestions for tasks your model should support.
 +
-+Students select the custom model to use the instructions and resources you configured.
++Students select your custom model to use its instructions and resources.
 +
 +[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 +
@@ -522,11 +510,11 @@
 +
 +### Identify Problems
 +
-+- No role assignment to contextualize the model for specific workflows or domain-knowledge
++- No specified role or disciplinary context
 +
-+- No boundaries or pedagogical guidance to constrain the model from doing work for students
++- No limits on writing for students
 +
-+- No success criteria for the model to optimize toward
++- No criteria for assessing responses
 +
 +---
 +
@@ -621,7 +609,7 @@
 -## Slide 12: Example 2 - Primary Source Analysis
 +```
 +
-+Scroll within the prompt to read more.
++Scroll within this prompt to read more.
 +
 +---
 +
@@ -753,7 +741,7 @@
 -## Slide 16: Example 3 - Close Reading and Literary Analysis
 +```
 +
-+Scroll within the prompt to read more.
++Scroll within this prompt to read more.
 +
 +---
 +
@@ -832,7 +820,7 @@
 +
 +- Names specific analytical categories
 +
-+- Addresses the plot-summary problem
++- Discourages plot summary
 +
 +- Requires textual evidence
 +
@@ -893,7 +881,7 @@
 +Tone: Encouraging and accessible. Affirm observations, then push deeper.
 +```
 +
-+Scroll within the prompt to read more.
++Scroll within this prompt to read more.
 +
 +---
 +
@@ -903,11 +891,11 @@
 +
 +Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
 +
-+- State the research question and material the model may use.
++- State your research question and identify permitted source material.
 +
-+- Specify the procedure and what counts as evidence.
++- Specify steps and what counts as evidence.
 +
-+- Ask the model to explain uncertainty and consider other interpretations.
++- Ask your model to explain uncertainty and consider other interpretations.
 +
 +Save your source material, prompt, response, and assessment together.
 +
@@ -945,7 +933,7 @@
 +
 +- **Context & Problem** — What course, what students, what learning challenge?
 +
-+- **Procedure** — What steps should the tool follow?
++- **Procedure** — What steps should your model follow?
 +
 +- **Constraints** — What should it refuse to do, and how should it redirect?
 +
@@ -967,7 +955,7 @@
 +
 +### Define Context
 +
-+Name the tool, the course, the students, and the specific learning challenge.
++Describe your course, students, and learning challenge.
 +
 +- What kind of tool is this?
 +
@@ -988,7 +976,7 @@
 -## Slide 23: Procedure
 +```
 +
-+**Your turn** Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.
++**Your turn** Copy this template. Describe what your model should help students do.
 +
 +---
 +
@@ -996,16 +984,17 @@
  
  Component 2
 -Procedure
-+
-+### Write Procedures
-+
- Tell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.
+-Tell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.
 -What should the tool request before responding?
 -What should it prioritize?
 -How should it respond to each student input?
 -Copy
 +
-+- What should the tool request before responding?
++### Write Procedures
++
++Write numbered steps for your model to follow.
++
++- What should your model request before responding?
 +
 +- What should it prioritize?
 +
@@ -1024,7 +1013,7 @@
 -## Slide 24: Constraints
 +```
 +
-+**Your turn** Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.
++**Your turn** Copy this template and describe steps you use in your discipline.
 +
 +---
 +
@@ -1032,16 +1021,17 @@
  
  Component 3
 -Constraints
-+
-+### Set Constraints
-+
- Define what the tool should not do and how it redirects when students push against those limits.
+-Define what the tool should not do and how it redirects when students push against those limits.
 -What will students ask it to do
 -for
 -them?
 -How should it redirect instead?
 -What uncertainty should it name explicitly?
 -Copy
++
++### Set Constraints
++
++Define tasks your model should decline and alternatives it should suggest.
 +
 +- What will students ask it to do *for* them?
 +
@@ -1062,7 +1052,7 @@
 -## Slide 25: Tone
 +```
 +
-+**Your turn** Copy this template and fill in the placeholders. Keep the tool from doing work students should do themselves.
++**Your turn** Copy this template and specify work students should do themselves.
 +
 +---
 +
@@ -1078,13 +1068,13 @@
 +
 +### Set Tone
 +
-+Describe how the model should address your students.
++Describe how your model should address students.
 +
 +- What register fits your students?
 +
 +- Should it feel warm, direct, encouraging?
 +
-+- Are there phrases that model the right affect?
++- Which phrases demonstrate your intended tone?
 +
 +```text
  Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[example phrase]."
@@ -1096,7 +1086,7 @@
 -## Slide 26: Output Format
 +```
 +
-+**Your turn** Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?
++**Your turn** Copy this template. What language helps your students feel supported?
 +
 +---
 +
@@ -1144,7 +1134,7 @@
 -Conditional Behavior
 +```
 +
-+**Your turn** Copy this template and fill in the placeholders. Not every prompt needs an output format section.
++**Your turn** Copy this template if your task requires a consistent response format.
 +
 +---
 +
@@ -1182,7 +1172,7 @@
 +
 +### Support Multiple Languages
 +
-+“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.” Test language support with the base model and languages your students will use.
++“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.”  Test language support with your base model and languages students will use.
 +
 +---
 +
@@ -1198,16 +1188,13 @@
 +
 +### Prioritize Instructions
 +
-+Keep instructions clear and check for conflicts. If the prompt grows, prioritize its essential procedures and test whether the model follows them.
++Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
 +
 +### Resolve Contradictions
 +
  “Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
 -Forgetting the Student’s Perspective
-+
-+### Consider Student Questions
-+
- Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
+-Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
 -Set It and Forget It
 -System prompts need iteration. Use them in real conversations, notice what breaks, and revise. It’s a living document.
 -
@@ -1228,9 +1215,13 @@
 -Build custom skills, tools, and workflows tailored to your courses
 -Each workshop builds on the last. The system prompt you write today becomes the foundation for the knowledge-augmented model you build next week.
 +
++### Consider Student Questions
++
++Test your prompt with questions students ask in your course.
++
 +### Retest Revised Prompts
 +
-+Save the prompt version with the responses it produced. Revise when a test reveals a problem, then repeat that test.
++Save each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.
 +
 +---
 +
@@ -1238,13 +1229,13 @@
 +
 +### Save Prompts
 +
-+- Save your prompt text with the model name and responses it produced.
++- Save your prompt text, model ID, and responses.
 +
 +- Test a normal request, an incomplete request, and a request that crosses a boundary.
 +
-+- Revise one instruction and repeat the test in a fresh chat.
++- Revise one instruction and repeat your test in a new chat.
 +
-+Save your tested prompt in a private custom model. Choose the base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
++Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
 +
 +---
 +
@@ -1254,9 +1245,9 @@
 +
 +- Open **Access → Add Access** and select users or a course group.
 +
-+- Grant **Read** access to people who will use the model and **Write** access to people who will edit it.
++- Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
 +
-+- Check that the people you share with can use the base model and any attached collections, skills, or tools.
++- Confirm everyone you share with can access your base model and attached collections, skills, and tools.
 +
 +[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 +
@@ -1266,13 +1257,13 @@
 +
 +### Record Comparisons
 +
-+Record your prompt and model settings alongside the responses you compared.
++Save your prompt, model settings, and responses.
 +
 +| Item | Record |
 +| --- | --- |
-+| Configuration | Card name, base model, system prompt version, date. |
++| Configuration | Custom model name, base model, system prompt, settings, and date. |
 +| Test | User request, enabled features, saved response. |
-+| Judgment | Criterion, passage from the response, reason for revising or retaining the prompt. |
++| Judgment | What you checked, evidence from each response, and any change you plan to test. |
 +
 +Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
 +
