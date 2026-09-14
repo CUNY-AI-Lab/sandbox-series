@@ -212,16 +212,12 @@ Save both responses with your question and selected model IDs before adding syst
 
 ## Compose System Prompts — 15
 
-### Read System Prompt
+### Add System Prompt
 
-Read these instructions. What should change in each model’s response?
+Paste this into in-chat **System Prompt** under **Controls** at top right.
 
 ```text
-Help the user examine a question before settling on an answer.
-
-Identify the goal and the information stated in the question. Separate those facts from assumptions needed to answer it. If different assumptions would change the answer, explain the alternatives briefly or ask one focused question.
-
-Give a concise answer that states its assumptions. Do not invent missing context. Revise the answer when the user adds relevant information.
+Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
 ```
 
 ---
@@ -248,7 +244,7 @@ Leave your original question unchanged. Use Chat Controls for this exercise; def
 
 ### Test System Prompts
 
-- Copy sample instructions from [Read System Prompt](#15).
+- Copy sample instructions from [Add System Prompt](#15).
 
 - Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
 
