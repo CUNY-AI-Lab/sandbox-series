@@ -1,7 +1,5 @@
 # Skills & Tools
 
-Generated from index.html. Screenshot instructions are included below.
-
 ## Skills & Tools — 1
 
 ### Skills & Tools
@@ -32,8 +30,6 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 Before attending, confirm individual access, Sandbox sign-in, and Skills and Tools access. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.
 
-Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.
-
 ---
 
 ## Skills & Tools — 3
@@ -42,7 +38,7 @@ Use Knowledge collection access when your chosen procedure retrieves sources fro
 
 Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
 
-You will write skill instructions, attach them to the model, and test a request that uses them.
+Write instructions for the procedure, attach the skill to your model, and test it.
 
 Bring a knowledge collection if the procedure needs to search your documents.
 
@@ -86,8 +82,6 @@ Describe when the skill should be used and what steps it should follow.
 
 Enter a name, description, and instructions, then select Save & Create.
 
-#### Supporting notes
-
 - Open **Workspace → Skills → Create**.
 
 - Enter a name, identifier, and description that explain when to use it.
@@ -128,8 +122,6 @@ Try the same request before and after attaching the skill. Keep the base model, 
 
 - Did it preserve evidence and uncertainty?
 
-Use the examples that follow as procedures to adapt and test. Their “Before” and “After” labels describe the instruction drafts, not measured outcomes.
-
 ---
 
 ## Skills & Tools — 9
@@ -139,8 +131,6 @@ Use the examples that follow as procedures to adapt and test. Their “Before”
 ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
 
 Open Integrations beside the plus button to enable tools for this chat.
-
-#### Supporting notes
 
 A tool runs an operation, such as a search, a calculation, or a query of a source collection.
 
@@ -362,8 +352,6 @@ Framework: Description → Analysis → Interpretation
 
 ## Skills & Tools — 20
 
-Building Blocks
-
 ### Write Skills
 
 ---
@@ -429,7 +417,7 @@ Procedure:
 4. [Final step — synthesis, next action, or handoff]
 ```
 
-**Your turn** Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.
+**Your turn** Write 3–5 numbered steps. Use the sequence you follow when performing this task yourself.
 
 ---
 
@@ -586,15 +574,13 @@ Look for the actual call and returned result. The sentence “I searched” or �
 
 ### Check Calculations
 
-For Code Interpreter, use this small, invented dataset.
+Run this calculation with Code Interpreter.
 
 ```text
 Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
 ```
 
 The expected median is **8**. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.
-
-Use only a capability enabled for the workshop. The facilitator can demonstrate if participant access differs.
 
 ---
 
@@ -608,7 +594,7 @@ Use only a capability enabled for the workshop. The facilitator can demonstrate 
 | Action | Input, skill loading, tool call, result, final response. |
 | Judgment | Expected behavior, observed behavior, evidence, next revision. |
 
-Before sharing, test access to every dependency with the intended audience. Repeat relevant tests after a model or tool update.
+Before sharing, check that the people you share with can use the model and its collections, skills, and tools. Repeat relevant tests after a model or tool update.
 
 ---
 

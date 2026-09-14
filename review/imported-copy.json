@@ -10,6 +10,11 @@
         "before": "Example 1 What Makes an Effective Knowledge Collection? Starting with Composition & Writing",
         "after": "\nExample 1\nOrganize Source Documents\nStarting with Composition & Writing\n\n",
         "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+      },
+      {
+        "before": "\nExample 1\nOrganize Source Documents\nStarting with Composition & Writing\n\n",
+        "after": "\nExample 1\nOrganize Source Documents\n\n\n",
+        "reason": "Participant-facing copy review; prompt blocks unchanged."
       }
     ]
   },
@@ -150,6 +155,11 @@
         "before": "Part IV Building Your Knowledge Collection Three types of references to consider, then steps for how to create, curate, and use your first collection.",
         "after": "\nPart IV\nBuild Knowledge Collections\nThree types of references to consider, then steps for how to create, curate, and use your first collection.\n\n",
         "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+      },
+      {
+        "before": "\nPart IV\nBuild Knowledge Collections\nThree types of references to consider, then steps for how to create, curate, and use your first collection.\n\n",
+        "after": "\n\nBuild Knowledge Collections\nChoose documents that explain your course or research project, define the task, and provide source material.\n\n",
+        "reason": "Participant-facing copy review; prompt blocks unchanged."
       }
     ]
   },
@@ -330,6 +340,11 @@
         "before": "Building Blocks Writing Your Own Skills",
         "after": "\nBuilding Blocks\nWrite Skills\n\n",
         "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+      },
+      {
+        "before": "Building Blocks",
+        "after": "",
+        "reason": "Remove redundant section label above the short slide title."
       }
     ]
   },
@@ -376,6 +391,11 @@
         "before": "Component 2 Procedure The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait. What should happen first? What comes next? Where should the model wait for the student before continuing? Should it quote, cite, or reference specific materials? Copy Procedure:\n1. [First step — what does the model do or ask?]\n2. [After the student responds, what comes next?]\n3. [Continue the sequence — include wait points]\n4. [Final step — synthesis, next action, or handoff] Your turn Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.",
         "after": "\n\nComponent 2\nWrite Procedures\nThe core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.\n\nWhat should happen first? What comes next?\nWhere should the model wait for the student before continuing?\nShould it quote, cite, or reference specific materials?\n\n\n\n\nCopy\nProcedure:\n1. [First step — what does the model do or ask?]\n2. [After the student responds, what comes next?]\n3. [Continue the sequence — include wait points]\n4. [Final step — synthesis, next action, or handoff]\n\n\nYour turn Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.\n\n\n",
         "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+      },
+      {
+        "before": "\n\nComponent 2\nWrite Procedures\nThe core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.\n\nWhat should happen first? What comes next?\nWhere should the model wait for the student before continuing?\nShould it quote, cite, or reference specific materials?\n\n\n\n\nCopy\nProcedure:\n1. [First step — what does the model do or ask?]\n2. [After the student responds, what comes next?]\n3. [Continue the sequence — include wait points]\n4. [Final step — synthesis, next action, or handoff]\n\n\nYour turn Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.\n\n\n",
+        "after": "\n\nComponent 2\nWrite Procedures\nThe core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.\n\nWhat should happen first? What comes next?\nWhere should the model wait for the student before continuing?\nShould it quote, cite, or reference specific materials?\n\n\n\n\nCopy\nProcedure:\n1. [First step — what does the model do or ask?]\n2. [After the student responds, what comes next?]\n3. [Continue the sequence — include wait points]\n4. [Final step — synthesis, next action, or handoff]\n\n\nYour turn Write 3–5 numbered steps. Use the sequence you follow when performing this task yourself.\n\n\n",
+        "reason": "Participant-facing copy review; prompt blocks unchanged."
       }
     ]
   },

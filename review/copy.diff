@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,943 @@
+@@ -1,487 +1,923 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -11,8 +11,6 @@
 -A Workshop for the CUNY AI Lab Sandbox
 -March 16, 2026
 +# Compose System Prompts
-+
-+CUNY AI Lab Sandbox workshop. Generated from index.html; do not edit this mirror directly.
 +
 +## Slide 1: Compose System Prompts
 +
@@ -209,8 +207,6 @@
 +
 +Select the model name on the right inside the message box.
 +
-+#### Supporting notes
-+
 +Select the model name **on the right inside the message box**.
 +
 +Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
@@ -247,8 +243,6 @@
 +
 +Open the model selector, turn on Compare, and select two models.
 +
-+#### Supporting notes
-+
 +Open the model selector. Turn on **Compare**, then choose two available base models.
 +
 +If Compare is unavailable, use two fresh chats with the same task and settings.
@@ -261,7 +255,7 @@
 +
 +### Who Was Late?
 +
-+The facilitator sends this question to two small models. Read both responses.
++Compare how two small models interpret this sentence.
 +
 +```text
 +The nurse yelled at the doctor because she was late. Who was late?
@@ -309,8 +303,6 @@
 +
 +GCDI showcase, May 2026. Gemma recommends walking.
 +
-+#### Supporting notes
-+
 +The response shown recommends walking. Read its recommendation against the purpose of the trip.
 +
 +---
@@ -323,9 +315,7 @@
 +
 +GCDI showcase, May 2026. Qwen recommends taking the car.
 +
-+#### Supporting notes
-+
-+This response recommends taking the car. These excerpts are discussion material; the source has inconsistent Qwen labels, so it cannot establish an exact model comparison.
++Compare this recommendation with Gemma’s. What does each response assume about the trip?
 +
 +---
 +
@@ -389,8 +379,6 @@
 +
 +Enter instructions in the System Prompt field under Chat Controls.
 +
-+#### Supporting notes
-+
 +- Open a fresh chat with one of the models you compared.
 +
 +- Select **Controls** at the top right.
@@ -415,8 +403,6 @@
 +Give a concise answer that states its assumptions. Do not invent missing context. Revise the answer when the user adds relevant information.
 +```
 +
-+The instructions address assumptions across tasks. They do not prescribe a car-wash answer.
-+
 +---
 +
 +## Slide 18: Compare Responses
@@ -437,7 +423,7 @@
 +
 +### Open Workspace
 +
-+Open **Workspace → Models** after the facilitator confirms access.
++Open **Workspace → Models**.
 +
 +Open the sample model and review its **Base Model** and **System Prompt**. Compare those instructions with the prompt you tested in chat.
 +
@@ -455,11 +441,9 @@
 +
 +Select a Workspace tab, then choose Create.
 +
-+#### Supporting notes
-+
 +### Custom Models
 +
-+Watch the facilitator open the prepared sample and locate Create.
++Open a model to view its base model and system prompt. Select **Create** to configure your own.
 +
 +### Knowledge and Tools
 +
@@ -475,13 +459,11 @@
 +
 +Choose a name and base model, then enter a system prompt.
 +
-+#### Supporting notes
++- **Name** — Use a name that students or colleagues will recognize.
 +
-+- **Name** what students will recognize.
++- **Base Model** — Choose a model you have tested.
 +
-+- **Base Model** what generates the responses.
-+
-+- **System Prompt** how you want it to respond.
++- **System Prompt** — Add the instructions you tested in chat.
 +
 +A custom model combines these choices. Creating it does not train a new base model.
 +
@@ -639,7 +621,7 @@
 -## Slide 12: Example 2 - Primary Source Analysis
 +```
 +
-+Scroll to read the full prompt. The complete text is also in the workshop handout.
++Scroll within the prompt to read more.
 +
 +---
 +
@@ -771,7 +753,7 @@
 -## Slide 16: Example 3 - Close Reading and Literary Analysis
 +```
 +
-+Scroll to read the full prompt. The complete text is also in the workshop handout.
++Scroll within the prompt to read more.
 +
 +---
 +
@@ -911,7 +893,7 @@
 +Tone: Encouraging and accessible. Affirm observations, then push deeper.
 +```
 +
-+Scroll to read the full prompt. The complete text is also in the workshop handout.
++Scroll within the prompt to read more.
 +
 +---
 +
@@ -919,21 +901,19 @@
 +
 +### Adapt Research Prompts
 +
-+Choose a bounded task such as comparing article abstracts, checking a coding decision, or documenting a method.
++Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
 +
 +- State the research question and material the model may use.
 +
 +- Specify the procedure and what counts as evidence.
 +
-+- Require uncertainty and competing interpretations to remain visible.
++- Ask the model to explain uncertainty and consider other interpretations.
 +
-+Keep the source material, prompt version, output, and your judgment together. The researcher remains responsible for interpretation.
++Save your source material, prompt, response, and assessment together.
 +
 +---
 +
 +## Slide 37: Draft System Prompts
-+
-+Drafting exercise
 +
 +### Draft System Prompts
 +
@@ -943,10 +923,7 @@
  
  Structure
 -Core Components of a System Prompt
-+
-+### Define Prompt Components
-+
- Each system prompt is built from modular components. We’ll draft yours one piece at a time.
+-Each system prompt is built from modular components. We’ll draft yours one piece at a time.
 -Context & Problem
 -— What course, what students, what learning challenge?
 -Procedure
@@ -961,6 +938,10 @@
 ----
 -
 -## Slide 22: Context and Problem
++
++### Define Prompt Components
++
++Draft a system prompt using these components.
 +
 +- **Context & Problem** — What course, what students, what learning challenge?
 +
@@ -978,14 +959,15 @@
  
  Component 1
 -Context & Problem
-+
-+### Define Context
-+
- Name the tool, the course, the students, and the specific learning challenge. Everything else follows from this.
+-Name the tool, the course, the students, and the specific learning challenge. Everything else follows from this.
 -What kind of tool is this?
 -Who are your students?
 -What learning challenge does it address?
 -Copy
++
++### Define Context
++
++Name the tool, the course, the students, and the specific learning challenge.
 +
 +- What kind of tool is this?
 +
@@ -1088,14 +1070,15 @@
  
  Component 4
 -Tone
-+
-+### Set Tone
-+
- One sentence on tone shapes how the tool communicates with every student it encounters.
+-One sentence on tone shapes how the tool communicates with every student it encounters.
 -What register fits your students?
 -Should it feel warm, direct, encouraging?
 -Are there phrases that model the right affect?
 -Copy
++
++### Set Tone
++
++Describe how the model should address your students.
 +
 +- What register fits your students?
 +
@@ -1121,14 +1104,15 @@
  
  Component 5
 -Output Format
-+
-+### Specify Format
-+
- Optional, but useful when consistent structure helps students know what to expect from each response.
+-Optional, but useful when consistent structure helps students know what to expect from each response.
 -Should each response end with a question?
 -Should it follow a fixed structure?
 -What length is appropriate?
 -Copy
++
++### Specify Format
++
++Specify a response format if your task requires consistent structure.
 +
 +- Should each response end with a question?
 +
@@ -1260,7 +1244,7 @@
 +
 +- Revise one instruction and repeat the test in a fresh chat.
 +
-+With Workspace access confirmed, save the tested prompt in a private model card. Choose the base model, review Access, and use Save & Create. Bring that configuration to Workshop 2.
++Save your tested prompt in a private custom model. Choose the base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
 +
 +---
 +
@@ -1272,7 +1256,7 @@
 +
 +- Grant **Read** access to people who will use the model and **Write** access to people who will edit it.
 +
-+- Check that participants can use the base model and any attached collections, skills, or tools.
++- Check that the people you share with can use the base model and any attached collections, skills, or tools.
 +
 +[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 +
@@ -1282,7 +1266,7 @@
 +
 +### Record Comparisons
 +
-+Leave with a tested prompt, a base-model choice, and one question to investigate next.
++Record your prompt and model settings alongside the responses you compared.
 +
 +| Item | Record |
 +| --- | --- |
@@ -1290,9 +1274,9 @@
 +| Test | User request, enabled features, saved response. |
 +| Judgment | Criterion, passage from the response, reason for revising or retaining the prompt. |
 +
-+Use public or approved material. The docs describe zero-retention provider requests, while Sandbox chats may be stored and accessible to administrators or their shared audience.
++Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
 +
-+[Privacy and chat history](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) · [Facilitator outline and worksheet](WORKSHOP.md)
++[Privacy and chat history](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 +
 +---
 +

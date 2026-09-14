@@ -1,0 +1,466 @@
+--- published 3ae85b1 - full copy
++++ participant revision - full copy
+@@ -1,6 +1,4 @@
+-# Sandbox workshop series — full slide copy
+-
+-Generated from all three HTML decks. This includes screenshot captions and supporting instructions.
++# Sandbox Workshops
+ 
+ ## Compose System Prompts — 1
+ 
+@@ -74,8 +72,6 @@
+ 
+ Select the model name on the right inside the message box.
+ 
+-#### Supporting notes
+-
+ Select the model name **on the right inside the message box**.
+ 
+ Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
+@@ -112,8 +108,6 @@
+ 
+ Open the model selector, turn on Compare, and select two models.
+ 
+-#### Supporting notes
+-
+ Open the model selector. Turn on **Compare**, then choose two available base models.
+ 
+ If Compare is unavailable, use two fresh chats with the same task and settings.
+@@ -126,7 +120,7 @@
+ 
+ ### Who Was Late?
+ 
+-The facilitator sends this question to two small models. Read both responses.
++Compare how two small models interpret this sentence.
+ 
+ ```text
+ The nurse yelled at the doctor because she was late. Who was late?
+@@ -174,8 +168,6 @@
+ 
+ GCDI showcase, May 2026. Gemma recommends walking.
+ 
+-#### Supporting notes
+-
+ The response shown recommends walking. Read its recommendation against the purpose of the trip.
+ 
+ ---
+@@ -188,9 +180,7 @@
+ 
+ GCDI showcase, May 2026. Qwen recommends taking the car.
+ 
+-#### Supporting notes
+-
+-This response recommends taking the car. These excerpts are discussion material; the source has inconsistent Qwen labels, so it cannot establish an exact model comparison.
++Compare this recommendation with Gemma’s. What does each response assume about the trip?
+ 
+ ---
+ 
+@@ -254,8 +244,6 @@
+ 
+ Enter instructions in the System Prompt field under Chat Controls.
+ 
+-#### Supporting notes
+-
+ - Open a fresh chat with one of the models you compared.
+ 
+ - Select **Controls** at the top right.
+@@ -280,8 +268,6 @@
+ Give a concise answer that states its assumptions. Do not invent missing context. Revise the answer when the user adds relevant information.
+ ```
+ 
+-The instructions address assumptions across tasks. They do not prescribe a car-wash answer.
+-
+ ---
+ 
+ ## Compose System Prompts — 18
+@@ -302,7 +288,7 @@
+ 
+ ### Open Workspace
+ 
+-Open **Workspace → Models** after the facilitator confirms access.
++Open **Workspace → Models**.
+ 
+ Open the sample model and review its **Base Model** and **System Prompt**. Compare those instructions with the prompt you tested in chat.
+ 
+@@ -320,11 +306,9 @@
+ 
+ Select a Workspace tab, then choose Create.
+ 
+-#### Supporting notes
+-
+ ### Custom Models
+ 
+-Watch the facilitator open the prepared sample and locate Create.
++Open a model to view its base model and system prompt. Select **Create** to configure your own.
+ 
+ ### Knowledge and Tools
+ 
+@@ -340,13 +324,11 @@
+ 
+ Choose a name and base model, then enter a system prompt.
+ 
+-#### Supporting notes
+-
+-- **Name** what students will recognize.
+-
+-- **Base Model** what generates the responses.
+-
+-- **System Prompt** how you want it to respond.
++- **Name** — Use a name that students or colleagues will recognize.
++
++- **Base Model** — Choose a model you have tested.
++
++- **System Prompt** — Add the instructions you tested in chat.
+ 
+ A custom model combines these choices. Creating it does not train a new base model.
+ 
+@@ -465,7 +447,7 @@
+ - Tone: Warm and direct. Use “I notice...” and “What if you tried...”
+ ```
+ 
+-Scroll to read the full prompt. The complete text is also in the workshop handout.
++Scroll within the prompt to read more.
+ 
+ ---
+ 
+@@ -562,7 +544,7 @@
+ - Tone: Patient and curious.
+ ```
+ 
+-Scroll to read the full prompt. The complete text is also in the workshop handout.
++Scroll within the prompt to read more.
+ 
+ ---
+ 
+@@ -657,7 +639,7 @@
+ Tone: Encouraging and accessible. Affirm observations, then push deeper.
+ ```
+ 
+-Scroll to read the full prompt. The complete text is also in the workshop handout.
++Scroll within the prompt to read more.
+ 
+ ---
+ 
+@@ -665,22 +647,20 @@
+ 
+ ### Adapt Research Prompts
+ 
+-Choose a bounded task such as comparing article abstracts, checking a coding decision, or documenting a method.
++Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
+ 
+ - State the research question and material the model may use.
+ 
+ - Specify the procedure and what counts as evidence.
+ 
+-- Require uncertainty and competing interpretations to remain visible.
+-
+-Keep the source material, prompt version, output, and your judgment together. The researcher remains responsible for interpretation.
++- Ask the model to explain uncertainty and consider other interpretations.
++
++Save your source material, prompt, response, and assessment together.
+ 
+ ---
+ 
+ ## Compose System Prompts — 37
+ 
+-Drafting exercise
+-
+ ### Draft System Prompts
+ 
+ ---
+@@ -691,7 +671,7 @@
+ 
+ ### Define Prompt Components
+ 
+-Each system prompt is built from modular components. We’ll draft yours one piece at a time.
++Draft a system prompt using these components.
+ 
+ - **Context & Problem** — What course, what students, what learning challenge?
+ 
+@@ -711,7 +691,7 @@
+ 
+ ### Define Context
+ 
+-Name the tool, the course, the students, and the specific learning challenge. Everything else follows from this.
++Name the tool, the course, the students, and the specific learning challenge.
+ 
+ - What kind of tool is this?
+ 
+@@ -786,7 +766,7 @@
+ 
+ ### Set Tone
+ 
+-One sentence on tone shapes how the tool communicates with every student it encounters.
++Describe how the model should address your students.
+ 
+ - What register fits your students?
+ 
+@@ -808,7 +788,7 @@
+ 
+ ### Specify Format
+ 
+-Optional, but useful when consistent structure helps students know what to expect from each response.
++Specify a response format if your task requires consistent structure.
+ 
+ - Should each response end with a question?
+ 
+@@ -892,7 +872,7 @@
+ 
+ - Revise one instruction and repeat the test in a fresh chat.
+ 
+-With Workspace access confirmed, save the tested prompt in a private model card. Choose the base model, review Access, and use Save & Create. Bring that configuration to Workshop 2.
++Save your tested prompt in a private custom model. Choose the base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
+ 
+ ---
+ 
+@@ -904,7 +884,7 @@
+ 
+ - Grant **Read** access to people who will use the model and **Write** access to people who will edit it.
+ 
+-- Check that participants can use the base model and any attached collections, skills, or tools.
++- Check that the people you share with can use the base model and any attached collections, skills, or tools.
+ 
+ [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+ 
+@@ -914,7 +894,7 @@
+ 
+ ### Record Comparisons
+ 
+-Leave with a tested prompt, a base-model choice, and one question to investigate next.
++Record your prompt and model settings alongside the responses you compared.
+ 
+ | Item | Record |
+ | --- | --- |
+@@ -922,9 +902,9 @@
+ | Test | User request, enabled features, saved response. |
+ | Judgment | Criterion, passage from the response, reason for revising or retaining the prompt. |
+ 
+-Use public or approved material. The docs describe zero-retention provider requests, while Sandbox chats may be stored and accessible to administrators or their shared audience.
+-
+-[Privacy and chat history](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) · [Facilitator outline and worksheet](WORKSHOP.md)
++Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
++
++[Privacy and chat history](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+ 
+ ---
+ 
+@@ -979,11 +959,11 @@
+ 
+ ### Review Custom Models
+ 
+-Open the custom model you used in Workshop 1. You will attach documents and test whether the model can find and cite relevant passages.
++Open the custom model you used in Workshop 1. Attach documents and test whether the model can find and cite relevant passages.
+ 
+ Bring course materials, research papers, or other documents you know well enough to check.
+ 
+-Use [system-prompt examples](../examples.html) if you need a prompt to begin.
++Use [system-prompt examples](examples.html) if you need a prompt to begin.
+ 
+ ---
+ 
+@@ -991,17 +971,15 @@
+ 
+ ### Open Workspace
+ 
+-![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)
++![Current Workspace tabs and shared Create button](images/current/workspace-header.png)
+ 
+ Open Workspace and select Knowledge to create a collection.
+ 
+-#### Supporting notes
+-
+ Sign in after your Lab access is approved. Open **Workspace → Models** and find your card.
+ 
+-If you are joining here, use the sample prompt from the first workshop and choose a base model you can test.
+-
+-Workspace authoring access is arranged separately from ordinary chat access.
++To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](examples.html).
++
++Request Workspace access from the CUNY AI Lab if the tab is unavailable.
+ 
+ [Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+ 
+@@ -1011,12 +989,10 @@
+ 
+ ### Review Model Settings
+ 
+-![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
++![Current model editor showing base model, system prompt, and Knowledge](images/current/model-editor.png)
+ 
+ Review Base Model and System Prompt before attaching documents.
+ 
+-#### Supporting notes
+-
+ Review **Base Model (From)** and **System Prompt**. Start a fresh chat using the card selected inside the message box.
+ 
+ Ask a question that depends on your source material. Save the response before attaching the collection.
+@@ -1043,12 +1019,10 @@
+ 
+ ### Create Knowledge Collections
+ 
+-![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
++![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create.png)
+ 
+ Enter a collection name and description, set access, and select Create Knowledge.
+ 
+-#### Supporting notes
+-
+ - Open **Workspace → Knowledge → Create**.
+ 
+ - Name the collection and describe its contents and purpose.
+@@ -1116,8 +1090,6 @@
+ Example 1
+ 
+ ### Organize Source Documents
+-
+-Starting with Composition & Writing
+ 
+ ---
+ 
+@@ -1434,11 +1406,9 @@
+ 
+ ## Curate Knowledge Collections — 26
+ 
+-Part IV
+-
+ ### Build Knowledge Collections
+ 
+-Three types of references to consider, then steps for how to create, curate, and use your first collection.
++Choose documents that explain your course or research project, define the task, and provide source material.
+ 
+ ---
+ 
+@@ -1552,7 +1522,7 @@
+ 
+ ### Select Research Materials
+ 
+-Use the preceding templates to describe research materials.
++Describe your research project and the sources you want the model to use.
+ 
+ Research context
+ 
+@@ -1606,7 +1576,7 @@
+ 
+ - Use **Add Access** to grant users or groups **Read** access.
+ 
+-- Check that participants can use the model and retrieve from the collection.
++- Check access with someone you shared the model and collection with.
+ 
+ - Choose **Public** only for documents intended for all signed-in Sandbox users.
+ 
+@@ -1624,9 +1594,9 @@
+ 
+ - Choose recurring teaching or research procedures
+ 
+-- Review [system-prompt examples](../examples.html)
+-
+-- Continue to [Skills & Tools](../skills/)
++- Review [system-prompt examples](examples.html)
++
++- Continue to [Skills & Tools](skills)
+ 
+ 
+ ## Skills & Tools — 1
+@@ -1659,8 +1629,6 @@
+ 
+ Before attending, confirm individual access, Sandbox sign-in, and Skills and Tools access. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.
+ 
+-Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.
+-
+ ---
+ 
+ ## Skills & Tools — 3
+@@ -1669,7 +1637,7 @@
+ 
+ Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
+ 
+-You will write skill instructions, attach them to the model, and test a request that uses them.
++Write instructions for the procedure, attach the skill to your model, and test it.
+ 
+ Bring a knowledge collection if the procedure needs to search your documents.
+ 
+@@ -1709,12 +1677,10 @@
+ 
+ ### Create Skills
+ 
+-![Current Skill editor showing name, ID, description, Access, and instructions](../images/current/skill-editor.png)
++![Current Skill editor showing name, ID, description, Access, and instructions](images/current/skill-editor.png)
+ 
+ Enter a name, description, and instructions, then select Save & Create.
+ 
+-#### Supporting notes
+-
+ - Open **Workspace → Skills → Create**.
+ 
+ - Enter a name, identifier, and description that explain when to use it.
+@@ -1755,19 +1721,15 @@
+ 
+ - Did it preserve evidence and uncertainty?
+ 
+-Use the examples that follow as procedures to adapt and test. Their “Before” and “After” labels describe the instruction drafts, not measured outcomes.
+-
+ ---
+ 
+ ## Skills & Tools — 9
+ 
+ ### Enable Tools
+ 
+-![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
++![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](images/current/integrations.png)
+ 
+ Open Integrations beside the plus button to enable tools for this chat.
+-
+-#### Supporting notes
+ 
+ A tool runs an operation, such as a search, a calculation, or a query of a source collection.
+ 
+@@ -1989,8 +1951,6 @@
+ 
+ ## Skills & Tools — 20
+ 
+-Building Blocks
+-
+ ### Write Skills
+ 
+ ---
+@@ -2056,7 +2016,7 @@
+ 4. [Final step — synthesis, next action, or handoff]
+ ```
+ 
+-**Your turn** Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.
++**Your turn** Write 3–5 numbered steps. Use the sequence you follow when performing this task yourself.
+ 
+ ---
+ 
+@@ -2213,15 +2173,13 @@
+ 
+ ### Check Calculations
+ 
+-For Code Interpreter, use this small, invented dataset.
++Run this calculation with Code Interpreter.
+ 
+ ```text
+ Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
+ ```
+ 
+ The expected median is **8**. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.
+-
+-Use only a capability enabled for the workshop. The facilitator can demonstrate if participant access differs.
+ 
+ ---
+ 
+@@ -2235,7 +2193,7 @@
+ | Action | Input, skill loading, tool call, result, final response. |
+ | Judgment | Expected behavior, observed behavior, evidence, next revision. |
+ 
+-Before sharing, test access to every dependency with the intended audience. Repeat relevant tests after a model or tool update.
++Before sharing, check that the people you share with can use the model and its collections, skills, and tools. Repeat relevant tests after a model or tool update.
+ 
+ ---
+ 
+@@ -2253,4 +2211,4 @@
+ 
+ - Retest after model or tool updates
+ 
+-[Browse system-prompt examples](../examples.html) · [Return to Compose System Prompts](../)
++[Browse system-prompt examples](examples.html) · [Return to Compose System Prompts](.)

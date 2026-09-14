@@ -5,7 +5,7 @@
 Compose System Prompts begins the series. Use **Outline** to move to Curate Knowledge Collections and Skills & Tools. All three share one repository, presentation engine, and neutral dark design.
 
 - [Full slide copy](SLIDES.md)
-- [Lesson plans and access requirements](WORKSHOP.md)
+- [Presenter lesson plans and access requirements](WORKSHOP.md)
 - [System-prompt examples](https://cuny-ai-lab.github.io/sandbox-series/examples.html)
 - [Copy review and source history](review/README.md)
 
@@ -24,7 +24,7 @@ python3 scripts/check_series.py
 
 After changing slide text, run `python3 scripts/check_series.py --write` to update the complete transcript, per-session mirrors, and direct copy diffs. Review the generated diff before committing. The checker protects retained source passages and verifies local links, screenshot hashes, accessible slide labels, and article-free mini-agendas.
 
-Use arrow keys, the slider, or **Outline** to navigate. On mobile, the slider occupies a full row above the navigation buttons. Text selection does not advance slides. Screenshot slides reserve the viewport for the image, heading, and caption. Clicking an image expands it. **Outline** links to each workshop, prompt examples, lesson plans, and the complete transcript, including screenshot instructions.
+Use arrow keys, the slider, or **Outline** to navigate. On mobile, the slider occupies a full row above the navigation buttons. Text selection does not advance slides. Screenshot slides reserve the viewport for the image, heading, and caption. Clicking an image expands it. **Outline** links to each workshop, prompt examples, and the complete transcript, including screenshot instructions. Presenter lesson plans remain available through this README.
 
 ## Sources
 

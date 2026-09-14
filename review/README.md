@@ -58,3 +58,7 @@ The prior release also exercised all 33 prompt-copy controls and screenshot expa
 ## September Revisions
 
 The [September 14 copy review](2026-09-14-review.md) links the prior published copy, complete revised copy, and direct diff. Notes and Series have been removed from the footer. Outline now links to all workshops and reference material. Slide 4 links directly to the access application; its previous screenshot remains only in the source archive.
+
+## Participant Revision
+
+[Review participant-copy changes](participant-copy-review.md). Presenter instructions and editorial commentary have been removed from the slides, transcript, and examples page. Presenter lesson plans remain in WORKSHOP.md and are no longer linked from participant navigation.

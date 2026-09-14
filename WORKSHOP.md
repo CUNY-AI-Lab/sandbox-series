@@ -1,4 +1,4 @@
-# Sandbox Workshops
+# Presenter Lesson Plans
 
 The CUNY AI Lab Sandbox supports teaching, research, and experimentation with open-weight models. These workshops introduce its chat interface, custom models, knowledge collections, skills, and tools through demonstrations and guided exercises.
 

@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,296 +1,190 @@
+@@ -1,296 +1,180 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Customizing Skills & Tools
@@ -9,8 +9,6 @@
 -
 -March 30, 2026
 +# Skills & Tools
-+
-+Generated from index.html. Screenshot instructions are included below.
 +
 +## Skills & Tools — 1
 +
@@ -311,8 +309,6 @@
 +
 +Before attending, confirm individual access, Sandbox sign-in, and Skills and Tools access. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.
 +
-+Use Knowledge collection access when your chosen procedure retrieves sources from Workshop 2.
-+
 +---
 +
 +## Skills & Tools — 3
@@ -321,7 +317,7 @@
 +
 +Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
 +
-+You will write skill instructions, attach them to the model, and test a request that uses them.
++Write instructions for the procedure, attach the skill to your model, and test it.
 +
 +Bring a knowledge collection if the procedure needs to search your documents.
 +
@@ -365,8 +361,6 @@
 +
 +Enter a name, description, and instructions, then select Save & Create.
 +
-+#### Supporting notes
-+
 +- Open **Workspace → Skills → Create**.
 +
 +- Enter a name, identifier, and description that explain when to use it.
@@ -407,8 +401,6 @@
 +
 +- Did it preserve evidence and uncertainty?
 +
-+Use the examples that follow as procedures to adapt and test. Their “Before” and “After” labels describe the instruction drafts, not measured outcomes.
-+
 +---
 +
 +## Skills & Tools — 9
@@ -418,8 +410,6 @@
 +![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
 +
 +Open Integrations beside the plus button to enable tools for this chat.
-+
-+#### Supporting notes
 +
 +A tool runs an operation, such as a search, a calculation, or a query of a source collection.
 +
@@ -469,7 +459,7 @@
  
  **Starting Point**
  
-@@ -306,13 +200,15 @@
+@@ -306,13 +190,15 @@
  
  - No mechanism to let the student reformulate before moving on
  
@@ -489,7 +479,7 @@
  
  **Strong**
  
-@@ -337,17 +233,21 @@
+@@ -337,17 +223,21 @@
  
  ---
  
@@ -513,7 +503,7 @@
  
  **Starting Point**
  
-@@ -367,9 +267,11 @@
+@@ -367,9 +257,11 @@
  
  ---
  
@@ -526,7 +516,7 @@
  
  **Strong**
  
-@@ -396,17 +298,21 @@
+@@ -396,17 +288,21 @@
  
  ---
  
@@ -550,7 +540,7 @@
  
  **Starting Point**
  
-@@ -426,9 +332,11 @@
+@@ -426,9 +322,11 @@
  
  ---
  
@@ -563,7 +553,7 @@
  
  **Strong**
  
-@@ -437,7 +345,7 @@
+@@ -437,7 +335,7 @@
  When a student uploads a film still, photograph, or visual artifact — or asks about an image from the knowledge collection — follow this procedure:
  
  Procedure:
@@ -572,17 +562,17 @@
  2. Ask: “What do you notice first?” Let the student describe before you respond.
  3. After their description, direct attention to one formal element they haven’t mentioned — composition, lighting, color, framing, depth of field, or gaze. Ask what it does.
  4. Ask how that formal choice shapes the viewer’s experience. Move from what is in the frame to how the image is constructed.
-@@ -452,17 +360,21 @@
+@@ -452,17 +350,19 @@
  
  ---
  
-+## Skills & Tools — 20
-+
- Building Blocks
- 
+-Building Blocks
+-
 -### Writing Your Own Skills
 -
 ----
++## Skills & Tools — 20
++
 +### Write Skills
 +
 +---
@@ -600,7 +590,7 @@
  
  - **Trigger** — When should this skill activate?
  
-@@ -472,11 +384,13 @@
+@@ -472,11 +372,13 @@
  
  ---
  
@@ -617,7 +607,7 @@
  
  - What student action starts this workflow?
  
-@@ -489,13 +403,15 @@
+@@ -489,13 +391,15 @@
  When a student [specific action or input], follow this procedure:
  ```
  
@@ -637,14 +627,14 @@
  
  The core of every skill. Numbered steps that tell the model what to do, in what order, and when to wait.
  
-@@ -513,13 +429,15 @@
+@@ -513,13 +417,15 @@
  4. [Final step — synthesis, next action, or handoff]
  ```
  
 -**Your turn:** Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.
 -
 ----
-+**Your turn** Write 3–5 numbered steps. Think about the sequence you follow when you do this yourself as an instructor.
++**Your turn** Write 3–5 numbered steps. Use the sequence you follow when performing this task yourself.
 +
 +---
 +
@@ -657,7 +647,7 @@
  
  Specify what the output should look like. Without a format, the model structures responses however it wants.
  
-@@ -537,57 +455,63 @@
+@@ -537,57 +443,63 @@
  [One question for the student]
  ```
  
@@ -745,7 +735,7 @@
  
  What does each response look like?
  
-@@ -609,69 +533,97 @@
+@@ -609,69 +521,95 @@
  
  ---
  
@@ -868,15 +858,13 @@
 +
 +### Check Calculations
 +
-+For Code Interpreter, use this small, invented dataset.
++Run this calculation with Code Interpreter.
 +
 +```text
 +Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
 +```
 +
 +The expected median is **8**. Check the execution result and the final answer. If the tool is unavailable or fails, the response should report that.
-+
-+Use only a capability enabled for the workshop. The facilitator can demonstrate if participant access differs.
 +
 +---
 +
@@ -890,7 +878,7 @@
 +| Action | Input, skill loading, tool call, result, final response. |
 +| Judgment | Expected behavior, observed behavior, evidence, next revision. |
 +
-+Before sharing, test access to every dependency with the intended audience. Repeat relevant tests after a model or tool update.
++Before sharing, check that the people you share with can use the model and its collections, skills, and tools. Repeat relevant tests after a model or tool update.
 +
 +---
 +
