@@ -453,6 +453,25 @@
       "source_sha256": "2816a7504011f7c0e4d7723251e31b8c8f2773742ff612d786038ca65a163047",
       "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
       "sha256": "bf2d36e3ef2922e21b2d1dc58632da118225ecce55727e7a59c1c8cc9541f06e"
+    },
+    {
+      "file": "workspace-sidebar-2026-09-15-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-15",
+      "capture": "Native Firefox at 180% zoom. Expanded left sidebar, with Models and Chats collapsed before capture.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        211,
+        245,
+        4300,
+        2250
+      ],
+      "source_sha256": "1d7f241acab2b412d19ea84eb7c2d224f2c17e706e6e7eb8426abdf0b0d19496",
+      "processing": "Rectangular crop excludes browser chrome and account details. SVG outline and arrow identify Workspace without covering its label.",
+      "sha256": "e2cdbdce1e736a8b385eb6053a5a7c003fa8b251d905626d3494503a1fe54ceb"
     }
   ]
 }

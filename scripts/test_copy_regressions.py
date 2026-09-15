@@ -103,23 +103,31 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Examine Assumptions','Compare Outputs','Gemma’s Response','Qwen’s Response','Add System Prompt','Test System Prompts','Regenerate Responses','Compare Responses','Open Workspace'])
+        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Examine Assumptions','Compare Outputs','Gemma’s Response','Qwen’s Response','Add System Prompt','Open Chat Controls','Regenerate Responses','Compare Responses','Open Workspace','Review Custom Models','Model Configuration'])
         self.assertIn('Base Models',self.slide('index.html','System Prompts').text())
         self.assertIn('What do you think this person wants to accomplish?',self.slide('index.html','Compare Outputs').text())
         handoff=self.by_id('car-wash-exercise')
         self.assertEqual(handoff.text(),CAR)
     def test_07_controls_and_regeneration_are_explicit(self):
-        add=self.slide('index.html','Add System Prompt').text()
-        for term in ['in-chat','System Prompt','Controls','top right']:self.assertIn(term,add)
-        for title in ['Open Chat Controls','Test System Prompts','Regenerate Responses']:
-            copy=self.slide('index.html',title).text()
-            for term in ['Regenerate','Try Again','original response']:self.assertIn(term,copy)
-        self.assertIn('original question, selected models, and other settings unchanged',self.slide('index.html','Test System Prompts').text())
+        sequence=self.decks['index.html'][14:17]
+        self.assertEqual([s.attrs['data-title'] for s in sequence],['Add System Prompt','Open Chat Controls','Regenerate Responses'])
+        add,controls,regenerate=[s.text() for s in sequence]
+        for term in ['Copy','in-chat','System Prompt']:self.assertIn(term,add)
+        for term in ['Controls','top right','Paste','System Prompt','close Controls']:self.assertIn(term,controls)
+        for term in ['Regenerate','Try Again','original response','original question, selected models, and other settings unchanged']:self.assertIn(term,regenerate)
+        # These are consecutive actions, not repeated walkthroughs.
+        self.assertNotIn('Controls',add)
+        self.assertNotIn('Regenerate',add+controls)
+        self.assertNotIn('System Prompt',regenerate)
+        self.assertNotIn('Test System Prompts',[s.attrs['data-title'] for s in self.decks['index.html']])
+        for slide in sequence:self.assertFalse(slide.all(lambda n:n.has_class('slide-notes')))
+        compare=self.slide('index.html','Compare Responses').text()
+        self.assertNotIn('settings unchanged',compare)
     def test_08_exact_selector_instruction(self):
         for route,title in [('index.html','Select Models'),('index.html','Select STEM Games'),('knowledge/index.html','Review Model Settings'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
-        root=self.decks['index.html'];self.assertEqual(root[3].attrs['data-title'],'Request Access');self.assertEqual(root[23].attrs['data-title'],'Situating System Prompts')
+        root=self.decks['index.html'];self.assertEqual(root[3].attrs['data-title'],'Request Access');self.assertEqual(self.slide('index.html','Situating System Prompts').attrs['data-source-slide'],'7')
         links=root[3].all(lambda n:n.tag=='a');self.assertIn('https://ailab.gc.cuny.edu/request-access/',[n.attrs['href'] for n in links]);self.assertFalse(root[3].all(lambda n:n.tag=='img'))
         for route in ROUTES:
             agenda=self.slide(route,'Workshop Agenda');copy=agenda.text().lower()
@@ -183,6 +191,13 @@ class CopyRegressions(unittest.TestCase):
             matches=[s for s in self.decks['index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
             im=matches[0].all(lambda n:n.tag=='img')[0]
             self.assertIn('arrow',im.attrs['alt']);self.assertIn(term,im.attrs['alt']);self.assertTrue(im.attrs['src'].endswith('.svg'))
+        for route in ['index.html','knowledge/index.html']:
+            workspace=self.slide(route,'Open Workspace')
+            im=workspace.all(lambda n:n.tag=='img')[0]
+            self.assertIn('left sidebar',im.attrs['alt'])
+            self.assertIn('arrow',im.attrs['alt'])
+            self.assertTrue(im.attrs['src'].endswith('workspace-sidebar-2026-09-15-annotated.svg'))
+            self.assertNotIn('Workspace tab',workspace.text())
         for tree in self.trees.values():
             for s in tree.all(lambda n:n.has_class('screenshot-slide')):
                 self.assertTrue(s.all(lambda n:n.tag=='img'))

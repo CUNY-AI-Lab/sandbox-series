@@ -1,0 +1,195 @@
+{
+  "date": "2026-09-15",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 720
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "slides": [
+    {
+      "section": "system-prompting",
+      "slide": 15,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Add System Prompt",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Add System Prompt",
+        "width": 390
+      }
+    },
+    {
+      "section": "system-prompting",
+      "slide": 16,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open Chat Controls",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open Chat Controls",
+        "width": 390
+      }
+    },
+    {
+      "section": "system-prompting",
+      "slide": 17,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Regenerate Responses",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Regenerate Responses",
+        "width": 390
+      }
+    },
+    {
+      "section": "system-prompting",
+      "slide": 18,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Compare Responses",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Compare Responses",
+        "width": 390
+      }
+    },
+    {
+      "section": "system-prompting",
+      "slide": 19,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open Workspace",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open Workspace",
+        "width": 390
+      }
+    },
+    {
+      "section": "system-prompting",
+      "slide": 20,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Custom Models",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Custom Models",
+        "width": 390
+      }
+    },
+    {
+      "section": "system-prompting",
+      "slide": 21,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Model Configuration",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Model Configuration",
+        "width": 390
+      }
+    },
+    {
+      "section": "knowledge",
+      "slide": 4,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Custom Models",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Custom Models",
+        "width": 390
+      }
+    },
+    {
+      "section": "knowledge",
+      "slide": 5,
+      "desktop": {
+        "height": 654,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open Workspace",
+        "width": 1280
+      },
+      "mobile": {
+        "height": 732,
+        "imageLoaded": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open Workspace",
+        "width": 390
+      }
+    }
+  ]
+}

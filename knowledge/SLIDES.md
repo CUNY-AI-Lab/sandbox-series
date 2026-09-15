@@ -50,7 +50,7 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 
 ### Review Custom Models
 
-Open your custom model from Workshop 1. Choose a question about documents you want it to use.
+Choose a question about documents you want your custom model to use.
 
 Bring course materials, research papers, or other documents you know well enough to check.
 
@@ -62,17 +62,9 @@ Use [system-prompt examples](../examples.html) if you need a prompt to begin.
 
 ### Open Workspace
 
-![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)
+![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](../images/current/workspace-sidebar-2026-09-15-annotated.svg)
 
-Open Workspace → Models and find your custom model before adding documents.
-
-Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
-
-To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](../examples.html).
-
-Request Workspace access from CUNY AI Lab if Workspace is unavailable.
-
-[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+Select Workspace in left sidebar. Choose Models and open your custom model.
 
 ---
 
