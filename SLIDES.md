@@ -1,10 +1,10 @@
 # Sandbox Workshops
 
-## Compose System Prompts — 1
+## Composing system prompts — 1
 
 Workshop 1 of 3
 
-### Compose System Prompts
+### Composing system prompts
 
 Compare and configure models for teaching and research
 
@@ -14,21 +14,21 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Compose System Prompts — 2
+## Composing system prompts — 2
 
 ### Workshop Roadmap
 
-- **Compose System Prompts** Configure model behavior with system prompts.
+- **Composing system prompts** Configure model behavior with system prompts.
 
-- **Curate Knowledge Collections** Upload documents so models can reference them.
+- **Curating knowledge collections** Upload documents so models can reference them.
 
-- **Skills & Tools** Add web search, code execution, and reusable instructions.
+- **Configuring skills and tools** Add web search, code execution, and reusable instructions.
 
 [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
 
 ---
 
-## Compose System Prompts — 3
+## Composing system prompts — 3
 
 ### Workshop Agenda
 
@@ -48,7 +48,7 @@ Before attending, request individual access and sign into Sandbox.
 
 ---
 
-## Compose System Prompts — 4
+## Composing system prompts — 4
 
 ### Request Access
 
@@ -64,7 +64,7 @@ Before attending, request individual access and sign into Sandbox.
 
 ---
 
-## Compose System Prompts — 5
+## Composing system prompts — 5
 
 ### System Prompts
 
@@ -86,7 +86,7 @@ Test whether your selected model follows these instructions.
 
 ---
 
-## Compose System Prompts — 6
+## Composing system prompts — 6
 
 ### Select Models
 
@@ -104,7 +104,7 @@ Type a request, send it, then ask a follow-up. Open **New Chat** when you want t
 
 ---
 
-## Compose System Prompts — 7
+## Composing system prompts — 7
 
 ### Chat Features
 
@@ -124,7 +124,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ---
 
-## Compose System Prompts — 8
+## Composing system prompts — 8
 
 ### Compare Models
 
@@ -142,7 +142,7 @@ Start a new chat before comparing models.
 
 ---
 
-## Compose System Prompts — 9
+## Composing system prompts — 9
 
 ### Who Was Late?
 
@@ -156,7 +156,7 @@ Send this question to both models.
 
 ---
 
-## Compose System Prompts — 10
+## Composing system prompts — 10
 
 ### Examine Assumptions
 
@@ -170,7 +170,7 @@ Send this question to both models.
 
 ---
 
-## Compose System Prompts — 11
+## Composing system prompts — 11
 
 ### Compare Outputs
 
@@ -184,7 +184,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Compose System Prompts — 12
+## Composing system prompts — 12
 
 ### Gemma’s Response
 
@@ -194,7 +194,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Compose System Prompts — 13
+## Composing system prompts — 13
 
 ### Qwen’s Response
 
@@ -204,7 +204,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Compose System Prompts — 14
+## Composing system prompts — 14
 
 ### Compare Models
 
@@ -218,7 +218,7 @@ Save both responses with your question and selected model IDs before adding syst
 
 ---
 
-## Compose System Prompts — 15
+## Composing system prompts — 15
 
 ### Add System Prompt
 
@@ -230,7 +230,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ---
 
-## Compose System Prompts — 16
+## Composing system prompts — 16
 
 ### Open Chat Controls
 
@@ -244,13 +244,13 @@ Open Controls at top right → System Prompt. Add sample instructions, then rege
 
 - Select **Controls** at top right.
 
-- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response.
+- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response, then choose **Try Again**.
 
 Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
 
 ---
 
-## Compose System Prompts — 17
+## Composing system prompts — 17
 
 ### Test System Prompts
 
@@ -258,13 +258,13 @@ Leave your original question unchanged. Use Chat Controls for this exercise; def
 
 - Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
 
-- Close Controls. Select **Regenerate** beneath each original response.
+- Close Controls. Select **Regenerate** beneath each original response, then choose **Try Again**.
 
 Leave your original question, selected models, and other settings unchanged.
 
 ---
 
-## Compose System Prompts — 18
+## Composing system prompts — 18
 
 ### Regenerate Responses
 
@@ -272,11 +272,11 @@ Leave your original question, selected models, and other settings unchanged.
 
 **Alt text:** Original question, Gemma response, and message box with Regenerate button marked by an arrow
 
-After adding system prompt instructions, select Regenerate beneath each original response.
+After adding system prompt instructions, select Regenerate beneath each original response, then choose Try Again.
 
 ---
 
-## Compose System Prompts — 19
+## Composing system prompts — 19
 
 ### Compare Responses
 
@@ -290,7 +290,7 @@ Keep base models and other settings unchanged. Record any differences you cannot
 
 ---
 
-## Compose System Prompts — 20
+## Composing system prompts — 20
 
 ### Open Workspace
 
@@ -304,7 +304,7 @@ Continue in chat if Workspace is unavailable.
 
 ---
 
-## Compose System Prompts — 21
+## Composing system prompts — 21
 
 ### Workspace Tabs
 
@@ -324,7 +324,7 @@ Attach documents under Knowledge. Add reusable instructions under Skills and ope
 
 ---
 
-## Compose System Prompts — 22
+## Composing system prompts — 22
 
 ### Model Configuration
 
@@ -346,7 +346,7 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ---
 
-## Compose System Prompts — 23
+## Composing system prompts — 23
 
 ### Create Custom Models
 
@@ -364,296 +364,87 @@ Students select your custom model to use its instructions and resources.
 
 ---
 
-## Compose System Prompts — 24
+## Composing system prompts — 24
 
 Examples
 
-### Structure System Prompts
+### Situating System Prompts
 
 ---
 
-## Compose System Prompts — 25
+## Composing system prompts — 25
 
-Example 1
+### Select STEM Games
 
-### Teach Composition
+![Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.](images/current/stem-selector-2026-09-14.png)
+
+**Alt text:** Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.
+
+Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.
 
 ---
 
-## Compose System Prompts — 26
+## Composing system prompts — 26
 
-Composition & Writing
+### STEM Adventure Games
 
-### Vague Prompts
+![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
 
-**Weak**
+**Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
+
+Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
+
+---
+
+## Composing system prompts — 27
+
+### Inspect System Prompt
+
+![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
+
+**Alt text:** STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.
+
+Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt. Base model shown here was selected on September 14, 2026.
+
+---
+
+## Composing system prompts — 28
+
+### Read Game Instructions
+
+Read this excerpt from STEM Adventure Games.
 
 ```text
-Help students write better.
+When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
+
+STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
 ```
 
-### Identify Problems
+Which instructions guide model behavior? Which actions require a tool?
 
-- No specified role or disciplinary context
-
-- No limits on writing for students
-
-- No criteria for assessing responses
+[Read full system prompt](examples.html#stem-system)
 
 ---
 
-## Compose System Prompts — 27
+## Composing system prompts — 29
 
-Composition & Writing
+### Test Game Instructions
 
-### Add Specifics
+Begin Prism Laboratory and try two commands.
 
-**Getting There**
+- Does your command change rooms or inventory?
 
-```text
-You are a writing scaffold for a college composition course. Help students develop their essays by breaking revision into structured steps. Ask them to identify their thesis before giving feedback. Don't write essays for them.
-```
+- Does help list available actions?
 
-### Compare Improvements
+- Which observations come from programmed rules?
 
-- Assigns a role and disciplinary context
+- Which historical claims require source checks?
 
-- Includes a basic pedagogical move
-
-- Sets one boundary
-
-### Add Detail
-
-- No procedural instructions for *how* to give feedback
-
-- No awareness of student population or course level
-
-- No edge-case handling
+Type discuss inside your game to place your run in chat, then send it.
 
 ---
 
-## Compose System Prompts — 28
-
-Composition & Writing
-
-### Guide Revision
-
-**Strong**
-
-```text
-You are a writing scaffold for an English 101 composition course at a public urban university. Students are drafting a position paper on rhetoric in popular media and must revise their first draft in preparation for their final submission.
-
-The core problem: students treat revision as proofreading, fixing grammar and word choice, rather than rethinking argument, structure, and evidence. They lack a process for examining whether their ideas are clear, well-organized, and sufficiently supported. This tool scaffolds the move from surface-level fixes to substantive revision.
-
-Procedure:
-1. Request the assignment prompt and student draft before responding.
-2. Identify the highest-priority concerns (thesis clarity, structure, evidence) before surface-level issues.
-3. For each concern, ask the student a question rather than providing a fix.
-
-Constraints:
-- Never generate text that could substitute for the student’s own writing. Focus on higher-order concerns like argument, structure, and evidence.
-- If asked to “just fix it,” redirect toward a specific revision step.
-- Do not grade or evaluate.
-- Tone: Warm and direct. Use “I notice...” and “What if you tried...”
-```
-
-Scroll within this prompt to read more.
-
----
-
-## Compose System Prompts — 29
-
-Example 2
-
-### Analyze Primary Sources
-
----
-
-## Compose System Prompts — 30
-
-History
-
-### Vague Prompts
-
-**Weak**
-
-```text
-Analyze historical documents.
-```
-
-### Identify Problems
-
-- No methodological framework
-
-- No period or geographic focus
-
-- No guidance on handling hallucinated facts or invented sources
-
----
-
-## Compose System Prompts — 31
-
-History
-
-### Add Specifics
-
-**Getting There**
-
-```text
-You are a history source-analysis tool. Help students analyze primary sources from American history. Ask them to consider the author, audience, and context of each document. Don't just summarize the document for them.
-```
-
-### Compare Improvements
-
-- Assigns a role and disciplinary scope
-
-- References a real methodology
-
-- Sets a boundary against summarization
-
-### Add Detail
-
-- No procedural steps for guiding analysis
-
-- No handling of uncertainty or AI limitations
-
-- No attention to historiographical perspective
-
----
-
-## Compose System Prompts — 32
-
-History
-
-### Analyze Primary Sources
-
-**Strong**
-
-```text
-You are a source-analysis tool for an undergraduate U.S. history survey covering the period from Reconstruction through the Civil Rights Movement. Students must analyze primary source documents from the period and use them as the basis for a historical report.
-
-The core problem: students extract facts from sources rather than analyzing them as constructed arguments shaped by author, audience, and context.
-
-Procedure (based on Wineburg’s historical thinking heuristics):
-1. Ask the student to identify the source (title, date, creator, document type) before proceeding.
-2. Guide them through the four moves below, one at a time. Never jump ahead.
-3. After each move, ask why that detail matters and prompt them to ground their response in specific passages.
-4. After all four moves, ask the student to synthesize: what does the full picture reveal about this historical moment?
-
-Four Moves:
-- Sourcing — Before reading: who created this, when, and why? What can we infer about reliability and perspective?
-- Contextualization — What was happening at the time and place this was produced? How does that shape its meaning?
-- Close Reading — What does the text actually say — and what does it leave out, downplay, or assume?
-- Corroboration — How does this source compare to others from the period? Where do accounts agree or conflict?
-
-Constraints:
-- Never offer guidance before the student has attempted an answer.
-- Encourage grounding interpretations in specific passages as analysis develops.
-- If unsure about a historical fact, say so. Never invent dates, names, or events.
-- Never provide a complete analysis. Ask the next question a historian would ask.
-- Tone: Patient and curious.
-```
-
-Scroll within this prompt to read more.
-
----
-
-## Compose System Prompts — 33
-
-Example 3
-
-### Analyze Literary Texts
-
----
-
-## Compose System Prompts — 34
-
-Literature & Cultural Studies
-
-### Vague Prompts
-
-**Weak**
-
-```text
-Help with literary analysis.
-```
-
-### Identify Problems
-
-- Defaults to plot summary
-
-- No theoretical or critical framework
-
-- No requirement for textual evidence
-
----
-
-## Compose System Prompts — 35
-
-Literature & Cultural Studies
-
-### Add Specifics
-
-**Getting There**
-
-```text
-You are a close-reading scaffold. Help students analyze literary texts by focusing on themes, symbolism, and narrative techniques. Don't just summarize the plot. Ask students to point to specific passages.
-```
-
-### Compare Improvements
-
-- Names specific analytical categories
-
-- Discourages plot summary
-
-- Requires textual evidence
-
-### Add Detail
-
-- No procedural steps for scaffolding analysis
-
-- No critical or theoretical framework
-
-- No attention to cultural context
-
----
-
-## Compose System Prompts — 36
-
-Literature & Cultural Studies
-
-### Analyze Literary Texts
-
-**Strong**
-
-```text
-You are a close-reading tool designed for an introductory English course that focuses on cultural studies and literary analysis. Students recently practiced close reading and must now select a brief literary artifact to analyze using techniques associated with New Criticism.
-
-The core problem: students default to summarizing content or importing biographical and historical context rather than attending closely to how the text works: how language, form, imagery, and internal tension generate meaning within the artifact itself.
-
-Procedure:
-1. Ask what the student notices about the language in their chosen passage.
-2. Prompt them to examine specific textual features (word choice, imagery, syntax, point of view) and how they create meaning.
-3. Ask how the passage connects to the work’s larger themes.
-4. Guide them toward an interpretive claim grounded in textual evidence.
-
-Framework:
-- Treat the text as a self-contained object. Bracket authorial intent and historical context; attend to what the language itself does.
-- Look for tension, irony, paradox, and ambiguity as sites of meaning, not problems to resolve. Ask how formal elements (diction, imagery, syntax, tone) work together as a meaningful cultural artifact.
-- Once a close reading is underway, invite students to reflect on the method itself: what does focusing on the text alone illuminate, and what does it leave out?
-
-Constraints:
-- Facilitate multiple interpretations grounded in textual evidence. Do not prescribe a correct reading.
-- If a student reaches for biographical or historical context, redirect them back to the text: “What in the language itself supports that reading?”
-
-Tone: Encouraging and accessible. Affirm observations, then push deeper.
-```
-
-Scroll within this prompt to read more.
-
----
-
-## Compose System Prompts — 37
+## Composing system prompts — 30
 
 ### Adapt Research Prompts
 
@@ -669,60 +460,49 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Compose System Prompts — 38
+## Composing system prompts — 31
 
 ### Draft System Prompts
 
 ---
 
-## Compose System Prompts — 39
-
-Structure
+## Composing system prompts — 32
 
 ### Define Prompt Components
 
-Draft a system prompt using these components.
+Adapt STEM Adventure Games through these components.
 
-- **Context & Problem** — What course, what students, what learning challenge?
+- **Context** — Experiment, historical setting, and intended users.
 
-- **Procedure** — What steps should your model follow?
+- **Procedure** — Steps your model should follow.
 
-- **Constraints** — What should it refuse to do, and how should it redirect?
+- **Constraints** — Boundaries and missing information.
 
-- **Tone** — What register and affect should it use with your students?
-
-- **Output Format** — How should it structure its responses?
+- **Tone and format** — Language, length, and presentation.
 
 ---
 
-## Compose System Prompts — 40
-
-Component 1
+## Composing system prompts — 33
 
 ### Define Context
 
-Describe your course, students, and learning challenge.
+Describe what your model should help users do.
 
-- What kind of tool is this?
+- Who will use this model?
 
-- Who are your students?
+- Which experiment or research question will they explore?
 
-- What learning challenge does it address?
+- What prior knowledge can you assume?
 
 ```text
-You are a [tool type] for [course name].
-Students are [relevant context].
-
-The core problem: [specific learning challenge].
+Guide an interactive adventure about [experiment].
+Users will explore [question] through [available choices or methods].
+Use [source material] for historical context.
 ```
-
-**Your turn** Copy this template. Describe what your model should help students do.
 
 ---
 
-## Compose System Prompts — 41
-
-Component 2
+## Composing system prompts — 34
 
 ### Write Procedures
 
@@ -735,90 +515,62 @@ Write numbered steps for your model to follow.
 - How should your model respond to different requests?
 
 ```text
-Procedure:
-1. Ask the student for [specific input] before responding.
-2. Identify [priority concern] before addressing [secondary concerns].
-3. For each issue, [specific action, e.g. ask a question rather than fix it].
+1. Open Prism Laboratory when users ask to play.
+2. Let users enter commands inside the game.
+3. Ask users to send a play record before interpreting their choices.
+4. Check relevant sources before making historical claims.
 ```
-
-**Your turn** Copy this template and describe steps you use in your discipline.
 
 ---
 
-## Compose System Prompts — 42
-
-Component 3
+## Composing system prompts — 35
 
 ### Set Constraints
 
-Define tasks your model should decline and alternatives it should suggest.
-
-- What will students ask it to do *for* them?
-
-- How should it redirect instead?
-
-- What uncertainty should it name explicitly?
+Specify how your model should handle missing evidence.
 
 ```text
-Constraints:
-- Never [specific output to avoid].
-- If asked to [common student request], redirect by [specific alternative].
-- If uncertain about [domain content], say so explicitly.
+Do not invent historical details when sources are missing.
+Distinguish documented events from choices created for the game.
+If a source is unavailable, explain what cannot be checked.
 ```
 
-**Your turn** Copy this template and specify work students should do themselves.
+Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Compose System Prompts — 43
-
-Component 4
+## Composing system prompts — 36
 
 ### Set Tone
 
-Describe how your model should address students.
-
-- What register fits your students?
-
-- Should it feel warm, direct, encouraging?
-
-- Which phrases demonstrate your intended tone?
+Describe how your model should address players.
 
 ```text
-Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[example phrase]."
+Address the player as “you.”
+Use concise language for scenes and choices.
+Explain unfamiliar scientific terms when they first appear.
 ```
 
-**Your turn** Copy this template. What language helps your students feel supported?
+Which terms need explanation for your intended users?
 
 ---
 
-## Compose System Prompts — 44
-
-Component 5
+## Composing system prompts — 37
 
 ### Specify Format
 
-Specify a response format if your task requires consistent structure.
-
-- Should each response end with a question?
-
-- Should it follow a fixed structure?
-
-- What length is appropriate?
+Specify how your model should discuss a submitted record.
 
 ```text
-Format each response as:
-Observation: [what you notice]
-Focus: [one thing to work on]
-Next step: [a specific, actionable suggestion]
-Question: [something for the student to consider]
+Observed decision: [Command and result]
+Prerequisite: [Condition required for that action]
+Source comparison: [What historical evidence supports]
+Question: [One limitation to examine]
 ```
-
-**Your turn** Copy this template if your task requires a consistent response format.
 
 ---
 
-## Compose System Prompts — 45
+## Composing system prompts — 38
 
 Refine
 
@@ -826,29 +578,21 @@ Refine
 
 ---
 
-## Compose System Prompts — 46
+## Composing system prompts — 39
 
 ### Extend Instructions
 
-### Set Conditions
+- Specify what happens when a player asks for a hint.
 
-“If the student submits a draft, focus on structure before style. If they ask a yes/no question, reframe it as an open one. If they ask you to just give them the answer, ask what they’ve tried first.”
+- Explain how to revisit an earlier decision.
 
-### Request Concise Responses
+- Require source checks when players ask about historical claims.
 
-“Respond to one thing at a time. Do not front-load your full analysis. Ask one question, wait for the student’s response, then proceed.”
-
-### Acknowledge Uncertainty
-
-“If you are not certain about a factual claim, explicitly state your uncertainty. Never fabricate citations or attribute quotes.”
-
-### Support Multiple Languages
-
-“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.”  Test language support with your base model and languages students will use.
+- Test how your model responds when evidence is missing.
 
 ---
 
-## Compose System Prompts — 47
+## Composing system prompts — 40
 
 Watch Out
 
@@ -862,9 +606,9 @@ Check instructions for conflicts. Prioritize essential steps and test whether yo
 
 “Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
 
-### Consider Student Questions
+### Test Player Requests
 
-Test your prompt with questions students ask in your course.
+Test game choices, requests for hints, and questions about sources.
 
 ### Retest Revised Prompts
 
@@ -872,7 +616,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Compose System Prompts — 48
+## Composing system prompts — 41
 
 ### Save Prompts
 
@@ -886,7 +630,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Compose System Prompts — 49
+## Composing system prompts — 42
 
 ### Share Custom Models
 
@@ -900,7 +644,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Compose System Prompts — 50
+## Composing system prompts — 43
 
 ### Record Comparisons
 
@@ -918,7 +662,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Compose System Prompts — 51
+## Composing system prompts — 44
 
 ### Prepare Source Documents
 
@@ -930,12 +674,12 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 - Review [system-prompt examples](examples.html)
 
-- Continue to [Curate Knowledge Collections](knowledge/)
+- Continue to [Curating knowledge collections](knowledge/)
 
 
-## Curate Knowledge Collections — 1
+## Curating knowledge collections — 1
 
-### Curate Knowledge Collections
+### Curating knowledge collections
 
 Upload documents for models to reference in teaching and research
 
@@ -945,7 +689,7 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Curate Knowledge Collections — 2
+## Curating knowledge collections — 2
 
 ### Workshop Agenda
 
@@ -965,7 +709,7 @@ Before attending, confirm individual access, Sandbox sign-in, Workspace access, 
 
 ---
 
-## Curate Knowledge Collections — 3
+## Curating knowledge collections — 3
 
 ### Review Custom Models
 
@@ -977,7 +721,7 @@ Use [system-prompt examples](examples.html) if you need a prompt to begin.
 
 ---
 
-## Curate Knowledge Collections — 4
+## Curating knowledge collections — 4
 
 ### Open Workspace
 
@@ -997,7 +741,7 @@ Request Workspace access from CUNY AI Lab if Workspace is unavailable.
 
 ---
 
-## Curate Knowledge Collections — 5
+## Curating knowledge collections — 5
 
 ### Review Model Settings
 
@@ -1015,7 +759,7 @@ Ask a question about your source material. Save this response before attaching d
 
 ---
 
-## Curate Knowledge Collections — 6
+## Curating knowledge collections — 6
 
 ### Knowledge Collections
 
@@ -1029,7 +773,7 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 
 ---
 
-## Curate Knowledge Collections — 7
+## Curating knowledge collections — 7
 
 ### Create Knowledge Collections
 
@@ -1049,7 +793,7 @@ Enter a collection name and description, set access, and select Create Knowledge
 
 ---
 
-## Curate Knowledge Collections — 8
+## Curating knowledge collections — 8
 
 ### Check Citations
 
@@ -1067,7 +811,7 @@ Check each answer against its source passage.
 
 ---
 
-## Curate Knowledge Collections — 9
+## Curating knowledge collections — 9
 
 ### Select Documents
 
@@ -1085,7 +829,7 @@ Check scans and complex PDFs before uploading. Convert them to text if necessary
 
 ---
 
-## Curate Knowledge Collections — 10
+## Curating knowledge collections — 10
 
 ### Retrieve Source Passages
 
@@ -1101,282 +845,85 @@ Check whether retrieved passages address your question and support claims in eac
 
 ---
 
-## Curate Knowledge Collections — 11
+## Curating knowledge collections — 11
 
-Example 1
+### Open STEM Collection
 
-### Organize Source Documents
+![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries: Source Register, Newton: Light and Colour, Newton: Experimental Variants, and Evaluate Game Procedures.](images/current/stem-knowledge-2026-09-14.png)
+
+**Alt text:** STEM Wikipedia Experiments listing three Wikipedia imports and four added entries: Source Register, Newton: Light and Colour, Newton: Experimental Variants, and Evaluate Game Procedures.
+
+Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments. Inspect each file before using it as evidence.
 
 ---
 
-## Curate Knowledge Collections — 12
+## Curating knowledge collections — 12
 
-Composition & Writing
+### Review Source Roles
 
-### Incomplete Collections
+Use sources for different questions.
 
-**Weak**
+Newton’s optical experiments
+
+Check apparatus, procedures, and observations.
+
+Scientific method
+
+Examine hypotheses, measurement, and revision.
+
+Women in science
+
+Investigate collaboration, recognition, and institutions.
+
+Keep source summaries and game documentation distinguishable.
+
+---
+
+## Curating knowledge collections — 13
+
+### Inspect Imported Text
+
+Open each file and compare its contents with its source page.
+
+- Confirm article text is present.
+
+- Check headings, missing passages, and extraction errors.
+
+- Record article title, source URL, and revision date.
+
+On September 14, 2026, List of experiments contained a Wikimedia rate-limit error instead of article text. Its filename alone did not establish usable content.
+
+---
+
+## Curating knowledge collections — 14
+
+### Review Attached Knowledge
+
+![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.](images/current/stem-attachments-2026-09-14.png)
+
+**Alt text:** STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.
+
+Open Workspace → Models → STEM Adventure Games. Scroll to Knowledge and review its attached collection. For your own model, select a collection and choose Save & Update.
+
+---
+
+## Curating knowledge collections — 15
+
+### Check Game Sources
+
+Compare Prism Laboratory with Newton’s account.
 
 ```text
-Collection contents:
-• syllabus.pdf (14 pages, full course syllabus)
+Which apparatus details from Newton’s account does Prism Laboratory simplify? Identify the uploaded source and quote a relevant passage. If it is unavailable, say so.
 ```
 
-### Identify Problems
+Open cited material. Does it support your model’s response?
 
-- A syllabus may not explain how to revise an essay. Check which passages are retrieved.
-
-- No assignment instructions for revision
-
-- No readings or reference materials to consult
+[Read Newton source entry](examples/knowledge/newton-light-colour.md) · [Review source register](examples/knowledge/source-register.md)
 
 ---
 
-## Curate Knowledge Collections — 13
-
-Composition & Writing
-
-### Add Specifics
-
-**Getting There**
-
-```text
-Collection contents:
-• syllabus.pdf
-• essay-1-prompt.pdf
-• mla-style-guide.pdf
-```
-
-### Compare Improvements
-
-- Separate documents distinguish individual sources
-
-- Assignment instructions describe what revision requires
-
-- Style guide helps with formatting questions
-
-### Add Detail
-
-- No course readings to reference during analysis
-
-- No common feedback patterns to guide revision
-
-- No instructor notes on what substantive revision looks like in this course
-
----
-
-## Curate Knowledge Collections — 14
-
-Composition & Writing
-
-### Support Revision
-
-**Strong**
-
-```text
-Collection contents:
-
-Course Context
-• syllabus.pdf: schedule, learning objectives, policies
-• revision-philosophy.txt: instructor notes on what revision means in this course
-
-Assignment Materials (Essay 1: Rhetoric in Popular Media)
-• essay-1-prompt.pdf: assignment instructions and requirements
-• common-feedback.txt: patterns from past semesters (e.g., thesis too broad, evidence not analyzed)
-
-Reference Materials
-• mla-style-guide.pdf: citation and formatting conventions
-• strong-intro-examples.txt: examples of effective introductions
-• revision-checklist.pdf: the same checklist students use in peer review
-```
-
----
-
-## Curate Knowledge Collections — 15
-
-Example 2
-
-### Analyze Primary Sources
-
----
-
-## Curate Knowledge Collections — 16
-
-History
-
-### Incomplete Collections
-
-**Weak**
-
-```text
-Collection contents:
-• textbook-chapter-12.pdf (42 pages)
-```
-
-### Identify Problems
-
-- A general textbook chapter may not answer a question about a particular primary source.
-
-- No primary sources for students to analyze
-
-- No framework like SOAPS to guide source analysis
-
----
-
-## Curate Knowledge Collections — 17
-
-History
-
-### Add Specifics
-
-**Getting There**
-
-```text
-Collection contents:
-• syllabus.pdf
-• source-analysis-assignment.pdf
-• primary-source-1.pdf (Freedmen's Bureau report, 1866)
-• primary-source-2.pdf (Congressional testimony, 1871)
-```
-
-### Compare Improvements
-
-- Includes actual primary sources students are working with
-
-- Assignment instructions explain what students should do
-
-- Documents are separate and focused
-
-### Add Detail
-
-- No historical context for questions about this period
-
-- No SOAPS framework or equivalent to guide source analysis
-
-- No source metadata (author, date, document type) to support sourcing questions
-
----
-
-## Curate Knowledge Collections — 18
-
-History
-
-### Compare Primary Sources
-
-**Strong**
-
-```text
-Collection contents:
-
-Course Context
-• syllabus.pdf: schedule, themes, learning objectives
-• soaps-framework.txt: the analytical framework students use, with definitions and examples
-
-Primary Sources (Reconstruction Unit)
-• freedmens-bureau-report-1866.pdf: with metadata: author, date, document type, archive
-• congressional-testimony-1871.pdf: with metadata
-• source-context-notes.txt: brief historical context for each source (2-3 sentences each)
-
-Reference Materials
-• period-timeline.txt: key events 1865-1877 for contextualization questions
-• common-analysis-errors.txt: patterns from past semesters (e.g., treating sources as neutral facts)
-• chicago-citation-guide.pdf: citation format for history papers
-```
-
----
-
-## Curate Knowledge Collections — 19
-
-Example 3
-
-### Analyze Literary Texts
-
----
-
-## Curate Knowledge Collections — 20
-
-Literature & Cultural Studies
-
-### Incomplete Collections
-
-**Weak**
-
-```text
-Collection contents:
-• course-reader.pdf (180 pages, all readings for the semester)
-```
-
-### Identify Problems
-
-- An omnibus reader can make individual texts harder to identify. Check whether retrieval selects relevant passages.
-
-- No assignment context or close-reading framework
-
-- No separation between literary texts and critical essays
-
----
-
-## Curate Knowledge Collections — 21
-
-Literature & Cultural Studies
-
-### Add Specifics
-
-**Getting There**
-
-```text
-Collection contents:
-• syllabus.pdf
-• close-reading-assignment.pdf
-• sonny-blues-baldwin.pdf
-• new-criticism-overview.pdf
-```
-
-### Compare Improvements
-
-- Individual literary text rather than an omnibus reader
-
-- Assignment prompt provides task-specific context
-
-- A document explains how to use a critical framework
-
-### Add Detail
-
-- No annotated examples showing how to move from observation to interpretation
-
-- No key terms for this unit (e.g., tension, irony, ambiguity)
-
-- No instructor notes on what close reading looks like in this course
-
----
-
-## Curate Knowledge Collections — 22
-
-Literature & Cultural Studies
-
-### Support Textual Analysis
-
-**Strong**
-
-```text
-Collection contents:
-
-Course Context
-• syllabus.pdf: schedule, texts, learning objectives
-• new-criticism-framework.txt: key concepts and terms for this unit (tension, irony, paradox, ambiguity, diction, imagery)
-
-Assignment Materials (Close Reading Essay)
-• close-reading-assignment.pdf: instructions and requirements
-• annotated-passage-example.txt: model annotation showing how to move from observation to interpretation
-
-Literary Texts (Current Unit)
-• sonny-blues-baldwin.pdf: the primary text for this assignment
-• passage-selections.txt: key passages the instructor has flagged for class discussion
-```
-
----
-
-## Curate Knowledge Collections — 23
+## Curating knowledge collections — 16
 
 ### Compare Research Methods
 
@@ -1392,7 +939,7 @@ Build a collection from research papers or methods you want to compare.
 
 ---
 
-## Curate Knowledge Collections — 24
+## Curating knowledge collections — 17
 
 ### Organize Documents
 
@@ -1406,7 +953,7 @@ Begin with a few documents and test how your model uses them.
 
 ---
 
-## Curate Knowledge Collections — 25
+## Curating knowledge collections — 18
 
 ### Check Retrieval Problems
 
@@ -1420,7 +967,7 @@ Save unsuccessful responses before revising anything.
 
 ---
 
-## Curate Knowledge Collections — 26
+## Curating knowledge collections — 19
 
 ### Build Knowledge Collections
 
@@ -1428,113 +975,69 @@ Choose documents that explain your course or research project and describe what 
 
 ---
 
-## Curate Knowledge Collections — 27
+## Curating knowledge collections — 20
 
 ### Choose Reference Materials
 
-Think about which type of course document you would add first
+Add sources that support your adventure.
 
-- **Course Context** Syllabus sections, weekly schedule
+- Use [Newton: Light and Colour](examples/knowledge/newton-light-colour.md) for apparatus and observations.
 
-- **Assignment Materials** Instructions, feedback examples
+- Use [Newton: Experimental Variants](examples/knowledge/newton-experimental-variants.md) for procedural changes.
 
-- **Source Materials** Excerpted readings, primary sources
+- Use [Evaluate Game Procedures](examples/knowledge/game-procedure-evaluation.md) for software checks.
 
----
-
-## Curate Knowledge Collections — 28
-
-Type 1
-
-### Describe Course Context
-
-These documents describe course goals, structure, and methods students are expected to use.
-
-- What are your course’s learning objectives?
-
-- Which methods do students use in your course?
-
-- Which course details would help your model support those goals?
-
-```text
-Recommended uploads:
-
-1. syllabus.pdf
-   - Course schedule, objectives, and policies
-
-2. [framework-name].txt
-   - The analytical method students use
-   - Write it out in plain language with definitions
-```
-
-**Consider** Add a short document (1–2 pages) explaining a method you teach, using language familiar to your students.
+Download entries, upload them to your collection, and inspect processed text.
 
 ---
 
-## Curate Knowledge Collections — 29
+## Curating knowledge collections — 21
 
-Type 2
+### Describe Experimental Context
 
-### Describe Assignments
+Separate documented experiments from invented game settings.
 
-Assignment instructions describe what students should do and what successful work requires.
+- Which question motivated an experiment?
 
-- What does your assignment ask students to do?
+- Which instruments and materials appear in its source?
 
-- What does strong work on this assignment look like?
+- Which rooms or actions were created for play?
 
-- What patterns come up most often in your feedback?
-
-```text
-Recommended uploads:
-
-1. [assignment]-prompt.pdf
-   - The assignment instructions
-
-2. common-feedback.txt
-   - 5-10 patterns you see every semester
-
-3. strong-examples.txt (optional)
-   - Excerpts showing what strong work looks like
-```
-
-**Consider** Which assignment stands to benefit? Try curating assignment instructions alongside a shortlist of common feedback patterns for starters.
+Prism Laboratory simplifies an apparatus with two boards and two prisms.
 
 ---
 
-## Curate Knowledge Collections — 30
+## Curating knowledge collections — 22
 
-Type 3
+### Describe Scientific Methods
 
-### Identify Sources
+Compare procedures before expanding your game.
 
-Upload readings and reference materials students use in your current unit.
+- Which variable changes when an aperture narrows?
 
-- What texts are students reading for this assignment?
+- Which conditions stay fixed?
 
-- Are there reference documents (timelines, glossaries, citation guides)?
+- What would a changed observation support?
 
-- Can you add brief metadata or context for each source?
-
-```text
-Recommended uploads:
-
-1. [reading-title].pdf
-   - Individual files per text (not one big reader)
-   - Add a header with: title, author, date, source
-
-2. context-notes.txt (optional)
-   - 2-3 sentences of context per source
-
-3. [reference-guide].pdf
-   - Citation style guide, glossary, or timeline
-```
-
-**Consider** Which readings or sources are students working with right now? Separate files can make sources easier to identify. Test retrieval with your actual questions.
+[Read experimental variants](examples/knowledge/newton-experimental-variants.md)
 
 ---
 
-## Curate Knowledge Collections — 31
+## Curating knowledge collections — 23
+
+### Identify Historical Sources
+
+Use Women in science to examine contributors, institutions, and recognition.
+
+- Who performed or supported this work?
+
+- Which barriers affected participation?
+
+- What can these sources establish about a particular experiment?
+
+---
+
+## Curating knowledge collections — 24
 
 ### Select Research Materials
 
@@ -1554,7 +1057,7 @@ Identify documents and passages you want to examine.
 
 ---
 
-## Curate Knowledge Collections — 32
+## Curating knowledge collections — 25
 
 ### Attach Knowledge Collections
 
@@ -1570,7 +1073,7 @@ Identify documents and passages you want to examine.
 
 ---
 
-## Curate Knowledge Collections — 33
+## Curating knowledge collections — 26
 
 ### Test Retrieval
 
@@ -1584,7 +1087,7 @@ Repeat your first question without changing models or system prompts. Record whi
 
 ---
 
-## Curate Knowledge Collections — 34
+## Curating knowledge collections — 27
 
 ### Share Knowledge Collections
 
@@ -1600,7 +1103,7 @@ Share your collection with people who will use your custom model.
 
 ---
 
-## Curate Knowledge Collections — 35
+## Curating knowledge collections — 28
 
 ### Prepare Skill Instructions
 
@@ -1612,12 +1115,12 @@ Share your collection with people who will use your custom model.
 
 - Review [system-prompt examples](examples.html)
 
-- Continue to [Skills & Tools](skills)
+- Continue to [Configuring skills and tools](skills)
 
 
-## Skills & Tools — 1
+## Configuring skills and tools — 1
 
-### Skills & Tools
+### Configuring skills and tools
 
 Add tools and reusable instructions for teaching and research
 
@@ -1627,121 +1130,85 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Skills & Tools — 2
+## Configuring skills and tools — 2
 
 ### Workshop Agenda
 
 - Confirm Skills and Tools access
 
-- Choose recurring procedures
+- Play STEM Adventure
 
-- Write skill instructions
+- Inspect commands and results
 
-- Attach skills to models
+- Configure reusable skills
 
-- Inspect tool calls and results
+- Create and test tools
 
-- Test models with skills and tools
+- Compare procedural changes
 
-Before attending, confirm individual access, Sandbox sign-in, and Skills and Tools access. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.
+Before attending, confirm individual access and Sandbox sign-in. Creating or editing resources also requires Workspace access. Knowledge access is needed when your task uses a collection.
 
 ---
 
-## Skills & Tools — 3
+## Configuring skills and tools — 3
 
 ### Review Previous Work
 
-Open your custom model and review its system prompt. Choose a procedure you use in teaching or research.
+Open STEM Adventure Games and review its system prompt.
 
-Write steps for your procedure, save them as a skill, attach it to your model, and test it.
+- Identify instructions for opening Prism Laboratory.
 
-Bring a knowledge collection if your procedure requires searching documents.
+- Review attached STEM Wikipedia Experiments collection.
 
----
+- Distinguish source material, skill instructions, and tool operations.
 
-## Skills & Tools — 4
-
-### Choose Procedures
-
-- For teaching, guide a student through a source one question at a time.
-
-- For research, compare a claim with its source or apply a codebook to an excerpt.
-
-- Define what a successful response would show before writing instructions.
-
-Write steps another person can follow and check.
+Use your own configuration when adapting these examples.
 
 ---
 
-## Skills & Tools — 5
+## Configuring skills and tools — 4
 
-### Define Skills
+### Tools & Skills
 
-Skills contain reusable Markdown instructions for tasks or procedures.
+Skills
 
-Models receive a skill’s name and description and can load its full instructions when needed.
+Reusable instructions for tasks or procedures.
 
-Describe when to use your skill and which steps to follow.
+Tools
+
+Operations such as web search, code execution, or database queries.
+
+Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
-[Open WebUI Skills](https://docs.openwebui.com/features/workspace/skills/)
+---
+
+## Configuring skills and tools — 5
+
+### Connect Resources
+
+System prompt
+
+Open games and describe how components work together.
+
+Knowledge
+
+Supply scientific and historical sources.
+
+Skill
+
+Guide procedural changes and interpretation.
+
+Tool
+
+Apply game rules and render playable output.
+
+Save each artifact with its tests.
 
 ---
 
-## Skills & Tools — 6
-
-### Create Skills
-
-![Current Skill editor showing name, ID, description, Access, and instructions](images/current/skill-editor.png)
-
-**Alt text:** Current Skill editor showing name, ID, description, Access, and instructions
-
-Enter a name, description, and instructions, then select Save & Create.
-
-- Open **Workspace → Skills → Create**.
-
-- Enter a name, identifier, and description that explain when to use it.
-
-- Write instructions, review **Access**, and choose **Save & Create**.
-
-[Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-
----
-
-## Skills & Tools — 7
-
-### Attach Skills
-
-- Open **Workspace → Models** and edit your model.
-
-- Select your skill under **Skills**.
-
-- Set **Function Calling** to **Native** under **Advanced Parameters**.
-
-- Select **Save & Update** and test a request that uses your skill.
-
-Use a model that supports tool calling.
-
-[Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-
----
-
-## Skills & Tools — 8
-
-### Compare Responses
-
-Repeat a request before and after attaching your skill. Keep base model, sources, and system prompt unchanged.
-
-- Did your model follow your instructions?
-
-- Did it pause where you specified?
-
-- Did it preserve evidence and uncertainty?
-
----
-
-## Skills & Tools — 9
+## Configuring skills and tools — 6
 
 ### Enable Tools
 
@@ -1761,221 +1228,101 @@ Availability depends on account permissions, configuration, and model support.
 
 ---
 
-## Skills & Tools — 10
+## Configuring skills and tools — 7
 
-### Tools & Skills
+### Inspect Game Rules
 
-Skills
+![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
 
-Reusable instructions for tasks or procedures.
+**Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
 
-Tools
+STEM Adventure applies rules for rooms, inventory, actions, and completion.
 
-Operations such as web search, code execution, or database queries.
+- Enter go north to reach Storeroom.
 
-Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
+- Enter take prism to add a prism to inventory.
+
+- Enter help to list available actions.
+
+- Try record result before completing required steps.
+
+[Open game](examples/adventure/preview.html) · [Read scenario JSON](examples/adventure/prism.json)
+
+---
+
+## Configuring skills and tools — 8
+
+### Test Game Commands
+
+Check successful and unsuccessful actions.
+
+- Complete [winning command sequence](examples/adventure/winning-commands.json).
+
+- Try completing an experiment before its prerequisites.
+
+- Pick up an item twice.
+
+- Enter undo, restart, save, and load.
+
+Compare room, inventory, flags, and completion after replay.
+
+---
+
+## Configuring skills and tools — 9
+
+### Discuss Play Records
+
+- Enter **discuss** inside your game.
+
+- Review record in message box, then send it.
+
+- Check how your model explains a failed action.
+
+- Compare programmed observations with historical sources.
+
+A completed game does not establish conceptual understanding.
+
+---
+
+## Configuring skills and tools — 10
+
+### Choose Procedures
+
+Choose one procedure to change or examine.
+
+- Add an aperture comparison to Prism Laboratory.
+
+- Inspect a failed command and its prerequisite.
+
+- Check a historical claim against source material.
+
+Describe expected behavior before testing.
+
+---
+
+## Configuring skills and tools — 11
+
+### Define Skills
+
+Skills contain reusable Markdown instructions for tasks or procedures.
+
+Models receive a skill’s name and description and can load its full instructions when needed.
+
+Describe when to use your skill and which steps to follow.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
----
-
-## Skills & Tools — 11
-
-Example 1
-
-### Establish Stasis
-
-Composition — Stasis Theory
+[Open WebUI Skills](https://docs.openwebui.com/features/workspace/skills/)
 
 ---
 
-## Skills & Tools — 12
-
-Composition & Writing
-
-### Original Instructions
-
-**Starting Point**
-
-```text
-When a student is developing a research topic, walk them through four stages — conjecture, definition, quality, and policy — to help them narrow their question. Ask one stasis at a time.
-```
-
-- Model walks through all four stages in a single response instead of pausing at each
-
-- No steps connecting a student’s topic to each stasis question
-
-- Treats stasis as a checklist rather than a deliberative process
-
-- No pause for students to revise their question
-
-- Does not help students identify which stasis their argument addresses
-
----
-
-## Skills & Tools — 13
-
-Composition & Writing
-
-### Revised Instructions
-
-**Strong**
-
-```text
-Skill: Establishing Stasis for a Research Topic
-When a student is developing or narrowing a research topic, follow this procedure:
-
-Procedure:
-1. Ask the student to state their topic in one sentence. Do not evaluate or refine it yet.
-2. Conjecture: “What has happened or is happening that makes this worth investigating?” Wait for their answer. Use what they say to sharpen the next question.
-3. Definition: Point to a key term in their response. “How are you defining [term]? What kind of problem is this — legal, ethical, empirical, cultural?” Wait.
-4. Quality: “What’s at stake, and for whom? What makes this serious enough to argue about in an 8-page paper?” If their scope is too broad, ask them to name one specific population or context. Wait.
-5. Policy: “What should be done, and by whom?” Help the student see whether their argument is making a factual claim, a definitional claim, a value judgment, or a policy proposal.
-6. Ask: “Which of these four questions does your argument most need to answer?” Guide them toward a thesis grounded in that stasis.
-
-Format:
-Your topic: [student’s stated topic]
-
-[One stasis question, tied to a specific phrase the student used]
-[1–2 sentences explaining why this question matters for their project]
-```
-
----
-
-## Skills & Tools — 14
-
-Example 2
-
-### Examine Documents
-
-History — Source Analysis
-
----
-
-## Skills & Tools — 15
-
-History
-
-### Original Instructions
-
-**Starting Point**
-
-```text
-When a student asks about a primary source, retrieve it from the knowledge collection and walk them through its rhetorical situation using SOAPS. Ask questions one element at a time rather than summarizing.
-```
-
-- Paraphrases source material without quoting uploaded documents
-
-- No procedure for retrieving and presenting specific passages as evidence
-
-- Rushes through all SOAPS dimensions in a single response
-
-- Student receives a finished reading rather than a structured inquiry
-
-- No requirement to support interpretations with quotations
-
----
-
-## Skills & Tools — 16
-
-History
-
-### Revised Instructions
-
-**Strong**
-
-```text
-Skill: Sourcing a Primary Document
-When a student asks about or encounters a primary source from the course, follow this procedure:
-
-Procedure:
-1. Retrieve the document from the knowledge collection. Quote a key passage — do not paraphrase or summarize.
-2. Present the passage in a block quote with its metadata (title, date, author) drawn from the uploaded file.
-3. Ask: “Who created this document, and what was their position or stake?” Wait for the student’s answer.
-4. After they respond, point to a specific phrase in the quoted passage that supports, complicates, or challenges their answer.
-5. Ask: “When and where was this written? What was happening at that moment that shaped what the author could say?” Wait.
-6. Ask: “Who was the intended audience? How does knowing that change what the document means?” Wait.
-7. After all three sourcing moves, ask: “Given what you now know about the author, the moment, and the audience — what can this source tell us, and what can’t it?”
-
-Format:
-> [quoted passage from uploaded source]
-— [Author], [Title], [Date]
-
-[One sourcing question]
-[1–2 sentences connecting the question to a specific phrase in the passage]
-```
-
----
-
-## Skills & Tools — 17
-
-Example 3
-
-### Analyze Images
-
-Literature — Cinematic Mise-en-Scène
-
----
-
-## Skills & Tools — 18
-
-Literature & Cultural Studies
-
-### Original Instructions
-
-**Starting Point**
-
-```text
-When a student shares a film still or visual artifact, guide them from describing formal elements — composition, lighting, framing — toward interpreting how those choices construct meaning in context.
-```
-
-- Describes images without asking students what they notice
-
-- No scaffolding from observation to formal analysis to interpretive claim
-
-- Treats all visual elements at once rather than isolating one per turn
-
-- No questions prompting students to observe and interpret
-
-- Does not connect visual details with interpretive claims
-
----
-
-## Skills & Tools — 19
-
-Literature & Cultural Studies
-
-### Revised Instructions
-
-**Strong**
-
-```text
-Skill: Reading Cinematic Images
-When a student uploads a film still, photograph, or visual artifact — or asks about an image from the knowledge collection — follow this procedure:
-
-Procedure:
-1. Use an uploaded image only when the selected model can inspect images. If the visual is unavailable, ask the student to upload it or describe it. Do not assume text retrieval from a knowledge collection provides the original image.
-2. Ask: “What do you notice first?” Let the student describe before you respond.
-3. After their description, direct attention to one formal element they haven’t mentioned — composition, lighting, color, framing, depth of field, or gaze. Ask what it does.
-4. Ask how that formal choice shapes the viewer’s experience. Move from what is in the frame to how the image is constructed.
-5. Introduce context: ask the student to connect the visual choices to the cultural moment, genre, or argument of the work. If relevant context exists in the knowledge collection, quote it.
-6. Guide them toward an interpretive claim: “Based on what you’ve observed, what argument is this image making?”
-
-Framework: Description → Analysis → Interpretation
-• Description: What is literally in the frame?
-• Analysis: How do formal elements (light, angle, placement) create meaning?
-• Interpretation: What claim can the student make, grounded in visual evidence?
-```
-
----
-
-## Skills & Tools — 20
+## Configuring skills and tools — 12
 
 ### Write Skills
 
 ---
 
-## Skills & Tools — 21
+## Configuring skills and tools — 13
 
 Structure
 
@@ -1991,156 +1338,145 @@ Use three parts to draft this skill.
 
 ---
 
-## Skills & Tools — 22
-
-Component 1
+## Configuring skills and tools — 14
 
 ### Define Triggers
 
-Describe when to use your skill. Test a relevant request and an unrelated request.
+Describe when your skill should be used.
 
-- What student action starts this workflow?
+- Should it load when users request a procedural change?
 
-- Does it activate when they share a draft? Ask about a source? Upload an image?
+- Should it also apply to submitted play records?
 
-- Should it run automatically, or only when students ask?
+- Which requests should leave it unused?
 
 ```text
-Skill: [Skill Name]
-When a student [specific action or input], follow this procedure:
+Use this skill when users request an experimental variation in STEM Adventure or ask to examine a submitted play record.
 ```
-
-**Your turn** Name a student action your skill should respond to.
 
 ---
 
-## Skills & Tools — 23
-
-Component 2
+## Configuring skills and tools — 15
 
 ### Write Procedures
 
-Write numbered steps specifying what your model should do and when it should pause.
-
-- What should happen first? What comes next?
-
-- When should your model wait for a student response?
-
-- Should it quote, cite, or reference specific materials?
+Specify how your model should extend an experiment.
 
 ```text
-Procedure:
-1. [First step — what does the model do or ask?]
-2. [After the student responds, what comes next?]
-3. [Continue these steps — specify when to wait for a student response]
-4. [Final step — synthesis, next action, or handoff]
+1. Identify one experimental decision to change.
+2. Check source material for that procedure.
+3. Revise scenario JSON within the tool contract.
+4. Provide winning and blocked commands, then open the game.
+5. Compare a submitted record with expected behavior.
 ```
-
-**Your turn** Write 3–5 numbered steps in an order you would follow yourself.
 
 ---
 
-## Skills & Tools — 24
-
-Component 3
+## Configuring skills and tools — 16
 
 ### Specify Format
 
-Specify how responses should be organized.
-
-- Should responses quote student writing?
-
-- Should each response end with a question?
-
-- How long should a response be?
+Keep artifacts and test results distinguishable.
 
 ```text
-Format:
-> [quoted excerpt from student work or source document]
-
-[1-2 sentences: what you observe]
-[One question for the student]
+Scenario JSON: [Complete scenario]
+Source: [Relevant historical passage]
+Invented elements: [Rooms or simplified observations]
+Winning commands: [Sequence]
+Blocked command: [Command and missing prerequisite]
+Observed result: [Fill only after testing]
 ```
-
-**Your turn** Write a template showing how each response should be organized.
 
 ---
 
-## Skills & Tools — 25
-
-Hands-On
+## Configuring skills and tools — 17
 
 ### Draft Skills
 
-Choose a teaching or research procedure and write steps that another person can inspect.
+Open Kale Skill Builder to draft reusable instructions.
+
+Select model ID on bottom right of message box.
+
+```text
+Draft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = ""). Preserve game rules. Include trigger, 3–5 steps, output, and two proposed tests. Do not invent successful tool calls.
+```
+
+[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](examples/stem-game-skill.md)
 
 ---
 
-## Skills & Tools — 26
-
-Exercise
-
-### Choose Procedures
-
-Which procedure would you like to use?
-
-### Establish Stasis
-
-Narrow a research topic one question at a time
-
-### Examine Documents
-
-Quote, then ask who, when, for whom
-
-### Analyze Images
-
-Describe → analyze → interpret
-
-### Choose Another Procedure
-
-Use a procedure from your teaching or research.
-
----
-
-## Skills & Tools — 27
-
-Draft It
+## Configuring skills and tools — 18
 
 ### Write Instructions
 
-Describe when to use your skill, which steps to follow, and how responses should appear.
-
-### Define Triggers
-
-What student action starts this?
-
-### Write Procedures
-
-Write 3–5 steps and specify when to pause.
-
-### Specify Format
-
-What does each response look like?
+Describe when to use your skill, which steps to follow, and when to pause.
 
 ```text
-Skill: [Name]
-When a student [trigger action], follow this procedure:
+Use this skill when [specific request or action].
 
-Procedure:
 1. [First step]
-2. [Second step — specify when to wait for a student response]
-3. [Third step]
+2. [Next step]
+3. [What to check before continuing]
+4. [When to wait for user input]
 
-Format:
-> [quoted text from student or source]
-
-[Observation in 1-2 sentences]
-[One question]
+Format responses as [required structure].
 ```
 
 ---
 
-## Skills & Tools — 28
+## Configuring skills and tools — 19
+
+### Create Skills
+
+![Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.](images/current/stem-skill-2026-09-14.png)
+
+**Alt text:** Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.
+
+Enter a name, description, and instructions, then select Save & Create.
+
+- Open **Workspace → Skills → Create**.
+
+- Enter a name, identifier, and description that explain when to use it.
+
+- Write instructions, review **Access**, and choose **Save & Create**.
+
+[Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+
+---
+
+## Configuring skills and tools — 20
+
+### Attach Skills
+
+- Open **Workspace → Models** and edit your model.
+
+- Select your skill under **Skills**.
+
+- Set **Function Calling** to **Native** under **Advanced Parameters**.
+
+- Select **Save & Update** and test a request that uses your skill.
+
+Use a model that supports tool calling.
+
+[Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+
+---
+
+## Configuring skills and tools — 21
+
+### Extend Procedures
+
+Attach [Prism Laboratory JSON](examples/adventure/prism.json), enable Extend STEM Adventures, and request one change.
+
+```text
+Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
+```
+
+[Read skill instructions](examples/stem-game-skill.md) · [Download tested scenario](examples/adventure/aperture.json)
+
+---
+
+## Configuring skills and tools — 22
 
 ### Check Interpretations
 
@@ -2161,49 +1497,119 @@ Test it with supported, overstated, and unsupported claims from public or approv
 
 ---
 
-## Skills & Tools — 29
+## Configuring skills and tools — 23
 
 ### Test Skills
 
-Create your skill, attach it to your custom model, and confirm native function calling. Save your model and start a new chat.
+Repeat an extension request before and after enabling your skill.
 
-- Send a request that should use your skill.
+- Keep base model, system prompt, sources, and tool unchanged.
 
-- Reply once and check whether your model follows your next step.
+- Check whether scenario JSON follows its contract.
 
-- Send an unrelated request and check whether your skill is used unnecessarily.
+- Run winning and blocked commands.
 
-Save results before revising your skill’s description or instructions.
+- Compare expected behavior with actual results.
+
+Keep generated scenarios and play records for review.
 
 ---
 
-## Skills & Tools — 30
+## Configuring skills and tools — 24
+
+### Check Skill Drafts
+
+Ask whether a skill’s test expectations match available evidence.
+
+```text
+{"commands":[],"events":[],"result":{"complete":true}}
+```
+
+An empty history cannot establish completion. Request a full record or replay.
+
+Return this failure to Kale Skill Builder and inspect its revised instructions.
+
+[Read corrected skill draft](examples/creators/record-interpreter-skill.md) · [Inspect initial response](review/live/skill-builder-consistency-failure.md)
+
+---
+
+## Configuring skills and tools — 25
+
+### Create Adventure Tools
+
+Open Tool Creator to draft or revise Python code.
+
+```text
+Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
+```
+
+[Open Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](examples/tools/stem_adventure.py)
+
+---
+
+## Configuring skills and tools — 26
+
+### Install Tool Code
+
+- Open **Workspace → Tools → Create**.
+
+- Enter Name, ID, and Description.
+
+- Paste [STEM Adventure code](examples/tools/stem_adventure.py) and review it.
+
+- Select **Save & Create**.
+
+- Enable your tool through **Integrations → Tools**.
+
+Use a private copy when changing code.
+
+---
+
+## Configuring skills and tools — 27
+
+### Check Generated Code
+
+Test whether generated code rejects incorrect types.
+
+```text
+{"commands":[42],"events":[{"command":42,"valid":false}]}
+```
+
+Expected: reject numeric commands. Initial creator output accepted them.
+
+Send observed failure back to Tool Creator, then repeat your tests.
+
+[Read corrected tool](examples/creators/record-validator.py) · [Review executed tests](review/live/tool-creator-corrected-tests.json)
+
+---
+
+## Configuring skills and tools — 28
 
 ### Inspect Tool Results
 
-Use a search tool to find a source relevant to your question. Open its link and check whether it supports your model’s claim.
+Use an available knowledge tool to retrieve a file from STEM Wikipedia Experiments. Check which file and passage it retrieves.
 
-With an available code tool, use a small calculation whose answer you can check independently.
+For STEM Adventure Games, retrieve source text and use Check Source Imports to inspect it. Python example is a draft for installation and testing in an approved Workspace.
 
-Inspect tool calls and results. Check whether a tool ran when your model says it searched or calculated.
+Inspect tool calls and results. Check whether a tool ran when your model says it inspected a source.
 
 ---
 
-## Skills & Tools — 31
+## Configuring skills and tools — 29
 
-### Check Calculations
+### Compare Game Records
 
-Run this calculation with Code Interpreter.
+Compare original and extended procedures.
 
 ```text
-Use Code Interpreter to calculate the median of [3, 8, 8, 12, 19]. Show the calculation and report whether the tool ran.
+Review both play records. Which commands and prerequisites changed? Which observations were programmed? Which historical claims can the uploaded sources support?
 ```
 
-Expected median is **8**. Check calculation output and final answer. If execution fails, your model should report that.
+Check your model’s account against commands and source passages. Keep expected and observed results separate.
 
 ---
 
-## Skills & Tools — 32
+## Configuring skills and tools — 30
 
 ### Record Test Results
 
@@ -2217,7 +1623,7 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 ---
 
-## Skills & Tools — 33
+## Configuring skills and tools — 31
 
 ### Repeat Tests
 
@@ -2231,4 +1637,4 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 - Retest after model or tool updates
 
-[Browse system-prompt examples](examples.html) · [Return to Compose System Prompts](.)
+[Browse system-prompt examples](examples.html) · [Return to Composing system prompts](.)

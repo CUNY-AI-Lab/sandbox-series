@@ -82,6 +82,10 @@ padding-left:14px}
 .prompt-block{
 padding:18px;
 font-size:20px}
+.prompt-container>pre{
+padding-top:64px}
+.prompt-container>.copy-btn,.prompt-container>[data-example-copy]{
+min-height:44px}
 .long-prompt-slide .prompt-good{
 max-height:none;
 overflow:visible;
@@ -125,8 +129,38 @@ margin:0}
 min-width:50px}
 #nav-bar svg{
 width:20px}
+#outline-dialog{
+width:calc(100vw - 24px);
+max-width:calc(100vw - 24px);
+max-height:calc(100dvh - 24px);
+padding:20px 18px}
+#outline-dialog .dialog-heading{
+gap:12px;
+margin-bottom:20px}
+#outline-dialog .dialog-heading h2{
+font-size:22px;
+line-height:1.25}
+#outline-dialog .dialog-heading button{
+flex:none;
+min-height:44px;
+padding:7px 10px;
+font-size:15px}
+#outline-dialog .dialog-heading button:focus-visible{
+outline-offset:2px}
+#outline-dialog .series-links{
+gap:12px;
+font-size:19px;
+padding-left:1.25em}
+#outline-dialog>.small{
+padding:12px 0;
+font-size:16px}
 #outline-list button{
-font-size:17px}
+font-size:17px;
+min-height:44px;
+padding:9px 8px;
+gap:12px}
+#outline-list .outline-number{
+min-width:24px}
 .layout-divider .slide-inner{
 justify-content:center}
 .source,.small{

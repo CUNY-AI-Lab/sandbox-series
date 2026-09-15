@@ -1,0 +1,58 @@
+[
+  {
+    "command": "restart",
+    "status": "paragraph: \"◉ Study · Moves: 0 · In progress\""
+  },
+  {
+    "command": "go north",
+    "status": "paragraph: \"◉ Storeroom · Moves: 1 · In progress\""
+  },
+  {
+    "command": "take prism",
+    "status": "paragraph: \"◉ Storeroom · Moves: 2 · In progress\""
+  },
+  {
+    "command": "take screen",
+    "status": "paragraph: \"◉ Storeroom · Moves: 3 · In progress\""
+  },
+  {
+    "command": "go south",
+    "status": "paragraph: \"◉ Study · Moves: 4 · In progress\""
+  },
+  {
+    "command": "go east",
+    "status": "paragraph: \"◉ Laboratory · Moves: 5 · In progress\""
+  },
+  {
+    "command": "open shutter",
+    "status": "paragraph: \"◉ Laboratory · Moves: 6 · In progress\""
+  },
+  {
+    "command": "use prism",
+    "status": "paragraph: \"◉ Laboratory · Moves: 7 · In progress\""
+  },
+  {
+    "command": "use screen",
+    "status": "paragraph: \"◉ Laboratory · Moves: 8 · In progress\""
+  },
+  {
+    "command": "test red light",
+    "status": "paragraph: \"◉ Laboratory · Moves: 9 · In progress\""
+  },
+  {
+    "command": "record result",
+    "status": "paragraph: \"◉ Laboratory · Moves: 10 · Complete\""
+  },
+  {
+    "command": "undo",
+    "status": "paragraph: \"◉ Laboratory · Moves: 9 · In progress\""
+  },
+  {
+    "command": "record result",
+    "status": "paragraph: \"◉ Laboratory · Moves: 10 · Complete\""
+  },
+  {
+    "command": "help",
+    "status": "paragraph: \"◉ Laboratory · Moves: 11 · Complete\""
+  }
+]

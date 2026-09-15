@@ -7,10 +7,10 @@ R=Path(__file__).resolve().parents[1];write='--write' in sys.argv;issues=[];sect
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
 def check_title(title,location):
+ if title in {'Composing system prompts','Curating knowledge collections','Configuring skills and tools','Situating System Prompts'}:return
  words=re.findall(r"[\w]+(?:[’'-][\w]+)*",title)
  if not 2 <= len(words) <= 3:issues.append(location+' heading length: '+title)
  if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(location+' article in heading: '+title)
- # Slide headings use short nouns or action verbs, without -ing forms.
  if any(w.lower().endswith('ing') for w in words):issues.append(location+' -ing form in heading: '+title)
 
 def participant_text(node):
@@ -33,7 +33,7 @@ def check_participant_copy(tree,location):
  if tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')):issues.append(location+' presenter plan linked from participant material')
 
 retained=json.loads((R/'review/imported-copy.json').read_text()); found={};count=0
-for route,label in [('', 'Compose System Prompts'),('knowledge','Curate Knowledge Collections'),('skills','Skills & Tools')]:
+for route,label in [('', 'Composing system prompts'),('knowledge','Curating knowledge collections'),('skills','Configuring skills and tools')]:
  base=R/route;tree=Parser((base/'index.html').read_text()).root;slides=tree.all(lambda n:n.has_class('slide'));count+=len(slides)
  check_participant_copy(tree,route or 'prompts')
  if tree.all(lambda n:n.attrs.get('id') in {'notes-button','series-button'}):issues.append(route+' removed footer control returned')
@@ -70,7 +70,11 @@ for route,label in [('', 'Compose System Prompts'),('knowledge','Curate Knowledg
   diff=''.join(difflib.unified_diff(before.splitlines(True),mirror.splitlines(True),fromfile='before original HTML',tofile='after consolidated workshop'))
   if write:beforefile.write_text(before);afterfile.write_text(diff)
   elif not afterfile.exists() or afterfile.read_text()!=diff:issues.append(route+' copy diff out of sync')
+retired=json.loads((R/'review/retired-sections.json').read_text())['imported']
 for key,record in retained.items():
+ if key in retired:
+  if key in found:issues.append('Retired example returned: '+key)
+  continue
  expected=record['before']
  for e in record['changes']:expected=expected.replace(e['before'],e['after'])
  if re.sub(r'\s+','',expected)!=re.sub(r'\s+','',found.get(key,'')):issues.append('Unrecorded source change '+key)

@@ -1,0 +1,54 @@
+[
+  {
+    "command": "go east",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t185 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 1 · In progress"
+  },
+  {
+    "command": "record result",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t187 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 2 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t192 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "go west",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t191 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Study · Moves: 3 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t196 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "go north",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t193 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Storeroom · Moves: 4 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t198 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "take prism",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t195 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Storeroom · Moves: 5 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t200 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "take screen",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t197 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Storeroom · Moves: 6 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t202 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "go south",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t199 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Study · Moves: 7 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t204 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "go east",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t201 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 8 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t206 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "open shutter",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t203 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 9 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t208 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "use prism",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t205 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 10 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t210 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "use screen",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t207 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 11 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t212 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "test red light",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t209 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 12 · In progress\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t214 text Conditions are not ready. Examine earlier observations or try another action."
+  },
+  {
+    "command": "record result",
+    "result": "+\t\t\t\t\t\t\t\t\t\t\t\t\t211 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 13 · Complete\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t216 text Conditions are not ready. Examine earlier observations or try another action.\n+\t\t\t\t\t\t\t\t\t\t\t\t\t\t238 text Recorded: sunlight formed a spectrum, selected red light remained red after further refraction. The game is complete. Export your record to examine the procedure, failed actions, and interpretation."
+  }
+]

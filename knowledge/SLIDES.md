@@ -1,8 +1,8 @@
-# Curate Knowledge Collections
+# Curating knowledge collections
 
-## Curate Knowledge Collections — 1
+## Curating knowledge collections — 1
 
-### Curate Knowledge Collections
+### Curating knowledge collections
 
 Upload documents for models to reference in teaching and research
 
@@ -12,7 +12,7 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ---
 
-## Curate Knowledge Collections — 2
+## Curating knowledge collections — 2
 
 ### Workshop Agenda
 
@@ -32,7 +32,7 @@ Before attending, confirm individual access, Sandbox sign-in, Workspace access, 
 
 ---
 
-## Curate Knowledge Collections — 3
+## Curating knowledge collections — 3
 
 ### Review Custom Models
 
@@ -44,7 +44,7 @@ Use [system-prompt examples](../examples.html) if you need a prompt to begin.
 
 ---
 
-## Curate Knowledge Collections — 4
+## Curating knowledge collections — 4
 
 ### Open Workspace
 
@@ -62,7 +62,7 @@ Request Workspace access from CUNY AI Lab if Workspace is unavailable.
 
 ---
 
-## Curate Knowledge Collections — 5
+## Curating knowledge collections — 5
 
 ### Review Model Settings
 
@@ -78,7 +78,7 @@ Ask a question about your source material. Save this response before attaching d
 
 ---
 
-## Curate Knowledge Collections — 6
+## Curating knowledge collections — 6
 
 ### Knowledge Collections
 
@@ -92,7 +92,7 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 
 ---
 
-## Curate Knowledge Collections — 7
+## Curating knowledge collections — 7
 
 ### Create Knowledge Collections
 
@@ -110,7 +110,7 @@ Enter a collection name and description, set access, and select Create Knowledge
 
 ---
 
-## Curate Knowledge Collections — 8
+## Curating knowledge collections — 8
 
 ### Check Citations
 
@@ -128,7 +128,7 @@ Check each answer against its source passage.
 
 ---
 
-## Curate Knowledge Collections — 9
+## Curating knowledge collections — 9
 
 ### Select Documents
 
@@ -146,7 +146,7 @@ Check scans and complex PDFs before uploading. Convert them to text if necessary
 
 ---
 
-## Curate Knowledge Collections — 10
+## Curating knowledge collections — 10
 
 ### Retrieve Source Passages
 
@@ -162,282 +162,81 @@ Check whether retrieved passages address your question and support claims in eac
 
 ---
 
-## Curate Knowledge Collections — 11
+## Curating knowledge collections — 11
 
-Example 1
+### Open STEM Collection
 
-### Organize Source Documents
+![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries: Source Register, Newton: Light and Colour, Newton: Experimental Variants, and Evaluate Game Procedures.](../images/current/stem-knowledge-2026-09-14.png)
+
+Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments. Inspect each file before using it as evidence.
 
 ---
 
-## Curate Knowledge Collections — 12
+## Curating knowledge collections — 12
 
-Composition & Writing
+### Review Source Roles
 
-### Incomplete Collections
+Use sources for different questions.
 
-**Weak**
+Newton’s optical experiments
+
+Check apparatus, procedures, and observations.
+
+Scientific method
+
+Examine hypotheses, measurement, and revision.
+
+Women in science
+
+Investigate collaboration, recognition, and institutions.
+
+Keep source summaries and game documentation distinguishable.
+
+---
+
+## Curating knowledge collections — 13
+
+### Inspect Imported Text
+
+Open each file and compare its contents with its source page.
+
+- Confirm article text is present.
+
+- Check headings, missing passages, and extraction errors.
+
+- Record article title, source URL, and revision date.
+
+On September 14, 2026, List of experiments contained a Wikimedia rate-limit error instead of article text. Its filename alone did not establish usable content.
+
+---
+
+## Curating knowledge collections — 14
+
+### Review Attached Knowledge
+
+![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.](../images/current/stem-attachments-2026-09-14.png)
+
+Open Workspace → Models → STEM Adventure Games. Scroll to Knowledge and review its attached collection. For your own model, select a collection and choose Save & Update.
+
+---
+
+## Curating knowledge collections — 15
+
+### Check Game Sources
+
+Compare Prism Laboratory with Newton’s account.
 
 ```text
-Collection contents:
-• syllabus.pdf (14 pages, full course syllabus)
+Which apparatus details from Newton’s account does Prism Laboratory simplify? Identify the uploaded source and quote a relevant passage. If it is unavailable, say so.
 ```
 
-### Identify Problems
+Open cited material. Does it support your model’s response?
 
-- A syllabus may not explain how to revise an essay. Check which passages are retrieved.
-
-- No assignment instructions for revision
-
-- No readings or reference materials to consult
+[Read Newton source entry](../examples/knowledge/newton-light-colour.md) · [Review source register](../examples/knowledge/source-register.md)
 
 ---
 
-## Curate Knowledge Collections — 13
-
-Composition & Writing
-
-### Add Specifics
-
-**Getting There**
-
-```text
-Collection contents:
-• syllabus.pdf
-• essay-1-prompt.pdf
-• mla-style-guide.pdf
-```
-
-### Compare Improvements
-
-- Separate documents distinguish individual sources
-
-- Assignment instructions describe what revision requires
-
-- Style guide helps with formatting questions
-
-### Add Detail
-
-- No course readings to reference during analysis
-
-- No common feedback patterns to guide revision
-
-- No instructor notes on what substantive revision looks like in this course
-
----
-
-## Curate Knowledge Collections — 14
-
-Composition & Writing
-
-### Support Revision
-
-**Strong**
-
-```text
-Collection contents:
-
-Course Context
-• syllabus.pdf: schedule, learning objectives, policies
-• revision-philosophy.txt: instructor notes on what revision means in this course
-
-Assignment Materials (Essay 1: Rhetoric in Popular Media)
-• essay-1-prompt.pdf: assignment instructions and requirements
-• common-feedback.txt: patterns from past semesters (e.g., thesis too broad, evidence not analyzed)
-
-Reference Materials
-• mla-style-guide.pdf: citation and formatting conventions
-• strong-intro-examples.txt: examples of effective introductions
-• revision-checklist.pdf: the same checklist students use in peer review
-```
-
----
-
-## Curate Knowledge Collections — 15
-
-Example 2
-
-### Analyze Primary Sources
-
----
-
-## Curate Knowledge Collections — 16
-
-History
-
-### Incomplete Collections
-
-**Weak**
-
-```text
-Collection contents:
-• textbook-chapter-12.pdf (42 pages)
-```
-
-### Identify Problems
-
-- A general textbook chapter may not answer a question about a particular primary source.
-
-- No primary sources for students to analyze
-
-- No framework like SOAPS to guide source analysis
-
----
-
-## Curate Knowledge Collections — 17
-
-History
-
-### Add Specifics
-
-**Getting There**
-
-```text
-Collection contents:
-• syllabus.pdf
-• source-analysis-assignment.pdf
-• primary-source-1.pdf (Freedmen's Bureau report, 1866)
-• primary-source-2.pdf (Congressional testimony, 1871)
-```
-
-### Compare Improvements
-
-- Includes actual primary sources students are working with
-
-- Assignment instructions explain what students should do
-
-- Documents are separate and focused
-
-### Add Detail
-
-- No historical context for questions about this period
-
-- No SOAPS framework or equivalent to guide source analysis
-
-- No source metadata (author, date, document type) to support sourcing questions
-
----
-
-## Curate Knowledge Collections — 18
-
-History
-
-### Compare Primary Sources
-
-**Strong**
-
-```text
-Collection contents:
-
-Course Context
-• syllabus.pdf: schedule, themes, learning objectives
-• soaps-framework.txt: the analytical framework students use, with definitions and examples
-
-Primary Sources (Reconstruction Unit)
-• freedmens-bureau-report-1866.pdf: with metadata: author, date, document type, archive
-• congressional-testimony-1871.pdf: with metadata
-• source-context-notes.txt: brief historical context for each source (2-3 sentences each)
-
-Reference Materials
-• period-timeline.txt: key events 1865-1877 for contextualization questions
-• common-analysis-errors.txt: patterns from past semesters (e.g., treating sources as neutral facts)
-• chicago-citation-guide.pdf: citation format for history papers
-```
-
----
-
-## Curate Knowledge Collections — 19
-
-Example 3
-
-### Analyze Literary Texts
-
----
-
-## Curate Knowledge Collections — 20
-
-Literature & Cultural Studies
-
-### Incomplete Collections
-
-**Weak**
-
-```text
-Collection contents:
-• course-reader.pdf (180 pages, all readings for the semester)
-```
-
-### Identify Problems
-
-- An omnibus reader can make individual texts harder to identify. Check whether retrieval selects relevant passages.
-
-- No assignment context or close-reading framework
-
-- No separation between literary texts and critical essays
-
----
-
-## Curate Knowledge Collections — 21
-
-Literature & Cultural Studies
-
-### Add Specifics
-
-**Getting There**
-
-```text
-Collection contents:
-• syllabus.pdf
-• close-reading-assignment.pdf
-• sonny-blues-baldwin.pdf
-• new-criticism-overview.pdf
-```
-
-### Compare Improvements
-
-- Individual literary text rather than an omnibus reader
-
-- Assignment prompt provides task-specific context
-
-- A document explains how to use a critical framework
-
-### Add Detail
-
-- No annotated examples showing how to move from observation to interpretation
-
-- No key terms for this unit (e.g., tension, irony, ambiguity)
-
-- No instructor notes on what close reading looks like in this course
-
----
-
-## Curate Knowledge Collections — 22
-
-Literature & Cultural Studies
-
-### Support Textual Analysis
-
-**Strong**
-
-```text
-Collection contents:
-
-Course Context
-• syllabus.pdf: schedule, texts, learning objectives
-• new-criticism-framework.txt: key concepts and terms for this unit (tension, irony, paradox, ambiguity, diction, imagery)
-
-Assignment Materials (Close Reading Essay)
-• close-reading-assignment.pdf: instructions and requirements
-• annotated-passage-example.txt: model annotation showing how to move from observation to interpretation
-
-Literary Texts (Current Unit)
-• sonny-blues-baldwin.pdf: the primary text for this assignment
-• passage-selections.txt: key passages the instructor has flagged for class discussion
-```
-
----
-
-## Curate Knowledge Collections — 23
+## Curating knowledge collections — 16
 
 ### Compare Research Methods
 
@@ -453,7 +252,7 @@ Build a collection from research papers or methods you want to compare.
 
 ---
 
-## Curate Knowledge Collections — 24
+## Curating knowledge collections — 17
 
 ### Organize Documents
 
@@ -467,7 +266,7 @@ Begin with a few documents and test how your model uses them.
 
 ---
 
-## Curate Knowledge Collections — 25
+## Curating knowledge collections — 18
 
 ### Check Retrieval Problems
 
@@ -481,7 +280,7 @@ Save unsuccessful responses before revising anything.
 
 ---
 
-## Curate Knowledge Collections — 26
+## Curating knowledge collections — 19
 
 ### Build Knowledge Collections
 
@@ -489,113 +288,69 @@ Choose documents that explain your course or research project and describe what 
 
 ---
 
-## Curate Knowledge Collections — 27
+## Curating knowledge collections — 20
 
 ### Choose Reference Materials
 
-Think about which type of course document you would add first
+Add sources that support your adventure.
 
-- **Course Context** Syllabus sections, weekly schedule
+- Use [Newton: Light and Colour](../examples/knowledge/newton-light-colour.md) for apparatus and observations.
 
-- **Assignment Materials** Instructions, feedback examples
+- Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.md) for procedural changes.
 
-- **Source Materials** Excerpted readings, primary sources
+- Use [Evaluate Game Procedures](../examples/knowledge/game-procedure-evaluation.md) for software checks.
 
----
-
-## Curate Knowledge Collections — 28
-
-Type 1
-
-### Describe Course Context
-
-These documents describe course goals, structure, and methods students are expected to use.
-
-- What are your course’s learning objectives?
-
-- Which methods do students use in your course?
-
-- Which course details would help your model support those goals?
-
-```text
-Recommended uploads:
-
-1. syllabus.pdf
-   - Course schedule, objectives, and policies
-
-2. [framework-name].txt
-   - The analytical method students use
-   - Write it out in plain language with definitions
-```
-
-**Consider** Add a short document (1–2 pages) explaining a method you teach, using language familiar to your students.
+Download entries, upload them to your collection, and inspect processed text.
 
 ---
 
-## Curate Knowledge Collections — 29
+## Curating knowledge collections — 21
 
-Type 2
+### Describe Experimental Context
 
-### Describe Assignments
+Separate documented experiments from invented game settings.
 
-Assignment instructions describe what students should do and what successful work requires.
+- Which question motivated an experiment?
 
-- What does your assignment ask students to do?
+- Which instruments and materials appear in its source?
 
-- What does strong work on this assignment look like?
+- Which rooms or actions were created for play?
 
-- What patterns come up most often in your feedback?
-
-```text
-Recommended uploads:
-
-1. [assignment]-prompt.pdf
-   - The assignment instructions
-
-2. common-feedback.txt
-   - 5-10 patterns you see every semester
-
-3. strong-examples.txt (optional)
-   - Excerpts showing what strong work looks like
-```
-
-**Consider** Which assignment stands to benefit? Try curating assignment instructions alongside a shortlist of common feedback patterns for starters.
+Prism Laboratory simplifies an apparatus with two boards and two prisms.
 
 ---
 
-## Curate Knowledge Collections — 30
+## Curating knowledge collections — 22
 
-Type 3
+### Describe Scientific Methods
 
-### Identify Sources
+Compare procedures before expanding your game.
 
-Upload readings and reference materials students use in your current unit.
+- Which variable changes when an aperture narrows?
 
-- What texts are students reading for this assignment?
+- Which conditions stay fixed?
 
-- Are there reference documents (timelines, glossaries, citation guides)?
+- What would a changed observation support?
 
-- Can you add brief metadata or context for each source?
-
-```text
-Recommended uploads:
-
-1. [reading-title].pdf
-   - Individual files per text (not one big reader)
-   - Add a header with: title, author, date, source
-
-2. context-notes.txt (optional)
-   - 2-3 sentences of context per source
-
-3. [reference-guide].pdf
-   - Citation style guide, glossary, or timeline
-```
-
-**Consider** Which readings or sources are students working with right now? Separate files can make sources easier to identify. Test retrieval with your actual questions.
+[Read experimental variants](../examples/knowledge/newton-experimental-variants.md)
 
 ---
 
-## Curate Knowledge Collections — 31
+## Curating knowledge collections — 23
+
+### Identify Historical Sources
+
+Use Women in science to examine contributors, institutions, and recognition.
+
+- Who performed or supported this work?
+
+- Which barriers affected participation?
+
+- What can these sources establish about a particular experiment?
+
+---
+
+## Curating knowledge collections — 24
 
 ### Select Research Materials
 
@@ -615,7 +370,7 @@ Identify documents and passages you want to examine.
 
 ---
 
-## Curate Knowledge Collections — 32
+## Curating knowledge collections — 25
 
 ### Attach Knowledge Collections
 
@@ -631,7 +386,7 @@ Identify documents and passages you want to examine.
 
 ---
 
-## Curate Knowledge Collections — 33
+## Curating knowledge collections — 26
 
 ### Test Retrieval
 
@@ -645,7 +400,7 @@ Repeat your first question without changing models or system prompts. Record whi
 
 ---
 
-## Curate Knowledge Collections — 34
+## Curating knowledge collections — 27
 
 ### Share Knowledge Collections
 
@@ -661,7 +416,7 @@ Share your collection with people who will use your custom model.
 
 ---
 
-## Curate Knowledge Collections — 35
+## Curating knowledge collections — 28
 
 ### Prepare Skill Instructions
 
@@ -673,4 +428,4 @@ Share your collection with people who will use your custom model.
 
 - Review [system-prompt examples](../examples.html)
 
-- Continue to [Skills & Tools](../skills/)
+- Continue to [Configuring skills and tools](../skills/)

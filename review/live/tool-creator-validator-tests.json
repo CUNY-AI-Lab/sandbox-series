@@ -1,0 +1,63 @@
+[
+  {
+    "case": "ordinary",
+    "expect_error": false,
+    "result": {
+      "total_commands": 2,
+      "failed_commands": [
+        "jump"
+      ]
+    },
+    "pass": true
+  },
+  {
+    "case": "non-string command",
+    "expect_error": true,
+    "result": {
+      "total_commands": 1,
+      "failed_commands": [
+        42
+      ]
+    },
+    "pass": false
+  },
+  {
+    "case": "count mismatch",
+    "expect_error": true,
+    "result": {
+      "error": "Mismatch: 1 commands vs 0 events."
+    },
+    "pass": true
+  },
+  {
+    "case": "value mismatch",
+    "expect_error": true,
+    "result": {
+      "error": "Mismatch: command name at index 0 ('look') does not match event record ('jump')."
+    },
+    "pass": true
+  },
+  {
+    "case": "invalid boolean",
+    "expect_error": true,
+    "result": {
+      "error": "Event at index 0 'valid' field must be a boolean."
+    },
+    "pass": true
+  },
+  {
+    "case": "over limit",
+    "expect_error": true,
+    "result": {
+      "error": "Command count exceeds 300 limit."
+    },
+    "pass": true
+  },
+  {
+    "case": "malformed JSON",
+    "result": {
+      "error": "Invalid JSON format."
+    },
+    "pass": true
+  }
+]

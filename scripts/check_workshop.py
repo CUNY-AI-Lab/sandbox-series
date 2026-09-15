@@ -83,7 +83,11 @@ def main():
             if n.attrs['data-copy'] not in ids:issues.append('Missing copy target')
     baseline=json.loads((ROOT/'review/preserved-prompts.json').read_text())
     preserved_copy=json.loads((ROOT/'review/preserved-copy.json').read_text())
+    retired=json.loads((ROOT/'review/retired-sections.json').read_text())['prompts']
     for old, record in preserved_copy.items():
+        if old in retired:
+            if any(s.attrs.get('data-source-slide')==old for s in slides):issues.append('Retired example returned: '+old)
+            continue
         matching=[s for s in slides if s.attrs.get('data-source-slide')==old]
         if len(matching)!=1:
             issues.append(f'Original section {old}: missing or duplicated');continue
@@ -94,8 +98,14 @@ def main():
             actual=actual.replace(addition,'')
         if re.sub(r'\s+','',expected)!=re.sub(r'\s+','',actual):
             issues.append(f'Original section {old}: unrecorded copy change')
+    retired=json.loads((ROOT/'review/retired-sections.json').read_text())['prompts']
+    replacements=json.loads((ROOT/'review/stem-prompt-replacements.json').read_text())
     preserved=0
     for old, expected in baseline.items():
+        if old in retired:continue
+        if old in replacements:
+            if expected!=replacements[old]['before']:issues.append('Prompt replacement baseline drift: '+old)
+            expected=replacements[old]['after']
         matching=[s for s in slides if s.attrs.get('data-source-slide')==old]
         if len(matching)!=1:issues.append(f'Original slide {old}: missing or duplicated');continue
         actual=[n.text() for n in matching[0].all(lambda n:n.has_class('prompt-block'))]
@@ -113,7 +123,7 @@ def main():
         if target and not re.match(r'^(https?:|mailto:|#)',target):
             path=target.split('#')[0].split('?')[0]
             if path and not (ROOT/path).exists():issues.append('Missing local resource: '+path)
-    header='# Compose System Prompts\n\n'
+    header='# Composing system prompts\n\n'
     mirror=header+'\n\n---\n\n'.join(f'## Slide {i}: '+s.attrs['data-title']+'\n\n'+re.sub(r'\n{3,}','\n\n',render(s)).strip() for i,s in enumerate(slides,1))+'\n'
     mirror=re.sub(r'\n{3,}','\n\n','\n'.join(line.rstrip() for line in mirror.splitlines()))+'\n'
     before=(ROOT/'review/before.md').read_text()

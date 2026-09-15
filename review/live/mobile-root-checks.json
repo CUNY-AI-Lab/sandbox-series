@@ -1,0 +1,398 @@
+[
+  {
+    "headingSize": "28px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 1: Composing system prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 2: Workshop Roadmap",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 3: Workshop Agenda",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 4: Request Access",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 5: System Prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 699.75,
+    "imageLoaded": true,
+    "label": "Slide 6: Select Models",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 7: Chat Features",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 683.5,
+    "imageLoaded": true,
+    "label": "Slide 8: Compare Models",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 9: Who Was Late?",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 10: Examine Assumptions",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 11: Compare Outputs",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 724,
+    "imageLoaded": true,
+    "label": "Slide 12: Gemma’s Response",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 724,
+    "imageLoaded": true,
+    "label": "Slide 13: Qwen’s Response",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 14: Compare Models",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 15: Add System Prompt",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 683.5,
+    "imageLoaded": true,
+    "label": "Slide 16: Open Chat Controls",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 17: Test System Prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 683.5,
+    "imageLoaded": true,
+    "label": "Slide 18: Regenerate Responses",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 19: Compare Responses",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 20: Open Workspace",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 699.75,
+    "imageLoaded": true,
+    "label": "Slide 21: Workspace Tabs",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 683.5,
+    "imageLoaded": true,
+    "label": "Slide 22: Model Configuration",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 23: Create Custom Models",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 24: Situating System Prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 207.6328125,
+    "imageLoaded": true,
+    "label": "Slide 25: Select STEM Games",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 207.6328125,
+    "imageLoaded": true,
+    "label": "Slide 26: STEM Adventure Games",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "28px",
+    "imageBottom": 207.6328125,
+    "imageLoaded": true,
+    "label": "Slide 27: Inspect System Prompt",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 28: Read Game Instructions",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 29: Test Game Instructions",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 30: Adapt Research Prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 31: Draft System Prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 32: Define Prompt Components",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 33: Define Context",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 34: Write Procedures",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 35: Set Constraints",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 36: Set Tone",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 37: Specify Format",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 38: Refine Instructions",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 39: Extend Instructions",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 40: Review Common Problems",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 41: Save Prompts",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 42: Share Custom Models",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 43: Record Comparisons",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  },
+  {
+    "headingSize": "26px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 44: Prepare Source Documents",
+    "overflow": false,
+    "slideBottom": 732,
+    "width": 390
+  }
+]

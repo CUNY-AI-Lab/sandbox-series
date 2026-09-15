@@ -1,0 +1,6 @@
+{
+  "model": "cail-sandbox-skill-builder",
+  "promptMatches": true,
+  "genericStarter": true,
+  "gameSpecificPrompt": false
+}

@@ -1,0 +1,8 @@
+{
+  "name": "STEM Adventure Games",
+  "base": "DeepSeek V4 Pro 0813",
+  "promptMatches": true,
+  "toolAttached": true,
+  "skillAttached": true,
+  "knowledgeAttached": true
+}
