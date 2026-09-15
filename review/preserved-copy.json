@@ -539,6 +539,11 @@
         "before": "Compare ModelsSelect Compare beside search field, then choose two models.Open model selector. Select Compare beside search field, then choose two models.If Compare is unavailable, send identical prompts in separate new chats.Start a new chat before comparing models.",
         "after": "Compare ModelsStart a new chat. Select Compare beside search field, then choose two models.Select model ID on bottom right of message box.Select Compare beside search field, then choose two small models.If Compare is unavailable, send identical prompts in separate new chats.",
         "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      },
+      {
+        "before": "Compare ModelsStart a new chat. Select Compare beside search field, then choose two models.Select model ID on bottom right of message box.Select Compare beside search field, then choose two small models.If Compare is unavailable, send identical prompts in separate new chats.",
+        "after": "Compare ModelsStart a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.",
+        "reason": "User requires no hidden notes. Required steps are visible; duplicate explanations are removed or moved to existing visible slides."
       }
     ],
     "allowed_additions": []

@@ -94,11 +94,7 @@ Test whether your selected model follows these instructions.
 
 **Alt text:** Sandbox chat with model ID at bottom right of message box
 
-Select model ID on bottom right of message box.
-
-Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
-
-[Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/)
+Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
 
 ---
 
@@ -130,13 +126,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 **Alt text:** Sandbox logo, message box, and model selector with Compare button marked by an arrow
 
-Start a new chat. Select Compare beside search field, then choose two models.
-
-Select model ID on bottom right of message box.
-
-Select **Compare** beside search field, then choose two small models.
-
-If Compare is unavailable, send identical prompts in separate new chats.
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.
 
 ---
 
@@ -298,17 +288,7 @@ Continue in chat if Workspace is unavailable.
 
 **Alt text:** Current model creation form showing Name, Base Model, and System Prompt
 
-Select Create in Models. Choose a name and base model, then enter your system prompt.
-
-- **Name** — Use a name that students or colleagues will recognize.
-
-- **Base Model** — Choose a model you have tested.
-
-- **System Prompt** — Add instructions you tested in chat.
-
-A custom model combines these choices. Creating it does not train a new base model.
-
-[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 
 ---
 
@@ -316,7 +296,7 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ### Create Custom Models
 
-Custom models combine a base model with instructions, documents, and tools.
+Custom models combine a base model with instructions, documents, and tools. Creating a custom model does not train a new base model.
 
 - Enter a name and description that students or colleagues will recognize.
 
@@ -358,9 +338,7 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 **Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
 
-Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands.
-
-Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
+Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands, including save, load, and discuss.
 
 ---
 
@@ -372,7 +350,7 @@ Enter commands inside Prism Laboratory. Type help to list commands, including sa
 
 **Alt text:** STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.
 
-Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt. Base model shown here was selected on September 14, 2026.
+Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt.
 
 ---
 
@@ -723,13 +701,7 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 
 **Alt text:** Current model editor showing base model, system prompt, and Knowledge
 
-Review Base Model and System Prompt before attaching documents.
-
-Review **Base Model (From)** and **System Prompt**. Start a new chat. Select model ID on bottom right of message box. Choose your custom model.
-
-Ask a question about your source material. Save this response before attaching documents.
-
-[Model configuration](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+Review Base Model and System Prompt. Start a new chat. Select model ID on bottom right of message box. Choose your custom model and ask a question about your documents. Save its response before attaching documents.
 
 ---
 
@@ -775,7 +747,7 @@ Check whether retrieved passages address your question and support claims in eac
 
 **Alt text:** STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, Newton’s optical experiments, procedural variations, and software checks.
 
-Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments. Inspect each file before using it as evidence.
+Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments.
 
 ---
 
@@ -825,7 +797,7 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 **Alt text:** STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.
 
-Open Workspace → Models → STEM Adventure Games. Scroll to Knowledge and review its attached collection. For your own model, select a collection and choose Save & Update.
+Open Workspace → Models → STEM Adventure Games. Under Knowledge, review STEM Wikipedia Experiments.
 
 ---
 
@@ -1001,15 +973,7 @@ Identify documents and passages you want to examine.
 
 **Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
 
-Enter a collection name and description, set access, and select Create Knowledge.
-
-- Open **Workspace → Knowledge → Create**.
-
-- Name your collection and describe its contents and purpose.
-
-- Keep it **Private** while building, then choose **Create Knowledge**.
-
-[Create and manage collections](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+Open Workspace → Knowledge → Create. Enter a name and description, keep access Private, then select Create Knowledge.
 
 ---
 
@@ -1174,14 +1138,6 @@ Scenario JSON is a text file describing rooms, items, actions, and rules.
 
 Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
-A tool runs an operation, such as a search, a calculation, or a search within a knowledge collection.
-
-Open **Integrations** beside + to choose tools for this chat. Attach reusable tools under **Tools** in your model editor.
-
-Availability depends on account permissions, configuration, and model support.
-
-[Enable tools in chat or on a model](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-
 ---
 
 ## Configuring skills and tools — 7
@@ -1192,19 +1148,7 @@ Availability depends on account permissions, configuration, and model support.
 
 **Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
 
-Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box.
-
-STEM Adventure applies rules for rooms, inventory, actions, and completion.
-
-- Enter go north to reach Storeroom.
-
-- Enter take prism to add a prism to inventory.
-
-- Enter help to list available actions.
-
-- Try record result before completing required steps.
-
-[Open game](examples/adventure/preview.html) · [Read scenario JSON](examples/adventure/prism.json)
+Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read scenario JSON](examples/adventure/prism.json)
 
 ---
 
@@ -1390,15 +1334,7 @@ Format responses as [required structure].
 
 **Alt text:** Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.
 
-Use this saved example when creating your own skill. Review its name, description, and instructions.
-
-- Open **Workspace → Skills → Create**.
-
-- Enter a name, identifier, and description that explain when to use it.
-
-- Write instructions, review **Access**, and choose **Save & Create**.
-
-[Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+Open Workspace → Skills → Create. Enter a name, identifier, and description that explain when to use your skill. Write instructions, review Access, and choose Save & Create.
 
 ---
 
@@ -1519,7 +1455,7 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 - Enable your tool through **Integrations → Tools**.
 
-Use a private copy when changing code.
+Use a private copy when changing code. Attach reusable tools under Tools in your model editor.
 
 ---
 

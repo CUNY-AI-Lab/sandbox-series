@@ -92,11 +92,7 @@ Test whether your selected model follows these instructions.
 
 ![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
 
-Select model ID on bottom right of message box.
-
-Type a request, send it, then ask a follow-up. Open **New Chat** when you want to begin with fresh conversation history.
-
-[Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/)
+Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
 
 ---
 
@@ -126,13 +122,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
 
-Start a new chat. Select Compare beside search field, then choose two models.
-
-Select model ID on bottom right of message box.
-
-Select **Compare** beside search field, then choose two small models.
-
-If Compare is unavailable, send identical prompts in separate new chats.
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.
 
 ---
 
@@ -282,17 +272,7 @@ Continue in chat if Workspace is unavailable.
 
 ![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
 
-Select Create in Models. Choose a name and base model, then enter your system prompt.
-
-- **Name** — Use a name that students or colleagues will recognize.
-
-- **Base Model** — Choose a model you have tested.
-
-- **System Prompt** — Add instructions you tested in chat.
-
-A custom model combines these choices. Creating it does not train a new base model.
-
-[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 
 ---
 
@@ -300,7 +280,7 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ### Create Custom Models
 
-Custom models combine a base model with instructions, documents, and tools.
+Custom models combine a base model with instructions, documents, and tools. Creating a custom model does not train a new base model.
 
 - Enter a name and description that students or colleagues will recognize.
 
@@ -338,9 +318,7 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 ![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
 
-Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands.
-
-Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
+Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands, including save, load, and discuss.
 
 ---
 
@@ -350,7 +328,7 @@ Enter commands inside Prism Laboratory. Type help to list commands, including sa
 
 ![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
 
-Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt. Base model shown here was selected on September 14, 2026.
+Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt.
 
 ---
 

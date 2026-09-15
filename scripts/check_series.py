@@ -22,6 +22,7 @@ def participant_text(node):
 def check_participant_copy(tree,location):
  for heading in tree.all(lambda n:n.tag in {'h1','h2','h3','h4'}):check_title(heading.text().strip(),location)
  for slide in tree.all(lambda n:n.has_class('slide')):
+  if slide.all(lambda n:n.has_class('slide-notes') or 'hidden' in n.attrs):issues.append(location+' hidden slide content')
   check_title(slide.attrs.get('data-title',''),location+' outline')
   headings=slide.all(lambda n:n.tag in {'h1','h2'})
   if not headings or headings[0].text().strip()!=slide.attrs.get('data-title'):issues.append(location+' heading and outline disagree')

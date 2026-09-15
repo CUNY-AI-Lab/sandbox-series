@@ -98,14 +98,6 @@ Scenario JSON is a text file describing rooms, items, actions, and rules.
 
 Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
-A tool runs an operation, such as a search, a calculation, or a search within a knowledge collection.
-
-Open **Integrations** beside + to choose tools for this chat. Attach reusable tools under **Tools** in your model editor.
-
-Availability depends on account permissions, configuration, and model support.
-
-[Enable tools in chat or on a model](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-
 ---
 
 ## Configuring skills and tools — 7
@@ -114,19 +106,7 @@ Availability depends on account permissions, configuration, and model support.
 
 ![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](../images/current/stem-game-2026-09-14.png)
 
-Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box.
-
-STEM Adventure applies rules for rooms, inventory, actions, and completion.
-
-- Enter go north to reach Storeroom.
-
-- Enter take prism to add a prism to inventory.
-
-- Enter help to list available actions.
-
-- Try record result before completing required steps.
-
-[Open game](../examples/adventure/preview.html) · [Read scenario JSON](../examples/adventure/prism.json)
+Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read scenario JSON](../examples/adventure/prism.json)
 
 ---
 
@@ -310,15 +290,7 @@ Format responses as [required structure].
 
 ![Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.](../images/current/stem-skill-2026-09-14.png)
 
-Use this saved example when creating your own skill. Review its name, description, and instructions.
-
-- Open **Workspace → Skills → Create**.
-
-- Enter a name, identifier, and description that explain when to use it.
-
-- Write instructions, review **Access**, and choose **Save & Create**.
-
-[Create and attach a skill](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+Open Workspace → Skills → Create. Enter a name, identifier, and description that explain when to use your skill. Write instructions, review Access, and choose Save & Create.
 
 ---
 
@@ -439,7 +411,7 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 - Enable your tool through **Integrations → Tools**.
 
-Use a private copy when changing code.
+Use a private copy when changing code. Attach reusable tools under Tools in your model editor.
 
 ---
 

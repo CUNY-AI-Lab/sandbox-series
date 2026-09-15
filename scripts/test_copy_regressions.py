@@ -199,6 +199,9 @@ class CopyRegressions(unittest.TestCase):
             self.assertTrue(im.attrs['src'].endswith('workspace-sidebar-2026-09-15-annotated.svg'))
             self.assertNotIn('Workspace tab',workspace.text())
         for tree in self.trees.values():
+            self.assertFalse(tree.all(lambda n:n.has_class('slide-notes')))
+            for slide in tree.all(lambda n:n.has_class('slide')):
+                self.assertFalse(slide.all(lambda n:'hidden' in n.attrs))
             for s in tree.all(lambda n:n.has_class('screenshot-slide')):
                 self.assertTrue(s.all(lambda n:n.tag=='img'))
             self.assertFalse(tree.all(lambda n:n.attrs.get('id') in {'notes-button','series-button'}))
@@ -225,6 +228,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertTrue(prose_colons('Expected: reject numeric commands.'))
         self.assertFalse(prose_colons('Read Newton: Light and Colour at https://example.org/'))
         mutations = [
+            ('index.html', '<figcaption>', '<figcaption hidden>', self.test_18_screenshots_and_controls_preserve_requested_evidence),
             ('index.html', NURSE, NURSE.replace('she','he'), self.test_05_prompts_remain_exact),
             ('index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
             ('index.html', 'Compare and configure models for teaching and research', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),

@@ -74,13 +74,7 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 
 ![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
 
-Review Base Model and System Prompt before attaching documents.
-
-Review **Base Model (From)** and **System Prompt**. Start a new chat. Select model ID on bottom right of message box. Choose your custom model.
-
-Ask a question about your source material. Save this response before attaching documents.
-
-[Model configuration](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+Review Base Model and System Prompt. Start a new chat. Select model ID on bottom right of message box. Choose your custom model and ask a question about your documents. Save its response before attaching documents.
 
 ---
 
@@ -124,7 +118,7 @@ Check whether retrieved passages address your question and support claims in eac
 
 ![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, Newton’s optical experiments, procedural variations, and software checks.](../images/current/stem-knowledge-2026-09-14.png)
 
-Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments. Inspect each file before using it as evidence.
+Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments.
 
 ---
 
@@ -172,7 +166,7 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 ![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.](../images/current/stem-attachments-2026-09-14.png)
 
-Open Workspace → Models → STEM Adventure Games. Scroll to Knowledge and review its attached collection. For your own model, select a collection and choose Save & Update.
+Open Workspace → Models → STEM Adventure Games. Under Knowledge, review STEM Wikipedia Experiments.
 
 ---
 
@@ -346,15 +340,7 @@ Identify documents and passages you want to examine.
 
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
 
-Enter a collection name and description, set access, and select Create Knowledge.
-
-- Open **Workspace → Knowledge → Create**.
-
-- Name your collection and describe its contents and purpose.
-
-- Keep it **Private** while building, then choose **Create Knowledge**.
-
-[Create and manage collections](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+Open Workspace → Knowledge → Create. Enter a name and description, keep access Private, then select Create Knowledge.
 
 ---
 

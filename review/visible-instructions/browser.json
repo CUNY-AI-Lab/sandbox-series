@@ -1,0 +1,298 @@
+{
+  "date": "2026-09-15",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 720
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "slides": [
+    {
+      "route": "",
+      "slide": 6,
+      "desktop": {
+        "caption": "Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Select Models"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Select Models"
+      }
+    },
+    {
+      "route": "",
+      "slide": 8,
+      "desktop": {
+        "caption": "Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Compare Models"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Compare Models"
+      }
+    },
+    {
+      "route": "",
+      "slide": 21,
+      "desktop": {
+        "caption": "Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Model Configuration"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Model Configuration"
+      }
+    },
+    {
+      "route": "",
+      "slide": 22,
+      "desktop": {
+        "hidden": 0,
+        "image": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Create Custom Models"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Create Custom Models"
+      }
+    },
+    {
+      "route": "",
+      "slide": 24,
+      "desktop": {
+        "caption": "Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Select STEM Games"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Select STEM Games"
+      }
+    },
+    {
+      "route": "",
+      "slide": 25,
+      "desktop": {
+        "caption": "Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands, including save, load, and discuss.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "STEM Adventure Games"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "STEM Adventure Games"
+      }
+    },
+    {
+      "route": "",
+      "slide": 26,
+      "desktop": {
+        "caption": "Open Workspace \u2192 Models \u2192 STEM Adventure Games. Review Base Model and System Prompt.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Inspect System Prompt"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Inspect System Prompt"
+      }
+    },
+    {
+      "route": "knowledge/",
+      "slide": 6,
+      "desktop": {
+        "caption": "Review Base Model and System Prompt. Start a new chat. Select model ID on bottom right of message box. Choose your custom model and ask a question about your documents. Save its response before attaching documents.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Model Settings"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Model Settings"
+      }
+    },
+    {
+      "route": "knowledge/",
+      "slide": 9,
+      "desktop": {
+        "caption": "Open Workspace \u2192 Knowledge. Search for STEM and open STEM Wikipedia Experiments.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open STEM Collection"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Open STEM Collection"
+      }
+    },
+    {
+      "route": "knowledge/",
+      "slide": 12,
+      "desktop": {
+        "caption": "Open Workspace \u2192 Models \u2192 STEM Adventure Games. Under Knowledge, review STEM Wikipedia Experiments.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Attached Knowledge"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Review Attached Knowledge"
+      }
+    },
+    {
+      "route": "knowledge/",
+      "slide": 24,
+      "desktop": {
+        "caption": "Open Workspace \u2192 Knowledge \u2192 Create. Enter a name and description, keep access Private, then select Create Knowledge.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Create Knowledge Collections"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Create Knowledge Collections"
+      }
+    },
+    {
+      "route": "skills/",
+      "slide": 6,
+      "desktop": {
+        "caption": "Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Enable Tools"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Enable Tools"
+      }
+    },
+    {
+      "route": "skills/",
+      "slide": 7,
+      "desktop": {
+        "caption": "Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box, then go north and take prism. Open game \u00b7 Read scenario JSON",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Inspect Game Rules"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Inspect Game Rules"
+      }
+    },
+    {
+      "route": "skills/",
+      "slide": 19,
+      "desktop": {
+        "caption": "Open Workspace \u2192 Skills \u2192 Create. Enter a name, identifier, and description that explain when to use your skill. Write instructions, review Access, and choose Save & Create.",
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Create Skills"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": true,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Create Skills"
+      }
+    },
+    {
+      "route": "skills/",
+      "slide": 26,
+      "desktop": {
+        "hidden": 0,
+        "image": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Install Tool Code"
+      },
+      "mobile": {
+        "hidden": 0,
+        "image": null,
+        "overflowX": false,
+        "overflowY": false,
+        "title": "Install Tool Code"
+      }
+    }
+  ]
+}
