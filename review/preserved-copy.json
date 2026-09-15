@@ -299,6 +299,16 @@
         "before": "\n\nComponent 2\nWrite Procedures\nTell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.\n\nWhat should the tool request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.\n\n\n",
         "after": "\n\nComponent 2\nWrite Procedures\nWrite numbered steps for your model to follow.\n\nWhat should your model request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and describe steps you use in your discipline.\n\n\n",
         "reason": "User requested article-free participant language and clearer instructions; substantive sample prompts preserved."
+      },
+      {
+        "before": "What should your model request before responding?",
+        "after": "What information should users provide first?",
+        "reason": "User requested clearer wording and broader scope beyond student input."
+      },
+      {
+        "before": "How should it respond to each student input?",
+        "after": "How should your model respond to different requests?",
+        "reason": "User requested clearer wording and broader scope beyond student input."
       }
     ],
     "allowed_additions": []

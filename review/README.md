@@ -1,6 +1,8 @@
 # Copy Review
 
-Latest revisions — [Gemma screenshot](gemma-screenshot-review.md) · [Direct diff](gemma-screenshot.diff).
+Latest revisions — [Formatted slide copy](formatted-copy-review.md) · [Direct diff](formatted-copy.diff).
+
+Previous revisions — [Gemma screenshot](gemma-screenshot-review.md) · [Direct diff](gemma-screenshot.diff).
 
 Previous revisions — [System prompt instructions](terminology-review.md) · [Direct diff](terminology.diff).
 

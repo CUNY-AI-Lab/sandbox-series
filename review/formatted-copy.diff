@@ -1,0 +1,164 @@
+diff --git a/SLIDES.md b/SLIDES.md
+index 45c1502..c1050cc 100644
+--- a/SLIDES.md
++++ b/SLIDES.md
+@@ -92,6 +92,8 @@ Test whether your selected model follows these instructions.
+ 
+ ![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
+ 
++**Alt text:** Sandbox chat with model ID at bottom right of message box
++
+ Select model ID on bottom right of message box.
+ 
+ Select model ID on bottom right of message box.
+@@ -128,6 +130,8 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (
+ 
+ ![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
+ 
++**Alt text:** Sandbox logo, message box, and model selector with Compare button marked by an arrow
++
+ Select Compare beside search field, then choose two models.
+ 
+ Open model selector. Select **Compare** beside search field, then choose two models.
+@@ -186,6 +190,8 @@ What do you think this person wants to accomplish?
+ 
+ ![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
+ 
++**Alt text:** Gemma recommends walking to a car wash
++
+ ---
+ 
+ ## Compose System Prompts — 13
+@@ -194,6 +200,8 @@ What do you think this person wants to accomplish?
+ 
+ ![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
+ 
++**Alt text:** Qwen recommends driving to a car wash
++
+ ---
+ 
+ ## Compose System Prompts — 14
+@@ -228,6 +236,8 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
+ 
+ ![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
+ 
++**Alt text:** Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow
++
+ Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
+ 
+ - Open your chat.
+@@ -260,6 +270,8 @@ Leave your original question, selected models, and other settings unchanged.
+ 
+ ![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
+ 
++**Alt text:** Original question, Gemma response, and message box with Regenerate button marked by an arrow
++
+ After adding system prompt instructions, select Regenerate beneath each original response.
+ 
+ ---
+@@ -298,6 +310,8 @@ Continue in chat if Workspace is unavailable.
+ 
+ ![Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create](images/current/workspace-header.png)
+ 
++**Alt text:** Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create
++
+ Select a Workspace tab, then choose Create.
+ 
+ ### Custom Models
+@@ -316,6 +330,8 @@ Attach documents under Knowledge. Add reusable instructions under Skills and ope
+ 
+ ![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
+ 
++**Alt text:** Current model creation form showing Name, Base Model, and System Prompt
++
+ Choose a name and base model, then enter a system prompt.
+ 
+ - **Name** — Use a name that students or colleagues will recognize.
+@@ -712,11 +728,11 @@ Component 2
+ 
+ Write numbered steps for your model to follow.
+ 
+-- What should your model request before responding?
++- What information should users provide first?
+ 
+ - What should it prioritize?
+ 
+-- How should it respond to each student input?
++- How should your model respond to different requests?
+ 
+ ```text
+ Procedure:
+@@ -967,6 +983,8 @@ Use [system-prompt examples](examples.html) if you need a prompt to begin.
+ 
+ ![Current Workspace tabs and shared Create button](images/current/workspace-header.png)
+ 
++**Alt text:** Current Workspace tabs and shared Create button
++
+ Open Workspace and select Knowledge to create a collection.
+ 
+ Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
+@@ -985,6 +1003,8 @@ Request Workspace access from CUNY AI Lab if Workspace is unavailable.
+ 
+ ![Current model editor showing base model, system prompt, and Knowledge](images/current/model-editor.png)
+ 
++**Alt text:** Current model editor showing base model, system prompt, and Knowledge
++
+ Review Base Model and System Prompt before attaching documents.
+ 
+ Review **Base Model (From)** and **System Prompt**. Start a new chat. Select your custom model inside message box.
+@@ -1015,6 +1035,8 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
+ 
+ ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create.png)
+ 
++**Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
++
+ Enter a collection name and description, set access, and select Create Knowledge.
+ 
+ - Open **Workspace → Knowledge → Create**.
+@@ -1673,6 +1695,8 @@ Describe when to use your skill and which steps to follow.
+ 
+ ![Current Skill editor showing name, ID, description, Access, and instructions](images/current/skill-editor.png)
+ 
++**Alt text:** Current Skill editor showing name, ID, description, Access, and instructions
++
+ Enter a name, description, and instructions, then select Save & Create.
+ 
+ - Open **Workspace → Skills → Create**.
+@@ -1723,6 +1747,8 @@ Repeat a request before and after attaching your skill. Keep base model, sources
+ 
+ ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](images/current/integrations.png)
+ 
++**Alt text:** Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter
++
+ Open Integrations beside + to enable tools for this chat.
+ 
+ A tool runs an operation, such as a search, a calculation, or a search within a knowledge collection.
+diff --git a/index.html b/index.html
+index 76dc830..dfc2a04 100644
+--- a/index.html
++++ b/index.html
+@@ -329,9 +329,9 @@ The core problem: [specific learning challenge].</pre>
+ <h2>Write Procedures</h2>
+ <p>Write numbered steps for your model to follow.</p>
+ <ul>
+-<li>What should your model request before responding?</li>
++<li>What information should users provide first?</li>
+ <li>What should it prioritize?</li>
+-<li>How should it respond to each student input?</li>
++<li>How should your model respond to different requests?</li>
+ </ul>
+ </div>
+ <div class="stage">
+diff --git a/scripts/check_series.py b/scripts/check_series.py
+index 791c7db..6f70e74 100644
+--- a/scripts/check_series.py
++++ b/scripts/check_series.py
+@@ -78,6 +78,8 @@ for manifest,folder in [('screenshot-sources.json','current'),('showcase-sources
+  for x in json.loads((R/'review'/manifest).read_text())['images']:
+   if hashlib.sha256((R/'images'/folder/x['file']).read_bytes()).hexdigest()!=x['sha256']:issues.append('Image hash mismatch '+x['file'])
+ full='# Sandbox Workshops\n\n'+'\n\n'.join(sections)
++# Print image alternatives as copy, so they remain visible in rendered Markdown.
++full=re.sub(r'(!\[([^\]]*)\]\([^)]+\))',lambda m:m.group(1)+'\n\n**Alt text:** '+m.group(2),full)
+ if write:(R/'SLIDES.md').write_text(full)
+ elif not (R/'SLIDES.md').exists() or (R/'SLIDES.md').read_text()!=full:issues.append('Full copy out of sync')
+ example_tree=Parser((R/'examples.html').read_text()).root

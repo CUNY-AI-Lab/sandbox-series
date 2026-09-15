@@ -92,6 +92,8 @@ Test whether your selected model follows these instructions.
 
 ![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
 
+**Alt text:** Sandbox chat with model ID at bottom right of message box
+
 Select model ID on bottom right of message box.
 
 Select model ID on bottom right of message box.
@@ -127,6 +129,8 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 ### Compare Models
 
 ![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
+
+**Alt text:** Sandbox logo, message box, and model selector with Compare button marked by an arrow
 
 Select Compare beside search field, then choose two models.
 
@@ -186,6 +190,8 @@ What do you think this person wants to accomplish?
 
 ![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
 
+**Alt text:** Gemma recommends walking to a car wash
+
 ---
 
 ## Compose System Prompts — 13
@@ -193,6 +199,8 @@ What do you think this person wants to accomplish?
 ### Qwen’s Response
 
 ![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
+
+**Alt text:** Qwen recommends driving to a car wash
 
 ---
 
@@ -228,6 +236,8 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
 
+**Alt text:** Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow
+
 Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
 
 - Open your chat.
@@ -259,6 +269,8 @@ Leave your original question, selected models, and other settings unchanged.
 ### Regenerate Responses
 
 ![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
+
+**Alt text:** Original question, Gemma response, and message box with Regenerate button marked by an arrow
 
 After adding system prompt instructions, select Regenerate beneath each original response.
 
@@ -298,6 +310,8 @@ Continue in chat if Workspace is unavailable.
 
 ![Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create](images/current/workspace-header.png)
 
+**Alt text:** Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create
+
 Select a Workspace tab, then choose Create.
 
 ### Custom Models
@@ -315,6 +329,8 @@ Attach documents under Knowledge. Add reusable instructions under Skills and ope
 ### Model Configuration
 
 ![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
+
+**Alt text:** Current model creation form showing Name, Base Model, and System Prompt
 
 Choose a name and base model, then enter a system prompt.
 
@@ -712,11 +728,11 @@ Component 2
 
 Write numbered steps for your model to follow.
 
-- What should your model request before responding?
+- What information should users provide first?
 
 - What should it prioritize?
 
-- How should it respond to each student input?
+- How should your model respond to different requests?
 
 ```text
 Procedure:
@@ -967,6 +983,8 @@ Use [system-prompt examples](examples.html) if you need a prompt to begin.
 
 ![Current Workspace tabs and shared Create button](images/current/workspace-header.png)
 
+**Alt text:** Current Workspace tabs and shared Create button
+
 Open Workspace and select Knowledge to create a collection.
 
 Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
@@ -984,6 +1002,8 @@ Request Workspace access from CUNY AI Lab if Workspace is unavailable.
 ### Review Model Settings
 
 ![Current model editor showing base model, system prompt, and Knowledge](images/current/model-editor.png)
+
+**Alt text:** Current model editor showing base model, system prompt, and Knowledge
 
 Review Base Model and System Prompt before attaching documents.
 
@@ -1014,6 +1034,8 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 ### Create Knowledge Collections
 
 ![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create.png)
+
+**Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
 
 Enter a collection name and description, set access, and select Create Knowledge.
 
@@ -1673,6 +1695,8 @@ Describe when to use your skill and which steps to follow.
 
 ![Current Skill editor showing name, ID, description, Access, and instructions](images/current/skill-editor.png)
 
+**Alt text:** Current Skill editor showing name, ID, description, Access, and instructions
+
 Enter a name, description, and instructions, then select Save & Create.
 
 - Open **Workspace → Skills → Create**.
@@ -1722,6 +1746,8 @@ Repeat a request before and after attaching your skill. Keep base model, sources
 ### Enable Tools
 
 ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](images/current/integrations.png)
+
+**Alt text:** Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter
 
 Open Integrations beside + to enable tools for this chat.
 

@@ -712,11 +712,11 @@ Component 2
 
 Write numbered steps for your model to follow.
 
-- What should your model request before responding?
+- What information should users provide first?
 
 - What should it prioritize?
 
-- How should it respond to each student input?
+- How should your model respond to different requests?
 
 ```text
 Procedure:

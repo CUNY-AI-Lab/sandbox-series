@@ -78,6 +78,8 @@ for manifest,folder in [('screenshot-sources.json','current'),('showcase-sources
  for x in json.loads((R/'review'/manifest).read_text())['images']:
   if hashlib.sha256((R/'images'/folder/x['file']).read_bytes()).hexdigest()!=x['sha256']:issues.append('Image hash mismatch '+x['file'])
 full='# Sandbox Workshops\n\n'+'\n\n'.join(sections)
+# Print image alternatives as copy, so they remain visible in rendered Markdown.
+full=re.sub(r'(!\[([^\]]*)\]\([^)]+\))',lambda m:m.group(1)+'\n\n**Alt text:** '+m.group(2),full)
 if write:(R/'SLIDES.md').write_text(full)
 elif not (R/'SLIDES.md').exists() or (R/'SLIDES.md').read_text()!=full:issues.append('Full copy out of sync')
 example_tree=Parser((R/'examples.html').read_text()).root
