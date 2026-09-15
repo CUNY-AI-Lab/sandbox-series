@@ -379,25 +379,6 @@
       "sha256": "29fa5e2bdedf64e9430e87ea766f59566aa913afbfaf759171825abfae804760"
     },
     {
-      "file": "stem-model-2026-09-14.png",
-      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
-      "observed_date": "2026-09-14",
-      "capture": "Native Firefox window at 180% zoom in dark mode.",
-      "source_dimensions": [
-        4416,
-        2618
-      ],
-      "crop_xyxy": [
-        211,
-        245,
-        4300,
-        2280
-      ],
-      "source_sha256": "cd2b8fca7c3c379dbce6ce01fef417f005a05b8e94910306edf11ea93b307fd9",
-      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
-      "sha256": "9e25a61bf8950ebb8fe8be675385ff1d189a39d508723e601a39dcdf112c50e3"
-    },
-    {
       "file": "stem-attachments-2026-09-14.png",
       "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
       "observed_date": "2026-09-14",
@@ -417,25 +398,6 @@
       "sha256": "3bf76e9594c43c9c1fb4b1b4b6968033eb198fe664014382d5d2595189efb998"
     },
     {
-      "file": "stem-skill-2026-09-14.png",
-      "source": "https://chat.ailab.gc.cuny.edu/workspace/skills/edit?id=extend-stem-adventures",
-      "observed_date": "2026-09-14",
-      "capture": "Native Firefox window at 180% zoom in dark mode.",
-      "source_dimensions": [
-        4416,
-        2618
-      ],
-      "crop_xyxy": [
-        350,
-        245,
-        4300,
-        2470
-      ],
-      "source_sha256": "398998766c2e4c99c670bbd24c6461704e89da6bdf2a6d481b866ace8439e5e5",
-      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
-      "sha256": "ecc7f2fdcf696c826d1d08884df9bf1bc6e68c5f23f0f4a90895d795c9f359fc"
-    },
-    {
       "file": "stem-game-2026-09-14.png",
       "source": "https://chat.ailab.gc.cuny.edu/c/8b6ad8de-fd91-4777-a750-28cb26c44c8e",
       "observed_date": "2026-09-14",
@@ -453,6 +415,44 @@
       "source_sha256": "d8a1bea9dd93c76538b6e5d00b6a7f0174b3259f276cd022613a2d7c5a067378",
       "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
       "sha256": "1adf02849a43aeb2bfe213b07f7fa4f6aeb233cf112739d6d17e73b6358fd7ef"
+    },
+    {
+      "file": "stem-model-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        211,
+        245,
+        4300,
+        2280
+      ],
+      "source_sha256": "6bfd47251e66dfb54b0078b29c54fde4f46f7a28dda66e3f942cee5ffc9cd852",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "fd8868b95556c8ee511f1f15b2b01e883d275c9b866563933d46ac91d9313aad"
+    },
+    {
+      "file": "stem-skill-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/skills/edit?id=extend-stem-adventures",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        350,
+        245,
+        4300,
+        2470
+      ],
+      "source_sha256": "2816a7504011f7c0e4d7723251e31b8c8f2773742ff612d786038ca65a163047",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "bf2d36e3ef2922e21b2d1dc58632da118225ecce55727e7a59c1c8cc9541f06e"
     }
   ]
 }

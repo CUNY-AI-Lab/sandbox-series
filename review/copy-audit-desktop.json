@@ -1,0 +1,935 @@
+{
+  "prompts": [
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Composing system prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Workshop Roadmap",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Workshop Agenda",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Request Access",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "System Prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Select Models",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Chat Features",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Compare Models",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Who Was Late?",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Examine Assumptions",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Compare Outputs",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Gemma’s Response",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Qwen’s Response",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Compare Models",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Add System Prompt",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Open Chat Controls",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Test System Prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Regenerate Responses",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Compare Responses",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Open Workspace",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Workspace Tabs",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Model Configuration",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Create Custom Models",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Situating System Prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Select STEM Games",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "STEM Adventure Games",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Inspect System Prompt",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Read Game Instructions",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Test Game Instructions",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Adapt Research Prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Draft System Prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Define Prompt Components",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Define Context",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Write Procedures",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Set Constraints",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Set Tone",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Specify Format",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Refine Instructions",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Extend Instructions",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Review Common Problems",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Save Prompts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Share Custom Models",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Record Comparisons",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Prepare Source Documents",
+      "width": 1280
+    }
+  ],
+  "knowledge": [
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Curating knowledge collections",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Workshop Agenda",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Knowledge Collections",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Review Custom Models",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Open Workspace",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Review Model Settings",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Select Documents",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Retrieve Source Passages",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Open STEM Collection",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Review Source Roles",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Inspect Imported Text",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Review Attached Knowledge",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Check Game Sources",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Check Citations",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Compare Research Methods",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Organize Documents",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Check Retrieval Problems",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Build Knowledge Collections",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Choose Reference Materials",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Describe Experimental Context",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Describe Scientific Methods",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Identify Historical Sources",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Select Research Materials",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Create Knowledge Collections",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Attach Knowledge Collections",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Test Retrieval",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Share Knowledge Collections",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Prepare Skill Instructions",
+      "width": 1280
+    }
+  ],
+  "skills": [
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Configuring skills and tools",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Workshop Agenda",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Tools & Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Review Previous Work",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Connect Resources",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Enable Tools",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Inspect Game Rules",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Test Game Commands",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Discuss Play Records",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Choose Procedures",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Define Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Write Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Structure Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Define Triggers",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Write Procedures",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Specify Format",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Draft Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Write Instructions",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": true,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Create Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Attach Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Extend Procedures",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Check Interpretations",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Test Skills",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Check Skill Drafts",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Create Adventure Tools",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Install Tool Code",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Check Generated Code",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Inspect Tool Results",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Compare Game Records",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Record Test Results",
+      "width": 1280
+    },
+    {
+      "heading": "32px",
+      "height": 654,
+      "imageLoaded": null,
+      "overflowX": false,
+      "scrollHeight": 654,
+      "title": "Repeat Tests",
+      "width": 1280
+    }
+  ]
+}

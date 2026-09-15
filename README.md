@@ -7,7 +7,8 @@ Composing system prompts begins the series. Use **Outline** to move to Curating 
 - [Full slide copy](SLIDES.md)
 - [Presenter lesson plans and access requirements](WORKSHOP.md)
 - [System-prompt examples](https://cuny-ai-lab.github.io/sandbox-series/examples.html)
-- [Copy review and source history](review/README.md)
+- [Copy regression review and full before/after](review/copy-audit.md)
+- [Source history](review/README.md)
 
 Workshop 1 requires individual access and Sandbox sign-in. Workshop 2 adds Workspace and Knowledge collection access. Workshop 3 adds Skills and Tools access, with Workspace authoring permissions for creation and editing. Knowledge access is needed in Workshop 3 when a chosen procedure retrieves from a collection.
 
@@ -33,6 +34,8 @@ Static HTML, CSS, and JavaScript. No build step or runtime dependencies.
 ```sh
 python3 -m http.server 8766
 python3 scripts/check_series.py
+python3 scripts/test_copy_regressions.py
+node scripts/test_deck_interactions.cjs
 node examples/adventure/test-engine.cjs
 python3 examples/adventure/test-validation.py
 ```

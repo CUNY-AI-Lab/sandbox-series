@@ -1,5 +1,7 @@
 # Workshop Review
 
+Latest review — [systematic copy audit](copy-audit.md), [complete before/after passages](copy-audit-changes.md), and [direct copy diff](copy-audit.diff). The audit covers every deck, downloadable copy, and shared presentation behavior. Earlier receipts below describe their own revisions.
+
 The series now contains 103 slides: 44 for Composing system prompts, 28 for Curating knowledge collections, and 31 for Configuring skills and tools. STEM Adventure Games replaces the disciplinary bad/better/best examples. The opening nurse and car-wash prompts remain intact.
 
 [Complete prior copy](series-before.md) · [Complete revised copy and alt text](../SLIDES.md) · [Direct diff](formatted-copy.diff) · [Verification](verification.md)

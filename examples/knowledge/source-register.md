@@ -1,16 +1,16 @@
 # STEM Source Register
 
-Inspection date: 14 September 2026.
+Inspected 14 September 2026.
 
 ## Existing Sources
 
-Women in science: imported article text, 182.5 KB. Use for contributors, institutions, collaboration, and recognition; check relevant passages before attributing a claim.
+Women in science — imported article text, 182.5 KB. Use for contributors, institutions, collaboration, and recognition; check relevant passages before attributing a claim.
 https://en.wikipedia.org/wiki/Women_in_science
 
-Scientific method: imported article text, 163.6 KB. Use for questions about observation, hypotheses, procedures, evidence, and limits.
+Scientific method — imported article text, 163.6 KB. Use for questions about observation, hypotheses, procedures, evidence, and limits.
 https://en.wikipedia.org/wiki/Scientific_method
 
-List of experiments: original 369-byte import contained a Wikimedia rate-limit error. Its filename does not establish usable article content. Do not use that failed import to select or substantiate experiments.
+List of experiments — original 369-byte import contained a Wikimedia rate-limit error. Its filename does not establish usable article content. Do not use that failed import to select or substantiate experiments.
 https://en.wikipedia.org/wiki/List_of_experiments
 
 ## Added Sources

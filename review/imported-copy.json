@@ -227,6 +227,11 @@
         "before": "Choose Reference MaterialsChoose sources that support your adventure.Identify experiments and historical settings.Describe methods players will use.Check people, institutions, and scientific collaboration.",
         "after": "Choose Reference MaterialsAdd sources that support your adventure.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries, upload them to your collection, and inspect processed text.",
         "reason": "Integrate requested deterministic game and procedural extension."
+      },
+      {
+        "before": "Choose Reference MaterialsAdd sources that support your adventure.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries, upload them to your collection, and inspect processed text.",
+        "after": "Choose Reference MaterialsAdd sources that support your adventure.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries you want your model to use. Create your own collection after reviewing these materials.",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
       }
     ]
   },
@@ -289,6 +294,11 @@
         "before": "Describe Scientific MethodsUse Scientific method to examine how choices lead to evidence.What could a player observe or measure?Which result would challenge a hypothesis?What would replication help establish?",
         "after": "Describe Scientific MethodsCompare procedures before expanding your game.Which variable changes when an aperture narrows?Which conditions stay fixed?What would a changed observation support?Read experimental variants",
         "reason": "Integrate requested deterministic game and procedural extension."
+      },
+      {
+        "before": "Describe Scientific MethodsCompare procedures before expanding your game.Which variable changes when an aperture narrows?Which conditions stay fixed?What would a changed observation support?Read experimental variants",
+        "after": "Describe Scientific MethodsAn aperture is an opening that admits light. Compare procedures before changing its size in your game.Which variable changes when an aperture narrows?Which conditions stay fixed?What would a changed observation support?Read experimental variants",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
       }
     ]
   },
@@ -536,6 +546,16 @@
         "before": "Write ProceduresSpecify what happens after a player chooses.Copy prompt1. Check source material for the selected experiment.\n2. Describe an observation resulting from the chosen action.\n3. State what it suggests and what remains uncertain.\n4. Present four numbered choices, then wait.",
         "after": "Write ProceduresSpecify how your model should extend an experiment.Copy prompt1. Identify one experimental decision to change.\n2. Check source material for that procedure.\n3. Revise scenario JSON within the tool contract.\n4. Provide winning and blocked commands, then open the game.\n5. Compare a submitted record with expected behavior.",
         "reason": "Integrate requested deterministic game and procedural extension."
+      },
+      {
+        "before": "Write ProceduresSpecify how your model should extend an experiment.Copy prompt1. Identify one experimental decision to change.\n2. Check source material for that procedure.\n3. Revise scenario JSON within the tool contract.\n4. Provide winning and blocked commands, then open the game.\n5. Compare a submitted record with expected behavior.",
+        "after": "Write ProceduresSpecify how your model should change an experiment. Follow supported fields in scenario instructions when editing JSON.Copy prompt1. Identify one experimental decision to change.\n2. Check source material for that procedure.\n3. Revise scenario JSON within the tool contract.\n4. Provide winning and blocked commands, then open the game.\n5. Compare a submitted record with expected behavior.",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      },
+      {
+        "before": "Write ProceduresSpecify how your model should change an experiment. Follow supported fields in scenario instructions when editing JSON.Copy prompt1. Identify one experimental decision to change.\n2. Check source material for that procedure.\n3. Revise scenario JSON within the tool contract.\n4. Provide winning and blocked commands, then open the game.\n5. Compare a submitted record with expected behavior.",
+        "after": "Write ProceduresSpecify how your model should change an experiment. Follow supported fields when editing scenario JSON.Copy prompt1. Identify one experimental decision to change.\n2. Check source material for that procedure.\n3. Revise scenario JSON within the tool contract.\n4. Provide winning and blocked commands, then open the game.\n5. Compare a submitted record with expected behavior.",
+        "reason": "Preserve uncertainty and link format instructions at first use."
       }
     ]
   },
@@ -584,6 +604,11 @@
         "before": "\nHands-On\nDraft Skills\nChoose a teaching or research procedure and write steps that another person can inspect.\n\n",
         "after": "Draft SkillsOpen Kale Skill Builder to draft reusable instructions.Select model ID on bottom right of message box.Copy promptDraft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = \"\"). Preserve game rules. Include trigger, 3\u20135 steps, output, and two proposed tests. Do not invent successful tool calls.Open Kale Skill Builder \u00b7 Read tested skill",
         "reason": "Integrate verified creator and game commands."
+      },
+      {
+        "before": "Draft SkillsOpen Kale Skill Builder to draft reusable instructions.Select model ID on bottom right of message box.Copy promptDraft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = \"\"). Preserve game rules. Include trigger, 3\u20135 steps, output, and two proposed tests. Do not invent successful tool calls.Open Kale Skill Builder \u00b7 Read tested skill",
+        "after": "Draft SkillsKale Skill Builder is a custom model that drafts skills for tasks you describe.Select model ID on bottom right of message box.Attach scenario instructions before sending this example.Copy promptDraft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = \"\"). Preserve game rules. Include trigger, 3\u20135 steps, output, and two proposed tests. Do not invent successful tool calls.Open Kale Skill Builder \u00b7 Read tested skill",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
       }
     ]
   },
@@ -618,6 +643,11 @@
         "before": "Choose ProceduresChoose a procedure to adapt for STEM Adventure Games.Guide players through experimental choices.Check a historical claim against uploaded sources.Inspect source imports before using them.Define what you expect to observe before testing.",
         "after": "Choose ProceduresChoose one procedure to change or examine.Add an aperture comparison to Prism Laboratory.Inspect a failed command and its prerequisite.Check a historical claim against source material.Describe expected behavior before testing.",
         "reason": "Integrate requested deterministic game and procedural extension."
+      },
+      {
+        "before": "Choose ProceduresChoose one procedure to change or examine.Add an aperture comparison to Prism Laboratory.Inspect a failed command and its prerequisite.Check a historical claim against source material.Describe expected behavior before testing.",
+        "after": "Choose ProceduresChoose one procedure to change or examine.Change size of an opening that admits light, called an aperture.Inspect a failed command and its prerequisite.Check a historical claim against source material.Describe expected behavior before testing.",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
       }
     ]
   },

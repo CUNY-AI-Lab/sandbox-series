@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-14",
+  "method": "Native Firefox editor readback after saving and reopening each resource",
+  "resources": [
+    {
+      "resource": "game-procedure-evaluation.md",
+      "matches": true,
+      "source_file": "examples/knowledge/game-procedure-evaluation.md",
+      "source_sha256": "357b06691a903b93ed93439920c46f464ca5a71ddf89a07c58f934f875a47ae1"
+    },
+    {
+      "resource": "source-register.md",
+      "matches": true,
+      "source_file": "examples/knowledge/source-register.md",
+      "source_sha256": "279c5c42620ab24f033534852726eff85f1d8f1343fc0d7563e622afa590a6fb"
+    },
+    {
+      "resource": "newton-light-colour.md",
+      "matches": true,
+      "source_file": "examples/knowledge/newton-light-colour.md",
+      "source_sha256": "a3de66b1ce599c2140d88897b392efdf6faa1336bd9f267698839751397d2c95"
+    },
+    {
+      "resource": "newton-experimental-variants.md",
+      "matches": true,
+      "source_file": "examples/knowledge/newton-experimental-variants.md",
+      "source_sha256": "b3c093c8522953fc84b0f154649acc5736e808b1e21a95bb266d5566c11cc0ca"
+    },
+    {
+      "resource": "cail-sandbox-skill-builder",
+      "matches": true,
+      "metadataMatches": true,
+      "source_file": "examples/creators/skill-creator-system-prompt.txt",
+      "source_sha256": "2a4043b49e11f50ea465f155fa16fb491f1e2350482636bd3427a3a1e26ff250"
+    },
+    {
+      "resource": "cail-sandbox-tool-creator",
+      "matches": true,
+      "metadataMatches": true,
+      "source_file": "examples/creators/tool-creator-system-prompt.txt",
+      "source_sha256": "ef26bc75d6dfb25cf46f4f733b1d2bc8dc98cc1e231c7c234b3ab512b665a7f9"
+    },
+    {
+      "resource": "stem-adventure-games",
+      "matches": true,
+      "attachmentsPresent": true,
+      "source_file": "examples/stem-system-prompt.txt",
+      "source_sha256": "c599f4007dde4e6e974a58f89558c9fd036754eb9abd8be5c22bf969ba366b7a"
+    },
+    {
+      "resource": "extend-stem-adventures",
+      "matches": true,
+      "source_file": "examples/stem-game-skill.md",
+      "source_sha256": "5f1ab1a54eeda3ef68688f87db822acb4a02cd3499d3414c7b2ea0c5313a0ba2"
+    }
+  ]
+}

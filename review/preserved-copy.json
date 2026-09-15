@@ -339,6 +339,11 @@
         "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Ask the player to choose an experiment.\n2. Establish its historical setting and experimental question.\n3. Present four numbered choices and wait.\n4. Describe observations after the player chooses.",
         "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
         "reason": "User requested tested STEM game, complementary skill, and tool as primary examples."
+      },
+      {
+        "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+        "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?Which steps must happen before your model responds?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
       }
     ],
     "allowed_additions": []
@@ -502,6 +507,49 @@
         "before": "\nWatch Out\nReview Common Problems\n\n\nPrioritize Instructions\nCheck instructions for conflicts. Prioritize essential steps and test whether your model follows them.\n\n\nResolve Contradictions\n\u201cAlways give detailed feedback\u201d + \u201cKeep responses under 50 words\u201d = confused AI. Read your prompt for conflicts.\n\n\nConsider Student Questions\nTest your prompt with questions students ask in your course.\n\n\nRetest Revised Prompts\nSave each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.\n\n\n",
         "after": "\nWatch Out\nReview Common Problems\n\n\nPrioritize Instructions\nCheck instructions for conflicts. Prioritize essential steps and test whether your model follows them.\n\n\nResolve Contradictions\n\u201cAlways give detailed feedback\u201d + \u201cKeep responses under 50 words\u201d = confused AI. Read your prompt for conflicts.\n\n\nTest Player Requests\nTest game choices, requests for hints, and questions about sources.\n\n\nRetest Revised Prompts\nSave each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.\n\n\n",
         "reason": "Align prompt tests with STEM use case."
+      },
+      {
+        "before": "\nWatch Out\nReview Common Problems\n\n\nPrioritize Instructions\nCheck instructions for conflicts. Prioritize essential steps and test whether your model follows them.\n\n\nResolve Contradictions\n\u201cAlways give detailed feedback\u201d + \u201cKeep responses under 50 words\u201d = confused AI. Read your prompt for conflicts.\n\n\nTest Player Requests\nTest game choices, requests for hints, and questions about sources.\n\n\nRetest Revised Prompts\nSave each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.\n\n\n",
+        "after": "\nWatch Out\nReview Common Problems\n\n\nPrioritize Instructions\nCheck instructions for conflicts. Prioritize essential steps and test whether your model follows them.\n\n\nResolve Contradictions\nCheck whether requested detail fits your length limit. Revise requirements that cannot be met together.\n\n\nTest Player Requests\nTest game choices, requests for hints, and questions about sources.\n\n\nRetest Revised Prompts\nSave each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.\n\n\n",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      }
+    ],
+    "allowed_additions": []
+  },
+  "3": {
+    "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.System PromptsInstructions defining model behavior, tone, boundaries, and response style.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configuration",
+    "allowed_replacements": [
+      {
+        "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.System PromptsInstructions defining model behavior, tone, boundaries, and response style.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configuration",
+        "after": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.System PromptsInstructions defining model behavior, tone, boundaries, and response style.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configuration",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      },
+      {
+        "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.System PromptsInstructions defining model behavior, tone, boundaries, and response style.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configuration",
+        "after": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configuration",
+        "reason": "Avoid repeating definition and retain two-column balance."
+      }
+    ],
+    "allowed_additions": []
+  },
+  "6": {
+    "before": "Compare ModelsSelect Compare beside search field, then choose two models.Open model selector. Select Compare beside search field, then choose two models.If Compare is unavailable, send identical prompts in separate new chats.Start a new chat before comparing models.",
+    "allowed_replacements": [
+      {
+        "before": "Compare ModelsSelect Compare beside search field, then choose two models.Open model selector. Select Compare beside search field, then choose two models.If Compare is unavailable, send identical prompts in separate new chats.Start a new chat before comparing models.",
+        "after": "Compare ModelsStart a new chat. Select Compare beside search field, then choose two models.Select model ID on bottom right of message box.Select Compare beside search field, then choose two small models.If Compare is unavailable, send identical prompts in separate new chats.",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      }
+    ],
+    "allowed_additions": []
+  },
+  "4": {
+    "before": "Open Chat ControlsOpen Controls at top right \u2192 System Prompt. Add sample instructions, then regenerate original responses.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
+    "allowed_replacements": [
+      {
+        "before": "Open Chat ControlsOpen Controls at top right \u2192 System Prompt. Add sample instructions, then regenerate original responses.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
+        "after": "Open Chat ControlsOpen Controls \u2192 System Prompt. Add sample instructions, close Controls, then choose Regenerate \u2192 Try Again beneath each original response.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
+        "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
       }
     ],
     "allowed_additions": []

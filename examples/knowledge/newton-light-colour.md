@@ -1,8 +1,8 @@
 # Newton: Light and Colour
 
-Source: Isaac Newton, “A Letter … containing his New Theory about Light and Colors,” Philosophical Transactions 80, 19 February 1671/2, pp. 3075–3087. Transcription: Newton Project, University of Oxford.
+Source — Isaac Newton, “A Letter … containing his New Theory about Light and Colors,” Philosophical Transactions 80, 19 February 1671/2, pp. 3075–3087. Transcription — Newton Project, University of Oxford.
 https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006
-Checked: 14 September 2026.
+Checked 14 September 2026.
 
 ## Experiment
 

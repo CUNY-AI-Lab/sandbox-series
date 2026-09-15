@@ -34,52 +34,6 @@ Before attending, confirm individual access, Sandbox sign-in, Workspace access, 
 
 ## Curating knowledge collections — 3
 
-### Review Custom Models
-
-Open your custom model from Workshop 1. Attach documents and test whether it can find and cite relevant passages.
-
-Bring course materials, research papers, or other documents you know well enough to check.
-
-Use [system-prompt examples](../examples.html) if you need a prompt to begin.
-
----
-
-## Curating knowledge collections — 4
-
-### Open Workspace
-
-![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)
-
-Open Workspace and select Knowledge to create a collection.
-
-Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
-
-To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](../examples.html).
-
-Request Workspace access from CUNY AI Lab if Workspace is unavailable.
-
-[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
-
----
-
-## Curating knowledge collections — 5
-
-### Review Model Settings
-
-![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
-
-Review Base Model and System Prompt before attaching documents.
-
-Review **Base Model (From)** and **System Prompt**. Start a new chat. Select your custom model inside message box.
-
-Ask a question about your source material. Save this response before attaching documents.
-
-[Model configuration](https://ailab.gc.cuny.edu/sandbox-docs/models/)
-
----
-
-## Curating knowledge collections — 6
-
 ### Knowledge Collections
 
 A knowledge collection contains uploaded documents that a model can search when responding to questions.
@@ -92,43 +46,53 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 
 ---
 
+## Curating knowledge collections — 4
+
+### Review Custom Models
+
+Open your custom model from Workshop 1. Choose a question about documents you want it to use.
+
+Bring course materials, research papers, or other documents you know well enough to check.
+
+Use [system-prompt examples](../examples.html) if you need a prompt to begin.
+
+---
+
+## Curating knowledge collections — 5
+
+### Open Workspace
+
+![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)
+
+Open Workspace → Models and find your custom model before adding documents.
+
+Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
+
+To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](../examples.html).
+
+Request Workspace access from CUNY AI Lab if Workspace is unavailable.
+
+[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+
+---
+
+## Curating knowledge collections — 6
+
+### Review Model Settings
+
+![Current model editor showing base model, system prompt, and Knowledge](../images/current/model-editor.png)
+
+Review Base Model and System Prompt before attaching documents.
+
+Review **Base Model (From)** and **System Prompt**. Start a new chat. Select model ID on bottom right of message box. Choose your custom model.
+
+Ask a question about your source material. Save this response before attaching documents.
+
+[Model configuration](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+
+---
+
 ## Curating knowledge collections — 7
-
-### Create Knowledge Collections
-
-![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
-
-Enter a collection name and description, set access, and select Create Knowledge.
-
-- Open **Workspace → Knowledge → Create**.
-
-- Name your collection and describe its contents and purpose.
-
-- Keep it **Private** while building, then choose **Create Knowledge**.
-
-[Create and manage collections](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
----
-
-## Curating knowledge collections — 8
-
-### Check Citations
-
-Ask a question with a verifiable answer in one of your documents.
-
-### Course Example
-
-What evidence does this assignment require for our midterm essay?
-
-### Research example
-
-How does this methods section define who was studied?
-
-Check each answer against its source passage.
-
----
-
-## Curating knowledge collections — 9
 
 ### Select Documents
 
@@ -146,7 +110,7 @@ Check scans and complex PDFs before uploading. Convert them to text if necessary
 
 ---
 
-## Curating knowledge collections — 10
+## Curating knowledge collections — 8
 
 ### Retrieve Source Passages
 
@@ -162,17 +126,17 @@ Check whether retrieved passages address your question and support claims in eac
 
 ---
 
-## Curating knowledge collections — 11
+## Curating knowledge collections — 9
 
 ### Open STEM Collection
 
-![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries: Source Register, Newton: Light and Colour, Newton: Experimental Variants, and Evaluate Game Procedures.](../images/current/stem-knowledge-2026-09-14.png)
+![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, Newton’s optical experiments, procedural variations, and software checks.](../images/current/stem-knowledge-2026-09-14.png)
 
 Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments. Inspect each file before using it as evidence.
 
 ---
 
-## Curating knowledge collections — 12
+## Curating knowledge collections — 10
 
 ### Review Source Roles
 
@@ -194,7 +158,7 @@ Keep source summaries and game documentation distinguishable.
 
 ---
 
-## Curating knowledge collections — 13
+## Curating knowledge collections — 11
 
 ### Inspect Imported Text
 
@@ -210,7 +174,7 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 ---
 
-## Curating knowledge collections — 14
+## Curating knowledge collections — 12
 
 ### Review Attached Knowledge
 
@@ -220,7 +184,7 @@ Open Workspace → Models → STEM Adventure Games. Scroll to Knowledge and revi
 
 ---
 
-## Curating knowledge collections — 15
+## Curating knowledge collections — 13
 
 ### Check Game Sources
 
@@ -236,7 +200,21 @@ Open cited material. Does it support your model’s response?
 
 ---
 
-## Curating knowledge collections — 16
+## Curating knowledge collections — 14
+
+### Check Citations
+
+Check a response from STEM Adventure Games against its cited passage.
+
+- Which apparatus did Newton describe?
+
+- Which experimental changes did he examine?
+
+Open each citation. Compare quoted wording and interpretation with source text.
+
+---
+
+## Curating knowledge collections — 15
 
 ### Compare Research Methods
 
@@ -252,7 +230,7 @@ Build a collection from research papers or methods you want to compare.
 
 ---
 
-## Curating knowledge collections — 17
+## Curating knowledge collections — 16
 
 ### Organize Documents
 
@@ -266,7 +244,7 @@ Begin with a few documents and test how your model uses them.
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 17
 
 ### Check Retrieval Problems
 
@@ -280,7 +258,7 @@ Save unsuccessful responses before revising anything.
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 18
 
 ### Build Knowledge Collections
 
@@ -288,7 +266,7 @@ Choose documents that explain your course or research project and describe what 
 
 ---
 
-## Curating knowledge collections — 20
+## Curating knowledge collections — 19
 
 ### Choose Reference Materials
 
@@ -300,11 +278,11 @@ Add sources that support your adventure.
 
 - Use [Evaluate Game Procedures](../examples/knowledge/game-procedure-evaluation.md) for software checks.
 
-Download entries, upload them to your collection, and inspect processed text.
+Download entries you want your model to use. Create your own collection after reviewing these materials.
 
 ---
 
-## Curating knowledge collections — 21
+## Curating knowledge collections — 20
 
 ### Describe Experimental Context
 
@@ -320,11 +298,11 @@ Prism Laboratory simplifies an apparatus with two boards and two prisms.
 
 ---
 
-## Curating knowledge collections — 22
+## Curating knowledge collections — 21
 
 ### Describe Scientific Methods
 
-Compare procedures before expanding your game.
+An aperture is an opening that admits light. Compare procedures before changing its size in your game.
 
 - Which variable changes when an aperture narrows?
 
@@ -336,7 +314,7 @@ Compare procedures before expanding your game.
 
 ---
 
-## Curating knowledge collections — 23
+## Curating knowledge collections — 22
 
 ### Identify Historical Sources
 
@@ -350,7 +328,7 @@ Use Women in science to examine contributors, institutions, and recognition.
 
 ---
 
-## Curating knowledge collections — 24
+## Curating knowledge collections — 23
 
 ### Select Research Materials
 
@@ -370,11 +348,29 @@ Identify documents and passages you want to examine.
 
 ---
 
+## Curating knowledge collections — 24
+
+### Create Knowledge Collections
+
+![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
+
+Enter a collection name and description, set access, and select Create Knowledge.
+
+- Open **Workspace → Knowledge → Create**.
+
+- Name your collection and describe its contents and purpose.
+
+- Keep it **Private** while building, then choose **Create Knowledge**.
+
+[Create and manage collections](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+
+---
+
 ## Curating knowledge collections — 25
 
 ### Attach Knowledge Collections
 
-- Open your collection and upload a few documents. Wait for processing to finish.
+- Open Workspace → Knowledge → your collection. Use Add Content to upload documents, then wait for processing to finish.
 
 - Check extracted text against each source.
 
