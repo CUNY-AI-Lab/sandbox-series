@@ -1,8 +1,8 @@
 # Newton: Experimental Variants
 
-Source: Robert Moray, “Some Experiments propos’d in relation to Mr. Newton’s Theory of light,” with Newton’s observations, Philosophical Transactions 83, 20 May 1672, pp. 4059–4062. Transcription: Newton Project, University of Oxford.
+Source — Robert Moray, “Some Experiments propos’d in relation to Mr. Newton’s Theory of light,” with Newton’s observations, Philosophical Transactions 83, 20 May 1672, pp. 4059–4062. Transcription — Newton Project, University of Oxford.
 https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00011
-Checked: 14 September 2026.
+Checked 14 September 2026.
 
 ## Procedures
 

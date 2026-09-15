@@ -34,22 +34,6 @@ Before attending, confirm individual access and Sandbox sign-in. Creating or edi
 
 ## Configuring skills and tools — 3
 
-### Review Previous Work
-
-Open STEM Adventure Games and review its system prompt.
-
-- Identify instructions for opening Prism Laboratory.
-
-- Review attached STEM Wikipedia Experiments collection.
-
-- Distinguish source material, skill instructions, and tool operations.
-
-Use your own configuration when adapting these examples.
-
----
-
-## Configuring skills and tools — 4
-
 ### Tools & Skills
 
 Skills
@@ -66,27 +50,43 @@ Test a request that needs your skill or tool. Check what your model used and whe
 
 ---
 
+## Configuring skills and tools — 4
+
+### Review Previous Work
+
+STEM Adventure Games is a custom model. Prism Laboratory is its starting game. Open this model and review its system prompt.
+
+- Identify instructions for opening Prism Laboratory.
+
+- Review attached STEM Wikipedia Experiments collection.
+
+- Distinguish source material, skill instructions, and tool operations.
+
+Use your own configuration when adapting these examples.
+
+---
+
 ## Configuring skills and tools — 5
 
 ### Connect Resources
 
 System prompt
 
-Open games and describe how components work together.
+Tell STEM Adventure Games when to open a game or consult sources.
 
 Knowledge
 
-Supply scientific and historical sources.
+STEM Wikipedia Experiments contains scientific and historical sources.
 
 Skill
 
-Guide procedural changes and interpretation.
+Extend STEM Adventures describes how to change experimental procedures.
 
 Tool
 
-Apply game rules and render playable output.
+STEM Adventure opens a game and applies its rules.
 
-Save each artifact with its tests.
+Scenario JSON is a text file describing rooms, items, actions, and rules.
 
 ---
 
@@ -96,7 +96,7 @@ Save each artifact with its tests.
 
 ![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
 
-Open Integrations beside + to enable tools for this chat.
+Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
 A tool runs an operation, such as a search, a calculation, or a search within a knowledge collection.
 
@@ -113,6 +113,8 @@ Availability depends on account permissions, configuration, and model support.
 ### Inspect Game Rules
 
 ![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](../images/current/stem-game-2026-09-14.png)
+
+Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box.
 
 STEM Adventure applies rules for rooms, inventory, actions, and completion.
 
@@ -132,17 +134,15 @@ STEM Adventure applies rules for rooms, inventory, actions, and completion.
 
 ### Test Game Commands
 
-Check successful and unsuccessful actions.
+- Enter **restart**, then try **record result** before completing required steps.
 
-- Complete [winning command sequence](../examples/adventure/winning-commands.json).
+- Follow [winning command sequence](../examples/adventure/winning-commands.json). Try taking an item twice.
 
-- Try completing an experiment before its prerequisites.
+- Enter **save** to download your play record.
 
-- Pick up an item twice.
+- Enter **restart**, then **load** and choose your saved file.
 
-- Enter undo, restart, save, and load.
-
-Compare room, inventory, flags, and completion after replay.
+- Enter **inventory**. Check restored items, room, and completion. Enter **undo** to reverse your last move.
 
 ---
 
@@ -168,7 +168,7 @@ A completed game does not establish conceptual understanding.
 
 Choose one procedure to change or examine.
 
-- Add an aperture comparison to Prism Laboratory.
+- Change size of an opening that admits light, called an aperture.
 
 - Inspect a failed command and its prerequisite.
 
@@ -184,9 +184,9 @@ Describe expected behavior before testing.
 
 Skills contain reusable Markdown instructions for tasks or procedures.
 
-Models receive a skill’s name and description and can load its full instructions when needed.
+Models can load attached skills when needed. Enable a skill under Integrations → Skills to include its full instructions in this chat.
 
-Describe when to use your skill and which steps to follow.
+Markdown is plain text with formatting such as headings and lists.
 
 [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -238,7 +238,7 @@ Use this skill when users request an experimental variation in STEM Adventure or
 
 ### Write Procedures
 
-Specify how your model should extend an experiment.
+Specify how your model should change an experiment. Follow [supported fields](../examples/stem-game-skill.md) when editing scenario JSON.
 
 ```text
 1. Identify one experimental decision to change.
@@ -271,9 +271,11 @@ Observed result: [Fill only after testing]
 
 ### Draft Skills
 
-Open Kale Skill Builder to draft reusable instructions.
+Kale Skill Builder is a custom model that drafts skills for tasks you describe.
 
 Select model ID on bottom right of message box.
+
+Attach [scenario instructions](../examples/stem-game-skill.md) before sending this example.
 
 ```text
 Draft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = ""). Preserve game rules. Include trigger, 3–5 steps, output, and two proposed tests. Do not invent successful tool calls.
@@ -308,7 +310,7 @@ Format responses as [required structure].
 
 ![Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.](../images/current/stem-skill-2026-09-14.png)
 
-Enter a name, description, and instructions, then select Save & Create.
+Use this saved example when creating your own skill. Review its name, description, and instructions.
 
 - Open **Workspace → Skills → Create**.
 
@@ -332,7 +334,7 @@ Enter a name, description, and instructions, then select Save & Create.
 
 - Select **Save & Update** and test a request that uses your skill.
 
-Use a model that supports tool calling.
+Native function calling lets your model call tools and load attached skill instructions.
 
 [Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
@@ -342,7 +344,7 @@ Use a model that supports tool calling.
 
 ### Extend Procedures
 
-Attach [Prism Laboratory JSON](../examples/adventure/prism.json), enable Extend STEM Adventures, and request one change.
+Open STEM Adventure Games. Attach [Prism Laboratory JSON](../examples/adventure/prism.json) and enable Extend STEM Adventures under **Integrations → Skills**. Send this request.
 
 ```text
 Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
@@ -377,17 +379,17 @@ Test it with supported, overstated, and unsupported claims from public or approv
 
 ### Test Skills
 
-Repeat an extension request before and after enabling your skill.
+Use a private model copy for this comparison.
+
+- Remove your skill under **Workspace → Models → Skills**. Save and run your extension request in a new chat.
+
+- Attach your skill again, save, and repeat that request in another new chat.
 
 - Keep base model, system prompt, sources, and tool unchanged.
 
-- Check whether scenario JSON follows its contract.
+- Run winning and blocked commands. Compare expected and observed results.
 
-- Run winning and blocked commands.
-
-- Compare expected behavior with actual results.
-
-Keep generated scenarios and play records for review.
+Save generated scenarios and play records.
 
 ---
 
@@ -395,7 +397,7 @@ Keep generated scenarios and play records for review.
 
 ### Check Skill Drafts
 
-Ask whether a skill’s test expectations match available evidence.
+This example has no commands or events but reports completion. Can a skill establish that play occurred?
 
 ```text
 {"commands":[],"events":[],"result":{"complete":true}}
@@ -403,7 +405,7 @@ Ask whether a skill’s test expectations match available evidence.
 
 An empty history cannot establish completion. Request a full record or replay.
 
-Return this failure to Kale Skill Builder and inspect its revised instructions.
+Send this example to Kale Skill Builder with your skill draft. Check whether revised instructions flag missing evidence.
 
 [Read corrected skill draft](../examples/creators/record-interpreter-skill.md) · [Inspect initial response](../review/live/skill-builder-consistency-failure.md)
 
@@ -413,7 +415,7 @@ Return this failure to Kale Skill Builder and inspect its revised instructions.
 
 ### Create Adventure Tools
 
-Open Tool Creator to draft or revise Python code.
+Tool Creator is a custom model that drafts Python tools for tasks you describe.
 
 ```text
 Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
@@ -445,17 +447,17 @@ Use a private copy when changing code.
 
 ### Check Generated Code
 
-Test whether generated code rejects incorrect types.
+This recorded test checks a separate draft tool that validates play records. Each command must be text.
 
 ```text
 {"commands":[42],"events":[{"command":42,"valid":false}]}
 ```
 
-Expected: reject numeric commands. Initial creator output accepted them.
+Expected behavior is to reject numeric commands. Initial creator output accepted them.
 
 Send observed failure back to Tool Creator, then repeat your tests.
 
-[Read corrected tool](../examples/creators/record-validator.py) · [Review executed tests](../review/live/tool-creator-corrected-tests.json)
+[Inspect original draft](../review/live/record-validator-before.py) · [Read corrected tool](../examples/creators/record-validator.py) · [Review executed tests](../review/live/tool-creator-corrected-tests.json)
 
 ---
 
@@ -463,11 +465,15 @@ Send observed failure back to Tool Creator, then repeat your tests.
 
 ### Inspect Tool Results
 
-Use an available knowledge tool to retrieve a file from STEM Wikipedia Experiments. Check which file and passage it retrieves.
+Ask STEM Adventure Games to quote from Newton: Light and Colour and identify its source.
 
-For STEM Adventure Games, retrieve source text and use Check Source Imports to inspect it. Python example is a draft for installation and testing in an approved Workspace.
+- Open tool-call details in its response.
 
-Inspect tool calls and results. Check whether a tool ran when your model says it inspected a source.
+- Check which file was retrieved and what text was returned.
+
+- Open cited passages and compare them with your model’s claims.
+
+A claim to have searched is not evidence that a tool ran. Inspect recorded calls and results.
 
 ---
 
@@ -475,7 +481,7 @@ Inspect tool calls and results. Check whether a tool ran when your model says it
 
 ### Compare Game Records
 
-Compare original and extended procedures.
+Attach saved play records from original and revised games, then send this request.
 
 ```text
 Review both play records. Which commands and prerequisites changed? Which observations were programmed? Which historical claims can the uploaded sources support?

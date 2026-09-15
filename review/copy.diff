@@ -530,9 +530,9 @@
 +
 +Questions or tasks you enter in chat.
 +
-+### System Prompts
++### Base Models
 +
-+Instructions defining model behavior, tone, boundaries, and response style.
++A base model generates responses. A custom model adds instructions and resources to a chosen base model.
 +
 +Test whether your selected model follows these instructions.
 +
@@ -547,8 +547,6 @@
 +### Select Models
 +
 +![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
-+
-+Select model ID on bottom right of message box.
 +
 +Select model ID on bottom right of message box.
 +
@@ -568,7 +566,7 @@
 +
 +Integrations
 +
-+Choose tools and skills for this chat.
++Enable tools that perform operations and skills that give reusable instructions.
 +
 +Message actions
 +
@@ -584,13 +582,13 @@
 +
 +![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
 +
-+Select Compare beside search field, then choose two models.
++Start a new chat. Select Compare beside search field, then choose two models.
 +
-+Open model selector. Select **Compare** beside search field, then choose two models.
++Select model ID on bottom right of message box.
++
++Select **Compare** beside search field, then choose two small models.
 +
 +If Compare is unavailable, send identical prompts in separate new chats.
-+
-+Start a new chat before comparing models.
 +
 +---
 +
@@ -684,7 +682,7 @@
 +
 +![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
 +
-+Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
++Open Controls → System Prompt. Add sample instructions, close Controls, then choose Regenerate → Try Again beneath each original response.
 +
 +- Open your chat.
 +
@@ -740,7 +738,7 @@
 +
 +Open **Workspace → Models**.
 +
-+Open a sample model and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
++Open a custom model shared with you and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
 +
 +Continue in chat if Workspace is unavailable.
 +
@@ -798,7 +796,7 @@
 +
 +- Add prompt suggestions for tasks your model should support.
 +
-+Students select your custom model to use its instructions and resources.
++Users select your custom model to use its instructions and resources.
 +
 +[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 +
@@ -827,6 +825,8 @@
 +### STEM Adventure Games
 +
 +![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
++
++Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands.
 +
 +Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
 +
@@ -864,7 +864,7 @@
 +
 +### Test Game Instructions
 +
-+Begin Prism Laboratory and try two commands.
++Send Begin Prism Laboratory, then enter help and go north inside your game.
 +
 +- Does your command change rooms or inventory?
 +
@@ -944,7 +944,7 @@
 +
 +- What information should users provide first?
 +
-+- What should it prioritize?
++- Which steps must happen before your model responds?
 +
 +- How should your model respond to different requests?
 +
@@ -1033,16 +1033,7 @@
 -Too Long & Too Detailed
 -A 2,000-word system prompt can confuse the model. Aim for clarity over comprehensiveness. If it’s getting long, prioritize the most important instructions.
 -Contradictory Instructions
-+
-+### Review Common Problems
-+
-+### Prioritize Instructions
-+
-+Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
-+
-+### Resolve Contradictions
-+
- “Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
+-“Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
 -Forgetting the Student’s Perspective
 -Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
 -Set It and Forget It
@@ -1064,6 +1055,16 @@
 -Skills & Tools
 -Build custom skills, tools, and workflows tailored to your courses
 -Each workshop builds on the last. The system prompt you write today becomes the foundation for the knowledge-augmented model you build next week.
++
++### Review Common Problems
++
++### Prioritize Instructions
++
++Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
++
++### Resolve Contradictions
++
++Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
 +
 +### Test Player Requests
 +

@@ -74,9 +74,9 @@ A system prompt gives a model instructions for its role, behavior, and focus.
 
 Questions or tasks you enter in chat.
 
-### System Prompts
+### Base Models
 
-Instructions defining model behavior, tone, boundaries, and response style.
+A base model generates responses. A custom model adds instructions and resources to a chosen base model.
 
 Test whether your selected model follows these instructions.
 
@@ -91,8 +91,6 @@ Test whether your selected model follows these instructions.
 ### Select Models
 
 ![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
-
-Select model ID on bottom right of message box.
 
 Select model ID on bottom right of message box.
 
@@ -112,7 +110,7 @@ Attach images, PDFs, or documents.
 
 Integrations
 
-Choose tools and skills for this chat.
+Enable tools that perform operations and skills that give reusable instructions.
 
 Message actions
 
@@ -128,13 +126,13 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
 
-Select Compare beside search field, then choose two models.
+Start a new chat. Select Compare beside search field, then choose two models.
 
-Open model selector. Select **Compare** beside search field, then choose two models.
+Select model ID on bottom right of message box.
+
+Select **Compare** beside search field, then choose two small models.
 
 If Compare is unavailable, send identical prompts in separate new chats.
-
-Start a new chat before comparing models.
 
 ---
 
@@ -228,7 +226,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
 
-Open Controls at top right → System Prompt. Add sample instructions, then regenerate original responses.
+Open Controls → System Prompt. Add sample instructions, close Controls, then choose Regenerate → Try Again beneath each original response.
 
 - Open your chat.
 
@@ -284,7 +282,7 @@ Keep base models and other settings unchanged. Record any differences you cannot
 
 Open **Workspace → Models**.
 
-Open a sample model and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
+Open a custom model shared with you and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
 
 Continue in chat if Workspace is unavailable.
 
@@ -342,7 +340,7 @@ Custom models combine a base model with instructions, documents, and tools.
 
 - Add prompt suggestions for tasks your model should support.
 
-Students select your custom model to use its instructions and resources.
+Users select your custom model to use its instructions and resources.
 
 [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
@@ -371,6 +369,8 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 ### STEM Adventure Games
 
 ![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
+
+Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands.
 
 Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
 
@@ -408,7 +408,7 @@ Which instructions guide model behavior? Which actions require a tool?
 
 ### Test Game Instructions
 
-Begin Prism Laboratory and try two commands.
+Send Begin Prism Laboratory, then enter help and go north inside your game.
 
 - Does your command change rooms or inventory?
 
@@ -488,7 +488,7 @@ Write numbered steps for your model to follow.
 
 - What information should users provide first?
 
-- What should it prioritize?
+- Which steps must happen before your model responds?
 
 - How should your model respond to different requests?
 
@@ -582,7 +582,7 @@ Check instructions for conflicts. Prioritize essential steps and test whether yo
 
 ### Resolve Contradictions
 
-“Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
+Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
 
 ### Test Player Requests
 
