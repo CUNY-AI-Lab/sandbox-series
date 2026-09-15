@@ -10,7 +10,7 @@ Compare and configure models for teaching and research
 
 CUNY AI Lab Sandbox
 
-Developed by Stefano Morello and Zach Muhlbauer
+Developed by Zach Muhlbauer
 
 ---
 
@@ -653,7 +653,7 @@ Upload documents for models to reference in teaching and research
 
 CUNY AI Lab Sandbox
 
-Developed by Stefano Morello and Zach Muhlbauer
+Developed by Zach Muhlbauer
 
 ---
 
@@ -1082,7 +1082,7 @@ Add tools and reusable instructions for teaching and research
 
 CUNY AI Lab Sandbox
 
-Developed by Stefano Morello and Zach Muhlbauer
+Developed by Zach Muhlbauer
 
 ---
 

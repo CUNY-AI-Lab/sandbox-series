@@ -8,7 +8,7 @@ Add tools and reusable instructions for teaching and research
 
 CUNY AI Lab Sandbox
 
-Developed by Stefano Morello and Zach Muhlbauer
+Developed by Zach Muhlbauer
 
 ---
 
