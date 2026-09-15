@@ -1,10 +1,10 @@
-# Compose System Prompts
+# Composing system prompts
 
-## Slide 1: Compose System Prompts
+## Slide 1: Composing system prompts
 
 Workshop 1 of 3
 
-### Compose System Prompts
+### Composing system prompts
 
 Compare and configure models for teaching and research
 
@@ -18,11 +18,11 @@ Developed by Stefano Morello and Zach Muhlbauer
 
 ### Workshop Roadmap
 
-- **Compose System Prompts** Configure model behavior with system prompts.
+- **Composing system prompts** Configure model behavior with system prompts.
 
-- **Curate Knowledge Collections** Upload documents so models can reference them.
+- **Curating knowledge collections** Upload documents so models can reference them.
 
-- **Skills & Tools** Add web search, code execution, and reusable instructions.
+- **Configuring skills and tools** Add web search, code execution, and reusable instructions.
 
 [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
 
@@ -234,7 +234,7 @@ Open Controls at top right → System Prompt. Add sample instructions, then rege
 
 - Select **Controls** at top right.
 
-- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response.
+- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response, then choose **Try Again**.
 
 Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
 
@@ -248,7 +248,7 @@ Leave your original question unchanged. Use Chat Controls for this exercise; def
 
 - Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
 
-- Close Controls. Select **Regenerate** beneath each original response.
+- Close Controls. Select **Regenerate** beneath each original response, then choose **Try Again**.
 
 Leave your original question, selected models, and other settings unchanged.
 
@@ -260,7 +260,7 @@ Leave your original question, selected models, and other settings unchanged.
 
 ![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
 
-After adding system prompt instructions, select Regenerate beneath each original response.
+After adding system prompt instructions, select Regenerate beneath each original response, then choose Try Again.
 
 ---
 
@@ -348,296 +348,81 @@ Students select your custom model to use its instructions and resources.
 
 ---
 
-## Slide 24: Structure System Prompts
+## Slide 24: Situating System Prompts
 
 Examples
 
-### Structure System Prompts
+### Situating System Prompts
 
 ---
 
-## Slide 25: Teach Composition
+## Slide 25: Select STEM Games
 
-Example 1
+### Select STEM Games
 
-### Teach Composition
+![Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.](images/current/stem-selector-2026-09-14.png)
+
+Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.
 
 ---
 
-## Slide 26: Vague Prompts
+## Slide 26: STEM Adventure Games
 
-Composition & Writing
+### STEM Adventure Games
 
-### Vague Prompts
+![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
 
-**Weak**
+Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
+
+---
+
+## Slide 27: Inspect System Prompt
+
+### Inspect System Prompt
+
+![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
+
+Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt. Base model shown here was selected on September 14, 2026.
+
+---
+
+## Slide 28: Read Game Instructions
+
+### Read Game Instructions
+
+Read this excerpt from STEM Adventure Games.
 
 ```text
-Help students write better.
+When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
+
+STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
 ```
 
-### Identify Problems
+Which instructions guide model behavior? Which actions require a tool?
 
-- No specified role or disciplinary context
-
-- No limits on writing for students
-
-- No criteria for assessing responses
+[Read full system prompt](examples.html#stem-system)
 
 ---
 
-## Slide 27: Add Specifics
+## Slide 29: Test Game Instructions
 
-Composition & Writing
+### Test Game Instructions
 
-### Add Specifics
+Begin Prism Laboratory and try two commands.
 
-**Getting There**
+- Does your command change rooms or inventory?
 
-```text
-You are a writing scaffold for a college composition course. Help students develop their essays by breaking revision into structured steps. Ask them to identify their thesis before giving feedback. Don't write essays for them.
-```
+- Does help list available actions?
 
-### Compare Improvements
+- Which observations come from programmed rules?
 
-- Assigns a role and disciplinary context
+- Which historical claims require source checks?
 
-- Includes a basic pedagogical move
-
-- Sets one boundary
-
-### Add Detail
-
-- No procedural instructions for *how* to give feedback
-
-- No awareness of student population or course level
-
-- No edge-case handling
+Type discuss inside your game to place your run in chat, then send it.
 
 ---
 
-## Slide 28: Guide Revision
-
-Composition & Writing
-
-### Guide Revision
-
-**Strong**
-
-```text
-You are a writing scaffold for an English 101 composition course at a public urban university. Students are drafting a position paper on rhetoric in popular media and must revise their first draft in preparation for their final submission.
-
-The core problem: students treat revision as proofreading, fixing grammar and word choice, rather than rethinking argument, structure, and evidence. They lack a process for examining whether their ideas are clear, well-organized, and sufficiently supported. This tool scaffolds the move from surface-level fixes to substantive revision.
-
-Procedure:
-1. Request the assignment prompt and student draft before responding.
-2. Identify the highest-priority concerns (thesis clarity, structure, evidence) before surface-level issues.
-3. For each concern, ask the student a question rather than providing a fix.
-
-Constraints:
-- Never generate text that could substitute for the student’s own writing. Focus on higher-order concerns like argument, structure, and evidence.
-- If asked to “just fix it,” redirect toward a specific revision step.
-- Do not grade or evaluate.
-- Tone: Warm and direct. Use “I notice...” and “What if you tried...”
-```
-
-Scroll within this prompt to read more.
-
----
-
-## Slide 29: Analyze Primary Sources
-
-Example 2
-
-### Analyze Primary Sources
-
----
-
-## Slide 30: Vague Prompts
-
-History
-
-### Vague Prompts
-
-**Weak**
-
-```text
-Analyze historical documents.
-```
-
-### Identify Problems
-
-- No methodological framework
-
-- No period or geographic focus
-
-- No guidance on handling hallucinated facts or invented sources
-
----
-
-## Slide 31: Add Specifics
-
-History
-
-### Add Specifics
-
-**Getting There**
-
-```text
-You are a history source-analysis tool. Help students analyze primary sources from American history. Ask them to consider the author, audience, and context of each document. Don't just summarize the document for them.
-```
-
-### Compare Improvements
-
-- Assigns a role and disciplinary scope
-
-- References a real methodology
-
-- Sets a boundary against summarization
-
-### Add Detail
-
-- No procedural steps for guiding analysis
-
-- No handling of uncertainty or AI limitations
-
-- No attention to historiographical perspective
-
----
-
-## Slide 32: Analyze Primary Sources
-
-History
-
-### Analyze Primary Sources
-
-**Strong**
-
-```text
-You are a source-analysis tool for an undergraduate U.S. history survey covering the period from Reconstruction through the Civil Rights Movement. Students must analyze primary source documents from the period and use them as the basis for a historical report.
-
-The core problem: students extract facts from sources rather than analyzing them as constructed arguments shaped by author, audience, and context.
-
-Procedure (based on Wineburg’s historical thinking heuristics):
-1. Ask the student to identify the source (title, date, creator, document type) before proceeding.
-2. Guide them through the four moves below, one at a time. Never jump ahead.
-3. After each move, ask why that detail matters and prompt them to ground their response in specific passages.
-4. After all four moves, ask the student to synthesize: what does the full picture reveal about this historical moment?
-
-Four Moves:
-- Sourcing — Before reading: who created this, when, and why? What can we infer about reliability and perspective?
-- Contextualization — What was happening at the time and place this was produced? How does that shape its meaning?
-- Close Reading — What does the text actually say — and what does it leave out, downplay, or assume?
-- Corroboration — How does this source compare to others from the period? Where do accounts agree or conflict?
-
-Constraints:
-- Never offer guidance before the student has attempted an answer.
-- Encourage grounding interpretations in specific passages as analysis develops.
-- If unsure about a historical fact, say so. Never invent dates, names, or events.
-- Never provide a complete analysis. Ask the next question a historian would ask.
-- Tone: Patient and curious.
-```
-
-Scroll within this prompt to read more.
-
----
-
-## Slide 33: Analyze Literary Texts
-
-Example 3
-
-### Analyze Literary Texts
-
----
-
-## Slide 34: Vague Prompts
-
-Literature & Cultural Studies
-
-### Vague Prompts
-
-**Weak**
-
-```text
-Help with literary analysis.
-```
-
-### Identify Problems
-
-- Defaults to plot summary
-
-- No theoretical or critical framework
-
-- No requirement for textual evidence
-
----
-
-## Slide 35: Add Specifics
-
-Literature & Cultural Studies
-
-### Add Specifics
-
-**Getting There**
-
-```text
-You are a close-reading scaffold. Help students analyze literary texts by focusing on themes, symbolism, and narrative techniques. Don't just summarize the plot. Ask students to point to specific passages.
-```
-
-### Compare Improvements
-
-- Names specific analytical categories
-
-- Discourages plot summary
-
-- Requires textual evidence
-
-### Add Detail
-
-- No procedural steps for scaffolding analysis
-
-- No critical or theoretical framework
-
-- No attention to cultural context
-
----
-
-## Slide 36: Analyze Literary Texts
-
-Literature & Cultural Studies
-
-### Analyze Literary Texts
-
-**Strong**
-
-```text
-You are a close-reading tool designed for an introductory English course that focuses on cultural studies and literary analysis. Students recently practiced close reading and must now select a brief literary artifact to analyze using techniques associated with New Criticism.
-
-The core problem: students default to summarizing content or importing biographical and historical context rather than attending closely to how the text works: how language, form, imagery, and internal tension generate meaning within the artifact itself.
-
-Procedure:
-1. Ask what the student notices about the language in their chosen passage.
-2. Prompt them to examine specific textual features (word choice, imagery, syntax, point of view) and how they create meaning.
-3. Ask how the passage connects to the work’s larger themes.
-4. Guide them toward an interpretive claim grounded in textual evidence.
-
-Framework:
-- Treat the text as a self-contained object. Bracket authorial intent and historical context; attend to what the language itself does.
-- Look for tension, irony, paradox, and ambiguity as sites of meaning, not problems to resolve. Ask how formal elements (diction, imagery, syntax, tone) work together as a meaningful cultural artifact.
-- Once a close reading is underway, invite students to reflect on the method itself: what does focusing on the text alone illuminate, and what does it leave out?
-
-Constraints:
-- Facilitate multiple interpretations grounded in textual evidence. Do not prescribe a correct reading.
-- If a student reaches for biographical or historical context, redirect them back to the text: “What in the language itself supports that reading?”
-
-Tone: Encouraging and accessible. Affirm observations, then push deeper.
-```
-
-Scroll within this prompt to read more.
-
----
-
-## Slide 37: Adapt Research Prompts
+## Slide 30: Adapt Research Prompts
 
 ### Adapt Research Prompts
 
@@ -653,156 +438,117 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Slide 38: Draft System Prompts
+## Slide 31: Draft System Prompts
 
 ### Draft System Prompts
 
 ---
 
-## Slide 39: Define Prompt Components
-
-Structure
+## Slide 32: Define Prompt Components
 
 ### Define Prompt Components
 
-Draft a system prompt using these components.
+Adapt STEM Adventure Games through these components.
 
-- **Context & Problem** — What course, what students, what learning challenge?
+- **Context** — Experiment, historical setting, and intended users.
 
-- **Procedure** — What steps should your model follow?
+- **Procedure** — Steps your model should follow.
 
-- **Constraints** — What should it refuse to do, and how should it redirect?
+- **Constraints** — Boundaries and missing information.
 
-- **Tone** — What register and affect should it use with your students?
-
-- **Output Format** — How should it structure its responses?
+- **Tone and format** — Language, length, and presentation.
 
 ---
 
-## Slide 40: Define Context
-
-Component 1
+## Slide 33: Define Context
 
 ### Define Context
 
-Describe your course, students, and learning challenge.
+Describe what your model should help users do.
 
-- What kind of tool is this?
+- Who will use this model?
 
-- Who are your students?
+- Which experiment or research question will they explore?
 
-- What learning challenge does it address?
+- What prior knowledge can you assume?
 
 ```text
-You are a [tool type] for [course name].
-Students are [relevant context].
-
-The core problem: [specific learning challenge].
+Guide an interactive adventure about [experiment].
+Users will explore [question] through [available choices or methods].
+Use [source material] for historical context.
 ```
-
-**Your turn** Copy this template. Describe what your model should help students do.
 
 ---
 
-## Slide 41: Write Procedures
-
-Component 2
+## Slide 34: Write Procedures
 
 ### Write Procedures
 
 Write numbered steps for your model to follow.
 
-- What should your model request before responding?
+- What information should users provide first?
 
 - What should it prioritize?
 
-- How should it respond to each student input?
+- How should your model respond to different requests?
 
 ```text
-Procedure:
-1. Ask the student for [specific input] before responding.
-2. Identify [priority concern] before addressing [secondary concerns].
-3. For each issue, [specific action, e.g. ask a question rather than fix it].
+1. Open Prism Laboratory when users ask to play.
+2. Let users enter commands inside the game.
+3. Ask users to send a play record before interpreting their choices.
+4. Check relevant sources before making historical claims.
 ```
-
-**Your turn** Copy this template and describe steps you use in your discipline.
 
 ---
 
-## Slide 42: Set Constraints
-
-Component 3
+## Slide 35: Set Constraints
 
 ### Set Constraints
 
-Define tasks your model should decline and alternatives it should suggest.
-
-- What will students ask it to do *for* them?
-
-- How should it redirect instead?
-
-- What uncertainty should it name explicitly?
+Specify how your model should handle missing evidence.
 
 ```text
-Constraints:
-- Never [specific output to avoid].
-- If asked to [common student request], redirect by [specific alternative].
-- If uncertain about [domain content], say so explicitly.
+Do not invent historical details when sources are missing.
+Distinguish documented events from choices created for the game.
+If a source is unavailable, explain what cannot be checked.
 ```
 
-**Your turn** Copy this template and specify work students should do themselves.
+Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Slide 43: Set Tone
-
-Component 4
+## Slide 36: Set Tone
 
 ### Set Tone
 
-Describe how your model should address students.
-
-- What register fits your students?
-
-- Should it feel warm, direct, encouraging?
-
-- Which phrases demonstrate your intended tone?
+Describe how your model should address players.
 
 ```text
-Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[example phrase]."
+Address the player as “you.”
+Use concise language for scenes and choices.
+Explain unfamiliar scientific terms when they first appear.
 ```
 
-**Your turn** Copy this template. What language helps your students feel supported?
+Which terms need explanation for your intended users?
 
 ---
 
-## Slide 44: Specify Format
-
-Component 5
+## Slide 37: Specify Format
 
 ### Specify Format
 
-Specify a response format if your task requires consistent structure.
-
-- Should each response end with a question?
-
-- Should it follow a fixed structure?
-
-- What length is appropriate?
+Specify how your model should discuss a submitted record.
 
 ```text
-Format each response as:
-Observation: [what you notice]
-Focus: [one thing to work on]
-Next step: [a specific, actionable suggestion]
-Question: [something for the student to consider]
+Observed decision: [Command and result]
+Prerequisite: [Condition required for that action]
+Source comparison: [What historical evidence supports]
+Question: [One limitation to examine]
 ```
-
-**Your turn** Copy this template if your task requires a consistent response format.
 
 ---
 
-## Slide 45: Refine Instructions
+## Slide 38: Refine Instructions
 
 Refine
 
@@ -810,29 +556,21 @@ Refine
 
 ---
 
-## Slide 46: Extend Instructions
+## Slide 39: Extend Instructions
 
 ### Extend Instructions
 
-### Set Conditions
+- Specify what happens when a player asks for a hint.
 
-“If the student submits a draft, focus on structure before style. If they ask a yes/no question, reframe it as an open one. If they ask you to just give them the answer, ask what they’ve tried first.”
+- Explain how to revisit an earlier decision.
 
-### Request Concise Responses
+- Require source checks when players ask about historical claims.
 
-“Respond to one thing at a time. Do not front-load your full analysis. Ask one question, wait for the student’s response, then proceed.”
-
-### Acknowledge Uncertainty
-
-“If you are not certain about a factual claim, explicitly state your uncertainty. Never fabricate citations or attribute quotes.”
-
-### Support Multiple Languages
-
-“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.”  Test language support with your base model and languages students will use.
+- Test how your model responds when evidence is missing.
 
 ---
 
-## Slide 47: Review Common Problems
+## Slide 40: Review Common Problems
 
 Watch Out
 
@@ -846,9 +584,9 @@ Check instructions for conflicts. Prioritize essential steps and test whether yo
 
 “Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
 
-### Consider Student Questions
+### Test Player Requests
 
-Test your prompt with questions students ask in your course.
+Test game choices, requests for hints, and questions about sources.
 
 ### Retest Revised Prompts
 
@@ -856,7 +594,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Slide 48: Save Prompts
+## Slide 41: Save Prompts
 
 ### Save Prompts
 
@@ -870,7 +608,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 49: Share Custom Models
+## Slide 42: Share Custom Models
 
 ### Share Custom Models
 
@@ -884,7 +622,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 50: Record Comparisons
+## Slide 43: Record Comparisons
 
 ### Record Comparisons
 
@@ -902,7 +640,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 51: Prepare Source Documents
+## Slide 44: Prepare Source Documents
 
 ### Prepare Source Documents
 
@@ -914,4 +652,4 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 - Review [system-prompt examples](examples.html)
 
-- Continue to [Curate Knowledge Collections](knowledge/)
+- Continue to [Curating knowledge collections](knowledge/)

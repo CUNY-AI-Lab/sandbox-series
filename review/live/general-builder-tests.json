@@ -1,0 +1,40 @@
+{
+  "tool": [
+    {
+      "case": "ordinary",
+      "passed": true
+    },
+    {
+      "case": "empty",
+      "passed": true
+    },
+    {
+      "case": "whitespace",
+      "passed": true
+    },
+    {
+      "case": "boundary",
+      "passed": true
+    },
+    {
+      "case": "unicode",
+      "passed": true
+    },
+    {
+      "case": "wrong type",
+      "passed": true
+    },
+    {
+      "case": "too long",
+      "passed": true
+    }
+  ],
+  "skill": {
+    "task": "bibliography duplicate review",
+    "steps": 4,
+    "preservesOriginal": true,
+    "flagsMissingYear": true,
+    "proposedTestsExecuted": false
+  },
+  "gameContentInEitherResponse": false
+}

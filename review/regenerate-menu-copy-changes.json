@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Open Chat Controls",
+    "before": "Open Chat ControlsOpen Controls at top right \u2192 System Prompt. Add sample instructions, then regenerate original responses.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
+    "after": "Open Chat ControlsOpen Controls at top right \u2192 System Prompt. Add sample instructions, then regenerate original responses.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats."
+  },
+  {
+    "title": "Test System Prompts",
+    "before": "Test System PromptsCopy system promptCopy sample instructions from Add System Prompt.Open Controls at top right of your chat. Add instructions in System Prompt.Close Controls. Select Regenerate beneath each original response.Leave your original question, selected models, and other settings unchanged.",
+    "after": "Test System PromptsCopy system promptCopy sample instructions from Add System Prompt.Open Controls at top right of your chat. Add instructions in System Prompt.Close Controls. Select Regenerate beneath each original response, then choose Try Again.Leave your original question, selected models, and other settings unchanged."
+  },
+  {
+    "title": "Regenerate Responses",
+    "before": "Regenerate ResponsesAfter adding system prompt instructions, select Regenerate beneath each original response.",
+    "after": "Regenerate ResponsesAfter adding system prompt instructions, select Regenerate beneath each original response, then choose Try Again."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "route": "index.html",
+    "title": "STEM Adventure Games",
+    "before": "STEM Adventure GamesSTEM Adventure Games is an interactive text adventure about scientific experiments. Select Initiate STEM adventure game to begin.",
+    "after": "STEM Adventure GamesEnter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss."
+  },
+  {
+    "route": "index.html",
+    "title": "Test Game Instructions",
+    "before": "Test Game InstructionsBegin Prism Laboratory and try two commands.Does your command change rooms or inventory?Does Help list available actions?Which observations come from programmed rules?Which historical claims require source checks?Use Discuss record to place your run in chat, then send it.",
+    "after": "Test Game InstructionsBegin Prism Laboratory and try two commands.Does your command change rooms or inventory?Does help list available actions?Which observations come from programmed rules?Which historical claims require source checks?Type discuss inside your game to place your run in chat, then send it."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Inspect Game Rules",
+    "before": "Inspect Game RulesSTEM Adventure applies rules for rooms, inventory, actions, and completion.Enter go north to reach Storeroom.Enter take prism to add a prism to inventory.Use Help to list actions available in your room.Try record result before completing required steps.Open game \u00b7 Read scenario JSON",
+    "after": "Inspect Game RulesSTEM Adventure applies rules for rooms, inventory, actions, and completion.Enter go north to reach Storeroom.Enter take prism to add a prism to inventory.Enter help to list available actions.Try record result before completing required steps.Open game \u00b7 Read scenario JSON"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Create Adventure Tools",
+    "before": "Create Adventure ToolsOpen Tool Creator to draft or revise Python code.Copy promptCreate a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Include Undo, Restart, and export/restore. Keep scenario JSON separate from executable code.Open Tool Creator \u00b7 Download tested tool",
+    "after": "Create Adventure ToolsOpen Tool Creator to draft or revise Python code.Copy promptCreate a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.Open Tool Creator \u00b7 Download tested tool"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Test Game Commands",
+    "before": "Test Game CommandsCheck successful and unsuccessful actions.Complete winning command sequence.Try completing an experiment before its prerequisites.Pick up an item twice.Use Undo, Restart, Export record, and Restore record.Compare room, inventory, flags, and completion after replay.",
+    "after": "Test Game CommandsCheck successful and unsuccessful actions.Complete winning command sequence.Try completing an experiment before its prerequisites.Pick up an item twice.Enter undo, restart, save, and load.Compare room, inventory, flags, and completion after replay."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Discuss Play Records",
+    "before": "Discuss Play RecordsSelect Discuss record inside your game.Review record in message box, then send it.Check how your model explains a failed action.Compare programmed observations with historical sources.A completed game does not establish conceptual understanding.",
+    "after": "Discuss Play RecordsEnter discuss inside your game.Review record in message box, then send it.Check how your model explains a failed action.Compare programmed observations with historical sources.A completed game does not establish conceptual understanding."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Draft Skills",
+    "before": "\nHands-On\nDraft Skills\nChoose a teaching or research procedure and write steps that another person can inspect.\n\n",
+    "after": "Draft SkillsOpen Kale Skill Builder to draft reusable instructions.Select model ID on bottom right of message box.Copy promptDraft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = \"\"). Preserve game rules. Include trigger, 3\u20135 steps, output, and two proposed tests. Do not invent successful tool calls.Open Kale Skill Builder \u00b7 Read tested skill"
+  }
+]

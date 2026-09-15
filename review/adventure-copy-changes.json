@@ -1,0 +1,134 @@
+[
+  {
+    "route": "index.html",
+    "title": "Read Game Instructions",
+    "before": "Read Game InstructionsRead this excerpt from STEM Adventure Games.Copy promptEach stage presents 4 numbered choices based on historically accurate experimental decisions.\n\nAfter each choice, briefly state what the player observes, what the result suggests, and what question remains open.Which instructions define model behavior? Which claims require source material?Read full system prompt",
+    "after": "Read Game InstructionsRead this excerpt from STEM Adventure Games.Copy promptWhen a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.\n\nSTEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.Which instructions guide model behavior? Which actions require a tool?Read full system prompt"
+  },
+  {
+    "route": "index.html",
+    "title": "Test Game Instructions",
+    "before": "Test Game InstructionsChoose an adventure and play two stages.Does each stage offer four numbered choices?Does your choice change what happens next?Does each response distinguish observations from interpretations?Which historical claims would you check against sources?Save one response and identify an instruction you would revise.",
+    "after": "Test Game InstructionsBegin Prism Laboratory and try two commands.Does your command change rooms or inventory?Does Help list available actions?Which observations come from programmed rules?Which historical claims require source checks?Use Discuss record to place your run in chat, then send it."
+  },
+  {
+    "route": "index.html",
+    "title": "Define Prompt Components",
+    "before": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context \u2014 Scientific experiment, historical setting, and intended users.Procedure \u2014 Actions your model should follow.Constraints \u2014 Boundaries and missing information.Tone and format \u2014 Language, length, and numbered choices.",
+    "after": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context \u2014 Experiment, historical setting, and intended users.Procedure \u2014 Steps your model should follow.Constraints \u2014 Boundaries and missing information.Tone and format \u2014 Language, length, and presentation."
+  },
+  {
+    "route": "index.html",
+    "title": "Write Procedures",
+    "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Ask the player to choose an experiment.\n2. Establish its historical setting and experimental question.\n3. Present four numbered choices and wait.\n4. Describe observations after the player chooses.",
+    "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims."
+  },
+  {
+    "route": "index.html",
+    "title": "Specify Format",
+    "before": "Specify FormatSpecify how each stage should appear.Copy prompt[Brief scene]\n[Observation and what remains uncertain]\n\n1. [Experimental choice]\n2. [Experimental choice]\n3. [Experimental choice]\n4. [Option to revisit an earlier decision]\n\nWait for the player to choose.",
+    "after": "Specify FormatSpecify how your model should discuss a submitted record.Copy promptObserved decision: [Command and result]\nPrerequisite: [Condition required for that action]\nSource comparison: [What historical evidence supports]\nQuestion: [One limitation to examine]"
+  },
+  {
+    "route": "knowledge/index.html",
+    "title": "Review Source Roles",
+    "before": "Review Source RolesSTEM Adventure Games assigns each Wikipedia source a purpose.List of experimentsChoose experiments, scientists, periods, and problems.Scientific methodDevelop choices about observation, hypotheses, measurements, and revision.Women in scienceCheck collaboration, recognition, exclusion, and institutions.",
+    "after": "Review Source RolesUse sources for different questions.Newton\u2019s optical experimentsCheck apparatus, procedures, and observations.Scientific methodExamine hypotheses, measurement, and revision.Women in scienceInvestigate collaboration, recognition, and institutions.Keep source summaries and game documentation distinguishable."
+  },
+  {
+    "route": "knowledge/index.html",
+    "title": "Check Game Sources",
+    "before": "Check Game SourcesChoose one historical claim from your saved game response.Copy promptWhich uploaded source supports this claim? Quote the relevant passage and identify the file. If no uploaded source supports it, say so.Open that file. Does its text support your model\u2019s claim?Compare a game response with a source passage before revising instructions.",
+    "after": "Check Game SourcesCompare Prism Laboratory with Newton\u2019s account.Copy promptWhich apparatus details from Newton\u2019s account does Prism Laboratory simplify? Identify the uploaded source and quote a relevant passage. If it is unavailable, say so.Open cited material. Does it support your model\u2019s response?Read Newton source entry \u00b7 Review source register"
+  },
+  {
+    "route": "knowledge/index.html",
+    "title": "Choose Reference Materials",
+    "before": "Choose Reference MaterialsChoose sources that support your adventure.Identify experiments and historical settings.Describe methods players will use.Check people, institutions, and scientific collaboration.",
+    "after": "Choose Reference MaterialsAdd sources that support your adventure.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries, upload them to your collection, and inspect processed text."
+  },
+  {
+    "route": "knowledge/index.html",
+    "title": "Describe Experimental Context",
+    "before": "Describe Experimental ContextUse source material to establish where and when an experiment took place.Which question motivated it?Which instruments and materials were available?Which details require another source?",
+    "after": "Describe Experimental ContextSeparate documented experiments from invented game settings.Which question motivated an experiment?Which instruments and materials appear in its source?Which rooms or actions were created for play?Prism Laboratory simplifies an apparatus with two boards and two prisms."
+  },
+  {
+    "route": "knowledge/index.html",
+    "title": "Describe Scientific Methods",
+    "before": "Describe Scientific MethodsUse Scientific method to examine how choices lead to evidence.What could a player observe or measure?Which result would challenge a hypothesis?What would replication help establish?",
+    "after": "Describe Scientific MethodsCompare procedures before expanding your game.Which variable changes when an aperture narrows?Which conditions stay fixed?What would a changed observation support?Read experimental variants"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Workshop Agenda",
+    "before": "Workshop AgendaConfirm Skills and Tools accessChoose recurring proceduresWrite skill instructionsAttach skills to modelsInspect tool calls and resultsTest models with skills and toolsBefore attending, confirm individual access and Sandbox sign-in. Creating or editing resources also requires Workspace access. Knowledge access is needed only when your task uses a collection.",
+    "after": "Workshop AgendaConfirm Skills and Tools accessPlay STEM AdventureInspect commands and resultsConfigure reusable skillsCreate and test toolsCompare procedural changesBefore attending, confirm individual access and Sandbox sign-in. Creating or editing resources also requires Workspace access. Knowledge access is needed when your task uses a collection."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Review Previous Work",
+    "before": "Review Previous WorkOpen your custom model and review its system prompt. Choose a procedure you use in teaching or research.Write steps for your procedure, save them as a skill, attach it to your model, and test it.Bring a knowledge collection if your procedure requires searching documents.",
+    "after": "Review Previous WorkOpen STEM Adventure Games and review its system prompt.Identify instructions for opening Prism Laboratory.Review attached STEM Wikipedia Experiments collection.Distinguish source material, skill instructions, and tool operations.Use your own configuration when adapting these examples."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Choose Procedures",
+    "before": "Choose ProceduresFor teaching, guide a student through a source one question at a time.For research, compare a claim with its source or apply a codebook to an excerpt.Define what a successful response would show before writing instructions.Write steps another person can follow and check.",
+    "after": "Choose ProceduresChoose one procedure to change or examine.Add an aperture comparison to Prism Laboratory.Inspect a failed command and its prerequisite.Check a historical claim against source material.Describe expected behavior before testing."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Review Game Procedure",
+    "before": "Review Game ProcedureSTEM Adventure Games already describes a recurring procedure.Present experimental choices.Describe observations after each choice.Explain what remains uncertain.Offer another choice and wait.Which steps could you reuse across other adventures?",
+    "after": "Inspect Game RulesSTEM Adventure applies rules for rooms, inventory, actions, and completion.Enter go north to reach Storeroom.Enter take prism to add a prism to inventory.Use Help to list actions available in your room.Try record result before completing required steps.Open game \u00b7 Read scenario JSON"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Draft Game Skills",
+    "before": "Draft Game SkillsUse this proposed skill for each stage of an adventure.Copy promptWhen a player chooses an action in a STEM adventure, follow these steps.\n\n1. Check source material for the experiment and historical setting.\n2. Describe what the player observes after the chosen action.\n3. Explain what the observation suggests and what remains uncertain.\n4. Offer four numbered experimental choices, including an option to revisit an earlier decision.\n5. Wait for the player to choose.Open reusable skill example",
+    "after": "Extend ProceduresEnable Extend STEM Adventures and request one change.Copy promptAdd an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.Read skill instructions \u00b7 Download tested scenario"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Check Source Imports",
+    "before": "Check Source ImportsA proposed Python tool can check imported text before a model uses it.InputFilename and text retrieved from an uploaded source.OperationCount characters and flag empty content or known error messages.ResultFilename, counts, and detected problems for inspection.Test with article text, empty text, and a Wikimedia error message.Download Python tool example",
+    "after": "Create Adventure ToolsOpen Tool Creator to draft or revise Python code.Copy promptCreate a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Include Undo, Restart, and export/restore. Keep scenario JSON separate from executable code.Open Tool Creator \u00b7 Download tested tool"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Connect Skills Tools",
+    "before": "Connect Skills ToolsGive each component a specific job.Use system prompt instructions to define game behavior.Attach knowledge containing historical and scientific source material.Use a skill to guide each stage.Use a tool to check imported text for known failures.Check tool results against source text. A successful check does not establish historical accuracy.",
+    "after": "Connect ResourcesSystem promptOpen games and describe how components work together.KnowledgeSupply scientific and historical sources.SkillGuide procedural changes and interpretation.ToolApply game rules and render playable output.Save each artifact with its tests."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Define Triggers",
+    "before": "Define TriggersDescribe when your skill should be used.Does it apply when a player chooses an action?Should it also apply to a request for historical context?Which requests should leave it unused?Copy promptUse this skill when a player chooses an action during a STEM adventure.",
+    "after": "Define TriggersDescribe when your skill should be used.Should it load when users request a procedural change?Should it also apply to submitted play records?Which requests should leave it unused?Copy promptUse this skill when users request an experimental variation in STEM Adventure or ask to examine a submitted play record."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Write Procedures",
+    "before": "Write ProceduresSpecify what happens after a player chooses.Copy prompt1. Check source material for the selected experiment.\n2. Describe an observation resulting from the chosen action.\n3. State what it suggests and what remains uncertain.\n4. Present four numbered choices, then wait.",
+    "after": "Write ProceduresSpecify how your model should extend an experiment.Copy prompt1. Identify one experimental decision to change.\n2. Check source material for that procedure.\n3. Revise scenario JSON within the tool contract.\n4. Provide winning and blocked commands, then open the game.\n5. Compare a submitted record with expected behavior."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Specify Format",
+    "before": "Specify FormatShow how each stage should appear.Copy prompt[Scene and observation]\n[Interpretation and uncertainty]\n\n1. [Choice]\n2. [Choice]\n3. [Choice]\n4. [Choice]\n\nWait for the player.",
+    "after": "Specify FormatKeep artifacts and test results distinguishable.Copy promptScenario JSON: [Complete scenario]\nSource: [Relevant historical passage]\nInvented elements: [Rooms or simplified observations]\nWinning commands: [Sequence]\nBlocked command: [Command and missing prerequisite]\nObserved result: [Fill only after testing]"
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Choose Procedures",
+    "before": "Choose ProceduresChoose a procedure to adapt for STEM Adventure Games.Guide players through experimental choices.Check a historical claim against uploaded sources.Inspect source imports before using them.Define what you expect to observe before testing.",
+    "after": "Choose ProceduresChoose one procedure to change or examine.Add an aperture comparison to Prism Laboratory.Inspect a failed command and its prerequisite.Check a historical claim against source material.Describe expected behavior before testing."
+  },
+  {
+    "route": "skills/index.html",
+    "title": "Test Skills",
+    "before": "Test SkillsCreate your skill, attach it to your custom model, and confirm native function calling. Save your model and start a new chat.Send a request that should use your skill.Reply once and check whether your model follows your next step.Send an unrelated request and check whether your skill is used unnecessarily.Save results before revising your skill\u2019s description or instructions.",
+    "after": "Test SkillsRepeat an extension request before and after enabling your skill.Keep base model, system prompt, sources, and tool unchanged.Check whether scenario JSON follows its contract.Run winning and blocked commands.Compare expected behavior with actual results.Keep generated scenarios and play records for review."
+  }
+]

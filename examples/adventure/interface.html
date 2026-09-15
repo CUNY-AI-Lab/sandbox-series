@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STEM Adventure</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#141414;color:#e6e2d8;font:16px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}
+main{max-width:820px;margin:auto;padding:24px}
+h1{font:700 24px/1.25 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.025em;text-transform:uppercase;margin:0 0 14px}
+p{margin:10px 0}.muted{color:#b8b8b8;font:14px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}
+.arcade-mark{font-size:12px;letter-spacing:.12em;color:#bcb6a7;border-top:3px double #777;padding-top:12px;margin:0 0 18px}
+#status{font-size:14px;color:#ccc;border-block:1px solid #555;padding:7px 0}
+#log{white-space:pre-wrap;overflow-wrap:anywhere;border-bottom:3px double #666;margin:18px 0;padding-bottom:16px;max-height:360px;overflow:auto}
+.entry{margin:0 0 18px}.command{color:#aaa}.result{white-space:pre-wrap}
+.command-entry{display:flex;align-items:center;gap:10px;border:1px solid #666;background:#1b1b1b;padding-left:12px}
+input{min-width:0;flex:1;background:transparent;color:inherit;border:0;padding:10px 0;font:inherit;min-height:44px}
+button{background:#252525;color:inherit;border:0;border-left:1px solid #555;border-radius:0;width:44px;min-height:44px;font:700 22px ui-monospace,SFMono-Regular,Consolas,monospace;cursor:pointer}
+button:hover{background:#333}button:focus-visible,input:focus-visible{outline:2px solid white;outline-offset:2px}
+#notice{color:#ccc;white-space:pre-wrap;overflow-wrap:anywhere}#notice:empty{display:none}.hint{font-size:12px;color:#999;margin-top:8px}
+details{margin-top:16px}textarea{width:100%;min-height:150px;background:#202020;color:#ddd;font:13px/1.5 monospace;border:1px solid #555;padding:10px}
+@media(max-width:480px){main{padding:16px}h1{font-size:22px}.arcade-mark{letter-spacing:.04em}}
+</style>
+</head>
+<body><main>
+<div class="arcade-mark" aria-hidden="true">░▒▓ STEM / TEXT ADVENTURE ▓▒░</div>
+<h1 id="title"></h1><p id="intro" class="muted"></p><p id="status" aria-live="polite"></p>
+<div id="log" role="log" aria-label="Game transcript"></div>
+<div class="command-entry"><label for="command" aria-hidden="true">❯</label><input id="command" aria-label="Game command" placeholder="Enter command" autocomplete="off" maxlength="120"><button id="enter" type="button" aria-label="Enter command">↵</button></div>
+<p class="hint">Type help for commands.</p><p id="notice" role="status"></p>
+<input id="file" type="file" accept=".json,application/json" hidden>
+<details id="record-panel" hidden><summary>Copy play record</summary><textarea id="record" readonly aria-label="Play record"></textarea></details>
+</main>
+<script>/*ENGINE*/</script>
+<script>
+'use strict';
+let scenario=/*SCENARIO*/, state=Adventure.create(scenario);
+const byId=id=>document.getElementById(id);
+function recordJSON(){return JSON.stringify({version:1,scenario,commands:state.commands,result:{room:state.room,inventory:state.inventory,flags:state.flags,complete:state.complete},events:state.events},null,2)}
+function render(){
+ byId('title').textContent='▣ '+scenario.title;byId('intro').textContent=scenario.introduction;
+ byId('status').textContent='◉ '+scenario.rooms[state.room].name+' · Moves: '+state.commands.length+' · '+(state.complete?'Complete':'In progress');
+ byId('log').replaceChildren();const first=document.createElement('p');first.className='entry';first.textContent=Adventure.describe(scenario,Adventure.create(scenario));byId('log').append(first);
+ for(const e of state.events){const item=document.createElement('div'),c=document.createElement('div'),result=document.createElement('div');item.className='entry';c.className='command';c.textContent='❯ '+e.command;result.className='result';result.textContent=e.text;item.append(c,result);byId('log').append(item)}
+ byId('log').scrollTop=byId('log').scrollHeight;byId('record').value=recordJSON();reportHeight();
+}
+function saveRecord(){const blob=new Blob([recordJSON()],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='stem-adventure-record.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);byId('notice').textContent='Game saved. Type load to restore this record.'}
+function discussRecord(){
+ parent.postMessage({type:'input:prompt',text:'Review this STEM Adventure play record. Identify a failed action, explain its prerequisite, and distinguish scripted observations from historical evidence.\n\n'+recordJSON()},'*');
+ byId('notice').textContent=parent===window?'Copy your play record into Sandbox to discuss this run.':'Review your play record in chat, then send it. Copy it below if needed.';byId('record-panel').hidden=false;
+}
+function run(raw){
+ const command=raw.trim().toLowerCase().replace(/\s+/g,' ');if(!command)return;
+ byId('notice').textContent='';byId('command').value='';
+ if(command==='undo'){state=Adventure.replay(scenario,state.commands.slice(0,-1));render();byId('notice').textContent='Previous move undone.'}
+ else if(command==='restart'){state=Adventure.create(scenario);byId('record-panel').hidden=true;render();byId('notice').textContent='Game restarted.'}
+ else if(command==='save')saveRecord();
+ else if(command==='load')byId('file').click();
+ else if(command==='discuss')discussRecord();
+ else if(state.commands.length>=300)byId('notice').textContent='Type save to keep this run, then restart.';
+ else {state=Adventure.act(scenario,state,command);render()}
+ byId('command').focus();reportHeight();
+}
+byId('enter').onclick=()=>run(byId('command').value);
+byId('command').addEventListener('keydown',e=>{if(e.key==='Enter')e.preventDefault()});
+byId('command').addEventListener('keyup',e=>{if(e.key==='Enter'){e.preventDefault();run(e.currentTarget.value)}});
+byId('file').onchange=async()=>{try{const f=byId('file').files[0];if(!f)return;if(f.size>200000)throw Error('Record exceeds 200 KB.');const record=JSON.parse(await f.text());if(record.version!==1)throw Error('Unsupported record version.');const next=Adventure.validate(record.scenario),restored=Adventure.replay(next,record.commands);scenario=next;state=restored;render();byId('notice').textContent='Game loaded by replaying saved commands.'}catch(e){byId('notice').textContent='Could not load game. '+e.message}byId('file').value='';reportHeight()};
+function reportHeight(){parent.postMessage({type:'iframe:height',height:document.documentElement.scrollHeight},'*')}
+window.addEventListener('load',reportHeight);new ResizeObserver(reportHeight).observe(document.body);render();
+</script></body></html>

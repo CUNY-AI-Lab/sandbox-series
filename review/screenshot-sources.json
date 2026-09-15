@@ -1,7 +1,7 @@
 {
   "observed_date": "2026-09-13",
   "notes": [
-    "New screenshots captured in Firefox from the live signed-in interface. No production objects were created.",
+    "Interface screenshots captured in Firefox from the signed-in Sandbox. STEM resources and creators were updated during September 14 testing; corresponding captures show final saved settings.",
     "Crops exclude browser tabs and unrelated account content.",
     "Showcase excerpts are archival; obsolete top selectors removed by cropping. The unrelated fourth screenshot is excluded."
   ],
@@ -320,6 +320,139 @@
       "source_file": "regenerate-gemma-2026-09-14.png",
       "source_sha256": "c2009c45e8eb613eefec5bbb736457ad89582c1ea42e051e25e49316cd65f62f",
       "annotation": "White label, arrow, and circle over the unchanged embedded screenshot."
+    },
+    {
+      "file": "stem-chat-2026-09-14.png",
+      "sha256": "caff05be93ea5cc4d5e827fcac53cff6416378e64487c0d40550d76723767fd7",
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games",
+      "browser": "Firefox",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop": [
+        211,
+        245,
+        4300,
+        2390
+      ],
+      "source_capture_sha256": "41332dc3ce584dd1a51e06b427d930f5332e5b512f11df4b2045eb3a72043372",
+      "notes": "Actual Firefox interface at 180% zoom. Crop excludes browser chrome and account avatar; no interface elements or text reconstructed. Zoom restored to 100% after capture."
+    },
+    {
+      "file": "stem-selector-2026-09-14.png",
+      "sha256": "818f4bdc2f2debb077f6b7c023475beb3b56123d1f518b63562e987eb4b893ef",
+      "captured": "2026-09-14",
+      "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games",
+      "browser": "Firefox",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop": [
+        211,
+        245,
+        4300,
+        2390
+      ],
+      "source_capture_sha256": "a37aef5df6897738cd2d45f616086000cb5569ba6f5c0082d36500b1e47a07d5",
+      "notes": "Actual Firefox interface at 180% zoom. Crop excludes browser chrome and account avatar; no interface elements or text reconstructed. Zoom restored to 100% after capture."
+    },
+    {
+      "file": "stem-knowledge-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/knowledge/f2253ecb-0a0e-4ff9-bdba-8473999b0ed4",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        211,
+        245,
+        4300,
+        2280
+      ],
+      "source_sha256": "769c309630b276c687103cbfe9b387a37da60002c13a8957c22a76ab9a028971",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "29fa5e2bdedf64e9430e87ea766f59566aa913afbfaf759171825abfae804760"
+    },
+    {
+      "file": "stem-model-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        211,
+        245,
+        4300,
+        2280
+      ],
+      "source_sha256": "cd2b8fca7c3c379dbce6ce01fef417f005a05b8e94910306edf11ea93b307fd9",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "9e25a61bf8950ebb8fe8be675385ff1d189a39d508723e601a39dcdf112c50e3"
+    },
+    {
+      "file": "stem-attachments-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        211,
+        245,
+        4300,
+        2280
+      ],
+      "source_sha256": "c0e103d1275b3f3050586ff0462926090fe15cdf000ff275c54564a30196ab8a",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "3bf76e9594c43c9c1fb4b1b4b6968033eb198fe664014382d5d2595189efb998"
+    },
+    {
+      "file": "stem-skill-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/skills/edit?id=extend-stem-adventures",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        350,
+        245,
+        4300,
+        2470
+      ],
+      "source_sha256": "398998766c2e4c99c670bbd24c6461704e89da6bdf2a6d481b866ace8439e5e5",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "ecc7f2fdcf696c826d1d08884df9bf1bc6e68c5f23f0f4a90895d795c9f359fc"
+    },
+    {
+      "file": "stem-game-2026-09-14.png",
+      "source": "https://chat.ailab.gc.cuny.edu/c/8b6ad8de-fd91-4777-a750-28cb26c44c8e",
+      "observed_date": "2026-09-14",
+      "capture": "Native Firefox window at 180% zoom in dark mode.",
+      "source_dimensions": [
+        4416,
+        2618
+      ],
+      "crop_xyxy": [
+        350,
+        245,
+        4300,
+        2470
+      ],
+      "source_sha256": "d8a1bea9dd93c76538b6e5d00b6a7f0174b3259f276cd022613a2d7c5a067378",
+      "processing": "Rectangular crop only. Browser chrome and account avatar excluded.",
+      "sha256": "1adf02849a43aeb2bfe213b07f7fa4f6aeb233cf112739d6d17e73b6358fd7ef"
     }
   ]
 }

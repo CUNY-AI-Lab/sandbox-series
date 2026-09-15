@@ -1,0 +1,66 @@
+[
+  {
+    "command": "go east",
+    "status": "◉ Laboratory · Moves: 1 · In progress"
+  },
+  {
+    "command": "record result",
+    "status": "◉ Laboratory · Moves: 2 · In progress"
+  },
+  {
+    "command": "go west",
+    "status": "◉ Study · Moves: 3 · In progress"
+  },
+  {
+    "command": "go north",
+    "status": "◉ Storeroom · Moves: 4 · In progress"
+  },
+  {
+    "command": "take prism",
+    "status": "◉ Storeroom · Moves: 5 · In progress"
+  },
+  {
+    "command": "take screen",
+    "status": "◉ Storeroom · Moves: 6 · In progress"
+  },
+  {
+    "command": "go south",
+    "status": "◉ Study · Moves: 7 · In progress"
+  },
+  {
+    "command": "go east",
+    "status": "◉ Laboratory · Moves: 8 · In progress"
+  },
+  {
+    "command": "open shutter",
+    "status": "◉ Laboratory · Moves: 9 · In progress"
+  },
+  {
+    "command": "use prism",
+    "status": "◉ Laboratory · Moves: 10 · In progress"
+  },
+  {
+    "command": "use screen",
+    "status": "◉ Laboratory · Moves: 11 · In progress"
+  },
+  {
+    "command": "test red light",
+    "status": "◉ Laboratory · Moves: 12 · In progress"
+  },
+  {
+    "command": "record result",
+    "status": "◉ Laboratory · Moves: 13 · Complete"
+  },
+  {
+    "command": "undo",
+    "status": "◉ Laboratory · Moves: 12 · In progress"
+  },
+  {
+    "command": "record result",
+    "status": "◉ Laboratory · Moves: 13 · Complete"
+  },
+  {
+    "command": "help",
+    "status": "◉ Laboratory · Moves: 14 · Complete"
+  }
+]

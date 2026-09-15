@@ -1,0 +1,282 @@
+[
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 1: Curating knowledge collections",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Curating knowledge collections",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 2: Workshop Agenda",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Workshop Agenda",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 3: Review Custom Models",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Review Custom Models",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 4: Open Workspace",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Open Workspace",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 5: Review Model Settings",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Review Model Settings",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 6: Knowledge Collections",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Knowledge Collections",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 7: Create Knowledge Collections",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Create Knowledge Collections",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 8: Check Citations",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Check Citations",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 9: Select Documents",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Select Documents",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 10: Retrieve Source Passages",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Retrieve Source Passages",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 226.15625,
+    "imageLoaded": true,
+    "label": "Slide 11: Open STEM Collection",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Open STEM Collection",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 12: Review Source Roles",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Review Source Roles",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 13: Inspect Imported Text",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Inspect Imported Text",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 226.15625,
+    "imageLoaded": true,
+    "label": "Slide 14: Review Attached Knowledge",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Review Attached Knowledge",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 15: Check Game Sources",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Check Game Sources",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 16: Compare Research Methods",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Compare Research Methods",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 17: Organize Documents",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Organize Documents",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 18: Check Retrieval Problems",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Check Retrieval Problems",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 19: Build Knowledge Collections",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Build Knowledge Collections",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 20: Choose Reference Materials",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Choose Reference Materials",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 21: Describe Experimental Context",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Describe Experimental Context",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 22: Describe Scientific Methods",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Describe Scientific Methods",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 23: Identify Historical Sources",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Identify Historical Sources",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 24: Select Research Materials",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Select Research Materials",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 25: Attach Knowledge Collections",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Attach Knowledge Collections",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 26: Test Retrieval",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Test Retrieval",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 27: Share Knowledge Collections",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Share Knowledge Collections",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 28: Prepare Skill Instructions",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Prepare Skill Instructions",
+    "width": 1280
+  }
+]

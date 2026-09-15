@@ -1,0 +1,7 @@
+{
+  "model": "cail-sandbox-tool-creator",
+  "promptMatches": true,
+  "genericStarter": true,
+  "genericDescription": true,
+  "gameSpecificPrompt": false
+}

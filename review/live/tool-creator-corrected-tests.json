@@ -1,0 +1,69 @@
+[
+  {
+    "case": "ordinary",
+    "expect_error": false,
+    "result": {
+      "total_commands": 2,
+      "failed_commands": [
+        "jump"
+      ]
+    },
+    "pass": true
+  },
+  {
+    "case": "numeric commands",
+    "expect_error": true,
+    "result": {
+      "error": "Command at index 0 must be a string."
+    },
+    "pass": true
+  },
+  {
+    "case": "numeric input",
+    "expect_error": true,
+    "result": {
+      "error": "Input must be a string."
+    },
+    "pass": true
+  },
+  {
+    "case": "event numeric command",
+    "expect_error": true,
+    "result": {
+      "error": "Event command at index 0 must be a string."
+    },
+    "pass": true
+  },
+  {
+    "case": "malformed",
+    "expect_error": true,
+    "result": {
+      "error": "Invalid JSON format."
+    },
+    "pass": true
+  },
+  {
+    "case": "mismatch",
+    "expect_error": true,
+    "result": {
+      "error": "Mismatch: 1 commands vs 0 events."
+    },
+    "pass": true
+  },
+  {
+    "case": "overlong",
+    "expect_error": true,
+    "result": {
+      "error": "Input exceeds 50,000 character limit."
+    },
+    "pass": true
+  },
+  {
+    "case": "301 commands",
+    "expect_error": true,
+    "result": {
+      "error": "Command count exceeds 300 limit."
+    },
+    "pass": true
+  }
+]

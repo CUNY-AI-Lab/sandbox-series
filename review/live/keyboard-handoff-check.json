@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "commands": [
+    "go east",
+    "record result",
+    "discuss"
+  ],
+  "filledMessage": true,
+  "chatSubmitted": false
+}

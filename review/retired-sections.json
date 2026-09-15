@@ -1,0 +1,40 @@
+{
+  "reason": "User requested removal of all discipline-specific example progressions and replacement with STEM Adventure Games across all three workshops.",
+  "prompts": [
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19"
+  ],
+  "imported": [
+    "knowledge:12",
+    "knowledge:13",
+    "knowledge:14",
+    "knowledge:15",
+    "knowledge:16",
+    "knowledge:17",
+    "knowledge:18",
+    "knowledge:19",
+    "knowledge:20",
+    "knowledge:21",
+    "knowledge:22",
+    "knowledge:23",
+    "skills:10",
+    "skills:11",
+    "skills:12",
+    "skills:13",
+    "skills:14",
+    "skills:15",
+    "skills:16",
+    "skills:17",
+    "skills:18"
+  ]
+}

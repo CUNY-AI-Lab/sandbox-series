@@ -1,0 +1,2 @@
+173 text Explore light through a small, fictional laboratory inspired by Newton's prism experiments. Rooms, inventory, and puzzle sequence are invented for play. Observations are simplified; use source material to examine historical claims. ◉ Room: Laboratory · Moves: 14 · Complete
+215 text Play record restored by replaying commands.

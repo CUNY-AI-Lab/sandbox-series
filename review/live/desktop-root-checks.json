@@ -1,0 +1,442 @@
+[
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 1: Composing system prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Composing system prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 2: Workshop Roadmap",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Workshop Roadmap",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 3: Workshop Agenda",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Workshop Agenda",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 4: Request Access",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Request Access",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 5: System Prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "System Prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 6: Select Models",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Select Models",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 7: Chat Features",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Chat Features",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 8: Compare Models",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Compare Models",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 9: Who Was Late?",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Who Was Late?",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 10: Examine Assumptions",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Examine Assumptions",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 11: Compare Outputs",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Compare Outputs",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 642,
+    "imageLoaded": true,
+    "label": "Slide 12: Gemma’s Response",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Gemma’s Response",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 642,
+    "imageLoaded": true,
+    "label": "Slide 13: Qwen’s Response",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Qwen’s Response",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 14: Compare Models",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Compare Models",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 15: Add System Prompt",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Add System Prompt",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 16: Open Chat Controls",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Open Chat Controls",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 17: Test System Prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Test System Prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 18: Regenerate Responses",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Regenerate Responses",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 19: Compare Responses",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Compare Responses",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 20: Open Workspace",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Open Workspace",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 21: Workspace Tabs",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Workspace Tabs",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 616.5,
+    "imageLoaded": true,
+    "label": "Slide 22: Model Configuration",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Model Configuration",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 23: Create Custom Models",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Create Custom Models",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 24: Situating System Prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Situating System Prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 226.15625,
+    "imageLoaded": true,
+    "label": "Slide 25: Select STEM Games",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Select STEM Games",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 226.15625,
+    "imageLoaded": true,
+    "label": "Slide 26: STEM Adventure Games",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "STEM Adventure Games",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": 226.15625,
+    "imageLoaded": true,
+    "label": "Slide 27: Inspect System Prompt",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Inspect System Prompt",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 28: Read Game Instructions",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Read Game Instructions",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 29: Test Game Instructions",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Test Game Instructions",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 30: Adapt Research Prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Adapt Research Prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 31: Draft System Prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Draft System Prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 32: Define Prompt Components",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Define Prompt Components",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 33: Define Context",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Define Context",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 34: Write Procedures",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Write Procedures",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 35: Set Constraints",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Set Constraints",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 36: Set Tone",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Set Tone",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 37: Specify Format",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Specify Format",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 38: Refine Instructions",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Refine Instructions",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 39: Extend Instructions",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Extend Instructions",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 40: Review Common Problems",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Review Common Problems",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 41: Save Prompts",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Save Prompts",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 42: Share Custom Models",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Share Custom Models",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 43: Record Comparisons",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Record Comparisons",
+    "width": 1280
+  },
+  {
+    "headingSize": "32px",
+    "imageBottom": null,
+    "imageLoaded": null,
+    "label": "Slide 44: Prepare Source Documents",
+    "overflow": false,
+    "slideBottom": 654,
+    "title": "Prepare Source Documents",
+    "width": 1280
+  }
+]

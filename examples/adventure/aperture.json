@@ -1,0 +1,142 @@
+{
+  "title": "Prism Laboratory: Aperture Test",
+  "introduction": "Enter a fictional laboratory inspired by Newton’s prism experiments. Investigate light, then compare observations with historical sources.",
+  "start": "study",
+  "rooms": {
+    "study": {
+      "name": "Study",
+      "description": "A notebook asks whether a prism creates colours or separates light. A storeroom lies north; a dark laboratory lies east.",
+      "exits": {
+        "north": "storeroom",
+        "east": "laboratory"
+      },
+      "items": []
+    },
+    "storeroom": {
+      "name": "Storeroom",
+      "description": "A glass prism and a screen with a narrow opening rest on a shelf.",
+      "exits": {
+        "south": "study"
+      },
+      "items": [
+        "prism",
+        "screen"
+      ]
+    },
+    "laboratory": {
+      "name": "Laboratory",
+      "description": "A shutter controls a narrow beam of sunlight. A pale wall faces the window. You can open or close the shutter, use a prism and screen, test red light, and record a result.",
+      "exits": {
+        "west": "study"
+      },
+      "items": []
+    }
+  },
+  "actions": [
+    {
+      "command": "open shutter",
+      "room": "laboratory",
+      "requires_items": [],
+      "requires_flags": [],
+      "sets_flags": [
+        "beam"
+      ],
+      "clears_flags": [],
+      "text": "A narrow beam of sunlight crosses the dark room and reaches the wall."
+    },
+    {
+      "command": "close shutter",
+      "room": "laboratory",
+      "requires_items": [],
+      "requires_flags": [],
+      "sets_flags": [],
+      "clears_flags": [
+        "beam",
+        "spectrum",
+        "red_selected",
+        "red_tested",
+        "recorded",
+        "aperture_tested"
+      ],
+      "text": "The shutter closes. The beam and visible spectrum disappear. Reopen it to repeat the experiment."
+    },
+    {
+      "command": "use prism",
+      "room": "laboratory",
+      "requires_items": [
+        "prism"
+      ],
+      "requires_flags": [
+        "beam"
+      ],
+      "sets_flags": [
+        "spectrum"
+      ],
+      "clears_flags": [],
+      "text": "You place the prism in the beam. An elongated band of colours appears on the wall. This observation alone does not settle whether the prism creates or separates colours."
+    },
+    {
+      "command": "use screen",
+      "room": "laboratory",
+      "requires_items": [
+        "screen"
+      ],
+      "requires_flags": [
+        "spectrum"
+      ],
+      "sets_flags": [
+        "red_selected"
+      ],
+      "clears_flags": [],
+      "text": "The screen's opening isolates red light from the coloured band. You can test how that selected light behaves under further refraction."
+    },
+    {
+      "command": "test red light",
+      "room": "laboratory",
+      "requires_items": [
+        "prism"
+      ],
+      "requires_flags": [
+        "red_selected",
+        "beam"
+      ],
+      "sets_flags": [
+        "red_tested"
+      ],
+      "clears_flags": [],
+      "text": "In this simplified repeat of the experiment, selected red light is refracted again and remains red. Compare this result with Newton's account before interpreting it."
+    },
+    {
+      "command": "record result",
+      "room": "laboratory",
+      "requires_items": [],
+      "requires_flags": [
+        "red_tested"
+      ],
+      "sets_flags": [
+        "recorded"
+      ],
+      "clears_flags": [],
+      "text": "Recorded: sunlight formed a spectrum, and selected red light remained red after further refraction. Complete the aperture comparison as well, then export your record to examine both procedures."
+    },
+    {
+      "command": "narrow aperture",
+      "room": "laboratory",
+      "requires_items": [
+        "screen"
+      ],
+      "requires_flags": [
+        "spectrum"
+      ],
+      "sets_flags": [
+        "aperture_tested"
+      ],
+      "clears_flags": [],
+      "text": "In this scripted comparison, reducing the aperture narrows the image without shortening its spectrum. This simplifies the particular arrangement described in Moray’s 1672 proposals and Newton’s observations; it is not a universal prediction for every optical setup."
+    }
+  ],
+  "goal_flags": [
+    "recorded",
+    "aperture_tested"
+  ]
+}
