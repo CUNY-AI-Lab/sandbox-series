@@ -1,0 +1,62 @@
+[
+  {
+    "file": "index.html",
+    "title": "Add System Prompt",
+    "before": "\n\n### Add System Prompt\n\n\n\nPaste this into in-chat **System Prompt** under **Controls** at top right.\n\n\n\n```text\nIdentify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.\n```\n\n",
+    "after": "\n\n### Add System Prompt\n\n\n\nCopy these instructions for in-chat **System Prompt**.\n\n\n\n```text\nIdentify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.\n```\n\n"
+  },
+  {
+    "file": "index.html",
+    "title": "Open Chat Controls",
+    "before": "\n\n### Open Chat Controls\n\n\n\n![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)\n\n\n\nOpen Controls \u2192 System Prompt. Add sample instructions, close Controls, then choose Regenerate \u2192 Try Again beneath each original response.\n\n\n\n\n\n- Open your chat.\n\n- Select **Controls** at top right.\n\n- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response, then choose **Try Again**.\n\n\n\nLeave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.\n\n",
+    "after": "\n\n### Open Chat Controls\n\n\n\n![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)\n\n\n\nSelect Controls at top right. Paste copied instructions into System Prompt, then close Controls.\n\n"
+  },
+  {
+    "file": "index.html",
+    "title": "Test System Prompts",
+    "before": "\n\n### Test System Prompts\n\n\n\n- Copy sample instructions from [Add System Prompt](#15).\n\n- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.\n\n- Close Controls. Select **Regenerate** beneath each original response, then choose **Try Again**.\n\n\n\nLeave your original question, selected models, and other settings unchanged.\n\n",
+    "after": "Removed. Copy, paste, and regeneration each appear once on slides 15\u201317."
+  },
+  {
+    "file": "index.html",
+    "title": "Regenerate Responses",
+    "before": "\n\n### Regenerate Responses\n\n\n\n![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)\n\n\n\nAfter adding system prompt instructions, select Regenerate beneath each original response, then choose Try Again.\n\n",
+    "after": "\n\n### Regenerate Responses\n\n\n\n![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)\n\n\n\nSelect Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.\n\n"
+  },
+  {
+    "file": "index.html",
+    "title": "Compare Responses",
+    "before": "\n\n### Compare Responses\n\n\n\n- Compare responses before and after adding system prompt instructions.\n\n- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?\n\n- Repeat our opening question about who was late. Do these instructions help identify ambiguity?\n\n\n\nKeep base models and other settings unchanged. Record any differences you cannot control.\n\n",
+    "after": "\n\n### Compare Responses\n\n\n\n- Compare responses before and after adding system prompt instructions.\n\n- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?\n\n- Repeat our opening question about who was late. Do these instructions help identify ambiguity?\n\n"
+  },
+  {
+    "file": "index.html",
+    "title": "Open Workspace",
+    "before": "\n\n### Open Workspace\n\n\n\nOpen **Workspace \u2192 Models**.\n\n\n\nOpen a custom model shared with you and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.\n\n\n\nContinue in chat if Workspace is unavailable.\n\n\n\n[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)\n\n",
+    "after": "\n\n### Review Custom Models\n\n\n\nChoose **Models** and open a custom model shared with you.\n\n\n\nReview **Base Model** and **System Prompt**, then compare its instructions with your tested prompt.\n\n\n\nContinue in chat if Workspace is unavailable.\n\n\n\n[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)\n\n"
+  },
+  {
+    "file": "index.html",
+    "title": "Workspace Tabs",
+    "before": "\n\n### Workspace Tabs\n\n\n\n![Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create](images/current/workspace-header.png)\n\n\n\nSelect a Workspace tab, then choose Create.\n\n\n\n\n\n### Custom Models\n\n\n\nOpen a model to view its base model and system prompt. Select **Create** to configure your own.\n\n\n\n### Knowledge and Tools\n\n\n\nAttach documents under Knowledge. Add reusable instructions under Skills and operations such as web search under Tools.\n\n",
+    "after": "\n\n### Open Workspace\n\n\n\n![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](images/current/workspace-sidebar-2026-09-15-annotated.svg)\n\n\n\nSelect Workspace in left sidebar.\n\n"
+  },
+  {
+    "file": "index.html",
+    "title": "Model Configuration",
+    "before": "\n\n### Model Configuration\n\n\n\n![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)\n\n\n\nChoose a name and base model, then enter a system prompt.\n\n\n\n\n\n- **Name** \u2014 Use a name that students or colleagues will recognize.\n\n- **Base Model** \u2014 Choose a model you have tested.\n\n- **System Prompt** \u2014 Add instructions you tested in chat.\n\n\n\nA custom model combines these choices. Creating it does not train a new base model.\n\n\n\n[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)\n\n",
+    "after": "\n\n### Model Configuration\n\n\n\n![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)\n\n\n\nSelect Create in Models. Choose a name and base model, then enter your system prompt.\n\n\n\n\n\n- **Name** \u2014 Use a name that students or colleagues will recognize.\n\n- **Base Model** \u2014 Choose a model you have tested.\n\n- **System Prompt** \u2014 Add instructions you tested in chat.\n\n\n\nA custom model combines these choices. Creating it does not train a new base model.\n\n\n\n[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)\n\n"
+  },
+  {
+    "file": "knowledge/index.html",
+    "title": "Review Custom Models",
+    "before": "\n\n### Review Custom Models\n\n\n\nOpen your custom model from Workshop 1. Choose a question about documents you want it to use.\n\n\n\nBring course materials, research papers, or other documents you know well enough to check.\n\n\n\nUse [system-prompt examples](../examples.html) if you need a prompt to begin.\n\n",
+    "after": "\n\n### Review Custom Models\n\n\n\nChoose a question about documents you want your custom model to use.\n\n\n\nBring course materials, research papers, or other documents you know well enough to check.\n\n\n\nUse [system-prompt examples](../examples.html) if you need a prompt to begin.\n\n"
+  },
+  {
+    "file": "knowledge/index.html",
+    "title": "Open Workspace",
+    "before": "\n\n### Open Workspace\n\n\n\n![Current Workspace tabs and shared Create button](../images/current/workspace-header.png)\n\n\n\nOpen Workspace \u2192 Models and find your custom model before adding documents.\n\n\n\n\n\nSign in after your Lab access is approved. Open **Workspace \u2192 Models** and find your custom model.\n\n\n\nTo create a new custom model, choose a base model and add a prompt from [System Prompt Examples](../examples.html).\n\n\n\nRequest Workspace access from CUNY AI Lab if Workspace is unavailable.\n\n\n\n[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)\n\n",
+    "after": "\n\n### Open Workspace\n\n\n\n![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](../images/current/workspace-sidebar-2026-09-15-annotated.svg)\n\n\n\nSelect Workspace in left sidebar. Choose Models and open your custom model.\n\n"
+  }
+]

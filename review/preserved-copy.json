@@ -550,6 +550,22 @@
         "before": "Open Chat ControlsOpen Controls at top right \u2192 System Prompt. Add sample instructions, then regenerate original responses.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
         "after": "Open Chat ControlsOpen Controls \u2192 System Prompt. Add sample instructions, close Controls, then choose Regenerate \u2192 Try Again beneath each original response.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
         "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      },
+      {
+        "before": "Open Chat ControlsOpen Controls \u2192 System Prompt. Add sample instructions, close Controls, then choose Regenerate \u2192 Try Again beneath each original response.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
+        "after": "Open Chat ControlsSelect Controls at top right. Paste copied instructions into System Prompt, then close Controls.",
+        "reason": "Remove repeated instructions; keep copying, in-chat insertion, and original-response regeneration in separate consecutive steps."
+      }
+    ],
+    "allowed_additions": []
+  },
+  "5": {
+    "before": "Compare ResponsesCompare responses before and after adding system prompt instructions.Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?Repeat our opening question about who was late. Do these instructions help identify ambiguity?Keep base models and other settings unchanged. Record any differences you cannot control.",
+    "allowed_replacements": [
+      {
+        "before": "Compare ResponsesCompare responses before and after adding system prompt instructions.Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?Repeat our opening question about who was late. Do these instructions help identify ambiguity?Keep base models and other settings unchanged. Record any differences you cannot control.",
+        "after": "Compare ResponsesCompare responses before and after adding system prompt instructions.Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?Repeat our opening question about who was late. Do these instructions help identify ambiguity?",
+        "reason": "Remove repeated instructions; keep copying, in-chat insertion, and original-response regeneration in separate consecutive steps."
       }
     ],
     "allowed_additions": []

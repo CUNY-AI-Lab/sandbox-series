@@ -212,7 +212,7 @@ Save both responses with your question and selected model IDs before adding syst
 
 ### Add System Prompt
 
-Paste this into in-chat **System Prompt** under **Controls** at top right.
+Copy these instructions for in-chat **System Prompt**.
 
 ```text
 Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
@@ -226,43 +226,21 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
 
-Open Controls → System Prompt. Add sample instructions, close Controls, then choose Regenerate → Try Again beneath each original response.
-
-- Open your chat.
-
-- Select **Controls** at top right.
-
-- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response, then choose **Try Again**.
-
-Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
+Select Controls at top right. Paste copied instructions into System Prompt, then close Controls.
 
 ---
 
-## Slide 17: Test System Prompts
-
-### Test System Prompts
-
-- Copy sample instructions from [Add System Prompt](#15).
-
-- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
-
-- Close Controls. Select **Regenerate** beneath each original response, then choose **Try Again**.
-
-Leave your original question, selected models, and other settings unchanged.
-
----
-
-## Slide 18: Regenerate Responses
+## Slide 17: Regenerate Responses
 
 ### Regenerate Responses
 
 ![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
 
-After adding system prompt instructions, select Regenerate beneath each original response, then choose Try Again.
+Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
 
 ---
 
-## Slide 19: Compare Responses
+## Slide 18: Compare Responses
 
 ### Compare Responses
 
@@ -272,17 +250,25 @@ After adding system prompt instructions, select Regenerate beneath each original
 
 - Repeat our opening question about who was late. Do these instructions help identify ambiguity?
 
-Keep base models and other settings unchanged. Record any differences you cannot control.
-
 ---
 
-## Slide 20: Open Workspace
+## Slide 19: Open Workspace
 
 ### Open Workspace
 
-Open **Workspace → Models**.
+![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](images/current/workspace-sidebar-2026-09-15-annotated.svg)
 
-Open a custom model shared with you and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
+Select Workspace in left sidebar.
+
+---
+
+## Slide 20: Review Custom Models
+
+### Review Custom Models
+
+Choose **Models** and open a custom model shared with you.
+
+Review **Base Model** and **System Prompt**, then compare its instructions with your tested prompt.
 
 Continue in chat if Workspace is unavailable.
 
@@ -290,31 +276,13 @@ Continue in chat if Workspace is unavailable.
 
 ---
 
-## Slide 21: Workspace Tabs
-
-### Workspace Tabs
-
-![Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create](images/current/workspace-header.png)
-
-Select a Workspace tab, then choose Create.
-
-### Custom Models
-
-Open a model to view its base model and system prompt. Select **Create** to configure your own.
-
-### Knowledge and Tools
-
-Attach documents under Knowledge. Add reusable instructions under Skills and operations such as web search under Tools.
-
----
-
-## Slide 22: Model Configuration
+## Slide 21: Model Configuration
 
 ### Model Configuration
 
 ![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
 
-Choose a name and base model, then enter a system prompt.
+Select Create in Models. Choose a name and base model, then enter your system prompt.
 
 - **Name** — Use a name that students or colleagues will recognize.
 
@@ -328,7 +296,7 @@ A custom model combines these choices. Creating it does not train a new base mod
 
 ---
 
-## Slide 23: Create Custom Models
+## Slide 22: Create Custom Models
 
 ### Create Custom Models
 
@@ -346,7 +314,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-## Slide 24: Situating System Prompts
+## Slide 23: Situating System Prompts
 
 Examples
 
@@ -354,7 +322,7 @@ Examples
 
 ---
 
-## Slide 25: Select STEM Games
+## Slide 24: Select STEM Games
 
 ### Select STEM Games
 
@@ -364,7 +332,7 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 ---
 
-## Slide 26: STEM Adventure Games
+## Slide 25: STEM Adventure Games
 
 ### STEM Adventure Games
 
@@ -376,7 +344,7 @@ Enter commands inside Prism Laboratory. Type help to list commands, including sa
 
 ---
 
-## Slide 27: Inspect System Prompt
+## Slide 26: Inspect System Prompt
 
 ### Inspect System Prompt
 
@@ -386,7 +354,7 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 
 ---
 
-## Slide 28: Read Game Instructions
+## Slide 27: Read Game Instructions
 
 ### Read Game Instructions
 
@@ -404,7 +372,7 @@ Which instructions guide model behavior? Which actions require a tool?
 
 ---
 
-## Slide 29: Test Game Instructions
+## Slide 28: Test Game Instructions
 
 ### Test Game Instructions
 
@@ -422,7 +390,7 @@ Type discuss inside your game to place your run in chat, then send it.
 
 ---
 
-## Slide 30: Adapt Research Prompts
+## Slide 29: Adapt Research Prompts
 
 ### Adapt Research Prompts
 
@@ -438,13 +406,13 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Slide 31: Draft System Prompts
+## Slide 30: Draft System Prompts
 
 ### Draft System Prompts
 
 ---
 
-## Slide 32: Define Prompt Components
+## Slide 31: Define Prompt Components
 
 ### Define Prompt Components
 
@@ -460,7 +428,7 @@ Adapt STEM Adventure Games through these components.
 
 ---
 
-## Slide 33: Define Context
+## Slide 32: Define Context
 
 ### Define Context
 
@@ -480,7 +448,7 @@ Use [source material] for historical context.
 
 ---
 
-## Slide 34: Write Procedures
+## Slide 33: Write Procedures
 
 ### Write Procedures
 
@@ -501,7 +469,7 @@ Write numbered steps for your model to follow.
 
 ---
 
-## Slide 35: Set Constraints
+## Slide 34: Set Constraints
 
 ### Set Constraints
 
@@ -517,7 +485,7 @@ Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Slide 36: Set Tone
+## Slide 35: Set Tone
 
 ### Set Tone
 
@@ -533,7 +501,7 @@ Which terms need explanation for your intended users?
 
 ---
 
-## Slide 37: Specify Format
+## Slide 36: Specify Format
 
 ### Specify Format
 
@@ -548,7 +516,7 @@ Question: [One limitation to examine]
 
 ---
 
-## Slide 38: Refine Instructions
+## Slide 37: Refine Instructions
 
 Refine
 
@@ -556,7 +524,7 @@ Refine
 
 ---
 
-## Slide 39: Extend Instructions
+## Slide 38: Extend Instructions
 
 ### Extend Instructions
 
@@ -570,7 +538,7 @@ Refine
 
 ---
 
-## Slide 40: Review Common Problems
+## Slide 39: Review Common Problems
 
 Watch Out
 
@@ -594,7 +562,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Slide 41: Save Prompts
+## Slide 40: Save Prompts
 
 ### Save Prompts
 
@@ -608,7 +576,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 42: Share Custom Models
+## Slide 41: Share Custom Models
 
 ### Share Custom Models
 
@@ -622,7 +590,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 43: Record Comparisons
+## Slide 42: Record Comparisons
 
 ### Record Comparisons
 
@@ -640,7 +608,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 44: Prepare Source Documents
+## Slide 43: Prepare Source Documents
 
 ### Prepare Source Documents
 

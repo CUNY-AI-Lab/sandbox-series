@@ -1,0 +1,610 @@
+--- 67e5dfd/SLIDES.md
++++ revised/SLIDES.md
+@@ -220,7 +220,7 @@
+ 
+ ### Add System Prompt
+ 
+-Paste this into in-chat **System Prompt** under **Controls** at top right.
++Copy these instructions for in-chat **System Prompt**.
+ 
+ ```text
+ Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
+@@ -236,65 +236,53 @@
+ 
+ **Alt text:** Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow
+ 
+-Open Controls → System Prompt. Add sample instructions, close Controls, then choose Regenerate → Try Again beneath each original response.
+-
+-- Open your chat.
+-
+-- Select **Controls** at top right.
+-
+-- Add sample instructions in **System Prompt**. Close Controls, then select **Regenerate** beneath each original response, then choose **Try Again**.
+-
+-Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.
++Select Controls at top right. Paste copied instructions into System Prompt, then close Controls.
+ 
+ ---
+ 
+ ## Composing system prompts — 17
+ 
+-### Test System Prompts
+-
+-- Copy sample instructions from [Add System Prompt](#15).
+-
+-- Open **Controls** at top right of your chat. Add instructions in **System Prompt**.
+-
+-- Close Controls. Select **Regenerate** beneath each original response, then choose **Try Again**.
+-
+-Leave your original question, selected models, and other settings unchanged.
++### Regenerate Responses
++
++![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
++
++**Alt text:** Original question, Gemma response, and message box with Regenerate button marked by an arrow
++
++Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
+ 
+ ---
+ 
+ ## Composing system prompts — 18
+ 
+-### Regenerate Responses
+-
+-![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
+-
+-**Alt text:** Original question, Gemma response, and message box with Regenerate button marked by an arrow
+-
+-After adding system prompt instructions, select Regenerate beneath each original response, then choose Try Again.
++### Compare Responses
++
++- Compare responses before and after adding system prompt instructions.
++
++- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
++
++- Repeat our opening question about who was late. Do these instructions help identify ambiguity?
+ 
+ ---
+ 
+ ## Composing system prompts — 19
+ 
+-### Compare Responses
+-
+-- Compare responses before and after adding system prompt instructions.
+-
+-- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
+-
+-- Repeat our opening question about who was late. Do these instructions help identify ambiguity?
+-
+-Keep base models and other settings unchanged. Record any differences you cannot control.
++### Open Workspace
++
++![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](images/current/workspace-sidebar-2026-09-15-annotated.svg)
++
++**Alt text:** Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar
++
++Select Workspace in left sidebar.
+ 
+ ---
+ 
+ ## Composing system prompts — 20
+ 
+-### Open Workspace
+-
+-Open **Workspace → Models**.
+-
+-Open a custom model shared with you and review its **Base Model** and **System Prompt**. Compare those instructions with your tested prompt.
++### Review Custom Models
++
++Choose **Models** and open a custom model shared with you.
++
++Review **Base Model** and **System Prompt**, then compare its instructions with your tested prompt.
+ 
+ Continue in chat if Workspace is unavailable.
+ 
+@@ -304,185 +292,165 @@
+ 
+ ## Composing system prompts — 21
+ 
+-### Workspace Tabs
+-
+-![Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create](images/current/workspace-header.png)
+-
+-**Alt text:** Current Workspace header with Models, Knowledge, Prompts, Skills, Tools, and Create
+-
+-Select a Workspace tab, then choose Create.
+-
+-### Custom Models
+-
+-Open a model to view its base model and system prompt. Select **Create** to configure your own.
+-
+-### Knowledge and Tools
+-
+-Attach documents under Knowledge. Add reusable instructions under Skills and operations such as web search under Tools.
++### Model Configuration
++
++![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
++
++**Alt text:** Current model creation form showing Name, Base Model, and System Prompt
++
++Select Create in Models. Choose a name and base model, then enter your system prompt.
++
++- **Name** — Use a name that students or colleagues will recognize.
++
++- **Base Model** — Choose a model you have tested.
++
++- **System Prompt** — Add instructions you tested in chat.
++
++A custom model combines these choices. Creating it does not train a new base model.
++
++[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+ 
+ ---
+ 
+ ## Composing system prompts — 22
+ 
+-### Model Configuration
+-
+-![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
+-
+-**Alt text:** Current model creation form showing Name, Base Model, and System Prompt
+-
+-Choose a name and base model, then enter a system prompt.
+-
+-- **Name** — Use a name that students or colleagues will recognize.
+-
+-- **Base Model** — Choose a model you have tested.
+-
+-- **System Prompt** — Add instructions you tested in chat.
+-
+-A custom model combines these choices. Creating it does not train a new base model.
+-
+-[Model editor](https://ailab.gc.cuny.edu/sandbox-docs/models/)
++### Create Custom Models
++
++Custom models combine a base model with instructions, documents, and tools.
++
++- Enter a name and description that students or colleagues will recognize.
++
++- Select a base model and add your tested system prompt.
++
++- Add prompt suggestions for tasks your model should support.
++
++Users select your custom model to use its instructions and resources.
++
++[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+ 
+ ---
+ 
+ ## Composing system prompts — 23
+ 
+-### Create Custom Models
+-
+-Custom models combine a base model with instructions, documents, and tools.
+-
+-- Enter a name and description that students or colleagues will recognize.
+-
+-- Select a base model and add your tested system prompt.
+-
+-- Add prompt suggestions for tasks your model should support.
+-
+-Users select your custom model to use its instructions and resources.
+-
+-[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
++Examples
++
++### Situating System Prompts
+ 
+ ---
+ 
+ ## Composing system prompts — 24
+ 
+-Examples
+-
+-### Situating System Prompts
++### Select STEM Games
++
++![Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.](images/current/stem-selector-2026-09-14.png)
++
++**Alt text:** Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.
++
++Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.
+ 
+ ---
+ 
+ ## Composing system prompts — 25
+ 
+-### Select STEM Games
+-
+-![Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.](images/current/stem-selector-2026-09-14.png)
+-
+-**Alt text:** Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.
+-
+-Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.
++### STEM Adventure Games
++
++![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
++
++**Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
++
++Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands.
++
++Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
+ 
+ ---
+ 
+ ## Composing system prompts — 26
+ 
+-### STEM Adventure Games
+-
+-![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
+-
+-**Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
+-
+-Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands.
+-
+-Enter commands inside Prism Laboratory. Type help to list commands, including save, load, and discuss.
++### Inspect System Prompt
++
++![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
++
++**Alt text:** STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.
++
++Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt. Base model shown here was selected on September 14, 2026.
+ 
+ ---
+ 
+ ## Composing system prompts — 27
+ 
+-### Inspect System Prompt
+-
+-![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
+-
+-**Alt text:** STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.
+-
+-Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt. Base model shown here was selected on September 14, 2026.
++### Read Game Instructions
++
++Read this excerpt from STEM Adventure Games.
++
++```text
++When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
++
++STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
++```
++
++Which instructions guide model behavior? Which actions require a tool?
++
++[Read full system prompt](examples.html#stem-system)
+ 
+ ---
+ 
+ ## Composing system prompts — 28
+ 
+-### Read Game Instructions
+-
+-Read this excerpt from STEM Adventure Games.
+-
+-```text
+-When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
+-
+-STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
+-```
+-
+-Which instructions guide model behavior? Which actions require a tool?
+-
+-[Read full system prompt](examples.html#stem-system)
++### Test Game Instructions
++
++Send Begin Prism Laboratory, then enter help and go north inside your game.
++
++- Does your command change rooms or inventory?
++
++- Does help list available actions?
++
++- Which observations come from programmed rules?
++
++- Which historical claims require source checks?
++
++Type discuss inside your game to place your run in chat, then send it.
+ 
+ ---
+ 
+ ## Composing system prompts — 29
+ 
+-### Test Game Instructions
+-
+-Send Begin Prism Laboratory, then enter help and go north inside your game.
+-
+-- Does your command change rooms or inventory?
+-
+-- Does help list available actions?
+-
+-- Which observations come from programmed rules?
+-
+-- Which historical claims require source checks?
+-
+-Type discuss inside your game to place your run in chat, then send it.
++### Adapt Research Prompts
++
++Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
++
++- State your research question and identify permitted source material.
++
++- Specify steps and what counts as evidence.
++
++- Ask your model to explain uncertainty and consider other interpretations.
++
++Save your source material, prompt, response, and assessment together.
+ 
+ ---
+ 
+ ## Composing system prompts — 30
+ 
+-### Adapt Research Prompts
+-
+-Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
+-
+-- State your research question and identify permitted source material.
+-
+-- Specify steps and what counts as evidence.
+-
+-- Ask your model to explain uncertainty and consider other interpretations.
+-
+-Save your source material, prompt, response, and assessment together.
++### Draft System Prompts
+ 
+ ---
+ 
+ ## Composing system prompts — 31
+ 
+-### Draft System Prompts
++### Define Prompt Components
++
++Adapt STEM Adventure Games through these components.
++
++- **Context** — Experiment, historical setting, and intended users.
++
++- **Procedure** — Steps your model should follow.
++
++- **Constraints** — Boundaries and missing information.
++
++- **Tone and format** — Language, length, and presentation.
+ 
+ ---
+ 
+ ## Composing system prompts — 32
+-
+-### Define Prompt Components
+-
+-Adapt STEM Adventure Games through these components.
+-
+-- **Context** — Experiment, historical setting, and intended users.
+-
+-- **Procedure** — Steps your model should follow.
+-
+-- **Constraints** — Boundaries and missing information.
+-
+-- **Tone and format** — Language, length, and presentation.
+-
+----
+-
+-## Composing system prompts — 33
+ 
+ ### Define Context
+ 
+@@ -502,7 +470,7 @@
+ 
+ ---
+ 
+-## Composing system prompts — 34
++## Composing system prompts — 33
+ 
+ ### Write Procedures
+ 
+@@ -523,7 +491,7 @@
+ 
+ ---
+ 
+-## Composing system prompts — 35
++## Composing system prompts — 34
+ 
+ ### Set Constraints
+ 
+@@ -539,7 +507,7 @@
+ 
+ ---
+ 
+-## Composing system prompts — 36
++## Composing system prompts — 35
+ 
+ ### Set Tone
+ 
+@@ -555,7 +523,7 @@
+ 
+ ---
+ 
+-## Composing system prompts — 37
++## Composing system prompts — 36
+ 
+ ### Specify Format
+ 
+@@ -570,81 +538,81 @@
+ 
+ ---
+ 
++## Composing system prompts — 37
++
++Refine
++
++### Refine Instructions
++
++---
++
+ ## Composing system prompts — 38
+ 
+-Refine
+-
+-### Refine Instructions
++### Extend Instructions
++
++- Specify what happens when a player asks for a hint.
++
++- Explain how to revisit an earlier decision.
++
++- Require source checks when players ask about historical claims.
++
++- Test how your model responds when evidence is missing.
+ 
+ ---
+ 
+ ## Composing system prompts — 39
+ 
+-### Extend Instructions
+-
+-- Specify what happens when a player asks for a hint.
+-
+-- Explain how to revisit an earlier decision.
+-
+-- Require source checks when players ask about historical claims.
+-
+-- Test how your model responds when evidence is missing.
++Watch Out
++
++### Review Common Problems
++
++### Prioritize Instructions
++
++Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
++
++### Resolve Contradictions
++
++Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
++
++### Test Player Requests
++
++Test game choices, requests for hints, and questions about sources.
++
++### Retest Revised Prompts
++
++Save each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.
+ 
+ ---
+ 
+ ## Composing system prompts — 40
+ 
+-Watch Out
+-
+-### Review Common Problems
+-
+-### Prioritize Instructions
+-
+-Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
+-
+-### Resolve Contradictions
+-
+-Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
+-
+-### Test Player Requests
+-
+-Test game choices, requests for hints, and questions about sources.
+-
+-### Retest Revised Prompts
+-
+-Save each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.
++### Save Prompts
++
++- Save your prompt text, model ID, and responses.
++
++- Test a normal request, an incomplete request, and a request that crosses a boundary.
++
++- Revise one instruction and repeat your test in a new chat.
++
++Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
+ 
+ ---
+ 
+ ## Composing system prompts — 41
+ 
+-### Save Prompts
+-
+-- Save your prompt text, model ID, and responses.
+-
+-- Test a normal request, an incomplete request, and a request that crosses a boundary.
+-
+-- Revise one instruction and repeat your test in a new chat.
+-
+-Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
++### Share Custom Models
++
++- Open **Access → Add Access** and select users or a course group.
++
++- Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
++
++- Confirm everyone you share with can access your base model and attached collections, skills, and tools.
++
++[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+ 
+ ---
+ 
+ ## Composing system prompts — 42
+-
+-### Share Custom Models
+-
+-- Open **Access → Add Access** and select users or a course group.
+-
+-- Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
+-
+-- Confirm everyone you share with can access your base model and attached collections, skills, and tools.
+-
+-[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+-
+----
+-
+-## Composing system prompts — 43
+ 
+ ### Record Comparisons
+ 
+@@ -662,7 +630,7 @@
+ 
+ ---
+ 
+-## Composing system prompts — 44
++## Composing system prompts — 43
+ 
+ ### Prepare Source Documents
+ 
+@@ -727,7 +695,7 @@
+ 
+ ### Review Custom Models
+ 
+-Open your custom model from Workshop 1. Choose a question about documents you want it to use.
++Choose a question about documents you want your custom model to use.
+ 
+ Bring course materials, research papers, or other documents you know well enough to check.
+ 
+@@ -739,19 +707,11 @@
+ 
+ ### Open Workspace
+ 
+-![Current Workspace tabs and shared Create button](images/current/workspace-header.png)
+-
+-**Alt text:** Current Workspace tabs and shared Create button
+-
+-Open Workspace → Models and find your custom model before adding documents.
+-
+-Sign in after your Lab access is approved. Open **Workspace → Models** and find your custom model.
+-
+-To create a new custom model, choose a base model and add a prompt from [System Prompt Examples](examples.html).
+-
+-Request Workspace access from CUNY AI Lab if Workspace is unavailable.
+-
+-[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
++![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](images/current/workspace-sidebar-2026-09-15-annotated.svg)
++
++**Alt text:** Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar
++
++Select Workspace in left sidebar. Choose Models and open your custom model.
+ 
+ ---
+ 
