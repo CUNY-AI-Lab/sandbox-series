@@ -587,6 +587,25 @@
       "source_sha256": "5061cf4e3768aa06618cd17eb62ce3c61128becc8e8bc50dded7ce647d32bfb0",
       "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
       "sha256": "13978b25c160ddc07c9e7db849c830bc500cf1af6f597d8d0f93d337a60b99d0"
+    },
+    {
+      "file": "model-selector-open-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 120% zoom in dark mode. Gemma 3 4B IT selected in an empty new chat, with model selector open. No request submitted or default changed.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        430,
+        130,
+        1110,
+        758
+      ],
+      "source_sha256": "12616b40ecdb6232750fee9c46802224d785648e207a75d2c5381239c05173df",
+      "processing": "Rectangular crop retains CUNY AI Lab logo, full message box, and open model selector. Browser chrome and account details excluded. Neutral SVG outline and arrow identify model ID without covering its label or menu.",
+      "sha256": "cadc375e5218cf5a80f0698c95f6c192d899471baa7141c36bd6587ae35f1833"
     }
   ]
 }

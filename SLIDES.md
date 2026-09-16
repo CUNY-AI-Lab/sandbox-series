@@ -92,9 +92,9 @@ Creating a custom model does not train a new base model.
 
 ### Select Models
 
-![Sandbox chat with model ID at bottom right of message box](images/current/chat-page.png)
+![Sandbox chat with CUNY AI Lab logo, message box, and open model selector showing search and model choices; arrow marks model ID at bottom right of message box](images/current/model-selector-open-2026-09-16.svg)
 
-**Alt text:** Sandbox chat with model ID at bottom right of message box
+**Alt text:** Sandbox chat with CUNY AI Lab logo, message box, and open model selector showing search and model choices; arrow marks model ID at bottom right of message box
 
 Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
 
