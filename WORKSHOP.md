@@ -22,7 +22,7 @@ For individual access, follow [Getting Started](https://ailab.gc.cuny.edu/sandbo
 
 Workshop 1 requires only individual access and sign-in. Workspace access is arranged for the midpoint exercise. Participants refresh, inspect a sample custom model, and can save their tested prompt as a private configuration. If access is delayed, participants follow the demonstration and continue testing in chat. Before Workshop 2, arrange Workspace and Knowledge access with the Lab. Before Workshop 3, arrange Skills and Tools access, including authoring permissions for participants who will create or edit resources. Confirm which base models and capabilities are available to the group.
 
-Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. Confirm access to **STEM Adventure Games** and **STEM Wikipedia Experiments** for the later demonstration. The [observed system prompt](examples/stem-system-prompt.txt) is available as a reference.
+Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. Confirm access to **STEM Adventure Games** and **STEM Wikipedia Experiments** for later examples. Workshop 2 uses a source-checking custom model with the collection and no attached skills or tools. Set Function Calling to Legacy under Advanced Params for automatic knowledge retrieval; Native mode requires model-called knowledge tools. See [Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/). Reserve the playable STEM configuration for Workshop 3. The [complete game system prompt](examples/stem-system-prompt.txt) is a Workshop 3 reference.
 
 Choose two available small models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.
 
@@ -43,17 +43,14 @@ Participants learn how user prompts and system prompts differ before comparing m
 
 ### Lesson Plan
 
-| Minutes | Facilitation and participant activity | Evidence to retain |
+| Minutes | Activity | Evidence to retain |
 | --- | --- | --- |
-| 0–10 | Introduce the series and agenda. Confirm sign-in. Define system prompts through model role, behavior, and focus, and distinguish them from user questions or tasks. Locate the model selector inside the message box, Integrations, and message actions. | Account readiness and distinction between user and system prompts |
-| 10–18 | Demonstrate two small models answering the nurse question. Ask participants to read both responses and identify assumptions. | Exact inputs, model identifiers, responses |
-| 18–25 | Ask whether to walk or drive to a car wash. Show Gemma’s and Qwen’s responses after comparing models live. Ask participants what they think this person wants to accomplish. | Assumptions and evidence supporting each judgment |
-| 25–35 | Ask participants to start a new chat, send the car wash question to two models, and save both responses. Read the sample system prompt and ask what should change in each response. Show Controls at the top right of chat and its System Prompt field before participants add instructions. | Original responses and expected effects of system prompt instructions |
-| 35–45 | Keep the control location visible with the exercise steps. Participants open Controls, add the sample instructions in System Prompt, close Controls, and select Regenerate beneath each original response, then choose Try Again. Leave the original question, selected models, and other settings unchanged. Compare outputs, then revisit the question about who was late. | Before-and-after comparison using the same criteria |
-| 45–55 | Enable the arranged Workspace access. Participants refresh and inspect a prepared custom model with the facilitator. Read Base Model and System Prompt together, then connect those settings to the in-chat exercise. | Prompt text and model choice to carry forward |
-| 55–75 | Open STEM Adventure Games in Model Selector, then inspect its base model and system prompt in Workspace. Read its game rules, run two commands in Prism Laboratory, and choose one instruction to adapt. Use the component templates to draft a private variant. | Draft prompt and private custom model when Workspace access is confirmed |
-| 75–85 | Test a normal request, an incomplete request, and a request that conflicts with the intended procedure. Revise one instruction and repeat. | Failure, revision, and retest |
-| 85–90 | Share one supported observation. Save prompt versions and comparison notes. Review access needed for Workshop 2. | Next question and access request |
+| 0–10 | Introduce the series, confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
+| 10–25 | Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
+| 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
+| 45–65 | Inspect Workspace models, create a private configuration, and review STEM prompt excerpts. Preview the game that participants will configure in Workshop 3. | Base model and system prompt |
+| 65–85 | Adapt one system prompt. Test an ordinary request and an incomplete or conflicting request. Revise one instruction and repeat. | Failure, revision, and retest |
+| 85–90 | Save the tested prompt and identify source documents for Workshop 2. | Private model and source question |
 
 ### Compare Small Models
 
@@ -80,7 +77,7 @@ For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assum
 
 ## Curating knowledge collections
 
-Participants upload documents to a knowledge collection and attach it to a custom model. They ask questions about those materials and check whether the model retrieves relevant passages and cites them accurately. STEM Wikipedia Experiments provides a concrete collection for checking historical claims, scientific methods, and the limits of imported sources.
+Participants upload documents to a knowledge collection and attach it to a custom model. They ask questions about those materials and check whether the model retrieves relevant passages and cites them accurately. This workshop adds knowledge only; skills and adventure tools begin in Workshop 3. STEM Wikipedia Experiments provides a concrete collection for checking historical claims, scientific methods, and the limits of imported sources.
 
 ### Workshop Agenda
 
@@ -93,17 +90,15 @@ Participants upload documents to a knowledge collection and attach it to a custo
 
 ### Lesson Plan
 
-| Minutes | Facilitation and participant activity | Evidence to retain |
+| Minutes | Activity | Evidence to retain |
 | --- | --- | --- |
-| 0–10 | Confirm individual sign-in, Workspace, Knowledge access, and a custom model or prompt from Workshop 1. Save a response before adding sources. | Original model settings and response |
-| 10–20 | Explain extraction, passages, retrieval, and response context. Demonstrate the current Knowledge creation form. | Question about a document and expected passage |
-| 20–35 | Open STEM Wikipedia Experiments. Inspect the original Wikipedia imports and the added Newton entries. Contrast a failed import, a historical source summary, and software documentation. Compare game apparatus with Newton’s account. | Proposed source list with reasons |
-| 35–55 | Create a private collection. Upload a few documents, wait for processing, and inspect extracted text. | Document versions and extraction problems |
-| 55–65 | Attach the collection under Knowledge in the model editor and use Save & Update. Keep the model and system prompt fixed. | Collection and custom model settings |
-| 65–80 | Test a question answered by one source, one requiring two sources, and one absent from the collection. Open cited passages and verify them. | Retrieved passages, responses, and judgments |
-| 80–90 | Diagnose one failure and make one change. Check dependency access with the intended audience. Review Skills and Tools access for the next session. | Retest, access check, and next procedure |
+| 0–15 | Confirm access, choose a document question, and save its initial response. Record any sources already used. Keep Skills and Tools unselected. | Question, settings, and initial response |
+| 15–35 | Inspect STEM Wikipedia Experiments. Check imports and distinguish source summaries from historical texts. Attach the readable Prism Laboratory scenario and compare its apparatus with the Newton summary. | Source passages and supported claims |
+| 35–55 | Select a few readable documents, create a private collection, upload files, wait for processing, and attach it to the same custom model. | Documents, collection, and saved model |
+| 55–80 | Repeat the saved question with base model and system prompt unchanged. Check cited passages, try questions requiring two sources or missing information, and diagnose one failure. | Before/after responses and source checks |
+| 80–90 | Retest one change, check sharing, and choose a procedure for Workshop 3. | Retest and next procedure |
 
-Use the [STEM system prompt and drafts](examples.html) as starting configurations. Participants can build a small collection for another experiment or adapt the procedure to their own teaching or research. They should know the source material well enough to check model claims independently.
+Use the [source-checking system prompt](examples.html#stem-sources) for the Workshop 2 example. Keep Skills and Tools unselected. Participants examine the [Prism Laboratory scenario](examples/adventure/prism-scenario.md) as a document; running the game begins in Workshop 3. Participants can build a small collection for another experiment or adapt the procedure to their own teaching or research. They should know the source material well enough to check model claims independently.
 
 A generic or incorrect answer can arise from processing, retrieval, access, instructions, or interpretation. Check the actual evidence before diagnosing the cause. File length alone does not determine retrieval quality. Scanned or multi-column PDFs deserve particular attention during text extraction.
 
@@ -117,7 +112,7 @@ A generic or incorrect answer can arise from processing, retrieval, access, inst
 
 ## Configuring skills and tools
 
-Participants use STEM Adventure to play a deterministic text adventure, inspect commands and prerequisites, and export a play record. They attach Extend STEM Adventures to guide a source-based procedural change, test the resulting scenario, and examine how a model interprets the run. Kale Skill Builder and Tool Creator accept participants’ own requirements. Their system prompts and starter suggestions are general-purpose. STEM Adventure is a submitted workshop example. Tool Creator produces a reviewable Python draft with explicit tests. Each participant retains a skill, tool, scenario, and record of expected and observed behavior.
+Participants use STEM Adventure to play a deterministic text adventure, inspect commands and prerequisites, and export a play record. They draft a skill, attach it to a private copy of STEM Adventure Games, test one procedural change, and examine how a model interprets the run. Kale Skill Builder and Tool Creator accept participants’ own requirements. Their system prompts and starter suggestions are general-purpose. STEM Adventure is a submitted workshop example. Tool Creator produces a reviewable Python draft with explicit tests. Each participant retains a skill draft, creator output, an installed copy of the tested tool, a scenario, and a play record. Creator output remains a draft until reviewed and tested.
 
 ### Workshop Agenda
 
@@ -130,16 +125,13 @@ Participants use STEM Adventure to play a deterministic text adventure, inspect 
 
 ### Lesson Plan
 
-| Minutes | Facilitation and participant activity | Evidence to retain |
+| Minutes | Activity | Evidence to retain |
 | --- | --- | --- |
-| 0–10 | Confirm sign-in and resource access. Revisit STEM Adventure Games, its system prompt, and source collection. Identify what a skill describes and what a tool executes. | Model, source, skill, and tool versions |
-| 10–23 | Open Prism Laboratory through STEM Adventure. Explore rooms, take objects, try a blocked action, and enter help. Run the prepared winning sequence. | Commands and expected prerequisites |
-| 23–33 | Save a play record before restarting, then load it and check restored progress. Enter undo to reverse the last move. Enter discuss and send the resulting record. Check the model’s account against recorded commands. | Exported record and interpretation |
-| 33–48 | Open the general-purpose Kale Skill Builder model and attach the scenario instructions before requesting a skill. Read Extend STEM Adventures. Identify trigger, procedure, and output. Examine the provided draft’s unsupported completion claim and its correction. Create a private copy, attach it to a model, and use native function calling. | Skill instructions and attachment |
-| 48–63 | Attach Prism Laboratory JSON and request an aperture comparison using Newton: Experimental Variants. Compare generated scenario JSON with the prepared example. Run a winning sequence and a blocked action. | Scenario, source passage, expected and actual results |
-| 63–78 | Open Tool Creator. Request a bounded operation, review its Python code, and inspect the numeric-command validation failure and correction. Distinguish proposed tests from executed tests. Inspect the provided STEM Adventure implementation, then install a private copy when authoring access is available. | Tool artifact and test cases |
-| 78–86 | Use a private model copy. Remove its attached skill and run a request in a new chat, then reattach the skill and repeat in another new chat while holding other settings fixed. Revise one instruction from observed behavior. | Before/after responses and retest |
-| 86–90 | Save artifacts and check access from a participant account before sharing. Identify one unresolved historical or procedural question. | Skill, tool, scenario, play record, next question |
+| 0–25 | Open the playable STEM configuration, test commands, save and reload a play record, and submit it with discuss. | Commands, failed prerequisite, and play record |
+| 25–45 | Clone STEM Adventure Games, remove inherited access grants, and save a private copy. Use Kale Skill Builder to draft one skill, save it, replace the existing attached skill, and update the private system prompt to name the draft. | Private model and saved skill |
+| 45–65 | Attach Prism Laboratory JSON and request one aperture comparison. Run the resulting scenario. Compare the same request with and without the saved skill, keeping other settings and inputs fixed. | Generated scenarios, test results, and records |
+| 65–83 | Request a Python draft from Tool Creator and save it for review. Install the provided tested adventure code separately, enable that copy, open a game, and inspect its actual call and result. | Creator draft, installed tested code, and tool result |
+| 83–90 | Save artifacts, compare game records with source evidence, and identify a next test. | Artifacts, observed result, and next question |
 
 The primary artifacts are [STEM Adventure](examples/tools/stem_adventure.py), [Extend STEM Adventures](examples/stem-game-skill.md), [Prism Laboratory](examples/adventure/prism.json), [Aperture Test](examples/adventure/aperture.json), and [winning commands](examples/adventure/winning-commands.json). The [local preview](examples/adventure/preview.html) allows practice before Sandbox access is ready. It does not establish that a participant has permission to call the installed tool.
 
@@ -159,7 +151,7 @@ Evaluate source use separately from game correctness. A deterministic winning se
 
 Interface instructions draw on the published [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/), especially [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/), [Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/), [Models](https://ailab.gc.cuny.edu/sandbox-docs/models/), [Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/), [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/), and [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/).
 
-The live interface was inspected in Firefox on September 13–14, 2026. [Screenshot provenance](review/screenshot-sources.json) records source hashes and crop coordinates. [Showcase provenance](review/showcase-sources.json) distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.
+The live interface was inspected in Firefox on September 13–16, 2026. Creation, Clone, and access controls were checked in an administrator account. Participant-account checks remain with Zach before delivery. [Screenshot provenance](review/screenshot-sources.json) records source hashes and crop coordinates. [Showcase provenance](review/showcase-sources.json) distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.
 
 Provider requests are described in the docs as configured for zero retention with training use prohibited. Sandbox history can still be stored and visible to administrators or its shared audience. Retrieved passages enter the model request and may appear in its response. Use materials appropriate for those conditions.
 
@@ -181,3 +173,7 @@ The original collection contained three Wikipedia imports. Scientific method and
 | [STEM Source Register](examples/knowledge/source-register.md) | Track provenance and identify the failed Wikipedia import |
 
 The Newton entries summarize primary accounts from the [Newton Project](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006). They identify their sources and limits; they are not full article imports. Web Search remains available, so verify whether cited evidence came from uploaded entries or external pages.
+
+## Optional References
+
+[Source examples](knowledge/reference.html) preserve research and historical alternatives. [Skill and tool examples](skills/reference.html) preserve the blank template, source interpretation exercise, creator failures, corrections, and test labels. These ordinary pages contain no hidden notes.

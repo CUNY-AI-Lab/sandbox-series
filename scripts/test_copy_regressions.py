@@ -60,6 +60,7 @@ class CopyRegressions(unittest.TestCase):
         cls.trees = {r:Parser((ROOT/r).read_text()).root for r in ROUTES}
         cls.decks = {r:t.all(lambda n:n.has_class('slide')) for r,t in cls.trees.items()}
         cls.example = Parser((ROOT/'examples.html').read_text()).root
+        cls.references = {r:Parser((ROOT/r/'reference.html').read_text()).root for r in ('knowledge','skills')}
     def slide(self, route, title):
         matches=[s for s in self.decks[route] if s.attrs['data-title']==title]
         self.assertEqual(len(matches),1, (route,title))
@@ -87,13 +88,13 @@ class CopyRegressions(unittest.TestCase):
                 self.assertEqual(heading.text(),title)
                 self.assertEqual(s.attrs['aria-label'],f'Slide {i}: {title}')
     def test_03_participant_copy_excludes_editorial_instructions(self):
-        for tree in [*self.trees.values(),self.example]:
+        for tree in [*self.trees.values(),self.example,*self.references.values()]:
             copy=authored(tree)
             self.assertNotRegex(copy,r'(?i)\b(the|facilitator|presenter)\b')
             self.assertFalse(prose_colons(copy))
             self.assertFalse(tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')))
     def test_04_explicit_deletions_stay_deleted(self):
-        for tree in [*self.trees.values(),self.example]:
+        for tree in [*self.trees.values(),self.example,*self.references.values()]:
             copy=normalized(tree.text()).casefold()
             for phrase in REJECTED:self.assertNotIn(phrase.casefold(),copy)
     def test_05_prompts_remain_exact(self):
@@ -103,7 +104,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Examine Assumptions','Compare Outputs','Gemma’s Response','Qwen’s Response','Add System Prompt','Open Chat Controls','Regenerate Responses','Compare Responses','Open Workspace','Review Custom Models','Model Configuration'])
+        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Examine Assumptions','Compare Outputs','Gemma’s Response','Qwen’s Response','Add System Prompt','Open Chat Controls','Regenerate Responses','Compare Responses','Open Workspace','Review Custom Models','Model Configuration','Add Prompt Suggestions'])
         self.assertIn('Base Models',self.slide('index.html','System Prompts').text())
         self.assertIn('What do you think this person wants to accomplish?',self.slide('index.html','Compare Outputs').text())
         handoff=self.by_id('car-wash-exercise')
@@ -124,7 +125,7 @@ class CopyRegressions(unittest.TestCase):
         compare=self.slide('index.html','Compare Responses').text()
         self.assertNotIn('settings unchanged',compare)
     def test_08_exact_selector_instruction(self):
-        for route,title in [('index.html','Select Models'),('index.html','Select STEM Games'),('knowledge/index.html','Review Model Settings'),('skills/index.html','Draft Skills')]:
+        for route,title in [('index.html','Select Models'),('index.html','Select STEM Games'),('knowledge/index.html','Save Initial Response'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
         root=self.decks['index.html'];self.assertEqual(root[3].attrs['data-title'],'Request Access');self.assertEqual(self.slide('index.html','Situating System Prompts').attrs['data-source-slide'],'7')
@@ -142,7 +143,7 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Knowledge Collections','Open Workspace','Review Model Settings','Select Documents','Open STEM Collection','Review Attached Knowledge','Check Game Sources','Check Citations','Build Knowledge Collections','Create Knowledge Collections','Attach Knowledge Collections','Test Retrieval'])
+        self.assert_order('knowledge/index.html',['Knowledge Collections','Choose Questions','Open Workspace','Review Model Settings','Save Initial Response','Retrieve Source Passages','Open STEM Collection','Review Attached Knowledge','Check Game Sources','Select Documents','Build Knowledge Collections','Create Knowledge Collections','Attach Knowledge Collections','Test Retrieval','Check Retrieval Problems'])
         attach=self.slide('knowledge/index.html','Attach Knowledge Collections').text()
         self.assertLess(attach.index('Add Content'),attach.index('Save & Update'))
         self.assertIn('processing',attach)
@@ -151,7 +152,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('Scenario JSON is a text file',self.slide('skills/index.html','Connect Resources').text())
         self.assertIn('Prism Laboratory is its starting game',self.slide('skills/index.html','Review Previous Work').text())
         self.assertIn('Send Begin Prism Laboratory',self.slide('skills/index.html','Inspect Game Rules').text())
-        self.assertIn('Send Begin Prism Laboratory',self.slide('index.html','STEM Adventure Games').text())
+        self.assertIn('Configure and run this game in Workshop 3',self.slide('index.html','STEM Adventure Games').text())
     def test_13_save_load_and_handoff_sequence(self):
         copy=self.slide('skills/index.html','Test Game Commands').text()
         self.assertLess(copy.index('save'),copy.index('download'))
@@ -161,15 +162,17 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('then send it',self.slide('skills/index.html','Discuss Play Records').text())
     def test_14_skill_comparisons_remove_attached_skill(self):
         copy=self.slide('skills/index.html','Test Skills').text()
-        for term in ['private model copy','Remove your skill','Attach your skill again','new chat','unchanged']:self.assertIn(term,copy)
+        for term in ['private copy of STEM Adventure Games','Remove your skill','Attach your skill again','new chat','unchanged','Integrations → Skills','Prism Laboratory JSON']:self.assertIn(term,copy)
         extend=self.slide('skills/index.html','Extend Procedures')
         self.assertTrue(extend.all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/adventure/prism.json'))
         self.assertIn('Integrations → Skills',extend.text())
     def test_15_reference_files_match(self):
-        for id,file in [('stem-system-copy','examples/stem-system-prompt.txt'),('stem-skill-copy','examples/stem-game-skill.md')]:
+        for id,file in [('stem-system-copy','examples/stem-system-prompt.txt')]:
             expected=re.sub(r'^---[\s\S]*?---\s*','',(ROOT/file).read_text()).strip()
             actual=self.example.all(lambda n:n.attrs.get('id')==id)[0].text().strip()
             self.assertEqual(actual,expected)
+        self.assertFalse(self.example.all(lambda n:n.attrs.get('id')=='stem-skill-copy'))
+        self.assertTrue(self.slide('skills/index.html','Structure Skills').all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/stem-game-skill.md'))
         for paragraph in self.by_id('stem-game-excerpt').text().split('\n\n'):
             self.assertIn(paragraph,(ROOT/'examples/stem-system-prompt.txt').read_text())
     def test_16_creators_remain_general_purpose(self):
@@ -184,7 +187,7 @@ class CopyRegressions(unittest.TestCase):
     def test_17_no_phantom_tool_or_missing_inputs(self):
         text=' '.join(s.text() for s in self.decks['skills/index.html'])
         self.assertNotIn('Check Source Imports',text)
-        self.assertIn('separate draft tool',self.slide('skills/index.html','Check Generated Code').text())
+        self.assertIn('separate draft tool',self.references['skills'].text())
         self.assertIn('Attach saved play records',self.slide('skills/index.html','Compare Game Records').text())
     def test_18_screenshots_and_controls_preserve_requested_evidence(self):
         for title,term in [('Compare Models','Compare'),('Open Chat Controls','System Prompt'),('Regenerate Responses','Regenerate')]:
@@ -212,7 +215,53 @@ class CopyRegressions(unittest.TestCase):
                 self.assertTrue(parent and parent.has_class('prompt-container'))
                 self.assertTrue(parent.all(lambda c:c.tag=='pre'))
             for child in n.children:visit(child,n)
-        for tree in [*self.trees.values(),self.example]:visit(tree)
+        for tree in [*self.trees.values(),self.example,*self.references.values()]:visit(tree)
+
+    def test_22_continuous_exercises_and_visible_references(self):
+        self.assertEqual(len(self.decks['knowledge/index.html']),22)
+        self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
+        for term in ['Private','remove copied users or groups','Access List','Save & Create']:
+            self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
+        attach=self.slide('skills/index.html','Attach Skills').text()
+        for term in ['private copy','Replace Extend STEM Adventures','saved draft','System Prompt to name your skill']:self.assertIn(term,attach)
+        self.assertIn('saved draft',self.slide('skills/index.html','Create Skills').text())
+        self.assertIn('saved question',self.slide('knowledge/index.html','Test Retrieval').text())
+        self.assertIn('source summary',self.slide('knowledge/index.html','Check Game Sources').text())
+        for route,titles in [('knowledge',['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']),('skills',['Write Instructions','Check Interpretations','Check Skill Drafts','Check Generated Code'])]:
+            current=[s.attrs['data-title'] for s in self.decks[route+'/index.html']]
+            for title in titles:
+                self.assertNotIn(title,current)
+                self.assertIn(title,self.references[route].text())
+            self.assertFalse(self.references[route].all(lambda n:'hidden' in n.attrs or n.tag=='details' or n.has_class('slide-notes')))
+        commands=self.references['skills'].all(lambda n:n.attrs.get('id')=='game-command-copy')[0].text().splitlines()
+        self.assertEqual(commands,json.loads((ROOT/'examples/adventure/winning-commands.json').read_text()))
+        self.assertIn('Immediately after take prism, repeat take prism',self.slide('skills/index.html','Test Game Commands').text())
+        self.assertIn('Keep your creator draft separate',self.slide('skills/index.html','Install Tool Code').text())
+        self.assertIn('render_stem_adventure',self.slide('skills/index.html','Inspect Tool Results').text())
+
+    def test_23_downloads_and_fresh_screenshots(self):
+        for route,title,names in [('knowledge/index.html','Choose Reference Materials',['newton-light-colour.md','newton-experimental-variants.md','game-procedure-evaluation.md']),('skills/index.html','Draft Skills',['stem-game-skill.md']),('skills/index.html','Extend Procedures',['prism.json','aperture.json']),('skills/index.html','Create Adventure Tools',['stem_adventure.py'])]:
+            downloads=self.slide(route,title).all(lambda n:n.tag=='a' and 'download' in n.attrs)
+            for name in names:
+                match=[n for n in downloads if n.attrs['download']==name]
+                self.assertEqual(len(match),1,name)
+                self.assertEqual(Path(match[0].attrs['href']).name,name)
+                self.assertTrue((ROOT/Path(route).parent/match[0].attrs['href']).is_file())
+        for route,title in [('index.html','Model Configuration'),('knowledge/index.html','Review Model Settings'),('skills/index.html','Create Skills')]:
+            self.assertIn('2026-09-16',self.slide(route,title).all(lambda n:n.tag=='img')[0].attrs['src'])
+
+    def test_24_knowledge_precedes_skills_and_tools(self):
+        text=' '.join(s.text() for s in self.decks['knowledge/index.html'])
+        self.assertNotIn('Begin Prism Laboratory',text)
+        self.assertNotIn('enable Extend STEM Adventures',text)
+        self.assertNotIn('render_stem_adventure',text)
+        self.assertIn('Leave Skills and Tools unselected',text)
+        self.assertIn('Skills and Tools are added in Workshop 3',text)
+        self.assertIn('set Function Calling to Legacy for this workshop',text)
+        check=self.slide('knowledge/index.html','Check Game Sources')
+        self.assertTrue(check.all(lambda n:n.tag=='a' and n.attrs.get('download')=='prism-scenario.md'))
+        im=self.slide('knowledge/index.html','Review Attached Knowledge').all(lambda n:n.tag=='img')[0]
+        self.assertIn('knowledge-attachments-2026-09-16',im.attrs['src'])
     def test_20_ninety_minute_plans(self):
         text=(ROOT/'WORKSHOP.md').read_text()
         plans=re.findall(r'### Lesson Plan\n(.*?)(?=\n\n[^|]|\Z)',text,re.S)

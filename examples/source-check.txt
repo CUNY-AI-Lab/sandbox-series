@@ -1,0 +1,1 @@
+When asked to check a historical claim from a STEM adventure, retrieve relevant source text. Quote the passage and identify its file. State what it supports and what remains uncertain. If the source contains an error or does not address the claim, explain what cannot be verified.

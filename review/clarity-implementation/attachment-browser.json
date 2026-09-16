@@ -1,0 +1,66 @@
+[
+  {
+    "clientHeight": 654,
+    "clientWidth": 1280,
+    "height": 720,
+    "imageHeight": 550.34375,
+    "scrollHeight": 654,
+    "scrollWidth": 1280,
+    "title": "Review Model Settings",
+    "url": "http://localhost:8766/knowledge/#6",
+    "width": 1280
+  },
+  {
+    "clientHeight": 654,
+    "clientWidth": 1280,
+    "height": 720,
+    "imageHeight": 550.34375,
+    "scrollHeight": 654,
+    "scrollWidth": 1280,
+    "title": "Review Attached Knowledge",
+    "url": "http://localhost:8766/knowledge/#12",
+    "width": 1280
+  },
+  {
+    "clientHeight": 654,
+    "clientWidth": 1280,
+    "height": 720,
+    "scrollHeight": 654,
+    "scrollWidth": 1280,
+    "title": "Attach Knowledge Collections",
+    "url": "http://localhost:8766/knowledge/#18",
+    "width": 1280
+  },
+  {
+    "clientHeight": 732,
+    "clientWidth": 390,
+    "height": 844,
+    "imageHeight": 609.6171875,
+    "scrollHeight": 732,
+    "scrollWidth": 390,
+    "title": "Review Model Settings",
+    "url": "http://localhost:8766/knowledge/#6",
+    "width": 390
+  },
+  {
+    "clientHeight": 732,
+    "clientWidth": 390,
+    "height": 844,
+    "imageHeight": 609.6171875,
+    "scrollHeight": 732,
+    "scrollWidth": 390,
+    "title": "Review Attached Knowledge",
+    "url": "http://localhost:8766/knowledge/#12",
+    "width": 390
+  },
+  {
+    "clientHeight": 732,
+    "clientWidth": 390,
+    "height": 844,
+    "scrollHeight": 732,
+    "scrollWidth": 390,
+    "title": "Attach Knowledge Collections",
+    "url": "http://localhost:8766/knowledge/#18",
+    "width": 390
+  }
+]

@@ -71,6 +71,25 @@ for route,label in [('', 'Composing system prompts'),('knowledge','Curating know
   diff=''.join(difflib.unified_diff(before.splitlines(True),mirror.splitlines(True),fromfile='before original HTML',tofile='after consolidated workshop'))
   if write:beforefile.write_text(before);afterfile.write_text(diff)
   elif not afterfile.exists() or afterfile.read_text()!=diff:issues.append(route+' copy diff out of sync')
+# Optional material stays visible on ordinary reference pages and retains source custody.
+for route in ['knowledge','skills']:
+ base=R/route; tree=Parser((base/'reference.html').read_text()).root
+ check_participant_copy(tree,route+' reference')
+ if tree.all(lambda n:n.has_class('slide-notes') or n.tag=='details' or 'hidden' in n.attrs):issues.append(route+' hidden reference content')
+ ids=[n.attrs['id'] for n in tree.all(lambda n:'id' in n.attrs)]
+ if len(ids)!=len(set(ids)):issues.append(route+' duplicate reference ids')
+ for n in tree.all(lambda n:'data-example-copy' in n.attrs):
+  if n.attrs['data-example-copy'] not in ids:issues.append(route+' missing reference copy target')
+ for n in tree.all(lambda n:n.has_class('reference-example')):
+  if n.attrs.get('data-original'):found[n.attrs['data-original']]=n.text()
+ for n in tree.all(lambda n:n.tag in {'img','script','link','a'}):
+  target=n.attrs.get('src') or n.attrs.get('href','')
+  if target and not re.match(r'^(https?:|mailto:|#)',target):
+   if not (base/target.split('#')[0].split('?')[0]).exists():issues.append(route+' missing reference resource '+target)
+ content=clean(render(tree.all(lambda n:n.tag=='main')[0]))
+ dest=base/'REFERENCE.md'
+ if write:dest.write_text(content)
+ elif not dest.exists() or dest.read_text()!=content:issues.append(route+' reference mirror out of sync')
 retired=json.loads((R/'review/retired-sections.json').read_text())['imported']
 for key,record in retained.items():
  if key in retired:

@@ -1,0 +1,631 @@
+[
+  {
+    "id": "01",
+    "title": "Separate demonstration and practice",
+    "priority": "First",
+    "targets": [
+      [
+        "P",
+        11
+      ],
+      [
+        "P",
+        14
+      ]
+    ],
+    "problem": "Both slides tell participants to send the car-wash question. The first sits before the saved Gemma and Qwen responses; the second begins the hands-on comparison. Their different purposes are not apparent.",
+    "proposal": "Keep both uses of the exact prompt. Make slide 11 an invitation to consider the demonstration, then retain the explicit new-chat task on slide 14.",
+    "examples": [
+      {
+        "location": "P11",
+        "before": "Ask both models this question.",
+        "after": "Consider this question."
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "title": "Remove repeated model setup",
+    "priority": "Next",
+    "targets": [
+      [
+        "P",
+        21
+      ],
+      [
+        "P",
+        22
+      ]
+    ],
+    "problem": "Slide 22 repeats name, base-model, and system-prompt instructions immediately after the creation screenshot. Its useful addition is the description and prompt suggestions.",
+    "proposal": "Give slide 22 that specific job. Keep the definition that creating a custom model does not train a new base model with the initial model explanation or in the visible model reference.",
+    "examples": [
+      {
+        "location": "P22",
+        "before": "### Create Custom Models\n\nCustom models combine a base model with instructions, documents, and tools. Creating a custom model does not train a new base model.\n\n- Enter a name and description that students or colleagues will recognize.\n\n- Select a base model and add your tested system prompt.\n\n- Add prompt suggestions for tasks your model should support.\n\nUsers select your custom model to use its instructions and resources.\n\n[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)",
+        "after": "### Add Prompt Suggestions\n\nAdd a description and prompt suggestions for tasks your model should support.\n\nUsers select your custom model to use its instructions and resources.\n\n[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "title": "Continue the same game",
+    "priority": "Next",
+    "targets": [
+      [
+        "P",
+        25
+      ],
+      [
+        "P",
+        28
+      ]
+    ],
+    "problem": "Participants are told to begin Prism Laboratory and enter help twice, separated by the model-editor inspection. A second start is unnecessary for the subsequent questions.",
+    "proposal": "Keep the opening command on slide 25. Continue that game on slide 28.",
+    "examples": [
+      {
+        "location": "P28",
+        "before": "Send Begin Prism Laboratory, then enter help and go north inside your game.",
+        "after": "Return to your game and enter go north."
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Use a readable prompt excerpt",
+    "priority": "First",
+    "targets": [
+      [
+        "P",
+        27
+      ]
+    ],
+    "problem": "The first prompt example for STEM introduces render_stem_adventure, scenario_json, and model context before participants learn the tool interface or scenario format. Those details are needed later, but they distract from the role of instructions here.",
+    "proposal": "Quote two complete sentences already present in the saved system prompt. Keep the complete technical prompt in its visible reference. This changes the teaching excerpt, not the saved model configuration.",
+    "examples": [
+      {
+        "location": "P27",
+        "before": "### Read Game Instructions\n\nRead this excerpt from STEM Adventure Games.\n\n```text\nWhen a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.\n\nSTEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.\n```\n\nWhich instructions guide model behavior? Which actions require a tool?\n\n[Read full system prompt](examples.html#stem-system)",
+        "after": "### Read Game Instructions\n\nRead these excerpts from STEM Adventure Games.\n\n```text\nSTEM Adventure controls rooms, inventory, prerequisites, observations, and completion.\n\nAsk users to type discuss inside the game, review the message box, and send their record before interpreting their choices.\n```\n\nWhich part runs game commands? What must users send before discussing their choices?\n\n[Read full system prompt](examples.html#stem-system)"
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "title": "Give saving one clear place",
+    "priority": "Next",
+    "targets": [
+      [
+        "P",
+        38
+      ],
+      [
+        "P",
+        39
+      ],
+      [
+        "P",
+        40
+      ],
+      [
+        "P",
+        42
+      ]
+    ],
+    "problem": "The closing sequence repeatedly asks participants to test, revise, and save. Slide 39 already covers retesting; slide 42 already specifies the record to keep. Slide 40 adds another checklist before the actual Save & Create action.",
+    "proposal": "Keep diagnostic guidance on slide 39 and the recording table on slide 42. Make slide 40 solely the saving step. Retain the final agenda as an intentional reminder.",
+    "examples": [
+      {
+        "location": "P40",
+        "before": "### Save Prompts\n\n- Save your prompt text, model ID, and responses.\n\n- Test a normal request, an incomplete request, and a request that crosses a boundary.\n\n- Revise one instruction and repeat your test in a new chat.\n\nSave your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.",
+        "after": "### Save Prompts\n\nSave your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2."
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "title": "Name the question clearly",
+    "priority": "Next",
+    "targets": [
+      [
+        "K",
+        4
+      ]
+    ],
+    "problem": "Review Custom Models describes choosing a document question, not reviewing model settings. The opening sentence also obscures whether participants should ask about the documents or ask something the documents can answer.",
+    "proposal": "Use a title and sentence that name the actual task.",
+    "examples": [
+      {
+        "location": "K4",
+        "before": "### Review Custom Models",
+        "after": "### Choose Questions"
+      },
+      {
+        "location": "K4",
+        "before": "Choose a question about documents you want your custom model to use.",
+        "after": "Choose a question your documents can answer."
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "title": "Make the collection comparison continuous",
+    "priority": "First",
+    "targets": [
+      [
+        "K",
+        6
+      ],
+      [
+        "K",
+        13
+      ],
+      [
+        "K",
+        14
+      ],
+      [
+        "K",
+        26
+      ]
+    ],
+    "problem": "The first response is saved on slide 6, while slide 26 says to repeat “your first question” after listing three new questions. Slide 14 repeats the source-checking task from slide 13.",
+    "proposal": "Repurpose slide 14 as Save Initial Response and place it immediately after slide 6. This also lets slide 6 return to a short screenshot caption. Keep citation checking on slide 13 and name the saved question explicitly on slide 26. Record any other sources the model uses; attachment alone should not be described as a controlled comparison.",
+    "examples": [
+      {
+        "location": "K6",
+        "before": "Review Base Model and System Prompt. Start a new chat. Select model ID on bottom right of message box. Choose your custom model and ask a question about your documents. Save its response before attaching documents.",
+        "after": "Review Base Model and System Prompt."
+      },
+      {
+        "location": "K14",
+        "before": "### Check Citations\n\nCheck a response from STEM Adventure Games against its cited passage.\n\n- Which apparatus did Newton describe?\n\n- Which experimental changes did he examine?\n\nOpen each citation. Compare quoted wording and interpretation with source text.",
+        "after": "### Save Initial Response\n\nStart a new chat. Select model ID on bottom right of message box. Choose your custom model.\n\nAsk your document question and save its response before attaching documents. Record any sources it uses."
+      },
+      {
+        "location": "K26",
+        "before": "Repeat your first question without changing models or system prompts. Record which documents you used, which passages were retrieved, and whether those passages support your model’s response.",
+        "after": "Repeat your saved question after attaching documents. Keep base model and system prompt unchanged. Compare responses and check which source passages were used."
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "title": "Combine source-selection guidance",
+    "priority": "Next",
+    "targets": [
+      [
+        "K",
+        7
+      ],
+      [
+        "K",
+        16
+      ]
+    ],
+    "problem": "Selecting a small, readable set and organizing filenames and headings are split across two similar slides. The current list also mixes document types with file formats.",
+    "proposal": "Combine those instructions on slide 7 and remove slide 16. Keep research and teaching materials as equally available choices.",
+    "examples": [
+      {
+        "location": "K7",
+        "before": "### Select Documents\n\nChoose documents with clear headings and readable text.\n\n- Course syllabi, readings, or assignment instructions\n\n- Research papers, methods, or annotated bibliographies\n\n- Markdown, plain text, or well-formatted PDFs\n\nCheck scans and complex PDFs before uploading. Convert them to text if necessary.\n\n[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)",
+        "after": "### Select Documents\n\nBegin with a few documents you know well enough to check.\n\n- Course materials, such as syllabi, readings, or assignment instructions\n- Research papers, methods, or annotated bibliographies\n\nUse Markdown, plain text, or readable PDFs. Name files clearly and use headings to separate sections.\n\nCheck scanned or complex PDFs before uploading. Convert them to text if needed.\n\n[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)"
+      },
+      {
+        "location": "K16",
+        "before": "### Organize Documents\n\nBegin with a few documents and test how your model uses them.\n\n- Name files so students or colleagues can identify them.\n\n- Use headings to distinguish sections.\n\n- Check whether your model retrieves relevant passages before adding more documents.",
+        "after": "[Remove this slide after merging its filename and heading guidance into Select Documents.]"
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "title": "Create collections earlier",
+    "priority": "First",
+    "targets": [
+      [
+        "K",
+        15
+      ],
+      [
+        "K",
+        17
+      ],
+      [
+        "K",
+        18
+      ],
+      [
+        "K",
+        19
+      ],
+      [
+        "K",
+        20
+      ],
+      [
+        "K",
+        21
+      ],
+      [
+        "K",
+        22
+      ],
+      [
+        "K",
+        23
+      ],
+      [
+        "K",
+        24
+      ],
+      [
+        "K",
+        25
+      ],
+      [
+        "K",
+        26
+      ]
+    ],
+    "problem": "The deck presents multiple new source-selection and research exercises before participants reach collection creation on slide 24. The lesson plan places creation much earlier. Retrieval troubleshooting also appears before the participant has created a collection.",
+    "proposal": "Use the 22-slide Knowledge order listed below. Move slides 15 and 20–23 unchanged to a visible reference page with links from source selection. Move troubleshooting after retrieval testing. These are alternative applications, not five more required exercises. Research remains present in the primary question, document choices, and participant-owned collection.",
+    "examples": []
+  },
+  {
+    "id": "10",
+    "title": "Distinguish source summaries from primary text",
+    "priority": "First",
+    "targets": [
+      [
+        "K",
+        10
+      ],
+      [
+        "K",
+        13
+      ],
+      [
+        "K",
+        19
+      ]
+    ],
+    "problem": "Newton: Light and Colour is a workshop-authored summary with a link to Newton’s account. Asking participants to quote “Newton’s account” without naming that distinction can make a quotation from the summary look like Newton’s own wording.",
+    "proposal": "Identify the entry as a summary in the slide and prompt. Keep a direct primary-source link available for anyone checking Newton’s wording.",
+    "examples": [
+      {
+        "location": "K13",
+        "before": "Compare Prism Laboratory with Newton’s account.",
+        "after": "Compare Prism Laboratory with Newton: Light and Colour, a summary of Newton’s account."
+      },
+      {
+        "location": "K13",
+        "before": "Which apparatus details from Newton’s account does Prism Laboratory simplify? Identify the uploaded source and quote a relevant passage. If it is unavailable, say so.",
+        "after": "Using Newton: Light and Colour, identify apparatus details simplified in Prism Laboratory. Quote a relevant passage and identify this entry as a source summary. If it is unavailable, say so."
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Avoid implying automatic source use",
+    "priority": "Next",
+    "targets": [
+      [
+        "K",
+        8
+      ],
+      [
+        "K",
+        17
+      ],
+      [
+        "K",
+        26
+      ]
+    ],
+    "problem": "The three-step retrieval explanation reads as an automatic sequence. The documentation distinguishes automatic retrieval from native tool calling, where the model must request source material. Participants need one practical check, not a new settings lesson.",
+    "proposal": "Keep the explanation simple and ask which passages were actually used. Do not introduce embedding settings, context modes, or additional configuration exercises.",
+    "examples": [
+      {
+        "location": "K8",
+        "before": "Your model uses retrieved passages to generate a response.",
+        "after": "Your model can use retrieved passages in its response."
+      },
+      {
+        "location": "K8",
+        "before": "Check whether retrieved passages address your question and support claims in each response.",
+        "after": "Which passages did your model use, and do they support its claims?"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Test the skill participants created",
+    "priority": "First",
+    "targets": [
+      [
+        "S",
+        4
+      ],
+      [
+        "S",
+        17
+      ],
+      [
+        "S",
+        19
+      ],
+      [
+        "S",
+        20
+      ],
+      [
+        "S",
+        21
+      ],
+      [
+        "S",
+        23
+      ]
+    ],
+    "problem": "Participants draft a skill, attach it to an unspecified model, then switch to STEM Adventure Games and its existing Extend STEM Adventures skill. The later instruction to remove “your skill” no longer identifies a single configuration. The saved STEM system prompt also names the existing skill.",
+    "proposal": "Create a private copy of STEM Adventure Games before editing. Use one saved draft throughout creation, attachment, extension, and comparison. Replace the existing attached skill, update the private system prompt to name the draft, and leave the original shared model unchanged. Document the actual Clone control with a current Sandbox screenshot before implementing that new step. Open WebUI documents Clone, but its availability for a participant account still needs checking.",
+    "examples": [
+      {
+        "location": "S17",
+        "before": "Draft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = \"\"). Preserve game rules. Include trigger, 3–5 steps, output, and two proposed tests. Do not invent successful tool calls.",
+        "after": "Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed."
+      },
+      {
+        "location": "S20",
+        "before": "Open **Workspace → Models** and edit your model.",
+        "after": "Open your private copy of STEM Adventure Games under **Workspace → Models**."
+      },
+      {
+        "location": "S20",
+        "before": "Select your skill under **Skills**.",
+        "after": "Replace Extend STEM Adventures with your saved draft under **Skills**. Update System Prompt to name your skill."
+      },
+      {
+        "location": "S21",
+        "before": "Open STEM Adventure Games. Attach [Prism Laboratory JSON](examples/adventure/prism.json) and enable Extend STEM Adventures under **Integrations → Skills**. Send this request.",
+        "after": "Open your private copy of STEM Adventure Games. Attach [Prism Laboratory JSON](examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request."
+      },
+      {
+        "location": "S23",
+        "before": "Use a private model copy for this comparison.",
+        "after": "Use your private copy of STEM Adventure Games for both tests. Remove any additional skills from this copy before comparing your draft."
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Choose one drafting route",
+    "priority": "Next",
+    "targets": [
+      [
+        "S",
+        13
+      ],
+      [
+        "S",
+        14
+      ],
+      [
+        "S",
+        15
+      ],
+      [
+        "S",
+        16
+      ],
+      [
+        "S",
+        17
+      ],
+      [
+        "S",
+        18
+      ],
+      [
+        "S",
+        22
+      ]
+    ],
+    "problem": "The workshop explains a skill structure, asks Kale Skill Builder to draft it, then gives another blank template and later introduces an unrelated source-interpretation skill. It is unclear whether participants should complete all of them.",
+    "proposal": "Keep the structure explanation followed by one builder-assisted draft. Move the blank template and Check Interpretations to visible reference material as alternatives. Keep the creators’ system prompts general-purpose; only this workshop request is STEM-specific.",
+    "examples": []
+  },
+  {
+    "id": "14",
+    "title": "Place the repeated pickup precisely",
+    "priority": "Next",
+    "targets": [
+      [
+        "S",
+        8
+      ]
+    ],
+    "problem": "“Try taking an item twice” follows the entire winning sequence, when the player is no longer in the room containing that item. A reader can execute a different test from the one intended.",
+    "proposal": "Specify the item and repeat its command immediately. Provide the existing command list as readable text with a copy control, rather than making participants interpret a JSON array.",
+    "examples": [
+      {
+        "location": "S8",
+        "before": "Follow [winning command sequence](examples/adventure/winning-commands.json). Try taking an item twice.",
+        "after": "Follow [winning command sequence](examples/adventure/winning-commands.json). Immediately after take prism, repeat take prism and check its response."
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Explain the game-file instructions",
+    "priority": "Next",
+    "targets": [
+      [
+        "S",
+        5
+      ],
+      [
+        "S",
+        15
+      ],
+      [
+        "S",
+        16
+      ]
+    ],
+    "problem": "Scenario JSON is defined once, but “within the tool contract” and “winning and blocked commands” require participants to infer what to inspect. The linked skill contains the exact fields, so the slide can point to those without repeating a specification.",
+    "proposal": "Keep the technical field names in the linked instructions. Make each slide instruction say what the participant should produce or test.",
+    "examples": [
+      {
+        "location": "S15",
+        "before": "Specify how your model should change an experiment. Follow [supported fields](examples/stem-game-skill.md) when editing scenario JSON.",
+        "after": "Specify one change to your experiment. Use fields listed in [scenario instructions](examples/stem-game-skill.md) when editing your game file."
+      },
+      {
+        "location": "S15",
+        "before": "3. Revise scenario JSON within the tool contract.",
+        "after": "3. Revise scenario JSON using fields listed in attached instructions."
+      },
+      {
+        "location": "S15",
+        "before": "4. Provide winning and blocked commands, then open the game.",
+        "after": "4. List commands that complete your game and one command that should fail, then open your game."
+      },
+      {
+        "location": "S16",
+        "before": "Keep artifacts and test results distinguishable.",
+        "after": "Separate your game file, source evidence, and test results."
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Move validator detours to visible references",
+    "priority": "First",
+    "targets": [
+      [
+        "S",
+        24
+      ],
+      [
+        "S",
+        27
+      ]
+    ],
+    "problem": "Both creator-failure examples are useful, but they introduce a record-interpreter skill and a separate validator tool while the main exercise is still configuring the adventure. Slide 27 explicitly says it is a separate tool, confirming the switch rather than resolving the extra task.",
+    "proposal": "Retain both examples, their original responses, and executed or unrun test labels in visible linked reference pages. Use one failed command and one source check from the actual adventure in the 90-minute path. Creator evaluation remains in the workshop through reviewing the requested draft and testing its behavior; the separate cases become optional extensions.",
+    "examples": []
+  },
+  {
+    "id": "17",
+    "title": "Identify which tool code to install",
+    "priority": "First",
+    "targets": [
+      [
+        "S",
+        25
+      ],
+      [
+        "S",
+        26
+      ]
+    ],
+    "problem": "Tool Creator generates a new draft, but the installation slide tells participants to paste the already tested STEM Adventure implementation. Without stating that change, the sequence suggests the generated code is the code being installed and tested.",
+    "proposal": "Name the two artifacts explicitly. Use the tested tool for the workshop installation, retain creator output as a draft, and treat testing that draft as separate work. If the goal is to install each generated draft during the session, the lesson plan must instead reserve time for code review and execution.",
+    "examples": [
+      {
+        "location": "S25",
+        "before": "Tool Creator is a custom model that drafts Python tools for tasks you describe.",
+        "after": "Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop."
+      },
+      {
+        "location": "S26",
+        "before": "Paste [STEM Adventure code](examples/tools/stem_adventure.py) and review it.",
+        "after": "Paste and review [tested STEM Adventure code](examples/tools/stem_adventure.py). Keep your creator draft separate."
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Inspect the adventure’s own tool call",
+    "priority": "First",
+    "targets": [
+      [
+        "S",
+        28
+      ]
+    ],
+    "problem": "Inspect Tool Results asks for a Newton quotation. That invokes knowledge retrieval, not the adventure tool participants just installed. Source checking already has a complete exercise in Workshop 2.",
+    "proposal": "Inspect the actual adventure call at this point. Keep historical-source comparison in Compare Game Records.",
+    "examples": [
+      {
+        "location": "S28",
+        "before": "### Inspect Tool Results\n\nAsk STEM Adventure Games to quote from Newton: Light and Colour and identify its source.\n\n- Open tool-call details in its response.\n\n- Check which file was retrieved and what text was returned.\n\n- Open cited passages and compare them with your model’s claims.\n\nA claim to have searched is not evidence that a tool ran. Inspect recorded calls and results.",
+        "after": "### Inspect Tool Results\n\nAfter opening your game, inspect its STEM Adventure tool call.\n\n- Check which scenario was passed to render_stem_adventure.\n- Compare returned result with your request.\n- Confirm displayed game matches that scenario.\n\nSave any error before revising your request."
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Label examples by where they belong",
+    "priority": "First",
+    "targets": [],
+    "problem": "The page titled System Prompt Examples includes the full Extend STEM Adventures skill and gives it a Copy prompt button. A first-time reader can paste a skill into System Prompt without realizing the intended destination. The short source-checking example also follows the long skill specification.",
+    "proposal": "Keep system prompts on this page. Link the skill to its existing, visible Markdown file from the Skills workshop, or label its copy control Copy skill and state Workspace → Skills → Instructions as its destination. Put the short source-checking prompt before the full STEM system prompt and provide links to each example near the top.",
+    "examples": []
+  },
+  {
+    "id": "20",
+    "title": "Make artifact links match their action",
+    "priority": "Next",
+    "targets": [
+      [
+        "K",
+        19
+      ],
+      [
+        "S",
+        8
+      ],
+      [
+        "S",
+        17
+      ],
+      [
+        "S",
+        21
+      ],
+      [
+        "S",
+        25
+      ]
+    ],
+    "problem": "Several instructions say to download or attach a linked Markdown or JSON file, while the anchor simply opens the file. That adds an undocumented browser step before participants can continue. The same material appears as instructions, a scenario, and a play record, which should remain distinct.",
+    "proposal": "Provide explicit download links for files participants must upload, plus readable previews where useful. Use the existing three terms consistently—skill instructions, scenario JSON, play record. Do not add new names for these files. Check actual downloaded filenames and upload behavior before publishing the control changes.",
+    "examples": []
+  },
+  {
+    "id": "21",
+    "title": "Match screenshots to the action",
+    "priority": "First",
+    "targets": [
+      [
+        "P",
+        21
+      ],
+      [
+        "K",
+        6
+      ],
+      [
+        "S",
+        19
+      ]
+    ],
+    "problem": "Review Model Settings shows an empty creation form rather than a configured model with values to inspect. The shared model-editor image is also visibly soft at presentation size. Create Skills shows a saved skill instead of its creation form. These images load successfully but do not fully demonstrate the requested action.",
+    "proposal": "Retake the model creation form for P21, a populated custom-model editor for K6, and the actual skill creation form for S19. Keep the controls readable and annotate only the fields needed for that step. Preserve the corrected Workspace, Controls, and Regenerate images. These captures are proposed, not taken in this review.",
+    "examples": []
+  }
+]

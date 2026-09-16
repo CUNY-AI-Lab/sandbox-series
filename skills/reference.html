@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Skill &amp; Tool Examples | CUNY AI Lab</title><link href="../css/styles.css" rel="stylesheet"/><link href="../css/reference.css" rel="stylesheet"/></head><body><main><h1>Skill &amp; Tool Examples</h1><p>Choose an example to adapt for your teaching or research.</p><nav aria-label="Workshop links"><a href="./">Return to workshop</a> · <a href="../examples.html">System prompt examples</a></nav><nav aria-label="Example links"><a href="#write-instructions">Write Instructions</a> · <a href="#check-interpretations">Check Interpretations</a> · <a href="#check-skill-drafts">Check Skill Drafts</a> · <a href="#check-generated-code">Check Generated Code</a> · <a href="#game-commands">Test Game Commands</a></nav><section class="reference-example" data-original="skills:26" id="write-instructions"><h2>Write Instructions</h2><p>Describe when to use your skill, which steps to follow, and when to pause.</p><p>Paste into Instructions under Workspace → Skills → Create.</p><div class="prompt-container"><button class="copy-btn" data-example-copy="skills-tpl-full-skill">Copy skill</button><pre class="prompt-block" id="skills-tpl-full-skill">Use this skill when [specific request or action].
+
+1. [First step]
+2. [Next step]
+3. [What to check before continuing]
+4. [When to wait for user input]
+
+Format responses as [required structure].</pre></div></section><section class="reference-example" id="check-interpretations"><h2>Check Interpretations</h2><p>Use this draft to check an interpretation against a source passage.</p><p>Paste into Instructions under Workspace → Skills → Create.</p><div class="template"><div class="prompt-container"><button class="copy-btn" data-example-copy="research-skill">Copy skill</button><pre class="prompt-block" id="research-skill">When the user asks whether a passage supports a claim, ask for both if either is missing.
+
+1. Quote the relevant passage and identify its source. Do not invent missing metadata.
+2. State what the passage directly supports.
+3. Identify an inference or competing reading that needs further evidence.
+4. Ask one question that would help resolve the difference, then wait.
+
+Keep the quotation separate from your interpretation. If the source is unavailable, explain what cannot be checked.</pre></div></div><p class="small">Test it with supported, overstated, and unsupported claims from public or approved material.</p></section><section class="reference-example" id="check-skill-drafts"><h2>Check Skill Drafts</h2><p>This example has no commands or events but reports completion. Can a skill establish that play occurred?</p><div class="prompt-container"><button class="copy-btn" data-example-copy="skill-consistency-test">Copy prompt</button><pre class="prompt-block" id="skill-consistency-test">{"commands":[],"events":[],"result":{"complete":true}}</pre></div><p>An empty history cannot establish completion. Request a full record or replay.</p><p>Send this example to Kale Skill Builder with your skill draft. Check whether revised instructions flag missing evidence.</p><p><a href="../examples/creators/record-interpreter-skill.md">Read corrected skill draft</a> · <a href="../review/live/skill-builder-consistency-failure.md">Inspect initial response</a></p></section><section class="reference-example" id="check-generated-code"><h2>Check Generated Code</h2><p>This recorded test checks a separate draft tool that validates play records. Each command must be text.</p><div class="prompt-container"><button class="copy-btn" data-example-copy="creator-failure">Copy prompt</button><pre class="prompt-block" id="creator-failure">{"commands":[42],"events":[{"command":42,"valid":false}]}</pre></div><p>Expected behavior is to reject numeric commands. Initial creator output accepted them.</p><p>Send observed failure back to Tool Creator, then repeat your tests.</p><p><a href="../review/live/record-validator-before.py">Inspect original draft</a> · <a href="../examples/creators/record-validator.py">Read corrected tool</a> · <a href="../review/live/tool-creator-corrected-tests.json">Review executed tests</a></p></section><section class="reference-example" id="game-commands"><h2>Test Game Commands</h2><p>Enter each command separately inside Prism Laboratory.</p><div class="prompt-container"><button data-example-copy="game-command-copy">Copy commands</button><pre class="prompt-block" id="game-command-copy">go north
+take prism
+take screen
+go south
+go east
+open shutter
+use prism
+use screen
+test red light
+record result</pre></div><p>Immediately after take prism, repeat take prism and check its response before continuing.</p><p><a download="winning-commands.json" href="../examples/adventure/winning-commands.json">Download commands</a></p></section></main><p aria-live="polite" id="copy-status"></p><script src="../js/examples.js?v=20260916"></script></body></html>

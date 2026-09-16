@@ -1,0 +1,614 @@
+[
+  {
+    "workshop": "P",
+    "old_slide": 1,
+    "title": "Composing system prompts",
+    "destination": "#1"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 2,
+    "title": "Workshop Roadmap",
+    "destination": "#2"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 3,
+    "title": "Workshop Agenda",
+    "destination": "#3"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 4,
+    "title": "Request Access",
+    "destination": "#4"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 5,
+    "title": "System Prompts",
+    "destination": "#5"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 6,
+    "title": "Select Models",
+    "destination": "#6"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 7,
+    "title": "Chat Features",
+    "destination": "#7"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 8,
+    "title": "Compare Models",
+    "destination": "#8"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 9,
+    "title": "Who Was Late?",
+    "destination": "#9"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 10,
+    "title": "Examine Assumptions",
+    "destination": "#10"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 11,
+    "title": "Compare Outputs",
+    "destination": "#11"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 12,
+    "title": "Gemma’s Response",
+    "destination": "#12"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 13,
+    "title": "Qwen’s Response",
+    "destination": "#13"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 14,
+    "title": "Compare Models",
+    "destination": "#14"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 15,
+    "title": "Add System Prompt",
+    "destination": "#15"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 16,
+    "title": "Open Chat Controls",
+    "destination": "#16"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 17,
+    "title": "Regenerate Responses",
+    "destination": "#17"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 18,
+    "title": "Compare Responses",
+    "destination": "#18"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 19,
+    "title": "Open Workspace",
+    "destination": "#19"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 20,
+    "title": "Review Custom Models",
+    "destination": "#20"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 21,
+    "title": "Model Configuration",
+    "destination": "#21"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 22,
+    "title": "Create Custom Models",
+    "destination": "#22"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 23,
+    "title": "Situating System Prompts",
+    "destination": "#23"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 24,
+    "title": "Select STEM Games",
+    "destination": "#24"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 25,
+    "title": "STEM Adventure Games",
+    "destination": "#25"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 26,
+    "title": "Inspect System Prompt",
+    "destination": "#26"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 27,
+    "title": "Read Game Instructions",
+    "destination": "#27"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 28,
+    "title": "Test Game Instructions",
+    "destination": "Removed; game exercise begins in skills/#7"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 29,
+    "title": "Adapt Research Prompts",
+    "destination": "#28"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 30,
+    "title": "Draft System Prompts",
+    "destination": "#29"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 31,
+    "title": "Define Prompt Components",
+    "destination": "#30"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 32,
+    "title": "Define Context",
+    "destination": "#31"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 33,
+    "title": "Write Procedures",
+    "destination": "#32"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 34,
+    "title": "Set Constraints",
+    "destination": "#33"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 35,
+    "title": "Set Tone",
+    "destination": "#34"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 36,
+    "title": "Specify Format",
+    "destination": "#35"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 37,
+    "title": "Refine Instructions",
+    "destination": "#36"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 38,
+    "title": "Extend Instructions",
+    "destination": "#37"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 39,
+    "title": "Review Common Problems",
+    "destination": "#38"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 40,
+    "title": "Save Prompts",
+    "destination": "#39"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 41,
+    "title": "Share Custom Models",
+    "destination": "#40"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 42,
+    "title": "Record Comparisons",
+    "destination": "#41"
+  },
+  {
+    "workshop": "P",
+    "old_slide": 43,
+    "title": "Prepare Source Documents",
+    "destination": "#42"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 1,
+    "title": "Curating knowledge collections",
+    "destination": "knowledge/#1"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 2,
+    "title": "Workshop Agenda",
+    "destination": "knowledge/#2"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 3,
+    "title": "Knowledge Collections",
+    "destination": "knowledge/#3"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 4,
+    "title": "Review Custom Models",
+    "destination": "knowledge/#4"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 5,
+    "title": "Open Workspace",
+    "destination": "knowledge/#5"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 6,
+    "title": "Review Model Settings",
+    "destination": "knowledge/#6"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 7,
+    "title": "Select Documents",
+    "destination": "knowledge/#14"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 8,
+    "title": "Retrieve Source Passages",
+    "destination": "knowledge/#8"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 9,
+    "title": "Open STEM Collection",
+    "destination": "knowledge/#9"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 10,
+    "title": "Review Source Roles",
+    "destination": "knowledge/#10"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 11,
+    "title": "Inspect Imported Text",
+    "destination": "knowledge/#11"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 12,
+    "title": "Review Attached Knowledge",
+    "destination": "knowledge/#12"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 13,
+    "title": "Check Game Sources",
+    "destination": "knowledge/#13"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 14,
+    "title": "Check Citations",
+    "destination": "knowledge/#7"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 15,
+    "title": "Compare Research Methods",
+    "destination": "knowledge/reference.html#compare-research-methods"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 16,
+    "title": "Organize Documents",
+    "destination": "Merged into knowledge/#14"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 17,
+    "title": "Check Retrieval Problems",
+    "destination": "knowledge/#20"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 18,
+    "title": "Build Knowledge Collections",
+    "destination": "knowledge/#15"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 19,
+    "title": "Choose Reference Materials",
+    "destination": "knowledge/#16"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 20,
+    "title": "Describe Experimental Context",
+    "destination": "knowledge/reference.html#describe-experimental-context"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 21,
+    "title": "Describe Scientific Methods",
+    "destination": "knowledge/reference.html#describe-scientific-methods"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 22,
+    "title": "Identify Historical Sources",
+    "destination": "knowledge/reference.html#identify-historical-sources"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 23,
+    "title": "Select Research Materials",
+    "destination": "knowledge/reference.html#select-research-materials"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 24,
+    "title": "Create Knowledge Collections",
+    "destination": "knowledge/#17"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 25,
+    "title": "Attach Knowledge Collections",
+    "destination": "knowledge/#18"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 26,
+    "title": "Test Retrieval",
+    "destination": "knowledge/#19"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 27,
+    "title": "Share Knowledge Collections",
+    "destination": "knowledge/#21"
+  },
+  {
+    "workshop": "K",
+    "old_slide": 28,
+    "title": "Prepare Skill Instructions",
+    "destination": "knowledge/#22"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 1,
+    "title": "Configuring skills and tools",
+    "destination": "skills/#1"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 2,
+    "title": "Workshop Agenda",
+    "destination": "skills/#2"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 3,
+    "title": "Tools & Skills",
+    "destination": "skills/#3"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 4,
+    "title": "Review Previous Work",
+    "destination": "skills/#4"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 5,
+    "title": "Connect Resources",
+    "destination": "skills/#5"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 6,
+    "title": "Enable Tools",
+    "destination": "skills/#6"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 7,
+    "title": "Inspect Game Rules",
+    "destination": "skills/#7"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 8,
+    "title": "Test Game Commands",
+    "destination": "skills/#8"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 9,
+    "title": "Discuss Play Records",
+    "destination": "skills/#9"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 10,
+    "title": "Choose Procedures",
+    "destination": "skills/#10"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 11,
+    "title": "Define Skills",
+    "destination": "skills/#11"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 12,
+    "title": "Write Skills",
+    "destination": "skills/#12"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 13,
+    "title": "Structure Skills",
+    "destination": "skills/#13"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 14,
+    "title": "Define Triggers",
+    "destination": "skills/#14"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 15,
+    "title": "Write Procedures",
+    "destination": "skills/#15"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 16,
+    "title": "Specify Format",
+    "destination": "skills/#16"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 17,
+    "title": "Draft Skills",
+    "destination": "skills/#19"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 18,
+    "title": "Write Instructions",
+    "destination": "skills/reference.html#write-instructions"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 19,
+    "title": "Create Skills",
+    "destination": "skills/#20"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 20,
+    "title": "Attach Skills",
+    "destination": "skills/#21"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 21,
+    "title": "Extend Procedures",
+    "destination": "skills/#22"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 22,
+    "title": "Check Interpretations",
+    "destination": "skills/reference.html#check-interpretations"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 23,
+    "title": "Test Skills",
+    "destination": "skills/#23"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 24,
+    "title": "Check Skill Drafts",
+    "destination": "skills/reference.html#check-skill-drafts"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 25,
+    "title": "Create Adventure Tools",
+    "destination": "skills/#24"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 26,
+    "title": "Install Tool Code",
+    "destination": "skills/#25"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 27,
+    "title": "Check Generated Code",
+    "destination": "skills/reference.html#check-generated-code"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 28,
+    "title": "Inspect Tool Results",
+    "destination": "skills/#26"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 29,
+    "title": "Compare Game Records",
+    "destination": "skills/#27"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 30,
+    "title": "Record Test Results",
+    "destination": "skills/#28"
+  },
+  {
+    "workshop": "S",
+    "old_slide": 31,
+    "title": "Repeat Tests",
+    "destination": "skills/#29"
+  }
+]

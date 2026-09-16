@@ -84,6 +84,8 @@ Test whether your selected model follows these instructions.
 
 [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
 
+Creating a custom model does not train a new base model.
+
 ---
 
 ## Slide 6: Select Models
@@ -158,7 +160,7 @@ Send this question to both models.
 
 ### Compare Outputs
 
-Ask both models this question.
+Consider this question.
 
 ```text
 The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
@@ -270,23 +272,17 @@ Continue in chat if Workspace is unavailable.
 
 ### Model Configuration
 
-![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
+![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.](images/current/model-create-2026-09-16-annotated.svg)
 
 Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 
 ---
 
-## Slide 22: Create Custom Models
+## Slide 22: Add Prompt Suggestions
 
-### Create Custom Models
+### Add Prompt Suggestions
 
-Custom models combine a base model with instructions, documents, and tools. Creating a custom model does not train a new base model.
-
-- Enter a name and description that students or colleagues will recognize.
-
-- Select a base model and add your tested system prompt.
-
-- Add prompt suggestions for tasks your model should support.
+Add a description and prompt suggestions for tasks your model should support.
 
 Users select your custom model to use its instructions and resources.
 
@@ -318,7 +314,7 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 ![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
 
-Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands, including save, load, and discuss.
+Preview Prism Laboratory. Configure and run this game in Workshop 3.
 
 ---
 
@@ -336,39 +332,21 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 
 ### Read Game Instructions
 
-Read this excerpt from STEM Adventure Games.
+Read instructions for game commands and submitted records, used in Workshop 3.
 
 ```text
-When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
+STEM Adventure controls rooms, inventory, prerequisites, observations, and completion.
 
-STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
+Ask users to type discuss inside the game, review the message box, and send their record before interpreting their choices.
 ```
 
-Which instructions guide model behavior? Which actions require a tool?
+Which part runs game commands? What must users send before discussing their choices?
 
 [Read full system prompt](examples.html#stem-system)
 
 ---
 
-## Slide 28: Test Game Instructions
-
-### Test Game Instructions
-
-Send Begin Prism Laboratory, then enter help and go north inside your game.
-
-- Does your command change rooms or inventory?
-
-- Does help list available actions?
-
-- Which observations come from programmed rules?
-
-- Which historical claims require source checks?
-
-Type discuss inside your game to place your run in chat, then send it.
-
----
-
-## Slide 29: Adapt Research Prompts
+## Slide 28: Adapt Research Prompts
 
 ### Adapt Research Prompts
 
@@ -384,13 +362,13 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Slide 30: Draft System Prompts
+## Slide 29: Draft System Prompts
 
 ### Draft System Prompts
 
 ---
 
-## Slide 31: Define Prompt Components
+## Slide 30: Define Prompt Components
 
 ### Define Prompt Components
 
@@ -406,7 +384,7 @@ Adapt STEM Adventure Games through these components.
 
 ---
 
-## Slide 32: Define Context
+## Slide 31: Define Context
 
 ### Define Context
 
@@ -426,7 +404,7 @@ Use [source material] for historical context.
 
 ---
 
-## Slide 33: Write Procedures
+## Slide 32: Write Procedures
 
 ### Write Procedures
 
@@ -447,7 +425,7 @@ Write numbered steps for your model to follow.
 
 ---
 
-## Slide 34: Set Constraints
+## Slide 33: Set Constraints
 
 ### Set Constraints
 
@@ -463,7 +441,7 @@ Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Slide 35: Set Tone
+## Slide 34: Set Tone
 
 ### Set Tone
 
@@ -479,7 +457,7 @@ Which terms need explanation for your intended users?
 
 ---
 
-## Slide 36: Specify Format
+## Slide 35: Specify Format
 
 ### Specify Format
 
@@ -494,7 +472,7 @@ Question: [One limitation to examine]
 
 ---
 
-## Slide 37: Refine Instructions
+## Slide 36: Refine Instructions
 
 Refine
 
@@ -502,7 +480,7 @@ Refine
 
 ---
 
-## Slide 38: Extend Instructions
+## Slide 37: Extend Instructions
 
 ### Extend Instructions
 
@@ -516,7 +494,7 @@ Refine
 
 ---
 
-## Slide 39: Review Common Problems
+## Slide 38: Review Common Problems
 
 Watch Out
 
@@ -540,21 +518,15 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Slide 40: Save Prompts
+## Slide 39: Save Prompts
 
 ### Save Prompts
-
-- Save your prompt text, model ID, and responses.
-
-- Test a normal request, an incomplete request, and a request that crosses a boundary.
-
-- Revise one instruction and repeat your test in a new chat.
 
 Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
 
 ---
 
-## Slide 41: Share Custom Models
+## Slide 40: Share Custom Models
 
 ### Share Custom Models
 
@@ -568,7 +540,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 42: Record Comparisons
+## Slide 41: Record Comparisons
 
 ### Record Comparisons
 
@@ -586,7 +558,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 43: Prepare Source Documents
+## Slide 42: Prepare Source Documents
 
 ### Prepare Source Documents
 

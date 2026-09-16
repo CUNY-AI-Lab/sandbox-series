@@ -1,0 +1,128 @@
+[
+  {
+    "buttons": [],
+    "headings": [
+      {
+        "size": "28px",
+        "text": "Source Examples"
+      },
+      {
+        "size": "26px",
+        "text": "Compare Research Methods"
+      },
+      {
+        "size": "26px",
+        "text": "Describe Experimental Context"
+      },
+      {
+        "size": "26px",
+        "text": "Describe Scientific Methods"
+      },
+      {
+        "size": "26px",
+        "text": "Identify Historical Sources"
+      },
+      {
+        "size": "26px",
+        "text": "Select Research Materials"
+      },
+      {
+        "size": "26px",
+        "text": "Prism Laboratory"
+      }
+    ],
+    "scrollWidth": 375,
+    "url": "http://localhost:8766/knowledge/reference.html",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "height": 44,
+        "text": "Copy skill"
+      },
+      {
+        "height": 44,
+        "text": "Copy skill"
+      },
+      {
+        "height": 44,
+        "text": "Copy prompt"
+      },
+      {
+        "height": 44,
+        "text": "Copy prompt"
+      },
+      {
+        "height": 44,
+        "text": "Copy commands"
+      }
+    ],
+    "headings": [
+      {
+        "size": "28px",
+        "text": "Skill & Tool Examples"
+      },
+      {
+        "size": "26px",
+        "text": "Write Instructions"
+      },
+      {
+        "size": "26px",
+        "text": "Check Interpretations"
+      },
+      {
+        "size": "26px",
+        "text": "Check Skill Drafts"
+      },
+      {
+        "size": "26px",
+        "text": "Check Generated Code"
+      },
+      {
+        "size": "26px",
+        "text": "Test Game Commands"
+      }
+    ],
+    "scrollWidth": 375,
+    "url": "http://localhost:8766/skills/reference.html",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "height": 44,
+        "text": "Copy prompt"
+      },
+      {
+        "height": 44,
+        "text": "Copy prompt"
+      },
+      {
+        "height": 44,
+        "text": "Copy prompt"
+      }
+    ],
+    "headings": [
+      {
+        "size": "28px",
+        "text": "System Prompt Examples"
+      },
+      {
+        "size": "26px",
+        "text": "Examine Assumptions"
+      },
+      {
+        "size": "26px",
+        "text": "Check Game Sources"
+      },
+      {
+        "size": "26px",
+        "text": "STEM Adventure Games"
+      }
+    ],
+    "scrollWidth": 375,
+    "url": "http://localhost:8766/examples.html",
+    "width": 390
+  }
+]

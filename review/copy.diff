@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,601 @@
+@@ -1,487 +1,573 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -541,6 +541,8 @@
 +
 +[Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
 +
++Creating a custom model does not train a new base model.
++
 +---
 +
 +## Slide 6: Select Models
@@ -615,7 +617,7 @@
 +
 +### Compare Outputs
 +
-+Ask both models this question.
++Consider this question.
 +
 +```text
 +The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
@@ -727,23 +729,17 @@
 +
 +### Model Configuration
 +
-+![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
++![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.](images/current/model-create-2026-09-16-annotated.svg)
 +
 +Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 +
 +---
 +
-+## Slide 22: Create Custom Models
++## Slide 22: Add Prompt Suggestions
 +
-+### Create Custom Models
++### Add Prompt Suggestions
 +
-+Custom models combine a base model with instructions, documents, and tools. Creating a custom model does not train a new base model.
-+
-+- Enter a name and description that students or colleagues will recognize.
-+
-+- Select a base model and add your tested system prompt.
-+
-+- Add prompt suggestions for tasks your model should support.
++Add a description and prompt suggestions for tasks your model should support.
 +
 +Users select your custom model to use its instructions and resources.
 +
@@ -775,7 +771,7 @@
 +
 +![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
 +
-+Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands, including save, load, and discuss.
++Preview Prism Laboratory. Configure and run this game in Workshop 3.
 +
 +---
 +
@@ -793,39 +789,21 @@
 +
 +### Read Game Instructions
 +
-+Read this excerpt from STEM Adventure Games.
++Read instructions for game commands and submitted records, used in Workshop 3.
 +
 +```text
-+When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
++STEM Adventure controls rooms, inventory, prerequisites, observations, and completion.
 +
-+STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
++Ask users to type discuss inside the game, review the message box, and send their record before interpreting their choices.
 +```
 +
-+Which instructions guide model behavior? Which actions require a tool?
++Which part runs game commands? What must users send before discussing their choices?
 +
 +[Read full system prompt](examples.html#stem-system)
 +
 +---
 +
-+## Slide 28: Test Game Instructions
-+
-+### Test Game Instructions
-+
-+Send Begin Prism Laboratory, then enter help and go north inside your game.
-+
-+- Does your command change rooms or inventory?
-+
-+- Does help list available actions?
-+
-+- Which observations come from programmed rules?
-+
-+- Which historical claims require source checks?
-+
-+Type discuss inside your game to place your run in chat, then send it.
-+
-+---
-+
-+## Slide 29: Adapt Research Prompts
++## Slide 28: Adapt Research Prompts
 +
 +### Adapt Research Prompts
 +
@@ -841,13 +819,13 @@
 +
 +---
 +
-+## Slide 30: Draft System Prompts
++## Slide 29: Draft System Prompts
 +
 +### Draft System Prompts
 +
 +---
 +
-+## Slide 31: Define Prompt Components
++## Slide 30: Define Prompt Components
 +
 +### Define Prompt Components
 +
@@ -863,7 +841,7 @@
 +
 +---
 +
-+## Slide 32: Define Context
++## Slide 31: Define Context
 +
 +### Define Context
 +
@@ -883,7 +861,7 @@
 +
 +---
 +
-+## Slide 33: Write Procedures
++## Slide 32: Write Procedures
 +
 +### Write Procedures
 +
@@ -904,7 +882,7 @@
 +
 +---
 +
-+## Slide 34: Set Constraints
++## Slide 33: Set Constraints
 +
 +### Set Constraints
 +
@@ -920,7 +898,7 @@
 +
 +---
 +
-+## Slide 35: Set Tone
++## Slide 34: Set Tone
 +
 +### Set Tone
 +
@@ -936,7 +914,7 @@
 +
 +---
 +
-+## Slide 36: Specify Format
++## Slide 35: Specify Format
 +
 +### Specify Format
 +
@@ -951,7 +929,7 @@
 +
 +---
 +
-+## Slide 37: Refine Instructions
++## Slide 36: Refine Instructions
 +
 +Refine
 +
@@ -959,7 +937,7 @@
 +
 +---
 +
-+## Slide 38: Extend Instructions
++## Slide 37: Extend Instructions
 +
 +### Extend Instructions
 +
@@ -973,7 +951,7 @@
 +
 +---
 +
-+## Slide 39: Review Common Problems
++## Slide 38: Review Common Problems
  
  Watch Out
 -Common Pitfalls
@@ -1023,21 +1001,15 @@
 +
 +---
 +
-+## Slide 40: Save Prompts
++## Slide 39: Save Prompts
 +
 +### Save Prompts
-+
-+- Save your prompt text, model ID, and responses.
-+
-+- Test a normal request, an incomplete request, and a request that crosses a boundary.
-+
-+- Revise one instruction and repeat your test in a new chat.
 +
 +Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
 +
 +---
 +
-+## Slide 41: Share Custom Models
++## Slide 40: Share Custom Models
 +
 +### Share Custom Models
 +
@@ -1051,7 +1023,7 @@
 +
 +---
 +
-+## Slide 42: Record Comparisons
++## Slide 41: Record Comparisons
 +
 +### Record Comparisons
 +
@@ -1069,7 +1041,7 @@
 +
 +---
 +
-+## Slide 43: Prepare Source Documents
++## Slide 42: Prepare Source Documents
 +
 +### Prepare Source Documents
 +

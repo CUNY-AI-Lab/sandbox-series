@@ -472,6 +472,121 @@
       "source_sha256": "1d7f241acab2b412d19ea84eb7c2d224f2c17e706e6e7eb8426abdf0b0d19496",
       "processing": "Rectangular crop excludes browser chrome and account details. SVG outline and arrow identify Workspace without covering its label.",
       "sha256": "e2cdbdce1e736a8b385eb6053a5a7c003fa8b251d905626d3494503a1fe54ceb"
+    },
+    {
+      "file": "model-create-2026-09-16-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/create",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 150% zoom in dark mode. Administrator account; participant access testing deferred by user.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        75,
+        56,
+        1470,
+        725
+      ],
+      "source_sha256": "b032abc50c84e5a1bd43b6f673fce14adb199cff279ba4c7d2a840b8c6cf6c2a",
+      "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
+      "sha256": "fecabba15292f2c9ed6031242f35249bed240484b09ef81356b53704c1d8e832"
+    },
+    {
+      "file": "model-review-2026-09-16-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games-sources",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 150% zoom in dark mode. Administrator account; participant access testing deferred by user.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        75,
+        56,
+        1470,
+        741
+      ],
+      "source_sha256": "6e39ec32305c53b06043abc08a4d4bc1628b9765ef7e8bf71ff2bceb83eb6083",
+      "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
+      "sha256": "d61fb190d7dd6dddb7d8bd43fdd96e2c0bbcf184b4954d2d9ee8292cdff0b1a6",
+      "state": "Source-checking model with Knowledge temporarily removed for initial-response screenshot; unsaved change discarded, saved collection restored. Skills and Tools remain unselected."
+    },
+    {
+      "file": "knowledge-attachments-2026-09-16-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games-sources",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 150% zoom in dark mode. Administrator account; participant access testing deferred by user.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        75,
+        56,
+        1470,
+        741
+      ],
+      "source_sha256": "1e78ab09c97010ed22932b777201717d2dff75d05d2e99df9beb9ce3af687647",
+      "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
+      "sha256": "97c634f8d689227b9d302589b46499fc60240fd104b7b339ba7a02bd078e969f"
+    },
+    {
+      "file": "skill-create-2026-09-16-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/skills/create",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 150% zoom in dark mode. Administrator account; participant access testing deferred by user.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        75,
+        56,
+        1470,
+        765
+      ],
+      "source_sha256": "d2153c2acccd30b4d0eacf11c29df3fb0cde0a20434184ba255bb61f23cfaf35",
+      "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
+      "sha256": "1d5593cc0209c27196e86b5eb0ef5e8c51e289ca992939e4970c4bc488e4d666"
+    },
+    {
+      "file": "model-clone-2026-09-16-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 150% zoom in dark mode. Administrator account; participant access testing deferred by user.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        75,
+        56,
+        1470,
+        710
+      ],
+      "source_sha256": "e63a2eb0cdbff26e5be33efbf79d3d8b3363d9e5d96b5f58d35617cada1b9b4c",
+      "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
+      "sha256": "6eeef11829ab4a82e4166a3a16a69a7d8c8674797ff3193f16e7169d62601f6b"
+    },
+    {
+      "file": "model-private-2026-09-16-annotated.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/create",
+      "observed_date": "2026-09-16",
+      "capture": "Native Firefox at 130% zoom in dark mode. Administrator account; participant access testing deferred by user.",
+      "source_dimensions": [
+        1479,
+        768
+      ],
+      "crop_xyxy": [
+        75,
+        56,
+        1470,
+        710
+      ],
+      "source_sha256": "5061cf4e3768aa06618cd17eb62ce3c61128becc8e8bc50dded7ce647d32bfb0",
+      "processing": "Rectangular crop excludes browser chrome and account avatar. Neutral SVG outlines and arrows overlay authentic screenshot pixels.",
+      "sha256": "13978b25c160ddc07c9e7db849c830bc500cf1af6f597d8d0f93d337a60b99d0"
     }
   ]
 }

@@ -84,8 +84,6 @@ Test whether your selected model follows these instructions.
 
 [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
 
-Creating a custom model does not train a new base model.
-
 ---
 
 ## Composing system prompts — 6
@@ -164,7 +162,7 @@ Send this question to both models.
 
 ### Compare Outputs
 
-Consider this question.
+Ask both models this question.
 
 ```text
 The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
@@ -286,9 +284,9 @@ Continue in chat if Workspace is unavailable.
 
 ### Model Configuration
 
-![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.](images/current/model-create-2026-09-16-annotated.svg)
+![Current model creation form showing Name, Base Model, and System Prompt](images/current/model-editor.png)
 
-**Alt text:** New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.
+**Alt text:** Current model creation form showing Name, Base Model, and System Prompt
 
 Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 
@@ -296,9 +294,15 @@ Select Create in Models. Enter a recognizable name, choose a tested base model, 
 
 ## Composing system prompts — 22
 
-### Add Prompt Suggestions
+### Create Custom Models
 
-Add a description and prompt suggestions for tasks your model should support.
+Custom models combine a base model with instructions, documents, and tools. Creating a custom model does not train a new base model.
+
+- Enter a name and description that students or colleagues will recognize.
+
+- Select a base model and add your tested system prompt.
+
+- Add prompt suggestions for tasks your model should support.
 
 Users select your custom model to use its instructions and resources.
 
@@ -334,7 +338,7 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 **Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
 
-Preview Prism Laboratory. Configure and run this game in Workshop 3.
+Send Begin Prism Laboratory to open this game. Enter help inside its command box to list available commands, including save, load, and discuss.
 
 ---
 
@@ -354,21 +358,39 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 
 ### Read Game Instructions
 
-Read instructions for game commands and submitted records, used in Workshop 3.
+Read this excerpt from STEM Adventure Games.
 
 ```text
-STEM Adventure controls rooms, inventory, prerequisites, observations, and completion.
+When a user asks to begin or play, call render_stem_adventure with scenario_json empty. This opens Prism Laboratory inside chat.
 
-Ask users to type discuss inside the game, review the message box, and send their record before interpreting their choices.
+STEM Adventure controls rooms, inventory, prerequisites, observations, and completion. Moves inside its interface do not automatically enter model context.
 ```
 
-Which part runs game commands? What must users send before discussing their choices?
+Which instructions guide model behavior? Which actions require a tool?
 
 [Read full system prompt](examples.html#stem-system)
 
 ---
 
 ## Composing system prompts — 28
+
+### Test Game Instructions
+
+Send Begin Prism Laboratory, then enter help and go north inside your game.
+
+- Does your command change rooms or inventory?
+
+- Does help list available actions?
+
+- Which observations come from programmed rules?
+
+- Which historical claims require source checks?
+
+Type discuss inside your game to place your run in chat, then send it.
+
+---
+
+## Composing system prompts — 29
 
 ### Adapt Research Prompts
 
@@ -384,13 +406,13 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Composing system prompts — 29
+## Composing system prompts — 30
 
 ### Draft System Prompts
 
 ---
 
-## Composing system prompts — 30
+## Composing system prompts — 31
 
 ### Define Prompt Components
 
@@ -406,7 +428,7 @@ Adapt STEM Adventure Games through these components.
 
 ---
 
-## Composing system prompts — 31
+## Composing system prompts — 32
 
 ### Define Context
 
@@ -426,7 +448,7 @@ Use [source material] for historical context.
 
 ---
 
-## Composing system prompts — 32
+## Composing system prompts — 33
 
 ### Write Procedures
 
@@ -447,7 +469,7 @@ Write numbered steps for your model to follow.
 
 ---
 
-## Composing system prompts — 33
+## Composing system prompts — 34
 
 ### Set Constraints
 
@@ -463,7 +485,7 @@ Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Composing system prompts — 34
+## Composing system prompts — 35
 
 ### Set Tone
 
@@ -479,7 +501,7 @@ Which terms need explanation for your intended users?
 
 ---
 
-## Composing system prompts — 35
+## Composing system prompts — 36
 
 ### Specify Format
 
@@ -494,7 +516,7 @@ Question: [One limitation to examine]
 
 ---
 
-## Composing system prompts — 36
+## Composing system prompts — 37
 
 Refine
 
@@ -502,7 +524,7 @@ Refine
 
 ---
 
-## Composing system prompts — 37
+## Composing system prompts — 38
 
 ### Extend Instructions
 
@@ -516,7 +538,7 @@ Refine
 
 ---
 
-## Composing system prompts — 38
+## Composing system prompts — 39
 
 Watch Out
 
@@ -540,15 +562,21 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Composing system prompts — 39
+## Composing system prompts — 40
 
 ### Save Prompts
+
+- Save your prompt text, model ID, and responses.
+
+- Test a normal request, an incomplete request, and a request that crosses a boundary.
+
+- Revise one instruction and repeat your test in a new chat.
 
 Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
 
 ---
 
-## Composing system prompts — 40
+## Composing system prompts — 41
 
 ### Share Custom Models
 
@@ -562,7 +590,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Composing system prompts — 41
+## Composing system prompts — 42
 
 ### Record Comparisons
 
@@ -580,7 +608,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Composing system prompts — 42
+## Composing system prompts — 43
 
 ### Prepare Source Documents
 
@@ -643,9 +671,9 @@ Collections support PDFs, Markdown, and plain text. Attach a collection to a cus
 
 ## Curating knowledge collections — 4
 
-### Choose Questions
+### Review Custom Models
 
-Choose a question your documents can answer.
+Choose a question about documents you want your custom model to use.
 
 Bring course materials, research papers, or other documents you know well enough to check.
 
@@ -669,21 +697,29 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 
 ### Review Model Settings
 
-![Custom model for STEM source questions with a selected base model and source-checking System Prompt; outlines identify both fields.](images/current/model-review-2026-09-16-annotated.svg)
+![Current model editor showing base model, system prompt, and Knowledge](images/current/model-editor.png)
 
-**Alt text:** Custom model for STEM source questions with a selected base model and source-checking System Prompt; outlines identify both fields.
+**Alt text:** Current model editor showing base model, system prompt, and Knowledge
 
-Review Base Model and System Prompt in your custom model. Use [source-checking instructions](examples.html#stem-sources) for this example. Leave Skills and Tools unselected. Under Advanced Params, set Function Calling to Legacy for this workshop.
+Review Base Model and System Prompt. Start a new chat. Select model ID on bottom right of message box. Choose your custom model and ask a question about your documents. Save its response before attaching documents.
 
 ---
 
 ## Curating knowledge collections — 7
 
-### Save Initial Response
+### Select Documents
 
-Start a new chat. Select model ID on bottom right of message box. Choose your custom model.
+Choose documents with clear headings and readable text.
 
-Ask your document question and save its response before attaching documents. Record any sources it uses.
+- Course syllabi, readings, or assignment instructions
+
+- Research papers, methods, or annotated bibliographies
+
+- Markdown, plain text, or well-formatted PDFs
+
+Check scans and complex PDFs before uploading. Convert them to text if necessary.
+
+[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
@@ -695,9 +731,9 @@ Ask your document question and save its response before attaching documents. Rec
 
 - Retrieval finds passages relevant to a question.
 
-- Your model can use retrieved passages in its response.
+- Your model uses retrieved passages to generate a response.
 
-Which passages did your model use, and do they support its claims?
+Check whether retrieved passages address your question and support claims in each response.
 
 [Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
 
@@ -757,11 +793,11 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 ### Review Attached Knowledge
 
-![Custom model with STEM Wikipedia Experiments attached under Knowledge and no Skills or Tools selected; outline marks Knowledge.](images/current/knowledge-attachments-2026-09-16-annotated.svg)
+![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.](images/current/stem-attachments-2026-09-14.png)
 
-**Alt text:** Custom model with STEM Wikipedia Experiments attached under Knowledge and no Skills or Tools selected; outline marks Knowledge.
+**Alt text:** STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge, STEM Adventure enabled under Tools, and Extend STEM Adventures enabled under Skills.
 
-Select STEM Wikipedia Experiments under Knowledge in your custom model and choose Save & Update. Skills and Tools are added in Workshop 3.
+Open Workspace → Models → STEM Adventure Games. Under Knowledge, review STEM Wikipedia Experiments.
 
 ---
 
@@ -769,109 +805,63 @@ Select STEM Wikipedia Experiments under Knowledge in your custom model and choos
 
 ### Check Game Sources
 
-Attach [Prism Laboratory scenario](examples/adventure/prism-scenario.md) to chat. Compare this document with Newton: Light and Colour, a summary of Newton’s account.
+Compare Prism Laboratory with Newton’s account.
 
 ```text
-Using Newton: Light and Colour, identify apparatus details simplified in the attached Prism Laboratory scenario. Quote a relevant passage and identify this entry as a source summary. If it is unavailable, say so.
+Which apparatus details from Newton’s account does Prism Laboratory simplify? Identify the uploaded source and quote a relevant passage. If it is unavailable, say so.
 ```
 
 Open cited material. Does it support your model’s response?
 
 [Read Newton source entry](examples/knowledge/newton-light-colour.md) · [Review source register](examples/knowledge/source-register.md)
 
-[Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006) · [Read scenario](knowledge/reference.html#prism-laboratory)
-
 ---
 
 ## Curating knowledge collections — 14
 
-### Select Documents
+### Check Citations
 
-Begin with a few documents you know well enough to check.
+Check a response from STEM Adventure Games against its cited passage.
 
-- Course materials, such as syllabi, readings, or assignment instructions
+- Which apparatus did Newton describe?
 
-- Research papers, methods, or annotated bibliographies
+- Which experimental changes did he examine?
 
-Use Markdown, plain text, or readable PDFs. Name files clearly and use headings to separate sections.
-
-Check scanned or complex PDFs before uploading. Convert them to text if needed.
-
-[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
-[Explore source examples](knowledge/reference.html)
+Open each citation. Compare quoted wording and interpretation with source text.
 
 ---
 
 ## Curating knowledge collections — 15
 
-### Build Knowledge Collections
+### Compare Research Methods
 
-Choose documents that explain your course or research project and describe what you want to examine.
+Build a collection from research papers or methods you want to compare.
+
+- Identify a question that requires consulting those sources.
+
+- Ask your model to compare specific claims or methods.
+
+- Check its citations against your uploaded documents.
+
+[Knowledge collections for research](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
 ## Curating knowledge collections — 16
 
-### Choose Reference Materials
+### Organize Documents
 
-Choose documents for your collection.
+Begin with a few documents and test how your model uses them.
 
-- Use [Newton: Light and Colour](examples/knowledge/newton-light-colour.md) for apparatus and observations.
+- Name files so students or colleagues can identify them.
 
-- Use [Newton: Experimental Variants](examples/knowledge/newton-experimental-variants.md) for procedural changes.
+- Use headings to distinguish sections.
 
-- Use [Evaluate Game Procedures](examples/knowledge/game-procedure-evaluation.md) for software checks.
-
-Download entries you want your model to use. Review their contents before uploading.
-
-[Download Light and Colour](examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](examples/knowledge/newton-experimental-variants.md) · [Download Game Procedures](examples/knowledge/game-procedure-evaluation.md)
+- Check whether your model retrieves relevant passages before adding more documents.
 
 ---
 
 ## Curating knowledge collections — 17
-
-### Create Knowledge Collections
-
-![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create.png)
-
-**Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
-
-Open Workspace → Knowledge → Create. Enter a name and description, keep access Private, then select Create Knowledge.
-
----
-
-## Curating knowledge collections — 18
-
-### Attach Knowledge Collections
-
-- Open Workspace → Knowledge → your collection. Use Add Content to upload documents, then wait for processing to finish.
-
-- Check extracted text against each source.
-
-- Return to **Workspace → Models**, open your custom model, and replace STEM Wikipedia Experiments with your collection under **Knowledge**.
-
-- Choose **Save & Update**, then start a new chat with your custom model.
-
-[Upload and attach source material](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
----
-
-## Curating knowledge collections — 19
-
-### Test Retrieval
-
-- Ask a question answered by one source. Verify each answer and quotation.
-
-- Ask a question that needs two sources. Check whether both are used accurately.
-
-- Ask about something absent from your documents. Check whether your model acknowledges missing information.
-
-Repeat your saved question after attaching documents. Keep base model and system prompt unchanged. Compare responses and check which source passages were used.
-
----
-
-## Curating knowledge collections — 20
 
 ### Check Retrieval Problems
 
@@ -885,7 +875,139 @@ Save unsuccessful responses before revising anything.
 
 ---
 
+## Curating knowledge collections — 18
+
+### Build Knowledge Collections
+
+Choose documents that explain your course or research project and describe what you want to examine.
+
+---
+
+## Curating knowledge collections — 19
+
+### Choose Reference Materials
+
+Add sources that support your adventure.
+
+- Use [Newton: Light and Colour](examples/knowledge/newton-light-colour.md) for apparatus and observations.
+
+- Use [Newton: Experimental Variants](examples/knowledge/newton-experimental-variants.md) for procedural changes.
+
+- Use [Evaluate Game Procedures](examples/knowledge/game-procedure-evaluation.md) for software checks.
+
+Download entries you want your model to use. Create your own collection after reviewing these materials.
+
+---
+
+## Curating knowledge collections — 20
+
+### Describe Experimental Context
+
+Separate documented experiments from invented game settings.
+
+- Which question motivated an experiment?
+
+- Which instruments and materials appear in its source?
+
+- Which rooms or actions were created for play?
+
+Prism Laboratory simplifies an apparatus with two boards and two prisms.
+
+---
+
 ## Curating knowledge collections — 21
+
+### Describe Scientific Methods
+
+An aperture is an opening that admits light. Compare procedures before changing its size in your game.
+
+- Which variable changes when an aperture narrows?
+
+- Which conditions stay fixed?
+
+- What would a changed observation support?
+
+[Read experimental variants](examples/knowledge/newton-experimental-variants.md)
+
+---
+
+## Curating knowledge collections — 22
+
+### Identify Historical Sources
+
+Use Women in science to examine contributors, institutions, and recognition.
+
+- Who performed or supported this work?
+
+- Which barriers affected participation?
+
+- What can these sources establish about a particular experiment?
+
+---
+
+## Curating knowledge collections — 23
+
+### Select Research Materials
+
+Describe your research project and identify sources your model should use.
+
+Research context
+
+Describe your question, scope, and method.
+
+Instructions
+
+Include a codebook, protocol, or criteria for comparing sources.
+
+Sources
+
+Identify documents and passages you want to examine.
+
+---
+
+## Curating knowledge collections — 24
+
+### Create Knowledge Collections
+
+![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create.png)
+
+**Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
+
+Open Workspace → Knowledge → Create. Enter a name and description, keep access Private, then select Create Knowledge.
+
+---
+
+## Curating knowledge collections — 25
+
+### Attach Knowledge Collections
+
+- Open Workspace → Knowledge → your collection. Use Add Content to upload documents, then wait for processing to finish.
+
+- Check extracted text against each source.
+
+- Return to **Workspace → Models**, open your custom model, and select your collection under **Knowledge**.
+
+- Choose **Save & Update**, then start a new chat with your custom model.
+
+[Upload and attach source material](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+
+---
+
+## Curating knowledge collections — 26
+
+### Test Retrieval
+
+- Ask a question answered by one source. Verify each answer and quotation.
+
+- Ask a question that needs two sources. Check whether both are used accurately.
+
+- Ask about something absent from your documents. Check whether your model acknowledges missing information.
+
+Repeat your first question without changing models or system prompts. Record which documents you used, which passages were retrieved, and whether those passages support your model’s response.
+
+---
+
+## Curating knowledge collections — 27
 
 ### Share Knowledge Collections
 
@@ -901,7 +1023,7 @@ Share your collection with people who will use your custom model.
 
 ---
 
-## Curating knowledge collections — 22
+## Curating knowledge collections — 28
 
 ### Prepare Skill Instructions
 
@@ -978,7 +1100,7 @@ STEM Adventure Games is a custom model. Prism Laboratory is its starting game. O
 
 - Distinguish source material, skill instructions, and tool operations.
 
-Use a private copy when adapting this configuration.
+Use your own configuration when adapting these examples.
 
 ---
 
@@ -1036,7 +1158,7 @@ Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its comma
 
 - Enter **restart**, then try **record result** before completing required steps.
 
-- Follow [winning command sequence](skills/reference.html#game-commands). Immediately after take prism, repeat take prism and check its response.
+- Follow [winning command sequence](examples/adventure/winning-commands.json). Try taking an item twice.
 
 - Enter **save** to download your play record.
 
@@ -1114,10 +1236,6 @@ Use three parts to draft this skill.
 
 - **Format** — How should responses appear?
 
-[Read blank template](skills/reference.html#write-instructions)
-
-[Read complete skill](examples/stem-game-skill.md)
-
 ---
 
 ## Configuring skills and tools — 14
@@ -1142,13 +1260,13 @@ Use this skill when users request an experimental variation in STEM Adventure or
 
 ### Write Procedures
 
-Specify one change to your experiment. Use fields listed in [scenario instructions](examples/stem-game-skill.md) when editing your game file.
+Specify how your model should change an experiment. Follow [supported fields](examples/stem-game-skill.md) when editing scenario JSON.
 
 ```text
 1. Identify one experimental decision to change.
 2. Check source material for that procedure.
-3. Revise scenario JSON using fields listed in attached instructions.
-4. List commands that complete your game and one command that should fail, then open your game.
+3. Revise scenario JSON within the tool contract.
+4. Provide winning and blocked commands, then open the game.
 5. Compare a submitted record with expected behavior.
 ```
 
@@ -1158,7 +1276,7 @@ Specify one change to your experiment. Use fields listed in [scenario instructio
 
 ### Specify Format
 
-Separate your game file, source evidence, and test results.
+Keep artifacts and test results distinguishable.
 
 ```text
 Scenario JSON: [Complete scenario]
@@ -1173,69 +1291,60 @@ Observed result: [Fill only after testing]
 
 ## Configuring skills and tools — 17
 
-### Clone Custom Models
+### Draft Skills
 
-![Workspace Models filtered to STEM Adventure Games; arrow marks Clone in its open menu.](images/current/model-clone-2026-09-16-annotated.svg)
+Kale Skill Builder is a custom model that drafts skills for tasks you describe.
 
-**Alt text:** Workspace Models filtered to STEM Adventure Games; arrow marks Clone in its open menu.
+Select model ID on bottom right of message box.
 
-In Workspace → Models, open ⋯ beside STEM Adventure Games and choose Clone.
+Attach [scenario instructions](examples/stem-game-skill.md) before sending this example.
+
+```text
+Draft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = ""). Preserve game rules. Include trigger, 3–5 steps, output, and two proposed tests. Do not invent successful tool calls.
+```
+
+[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](examples/stem-game-skill.md)
 
 ---
 
 ## Configuring skills and tools — 18
 
-### Save Private Copy
+### Write Instructions
 
-![Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.](images/current/model-private-2026-09-16-annotated.svg)
+Describe when to use your skill, which steps to follow, and when to pause.
 
-**Alt text:** Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.
+```text
+Use this skill when [specific request or action].
 
-Rename model and ID. Open Access, keep Private, and remove copied users or groups from Access List. Close Access and choose Save & Create.
+1. [First step]
+2. [Next step]
+3. [What to check before continuing]
+4. [When to wait for user input]
+
+Format responses as [required structure].
+```
 
 ---
 
 ## Configuring skills and tools — 19
 
-### Draft Skills
+### Create Skills
 
-Kale Skill Builder is a custom model that drafts skills for tasks you describe.
+![Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.](images/current/stem-skill-2026-09-14.png)
 
-Select model ID on bottom right of message box. Choose Kale Skill Builder.
+**Alt text:** Extend STEM Adventures in Workspace Skills, showing its name, description, and Markdown instructions for game play, procedural extensions, and submitted records.
 
-Attach [scenario instructions](examples/stem-game-skill.md) before sending this example.
-
-```text
-Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed.
-```
-
-[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](examples/stem-game-skill.md)
-
-[Review draft evaluation](skills/reference.html#check-skill-drafts)
-
-[Download skill instructions](examples/stem-game-skill.md)
+Open Workspace → Skills → Create. Enter a name, identifier, and description that explain when to use your skill. Write instructions, review Access, and choose Save & Create.
 
 ---
 
 ## Configuring skills and tools — 20
 
-### Create Skills
-
-![Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.](images/current/skill-create-2026-09-16-annotated.svg)
-
-**Alt text:** Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.
-
-Open Workspace → Skills → Create. Name your skill and add an identifier and description. Paste your saved draft into Instructions, review Access, and choose Save & Create.
-
----
-
-## Configuring skills and tools — 21
-
 ### Attach Skills
 
-- Open your private copy of STEM Adventure Games under **Workspace → Models**.
+- Open **Workspace → Models** and edit your model.
 
-- Replace Extend STEM Adventures with your saved draft under **Skills**. Update System Prompt to name your skill.
+- Select your skill under **Skills**.
 
 - Set **Function Calling** to **Native** under **Advanced Parameters**.
 
@@ -1247,11 +1356,11 @@ Native function calling lets your model call tools and load attached skill instr
 
 ---
 
-## Configuring skills and tools — 22
+## Configuring skills and tools — 21
 
 ### Extend Procedures
 
-Open your private copy of STEM Adventure Games. Attach [Prism Laboratory JSON](examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request.
+Open STEM Adventure Games. Attach [Prism Laboratory JSON](examples/adventure/prism.json) and enable Extend STEM Adventures under **Integrations → Skills**. Send this request.
 
 ```text
 Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
@@ -1259,7 +1368,26 @@ Add an aperture comparison to Prism Laboratory using Newton: Experimental Varian
 
 [Read skill instructions](examples/stem-game-skill.md) · [Download tested scenario](examples/adventure/aperture.json)
 
-[Download Prism Laboratory](examples/adventure/prism.json)
+---
+
+## Configuring skills and tools — 22
+
+### Check Interpretations
+
+Use this draft to check an interpretation against a source passage.
+
+```text
+When the user asks whether a passage supports a claim, ask for both if either is missing.
+
+1. Quote the relevant passage and identify its source. Do not invent missing metadata.
+2. State what the passage directly supports.
+3. Identify an inference or competing reading that needs further evidence.
+4. Ask one question that would help resolve the difference, then wait.
+
+Keep the quotation separate from your interpretation. If the source is unavailable, explain what cannot be checked.
+```
+
+Test it with supported, overstated, and unsupported claims from public or approved material.
 
 ---
 
@@ -1267,11 +1395,11 @@ Add an aperture comparison to Prism Laboratory using Newton: Experimental Varian
 
 ### Test Skills
 
-Use your private copy of STEM Adventure Games for both tests. Remove any additional skills from this copy before comparing your draft.
+Use a private model copy for this comparison.
 
-- Remove your skill under **Workspace → Models → Skills**. Save, start a new chat, and confirm it is off under **Integrations → Skills**. Repeat your extension request with Prism Laboratory JSON attached.
+- Remove your skill under **Workspace → Models → Skills**. Save and run your extension request in a new chat.
 
-- Attach your skill again, save, and repeat that request in another new chat. Attach Prism Laboratory JSON and enable your saved draft under Integrations → Skills.
+- Attach your skill again, save, and repeat that request in another new chat.
 
 - Keep base model, system prompt, sources, and tool unchanged.
 
@@ -1283,9 +1411,27 @@ Save generated scenarios and play records.
 
 ## Configuring skills and tools — 24
 
+### Check Skill Drafts
+
+This example has no commands or events but reports completion. Can a skill establish that play occurred?
+
+```text
+{"commands":[],"events":[],"result":{"complete":true}}
+```
+
+An empty history cannot establish completion. Request a full record or replay.
+
+Send this example to Kale Skill Builder with your skill draft. Check whether revised instructions flag missing evidence.
+
+[Read corrected skill draft](examples/creators/record-interpreter-skill.md) · [Inspect initial response](review/live/skill-builder-consistency-failure.md)
+
+---
+
+## Configuring skills and tools — 25
+
 ### Create Adventure Tools
 
-Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.
+Tool Creator is a custom model that drafts Python tools for tasks you describe.
 
 ```text
 Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
@@ -1293,13 +1439,9 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 [Open Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](examples/tools/stem_adventure.py)
 
-[Review code evaluation](skills/reference.html#check-generated-code)
-
-[Read tested code](examples/tools/stem_adventure.py)
-
 ---
 
-## Configuring skills and tools — 25
+## Configuring skills and tools — 26
 
 ### Install Tool Code
 
@@ -1307,7 +1449,7 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 - Enter Name, ID, and Description.
 
-- Paste and review [tested STEM Adventure code](examples/tools/stem_adventure.py). Keep your creator draft separate.
+- Paste [STEM Adventure code](examples/tools/stem_adventure.py) and review it.
 
 - Select **Save & Create**.
 
@@ -1317,23 +1459,41 @@ Use a private copy when changing code. Attach reusable tools under Tools in your
 
 ---
 
-## Configuring skills and tools — 26
+## Configuring skills and tools — 27
 
-### Inspect Tool Results
+### Check Generated Code
 
-Start a new chat with your private model. Under Integrations → Tools, select only your installed adventure tool. Send Begin Prism Laboratory, then open its tool-call details.
+This recorded test checks a separate draft tool that validates play records. Each command must be text.
 
-- Check which scenario was passed to render_stem_adventure.
+```text
+{"commands":[42],"events":[{"command":42,"valid":false}]}
+```
 
-- Compare returned result with your request.
+Expected behavior is to reject numeric commands. Initial creator output accepted them.
 
-- Confirm displayed game matches that scenario.
+Send observed failure back to Tool Creator, then repeat your tests.
 
-Save any error before revising your request.
+[Inspect original draft](review/live/record-validator-before.py) · [Read corrected tool](examples/creators/record-validator.py) · [Review executed tests](review/live/tool-creator-corrected-tests.json)
 
 ---
 
-## Configuring skills and tools — 27
+## Configuring skills and tools — 28
+
+### Inspect Tool Results
+
+Ask STEM Adventure Games to quote from Newton: Light and Colour and identify its source.
+
+- Open tool-call details in its response.
+
+- Check which file was retrieved and what text was returned.
+
+- Open cited passages and compare them with your model’s claims.
+
+A claim to have searched is not evidence that a tool ran. Inspect recorded calls and results.
+
+---
+
+## Configuring skills and tools — 29
 
 ### Compare Game Records
 
@@ -1347,7 +1507,7 @@ Check your model’s account against commands and source passages. Keep expected
 
 ---
 
-## Configuring skills and tools — 28
+## Configuring skills and tools — 30
 
 ### Record Test Results
 
@@ -1361,7 +1521,7 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 ---
 
-## Configuring skills and tools — 29
+## Configuring skills and tools — 31
 
 ### Repeat Tests
 
