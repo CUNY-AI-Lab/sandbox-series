@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/List_of_experiments
 
 ## Added Sources
 
-Newton: Light and Colour — source summary and limits for Prism Laboratory.
+Newton: Light and Colour — source summary of Newton’s optical experiments, with guidance for comparing scenes with historical apparatus.
 Newton: Experimental Variants — source summary for controlled procedural changes.
 Evaluate Game Procedures — software rules and checks, not historical evidence.
 

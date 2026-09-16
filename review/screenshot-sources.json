@@ -606,6 +606,242 @@
       "source_sha256": "12616b40ecdb6232750fee9c46802224d785648e207a75d2c5381239c05173df",
       "processing": "Rectangular crop retains CUNY AI Lab logo, full message box, and open model selector. Browser chrome and account details excluded. Neutral SVG outline and arrow identify model ID without covering its label or menu.",
       "sha256": "cadc375e5218cf5a80f0698c95f6c192d899471baa7141c36bd6587ae35f1833"
+    },
+    {
+      "file": "model-selector-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode, 1100\u00d7900 CSS pixels at device pixel ratio 2 and 120% browser zoom, dark mode. Gemma 3 4B IT selected in an empty new chat; model selector open. No request submitted or default changed.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "device_pixel_ratio": 2,
+      "crop_xyxy": [
+        300,
+        180,
+        1980,
+        1795
+      ],
+      "source_sha256": "2ffb3908336afe27d103fac9bc313d69849944e892fbd1776b103c80c341ccfe",
+      "processing": "Two lossless crops of the same authentic screenshot assembled side by side in SVG. Left crop retains CUNY AI Lab logo, full message box, and full open selector; right crop enlarges model ID, search field, and first five choices. Matching outlines and a connector identify the enlarged region. Neutral white outline and arrow identify model ID at bottom right of message box. Embedded pixels remain authentic; only display size changes. Account avatar is excluded.",
+      "sha256": "a2f37353aa5a7a29b7df4f6f48900085121b5c0fb48a40b4479f85046cd75932",
+      "detail_crop_xyxy": [
+        1080,
+        970,
+        1810,
+        1468
+      ],
+      "output_dimensions": [
+        3780,
+        1615
+      ]
+    },
+    {
+      "file": "model-selector-compare-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode, 1100\u00d7900 CSS pixels at device pixel ratio 2 and 120% browser zoom, dark mode. Gemma 3 4B IT selected in an empty new chat; model selector open. No request submitted or default changed.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "device_pixel_ratio": 2,
+      "crop_xyxy": [
+        300,
+        180,
+        1980,
+        1795
+      ],
+      "source_sha256": "2ffb3908336afe27d103fac9bc313d69849944e892fbd1776b103c80c341ccfe",
+      "processing": "Two lossless crops of the same authentic screenshot assembled side by side in SVG. Left crop retains CUNY AI Lab logo, full message box, and full open selector; right crop enlarges model ID, search field, and first five choices. Matching outlines and a connector identify the enlarged region. Neutral white outline and arrow identify Compare button beside model search. Embedded pixels remain authentic; only display size changes. Account avatar is excluded.",
+      "sha256": "25b161591d6bee38b9f0ef75303ada49c32192934a27762254d6aeb5799b85f2",
+      "detail_crop_xyxy": [
+        1080,
+        970,
+        1810,
+        1468
+      ],
+      "output_dimensions": [
+        3780,
+        1615
+      ]
+    },
+    {
+      "file": "model-create-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/create",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode, 1100\u00d7900 CSS pixels at device pixel ratio 2 and 120% browser zoom, dark mode. New model form with empty Model Name, Base Model, and System Prompt fields.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "device_pixel_ratio": 2,
+      "crop_xyxy": [
+        100,
+        140,
+        2180,
+        855
+      ],
+      "source_sha256": "26b333dcd6b469d1e32d0a63c03eae8a18d00d2355eb083c54d1de10e2fca601",
+      "processing": "Lossless rectangular crop retains Model Name, Base Model, Description, and System Prompt fields and excludes advanced settings below. Neutral SVG outlines identify the three fields used in this exercise. Original screenshot pixels are embedded without scaling or redrawing.",
+      "sha256": "e1fe31e9b26c3895fdda38f422c2717efdbbe90be8a8d07c6e8ce3f0f097184c"
+    },
+    {
+      "file": "stem-chat-model-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode, 1100\u00d7900 CSS pixels at device pixel ratio 2 and 120% browser zoom, dark mode. Saved introductory STEM Adventure Games configuration uses Gemma 3 4B IT and plays directly in chat.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "device_pixel_ratio": 2,
+      "crop_xyxy": [
+        100,
+        140,
+        2180,
+        806
+      ],
+      "source_sha256": "53fa98a84bbbd5911579ca0e2725d8e512c50045659abad13eacf84d1af2921f",
+      "processing": "Lossless rectangular crop retains model name, selected base model, description, and opening system prompt paragraph. Neutral SVG outlines identify Base Model and System Prompt. Remaining prompt and advanced settings are outside crop. Screenshot pixels are embedded without redrawing.",
+      "sha256": "82cffa0f7fe3869ba8f3a8f212ab9dbb249b89913ab87e538ac627af030ce35a"
+    },
+    {
+      "file": "knowledge-chat-attachments-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode, 1100\u00d7900 CSS pixels at device pixel ratio 2 and 120% browser zoom, dark mode. Saved introductory STEM Adventure Games configuration uses Gemma 3 4B IT and plays directly in chat.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "device_pixel_ratio": 2,
+      "crop_xyxy": [
+        100,
+        850,
+        1280,
+        1278
+      ],
+      "source_sha256": "2560ba713e382ece1d81f14857a9958b85fe77aa7f6200008dc98bdbddce4f5e",
+      "processing": "Lossless rectangular crop retains Knowledge, Tools, and Skills controls and excludes advanced capabilities below. Neutral SVG outlines identify attached collection and empty tool and skill selectors. Screenshot pixels are embedded without redrawing.",
+      "sha256": "2a8526d734b76776311e767e1c2d56636e5ecfff21f4c5b046bd5c4d4c3c553f"
+    },
+    {
+      "file": "stem-chat-play-hidpi-2026-09-16.png",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode, 1100\u00d7900 CSS pixels at device pixel ratio 2 and 120% browser zoom, dark mode. Introductory STEM Adventure Games used Gemma 3 4B IT. User entered \u201cStart an adventure about light and colour.\u201d and then \u201c1\u201d. Visible response reports 140 tokens and 4.45 seconds.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "device_pixel_ratio": 2,
+      "crop_xyxy": [
+        145,
+        680,
+        2170,
+        1790
+      ],
+      "source_sha256": "ddb00ebe7f8b50327a55fe415c4d4440d248415872f4019ef0914ad2dae17acf",
+      "processing": "Lossless rectangular crop retains latest response header, complete scene, three numbered choices, message actions, and full message box. Earlier experiment menu, sidebar, and account avatar are excluded. Authentic screenshot pixels are unchanged; no generated content, retouching, or overlays.",
+      "sha256": "3299b82b0a9f19a8a168df2d8ce0ffcb87cb9333280f609e0c588a4c921471da"
+    },
+    {
+      "file": "knowledge-create-hidpi-2026-09-16.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/knowledge",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode configured for 1100\u00d7900 CSS pixels at device pixel ratio 2. Actual downloaded screenshot dimensions are 1834\u00d71500 pixels. Create a knowledge base modal is empty and Private; no collection was submitted.",
+      "source_dimensions": [
+        1834,
+        1500
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        210,
+        302,
+        1600,
+        1208
+      ],
+      "source_sha256": "8c2d27196e86b2963e41d6be63e0f9adb73440e93d161ff9789d05afe53f7331",
+      "processing": "Lossless rectangular crop inside modal retains its heading, Close, name and description fields, Private access, access list, Cancel, and Create Knowledge. Background collection names and users are excluded. Authentic screenshot pixels unchanged.",
+      "sha256": "facad3f566688cd94b513d40d36ebd36df033476c9629ef7911d2e2e8b70f279"
+    },
+    {
+      "file": "integrations-advanced-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode configured for 1100\u00d7900 CSS pixels at device pixel ratio 2. Actual downloaded screenshot dimensions are 2200\u00d71800 pixels. STEM Adventure Games \u2014 Advanced is selected; Integrations \u2192 Tools is open with STEM Adventure enabled.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        300,
+        690,
+        1980,
+        1330
+      ],
+      "source_sha256": "0a8c3cd08c2706348dc54b38639988ce7b2d20aa817fc3930819f3314b7701d9",
+      "processing": "Lossless rectangular crop retains advanced model name and description, full message box, and top of Tools menu through enabled STEM Adventure row. Neutral SVG outlines and arrows identify Integrations and enabled tool. Background account avatar and unrelated tools lower in menu are excluded. Authentic pixels remain unchanged.",
+      "sha256": "330021dfcc49ea48aa0a347cd4027efcf8c5172a918d35f9ddf76f44f76ee379"
+    },
+    {
+      "file": "model-clone-advanced-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode configured for 1100\u00d7900 CSS pixels at device pixel ratio 2. Actual downloaded screenshot dimensions are 2200\u00d71800 pixels. Models filtered to STEM Adventure Games \u2014 Advanced; More menu open with Clone visible.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        105,
+        90,
+        2180,
+        810
+      ],
+      "source_sha256": "c2c1cf46beb3694ffca2b38eb2d316ddf4317fe2ee2ca3fbfba002fdcf664afb",
+      "processing": "Lossless rectangular crop retains model search, advanced model row, and full More menu. Neutral SVG outline and arrow identify Clone. Sidebar, account avatar, and blank lower page excluded. Authentic screenshot pixels unchanged.",
+      "sha256": "16c9c9fb3deb424e5728a320af37fa560885ee064e652360a4cac8029d6d5edb"
     }
   ]
 }

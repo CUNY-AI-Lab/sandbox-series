@@ -76,15 +76,9 @@ Questions or tasks you enter in chat.
 
 ### Base Models
 
-A base model generates responses. A custom model adds instructions and resources to a chosen base model.
+A base model generates responses. A custom model adds instructions and resources without training a new base model.
 
-Test whether your selected model follows these instructions.
-
-[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
-
-[Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
-
-Creating a custom model does not train a new base model.
+[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
 
 ---
 
@@ -92,9 +86,9 @@ Creating a custom model does not train a new base model.
 
 ### Select Models
 
-![Sandbox chat with CUNY AI Lab logo, message box, and open model selector showing search and model choices; arrow marks model ID at bottom right of message box](images/current/model-selector-open-2026-09-16.svg)
+![Sandbox chat with CUNY AI Lab logo, message box, and open model selector; enlarged detail shows model choices with model ID outlined and marked by an arrow](images/current/model-selector-hidpi-2026-09-16.svg)
 
-**Alt text:** Sandbox chat with CUNY AI Lab logo, message box, and open model selector showing search and model choices; arrow marks model ID at bottom right of message box
+**Alt text:** Sandbox chat with CUNY AI Lab logo, message box, and open model selector; enlarged detail shows model choices with model ID outlined and marked by an arrow
 
 Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
 
@@ -124,9 +118,9 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ### Compare Models
 
-![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
+![Sandbox logo, message box, and open model selector; enlarged detail shows Compare button beside search field outlined and marked by an arrow](images/current/model-selector-compare-hidpi-2026-09-16.svg)
 
-**Alt text:** Sandbox logo, message box, and model selector with Compare button marked by an arrow
+**Alt text:** Sandbox logo, message box, and open model selector; enlarged detail shows Compare button beside search field outlined and marked by an arrow
 
 Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.
 
@@ -178,9 +172,9 @@ What do you think this person wants to accomplish?
 
 ### Gemma’s Response
 
-![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
+You should **walk** to the car wash.
 
-**Alt text:** Gemma recommends walking to a car wash
+[View original response](images/showcase/car-wash-gemma.png)
 
 ---
 
@@ -188,9 +182,9 @@ What do you think this person wants to accomplish?
 
 ### Qwen’s Response
 
-![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
+You should **take the car**.
 
-**Alt text:** Qwen recommends driving to a car wash
+[View original response](images/showcase/car-wash-qwen.png)
 
 ---
 
@@ -286,9 +280,9 @@ Continue in chat if Workspace is unavailable.
 
 ### Model Configuration
 
-![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.](images/current/model-create-2026-09-16-annotated.svg)
+![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.](images/current/model-create-hidpi-2026-09-16.svg)
 
-**Alt text:** New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.
+**Alt text:** New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.
 
 Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 
@@ -330,11 +324,11 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 ### STEM Adventure Games
 
-![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
+![STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.](images/current/stem-chat-play-hidpi-2026-09-16.png)
 
-**Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
+**Alt text:** STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.
 
-Preview Prism Laboratory. Configure and run this game in Workshop 3.
+Type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
 
 ---
 
@@ -342,9 +336,9 @@ Preview Prism Laboratory. Configure and run this game in Workshop 3.
 
 ### Inspect System Prompt
 
-![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
+![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](images/current/stem-chat-model-hidpi-2026-09-16.svg)
 
-**Alt text:** STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.
+**Alt text:** STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.
 
 Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt.
 
@@ -354,17 +348,13 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 
 ### Read Game Instructions
 
-Read instructions for game commands and submitted records, used in Workshop 3.
-
 ```text
-STEM Adventure controls rooms, inventory, prerequisites, observations, and completion.
-
-Ask users to type discuss inside the game, review the message box, and send their record before interpreting their choices.
+End each scene with three numbered choices. Accept a number or an action in ordinary language, such as looking around, examining an object, or asking for a hint. Wait for a response before continuing.
 ```
 
-Which part runs game commands? What must users send before discussing their choices?
+What should happen after you choose an action?
 
-[Read full system prompt](examples.html#stem-system)
+[Read full system prompt](examples.html#stem-chat)
 
 ---
 
@@ -372,7 +362,7 @@ Which part runs game commands? What must users send before discussing their choi
 
 ### Adapt Research Prompts
 
-Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
+You can adapt this exercise to a research task, such as comparing article abstracts or documenting a method.
 
 - State your research question and identify permitted source material.
 
@@ -394,7 +384,7 @@ Save your source material, prompt, response, and assessment together.
 
 ### Define Prompt Components
 
-Adapt STEM Adventure Games through these components.
+Choose one component to change.
 
 - **Context** — Experiment, historical setting, and intended users.
 
@@ -419,9 +409,8 @@ Describe what your model should help users do.
 - What prior knowledge can you assume?
 
 ```text
-Guide an interactive adventure about [experiment].
-Users will explore [question] through [available choices or methods].
-Use [source material] for historical context.
+Guide a short text adventure about light and colour.
+Help players explore how a prism changes a beam of sunlight.
 ```
 
 ---
@@ -430,19 +419,13 @@ Use [source material] for historical context.
 
 ### Write Procedures
 
-Write numbered steps for your model to follow.
-
-- What information should users provide first?
-
-- Which steps must happen before your model responds?
-
-- How should your model respond to different requests?
+What should happen before and after each choice?
 
 ```text
-1. Open Prism Laboratory when users ask to play.
-2. Let users enter commands inside the game.
-3. Ask users to send a play record before interpreting their choices.
-4. Check relevant sources before making historical claims.
+1. Introduce an experiment about light and colour.
+2. Describe an opening scene and a question to investigate.
+3. Offer three numbered choices and wait.
+4. Describe observations after players choose.
 ```
 
 ---
@@ -483,13 +466,12 @@ Which terms need explanation for your intended users?
 
 ### Specify Format
 
-Specify how your model should discuss a submitted record.
+Specify how scenes and choices should appear.
 
 ```text
-Observed decision: [Command and result]
-Prerequisite: [Condition required for that action]
-Source comparison: [What historical evidence supports]
-Question: [One limitation to examine]
+Write a short scene followed by three numbered choices.
+Use simple Unicode headings.
+Wait for a reply before continuing.
 ```
 
 ---
@@ -556,7 +538,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 - Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
 
-- Confirm everyone you share with can access your base model and attached collections, skills, and tools.
+- Confirm everyone you share with can access your base model and any attached collections.
 
 [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
@@ -669,11 +651,11 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 
 ### Review Model Settings
 
-![Custom model for STEM source questions with a selected base model and source-checking System Prompt; outlines identify both fields.](images/current/model-review-2026-09-16-annotated.svg)
+![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](images/current/stem-chat-model-hidpi-2026-09-16.svg)
 
-**Alt text:** Custom model for STEM source questions with a selected base model and source-checking System Prompt; outlines identify both fields.
+**Alt text:** STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.
 
-Review Base Model and System Prompt in your custom model. Use [source-checking instructions](examples.html#stem-sources) for this example. Leave Skills and Tools unselected. Under Advanced Params, set Function Calling to Legacy for this workshop.
+Review **Base Model** and **System Prompt** in your custom model. Use [STEM Adventure Games instructions](examples.html#stem-chat) from Workshop 1. Leave Skills and Tools unselected.
 
 ---
 
@@ -733,7 +715,7 @@ Women in science
 
 Investigate collaboration, recognition, and institutions.
 
-Keep source summaries and game documentation distinguishable.
+Check whether a scene follows its sources or adds invented details.
 
 ---
 
@@ -757,9 +739,9 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 ### Review Attached Knowledge
 
-![Custom model with STEM Wikipedia Experiments attached under Knowledge and no Skills or Tools selected; outline marks Knowledge.](images/current/knowledge-attachments-2026-09-16-annotated.svg)
+![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.](images/current/knowledge-chat-attachments-hidpi-2026-09-16.svg)
 
-**Alt text:** Custom model with STEM Wikipedia Experiments attached under Knowledge and no Skills or Tools selected; outline marks Knowledge.
+**Alt text:** STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.
 
 Select STEM Wikipedia Experiments under Knowledge in your custom model and choose Save & Update. Skills and Tools are added in Workshop 3.
 
@@ -769,17 +751,15 @@ Select STEM Wikipedia Experiments under Knowledge in your custom model and choos
 
 ### Check Game Sources
 
-Attach [Prism Laboratory scenario](examples/adventure/prism-scenario.md) to chat. Compare this document with Newton: Light and Colour, a summary of Newton’s account.
+In your custom model, start an adventure about light and colour. Choose one action, then ask about its historical sources.
 
 ```text
-Using Newton: Light and Colour, identify apparatus details simplified in the attached Prism Laboratory scenario. Quote a relevant passage and identify this entry as a source summary. If it is unavailable, say so.
+Which objects in this scene appear in Newton: Light and Colour? Quote a relevant passage. Which details were invented for this game?
 ```
 
 Open cited material. Does it support your model’s response?
 
-[Read Newton source entry](examples/knowledge/newton-light-colour.md) · [Review source register](examples/knowledge/source-register.md)
-
-[Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006) · [Read scenario](knowledge/reference.html#prism-laboratory)
+[Read Newton source summary](examples/knowledge/newton-light-colour.md) · [Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
 
 ---
 
@@ -815,17 +795,15 @@ Choose documents that explain your course or research project and describe what 
 
 ### Choose Reference Materials
 
-Choose documents for your collection.
+Choose source documents that help players investigate an experiment.
 
 - Use [Newton: Light and Colour](examples/knowledge/newton-light-colour.md) for apparatus and observations.
 
-- Use [Newton: Experimental Variants](examples/knowledge/newton-experimental-variants.md) for procedural changes.
+- Use [Newton: Experimental Variants](examples/knowledge/newton-experimental-variants.md) for changes to experimental procedures.
 
-- Use [Evaluate Game Procedures](examples/knowledge/game-procedure-evaluation.md) for software checks.
+Read entries before uploading. Distinguish these summaries from original historical accounts.
 
-Download entries you want your model to use. Review their contents before uploading.
-
-[Download Light and Colour](examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](examples/knowledge/newton-experimental-variants.md) · [Download Game Procedures](examples/knowledge/game-procedure-evaluation.md)
+[Download Light and Colour](examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](examples/knowledge/newton-experimental-variants.md)
 
 ---
 
@@ -833,7 +811,7 @@ Download entries you want your model to use. Review their contents before upload
 
 ### Create Knowledge Collections
 
-![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create.png)
+![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create-hidpi-2026-09-16.png)
 
 **Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
 
@@ -970,7 +948,7 @@ Test a request that needs your skill or tool. Check what your model used and whe
 
 ### Review Previous Work
 
-STEM Adventure Games is a custom model. Prism Laboratory is its starting game. Open this model and review its system prompt.
+Continue from your chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
 
 - Identify instructions for opening Prism Laboratory.
 
@@ -988,7 +966,7 @@ Use a private copy when adapting this configuration.
 
 System prompt
 
-Tell STEM Adventure Games when to open a game or consult sources.
+Tell your model when to open a game or consult sources.
 
 Knowledge
 
@@ -1002,7 +980,7 @@ Tool
 
 STEM Adventure opens a game and applies its rules.
 
-Scenario JSON is a text file describing rooms, items, actions, and rules.
+Use provided game files to describe rooms, objects, and rules.
 
 ---
 
@@ -1010,11 +988,11 @@ Scenario JSON is a text file describing rooms, items, actions, and rules.
 
 ### Enable Tools
 
-![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](images/current/integrations.png)
+![STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.](images/current/integrations-advanced-hidpi-2026-09-16.svg)
 
-**Alt text:** Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter
+**Alt text:** STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.
 
-Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
+With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
 ---
 
@@ -1026,7 +1004,7 @@ Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for t
 
 **Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
 
-Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read scenario JSON](examples/adventure/prism.json)
+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read game file](examples/adventure/prism.json)
 
 ---
 
@@ -1175,11 +1153,11 @@ Observed result: [Fill only after testing]
 
 ### Clone Custom Models
 
-![Workspace Models filtered to STEM Adventure Games; arrow marks Clone in its open menu.](images/current/model-clone-2026-09-16-annotated.svg)
+![Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.](images/current/model-clone-advanced-hidpi-2026-09-16.svg)
 
-**Alt text:** Workspace Models filtered to STEM Adventure Games; arrow marks Clone in its open menu.
+**Alt text:** Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.
 
-In Workspace → Models, open ⋯ beside STEM Adventure Games and choose Clone.
+In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and choose Clone.
 
 ---
 
@@ -1233,7 +1211,7 @@ Open Workspace → Skills → Create. Name your skill and add an identifier and 
 
 ### Attach Skills
 
-- Open your private copy of STEM Adventure Games under **Workspace → Models**.
+- Open your private copy under **Workspace → Models**.
 
 - Replace Extend STEM Adventures with your saved draft under **Skills**. Update System Prompt to name your skill.
 
@@ -1251,7 +1229,7 @@ Native function calling lets your model call tools and load attached skill instr
 
 ### Extend Procedures
 
-Open your private copy of STEM Adventure Games. Attach [Prism Laboratory JSON](examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request.
+Open your private copy. Attach [Prism Laboratory JSON](examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request.
 
 ```text
 Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
@@ -1267,7 +1245,7 @@ Add an aperture comparison to Prism Laboratory using Newton: Experimental Varian
 
 ### Test Skills
 
-Use your private copy of STEM Adventure Games for both tests. Remove any additional skills from this copy before comparing your draft.
+Use your private copy for both tests. Remove any additional skills from this copy before comparing your draft.
 
 - Remove your skill under **Workspace → Models → Skills**. Save, start a new chat, and confirm it is off under **Integrations → Skills**. Repeat your extension request with Prism Laboratory JSON attached.
 

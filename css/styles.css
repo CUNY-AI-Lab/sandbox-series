@@ -7,8 +7,9 @@ color-scheme:dark;
 --text:#f1f1f1;
 --muted:#b9b9b9;
 --border:#454545;
---body:clamp(21px,1.85vw,27px);
+--body:clamp(26px,2.25vw,32px);
 --heading:32px;
+--support:clamp(22px,1.9vw,27px);
 --accent-cyan:var(--text);
 --accent-blue:var(--text);
 --accent-red:var(--text);
@@ -110,7 +111,8 @@ gap:22px}
 .slide-inner>h2{
 margin-bottom:8px}
 .slide-inner>p{
-max-width:1000px}
+max-width:1000px;
+margin-top:0}
 .title-slide .slide-inner{
 position:relative;
 justify-content:center;
@@ -135,18 +137,18 @@ color:#ddd}
 .title-credit p+p{
 margin-top:6px}
 .small,.source{
-font-size:18px;
-line-height:1.5;
+font-size:var(--support);
+line-height:1.4;
 color:var(--muted)}
 .source{
 margin-top:4px}
 .lead{
-font-size:clamp(25px,2.4vw,33px);
+font-size:clamp(28px,2.5vw,34px);
 line-height:1.4;
 color:var(--text);
 max-width:1000px}
 .note,.tip-box{
-font-size:clamp(19px,1.6vw,23px);
+font-size:var(--support);
 line-height:1.45;
 border-left:2px solid #666;
 padding:4px 0 4px 20px;
@@ -169,7 +171,7 @@ padding-top:20px}
 .grid-2{
 gap:28px 38px}
 .card p{
-font-size:clamp(20px,1.7vw,25px)}
+font-size:var(--body)}
 .roadmap{
 list-style:decimal-leading-zero;
 display:grid;
@@ -186,7 +188,7 @@ font-size:20px}
 display:block}
 .roadmap span{
 color:var(--muted);
-font-size:.88em;
+font-size:.94em;
 margin-top:5px}
 .feature-list{
 display:grid;
@@ -220,7 +222,7 @@ gap:22px}
 .stage .template{
 width:100%}
 .stage .prompt-block{
-font-size:20px}
+font-size:clamp(24px,2vw,28px)}
 .stage .small{
 margin-top:12px}
 figure{
@@ -236,13 +238,19 @@ border:1px solid #424242;
 border-radius:8px;
 background:#141414}
 figcaption{
-font-size:16px;
+font-size:var(--support);
 color:var(--muted);
 line-height:1.45;
 margin-top:12px}
 .layout-content figure .screenshot-img{
 max-height:160px;
 object-fit:contain}
+.response-slide .quoted-prompt{
+margin:12px 0;
+font-size:clamp(32px,3.2vw,44px);
+line-height:1.35}
+.response-slide .quoted-prompt p{
+color:var(--text)}
 .template{
 position:relative}
 .copy-btn{
@@ -275,7 +283,7 @@ padding-top:52px}
 .prompt-block{
 font-family:inherit;
 white-space:pre-wrap;
-font-size:clamp(20px,1.75vw,24px);
+font-size:clamp(24px,2vw,28px);
 line-height:1.45;
 background:var(--surface);
 color:var(--text);
@@ -289,7 +297,7 @@ overflow:auto;
 scrollbar-color:#666 var(--surface)}
 .prompt-block .prompt-label{
 display:block;
-font-size:16px;
+font-size:var(--support);
 color:var(--muted);
 margin-bottom:14px}
 .prompt-block.prompt-bad{
@@ -303,14 +311,14 @@ font-size:1.2em}
 .long-prompt-slide .prompt-good{
 max-height:calc(100dvh - 250px);
 min-height:200px;
-font-size:21px;
+font-size:clamp(24px,2vw,28px);
 line-height:1.5}
 .long-prompt-slide .slide-inner{
 gap:12px}
 .long-prompt-slide h2{
 font-size:var(--heading)}
 .label,.section-label{
-font-size:17px;
+font-size:22px;
 color:var(--muted);
 display:block;
 margin-bottom:15px}
@@ -334,7 +342,7 @@ font-size:.9em}
 .rubric{
 border-collapse:collapse;
 width:100%;
-font-size:clamp(20px,1.8vw,25px)}
+font-size:var(--body)}
 .rubric th,.rubric td{
 padding:18px 20px 18px 0;
 border-bottom:1px solid var(--border);
@@ -347,7 +355,7 @@ color:var(--muted)}
 .rubric th:first-child{
 width:30%}
 .rubric thead th{
-font-size:18px;
+font-size:var(--support);
 color:var(--muted);
 font-weight:500}
 #nav-bar{
@@ -361,7 +369,7 @@ padding:0 30px;
 border-top:1px solid var(--border);
 background:var(--bg);
 z-index:5;
-font-size:16px}
+font-size:20px}
 #nav-bar button{
 padding:6px 10px;
 min-height:44px;
@@ -505,16 +513,16 @@ top:10px}
 .progression-slide .slide-inner{
 gap:18px}
 .progression-slide .columns{
-font-size:21px;
+font-size:var(--body);
 gap:36px}
 .progression-slide .columns>div{
 padding-top:17px}
 .progression-slide .columns ul{
 font-size:inherit}
 .progression-slide .prompt-mid{
-font-size:23px}
+font-size:clamp(24px,2vw,28px)}
 .sample-prompt-slide .prompt-block{
-font-size:21px;
+font-size:clamp(24px,2vw,28px);
 line-height:1.38}
 .sample-prompt-slide .slide-inner{
 gap:16px}
@@ -539,5 +547,5 @@ max-height:calc(100dvh - 278px)}
 .prompt-block { overflow-wrap:anywhere; }
 .prompt-block .prompt-label { display:block; }
 .flow-arrow, .divider-line { color:var(--muted); }
-.series-position { font-size:16px; }
+.series-position { font-size:22px; }
 @media (max-width:600px) { #nav-bar { gap:5px; padding:8px; } #nav-bar button { font-size:14px; padding:8px; } }

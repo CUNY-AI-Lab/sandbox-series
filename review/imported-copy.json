@@ -242,6 +242,11 @@
         "before": "Choose Reference MaterialsAdd sources that support your adventure.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries you want your model to use. Create your own collection after reviewing these materials.Download Light and Colour · Download Experimental Variants · Download Game Procedures",
         "after": "Choose Reference MaterialsChoose documents for your collection.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries you want your model to use. Review their contents before uploading.Download Light and Colour · Download Experimental Variants · Download Game Procedures",
         "reason": "Workshop 2 uses system prompts and knowledge only; user correction 2026-09-16"
+      },
+      {
+        "before": "Choose Reference MaterialsChoose documents for your collection.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for procedural changes.Use Evaluate Game Procedures for software checks.Download entries you want your model to use. Review their contents before uploading.Download Light and Colour · Download Experimental Variants · Download Game Procedures",
+        "after": "Choose Reference MaterialsChoose source documents that help players investigate an experiment.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.Read entries before uploading. Distinguish these summaries from original historical accounts.Download Light and Colour · Download Experimental Variants",
+        "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
       }
     ]
   },

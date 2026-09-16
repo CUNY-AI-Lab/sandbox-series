@@ -8,9 +8,9 @@ Checked 14 September 2026.
 
 Newton describes darkening a room and admitting sunlight through a small opening. A prism produced an elongated spectrum. He investigated possible effects of glass thickness, aperture size, irregularities in glass, and incident rays. He then used two pierced boards and another prism to compare refraction of light selected from different parts of the spectrum. His account argues that sunlight contains rays with different refrangibility.
 
-## Use in Prism Laboratory
+## Use in Text Adventures
 
-Opening a shutter, forming a spectrum, selecting light, and refracting it again have support in this account. Rooms, inventory, commands, and winning conditions are invented. One screen and one collectible prism simplify an apparatus involving two boards and two prisms. Game output is a scripted observation, not a physical measurement or complete historical reconstruction.
+Newton’s account describes two pierced boards and two prisms. A scene with one screen and one prism simplifies that apparatus. Rooms, characters, dialogue, and puzzles may be invented for play. Compare each scene with this account to distinguish documented apparatus and observations from invented details.
 
 ## Questions
 

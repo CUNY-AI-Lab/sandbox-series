@@ -4,18 +4,18 @@
       "You are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge]."
     ],
     "after": [
-      "Guide an interactive adventure about [experiment].\nUsers will explore [question] through [available choices or methods].\nUse [source material] for historical context."
+      "Guide a short text adventure about light and colour.\nHelp players explore how a prism changes a beam of sunlight."
     ],
-    "reason": "User requested STEM Adventure Games replace discipline-specific examples; related templates now follow that use case."
+    "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
   },
   "23": {
     "before": [
       "Procedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it]."
     ],
     "after": [
-      "1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims."
+      "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose."
     ],
-    "reason": "User requested STEM Adventure Games replace discipline-specific examples; related templates now follow that use case."
+    "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
   },
   "24": {
     "before": [
@@ -31,7 +31,7 @@
       "Tone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\""
     ],
     "after": [
-      "Address the player as \u201cyou.\u201d\nUse concise language for scenes and choices.\nExplain unfamiliar scientific terms when they first appear."
+      "Address the player as “you.”\nUse concise language for scenes and choices.\nExplain unfamiliar scientific terms when they first appear."
     ],
     "reason": "User requested STEM Adventure Games replace discipline-specific examples; related templates now follow that use case."
   },
@@ -40,8 +40,8 @@
       "Format each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]"
     ],
     "after": [
-      "Observed decision: [Command and result]\nPrerequisite: [Condition required for that action]\nSource comparison: [What historical evidence supports]\nQuestion: [One limitation to examine]"
+      "Write a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing."
     ],
-    "reason": "User requested STEM Adventure Games replace discipline-specific examples; related templates now follow that use case."
+    "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
   }
 }

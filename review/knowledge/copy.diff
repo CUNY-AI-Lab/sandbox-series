@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,828 +1,311 @@
+@@ -1,828 +1,307 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Curating Knowledge Collections
@@ -417,9 +417,9 @@
 +
 +### Review Model Settings
 +
-+![Custom model for STEM source questions with a selected base model and source-checking System Prompt; outlines identify both fields.](../images/current/model-review-2026-09-16-annotated.svg)
++![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](../images/current/stem-chat-model-hidpi-2026-09-16.svg)
 +
-+Review Base Model and System Prompt in your custom model. Use [source-checking instructions](../examples.html#stem-sources) for this example. Leave Skills and Tools unselected. Under Advanced Params, set Function Calling to Legacy for this workshop.
++Review **Base Model** and **System Prompt** in your custom model. Use [STEM Adventure Games instructions](../examples.html#stem-chat) from Workshop 1. Leave Skills and Tools unselected.
 +
 +---
 +
@@ -477,7 +477,7 @@
 +
 +Investigate collaboration, recognition, and institutions.
 +
-+Keep source summaries and game documentation distinguishable.
++Check whether a scene follows its sources or adds invented details.
 +
 +---
 +
@@ -501,7 +501,7 @@
 +
 +### Review Attached Knowledge
 +
-+![Custom model with STEM Wikipedia Experiments attached under Knowledge and no Skills or Tools selected; outline marks Knowledge.](../images/current/knowledge-attachments-2026-09-16-annotated.svg)
++![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.](../images/current/knowledge-chat-attachments-hidpi-2026-09-16.svg)
 +
 +Select STEM Wikipedia Experiments under Knowledge in your custom model and choose Save & Update. Skills and Tools are added in Workshop 3.
 +
@@ -511,12 +511,12 @@
 +
 +### Check Game Sources
 +
-+Attach [Prism Laboratory scenario](../examples/adventure/prism-scenario.md) to chat. Compare this document with Newton: Light and Colour, a summary of Newton’s account.
++In your custom model, start an adventure about light and colour. Choose one action, then ask about its historical sources.
  
  ```text
 -Collection contents:
 -• syllabus.pdf (14 pages, full course syllabus)
-+Using Newton: Light and Colour, identify apparatus details simplified in the attached Prism Laboratory scenario. Quote a relevant passage and identify this entry as a source summary. If it is unavailable, say so.
++Which objects in this scene appear in Newton: Light and Colour? Quote a relevant passage. Which details were invented for this game?
  ```
  
 -### What goes wrong?
@@ -998,9 +998,7 @@
 -[ailab.gc.cuny.edu](https://ailab.gc.cuny.edu)
 +Open cited material. Does it support your model’s response?
 +
-+[Read Newton source entry](../examples/knowledge/newton-light-colour.md) · [Review source register](../examples/knowledge/source-register.md)
-+
-+[Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006) · [Read scenario](reference.html#prism-laboratory)
++[Read Newton source summary](../examples/knowledge/newton-light-colour.md) · [Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
 +
 +---
 +
@@ -1036,17 +1034,15 @@
 +
 +### Choose Reference Materials
 +
-+Choose documents for your collection.
++Choose source documents that help players investigate an experiment.
 +
 +- Use [Newton: Light and Colour](../examples/knowledge/newton-light-colour.md) for apparatus and observations.
 +
-+- Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.md) for procedural changes.
++- Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.md) for changes to experimental procedures.
 +
-+- Use [Evaluate Game Procedures](../examples/knowledge/game-procedure-evaluation.md) for software checks.
++Read entries before uploading. Distinguish these summaries from original historical accounts.
 +
-+Download entries you want your model to use. Review their contents before uploading.
-+
-+[Download Light and Colour](../examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](../examples/knowledge/newton-experimental-variants.md) · [Download Game Procedures](../examples/knowledge/game-procedure-evaluation.md)
++[Download Light and Colour](../examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](../examples/knowledge/newton-experimental-variants.md)
 +
 +---
 +
@@ -1054,7 +1050,7 @@
 +
 +### Create Knowledge Collections
 +
-+![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create.png)
++![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](../images/current/knowledge-create-hidpi-2026-09-16.png)
 +
 +Open Workspace → Knowledge → Create. Enter a name and description, keep access Private, then select Create Knowledge.
 +

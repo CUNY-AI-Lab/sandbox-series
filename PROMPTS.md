@@ -76,15 +76,9 @@ Questions or tasks you enter in chat.
 
 ### Base Models
 
-A base model generates responses. A custom model adds instructions and resources to a chosen base model.
+A base model generates responses. A custom model adds instructions and resources without training a new base model.
 
-Test whether your selected model follows these instructions.
-
-[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
-
-[Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
-
-Creating a custom model does not train a new base model.
+[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
 
 ---
 
@@ -92,7 +86,7 @@ Creating a custom model does not train a new base model.
 
 ### Select Models
 
-![Sandbox chat with CUNY AI Lab logo, message box, and open model selector showing search and model choices; arrow marks model ID at bottom right of message box](images/current/model-selector-open-2026-09-16.svg)
+![Sandbox chat with CUNY AI Lab logo, message box, and open model selector; enlarged detail shows model choices with model ID outlined and marked by an arrow](images/current/model-selector-hidpi-2026-09-16.svg)
 
 Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
 
@@ -122,7 +116,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ### Compare Models
 
-![Sandbox logo, message box, and model selector with Compare button marked by an arrow](images/current/model-selector-compare-2026-09-14.svg)
+![Sandbox logo, message box, and open model selector; enlarged detail shows Compare button beside search field outlined and marked by an arrow](images/current/model-selector-compare-hidpi-2026-09-16.svg)
 
 Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.
 
@@ -174,7 +168,9 @@ What do you think this person wants to accomplish?
 
 ### Gemma’s Response
 
-![Gemma recommends walking to a car wash](images/showcase/car-wash-gemma.png)
+You should **walk** to the car wash.
+
+[View original response](images/showcase/car-wash-gemma.png)
 
 ---
 
@@ -182,7 +178,9 @@ What do you think this person wants to accomplish?
 
 ### Qwen’s Response
 
-![Qwen recommends driving to a car wash](images/showcase/car-wash-qwen.png)
+You should **take the car**.
+
+[View original response](images/showcase/car-wash-qwen.png)
 
 ---
 
@@ -272,7 +270,7 @@ Continue in chat if Workspace is unavailable.
 
 ### Model Configuration
 
-![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields; outlines identify each field.](images/current/model-create-2026-09-16-annotated.svg)
+![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.](images/current/model-create-hidpi-2026-09-16.svg)
 
 Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
 
@@ -312,9 +310,9 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 ### STEM Adventure Games
 
-![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
+![STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.](images/current/stem-chat-play-hidpi-2026-09-16.png)
 
-Preview Prism Laboratory. Configure and run this game in Workshop 3.
+Type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
 
 ---
 
@@ -322,7 +320,7 @@ Preview Prism Laboratory. Configure and run this game in Workshop 3.
 
 ### Inspect System Prompt
 
-![STEM Adventure Games model editor showing DeepSeek V4 Pro 0813 under Base Model and opening system prompt instructions.](images/current/stem-model-2026-09-14.png)
+![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](images/current/stem-chat-model-hidpi-2026-09-16.svg)
 
 Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt.
 
@@ -332,17 +330,13 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 
 ### Read Game Instructions
 
-Read instructions for game commands and submitted records, used in Workshop 3.
-
 ```text
-STEM Adventure controls rooms, inventory, prerequisites, observations, and completion.
-
-Ask users to type discuss inside the game, review the message box, and send their record before interpreting their choices.
+End each scene with three numbered choices. Accept a number or an action in ordinary language, such as looking around, examining an object, or asking for a hint. Wait for a response before continuing.
 ```
 
-Which part runs game commands? What must users send before discussing their choices?
+What should happen after you choose an action?
 
-[Read full system prompt](examples.html#stem-system)
+[Read full system prompt](examples.html#stem-chat)
 
 ---
 
@@ -350,7 +344,7 @@ Which part runs game commands? What must users send before discussing their choi
 
 ### Adapt Research Prompts
 
-Choose a research task, such as comparing article abstracts, checking how you coded a passage, or documenting a method.
+You can adapt this exercise to a research task, such as comparing article abstracts or documenting a method.
 
 - State your research question and identify permitted source material.
 
@@ -372,7 +366,7 @@ Save your source material, prompt, response, and assessment together.
 
 ### Define Prompt Components
 
-Adapt STEM Adventure Games through these components.
+Choose one component to change.
 
 - **Context** — Experiment, historical setting, and intended users.
 
@@ -397,9 +391,8 @@ Describe what your model should help users do.
 - What prior knowledge can you assume?
 
 ```text
-Guide an interactive adventure about [experiment].
-Users will explore [question] through [available choices or methods].
-Use [source material] for historical context.
+Guide a short text adventure about light and colour.
+Help players explore how a prism changes a beam of sunlight.
 ```
 
 ---
@@ -408,19 +401,13 @@ Use [source material] for historical context.
 
 ### Write Procedures
 
-Write numbered steps for your model to follow.
-
-- What information should users provide first?
-
-- Which steps must happen before your model responds?
-
-- How should your model respond to different requests?
+What should happen before and after each choice?
 
 ```text
-1. Open Prism Laboratory when users ask to play.
-2. Let users enter commands inside the game.
-3. Ask users to send a play record before interpreting their choices.
-4. Check relevant sources before making historical claims.
+1. Introduce an experiment about light and colour.
+2. Describe an opening scene and a question to investigate.
+3. Offer three numbered choices and wait.
+4. Describe observations after players choose.
 ```
 
 ---
@@ -461,13 +448,12 @@ Which terms need explanation for your intended users?
 
 ### Specify Format
 
-Specify how your model should discuss a submitted record.
+Specify how scenes and choices should appear.
 
 ```text
-Observed decision: [Command and result]
-Prerequisite: [Condition required for that action]
-Source comparison: [What historical evidence supports]
-Question: [One limitation to examine]
+Write a short scene followed by three numbered choices.
+Use simple Unicode headings.
+Wait for a reply before continuing.
 ```
 
 ---
@@ -534,7 +520,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 - Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
 
-- Confirm everyone you share with can access your base model and attached collections, skills, and tools.
+- Confirm everyone you share with can access your base model and any attached collections.
 
 [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 

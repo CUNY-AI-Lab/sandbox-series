@@ -54,7 +54,7 @@ Test a request that needs your skill or tool. Check what your model used and whe
 
 ### Review Previous Work
 
-STEM Adventure Games is a custom model. Prism Laboratory is its starting game. Open this model and review its system prompt.
+Continue from your chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
 
 - Identify instructions for opening Prism Laboratory.
 
@@ -72,7 +72,7 @@ Use a private copy when adapting this configuration.
 
 System prompt
 
-Tell STEM Adventure Games when to open a game or consult sources.
+Tell your model when to open a game or consult sources.
 
 Knowledge
 
@@ -86,7 +86,7 @@ Tool
 
 STEM Adventure opens a game and applies its rules.
 
-Scenario JSON is a text file describing rooms, items, actions, and rules.
+Use provided game files to describe rooms, objects, and rules.
 
 ---
 
@@ -94,9 +94,9 @@ Scenario JSON is a text file describing rooms, items, actions, and rules.
 
 ### Enable Tools
 
-![Current Integrations menu showing Tools, Skills, Web Search, and Code Interpreter](../images/current/integrations.png)
+![STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.](../images/current/integrations-advanced-hidpi-2026-09-16.svg)
 
-Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
+With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
 ---
 
@@ -106,7 +106,7 @@ Open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for t
 
 ![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](../images/current/stem-game-2026-09-14.png)
 
-Send Begin Prism Laboratory to STEM Adventure Games. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read scenario JSON](../examples/adventure/prism.json)
+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.json)
 
 ---
 
@@ -255,9 +255,9 @@ Observed result: [Fill only after testing]
 
 ### Clone Custom Models
 
-![Workspace Models filtered to STEM Adventure Games; arrow marks Clone in its open menu.](../images/current/model-clone-2026-09-16-annotated.svg)
+![Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.](../images/current/model-clone-advanced-hidpi-2026-09-16.svg)
 
-In Workspace → Models, open ⋯ beside STEM Adventure Games and choose Clone.
+In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and choose Clone.
 
 ---
 
@@ -307,7 +307,7 @@ Open Workspace → Skills → Create. Name your skill and add an identifier and 
 
 ### Attach Skills
 
-- Open your private copy of STEM Adventure Games under **Workspace → Models**.
+- Open your private copy under **Workspace → Models**.
 
 - Replace Extend STEM Adventures with your saved draft under **Skills**. Update System Prompt to name your skill.
 
@@ -325,7 +325,7 @@ Native function calling lets your model call tools and load attached skill instr
 
 ### Extend Procedures
 
-Open your private copy of STEM Adventure Games. Attach [Prism Laboratory JSON](../examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request.
+Open your private copy. Attach [Prism Laboratory JSON](../examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request.
 
 ```text
 Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
@@ -341,7 +341,7 @@ Add an aperture comparison to Prism Laboratory using Newton: Experimental Varian
 
 ### Test Skills
 
-Use your private copy of STEM Adventure Games for both tests. Remove any additional skills from this copy before comparing your draft.
+Use your private copy for both tests. Remove any additional skills from this copy before comparing your draft.
 
 - Remove your skill under **Workspace → Models → Skills**. Save, start a new chat, and confirm it is off under **Integrations → Skills**. Repeat your extension request with Prism Laboratory JSON attached.
 

@@ -264,6 +264,11 @@
         "before": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Scientific experiment, historical setting, and intended users.Procedure — Actions your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and numbered choices.",
         "after": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation.",
         "reason": "User requested tested STEM game, complementary skill, and tool as primary examples."
+      },
+      {
+        "before": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation.",
+        "after": "Define Prompt ComponentsChoose one component to change.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation.",
+        "reason": "Limit 90-minute exercise to one prompt component and keep procedure consistent with its light-and-colour context."
       }
     ],
     "allowed_additions": []
@@ -299,6 +304,11 @@
         "before": "\n\nComponent 1\nDefine Context\nDescribe your course, students, and learning challenge.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template. Describe what your model should help students do.\n\n\n",
         "after": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide an interactive adventure about [experiment].\nUsers will explore [question] through [available choices or methods].\nUse [source material] for historical context.",
         "reason": "User requested one situated STEM use case in place of discipline-specific examples; adapt related exercise instructions."
+      },
+      {
+        "before": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide an interactive adventure about [experiment].\nUsers will explore [question] through [available choices or methods].\nUse [source material] for historical context.",
+        "after": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide a short text adventure about light and colour.\nHelp players explore how a prism changes a beam of sunlight.",
+        "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
       }
     ],
     "allowed_additions": []
@@ -344,6 +354,16 @@
         "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
         "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?Which steps must happen before your model responds?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
         "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+      },
+      {
+        "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?Which steps must happen before your model responds?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+        "after": "Write ProceduresWhat should happen before and after each choice?Copy prompt1. Ask players to choose an experiment.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+        "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+      },
+      {
+        "before": "Write ProceduresWhat should happen before and after each choice?Copy prompt1. Ask players to choose an experiment.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+        "after": "Write ProceduresWhat should happen before and after each choice?Copy prompt1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+        "reason": "Limit 90-minute exercise to one prompt component and keep procedure consistent with its light-and-colour context."
       }
     ],
     "allowed_additions": []
@@ -434,6 +454,11 @@
         "before": "Specify FormatSpecify how each stage should appear.Copy prompt[Brief scene]\n[Observation and what remains uncertain]\n\n1. [Experimental choice]\n2. [Experimental choice]\n3. [Experimental choice]\n4. [Option to revisit an earlier decision]\n\nWait for the player to choose.",
         "after": "Specify FormatSpecify how your model should discuss a submitted record.Copy promptObserved decision: [Command and result]\nPrerequisite: [Condition required for that action]\nSource comparison: [What historical evidence supports]\nQuestion: [One limitation to examine]",
         "reason": "User requested tested STEM game, complementary skill, and tool as primary examples."
+      },
+      {
+        "before": "Specify FormatSpecify how your model should discuss a submitted record.Copy promptObserved decision: [Command and result]\nPrerequisite: [Condition required for that action]\nSource comparison: [What historical evidence supports]\nQuestion: [One limitation to examine]",
+        "after": "Specify FormatSpecify how scenes and choices should appear.Copy promptWrite a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing.",
+        "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
       }
     ],
     "allowed_additions": []
@@ -533,6 +558,11 @@
         "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configuration",
         "after": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configurationCreating a custom model does not train a new base model.",
         "reason": "Approved clarity proposal, 2026-09-16"
+      },
+      {
+        "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configurationCreating a custom model does not train a new base model.",
+        "after": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources without training a new base model.System Prompts · Open WebUI model configuration",
+        "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
       }
     ],
     "allowed_additions": []
