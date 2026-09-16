@@ -842,6 +842,144 @@
       "source_sha256": "c2c1cf46beb3694ffca2b38eb2d316ddf4317fe2ee2ca3fbfba002fdcf664afb",
       "processing": "Lossless rectangular crop retains model search, advanced model row, and full More menu. Neutral SVG outline and arrow identify Clone. Sidebar, account avatar, and blank lower page excluded. Authentic screenshot pixels unchanged.",
       "sha256": "16c9c9fb3deb424e5728a320af37fa560885ee064e652360a4cac8029d6d5edb"
+    },
+    {
+      "file": "chat-controls-instructions-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-14",
+      "annotated_date": "2026-09-16",
+      "source_file": "chat-controls-2026-09-14.png",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "source_sha256": "d45a072a56aab505307494bab847025a432bb5cfd5d500b0276f9b73aa9955ec",
+      "processing": "Original authentic Firefox screenshot and existing System Prompt annotation retained. Added neutral white outline, arrow, and Controls label near top-right Controls button. No screenshot pixels altered or UI reconstructed.",
+      "sha256": "25e08d4a81ac95126b95814e64e7133828fba76ba2312edad6bcab9d83604509"
+    },
+    {
+      "file": "gateway-selector-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode configured for 1100\u00d7900 CSS pixels at device pixel ratio 2. Actual downloaded dimensions are 2200\u00d71800 pixels. Gemma 4 26B A4B IT selected in an empty new chat; model selector open with Gateway filter enabled. Visible catalog includes Qwen3.8 27B and Mistral Large 3. No request submitted in this capture.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        300,
+        180,
+        1980,
+        1795
+      ],
+      "detail_crop_xyxy": [
+        1080,
+        970,
+        1810,
+        1535
+      ],
+      "output_dimensions": [
+        3780,
+        1685
+      ],
+      "source_sha256": "67442cc24f9751aba032160031fc05f0fa4540cef49ce3984fcddeb9a30ba7da",
+      "processing": "Two lossless crops of identical authentic screenshot pixels arranged side by side. Context crop retains logo, full message box, and complete selector; enlarged detail retains model ID, Gateway filter, Compare, and first six model choices. Matching outlines and connector identify enlarged region. Neutral white outline and arrow identify model ID at bottom right of message box. Account avatar is excluded. No UI or response text reconstructed.",
+      "sha256": "26c52a2fc49d5e5ee98964fa90637fea29adeb22adb372b37ceca81432d58332",
+      "selected_model_id": "gemma-4-26b-a4b-it",
+      "selected_model_name": "Gemma 4 26B A4B IT",
+      "model_filter": "Gateway"
+    },
+    {
+      "file": "gateway-selector-compare-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode configured for 1100\u00d7900 CSS pixels at device pixel ratio 2. Actual downloaded dimensions are 2200\u00d71800 pixels. Gemma 4 26B A4B IT selected in an empty new chat; model selector open with Gateway filter enabled. Visible catalog includes Qwen3.8 27B and Mistral Large 3. No request submitted in this capture.",
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        300,
+        180,
+        1980,
+        1795
+      ],
+      "detail_crop_xyxy": [
+        1080,
+        970,
+        1810,
+        1535
+      ],
+      "output_dimensions": [
+        3780,
+        1685
+      ],
+      "source_sha256": "67442cc24f9751aba032160031fc05f0fa4540cef49ce3984fcddeb9a30ba7da",
+      "processing": "Two lossless crops of identical authentic screenshot pixels arranged side by side. Context crop retains logo, full message box, and complete selector; enlarged detail retains model ID, Gateway filter, Compare, and first six model choices. Matching outlines and connector identify enlarged region. Neutral white outline and arrow identify Compare button beside model search. Account avatar is excluded. No UI or response text reconstructed.",
+      "sha256": "888bdcdd6bd54a5486313752692586689c24722769a8c85d1fe6520d9a6a46f5",
+      "selected_model_id": "gemma-4-26b-a4b-it",
+      "selected_model_name": "Gemma 4 26B A4B IT",
+      "model_filter": "Gateway"
+    },
+    {
+      "file": "regenerate-mistral-gateway-hidpi-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Authentic first Mistral Large 3 response via Gateway recommends walking; 237 tokens and 17.60 seconds. Firefox built-in viewport captures show one unchanged response at 1100\u00d7900 and 650\u00d7900 CSS pixels, each at device pixel ratio 2. Viewport was narrowed without submitting another request or editing system prompt instructions.",
+      "selected_model_id": "mistral-large-3-675b-instruct",
+      "selected_model_name": "Mistral Large 3",
+      "model_filter": "Gateway",
+      "request": "The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.",
+      "generation_tokens": 237,
+      "generation_seconds": 17.6,
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        90,
+        0,
+        2180,
+        1800
+      ],
+      "source_sha256": "7fe5f87af9a720b7c0ff972d48c7ef3b5bd7bee0c4bc11e2de6f2df0aae7d00d",
+      "detail_source_dimensions": [
+        1300,
+        1800
+      ],
+      "detail_configured_viewport_css_pixels": [
+        650,
+        900
+      ],
+      "detail_configured_device_pixel_ratio": 2,
+      "detail_crop_xyxy": [
+        108,
+        1124,
+        1270,
+        1410
+      ],
+      "detail_source_sha256": "abbf9db83e0abfecefd54f85dd4b8280f40eb094022a85d2444efd512583cd71",
+      "output_dimensions": [
+        3780,
+        1210
+      ],
+      "processing": "Lossless crops of two authentic captures of one unchanged chat at different viewport widths. Full context at left retains original question, full response, original model identity and timing, and message box. Enlarged detail at right contains complete recommendation and response action row. Neutral white outline and arrow identify Regenerate. Matching region outline and connector relate context to detail; text naturally reflows in narrower source viewport. Account avatar and private chat address excluded. No UI or response wording reconstructed.",
+      "sha256": "a5c9cb4966a5c90ad2e36996be400a153a16d9d976b00e6daeeeffd9755dfa3f"
     }
   ]
 }

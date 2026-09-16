@@ -1,0 +1,378 @@
+--- before HEAD PROMPTS.md
++++ after current PROMPTS.md
+@@ -68,17 +68,17 @@
+ 
+ ### System Prompts
+ 
+-A system prompt gives a model instructions for its role, behavior, and focus.
++System prompts are setup instructions that describe how a model should behave.
+ 
+ ### User Prompts
+ 
+ Questions or tasks you enter in chat.
+ 
+-### Base Models
+-
+-A base model generates responses. A custom model adds instructions and resources without training a new base model.
+-
+-[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
++### Custom Models
++
++You create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.
++
++[Basic Concepts](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+ 
+ ---
+ 
+@@ -86,9 +86,9 @@
+ 
+ ### Select Models
+ 
+-![Sandbox chat with CUNY AI Lab logo, message box, and open model selector; enlarged detail shows model choices with model ID outlined and marked by an arrow](images/current/model-selector-hidpi-2026-09-16.svg)
+-
+-Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
++![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
++
++Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
+ 
+ ---
+ 
+@@ -116,9 +116,9 @@
+ 
+ ### Compare Models
+ 
+-![Sandbox logo, message box, and open model selector; enlarged detail shows Compare button beside search field outlined and marked by an arrow](images/current/model-selector-compare-hidpi-2026-09-16.svg)
+-
+-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.
++![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
++
++Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats.
+ 
+ ---
+ 
+@@ -136,17 +136,19 @@
+ 
+ ---
+ 
+-## Slide 10: Examine Assumptions
+-
+-### Examine Assumptions
+-
+-“She” could refer to either person. This sentence does not establish who was late.
+-
+-- Does each model acknowledge ambiguity?
++## Slide 10: Winograd Schema Challenge
++
++### Winograd Schema Challenge
++
++This challenge tests how models interpret ambiguous pronouns using context and common-sense knowledge. Changing one or two words between paired sentences changes who a pronoun refers to.
++
++In our question, either person could be late.
++
++- Which person does each model choose?
+ 
+ - What assumption supports its answer?
+ 
+-- Does either explanation add information absent from this sentence?
++[Levesque, Davis, and Morgenstern (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+ 
+ ---
+ 
+@@ -164,27 +166,21 @@
+ 
+ ---
+ 
+-## Slide 12: Gemma’s Response
++## Slide 12: Compare Outputs
++
++### Compare Outputs
+ 
+ ### Gemma’s Response
+ 
+-You should **walk** to the car wash.
+-
+-[View original response](images/showcase/car-wash-gemma.png)
+-
+----
+-
+-## Slide 13: Qwen’s Response
++![Gemma 3 27B response recommending walking, with model name and generation time.](images/showcase/car-wash-gemma-response.png)
+ 
+ ### Qwen’s Response
+ 
+-You should **take the car**.
+-
+-[View original response](images/showcase/car-wash-qwen.png)
+-
+----
+-
+-## Slide 14: Compare Models
++![Qwen3.5 27B response recommending driving, with model name and generation time.](images/showcase/car-wash-qwen-response.png)
++
++---
++
++## Slide 13: Compare Models
+ 
+ ### Compare Models
+ 
+@@ -198,11 +194,13 @@
+ 
+ ---
+ 
+-## Slide 15: Add System Prompt
++## Slide 14: Add System Prompt
+ 
+ ### Add System Prompt
+ 
+-Copy these instructions for in-chat **System Prompt**.
++![Sandbox logo, message box, and open Controls panel; white annotations identify Controls button and System Prompt field.](images/current/chat-controls-instructions-2026-09-16.svg)
++
++Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
+ 
+ ```text
+ Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
+@@ -210,27 +208,17 @@
+ 
+ ---
+ 
+-## Slide 16: Open Chat Controls
+-
+-### Open Chat Controls
+-
+-![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
+-
+-Select Controls at top right. Paste copied instructions into System Prompt, then close Controls.
+-
+----
+-
+-## Slide 17: Regenerate Responses
++## Slide 15: Regenerate Responses
+ 
+ ### Regenerate Responses
+ 
+-![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
++![Mistral Large 3 response recommending walking, with original question and message box; enlarged recommendation and response controls show Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-gateway-hidpi-2026-09-16.svg)
+ 
+ Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
+ 
+ ---
+ 
+-## Slide 18: Compare Responses
++## Slide 16: Compare Responses
+ 
+ ### Compare Responses
+ 
+@@ -242,7 +230,7 @@
+ 
+ ---
+ 
+-## Slide 19: Open Workspace
++## Slide 17: Open Workspace
+ 
+ ### Open Workspace
+ 
+@@ -252,7 +240,7 @@
+ 
+ ---
+ 
+-## Slide 20: Review Custom Models
++## Slide 18: Review Custom Models
+ 
+ ### Review Custom Models
+ 
+@@ -266,7 +254,7 @@
+ 
+ ---
+ 
+-## Slide 21: Model Configuration
++## Slide 19: Model Configuration
+ 
+ ### Model Configuration
+ 
+@@ -276,7 +264,7 @@
+ 
+ ---
+ 
+-## Slide 22: Add Prompt Suggestions
++## Slide 20: Add Prompt Suggestions
+ 
+ ### Add Prompt Suggestions
+ 
+@@ -288,7 +276,7 @@
+ 
+ ---
+ 
+-## Slide 23: Situating System Prompts
++## Slide 21: Situating System Prompts
+ 
+ Examples
+ 
+@@ -296,7 +284,7 @@
+ 
+ ---
+ 
+-## Slide 24: Select STEM Games
++## Slide 22: Select STEM Games
+ 
+ ### Select STEM Games
+ 
+@@ -306,7 +294,7 @@
+ 
+ ---
+ 
+-## Slide 25: STEM Adventure Games
++## Slide 23: STEM Adventure Games
+ 
+ ### STEM Adventure Games
+ 
+@@ -316,7 +304,7 @@
+ 
+ ---
+ 
+-## Slide 26: Inspect System Prompt
++## Slide 24: Inspect System Prompt
+ 
+ ### Inspect System Prompt
+ 
+@@ -326,7 +314,7 @@
+ 
+ ---
+ 
+-## Slide 27: Read Game Instructions
++## Slide 25: Read Game Instructions
+ 
+ ### Read Game Instructions
+ 
+@@ -340,7 +328,7 @@
+ 
+ ---
+ 
+-## Slide 28: Adapt Research Prompts
++## Slide 26: Adapt Research Prompts
+ 
+ ### Adapt Research Prompts
+ 
+@@ -356,13 +344,13 @@
+ 
+ ---
+ 
+-## Slide 29: Draft System Prompts
++## Slide 27: Draft System Prompts
+ 
+ ### Draft System Prompts
+ 
+ ---
+ 
+-## Slide 30: Define Prompt Components
++## Slide 28: Define Prompt Components
+ 
+ ### Define Prompt Components
+ 
+@@ -378,7 +366,7 @@
+ 
+ ---
+ 
+-## Slide 31: Define Context
++## Slide 29: Define Context
+ 
+ ### Define Context
+ 
+@@ -397,7 +385,7 @@
+ 
+ ---
+ 
+-## Slide 32: Write Procedures
++## Slide 30: Write Procedures
+ 
+ ### Write Procedures
+ 
+@@ -412,7 +400,7 @@
+ 
+ ---
+ 
+-## Slide 33: Set Constraints
++## Slide 31: Set Constraints
+ 
+ ### Set Constraints
+ 
+@@ -428,7 +416,7 @@
+ 
+ ---
+ 
+-## Slide 34: Set Tone
++## Slide 32: Set Tone
+ 
+ ### Set Tone
+ 
+@@ -444,7 +432,7 @@
+ 
+ ---
+ 
+-## Slide 35: Specify Format
++## Slide 33: Specify Format
+ 
+ ### Specify Format
+ 
+@@ -458,7 +446,7 @@
+ 
+ ---
+ 
+-## Slide 36: Refine Instructions
++## Slide 34: Refine Instructions
+ 
+ Refine
+ 
+@@ -466,7 +454,7 @@
+ 
+ ---
+ 
+-## Slide 37: Extend Instructions
++## Slide 35: Extend Instructions
+ 
+ ### Extend Instructions
+ 
+@@ -480,7 +468,7 @@
+ 
+ ---
+ 
+-## Slide 38: Review Common Problems
++## Slide 36: Review Common Problems
+ 
+ Watch Out
+ 
+@@ -504,7 +492,7 @@
+ 
+ ---
+ 
+-## Slide 39: Save Prompts
++## Slide 37: Save Prompts
+ 
+ ### Save Prompts
+ 
+@@ -512,7 +500,7 @@
+ 
+ ---
+ 
+-## Slide 40: Share Custom Models
++## Slide 38: Share Custom Models
+ 
+ ### Share Custom Models
+ 
+@@ -526,7 +514,7 @@
+ 
+ ---
+ 
+-## Slide 41: Record Comparisons
++## Slide 39: Record Comparisons
+ 
+ ### Record Comparisons
+ 
+@@ -544,7 +532,7 @@
+ 
+ ---
+ 
+-## Slide 42: Prepare Source Documents
++## Slide 40: Prepare Source Documents
+ 
+ ### Prepare Source Documents
+ 

@@ -5,6 +5,7 @@ These tests protect known requirements. They do not score prose or identify AI w
 Historical before/after records and quoted test outputs are deliberately excluded.
 """
 import json
+import hashlib
 import re
 import unittest
 from unittest.mock import patch
@@ -65,6 +66,14 @@ class CopyRegressions(unittest.TestCase):
         matches=[s for s in self.decks[route] if s.attrs['data-title']==title]
         self.assertEqual(len(matches),1, (route,title))
         return matches[0]
+    def slide_by_class(self, route, class_name):
+        matches=[s for s in self.decks[route] if s.has_class(class_name)]
+        self.assertEqual(len(matches),1,(route,class_name))
+        return matches[0]
+    def slide_containing_id(self, route, id):
+        matches=[s for s in self.decks[route] if s.all(lambda n:n.attrs.get('id')==id)]
+        self.assertEqual(len(matches),1,(route,id))
+        return matches[0]
     def by_id(self, id):
         return self.trees['index.html'].all(lambda n:n.attrs.get('id')==id)[0]
     def assert_order(self, route, titles):
@@ -104,26 +113,37 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Examine Assumptions','Compare Outputs','Gemma’s Response','Qwen’s Response','Add System Prompt','Open Chat Controls','Regenerate Responses','Compare Responses','Open Workspace','Review Custom Models','Model Configuration','Add Prompt Suggestions'])
-        self.assertIn('Base Models',self.slide('index.html','System Prompts').text())
-        self.assertIn('What do you think this person wants to accomplish?',self.slide('index.html','Compare Outputs').text())
+        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Compare Responses','Open Workspace','Review Custom Models','Model Configuration','Add Prompt Suggestions'])
+        self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
+        question=self.slide_containing_id('index.html','car-wash-task')
+        self.assertIn('What do you think this person wants to accomplish?',question.text())
+        responses=self.slide_by_class('index.html','response-comparison-slide')
+        exercise=self.slide_containing_id('index.html','car-wash-exercise')
+        root=self.decks['index.html']
+        self.assertLess(root.index(question),root.index(responses))
+        self.assertLess(root.index(responses),root.index(exercise))
+        self.assertLess(root.index(exercise),root.index(self.slide('index.html','Add System Prompt')))
         handoff=self.by_id('car-wash-exercise')
         self.assertEqual(handoff.text(),CAR)
     def test_07_controls_and_regeneration_are_explicit(self):
-        sequence=self.decks['index.html'][14:17]
-        self.assertEqual([s.attrs['data-title'] for s in sequence],['Add System Prompt','Open Chat Controls','Regenerate Responses'])
-        add,controls,regenerate=[s.text() for s in sequence]
-        for term in ['Copy','in-chat','System Prompt']:self.assertIn(term,add)
-        for term in ['Controls','top right','Paste','System Prompt','close Controls']:self.assertIn(term,controls)
-        for term in ['Regenerate','Try Again','original response','original question, selected models, and other settings unchanged']:self.assertIn(term,regenerate)
-        # These are consecutive actions, not repeated walkthroughs.
-        self.assertNotIn('Controls',add)
-        self.assertNotIn('Regenerate',add+controls)
-        self.assertNotIn('System Prompt',regenerate)
-        self.assertNotIn('Test System Prompts',[s.attrs['data-title'] for s in self.decks['index.html']])
-        for slide in sequence:self.assertFalse(slide.all(lambda n:n.has_class('slide-notes')))
-        compare=self.slide('index.html','Compare Responses').text()
-        self.assertNotIn('settings unchanged',compare)
+        root=self.decks['index.html']
+        add=self.slide('index.html','Add System Prompt')
+        regenerate=self.slide('index.html','Regenerate Responses')
+        self.assertEqual(root.index(regenerate),root.index(add)+1)
+        copy=add.text()
+        for term in ['Copy','Controls','top right','Paste','System Prompt','close Controls']:
+            self.assertIn(term,copy)
+        self.assertTrue('in-chat' in copy or 'top right of chat' in copy)
+        self.assertTrue(add.all(lambda n:n.attrs.get('id')=='sample-system'))
+        self.assertTrue(add.all(lambda n:n.tag=='img' and 'System Prompt' in n.attrs.get('alt','')))
+        for term in ['Regenerate','Try Again','original response','original question, selected models, and other settings unchanged']:
+            self.assertIn(term,regenerate.text())
+        self.assertNotIn('Regenerate',copy)
+        self.assertNotIn('System Prompt',regenerate.text())
+        for removed in ['Open Chat Controls','Test System Prompts']:
+            self.assertNotIn(removed,[s.attrs['data-title'] for s in root])
+        for slide in [add,regenerate]:self.assertFalse(slide.all(lambda n:n.has_class('slide-notes')))
+        self.assertNotIn('settings unchanged',self.slide('index.html','Compare Responses').text())
     def test_08_exact_selector_instruction(self):
         for route,title in [('index.html','Select Models'),('index.html','Select STEM Games'),('knowledge/index.html','Save Initial Response'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
@@ -193,10 +213,10 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('separate draft tool',self.references['skills'].text())
         self.assertIn('Attach saved play records',self.slide('skills/index.html','Compare Game Records').text())
     def test_18_screenshots_and_controls_preserve_requested_evidence(self):
-        for title,term in [('Compare Models','Compare'),('Open Chat Controls','System Prompt'),('Regenerate Responses','Regenerate')]:
+        for title,term in [('Compare Models','Compare'),('Add System Prompt','System Prompt'),('Regenerate Responses','Regenerate')]:
             matches=[s for s in self.decks['index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
             im=matches[0].all(lambda n:n.tag=='img')[0]
-            self.assertIn('arrow',im.attrs['alt']);self.assertIn(term,im.attrs['alt']);self.assertTrue(im.attrs['src'].endswith('.svg'))
+            self.assertRegex(im.attrs['alt'],r'arrow|annotations?');self.assertIn(term,im.attrs['alt']);self.assertTrue(im.attrs['src'].endswith('.svg'))
         for route in ['index.html','knowledge/index.html']:
             workspace=self.slide(route,'Open Workspace')
             im=workspace.all(lambda n:n.tag=='img')[0]
@@ -299,6 +319,64 @@ class CopyRegressions(unittest.TestCase):
             for prompt_block in slide.all(lambda n:n.has_class('prompt-block')):
                 self.assertNotRegex(prompt_block.text(),r'\b(?:Observed decision|Prerequisite|Source comparison|Scenario JSON):')
 
+    def test_26_definitions_and_winograd_context(self):
+        definition=self.slide('index.html','System Prompts')
+        for term in ['setup instructions','how a model should behave','Custom Models','choosing a base model','instructions and documents']:
+            self.assertIn(term,definition.text())
+        for old in ['A base model generates responses.','without training a new base model','role, behavior, and focus']:
+            self.assertNotIn(old,definition.text())
+        links=[n.attrs.get('href') for n in definition.all(lambda n:n.tag=='a')]
+        for source in ['https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/','https://ailab.gc.cuny.edu/sandbox-docs/models/']:
+            self.assertIn(source,links)
+        context=self.slide('index.html','Winograd Schema Challenge')
+        for term in ['ambiguous pronouns','context','common-sense knowledge','paired sentences','either person could be late']:
+            self.assertIn(term,context.text())
+        self.assertTrue(context.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf'))
+
+    def test_27_original_responses_are_embedded_together(self):
+        combined=self.slide_by_class('index.html','response-comparison-slide')
+        images=combined.all(lambda n:n.tag=='img')
+        self.assertEqual(len(images),2)
+        records=json.loads((ROOT/'review/showcase-sources.json').read_text())['images']
+        original_hashes={'image6.png':'9710d13ee2a3fef2e81058a40c865a374faabe09dac4dfb9f16ade057234729e',
+                         'image7.png':'a37b01ed4fe6a5405390849de0cb46f153982ddee8034ad782d549881425142d'}
+        origins=set()
+        for image in images:
+            path=ROOT/image.attrs['src']
+            matches=[r for r in records if r['file']==path.name]
+            self.assertEqual(len(matches),1)
+            record=matches[0]
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),record['sha256'])
+            self.assertIn(record['source_asset'],original_hashes)
+            self.assertEqual(record['source_sha256'],original_hashes[record['source_asset']])
+            origins.add(record['source_asset'])
+        self.assertEqual(origins,set(original_hashes))
+        for label in ['Gemma’s Response','Qwen’s Response']:
+            self.assertIn(label,combined.text())
+            self.assertNotIn(label,[s.attrs['data-title'] for s in self.decks['index.html']])
+
+    def test_28_gateway_and_regeneration_capture_identity(self):
+        records=json.loads((ROOT/'review/screenshot-sources.json').read_text())['images']
+        expected=[('Select Models','gemma-4-26b-a4b-it','Gemma 4 26B A4B IT'),
+                  ('Compare Models','gemma-4-26b-a4b-it','Gemma 4 26B A4B IT'),
+                  ('Regenerate Responses','mistral-large-3-675b-instruct','Mistral Large 3')]
+        for title,model_id,model_name in expected:
+            slides=[s for s in self.decks['index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
+            self.assertEqual(len(slides),1,title)
+            images=slides[0].all(lambda n:n.tag=='img')
+            self.assertEqual(len(images),1,title)
+            path=ROOT/images[0].attrs['src']
+            matches=[r for r in records if r['file']==path.name]
+            self.assertEqual(len(matches),1,title)
+            record=matches[0]
+            self.assertEqual(record.get('selected_model_id'),model_id,title)
+            self.assertEqual(record.get('selected_model_name'),model_name,title)
+            self.assertEqual(record.get('model_filter'),'Gateway',title)
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),record['sha256'])
+            if title=='Regenerate Responses':
+                self.assertEqual(record.get('request'),CAR)
+                self.assertIn('walking',record['capture'].lower())
+
     def test_20_ninety_minute_plans(self):
         text=(ROOT/'WORKSHOP.md').read_text()
         plans=re.findall(r'### Lesson Plan\n(.*?)(?=\n\n[^|]|\Z)',text,re.S)
@@ -321,6 +399,8 @@ class CopyRegressions(unittest.TestCase):
             ('index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
             ('skills/index.html', 'Remove your skill', 'Toggle this skill', self.test_14_skill_comparisons_remove_attached_skill),
             ('index.html', 'id="stem-game-excerpt">', 'id="stem-game-excerpt">Edit scenario_json variables. ', self.test_25_introductory_workshops_use_chat_adventure),
+            ('index.html', 'setup instructions', 'role instructions', self.test_26_definitions_and_winograd_context),
+            ('index.html', '<img alt="Gemma 3 27B', '<a alt="Gemma 3 27B', self.test_27_original_responses_are_embedded_together),
         ]
         for route,before,after,test in mutations:
             with self.subTest(mutation=after):

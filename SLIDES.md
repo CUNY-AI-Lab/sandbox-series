@@ -68,17 +68,17 @@ Before attending, request individual access and sign into Sandbox.
 
 ### System Prompts
 
-A system prompt gives a model instructions for its role, behavior, and focus.
+System prompts are setup instructions that describe how a model should behave.
 
 ### User Prompts
 
 Questions or tasks you enter in chat.
 
-### Base Models
+### Custom Models
 
-A base model generates responses. A custom model adds instructions and resources without training a new base model.
+You create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.
 
-[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
+[Basic Concepts](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
 ---
 
@@ -86,11 +86,11 @@ A base model generates responses. A custom model adds instructions and resources
 
 ### Select Models
 
-![Sandbox chat with CUNY AI Lab logo, message box, and open model selector; enlarged detail shows model choices with model ID outlined and marked by an arrow](images/current/model-selector-hidpi-2026-09-16.svg)
+![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
 
-**Alt text:** Sandbox chat with CUNY AI Lab logo, message box, and open model selector; enlarged detail shows model choices with model ID outlined and marked by an arrow
+**Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.
 
-Select model ID on bottom right of message box. Type a request, send it, then ask a follow-up. Open New Chat to start without earlier messages.
+Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
 
 ---
 
@@ -118,11 +118,11 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ### Compare Models
 
-![Sandbox logo, message box, and open model selector; enlarged detail shows Compare button beside search field outlined and marked by an arrow](images/current/model-selector-compare-hidpi-2026-09-16.svg)
+![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
 
-**Alt text:** Sandbox logo, message box, and open model selector; enlarged detail shows Compare button beside search field outlined and marked by an arrow
+**Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats.
 
 ---
 
@@ -142,15 +142,17 @@ Send this question to both models.
 
 ## Composing system prompts — 10
 
-### Examine Assumptions
+### Winograd Schema Challenge
 
-“She” could refer to either person. This sentence does not establish who was late.
+This challenge tests how models interpret ambiguous pronouns using context and common-sense knowledge. Changing one or two words between paired sentences changes who a pronoun refers to.
 
-- Does each model acknowledge ambiguity?
+In our question, either person could be late.
+
+- Which person does each model choose?
 
 - What assumption supports its answer?
 
-- Does either explanation add information absent from this sentence?
+[Levesque, Davis, and Morgenstern (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
 
 ---
 
@@ -170,25 +172,23 @@ What do you think this person wants to accomplish?
 
 ## Composing system prompts — 12
 
+### Compare Outputs
+
 ### Gemma’s Response
 
-You should **walk** to the car wash.
+![Gemma 3 27B response recommending walking, with model name and generation time.](images/showcase/car-wash-gemma-response.png)
 
-[View original response](images/showcase/car-wash-gemma.png)
+**Alt text:** Gemma 3 27B response recommending walking, with model name and generation time.
+
+### Qwen’s Response
+
+![Qwen3.5 27B response recommending driving, with model name and generation time.](images/showcase/car-wash-qwen-response.png)
+
+**Alt text:** Qwen3.5 27B response recommending driving, with model name and generation time.
 
 ---
 
 ## Composing system prompts — 13
-
-### Qwen’s Response
-
-You should **take the car**.
-
-[View original response](images/showcase/car-wash-qwen.png)
-
----
-
-## Composing system prompts — 14
 
 ### Compare Models
 
@@ -202,11 +202,15 @@ Save both responses with your question and selected model IDs before adding syst
 
 ---
 
-## Composing system prompts — 15
+## Composing system prompts — 14
 
 ### Add System Prompt
 
-Copy these instructions for in-chat **System Prompt**.
+![Sandbox logo, message box, and open Controls panel; white annotations identify Controls button and System Prompt field.](images/current/chat-controls-instructions-2026-09-16.svg)
+
+**Alt text:** Sandbox logo, message box, and open Controls panel; white annotations identify Controls button and System Prompt field.
+
+Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
 ```text
 Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
@@ -214,31 +218,19 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ---
 
-## Composing system prompts — 16
-
-### Open Chat Controls
-
-![Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow](images/current/chat-controls-2026-09-14-annotated.svg)
-
-**Alt text:** Sandbox logo, message box, and open Controls panel with System Prompt field marked by an arrow
-
-Select Controls at top right. Paste copied instructions into System Prompt, then close Controls.
-
----
-
-## Composing system prompts — 17
+## Composing system prompts — 15
 
 ### Regenerate Responses
 
-![Original question, Gemma response, and message box with Regenerate button marked by an arrow](images/current/regenerate-gemma-2026-09-14-annotated.svg)
+![Mistral Large 3 response recommending walking, with original question and message box; enlarged recommendation and response controls show Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-gateway-hidpi-2026-09-16.svg)
 
-**Alt text:** Original question, Gemma response, and message box with Regenerate button marked by an arrow
+**Alt text:** Mistral Large 3 response recommending walking, with original question and message box; enlarged recommendation and response controls show Regenerate outlined and marked by an arrow.
 
 Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
 
 ---
 
-## Composing system prompts — 18
+## Composing system prompts — 16
 
 ### Compare Responses
 
@@ -250,7 +242,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Composing system prompts — 19
+## Composing system prompts — 17
 
 ### Open Workspace
 
@@ -262,7 +254,7 @@ Select Workspace in left sidebar.
 
 ---
 
-## Composing system prompts — 20
+## Composing system prompts — 18
 
 ### Review Custom Models
 
@@ -276,7 +268,7 @@ Continue in chat if Workspace is unavailable.
 
 ---
 
-## Composing system prompts — 21
+## Composing system prompts — 19
 
 ### Model Configuration
 
@@ -288,7 +280,7 @@ Select Create in Models. Enter a recognizable name, choose a tested base model, 
 
 ---
 
-## Composing system prompts — 22
+## Composing system prompts — 20
 
 ### Add Prompt Suggestions
 
@@ -300,7 +292,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-## Composing system prompts — 23
+## Composing system prompts — 21
 
 Examples
 
@@ -308,7 +300,7 @@ Examples
 
 ---
 
-## Composing system prompts — 24
+## Composing system prompts — 22
 
 ### Select STEM Games
 
@@ -320,7 +312,7 @@ Select model ID on bottom right of message box. Search for STEM Adventure Games 
 
 ---
 
-## Composing system prompts — 25
+## Composing system prompts — 23
 
 ### STEM Adventure Games
 
@@ -332,7 +324,7 @@ Type Start an adventure. Choose an experiment, then reply with a number or descr
 
 ---
 
-## Composing system prompts — 26
+## Composing system prompts — 24
 
 ### Inspect System Prompt
 
@@ -344,7 +336,7 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 
 ---
 
-## Composing system prompts — 27
+## Composing system prompts — 25
 
 ### Read Game Instructions
 
@@ -358,7 +350,7 @@ What should happen after you choose an action?
 
 ---
 
-## Composing system prompts — 28
+## Composing system prompts — 26
 
 ### Adapt Research Prompts
 
@@ -374,13 +366,13 @@ Save your source material, prompt, response, and assessment together.
 
 ---
 
-## Composing system prompts — 29
+## Composing system prompts — 27
 
 ### Draft System Prompts
 
 ---
 
-## Composing system prompts — 30
+## Composing system prompts — 28
 
 ### Define Prompt Components
 
@@ -396,7 +388,7 @@ Choose one component to change.
 
 ---
 
-## Composing system prompts — 31
+## Composing system prompts — 29
 
 ### Define Context
 
@@ -415,7 +407,7 @@ Help players explore how a prism changes a beam of sunlight.
 
 ---
 
-## Composing system prompts — 32
+## Composing system prompts — 30
 
 ### Write Procedures
 
@@ -430,7 +422,7 @@ What should happen before and after each choice?
 
 ---
 
-## Composing system prompts — 33
+## Composing system prompts — 31
 
 ### Set Constraints
 
@@ -446,7 +438,7 @@ Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Composing system prompts — 34
+## Composing system prompts — 32
 
 ### Set Tone
 
@@ -462,7 +454,7 @@ Which terms need explanation for your intended users?
 
 ---
 
-## Composing system prompts — 35
+## Composing system prompts — 33
 
 ### Specify Format
 
@@ -476,7 +468,7 @@ Wait for a reply before continuing.
 
 ---
 
-## Composing system prompts — 36
+## Composing system prompts — 34
 
 Refine
 
@@ -484,7 +476,7 @@ Refine
 
 ---
 
-## Composing system prompts — 37
+## Composing system prompts — 35
 
 ### Extend Instructions
 
@@ -498,7 +490,7 @@ Refine
 
 ---
 
-## Composing system prompts — 38
+## Composing system prompts — 36
 
 Watch Out
 
@@ -522,7 +514,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Composing system prompts — 39
+## Composing system prompts — 37
 
 ### Save Prompts
 
@@ -530,7 +522,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Composing system prompts — 40
+## Composing system prompts — 38
 
 ### Share Custom Models
 
@@ -544,7 +536,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Composing system prompts — 41
+## Composing system prompts — 39
 
 ### Record Comparisons
 
@@ -562,7 +554,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Composing system prompts — 42
+## Composing system prompts — 40
 
 ### Prepare Source Documents
 

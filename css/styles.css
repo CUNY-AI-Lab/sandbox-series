@@ -549,3 +549,46 @@ max-height:calc(100dvh - 278px)}
 .flow-arrow, .divider-line { color:var(--muted); }
 .series-position { font-size:22px; }
 @media (max-width:600px) { #nav-bar { gap:5px; padding:8px; } #nav-bar button { font-size:14px; padding:8px; } }
+
+/* Authentic response crops stay at or below their captured pixel width. */
+.response-comparison{
+flex:1;
+min-height:0;
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:32px;
+align-content:center;
+align-items:start}
+.response-comparison-slide .response-comparison figure{
+flex:none;
+gap:18px;
+align-items:flex-start}
+.response-comparison figure>h2{
+font-size:28px;
+margin:0}
+.response-comparison-slide .response-comparison .screenshot-img{
+flex:none;
+width:auto;
+max-width:100%;
+height:auto;
+min-height:0}
+.prompt-control-layout{
+flex:1;
+min-height:0;
+display:grid;
+grid-template-columns:minmax(0,1.85fr) minmax(320px,1fr);
+gap:24px;
+align-items:stretch}
+.prompt-control-copy{
+min-width:0;
+align-self:center;
+display:flex;
+flex-direction:column;
+gap:20px}
+.prompt-control-copy>p{
+font-size:var(--support);
+line-height:1.4}
+.prompt-control-copy .prompt-block{
+font-size:clamp(24px,1.9vw,27px);
+line-height:1.4;
+padding:54px 20px 20px}

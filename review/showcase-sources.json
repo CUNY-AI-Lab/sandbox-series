@@ -28,6 +28,40 @@
         620
       ],
       "sha256": "a65a719c5e54cebf0ab4e8d3edfbd69cdc295ba45b1689203d347af87985ba24"
+    },
+    {
+      "file": "car-wash-gemma-response.png",
+      "source_asset": "image6.png",
+      "source_dimensions": [
+        900,
+        566
+      ],
+      "source_sha256": "9710d13ee2a3fef2e81058a40c865a374faabe09dac4dfb9f16ade057234729e",
+      "crop_xyxy": [
+        24,
+        411,
+        682,
+        561
+      ],
+      "processing": "Lossless rectangular crop from original embedded screenshot retains model header, timestamp, response timing, and complete visible answer. Qwen crop also retains thought-duration indicator. Question and inactive comparison tabs excluded; no resampling, sharpening, generated text, or redrawn UI. Display is capped at native image width.",
+      "sha256": "04a2b59222e76527089698b937141b27c2fa3fac4a4ede5da76ec6b2668bee43"
+    },
+    {
+      "file": "car-wash-qwen-response.png",
+      "source_asset": "image7.png",
+      "source_dimensions": [
+        894,
+        620
+      ],
+      "source_sha256": "a37b01ed4fe6a5405390849de0cb46f153982ddee8034ad782d549881425142d",
+      "crop_xyxy": [
+        18,
+        415,
+        648,
+        613
+      ],
+      "processing": "Lossless rectangular crop from original embedded screenshot retains model header, timestamp, response timing, and complete visible answer. Qwen crop also retains thought-duration indicator. Question and inactive comparison tabs excluded; no resampling, sharpening, generated text, or redrawn UI. Display is capped at native image width.",
+      "sha256": "03f7b389ce6d6d7ad13dfb84e80cbac83b6c27b0337acb3055eaa44496b2d2f1"
     }
   ]
 }

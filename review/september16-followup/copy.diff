@@ -1,0 +1,59 @@
+--- before definitions and comparison context
++++ after sourced definitions and Winograd context
+@@ -4,7 +4,7 @@
+ 
+ 
+ 
+-A system prompt gives a model instructions for its role, behavior, and focus.
++System prompts are setup instructions that describe how a model should behave.
+ 
+ 
+ 
+@@ -16,28 +16,34 @@
+ 
+ 
+ 
+-### Base Models
++### Custom Models
+ 
+ 
+ 
+-A base model generates responses. A custom model adds instructions and resources without training a new base model.
++You create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.
+ 
+ 
+ 
+-[System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Open WebUI model configuration](https://docs.openwebui.com/features/workspace/models/)
++[Basic Concepts](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+ 
+ ## Slide 10
+ 
+-### Examine Assumptions
++### Winograd Schema Challenge
+ 
+ 
+ 
+-“She” could refer to either person. This sentence does not establish who was late.
++This challenge tests how models interpret ambiguous pronouns using context and common-sense knowledge. Changing one or two words between paired sentences changes who a pronoun refers to.
+ 
+ 
+ 
+-- Does each model acknowledge ambiguity?
++In our question, either person could be late.
++
++
++
++- Which person does each model choose?
+ 
+ - What assumption supports its answer?
+ 
+-- Does either explanation add information absent from this sentence?
++
++
++[Levesque, Davis, and Morgenstern (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+
+--- before WORKSHOP.md definition
++++ after WORKSHOP.md definition
+@@ -1 +1 @@
+-Participants learn how user prompts and system prompts differ before comparing models. A system prompt gives a model instructions for its role, behavior, and focus. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants save both responses, read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
++Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants save both responses, read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.

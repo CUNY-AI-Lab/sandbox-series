@@ -563,6 +563,11 @@
         "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources to a chosen base model.Test whether your selected model follows these instructions.System PromptsOpen WebUI model configurationCreating a custom model does not train a new base model.",
         "after": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources without training a new base model.System Prompts · Open WebUI model configuration",
         "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+      },
+      {
+        "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources without training a new base model.System Prompts · Open WebUI model configuration",
+        "after": "System PromptsSystem prompts are setup instructions that describe how a model should behave.User PromptsQuestions or tasks you enter in chat.Custom ModelsYou create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.Basic Concepts · Custom Models",
+        "reason": "User requested prior workshop wording about setup instructions and a positive description of custom models grounded in Sandbox documentation."
       }
     ],
     "allowed_additions": []
@@ -579,6 +584,11 @@
         "before": "Compare ModelsStart a new chat. Select Compare beside search field, then choose two models.Select model ID on bottom right of message box.Select Compare beside search field, then choose two small models.If Compare is unavailable, send identical prompts in separate new chats.",
         "after": "Compare ModelsStart a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two small models. If Compare is unavailable, send identical prompts in separate new chats.",
         "reason": "User requires no hidden notes. Required steps are visible; duplicate explanations are removed or moved to existing visible slides."
+      },
+      {
+        "before": "Select Compare beside search field, then choose two small models.",
+        "after": "Select Compare beside search field, then choose two Gateway models.",
+        "reason": "User requested current Gateway models in selector screenshots; comparison instructions use the same visible filter."
       }
     ],
     "allowed_additions": []
@@ -595,6 +605,11 @@
         "before": "Open Chat ControlsOpen Controls → System Prompt. Add sample instructions, close Controls, then choose Regenerate → Try Again beneath each original response.Open your chat.Select Controls at top right.Add sample instructions in System Prompt. Close Controls, then select Regenerate beneath each original response, then choose Try Again.Leave your original question unchanged. Use Chat Controls for this exercise; defaults in Settings apply across chats.",
         "after": "Open Chat ControlsSelect Controls at top right. Paste copied instructions into System Prompt, then close Controls.",
         "reason": "Remove repeated instructions; keep copying, in-chat insertion, and original-response regeneration in separate consecutive steps."
+      },
+      {
+        "before": "Open Chat ControlsSelect Controls at top right. Paste copied instructions into System Prompt, then close Controls.",
+        "after": "Add System PromptSelect Controls at top right of chat. Paste these instructions into System Prompt, then close Controls.Copy promptIdentify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.",
+        "reason": "User requested sample system prompt and in-chat Controls screenshot together on one slide. Preserve exact prompt, embedded Copy prompt button, explicit chat location, and authentic annotated controls."
       }
     ],
     "allowed_additions": []
