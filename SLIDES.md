@@ -111,7 +111,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.
 
-Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
+Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.
 
 [Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 

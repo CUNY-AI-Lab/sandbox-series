@@ -179,7 +179,8 @@ class CopyRegressions(unittest.TestCase):
         ])
         self.assertNotIn('Repeat our opening question',reflection.text())
     def test_08_exact_selector_instruction(self):
-        for route,title in [('index.html','Select Models'),('knowledge/index.html','Save Initial Response'),('skills/index.html','Draft Skills')]:
+        self.assertIn('Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.',self.slide('index.html','Select Models').text())
+        for route,title in [('knowledge/index.html','Save Initial Response'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
         root=self.decks['index.html']
