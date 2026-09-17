@@ -35,7 +35,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ### Workshop Agenda
 
-- Request individual access and sign in
+- Sign in to Sandbox
 
 - Define system prompts
 
@@ -49,21 +49,19 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Clone models and compare responses
 
+- Draft instructions and create models
+
 Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
 
 ---
 
 ## Composing system prompts — 4
 
-### Request Access
+### Sign In
 
-[ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)
+[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
 
-- Choose **My own access** and sign in with **CUNY Login**.
-
-- Complete your details, select **CAIL Sandbox**, and submit your application.
-
-- After approval, open [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/) and select **Continue with CUNY Login**.
+Select **Continue with CUNY Login** and sign in with your CUNY account.
 
 [Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
@@ -283,23 +281,39 @@ Find Purpose, Procedure, Constraints, and Format in its instructions.
 
 Which instruction explains something you noticed in its response?
 
+---
+
+## Composing system prompts — 18
+
 ### Clone Models
 
-- Select **Workspace** in left sidebar, then **Models**. Find your chosen model and open **⋯ → Clone**.
+![Workspace Models showing shared workshop examples; white annotation identifies Clone in More menu.](images/current/workshop-clone-2026-09-17.svg)
 
-- Rename your copy and give it a unique ID. Revise one instruction in **System Prompt**; keep **Base Model** and other settings unchanged.
+**Alt text:** Workspace Models showing shared workshop examples; white annotation identifies Clone in More menu.
+
+Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen example and select Clone.
+
+- Rename your copy and give it a unique ID.
+
+- Revise one instruction in **System Prompt**; keep **Base Model** and other settings unchanged.
 
 - Scroll to bottom and select **Save & Create**.
 
 - Open your copy in a new chat and test your saved request.
 
-### Compare Outputs
+---
 
-- Start a new chat. Select model ID on bottom right of message box.
+## Composing system prompts — 19
 
-- Select **Compare**, then choose your original model and your copy.
+### Compare Configurations
 
-- Send your saved request to both models. Include source passages if you chose research.
+![Sandbox comparison with tabs for original Compare Wikipedia Edits and its clone; white annotations identify both model names above original response. Message box remains visible.](images/current/workshop-compare-2026-09-17.svg)
+
+**Alt text:** Sandbox comparison with tabs for original Compare Wikipedia Edits and its clone; white annotations identify both model names above original response. Message box remains visible.
+
+Start a new chat. Select model ID on bottom right of message box, then Compare. Choose your original model and your copy.
+
+Send your saved request to both models. Include source passages if you chose research. Select each model name to review its response.
 
 What changed? Did your revised instruction work?
 
@@ -307,7 +321,7 @@ Save your request and both responses.
 
 ---
 
-## Composing system prompts — 18
+## Composing system prompts — 20
 
 ### Record Comparisons
 
@@ -325,19 +339,56 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Composing system prompts — 19
+## Composing system prompts — 21
 
-### Prepare Source Documents
+### Draft System Prompts
 
-- Save prompt versions and comparison notes
+Use remaining time to begin drafting instructions for your own teaching or research task.
 
-- Request Workspace and Knowledge collection access
+```text
+Purpose
+What should your model help you accomplish?
+Procedure
+What steps should it follow?
+Constraints
+What limits should it observe?
+Format
+How should it present responses?
+```
 
-- Select public or approved source documents
+---
 
-- Review [system-prompt examples](examples.html)
+## Composing system prompts — 22
 
-- Continue to [Curating knowledge collections](knowledge/)
+### Create Models
+
+![Workspace Models filtered to shared workshop examples, with Create button outlined and marked by an arrow.](images/current/workshop-create-2026-09-17.svg)
+
+**Alt text:** Workspace Models filtered to shared workshop examples, with Create button outlined and marked by an arrow.
+
+Select Workspace → Models → Create to configure your own model.
+
+- Name your configuration and give it a unique ID.
+
+- Select **Base Model** and paste your draft into **System Prompt**.
+
+- Scroll to bottom and select **Save & Create**.
+
+- Start a new chat with your model and try one request.
+
+---
+
+## Composing system prompts — 23
+
+### Workshop Resources
+
+- Review [workshop copy](workshop-copy.html) and [system-prompt examples](examples.html).
+
+- Consult [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/) and [Open WebUI Models](https://docs.openwebui.com/features/workspace/models/).
+
+- Check [monthly usage](https://tools.ailab.gc.cuny.edu/model-access).
+
+Keep your draft and choose source documents for your next workshop.
 
 
 ## Curating knowledge collections — 1

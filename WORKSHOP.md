@@ -2,15 +2,15 @@
 
 The CUNY AI Lab Sandbox supports teaching, research, and experimentation with open-weight models. These workshops introduce its chat interface, custom models, knowledge collections, skills, and tools through demonstrations and guided exercises.
 
-Participants first compare models, then try STEM Adventure Games for teaching or Compare Wikipedia Edits for research, review its system prompt and base model, and revise a clone. They compare the original with their clone using the same request. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.
+Participants first compare models, then try STEM Adventure Games for teaching or Compare Wikipedia Edits for research, review its system prompt and base model, and revise a clone. They compare the original with their clone using the same request, then use Purpose, Procedure, Constraints, and Format to draft instructions and create a configuration of their own. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.
 
-[Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read all slide copy](SLIDES.md) · [Browse system-prompt examples](examples.html) · [Review copy changes](review/README.md)
+[Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read workshop copy](workshop-copy.html) · [Browse system-prompt examples](examples.html) · [Review copy changes](review/README.md)
 
 ## Workshop Roadmap
 
 | Workshop | Activity | Required access | Next steps |
 | --- | --- | --- | --- |
-| Composing system prompts | Configure model behavior with system prompts | Individual access approval and Sandbox sign-in | Save tested prompts; request Workspace and Knowledge access |
+| Composing system prompts | Configure model behavior with system prompts | Active Sandbox account and Workspace Models access | Draft original instructions; create a configuration; select source documents |
 | Curating knowledge collections | Organize source documents in knowledge collections | Workshop 1 access, Workspace, Knowledge collection access | Save retrieval tests; request Skills and Tools access |
 | Configuring skills and tools | Extend model capabilities with skills and tools | Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing | Save configurations; verify shared access; retest after changes |
 
@@ -18,9 +18,9 @@ Workshop 3 needs Knowledge access when a procedure retrieves from a collection. 
 
 ## Prepare Workshop Access
 
-For individual access, follow [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) to the Lab’s [access application](https://ailab.gc.cuny.edu/request-access/). Choose **My own access**, use CUNY Login, complete the application, and check the verified CUNY email for approval. Then enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Participants do not need an API key for these chat exercises.
+Participants arrive with active Sandbox accounts and Workspace Models access. Enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Participants do not need an API key for these chat exercises. See [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) for sign-in documentation.
 
-Workshop 1 requires only individual access and sign-in. Workspace access is arranged for the midpoint exercise. Participants try a teaching or research example, review its system prompt and base model, and clone it. Before Workshop 2, arrange Workspace and Knowledge access with the Lab. Before Workshop 3, arrange Skills and Tools access, including authoring permissions for participants who will create or edit resources. Confirm which base models and capabilities are available to the group.
+Workshop 1 uses existing Workspace access throughout its model exercises. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.
 
 Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. For Workshops 1 and 2, configure **STEM Adventure Games** with [instructions for an adventure played in chat](examples/stem-chat-system-prompt.txt). Leave Skills and Tools unselected. Confirm access to **STEM Wikipedia Experiments** for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Turn File Context off and keep STEM Wikipedia Experiments attached for focused retrieval. Save the tool-based configuration as **STEM Adventure Games — Advanced** for Workshop 3, using its [separate system prompt](examples/stem-system-prompt.txt).
 
@@ -34,13 +34,14 @@ Participants learn how user prompts and system prompts differ before comparing m
 
 ### Workshop Agenda
 
-- Request individual access and sign in
+- Sign in to Sandbox
 - Define system prompts
 - Compare responses from small models
 - Revise in-chat system prompts
 - Choose teaching or research examples
 - Review system prompts and base models
 - Clone models and compare responses
+- Draft instructions and create models
 
 ### Lesson Plan
 
@@ -49,10 +50,11 @@ Participants learn how user prompts and system prompts differ before comparing m
 | 0–10 | Introduce the series, confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
 | 10–25 | Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
 | 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
-| 45–55 | Choose one example, try it in chat, and save a request to use again. Return to the same exercise slide after testing. | Original request and response |
-| 55–65 | Review its system prompt and base model, then clone it. Revise one instruction while preserving the base model and other settings. | Original and revised instruction |
-| 65–85 | Save the clone and test it in a new chat. Start a fresh comparison chat with original and clone, send the saved request to both, and examine whether the revision produced the intended change. Include identical source passages for research. | Matched requests and both responses |
-| 85–90 | Save the tested prompt and identify source documents for Workshop 2. | Private model and source question |
+| 45–52 | Choose one example, try it in chat, and review its system prompt and base model. Save a request to use again. | Original request and instruction to revise |
+| 52–65 | Follow the Clone screenshot, revise one instruction, save, and test the copy in a new chat. | Original and revised instruction |
+| 65–75 | Compare original and clone using the same request. Include identical source passages for research. | Both responses and evidence of change |
+| 75–85 | Draft original instructions using Purpose, Procedure, Constraints, and Format. Select Create in Workspace Models, choose a base model, add the draft, and save. Try one request if time remains. | Original system prompt and saved configuration |
+| 85–90 | Review workshop resources and choose source documents to bring to the next workshop. | Draft prompt, model configuration, and source documents |
 
 ### Compare Small Models
 
@@ -79,9 +81,15 @@ For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assum
 
 ### Compare Custom Models
 
-Keep participants on slide 17 as its four stages advance. Links open in new tabs, preserving the current stage. Participants first try one example, then review its complete system prompt and base model through the linked model settings. The four prompt components remain visible in those references; no separate drafting exercise is required.
+Participants choose and review an example on slide 17. Slides 18 and 19 each show a screenshot first, then instructions on the same slide. Links open in new tabs so participants can return to their current step.
 
-Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat then places the original and clone beside each other using the same request. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended and retain both outputs. Do not require descriptions, starter prompts, or sharing during this exercise.
+Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat sends the same request to original and clone. Select each model name to review its response. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended and retain both outputs.
+
+### Create Original Models
+
+Use remaining time to begin drafting instructions for a teaching or research task. Use Purpose, Procedure, Constraints, and Format on slide 21. Slide 22 shows where to select Create, then walks through naming a configuration, choosing a base model, adding the draft system prompt, saving, and trying one request. Participants finish with their own configuration to develop before the next workshop.
+
+Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and reference navigation do not link to later workshop decks.
 
 ## Curating knowledge collections
 

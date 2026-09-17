@@ -1407,6 +1407,215 @@
         660
       ],
       "configured_device_pixel_ratio": 2
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at 1104 \u00d7 660 CSS pixels, DPR 2, and 160% page zoom.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2,
+      "source_sha256": "c9fe90cb973c8e27e858f7d50835da0320c108fb0eba0f7409dffb9952d63747",
+      "crop_xyxy": [
+        0,
+        0,
+        2208,
+        1080
+      ],
+      "output_dimensions": [
+        2208,
+        1080
+      ],
+      "model_filter": "Workshop",
+      "visible_model_ids": [
+        "compare-wikipedia-revisions",
+        "stem-adventure-games"
+      ],
+      "access": "Both examples shared with existing active-users group, Write access required for Clone in Open WebUI 0.11.3. No unrelated model cards shown.",
+      "file": "workshop-create-2026-09-17.png",
+      "sha256": "466a65e89dab44c06b6a95bcfdfa98bf476091c8243228c665c31fc0b680d00c",
+      "processing": "Lossless crop excludes account avatar. No UI or response text reconstructed."
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at 1104 \u00d7 660 CSS pixels, DPR 2, and 160% page zoom.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2,
+      "source_sha256": "c9fe90cb973c8e27e858f7d50835da0320c108fb0eba0f7409dffb9952d63747",
+      "crop_xyxy": [
+        0,
+        0,
+        2208,
+        1080
+      ],
+      "output_dimensions": [
+        2208,
+        1080
+      ],
+      "model_filter": "Workshop",
+      "visible_model_ids": [
+        "compare-wikipedia-revisions",
+        "stem-adventure-games"
+      ],
+      "access": "Both examples shared with existing active-users group, Write access required for Clone in Open WebUI 0.11.3. No unrelated model cards shown.",
+      "file": "workshop-create-2026-09-17.svg",
+      "sha256": "8e1bfa27c365b77d8af36f142723e6bd252a000386d9ffc10490fcb40461ef4d",
+      "processing": "Original cropped PNG embedded unchanged; neutral white outlines, arrows, and labels added.",
+      "derived_from": "workshop-create-2026-09-17.png"
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at 1104 \u00d7 660 CSS pixels, DPR 2, and 160% page zoom.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2,
+      "source_sha256": "3ee7668d3dad083e6dbbef74877bce367b57c3daa76409fc8ddbbdbe4d5f809b",
+      "crop_xyxy": [
+        0,
+        0,
+        2208,
+        1080
+      ],
+      "output_dimensions": [
+        2208,
+        1080
+      ],
+      "model_filter": "Workshop",
+      "visible_model_ids": [
+        "compare-wikipedia-revisions",
+        "stem-adventure-games"
+      ],
+      "access": "Both examples shared with existing active-users group, Write access required for Clone in Open WebUI 0.11.3. No unrelated model cards shown.",
+      "file": "workshop-clone-2026-09-17.png",
+      "sha256": "0aa5856329431c9978e4c6538d747583ae86c68f63639a429aba2322397603fc",
+      "processing": "Lossless crop excludes account avatar. No UI or response text reconstructed."
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at 1104 \u00d7 660 CSS pixels, DPR 2, and 160% page zoom.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2,
+      "source_sha256": "3ee7668d3dad083e6dbbef74877bce367b57c3daa76409fc8ddbbdbe4d5f809b",
+      "crop_xyxy": [
+        0,
+        0,
+        2208,
+        1080
+      ],
+      "output_dimensions": [
+        2208,
+        1080
+      ],
+      "model_filter": "Workshop",
+      "visible_model_ids": [
+        "compare-wikipedia-revisions",
+        "stem-adventure-games"
+      ],
+      "access": "Both examples shared with existing active-users group, Write access required for Clone in Open WebUI 0.11.3. No unrelated model cards shown.",
+      "file": "workshop-clone-2026-09-17.svg",
+      "sha256": "76929245007af6b5400e1fed1ab83ddb19d8a48422fd7e5f20cde550fef886a0",
+      "processing": "Original cropped PNG embedded unchanged; neutral white outlines, arrows, and labels added.",
+      "derived_from": "workshop-clone-2026-09-17.png"
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at 1104 \u00d7 660 CSS pixels, DPR 2, and 160% page zoom.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2,
+      "source_sha256": "a57fc2a21859439c4949855bdad0a7cffe2028ff1df97a2f46aebb8cc7173cf7",
+      "crop_xyxy": [
+        90,
+        530,
+        2208,
+        1320
+      ],
+      "output_dimensions": [
+        2118,
+        790
+      ],
+      "model_ids": [
+        "compare-wikipedia-revisions",
+        "compare-wikipedia-revisions-clone"
+      ],
+      "clone_access": "Private; copied group grant removed.",
+      "test": "Identical Academic freedom excerpts and revision references submitted to both configurations. Clone changes ordering in Format only; original response selected in this capture.",
+      "ui": "Comparison responses use model-name tabs. White outlines identify both tabs; no side-by-side layout reconstructed.",
+      "file": "workshop-compare-2026-09-17.png",
+      "sha256": "6b17d20259923ed5d232f0dc8bd854283f4584cb812b316e4a43a6b4934e95fb",
+      "processing": "Lossless crop excludes account avatar. No UI or response text reconstructed."
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at 1104 \u00d7 660 CSS pixels, DPR 2, and 160% page zoom.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2,
+      "source_sha256": "a57fc2a21859439c4949855bdad0a7cffe2028ff1df97a2f46aebb8cc7173cf7",
+      "crop_xyxy": [
+        90,
+        530,
+        2208,
+        1320
+      ],
+      "output_dimensions": [
+        2118,
+        790
+      ],
+      "model_ids": [
+        "compare-wikipedia-revisions",
+        "compare-wikipedia-revisions-clone"
+      ],
+      "clone_access": "Private; copied group grant removed.",
+      "test": "Identical Academic freedom excerpts and revision references submitted to both configurations. Clone changes ordering in Format only; original response selected in this capture.",
+      "ui": "Comparison responses use model-name tabs. White outlines identify both tabs; no side-by-side layout reconstructed.",
+      "file": "workshop-compare-2026-09-17.svg",
+      "sha256": "885fd55c14086d4e2c88d730416fd44fc03de9840f2a5bf153eb35fb4cc08293",
+      "processing": "Original cropped PNG embedded unchanged; neutral white outlines, arrows, and labels added.",
+      "derived_from": "workshop-compare-2026-09-17.png"
     }
   ]
 }

@@ -326,3 +326,11 @@ height:auto}
   .fragment-slide figure { flex:1; }
   .fragment-slide figure .screenshot-img { flex:1; height:0; }
 }
+
+/* Keep each screenshot and its instructions on one returning exercise slide. */
+.workflow-slide [data-fragment-step] { flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:24px; }
+.workflow-slide [data-fragment-step] > figure { flex:1; }
+@media (max-width:600px) {
+  .workflow-slide [data-fragment-step] { flex:none; min-height:0; }
+  .workflow-slide [data-fragment-step] > figure { flex:none; }
+}

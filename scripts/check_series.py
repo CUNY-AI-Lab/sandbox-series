@@ -118,6 +118,8 @@ research_tree=Parser((R/'examples/research/sample-revisions.html').read_text()).
 check_participant_copy(research_tree,'research samples')
 r=subprocess.run([sys.executable,str(R/'scripts/check_workshop.py')]+(['--write'] if write else []),capture_output=True,text=True)
 if r.returncode:issues.append(r.stdout)
+r=subprocess.run([sys.executable,str(R/'scripts/build_workshop_copy.py')]+(['--write'] if write else []),capture_output=True,text=True)
+if r.returncode:issues.append(r.stdout)
 print(f'{count} slides across three workshops; {len(retained)} imported sections checked; image provenance and links checked.')
 if issues:print('\n'.join(issues));raise SystemExit(1)
 print('Series checks passed.')

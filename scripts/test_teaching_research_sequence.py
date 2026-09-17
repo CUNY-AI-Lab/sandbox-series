@@ -11,24 +11,28 @@ class TeachingResearchSequence(unittest.TestCase):
         cls.slides = Parser((ROOT / 'index.html').read_text()).root.all(lambda n: n.has_class('slide'))
         cls.titles = [slide.attrs['data-title'] for slide in cls.slides]
 
-    def exercise(self):
-        matches = [slide for slide in self.slides if slide.attrs.get('data-title') == 'Compare Custom Models']
-        self.assertEqual(len(matches), 1, 'Keep all stages on one exercise slide')
+    def slide(self, title):
+        matches = [slide for slide in self.slides if slide.attrs.get('data-title') == title]
+        self.assertEqual(len(matches), 1, title)
         return matches[0]
 
-    def stages(self):
-        stages = self.exercise().all(lambda node: 'data-fragment-step' in node.attrs)
-        self.assertEqual([node.attrs['data-fragment-step'] for node in stages], ['0', '1', '2', '3'])
+    def stages(self, title='Compare Custom Models'):
+        stages = self.slide(title).all(lambda node: 'data-fragment-step' in node.attrs)
+        self.assertEqual([node.attrs['data-fragment-step'] for node in stages], ['0', '1'], title)
         return stages
 
-    def test_exercise_orders_try_review_clone_and_compare(self):
-        labels = ['Try Examples', 'Review Settings', 'Clone Models', 'Compare Outputs']
+    def test_four_added_slides_preserve_exercise_order(self):
+        self.assertEqual(len(self.slides), 23, 'Add exactly four slides to the 19-slide workshop')
+        self.assertEqual(self.titles[16:], [
+            'Compare Custom Models', 'Clone Models', 'Compare Configurations',
+            'Record Comparisons', 'Draft System Prompts', 'Create Models', 'Workshop Resources',
+        ])
+        labels = ['Try Examples', 'Review Settings']
         for stage, label in zip(self.stages(), labels):
             self.assertIn(label, stage.text())
-        position = self.titles.index('Compare Custom Models')
-        self.assertEqual(self.titles[position + 1:position + 3], ['Record Comparisons', 'Prepare Source Documents'])
-        agenda = self.slides[self.titles.index('Workshop Agenda')].text()
-        for item in ['Choose teaching or research examples', 'Review system prompts and base models', 'Clone models and compare responses']:
+        agenda = self.slide('Workshop Agenda').text()
+        for item in ['Choose teaching or research examples', 'Review system prompts and base models',
+                     'Clone models and compare responses', 'Draft instructions and create models']:
             self.assertIn(item, agenda)
 
     def test_both_examples_and_sources_open_without_leaving_exercise(self):
@@ -58,10 +62,13 @@ class TeachingResearchSequence(unittest.TestCase):
             self.assertIn(term, stage.text())
 
     def test_clone_is_saved_before_testing(self):
-        clone = ' '.join(self.stages()[2].text().split())
-        for term in ['Workspace', 'Models', 'Clone', 'Save & Create']:
-            self.assertIn(term, clone)
-        self.assertRegex(clone.lower(), r'left sidebar')
+        illustration, instructions = self.stages('Clone Models')
+        clone = ' '.join(self.slide('Clone Models').text().split())
+        for term in ['Workspace', 'Models', 'Clone']:
+            self.assertIn(term, illustration.text())
+        self.assertRegex(illustration.text().lower(), r'left sidebar')
+        self.assertTrue(illustration.all(lambda node: node.tag == 'img'))
+        self.assertFalse(instructions.all(lambda node: node.tag == 'img'))
         self.assertRegex(clone.lower(), r'(rename|name your copy)')
         self.assertRegex(clone.lower(), r'unique.{0,15}id')
         self.assertRegex(clone.lower(), r'(revise|change) one instruction')
@@ -69,9 +76,13 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertRegex(clone.lower(), r'settings.{0,35}(unchanged|same)')
         self.assertIn('Scroll to bottom and select', clone)
         self.assertLess(clone.index('Save & Create'), clone.lower().index('new chat'))
+        self.assertNotIn('remove copied access grants', clone)
 
     def test_comparison_reuses_request_with_original_and_copy(self):
-        comparison = ' '.join(self.stages()[3].text().split()).lower()
+        illustration, instructions = self.stages('Compare Configurations')
+        self.assertTrue(illustration.all(lambda node: node.tag == 'img'))
+        self.assertFalse(instructions.all(lambda node: node.tag == 'img'))
+        comparison = ' '.join(self.slide('Compare Configurations').text().split()).lower()
         self.assertRegex(comparison, r'(new|fresh) chat')
         self.assertIn('original', comparison)
         self.assertRegex(comparison, r'(copy|clone)')
@@ -79,15 +90,36 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertRegex(comparison, r'(source|research) passages')
         self.assertRegex(comparison, r'save.{0,45}(both|responses)')
         self.assertLess(comparison.index('original'), comparison.index('?'))
-        self.assertLess(comparison.index('request') if 'request' in comparison else comparison.index('prompt'), comparison.index('?'))
+        self.assertLess(comparison.index('request'), comparison.index('?'))
+
+    def test_drafting_precedes_creation_and_uses_four_components(self):
+        draft = self.slide('Draft System Prompts')
+        prompts = draft.all(lambda node: node.has_class('prompt-block'))
+        self.assertEqual(len(prompts), 1)
+        self.assertEqual(prompts[0].text().strip(), (ROOT / 'examples/system-prompt-framework.txt').read_text().strip())
+        labels = [line for line in prompts[0].text().splitlines() if line and not line.endswith('?')]
+        self.assertEqual(labels, ['Purpose', 'Procedure', 'Constraints', 'Format'])
+        self.assertNotRegex(prompts[0].text(), r'(?i)\b(tone|context)\b')
+        illustration, instructions = self.stages('Create Models')
+        self.assertTrue(illustration.all(lambda node: node.tag == 'img'))
+        for term in ['Workspace', 'Models', 'Create']:
+            self.assertIn(term, illustration.text())
+        create = ' '.join(instructions.text().split())
+        for term in ['unique ID', 'Base Model', 'System Prompt', 'Save & Create', 'new chat']:
+            self.assertIn(term, create)
+        self.assertLess(create.index('Base Model'), create.index('Save & Create'))
+        self.assertLess(create.index('System Prompt'), create.index('Save & Create'))
+        self.assertLess(create.index('Save & Create'), create.index('new chat'))
+        self.assertLess(self.titles.index('Draft System Prompts'), self.titles.index('Create Models'))
 
     def test_component_tutorials_and_setup_extras_stay_removed(self):
+        # Draft System Prompts is intentionally restored as one four-component slide.
         removed = {
-            'Add Prompt Suggestions', 'Situating System Prompts', 'Draft System Prompts',
+            'Add Prompt Suggestions', 'Situating System Prompts',
             'Refine Instructions', 'Define Prompt Components', 'Define Purpose',
             'Write Procedures', 'Set Constraints', 'Specify Format', 'Extend Instructions',
             'Read Game Instructions', 'Adapt Research Prompts', 'Review Common Problems',
-            'Choose Model Cards', 'Clone Model Cards', 'Model Configuration',
+            'Choose Model Cards', 'Clone Model Cards', 'Model Configuration', 'Prepare Source Documents',
         }
         self.assertFalse(removed.intersection(self.titles))
 

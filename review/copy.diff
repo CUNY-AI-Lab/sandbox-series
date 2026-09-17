@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,324 @@
+@@ -1,487 +1,369 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -351,157 +351,6 @@
 -Each system prompt is built from modular components. We’ll draft yours one piece at a time.
 -Context & Problem
 -— What course, what students, what learning challenge?
--Procedure
--— What steps should the tool follow?
--Constraints
--— What should it refuse to do, and how should it redirect?
--Tone
--— What register and affect should it use with your students?
--Output Format
--— How should it structure its responses?
--
-----
--
--## Slide 22: Context and Problem
--
--Component 1
--Context & Problem
--Name the tool, the course, the students, and the specific learning challenge. Everything else follows from this.
--What kind of tool is this?
--Who are your students?
--What learning challenge does it address?
--Copy
--You are a [tool type] for [course name].
--Students are [relevant context].
--
--The core problem: [specific learning challenge].
--Your turn:
--Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.
--
-----
--
--## Slide 23: Procedure
--
--Component 2
--Procedure
--Tell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.
--What should the tool request before responding?
--What should it prioritize?
--How should it respond to each student input?
--Copy
--Procedure:
--1. Ask the student for [specific input] before responding.
--2. Identify [priority concern] before addressing [secondary concerns].
--3. For each issue, [specific action, e.g. ask a question rather than fix it].
--Your turn:
--Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.
--
-----
--
--## Slide 24: Constraints
--
--Component 3
--Constraints
--Define what the tool should not do and how it redirects when students push against those limits.
--What will students ask it to do
--for
--them?
--How should it redirect instead?
--What uncertainty should it name explicitly?
--Copy
--Constraints:
--- Never [specific output to avoid].
--- If asked to [common student request], redirect by [specific alternative].
--- If uncertain about [domain content], say so explicitly.
--Your turn:
--Copy this template and fill in the placeholders. Keep the tool from doing work students should do themselves.
--
-----
--
--## Slide 25: Tone
--
--Component 4
--Tone
--One sentence on tone shapes how the tool communicates with every student it encounters.
--What register fits your students?
--Should it feel warm, direct, encouraging?
--Are there phrases that model the right affect?
--Copy
--Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[example phrase]."
--Your turn:
--Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?
--
-----
--
--## Slide 26: Output Format
--
--Component 5
--Output Format
--Optional, but useful when consistent structure helps students know what to expect from each response.
--Should each response end with a question?
--Should it follow a fixed structure?
--What length is appropriate?
--Copy
--Format each response as:
--Observation: [what you notice]
--Focus: [one thing to work on]
--Next step: [a specific, actionable suggestion]
--Question: [something for the student to consider]
--Your turn:
--Copy this template and fill in the placeholders. Not every prompt needs an output format section.
--
-----
--
--## Slide 27: Part III - Advanced Strategies and Tips
--
--Part III
--Advanced Strategies & Tips
--
-----
--
--## Slide 28: Going Further
--
--Going Further
--Conditional Behavior
--“If the student submits a draft, focus on structure before style. If they ask a yes/no question, reframe it as an open one. If they ask you to just give them the answer, ask what they’ve tried first.”
--Conversational Brevity
--“Respond to one thing at a time. Do not front-load your full analysis. Ask one question, wait for the student’s response, then proceed.”
--Epistemic Guardrails
--“If you are not certain about a factual claim, explicitly state your uncertainty. Never fabricate citations or attribute quotes.”
--Multilingual Support
--“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.” All seven models in the Sandbox support multilingual input and output.
--
-----
--
--## Slide 29: Common Pitfalls
--
--Watch Out
--Common Pitfalls
--Too Long & Too Detailed
--A 2,000-word system prompt can confuse the model. Aim for clarity over comprehensiveness. If it’s getting long, prioritize the most important instructions.
--Contradictory Instructions
--“Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
--Forgetting the Student’s Perspective
--Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
--Set It and Forget It
--System prompts need iteration. Use them in real conversations, notice what breaks, and revise. It’s a living document.
--
-----
--
--## Slide 30: The Road Ahead
--
--Coming Up
--The Road Ahead
--March 16 — Today
--System Prompts ✓
--Defining how the AI thinks and teaches
--March 23 — Next Week
--Knowledge Collections
--Upload your syllabus, readings, and relevant sources to ground AI models in course materials
--March 30
--Skills & Tools
--Build custom skills, tools, and workflows tailored to your courses
--Each workshop builds on the last. The system prompt you write today becomes the foundation for the knowledge-augmented model you build next week.
 +### Workshop Roadmap
 +
 +- **Composing system prompts** Configure model behavior with system prompts.
@@ -518,7 +367,7 @@
 +
 +### Workshop Agenda
 +
-+- Request individual access and sign in
++- Sign in to Sandbox
 +
 +- Define system prompts
 +
@@ -532,21 +381,19 @@
 +
 +- Clone models and compare responses
 +
++- Draft instructions and create models
++
 +Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
 +
 +---
 +
-+## Slide 4: Request Access
++## Slide 4: Sign In
 +
-+### Request Access
++### Sign In
 +
-+[ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)
++[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
 +
-+- Choose **My own access** and sign in with **CUNY Login**.
-+
-+- Complete your details, select **CAIL Sandbox**, and submit your application.
-+
-+- After approval, open [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/) and select **Continue with CUNY Login**.
++Select **Continue with CUNY Login** and sign in with your CUNY account.
 +
 +[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 +
@@ -752,23 +599,35 @@
 +
 +Which instruction explains something you noticed in its response?
 +
++---
++
++## Slide 18: Clone Models
++
 +### Clone Models
 +
-+- Select **Workspace** in left sidebar, then **Models**. Find your chosen model and open **⋯ → Clone**.
++![Workspace Models showing shared workshop examples; white annotation identifies Clone in More menu.](images/current/workshop-clone-2026-09-17.svg)
 +
-+- Rename your copy and give it a unique ID. Revise one instruction in **System Prompt**; keep **Base Model** and other settings unchanged.
++Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen example and select Clone.
++
++- Rename your copy and give it a unique ID.
++
++- Revise one instruction in **System Prompt**; keep **Base Model** and other settings unchanged.
 +
 +- Scroll to bottom and select **Save & Create**.
 +
 +- Open your copy in a new chat and test your saved request.
 +
-+### Compare Outputs
++---
 +
-+- Start a new chat. Select model ID on bottom right of message box.
++## Slide 19: Compare Configurations
 +
-+- Select **Compare**, then choose your original model and your copy.
++### Compare Configurations
 +
-+- Send your saved request to both models. Include source passages if you chose research.
++![Sandbox comparison with tabs for original Compare Wikipedia Edits and its clone; white annotations identify both model names above original response. Message box remains visible.](images/current/workshop-compare-2026-09-17.svg)
++
++Start a new chat. Select model ID on bottom right of message box, then Compare. Choose your original model and your copy.
++
++Send your saved request to both models. Include source passages if you chose research. Select each model name to review its response.
 +
 +What changed? Did your revised instruction work?
 +
@@ -776,7 +635,7 @@
 +
 +---
 +
-+## Slide 18: Record Comparisons
++## Slide 20: Record Comparisons
 +
 +### Record Comparisons
 +
@@ -794,16 +653,200 @@
 +
 +---
 +
-+## Slide 19: Prepare Source Documents
++## Slide 21: Draft System Prompts
 +
-+### Prepare Source Documents
++### Draft System Prompts
 +
-+- Save prompt versions and comparison notes
++Use remaining time to begin drafting instructions for your own teaching or research task.
 +
-+- Request Workspace and Knowledge collection access
++```text
++Purpose
++What should your model help you accomplish?
+ Procedure
+-— What steps should the tool follow?
++What steps should it follow?
+ Constraints
+-— What should it refuse to do, and how should it redirect?
+-Tone
+-— What register and affect should it use with your students?
+-Output Format
+-— How should it structure its responses?
+-
+----
+-
+-## Slide 22: Context and Problem
+-
+-Component 1
+-Context & Problem
+-Name the tool, the course, the students, and the specific learning challenge. Everything else follows from this.
+-What kind of tool is this?
+-Who are your students?
+-What learning challenge does it address?
+-Copy
+-You are a [tool type] for [course name].
+-Students are [relevant context].
+-
+-The core problem: [specific learning challenge].
+-Your turn:
+-Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.
+-
+----
+-
+-## Slide 23: Procedure
+-
+-Component 2
+-Procedure
+-Tell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.
+-What should the tool request before responding?
+-What should it prioritize?
+-How should it respond to each student input?
+-Copy
+-Procedure:
+-1. Ask the student for [specific input] before responding.
+-2. Identify [priority concern] before addressing [secondary concerns].
+-3. For each issue, [specific action, e.g. ask a question rather than fix it].
+-Your turn:
+-Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.
+-
+----
+-
+-## Slide 24: Constraints
+-
+-Component 3
+-Constraints
+-Define what the tool should not do and how it redirects when students push against those limits.
+-What will students ask it to do
+-for
+-them?
+-How should it redirect instead?
+-What uncertainty should it name explicitly?
+-Copy
+-Constraints:
+-- Never [specific output to avoid].
+-- If asked to [common student request], redirect by [specific alternative].
+-- If uncertain about [domain content], say so explicitly.
+-Your turn:
+-Copy this template and fill in the placeholders. Keep the tool from doing work students should do themselves.
+-
+----
+-
+-## Slide 25: Tone
+-
+-Component 4
+-Tone
+-One sentence on tone shapes how the tool communicates with every student it encounters.
+-What register fits your students?
+-Should it feel warm, direct, encouraging?
+-Are there phrases that model the right affect?
+-Copy
+-Tone: [Adjective and adjective]. Use phrases like "[example phrase]" and "[example phrase]."
+-Your turn:
+-Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?
+-
+----
+-
+-## Slide 26: Output Format
+-
+-Component 5
+-Output Format
+-Optional, but useful when consistent structure helps students know what to expect from each response.
+-Should each response end with a question?
+-Should it follow a fixed structure?
+-What length is appropriate?
+-Copy
+-Format each response as:
+-Observation: [what you notice]
+-Focus: [one thing to work on]
+-Next step: [a specific, actionable suggestion]
+-Question: [something for the student to consider]
+-Your turn:
+-Copy this template and fill in the placeholders. Not every prompt needs an output format section.
+-
+----
+-
+-## Slide 27: Part III - Advanced Strategies and Tips
+-
+-Part III
+-Advanced Strategies & Tips
+-
+----
+-
+-## Slide 28: Going Further
+-
+-Going Further
+-Conditional Behavior
+-“If the student submits a draft, focus on structure before style. If they ask a yes/no question, reframe it as an open one. If they ask you to just give them the answer, ask what they’ve tried first.”
+-Conversational Brevity
+-“Respond to one thing at a time. Do not front-load your full analysis. Ask one question, wait for the student’s response, then proceed.”
+-Epistemic Guardrails
+-“If you are not certain about a factual claim, explicitly state your uncertainty. Never fabricate citations or attribute quotes.”
+-Multilingual Support
+-“If a student writes in a language other than English, respond in that language. Offer to discuss concepts in both languages.” All seven models in the Sandbox support multilingual input and output.
+-
+----
+-
+-## Slide 29: Common Pitfalls
+-
+-Watch Out
+-Common Pitfalls
+-Too Long & Too Detailed
+-A 2,000-word system prompt can confuse the model. Aim for clarity over comprehensiveness. If it’s getting long, prioritize the most important instructions.
+-Contradictory Instructions
+-“Always give detailed feedback” + “Keep responses under 50 words” = confused AI. Read your prompt for conflicts.
+-Forgetting the Student’s Perspective
+-Your prompt shapes the student’s experience. Test it by asking the kinds of questions your students actually ask.
+-Set It and Forget It
+-System prompts need iteration. Use them in real conversations, notice what breaks, and revise. It’s a living document.
+-
+----
+-
+-## Slide 30: The Road Ahead
+-
+-Coming Up
+-The Road Ahead
+-March 16 — Today
+-System Prompts ✓
+-Defining how the AI thinks and teaches
+-March 23 — Next Week
+-Knowledge Collections
+-Upload your syllabus, readings, and relevant sources to ground AI models in course materials
+-March 30
+-Skills & Tools
+-Build custom skills, tools, and workflows tailored to your courses
+-Each workshop builds on the last. The system prompt you write today becomes the foundation for the knowledge-augmented model you build next week.
++What limits should it observe?
++Format
++How should it present responses?
++```
 +
-+- Select public or approved source documents
++---
 +
-+- Review [system-prompt examples](examples.html)
++## Slide 22: Create Models
 +
-+- Continue to [Curating knowledge collections](knowledge/)
++### Create Models
++
++![Workspace Models filtered to shared workshop examples, with Create button outlined and marked by an arrow.](images/current/workshop-create-2026-09-17.svg)
++
++Select Workspace → Models → Create to configure your own model.
++
++- Name your configuration and give it a unique ID.
++
++- Select **Base Model** and paste your draft into **System Prompt**.
++
++- Scroll to bottom and select **Save & Create**.
++
++- Start a new chat with your model and try one request.
++
++---
++
++## Slide 23: Workshop Resources
++
++### Workshop Resources
++
++- Review [workshop copy](workshop-copy.html) and [system-prompt examples](examples.html).
++
++- Consult [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/) and [Open WebUI Models](https://docs.openwebui.com/features/workspace/models/).
++
++- Check [monthly usage](https://tools.ailab.gc.cuny.edu/model-access).
++
++Keep your draft and choose source documents for your next workshop.
