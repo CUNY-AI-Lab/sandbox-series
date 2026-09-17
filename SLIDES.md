@@ -223,7 +223,7 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 **Alt text:** CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.
 
-[Model Registry](https://ailab.gc.cuny.edu/models/)
+[https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
@@ -269,15 +269,15 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 Choose one example and experiment with it in chat.
 
-**Teaching**
+Teaching
 
-[STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
+### [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
 
 Start an adventure. Choose an experiment and make two choices.
 
-**Research**
+Research
 
-[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+### [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
 
 Paste one pair from [sample revisions](examples/research/sample-revisions.html). Ask it to classify one change and quote evidence.
 

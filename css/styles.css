@@ -8,7 +8,7 @@ color-scheme:dark;
 --muted:#cdcdcd;
 --border:#454545;
 --body:clamp(26px,2.25vw,32px);
---heading:32px;
+--heading:clamp(36px,3.2vw,44px);
 --nav-height:calc(66px + env(safe-area-inset-bottom,0px));
 --support:clamp(22px,1.9vw,27px);
 --accent-cyan:var(--text);
@@ -64,7 +64,7 @@ letter-spacing:-.033em;
 line-height:1.13;
 text-wrap:balance}
 h1{
-font-size:32px;
+font-size:var(--heading);
 max-width:1050px}
 h2{
 font-size:var(--heading);
@@ -78,7 +78,8 @@ margin-bottom:12px}
 p+ p{
 margin-top:20px}
 p,li,dd{
-max-width:78ch}
+max-width:68ch;
+text-wrap:pretty}
 p{
 color:var(--muted)}
 strong{
@@ -160,9 +161,17 @@ max-width:1000px}
 color:var(--muted)}
 .steps{
 display:grid;
-gap:18px}
+gap:clamp(24px,3.2vh,36px);
+max-width:62ch;
+padding-inline-start:1.5em}
+.steps>li{
+padding-inline-start:.2em;
+text-wrap:balance}
 .steps li+li{
 margin-top:0}
+.layout-content .slide-inner:has(>.steps:last-child){
+justify-content:center;
+gap:clamp(28px,4vh,44px)}
 .columns,.grid-2,.comparison{
 display:grid;
 grid-template-columns:repeat(2,minmax(0,1fr));

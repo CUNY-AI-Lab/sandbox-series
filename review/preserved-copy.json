@@ -692,7 +692,7 @@
       }
     ],
     "allowed_additions": [
-      "Model Registry"
+      "https://ailab.gc.cuny.edu/models/"
     ]
   },
   "5": {
