@@ -1344,6 +1344,69 @@
         2370.0,
         865.0
       ]
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at1104\u00d7660 CSS pixels, DPR2, and160% page zoom. Both prompts populated without submitting a message.",
+      "selected_model_name": "DeepSeek V4 Flash 0731",
+      "request": "The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.",
+      "system_prompt": "Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "source_sha256": "1e1e5dc42fd6519fd71bcc41f208d195a9c0c2ec0f5ef918cbbeb653c1e4baa4",
+      "crop_xyxy": [
+        0,
+        0,
+        2208,
+        1210
+      ],
+      "output_dimensions": [
+        2208,
+        1210
+      ],
+      "file": "chat-controls-populated-2026-09-17.png",
+      "sha256": "7c01a6fc44424677c03de5157cb3e20bded3c23bbcca8f93f752aca2a1343d32",
+      "processing": "Lossless crop excludes bottom account avatar. Original PNG pixels unchanged; no UI or response text reconstructed.",
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2
+    },
+    {
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-17",
+      "capture": "Authenticated Firefox built-in viewport screenshot at1104\u00d7660 CSS pixels, DPR2, and160% page zoom. Both prompts populated without submitting a message.",
+      "selected_model_name": "DeepSeek V4 Flash 0731",
+      "request": "The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.",
+      "system_prompt": "Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.",
+      "source_dimensions": [
+        2208,
+        1320
+      ],
+      "source_sha256": "1e1e5dc42fd6519fd71bcc41f208d195a9c0c2ec0f5ef918cbbeb653c1e4baa4",
+      "crop_xyxy": [
+        0,
+        0,
+        2208,
+        1210
+      ],
+      "output_dimensions": [
+        2208,
+        1210
+      ],
+      "file": "chat-controls-populated-annotated-2026-09-17.svg",
+      "sha256": "1709ec0a68b731ba6575856a635ef83903d78d131fa233fa6cd54ace334a10bb",
+      "derived_from": "chat-controls-populated-2026-09-17.png",
+      "processing": "Original cropped PNG embedded unchanged. Neutral white outlines, arrows, and labels identify Controls button and populated System Prompt field.",
+      "configured_viewport_css_pixels": [
+        1104,
+        660
+      ],
+      "configured_device_pixel_ratio": 2
     }
   ]
 }

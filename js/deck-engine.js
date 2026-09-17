@@ -26,6 +26,7 @@
     return match ? Math.min(total - 1, Math.max(0, Number(match[1]) - 1)) : 0;
   }
   function updateFragment() {
+    slides[current].scrollTop = 0;
     fragments.forEach((steps, slideIndex) => steps.forEach((step, stepIndex) => {
       const visible = slideIndex === current && stepIndex === fragment;
       if (!visible && step.contains(document.activeElement)) document.getElementById('arrow-next').focus();
@@ -35,7 +36,8 @@
     }));
     document.getElementById('arrow-prev').disabled = current === 0 && fragment === 0;
     document.getElementById('arrow-next').disabled = current === total - 1 && fragment === Math.max(0, fragments[current].length - 1);
-    announcer.textContent = slides[current].getAttribute('aria-label') + (fragments[current].length ? ', image ' + (fragment + 1) + ' of ' + fragments[current].length : '');
+    const label = slides[current].dataset.fragmentLabel || 'image';
+    announcer.textContent = slides[current].getAttribute('aria-label') + (fragments[current].length ? ', ' + label + ' ' + (fragment + 1) + ' of ' + fragments[current].length : '');
   }
   function goTo(index, step = 0) {
     if (!Number.isInteger(index) || index < 0 || index >= total) return;

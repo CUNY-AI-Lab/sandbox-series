@@ -41,11 +41,11 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Revise in-chat system prompts
 
-- Review Workspace model cards
-
 - Choose teaching or research examples
 
-- Clone model cards and test revisions
+- Review system prompts and base models
+
+- Clone models and compare responses
 
 Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
 
@@ -193,20 +193,18 @@ Start a new chat, select two models, and send this question.
 The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.
 ```
 
-Save both responses with your question and selected model IDs before adding system prompt instructions.
-
 ---
 
 ## Slide 14: Add System Prompt
 
 ### Add System Prompt
 
-![Sandbox logo, message box, and open Controls panel; white annotations identify Controls button and System Prompt field.](images/current/chat-controls-instructions-2026-09-16.svg)
+![CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.](images/current/chat-controls-populated-annotated-2026-09-17.svg)
 
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
 ```text
-Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.
+Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.
 ```
 
 ---
@@ -235,288 +233,65 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Slide 17: Open Workspace
+## Slide 17: Compare Custom Models
 
-### Open Workspace
+### Compare Custom Models
 
-![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](images/current/workspace-sidebar-2026-09-15-annotated.svg)
+### Try Examples
 
-Select Workspace in left sidebar.
-
----
-
-## Slide 18: Model Configuration
-
-### Model Configuration
-
-![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.](images/current/model-create-hidpi-2026-09-16.svg)
-
-Review Model Name, Base Model, and System Prompt when configuring your copy.
-
----
-
-## Slide 19: Choose Model Cards
-
-### Choose Model Cards
+Choose one example and experiment with it in chat.
 
 **Teaching**
 
 [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
 
-Explore scientific experiments through a text adventure with numbered choices.
+Start an adventure. Choose an experiment and make two choices.
 
 **Research**
 
 [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
 
-Classify edits to Wikipedia’s academic freedom article using quoted evidence.
+Paste one pair from [sample revisions](examples/research/sample-revisions.html). Ask it to classify one change and quote evidence.
+
+Save your opening request to use again.
+
+### Review Settings
+
+Review **Base Model** and **System Prompt** for your chosen example.
+
+- [STEM Adventure Games settings](examples.html#stem-chat)
+
+- [Compare Wikipedia Edits settings](examples.html#wikipedia-revisions)
+
+Find Purpose, Procedure, Constraints, and Format in its instructions.
+
+Which instruction explains something you noticed in its response?
+
+### Clone Models
+
+- Select **Workspace** in left sidebar, then **Models**. Find your chosen model and open **⋯ → Clone**.
+
+- Rename your copy and give it a unique ID. Revise one instruction in **System Prompt**; keep **Base Model** and other settings unchanged.
+
+- Scroll to bottom and select **Save & Create**.
+
+- Open your copy in a new chat and test your saved request.
+
+### Compare Outputs
+
+- Start a new chat. Select model ID on bottom right of message box.
+
+- Select **Compare**, then choose your original model and your copy.
+
+- Send your saved request to both models. Include source passages if you chose research.
+
+What changed? Did your revised instruction work?
+
+Save your request and both responses.
 
 ---
 
-## Slide 20: Clone Model Cards
-
-### Clone Model Cards
-
-- In Workspace → Models, find your chosen model and open ⋯ → **Clone**.
-
-- Rename your copy and give it a unique ID.
-
-- Read **System Prompt** and identify one instruction to revise.
-
-- Review **Access**, keep Private, remove copied access grants, and select **Save & Create**.
-
-Save an initial response before changing instructions.
-
-[Model management](https://docs.openwebui.com/features/workspace/models/)
-
----
-
-## Slide 21: Add Prompt Suggestions
-
-### Add Prompt Suggestions
-
-Add a description and prompt suggestions for tasks your model should support.
-
-Users select your custom model to use its instructions and resources.
-
-[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
-
----
-
-## Slide 22: Situating System Prompts
-
-Examples
-
-### Situating System Prompts
-
----
-
-## Slide 23: STEM Adventure Games
-
-### STEM Adventure Games
-
-![STEM Adventure Games presents Pasteur’s flask experiment with four numbered choices, CUNY AI Lab icon, and message box visible.](images/current/stem-original-play-clean-2026-09-17.png)
-
-For STEM Adventure Games, type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
-
----
-
-## Slide 24: Read Game Instructions
-
-### Read Game Instructions
-
-```text
-Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.
-
-Each stage presents 4 numbered choices based on historically accurate experimental decisions.
-
-After each choice, briefly state what the player observes, what the result suggests, and what question remains open.
-```
-
-What should happen after you choose an action?
-
-[Read full system prompt](examples.html#stem-chat)
-
----
-
-## Slide 25: Adapt Research Prompts
-
-### Adapt Research Prompts
-
-For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), paste one pair from [sample revisions](examples/research/sample-revisions.md) into your copy.
-
-- Ask it to classify one change and quote evidence.
-
-- Check quotations against both passages.
-
-- Identify an instruction to revise if its classification is unclear.
-
-[Read full system prompt](examples.html#wikipedia-revisions)
-
----
-
-## Slide 26: Draft System Prompts
-
-### Draft System Prompts
-
----
-
-## Slide 27: Define Prompt Components
-
-### Define Prompt Components
-
-Use either example. Choose one component to change in your cloned model.
-
-- **Purpose** — What your model should help users do.
-
-- **Procedure** — Steps your model should follow.
-
-- **Constraints** — Boundaries and missing information.
-
-- **Format** — Length and presentation.
-
----
-
-## Slide 28: Define Purpose
-
-### Define Purpose
-
-Describe what your model should help users do.
-
-- Who will use this model?
-
-- Which task or question will they explore?
-
-- What prior knowledge can you assume?
-
-```text
-Guide a short text adventure in which players explore how a prism changes a beam of sunlight.
-```
-
-For research, name your question, source material, and intended users.
-
----
-
-## Slide 29: Write Procedures
-
-### Write Procedures
-
-Which steps should your model follow?
-
-```text
-1. Introduce an experiment about light and colour.
-2. Describe an opening scene and a question to investigate.
-3. Offer four numbered choices and wait.
-4. Describe what players observe after each choice.
-```
-
-For research, check inputs, quote changed passages, then classify changes.
-
----
-
-## Slide 30: Set Constraints
-
-### Set Constraints
-
-Specify how your model should handle missing evidence.
-
-```text
-Do not invent historical details when sources are missing.
-Distinguish documented events from invented scenes and choices.
-If a source is unavailable, explain what cannot be checked.
-```
-
-For research, request missing excerpts and mark uncertain classifications.
-
-Test a request that asks for a detail absent from your sources.
-
----
-
-## Slide 31: Specify Format
-
-### Specify Format
-
-Specify response structure and length.
-
-```text
-Write a short scene followed by four numbered choices.
-Use simple Unicode headings.
-Wait for a reply before continuing.
-```
-
-For research, use Before and After quotations, categories, and brief explanations.
-
----
-
-## Slide 32: Refine Instructions
-
-Refine
-
-### Refine Instructions
-
----
-
-## Slide 33: Extend Instructions
-
-### Extend Instructions
-
-Specify what your model should do when a request needs additional guidance.
-
-- **Teaching** — Explain how to offer a hint or revisit an earlier choice.
-
-- **Research** — Explain when to request missing passages or mark a classification uncertain.
-
-Select Save & Update, then test that condition in a new chat. After revising, save again and repeat your request.
-
----
-
-## Slide 34: Review Common Problems
-
-Watch Out
-
-### Review Common Problems
-
-### Prioritize Instructions
-
-Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
-
-### Resolve Contradictions
-
-Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
-
-### Test User Requests
-
-Test likely requests, including questions about missing evidence.
-
-### Retest Revised Prompts
-
-Save each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.
-
----
-
-## Slide 35: Save Prompts
-
-### Save Prompts
-
-Save changes to your cloned model. Review **Access** and select **Save & Update**. Reuse this model when adding documents in Workshop 2.
-
----
-
-## Slide 36: Share Custom Models
-
-### Share Custom Models
-
-- Open **Access → Add Access** and select users or a course group.
-
-- Grant **Read** access to people who will use your model and **Write** access to people who will edit it.
-
-- Confirm everyone you share with can access your base model and any attached collections.
-
-[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
-
----
-
-## Slide 37: Record Comparisons
+## Slide 18: Record Comparisons
 
 ### Record Comparisons
 
@@ -534,7 +309,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 38: Prepare Source Documents
+## Slide 19: Prepare Source Documents
 
 ### Prepare Source Documents
 

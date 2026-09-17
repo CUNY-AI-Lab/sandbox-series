@@ -2,7 +2,7 @@
 
 The CUNY AI Lab Sandbox supports teaching, research, and experimentation with open-weight models. These workshops introduce its chat interface, custom models, knowledge collections, skills, and tools through demonstrations and guided exercises.
 
-Participants first compare models, then choose STEM Adventure Games for teaching or Compare Wikipedia Edits for research and revise a private copy. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.
+Participants first compare models, then try STEM Adventure Games for teaching or Compare Wikipedia Edits for research, review its system prompt and base model, and revise a clone. They compare the original with their clone using the same request. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.
 
 [Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read all slide copy](SLIDES.md) · [Browse system-prompt examples](examples.html) · [Review copy changes](review/README.md)
 
@@ -20,9 +20,9 @@ Workshop 3 needs Knowledge access when a procedure retrieves from a collection. 
 
 For individual access, follow [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) to the Lab’s [access application](https://ailab.gc.cuny.edu/request-access/). Choose **My own access**, use CUNY Login, complete the application, and check the verified CUNY email for approval. Then enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Participants do not need an API key for these chat exercises.
 
-Workshop 1 requires only individual access and sign-in. Workspace access is arranged for the midpoint exercise. Participants refresh, review model cards, choose a teaching or research example, and clone it as a private configuration. If access is delayed, participants follow the demonstration and continue testing in chat. Before Workshop 2, arrange Workspace and Knowledge access with the Lab. Before Workshop 3, arrange Skills and Tools access, including authoring permissions for participants who will create or edit resources. Confirm which base models and capabilities are available to the group.
+Workshop 1 requires only individual access and sign-in. Workspace access is arranged for the midpoint exercise. Participants try a teaching or research example, review its system prompt and base model, and clone it. Before Workshop 2, arrange Workspace and Knowledge access with the Lab. Before Workshop 3, arrange Skills and Tools access, including authoring permissions for participants who will create or edit resources. Confirm which base models and capabilities are available to the group.
 
-Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. For Workshops 1 and 2, configure **STEM Adventure Games** with [instructions for an adventure played in chat](examples/stem-chat-system-prompt.txt). Leave Skills and Tools unselected. Confirm access to **STEM Wikipedia Experiments** for Workshop 2. Set Function Calling to Legacy under Advanced Params when preparing automatic knowledge retrieval; this setting is covered in [Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/). Save the tool-based configuration as **STEM Adventure Games — Advanced** for Workshop 3, using its [separate system prompt](examples/stem-system-prompt.txt).
+Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. For Workshops 1 and 2, configure **STEM Adventure Games** with [instructions for an adventure played in chat](examples/stem-chat-system-prompt.txt). Leave Skills and Tools unselected. Confirm access to **STEM Wikipedia Experiments** for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Turn File Context off and keep STEM Wikipedia Experiments attached for focused retrieval. Save the tool-based configuration as **STEM Adventure Games — Advanced** for Workshop 3, using its [separate system prompt](examples/stem-system-prompt.txt).
 
 Choose two available small models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.
 
@@ -30,7 +30,7 @@ Use documents you are permitted to upload and share for collection and skill exe
 
 ## Composing system prompts
 
-Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants save both responses, read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
+Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
 
 ### Workshop Agenda
 
@@ -38,9 +38,9 @@ Participants learn how user prompts and system prompts differ before comparing m
 - Define system prompts
 - Compare responses from small models
 - Revise in-chat system prompts
-- Review Workspace model cards
 - Choose teaching or research examples
-- Clone model cards and test revisions
+- Review system prompts and base models
+- Clone models and compare responses
 
 ### Lesson Plan
 
@@ -49,8 +49,9 @@ Participants learn how user prompts and system prompts differ before comparing m
 | 0–10 | Introduce the series, confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
 | 10–25 | Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
 | 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
-| 45–65 | Review Workspace model cards, compare teaching and research options, and clone one privately. Save an initial response from a game choice or a provided Wikipedia edit. | Base model, system prompt, and initial response |
-| 65–85 | Revise one component using Purpose, Procedure, Constraints, and Format. Test a hint request or an uncertain classification, check the response, and repeat after one revision. | Failure, revision, and retest |
+| 45–55 | Choose one example, try it in chat, and save a request to use again. Return to the same exercise slide after testing. | Original request and response |
+| 55–65 | Review its system prompt and base model, then clone it. Revise one instruction while preserving the base model and other settings. | Original and revised instruction |
+| 65–85 | Save the clone and test it in a new chat. Start a fresh comparison chat with original and clone, send the saved request to both, and examine whether the revision produced the intended change. Include identical source passages for research. | Matched requests and both responses |
 | 85–90 | Save the tested prompt and identify source documents for Workshop 2. | Private model and source question |
 
 ### Compare Small Models
@@ -65,7 +66,7 @@ Send exactly this question to two small models with matching context. Ask which 
 
 Screenshot provenance and inconsistent Qwen labels are documented in [source history](review/showcase-sources.json). Discuss these responses without treating screenshot labels or timings as reliable model identifiers or comparative measurements.
 
-Ask “What do you think this person wants to accomplish?” Participants save both original responses and read the sample system prompt before changing settings. Ask what should change in each response. Show Controls at the top right of chat and its System Prompt field alongside the exercise instructions. Participants add the sample instructions, close Controls, and select Regenerate beneath each original response and choose Try Again, leaving their question unchanged. Compare assumptions, explanations, and any change in recommendations.
+Ask “What do you think this person wants to accomplish?” Participants read the sample system prompt before changing settings. Ask what should change in each response. Show Controls at the top right of chat and its System Prompt field alongside the exercise instructions. Participants add the sample instructions, close Controls, and select Regenerate beneath each original response and choose Try Again, leaving their question unchanged. Compare assumptions, explanations, and any change in recommendations.
 
 | Criterion | Model A evidence | Model B evidence |
 | --- | --- | --- |
@@ -74,7 +75,13 @@ Ask “What do you think this person wants to accomplish?” Participants save b
 | Give reasons that support recommendation | | |
 | Compare outputs after changing system prompt instructions | | |
 
-For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assumption-check.txt). It asks the model to examine facts and assumptions without prescribing either demonstration answer. Check whether the added instructions help, cause unnecessary questions, or fail on the second task. Save original responses before changing system prompt instructions.
+For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assumption-check.txt). It asks the model to examine facts and assumptions without prescribing either demonstration answer. Check whether the added instructions help, cause unnecessary questions, or fail on the second task.
+
+### Compare Custom Models
+
+Keep participants on slide 17 as its four stages advance. Links open in new tabs, preserving the current stage. Participants first try one example, then review its complete system prompt and base model through the linked model settings. The four prompt components remain visible in those references; no separate drafting exercise is required.
+
+Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat then places the original and clone beside each other using the same request. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended and retain both outputs. Do not require descriptions, starter prompts, or sharing during this exercise.
 
 ## Curating knowledge collections
 

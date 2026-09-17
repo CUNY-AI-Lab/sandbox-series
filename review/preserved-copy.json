@@ -677,6 +677,11 @@
         "before": "Open Chat ControlsSelect Controls at top right. Paste copied instructions into System Prompt, then close Controls.",
         "after": "Add System PromptSelect Controls at top right of chat. Paste these instructions into System Prompt, then close Controls.Copy promptIdentify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.",
         "reason": "User requested sample system prompt and in-chat Controls screenshot together on one slide. Preserve exact prompt, embedded Copy prompt button, explicit chat location, and authentic annotated controls."
+      },
+      {
+        "before": "Answer briefly without inventing context.",
+        "after": "Answer concisely.",
+        "reason": "User removed instruction about inventing context from in-chat example on September17; final sentence keeps concise-response instruction."
       }
     ],
     "allowed_additions": []
