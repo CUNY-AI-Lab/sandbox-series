@@ -39,7 +39,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Define system prompts
 
-- Compare responses from small models
+- Compare model outputs
 
 - Revise in-chat system prompts
 
