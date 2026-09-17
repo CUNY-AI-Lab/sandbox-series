@@ -54,7 +54,7 @@ Participants learn how user prompts and system prompts differ before comparing m
 | 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
 | 45–52 | Choose one example, try it in chat, and review its system prompt and base model. | Original request and instruction to revise |
 | 52–65 | Follow the Clone screenshot, revise one instruction, save, and test the copy in a new chat. | Original and revised instruction |
-| 65–75 | Compare original and clone using the same request. Include identical source passages for research. | Both responses and evidence of change |
+| 65–75 | Compare original and clone using the same request. Include identical source passages and revision links for research. | Both responses and evidence of change |
 | 75–85 | Draft original instructions using Purpose, Procedure, Constraints, and Format. Select Create in Workspace Models, choose a base model, add the draft, and save. Try one request if time remains. | Original system prompt and saved configuration |
 | 85–90 | Review workshop resources and choose source documents to bring to the next workshop. | Draft prompt, model configuration, and source documents |
 
@@ -85,7 +85,7 @@ For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assum
 
 Participants choose and review an example in Compare Custom Models. Clone Models and Compare Configurations each show a screenshot first, then instructions on the same slide. Links open in new tabs so participants can return to their current step.
 
-Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat sends the same request to original and clone. Select each model name to review its response. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended.
+Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat sends the same request to original and clone. Select each model name to review its response. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages and revision links. Ask whether the response changed as intended.
 
 ### Create Original Models
 

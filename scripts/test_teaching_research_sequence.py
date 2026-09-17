@@ -90,6 +90,7 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertRegex(comparison, r'(copy|clone)')
         self.assertRegex(comparison, r'(same|saved|original) (request|prompt)')
         self.assertRegex(comparison, r'(source|research) passages')
+        self.assertIn('identical source passages and revision links', comparison)
         self.assertNotRegex(comparison, r'save.{0,45}(both|responses)')
         self.assertLess(comparison.index('original'), comparison.index('?'))
         self.assertLess(comparison.index('request'), comparison.index('?'))

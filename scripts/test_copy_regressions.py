@@ -499,10 +499,22 @@ class CopyRegressions(unittest.TestCase):
         headings=re.findall(r'^(?:#{1,6}\s+)?(Purpose|Context|Procedure|Constraints|Format|Tone)\s*$',prompt,re.M)
         self.assertEqual(headings,['Purpose','Procedure','Constraints','Format'])
         self.assertNotRegex(prompt,r'(?i)\bTone\b')
-        self.assertIn('Compare revisions of Wikipedia’s academic freedom article.',prompt)
+        self.assertIn('Compare revisions of Wikipedia articles.',prompt)
+        self.assertNotIn('academic freedom',prompt.lower())
         for instruction in ['before-and-after excerpts, revision IDs, and source links',
-                            'If material is missing, ask only for what is needed and wait',
+                            'If no preference or passages are provided',
+                            'topic, title, or link, or browse recently edited articles',
+                            'retrieve Wikipedia’s Recent changes and offer three distinct articles with verified edit dates, times, and links',
+                            'For a topic, search Wikipedia and offer',
+                            'Use an article title or link directly.',
+                            'retrieve two consecutive revisions of the selected article and their comparison',
+                            'If the user pastes or attaches a revision pair, use it instead.',
+                            'If retrieval fails or material is missing, explain what is needed, ask only for that material, and wait.',
+                            'Describe an edit as recent only when retrieved timestamps support that description.',
                             'Quote its before-and-after wording exactly',
+                            'Continue from retrieval to the comparison in the same response.',
+                            'never place a paraphrase inside quotation marks',
+                            'For a citation-only edit, list changed source fields under Before and After',
                             'Do not infer a broader claim, expanded scope, or new protection from that deletion.',
                             'Assess citation changes only when citation markers or source lists from both revisions are available.',
                             'state that citation changes cannot be assessed from the excerpts',
@@ -525,6 +537,13 @@ class CopyRegressions(unittest.TestCase):
         card=(folder/'model-card.md').read_text()
         fields=dict(re.findall(r'^\| ([^|]+?) \| ([^|]+?) \|$',card,re.M))
         self.assertEqual(fields['Access'],'Private')
+        self.assertEqual(fields['Function Calling'],'Native')
+        self.assertEqual(fields['Builtin Tools'],'Web Search only; all other categories disabled')
+        self.assertEqual(fields['Default Features'],'Web Search')
+        for capability in ['Web Search','Builtin Tools']:
+            self.assertIn(capability,fields['Capabilities'])
+        self.assertIn('optional worked example',card)
+        self.assertIn('same passages and revision links',card)
         for resource in ['Knowledge','Skills','Tools']:
             self.assertRegex(fields[resource],r'^None(?: for Workshop 1)?$')
         self.assertIn('paste or attach',card.lower())

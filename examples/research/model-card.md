@@ -2,7 +2,7 @@
 
 ## Model Description
 
-Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+Choose a Wikipedia article or browse recent edits, then compare revisions with quoted evidence.
 
 ## Model Setup
 
@@ -13,15 +13,17 @@ Compare passages from Wikipedia’s academic freedom article. Classify changes a
 | Connection | Gateway |
 | Access | Private |
 | Sandbox Model | [Open private model](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) |
-| Capabilities | File Upload, File Context, Citations, Status Updates |
-| Other Capabilities | Disabled, including Web Search, Memory, and Builtin Tools |
-| Default Features | None |
+| Function Calling | Native |
+| Capabilities | File Upload, File Context, Citations, Status Updates, Web Search, Builtin Tools |
+| Builtin Tools | Web Search only; all other categories disabled |
+| Other Capabilities | Disabled, including Memory |
+| Default Features | Web Search |
 | System Prompt | [system-prompt.txt](system-prompt.txt) |
 | Knowledge | None for Workshop 1 |
 | Skills | None for Workshop 1 |
 | Tools | None for Workshop 1 |
 
-Paste or attach [sample revisions](sample-revisions.md) with revision IDs and source links in chat.
+Choose an article by topic, title, or link, or ask for recently edited articles in chat. You can also paste or attach your own revision pair. [Sample revisions](sample-revisions.md) provide an optional worked example.
 
 ## Prompt Sections
 
@@ -32,30 +34,30 @@ Paste or attach [sample revisions](sample-revisions.md) with revision IDs and so
 
 ## Prompt Suggestions
 
-### Start comparing
+### Browse recent edits
 
-Choose revision excerpts
+Find recently updated articles
 
 ````text
-Help me compare a revision of Wikipedia’s academic freedom article. What passages and links should I provide?
+Show me three recently edited Wikipedia articles so I can choose one to compare.
 ````
 
-### Classify changes
+### Choose an article
 
-Use provided excerpts
+Use a topic, title, or link
+
+````text
+Help me choose a Wikipedia article by topic, title, or link.
+````
+
+### Compare provided excerpts
+
+Use a revision pair
 
 ````text
 I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision.
 ````
 
-### Review classifications
-
-Check quoted evidence
-
-````text
-I will paste a classification with its before-and-after excerpts, revision IDs, and links. Check whether the quoted evidence supports it.
-````
-
 ## Workshop Progression
 
-Workshop 1 uses one provided revision pair to test system prompt instructions. Workshop 2 can add a classification guide and saved examples as a knowledge collection. Workshop 3 can introduce a skill for repeating these steps and a tool for retrieving specified public revisions.
+Workshop 1 uses one retrieved or pasted revision pair to test system prompt instructions. Reuse the same passages and revision links when comparing the original model and a clone. Workshop 2 can add a classification guide and saved examples as a knowledge collection. Workshop 3 can introduce a skill for repeating these steps and a custom tool for retrieving specified public revisions.

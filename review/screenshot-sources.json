@@ -1490,7 +1490,7 @@
         660
       ],
       "configured_device_pixel_ratio": 2,
-      "source_sha256": "3ee7668d3dad083e6dbbef74877bce367b57c3daa76409fc8ddbbdbe4d5f809b",
+      "source_sha256": "69230656944ba7ec7dd833399a077ce59edc42d66f33321c985b00ffd67873f4",
       "crop_xyxy": [
         0,
         0,
@@ -1508,7 +1508,7 @@
       ],
       "access": "Both examples shared with existing active-users group, Write access required for Clone in Open WebUI 0.11.3. No unrelated model cards shown.",
       "file": "workshop-clone-2026-09-17.png",
-      "sha256": "0aa5856329431c9978e4c6538d747583ae86c68f63639a429aba2322397603fc",
+      "sha256": "8f0e5467cfb178bcd7ef8c5958fa02817fa4a6c580791a1d13db86bb65cee1e9",
       "processing": "Lossless crop excludes account avatar. No UI or response text reconstructed."
     },
     {
@@ -1524,7 +1524,7 @@
         660
       ],
       "configured_device_pixel_ratio": 2,
-      "source_sha256": "3ee7668d3dad083e6dbbef74877bce367b57c3daa76409fc8ddbbdbe4d5f809b",
+      "source_sha256": "69230656944ba7ec7dd833399a077ce59edc42d66f33321c985b00ffd67873f4",
       "crop_xyxy": [
         0,
         0,
@@ -1542,7 +1542,7 @@
       ],
       "access": "Both examples shared with existing active-users group, Write access required for Clone in Open WebUI 0.11.3. No unrelated model cards shown.",
       "file": "workshop-clone-2026-09-17.svg",
-      "sha256": "76929245007af6b5400e1fed1ab83ddb19d8a48422fd7e5f20cde550fef886a0",
+      "sha256": "5e83b5fb41540b0f8f8df13491cee4dd94e5b63ff36e84ba387add19ab401126",
       "processing": "Original cropped PNG embedded unchanged; neutral white outlines, arrows, and labels added.",
       "derived_from": "workshop-clone-2026-09-17.png"
     },

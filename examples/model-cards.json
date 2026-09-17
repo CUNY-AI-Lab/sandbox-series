@@ -113,25 +113,25 @@
     {
       "id": "compare-wikipedia-revisions",
       "name": "Compare Wikipedia Edits",
-      "description": "Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.",
+      "description": "Choose a Wikipedia article or browse recent edits, then compare revisions with quoted evidence.",
       "base_model": "deepseek-v4-flash-0731",
       "base_label": "DeepSeek V4 Flash 0731",
       "prompt_file": "examples/research/system-prompt.txt",
       "starters": [
         {
-          "title": "Start comparing",
-          "subtitle": "Choose revision excerpts",
-          "content": "Help me compare a revision of Wikipedia’s academic freedom article. What passages and links should I provide?"
+          "title": "Browse recent edits",
+          "subtitle": "Find recently updated articles",
+          "content": "Show me three recently edited Wikipedia articles so I can choose one to compare."
         },
         {
-          "title": "Classify changes",
-          "subtitle": "Use provided excerpts",
+          "title": "Choose an article",
+          "subtitle": "Use a topic, title, or link",
+          "content": "Help me choose a Wikipedia article by topic, title, or link."
+        },
+        {
+          "title": "Compare provided excerpts",
+          "subtitle": "Use a revision pair",
           "content": "I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision."
-        },
-        {
-          "title": "Review classifications",
-          "subtitle": "Check quoted evidence",
-          "content": "I will paste a classification with its before-and-after excerpts, revision IDs, and links. Check whether the quoted evidence supports it."
         }
       ],
       "logo_file": "images/cail-logo.png"
