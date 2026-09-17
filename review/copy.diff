@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,563 @@
+@@ -1,487 +1,565 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -14,6 +14,8 @@
 +# Composing system prompts
 +
 +## Slide 1: Getting Started with the CUNY AI Lab Sandbox
++
++[![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
 +
 +### Getting Started with the CUNY AI Lab Sandbox
 +

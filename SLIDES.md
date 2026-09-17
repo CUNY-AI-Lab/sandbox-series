@@ -2,6 +2,10 @@
 
 ## Composing system prompts — 1
 
+[![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
+
+**Alt text:** CUNY AI Lab
+
 ### Getting Started with the CUNY AI Lab Sandbox
 
 Sandbox Workshop Series  Part 1/3

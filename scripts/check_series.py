@@ -50,7 +50,7 @@ for route,label in [('', 'Composing system prompts'),('knowledge','Curating know
   if s.attrs.get('data-original'):found[s.attrs['data-original']]=s.text()
   for n in s.all(lambda n:n.tag=='img'):
    if not n.attrs.get('alt'):issues.append(route+' missing image alternative')
-   if not s.has_class('screenshot-slide'):issues.append(route+' screenshot layout regression')
+   if not s.has_class('screenshot-slide') and not (s.has_class('workshop-cover') and n.has_class('cover-wordmark')):issues.append(route+' screenshot layout regression')
   if s.attrs.get('data-agenda'):
    for li in s.all(lambda n:n.tag=='li'):
     if re.search(r'\b(a|an|the)\b',li.text(),re.I):issues.append(route+' article in mini-agenda')
@@ -104,9 +104,12 @@ for key,record in retained.items():
 for manifest,folder in [('screenshot-sources.json','current'),('showcase-sources.json','showcase')]:
  for x in json.loads((R/'review'/manifest).read_text())['images']:
   if hashlib.sha256((R/'images'/folder/x['file']).read_bytes()).hexdigest()!=x['sha256']:issues.append('Image hash mismatch '+x['file'])
+for asset in json.loads((R/'review/cover-media.json').read_text())['images']:
+ if hashlib.sha256((R/asset['file']).read_bytes()).hexdigest()!=asset['sha256']:issues.append('Cover media hash mismatch '+asset['file'])
 full='# Sandbox Workshops\n\n'+'\n\n'.join(sections)
 # Print image alternatives as copy, so they remain visible in rendered Markdown.
-full=re.sub(r'(!\[([^\]]*)\]\([^)]+\))',lambda m:m.group(1)+'\n\n**Alt text:** '+m.group(2),full)
+image_pattern=r'(\[!\[([^\]]*)\]\([^)]+\)\]\([^)]+\)|!\[([^\]]*)\]\([^)]+\))'
+full=re.sub(image_pattern,lambda m:m.group(1)+'\n\n**Alt text:** '+(m.group(2) or m.group(3)),full)
 if write:(R/'SLIDES.md').write_text(full)
 elif not (R/'SLIDES.md').exists() or (R/'SLIDES.md').read_text()!=full:issues.append('Full copy out of sync')
 example_tree=Parser((R/'examples.html').read_text()).root

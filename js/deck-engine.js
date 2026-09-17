@@ -54,6 +54,37 @@
   document.getElementById('arrow-prev').addEventListener('click', () => goTo(current - 1));
   document.getElementById('arrow-next').addEventListener('click', () => goTo(current + 1));
   progress.addEventListener('input', () => goTo(Number(progress.value) - 1));
+  // Swipe only on the labeled navigation area, outside selectable slide content.
+  const swipeArea = document.querySelector('.nav-info');
+  if (swipeArea) {
+    const hint = document.createElement('span');
+    hint.className = 'nav-swipe-hint';
+    hint.textContent = '← Swipe →';
+    swipeArea.append(hint);
+    swipeArea.setAttribute('role', 'group');
+    swipeArea.setAttribute('aria-label', 'Swipe left for next slide; swipe right for previous slide');
+    let swipeStart = null;
+    swipeArea.addEventListener('pointerdown', event => {
+      if (!event.isPrimary || event.button !== 0 || document.querySelector('dialog[open]')) {
+        swipeStart = null;
+        return;
+      }
+      swipeStart = {id: event.pointerId, x: event.clientX, y: event.clientY};
+      swipeArea.setPointerCapture(event.pointerId);
+    });
+    swipeArea.addEventListener('pointerup', event => {
+      const start = swipeStart;
+      swipeStart = null;
+      if (!start || start.id !== event.pointerId || document.querySelector('dialog[open]')) return;
+      const selection = window.getSelection();
+      if (selection && !selection.isCollapsed) return;
+      const dx = event.clientX - start.x;
+      const dy = event.clientY - start.y;
+      if (Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy) * 1.5) goTo(current + (dx < 0 ? 1 : -1));
+    });
+    swipeArea.addEventListener('pointercancel', () => { swipeStart = null; });
+    swipeArea.addEventListener('lostpointercapture', () => { swipeStart = null; });
+  }
   document.addEventListener('keydown', (event) => {
     if (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey || document.querySelector('dialog[open]')) return;
     if (event.target.closest('input,textarea,select,[contenteditable="true"]')) return;

@@ -1,0 +1,14 @@
+{
+  "source_page": "https://cuny-ai-lab.github.io/links/",
+  "images": [
+    {
+      "file": "images/cail-wordmark-white.png",
+      "source_url": "https://cuny-ai-lab.github.io/links/logo.png",
+      "sha256": "072699d7f2056cfe8347e59fec58b304fcb463a1e5860967f636bdd0c8344c9c",
+      "width": 1154,
+      "height": 259,
+      "changes": "None. Original white wordmark, displayed over black background.",
+      "link": "https://ailab.gc.cuny.edu/"
+    }
+  ]
+}

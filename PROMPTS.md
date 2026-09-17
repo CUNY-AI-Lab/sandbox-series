@@ -2,6 +2,8 @@
 
 ## Slide 1: Getting Started with the CUNY AI Lab Sandbox
 
+[![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
+
 ### Getting Started with the CUNY AI Lab Sandbox
 
 Sandbox Workshop Series  Part 1/3
