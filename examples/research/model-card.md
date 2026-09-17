@@ -25,7 +25,7 @@ Paste or attach [sample revisions](sample-revisions.md) with revision IDs and so
 
 ## Prompt Sections
 
-1. Context
+1. Purpose
 2. Procedure
 3. Constraints
 4. Format

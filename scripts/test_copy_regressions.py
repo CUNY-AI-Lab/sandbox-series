@@ -380,8 +380,8 @@ class CopyRegressions(unittest.TestCase):
     def test_29_research_example_preserves_prompt_and_revision_evidence(self):
         folder=ROOT/'examples/research'
         prompt=(folder/'system-prompt.txt').read_text().strip()
-        headings=re.findall(r'^(?:#{1,6}\s+)?(Context|Procedure|Constraints|Format|Tone)\s*$',prompt,re.M)
-        self.assertEqual(headings,['Context','Procedure','Constraints','Format'])
+        headings=re.findall(r'^(?:#{1,6}\s+)?(Purpose|Context|Procedure|Constraints|Format|Tone)\s*$',prompt,re.M)
+        self.assertEqual(headings,['Purpose','Procedure','Constraints','Format'])
         self.assertNotRegex(prompt,r'(?i)\bTone\b')
         self.assertIn('Wikipedia revisions about academic freedom',prompt)
         self.assertNotRegex(prompt,r'STEM|Prism Laboratory|Newton')
