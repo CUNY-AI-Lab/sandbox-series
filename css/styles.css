@@ -110,6 +110,8 @@ border-radius:3px}
 .deck-brand img{display:block;width:100%;height:auto}
 body:has(.workshop-cover.active) .deck-header{background:#000}
 .discussion-slide .slide-inner{gap:32px}
+.lowered-content .slide-inner{padding-top:clamp(72px,16vh,180px)}
+.slide[data-agenda="prompts"] .agenda{font-size:clamp(30px,2.7vw,38px);line-height:1.4;gap:16px}
 .discussion-questions{
 flex:1;
 display:grid;
@@ -650,12 +652,12 @@ flex:1;
 min-height:0;
 display:grid;
 grid-template-columns:repeat(2,minmax(0,1fr));
-gap:32px;
+gap:clamp(40px,5vw,72px);
 align-content:start;
 align-items:start}
 .response-comparison-slide .response-comparison figure{
 flex:none;
-gap:18px;
+gap:24px;
 align-items:flex-start}
 .response-comparison figure>h2{
 font-size:28px;
