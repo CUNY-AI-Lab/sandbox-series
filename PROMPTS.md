@@ -21,9 +21,9 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - **Composing system prompts** Configure model behavior with system prompts.
 
-- **Curating knowledge collections** Organize source documents in knowledge collections.
+- **Curating knowledge collections** Organize source documents in knowledge collections. Thursday, October 1
 
-- **Configuring skills and tools** Extend model capabilities with skills and tools.
+- **Configuring skills and tools** Extend model capabilities with skills and tools. Thursday, October 15
 
 [Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 

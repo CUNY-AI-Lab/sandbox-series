@@ -755,3 +755,7 @@ border-top:1px solid var(--border)}
 .comparison-columns{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none;column-gap:64px;row-gap:32px}
 .comparison-columns>li:first-child{grid-column:1/-1}
 .comparison-columns>li:not(:first-child){padding-top:20px;border-top:1px solid var(--border)}
+
+.roadmap-dated>li{grid-row:span 3}
+.roadmap-dated .workshop-date{display:block;color:#d3b98b;font-size:clamp(22px,1.9vw,26px);line-height:1.4}
+@media(max-width:1000px){.roadmap-dated .workshop-date{margin-top:14px}}
