@@ -4,8 +4,10 @@
   let trigger;
   function open(image) {
     trigger=image;
-    dialog.querySelector('img').src=image.src;
-    dialog.querySelector('img').alt=image.alt;
+    const expanded=dialog.querySelector('img');
+    expanded.src=image.src;
+    expanded.alt=image.alt;
+    expanded.style.setProperty('--screenshot-max-width',image.style.getPropertyValue('--screenshot-max-width'));
     dialog.querySelector('p').textContent=image.closest('figure')?.querySelector('figcaption')?.textContent || '';
     dialog.showModal(); close.focus();
   }

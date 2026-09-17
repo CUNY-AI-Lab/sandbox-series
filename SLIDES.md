@@ -731,7 +731,7 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 ### Review Attached Knowledge
 
-![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.](images/current/knowledge-chat-attachments-hidpi-2026-09-16.svg)
+![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.](images/current/knowledge-attachments-3x-2026-09-16.svg)
 
 **Alt text:** STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.
 
@@ -803,7 +803,7 @@ Read entries before uploading. Distinguish these summaries from original histori
 
 ### Create Knowledge Collections
 
-![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create-hidpi-2026-09-16.png)
+![Current Create a knowledge base form with name, description, Private access, and Create Knowledge](images/current/knowledge-create-3x-2026-09-16.png)
 
 **Alt text:** Current Create a knowledge base form with name, description, Private access, and Create Knowledge
 
@@ -1157,7 +1157,7 @@ In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and c
 
 ### Save Private Copy
 
-![Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.](images/current/model-private-2026-09-16-annotated.svg)
+![Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.](images/current/model-private-3x-2026-09-16.svg)
 
 **Alt text:** Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.
 
@@ -1191,7 +1191,7 @@ Draft a skill for adding an aperture comparison to STEM Adventure. Use attached 
 
 ### Create Skills
 
-![Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.](images/current/skill-create-2026-09-16-annotated.svg)
+![Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.](images/current/skill-create-3x-2026-09-16.svg)
 
 **Alt text:** Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.
 

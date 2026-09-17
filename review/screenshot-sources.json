@@ -980,6 +980,118 @@
       ],
       "processing": "Lossless crops of two authentic captures of one unchanged chat at different viewport widths. Full context at left retains original question, full response, original model identity and timing, and message box. Enlarged detail at right contains complete recommendation and response action row. Neutral white outline and arrow identify Regenerate. Matching region outline and connector relate context to detail; text naturally reflows in narrower source viewport. Account avatar and private chat address excluded. No UI or response wording reconstructed.",
       "sha256": "a5c9cb4966a5c90ad2e36996be400a153a16d9d976b00e6daeeeffd9755dfa3f"
+    },
+    {
+      "file": "knowledge-create-3x-2026-09-16.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/knowledge",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode at device pixel ratio 3 and browser zoom 100%. Empty Create a knowledge base form with Private access. No form submitted.",
+      "source_dimensions": [
+        3300,
+        2700
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 3,
+      "crop_xyxy": [
+        600,
+        675,
+        2700,
+        2040
+      ],
+      "output_dimensions": [
+        2100,
+        1365
+      ],
+      "source_sha256": "80b40676366c253db79bd8dfa346ce3fe7f601a0397ece5d5eca99a67f9217e0",
+      "processing": "Lossless crop at native resolution; no raster resizing. Browser chrome, account avatar, and unrelated account content excluded. No UI or text reconstructed.",
+      "sha256": "cc4045d5e3da387eea6bd9ed2a568f62df6cee52ee0da2d62fca1798795e9cb0"
+    },
+    {
+      "file": "skill-create-3x-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/skills",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode at device pixel ratio 3 and browser zoom 100%. Empty Create Skill form with name, identifier, description, Instructions, and Save & Create. No form submitted.",
+      "source_dimensions": [
+        2700,
+        1650
+      ],
+      "configured_viewport_css_pixels": [
+        900,
+        550
+      ],
+      "configured_device_pixel_ratio": 3,
+      "crop_xyxy": [
+        160,
+        0,
+        2680,
+        1650
+      ],
+      "output_dimensions": [
+        2520,
+        1650
+      ],
+      "source_sha256": "4a1a2aa723708e9587288a3ba4fc509f32ddfe06e338af8746c8e44f6f4759ba",
+      "processing": "Lossless crop at native resolution; no raster resizing. Browser chrome, account avatar, and unrelated account content excluded. Neutral white outlines identify controls. No UI or text reconstructed.",
+      "sha256": "7bd8e80415b884da72e45fd5c64488f8181c08ab5c38d8a0d4573bbb4dcbc4a3"
+    },
+    {
+      "file": "model-private-3x-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode at device pixel ratio 3 and browser zoom 100%. Access Control on an unsaved clone of STEM Adventure Games \u2014 Advanced. Copied access grant removed only from unsaved draft to show Private and No access grants. Private to you. Draft abandoned without Save & Create; original model unchanged.",
+      "source_dimensions": [
+        2700,
+        1650
+      ],
+      "configured_viewport_css_pixels": [
+        900,
+        550
+      ],
+      "configured_device_pixel_ratio": 3,
+      "crop_xyxy": [
+        180,
+        30,
+        2670,
+        1120
+      ],
+      "output_dimensions": [
+        2490,
+        1090
+      ],
+      "source_sha256": "13638882f54045a3268a3126af733ebd62c9268b8da967db1f1ab4172ac0c6e2",
+      "processing": "Lossless crop at native resolution; no raster resizing. Browser chrome, account avatar, and unrelated account content excluded. Neutral white outlines identify controls. No UI or text reconstructed.",
+      "sha256": "3b6f2dd52668d1dc304ac231bf68c9d9c2ef655beda550722d7374f5f94175cf"
+    },
+    {
+      "file": "knowledge-attachments-3x-2026-09-16.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "observed_date": "2026-09-16",
+      "capture": "Firefox built-in viewport screenshot in Responsive Design Mode at device pixel ratio 3 and browser zoom 100%. Saved introductory STEM Adventure Games model with STEM Wikipedia Experiments attached and no Tools or Skills selected. No model edits.",
+      "source_dimensions": [
+        2700,
+        1650
+      ],
+      "configured_viewport_css_pixels": [
+        900,
+        550
+      ],
+      "configured_device_pixel_ratio": 3,
+      "crop_xyxy": [
+        160,
+        880,
+        2040,
+        1530
+      ],
+      "output_dimensions": [
+        1880,
+        650
+      ],
+      "source_sha256": "d93979ae80762d388ce6c3a7e40365d47b6754f0fcfcd5801afd2a282e942819",
+      "processing": "Lossless crop at native resolution; no raster resizing. Browser chrome, account avatar, and unrelated account content excluded. Neutral white outlines identify controls. No UI or text reconstructed.",
+      "sha256": "7e85cf58e62bc434551a4ff011461a93b5d9c4712d9b0393049790c9fd499967"
     }
   ]
 }

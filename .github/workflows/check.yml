@@ -11,6 +11,7 @@ jobs:
         with:
           python-version: '3.13'
       - run: python3 scripts/check_series.py
+      - run: python3 scripts/check_screenshot_resolution.py
       - run: python3 scripts/test_copy_regressions.py
       - run: node scripts/test_deck_interactions.cjs
       - run: node --check js/deck-engine.js

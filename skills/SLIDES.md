@@ -265,7 +265,7 @@ In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and c
 
 ### Save Private Copy
 
-![Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.](../images/current/model-private-2026-09-16-annotated.svg)
+![Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.](../images/current/model-private-3x-2026-09-16.svg)
 
 Rename model and ID. Open Access, keep Private, and remove copied users or groups from Access List. Close Access and choose Save & Create.
 
@@ -297,7 +297,7 @@ Draft a skill for adding an aperture comparison to STEM Adventure. Use attached 
 
 ### Create Skills
 
-![Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.](../images/current/skill-create-2026-09-16-annotated.svg)
+![Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.](../images/current/skill-create-3x-2026-09-16.svg)
 
 Open Workspace → Skills → Create. Name your skill and add an identifier and description. Paste your saved draft into Instructions, review Access, and choose Save & Create.
 
