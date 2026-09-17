@@ -442,3 +442,24 @@ height:auto}
 @media(max-width:1000px){
  .skill-test-slide .comparison-steps{grid-template-columns:1fr}
 }
+
+/* Center selected content groups together; preserve full-size screenshot steps. */
+@media screen and (min-width:1001px){
+ .balanced-content:not(.workflow-slide),
+ .balanced-content.workflow-slide:has([data-fragment-step="1"]:not([hidden])){
+  --body:clamp(30px,2.45vw,36px);
+  font-size:var(--body);
+ }
+ .balanced-content:not(.workflow-slide) .slide-inner,
+ .balanced-content.workflow-slide .slide-inner:has(>[data-fragment-step="1"]:not([hidden])){
+  padding-top:clamp(28px,4.4vh,54px);
+  padding-bottom:clamp(28px,4.4vh,54px);
+  justify-content:safe center;
+ }
+ .balanced-content .slide-body{flex:none;margin-block:auto}
+ .balanced-content .slide-footer{margin-top:0}
+ .balanced-content .task-example .prompt-block{font-size:var(--body)}
+ .balanced-content.response-comparison-slide .response-comparison{flex:none}
+ .balanced-content.response-comparison-slide .response-comparison figure>h2{font-size:var(--body)}
+ .balanced-content.workflow-slide [data-fragment-step="1"]{flex:none}
+}
