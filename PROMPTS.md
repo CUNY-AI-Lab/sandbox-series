@@ -189,9 +189,9 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Slide 13: Compare Outputs
+## Slide 13: Gemma vs. Qwen
 
-### Compare Outputs
+### Gemma vs. Qwen
 
 ### Gemma’s Response
 

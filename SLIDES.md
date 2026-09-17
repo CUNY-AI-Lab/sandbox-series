@@ -197,7 +197,7 @@ What do you think this person wants to accomplish?
 
 ## Composing system prompts — 13
 
-### Compare Outputs
+### Gemma vs. Qwen
 
 ### Gemma’s Response
 
