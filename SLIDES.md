@@ -281,23 +281,21 @@ Teaching
 
 ### [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
 
-Start an adventure. Choose an experiment and make two choices.
+Explore scientific experiments through a text adventure with numbered choices.
 
 Research
 
 ### [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
 
-Paste one pair from [sample revisions](examples/research/sample-revisions.html). Ask it to classify one change and quote evidence.
-
-Save your opening request to use again.
+Compare Wikipedia revisions and examine changes in wording, claims, and citations.
 
 ### Review Settings
 
 Review **Base Model** and **System Prompt** for your chosen example.
 
-- [STEM Adventure Games settings](examples.html#stem-chat)
+- [STEM Adventure Games settings](https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games)
 
-- [Compare Wikipedia Edits settings](examples.html#wikipedia-revisions)
+- [Compare Wikipedia Edits settings](https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=compare-wikipedia-revisions)
 
 Find Purpose, Procedure, Constraints, and Format in its instructions.
 
@@ -321,7 +319,7 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 - Scroll to bottom and select **Save & Create**.
 
-- Open your copy in a new chat and test your saved request.
+- Open your copy in a new chat and repeat your original request.
 
 ---
 
@@ -335,11 +333,9 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 Start a new chat. Select model ID on bottom right of message box, then Compare. Choose your original model and your copy.
 
-Send your saved request to both models. Include source passages if you chose research. Select each model name to review its response.
+Send your original request to both models. Include source passages if you chose research. Select each model name to review its response.
 
 What changed? Did your revised instruction work?
-
-Save your request and both responses.
 
 ---
 
@@ -347,12 +343,10 @@ Save your request and both responses.
 
 ### Record Comparisons
 
-Save your prompt, model settings, and responses.
-
 | Item | Record |
 | --- | --- |
 | Configuration | Custom model name, base model, system prompt, settings, and date. |
-| Test | User request, enabled features, saved response. |
+| Test | User request, enabled features, response. |
 | Judgment | What you checked, evidence from each response, and any change you plan to test. |
 
 Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.

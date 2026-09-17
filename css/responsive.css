@@ -352,6 +352,19 @@ height:auto}
 /* Keep each screenshot and its instructions on one returning exercise slide. */
 .workflow-slide [data-fragment-step] { flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:24px; }
 .workflow-slide [data-fragment-step] > figure { flex:1; }
+.workflow-slide [data-fragment-step].comparison-instructions {
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  align-items:center;
+  align-content:center;
+  gap:clamp(32px,5vw,72px);
+}
+.comparison-instructions > p { margin:0; }
+.comparison-instructions > p + p { padding-left:32px; border-left:1px solid var(--border); }
+@media(max-width:900px) {
+  .workflow-slide [data-fragment-step].comparison-instructions { grid-template-columns:1fr; gap:28px; }
+  .comparison-instructions > p + p { padding:24px 0 0; border-left:0; border-top:1px solid var(--border); }
+}
 @media (max-width:600px) {
   .workflow-slide [data-fragment-step] { flex:none; min-height:0; }
   .workflow-slide [data-fragment-step] > figure { flex:none; }

@@ -367,8 +367,7 @@ class CopyRegressions(unittest.TestCase):
                     self.assertNotIn('adventure/preview.html',path)
                     self.assertNotIn('game-procedure-evaluation.md',path)
         game=self.slide('index.html','Compare Custom Models')
-        self.assertIn('Start an adventure',game.text())
-        self.assertIn('make two choices',game.text())
+        self.assertIn('text adventure with numbered choices',game.text())
         self.assertFalse(game.all(lambda n:n.tag=='iframe'))
         prompt_file=ROOT/'examples/stem-chat-system-prompt.txt'
         original=ROOT/'review/live/stem-system-prompt-before.txt'

@@ -36,13 +36,12 @@ class TeachingResearchSequence(unittest.TestCase):
                      'Clone models and compare responses', 'Draft instructions and create models']:
             self.assertIn(item, agenda)
 
-    def test_both_examples_and_sources_open_without_leaving_exercise(self):
+    def test_both_examples_open_without_leaving_exercise(self):
         stage = self.stages()[0]
         links = {node.attrs.get('href'): node for node in stage.all(lambda node: node.tag == 'a')}
         expected = [
             'https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games',
             'https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions',
-            'examples/research/sample-revisions.html',
         ]
         for href in expected:
             self.assertIn(href, links)
@@ -50,12 +49,14 @@ class TeachingResearchSequence(unittest.TestCase):
             self.assertIn('noopener', links[href].attrs.get('rel', '').split(), href)
         for term in ['Teaching', 'Research']:
             self.assertIn(term, stage.text())
+        self.assertFalse(any('sample-revisions' in href for href in links))
+        self.assertNotIn('Paste one pair', stage.text())
 
     def test_review_includes_complete_settings_for_either_example(self):
         stage = self.stages()[1]
         links = {node.attrs.get('href'): node for node in stage.all(lambda node: node.tag == 'a')}
-        for anchor in ['stem-chat', 'wikipedia-revisions']:
-            href = 'examples.html#' + anchor
+        for model in ['stem-adventure-games', 'compare-wikipedia-revisions']:
+            href = 'https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=' + model
             self.assertIn(href, links)
             self.assertEqual(links[href].attrs.get('target'), '_blank', href)
             self.assertIn('noopener', links[href].attrs.get('rel', '').split(), href)
@@ -89,9 +90,16 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertRegex(comparison, r'(copy|clone)')
         self.assertRegex(comparison, r'(same|saved|original) (request|prompt)')
         self.assertRegex(comparison, r'(source|research) passages')
-        self.assertRegex(comparison, r'save.{0,45}(both|responses)')
+        self.assertNotRegex(comparison, r'save.{0,45}(both|responses)')
         self.assertLess(comparison.index('original'), comparison.index('?'))
         self.assertLess(comparison.index('request'), comparison.index('?'))
+
+    def test_repeated_save_reminders_stay_removed(self):
+        copy = ' '.join(slide.text() for slide in self.slides)
+        self.assertNotRegex(copy, r'Save your (?:opening )?(?:request|prompt)')
+        for reminder in ['Save your opening request', 'Save your request and both responses',
+                         'Save your prompt, model settings, and responses', 'your saved request']:
+            self.assertNotIn(reminder, copy)
 
     def test_drafting_precedes_creation_and_uses_four_components(self):
         draft = self.slide('Draft System Prompts')

@@ -52,7 +52,7 @@ Participants learn how user prompts and system prompts differ before comparing m
 | 5–10 | Confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
 | 10–25 | Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
 | 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
-| 45–52 | Choose one example, try it in chat, and review its system prompt and base model. Save a request to use again. | Original request and instruction to revise |
+| 45–52 | Choose one example, try it in chat, and review its system prompt and base model. | Original request and instruction to revise |
 | 52–65 | Follow the Clone screenshot, revise one instruction, save, and test the copy in a new chat. | Original and revised instruction |
 | 65–75 | Compare original and clone using the same request. Include identical source passages for research. | Both responses and evidence of change |
 | 75–85 | Draft original instructions using Purpose, Procedure, Constraints, and Format. Select Create in Workspace Models, choose a base model, add the draft, and save. Try one request if time remains. | Original system prompt and saved configuration |
@@ -83,13 +83,13 @@ For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assum
 
 ### Compare Custom Models
 
-Participants choose and review an example on slide 17. Slides 18 and 19 each show a screenshot first, then instructions on the same slide. Links open in new tabs so participants can return to their current step.
+Participants choose and review an example in Compare Custom Models. Clone Models and Compare Configurations each show a screenshot first, then instructions on the same slide. Links open in new tabs so participants can return to their current step.
 
-Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat sends the same request to original and clone. Select each model name to review its response. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended and retain both outputs.
+Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat sends the same request to original and clone. Select each model name to review its response. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended.
 
 ### Create Original Models
 
-Use remaining time to begin drafting instructions for a teaching or research task. Use Purpose, Procedure, Constraints, and Format on slide 21. Slide 22 shows where to select Create, then walks through naming a configuration, choosing a base model, adding the draft system prompt, saving, and trying one request. Participants finish with their own configuration to develop before the next workshop.
+Use remaining time to begin drafting instructions for a teaching or research task. Use Purpose, Procedure, Constraints, and Format in Draft System Prompts. Create Models shows where to select Create, then walks through naming a configuration, choosing a base model, adding the draft system prompt, saving, and trying one request. Participants finish with their own configuration to develop before the next workshop.
 
 Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and reference navigation do not link to later workshop decks.
 
