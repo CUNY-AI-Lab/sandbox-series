@@ -289,7 +289,7 @@ Review Model Name, Base Model, and System Prompt when configuring your copy.
 
 ## Composing system prompts — 20
 
-### Choose Examples
+### Choose Model Cards
 
 **Teaching**
 
@@ -301,9 +301,7 @@ Explore scientific experiments through a text adventure with numbered choices.
 
 [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
 
-Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
-
-Choose either model for your own work.
+Classify edits to Wikipedia’s academic freedom article using quoted evidence.
 
 ---
 

@@ -9,10 +9,10 @@ class TeachingResearchSequence(unittest.TestCase):
     def test_options_precede_clone_and_configuration(self):
         slides = Parser((ROOT / 'index.html').read_text()).root.all(lambda n: n.has_class('slide'))
         titles = [s.attrs['data-title'] for s in slides]
-        sequence = ['Open Workspace', 'Review Custom Models', 'Model Configuration', 'Choose Examples', 'Clone Model Cards']
+        sequence = ['Open Workspace', 'Review Custom Models', 'Model Configuration', 'Choose Model Cards', 'Clone Model Cards']
         positions = [titles.index(title) for title in sequence]
         self.assertEqual(positions, list(range(positions[0], positions[0] + len(sequence))))
-        options = slides[titles.index('Choose Examples')]
+        options = slides[titles.index('Choose Model Cards')]
         links = {n.attrs.get('href') for n in options.all(lambda n: n.tag == 'a')}
         for model in ['stem-adventure-games', 'compare-wikipedia-revisions']:
             self.assertIn('https://chat.ailab.gc.cuny.edu/?model=' + model, links)

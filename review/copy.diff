@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,565 @@
+@@ -1,487 +1,563 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -726,9 +726,9 @@
 +
 +---
 +
-+## Slide 20: Choose Examples
++## Slide 20: Choose Model Cards
 +
-+### Choose Examples
++### Choose Model Cards
 +
 +**Teaching**
 +
@@ -740,9 +740,7 @@
 +
 +[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
 +
-+Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
-+
-+Choose either model for your own work.
++Classify edits to Wikipedia’s academic freedom article using quoted evidence.
 +
 +---
 +

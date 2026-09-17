@@ -1,0 +1,18 @@
+--- before
++++ after
+@@ -1,4 +1,4 @@
+-### Choose Examples
++### Choose Model Cards
+ 
+ 
+ 
+@@ -22,8 +22,4 @@
+ 
+ 
+ 
+-Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+-
+-
+-
+-Choose either model for your own work.
++Classify edits to Wikipedia’s academic freedom article using quoted evidence.
