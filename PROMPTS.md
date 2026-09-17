@@ -215,7 +215,9 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ### Regenerate Responses
 
-![Mistral Large 3 response recommending walking, with original question and message box; enlarged recommendation and response controls show Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-gateway-hidpi-2026-09-16.svg)
+![Mistral Large 3 response recommending walking, with original question and message box; white annotation marks response controls for Regenerate.](images/current/regenerate-mistral-context-2026-09-17.svg)
+
+![Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-detail-2026-09-17.svg)
 
 Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
 
@@ -243,21 +245,7 @@ Select Workspace in left sidebar.
 
 ---
 
-## Slide 18: Review Custom Models
-
-### Review Custom Models
-
-Choose **Models** to find custom model cards. Each combines a base model with setup instructions and any attached resources.
-
-Review **Base Model** and **System Prompt** before choosing a card to adapt.
-
-Continue in chat if Workspace is unavailable.
-
-[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
-
----
-
-## Slide 19: Model Configuration
+## Slide 18: Model Configuration
 
 ### Model Configuration
 
@@ -267,7 +255,7 @@ Review Model Name, Base Model, and System Prompt when configuring your copy.
 
 ---
 
-## Slide 20: Choose Model Cards
+## Slide 19: Choose Model Cards
 
 ### Choose Model Cards
 
@@ -285,7 +273,7 @@ Classify edits to Wikipedia’s academic freedom article using quoted evidence.
 
 ---
 
-## Slide 21: Clone Model Cards
+## Slide 20: Clone Model Cards
 
 ### Clone Model Cards
 
@@ -303,7 +291,7 @@ Save an initial response before changing instructions.
 
 ---
 
-## Slide 22: Add Prompt Suggestions
+## Slide 21: Add Prompt Suggestions
 
 ### Add Prompt Suggestions
 
@@ -315,7 +303,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-## Slide 23: Situating System Prompts
+## Slide 22: Situating System Prompts
 
 Examples
 
@@ -323,7 +311,7 @@ Examples
 
 ---
 
-## Slide 24: STEM Adventure Games
+## Slide 23: STEM Adventure Games
 
 ### STEM Adventure Games
 
@@ -333,7 +321,7 @@ For STEM Adventure Games, type Start an adventure. Choose an experiment, then re
 
 ---
 
-## Slide 25: Read Game Instructions
+## Slide 24: Read Game Instructions
 
 ### Read Game Instructions
 
@@ -351,7 +339,7 @@ What should happen after you choose an action?
 
 ---
 
-## Slide 26: Adapt Research Prompts
+## Slide 25: Adapt Research Prompts
 
 ### Adapt Research Prompts
 
@@ -367,13 +355,13 @@ For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wiki
 
 ---
 
-## Slide 27: Draft System Prompts
+## Slide 26: Draft System Prompts
 
 ### Draft System Prompts
 
 ---
 
-## Slide 28: Define Prompt Components
+## Slide 27: Define Prompt Components
 
 ### Define Prompt Components
 
@@ -389,7 +377,7 @@ Use either example. Choose one component to change in your cloned model.
 
 ---
 
-## Slide 29: Define Purpose
+## Slide 28: Define Purpose
 
 ### Define Purpose
 
@@ -409,7 +397,7 @@ For research, name your question, source material, and intended users.
 
 ---
 
-## Slide 30: Write Procedures
+## Slide 29: Write Procedures
 
 ### Write Procedures
 
@@ -426,7 +414,7 @@ For research, check inputs, quote changed passages, then classify changes.
 
 ---
 
-## Slide 31: Set Constraints
+## Slide 30: Set Constraints
 
 ### Set Constraints
 
@@ -444,7 +432,7 @@ Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Slide 32: Specify Format
+## Slide 31: Specify Format
 
 ### Specify Format
 
@@ -460,7 +448,7 @@ For research, use Before and After quotations, categories, and brief explanation
 
 ---
 
-## Slide 33: Refine Instructions
+## Slide 32: Refine Instructions
 
 Refine
 
@@ -468,7 +456,7 @@ Refine
 
 ---
 
-## Slide 34: Extend Instructions
+## Slide 33: Extend Instructions
 
 ### Extend Instructions
 
@@ -482,7 +470,7 @@ Select Save & Update, then test that condition in a new chat. After revising, sa
 
 ---
 
-## Slide 35: Review Common Problems
+## Slide 34: Review Common Problems
 
 Watch Out
 
@@ -506,7 +494,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Slide 36: Save Prompts
+## Slide 35: Save Prompts
 
 ### Save Prompts
 
@@ -514,7 +502,7 @@ Save changes to your cloned model. Review **Access** and select **Save & Update*
 
 ---
 
-## Slide 37: Share Custom Models
+## Slide 36: Share Custom Models
 
 ### Share Custom Models
 
@@ -528,7 +516,7 @@ Save changes to your cloned model. Review **Access** and select **Save & Update*
 
 ---
 
-## Slide 38: Record Comparisons
+## Slide 37: Record Comparisons
 
 ### Record Comparisons
 
@@ -546,7 +534,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 39: Prepare Source Documents
+## Slide 38: Prepare Source Documents
 
 ### Prepare Source Documents
 

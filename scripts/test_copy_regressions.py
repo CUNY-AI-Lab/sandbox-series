@@ -129,7 +129,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Compare Responses','Open Workspace','Review Custom Models','Model Configuration','Add Prompt Suggestions'])
+        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Compare Responses','Open Workspace','Model Configuration','Add Prompt Suggestions'])
         self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
         question=self.slide_containing_id('index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())
@@ -418,18 +418,22 @@ class CopyRegressions(unittest.TestCase):
             slides=[s for s in self.decks['index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
             self.assertEqual(len(slides),1,title)
             images=slides[0].all(lambda n:n.tag=='img')
-            self.assertEqual(len(images),1,title)
-            path=ROOT/images[0].attrs['src']
-            matches=[r for r in records if r['file']==path.name]
-            self.assertEqual(len(matches),1,title)
-            record=matches[0]
-            self.assertEqual(record.get('selected_model_id'),model_id,title)
-            self.assertEqual(record.get('selected_model_name'),model_name,title)
-            self.assertEqual(record.get('model_filter'),'Gateway',title)
-            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),record['sha256'])
+            self.assertEqual(len(images),2 if title=='Regenerate Responses' else 1,title)
             if title=='Regenerate Responses':
-                self.assertEqual(record.get('request'),CAR)
-                self.assertIn('walking',record['capture'].lower())
+                self.assertEqual([image.attrs.get('data-fragment-step') for image in images],['0','1'])
+            for image in images:
+                path=ROOT/image.attrs['src']
+                matches=[r for r in records if r['file']==path.name]
+                self.assertEqual(len(matches),1,title)
+                record=matches[0]
+                self.assertEqual(record.get('selected_model_id'),model_id,title)
+                self.assertEqual(record.get('selected_model_name'),model_name,title)
+                self.assertEqual(record.get('model_filter'),'Gateway',title)
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),record['sha256'])
+                if title=='Regenerate Responses':
+                    self.assertEqual(record.get('request'),CAR)
+                    self.assertIn('walking',record['capture'].lower())
+                    self.assertEqual(record['derived_from'],'regenerate-mistral-gateway-hidpi-2026-09-16.svg')
 
     def test_29_research_example_preserves_prompt_and_revision_evidence(self):
         folder=ROOT/'examples/research'

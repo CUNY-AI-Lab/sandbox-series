@@ -1228,6 +1228,122 @@
       "selected_model_name": "STEM Adventure Games",
       "base_model_id": "deepseek-v4-flash-0731",
       "base_model_name": "DeepSeek V4 Flash 0731"
+    },
+    {
+      "file": "regenerate-mistral-context-2026-09-17.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Authentic first Mistral Large 3 response via Gateway recommends walking; 237 tokens and 17.60 seconds. Firefox built-in viewport captures show one unchanged response at 1100\u00d7900 and 650\u00d7900 CSS pixels, each at device pixel ratio 2. Viewport was narrowed without submitting another request or editing system prompt instructions.",
+      "selected_model_id": "mistral-large-3-675b-instruct",
+      "selected_model_name": "Mistral Large 3",
+      "model_filter": "Gateway",
+      "request": "The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.",
+      "generation_tokens": 237,
+      "generation_seconds": 17.6,
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        90,
+        0,
+        2180,
+        1800
+      ],
+      "source_sha256": "7fe5f87af9a720b7c0ff972d48c7ef3b5bd7bee0c4bc11e2de6f2df0aae7d00d",
+      "detail_source_dimensions": [
+        1300,
+        1800
+      ],
+      "detail_configured_viewport_css_pixels": [
+        650,
+        900
+      ],
+      "detail_configured_device_pixel_ratio": 2,
+      "detail_crop_xyxy": [
+        108,
+        1124,
+        1270,
+        1410
+      ],
+      "detail_source_sha256": "abbf9db83e0abfecefd54f85dd4b8280f40eb094022a85d2444efd512583cd71",
+      "sha256": "2027a352cc7734aa3fde11aedd9ebeb1cf36095e43707911a809114d32ffa7a9",
+      "derived_from": "regenerate-mistral-gateway-hidpi-2026-09-16.svg",
+      "layout": "Original full chat screenshot and existing white annotation, extracted from the composite without changing raster pixels.",
+      "derived_viewbox": "0 0 1325 1141.15",
+      "original_composite_processing": "Lossless crops of two authentic captures of one unchanged chat at different viewport widths. Full context at left retains original question, full response, original model identity and timing, and message box. Enlarged detail at right contains complete recommendation and response action row. Neutral white outline and arrow identify Regenerate. Matching region outline and connector relate context to detail; text naturally reflows in narrower source viewport. Account avatar and private chat address excluded. No UI or response wording reconstructed.",
+      "original_composite_dimensions": [
+        3780,
+        1210
+      ],
+      "processing": "Original full chat screenshot and existing white annotation, extracted from the composite without changing raster pixels.",
+      "output_dimensions": [
+        1325.0,
+        1141.15
+      ]
+    },
+    {
+      "file": "regenerate-mistral-detail-2026-09-17.svg",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "observed_date": "2026-09-16",
+      "capture": "Authentic first Mistral Large 3 response via Gateway recommends walking; 237 tokens and 17.60 seconds. Firefox built-in viewport captures show one unchanged response at 1100\u00d7900 and 650\u00d7900 CSS pixels, each at device pixel ratio 2. Viewport was narrowed without submitting another request or editing system prompt instructions.",
+      "selected_model_id": "mistral-large-3-675b-instruct",
+      "selected_model_name": "Mistral Large 3",
+      "model_filter": "Gateway",
+      "request": "The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.",
+      "generation_tokens": 237,
+      "generation_seconds": 17.6,
+      "source_dimensions": [
+        2200,
+        1800
+      ],
+      "configured_viewport_css_pixels": [
+        1100,
+        900
+      ],
+      "configured_device_pixel_ratio": 2,
+      "crop_xyxy": [
+        90,
+        0,
+        2180,
+        1800
+      ],
+      "source_sha256": "7fe5f87af9a720b7c0ff972d48c7ef3b5bd7bee0c4bc11e2de6f2df0aae7d00d",
+      "detail_source_dimensions": [
+        1300,
+        1800
+      ],
+      "detail_configured_viewport_css_pixels": [
+        650,
+        900
+      ],
+      "detail_configured_device_pixel_ratio": 2,
+      "detail_crop_xyxy": [
+        108,
+        1124,
+        1270,
+        1410
+      ],
+      "detail_source_sha256": "abbf9db83e0abfecefd54f85dd4b8280f40eb094022a85d2444efd512583cd71",
+      "sha256": "c56aa313afb8eb8ef3b2ed9136b19bea4f5e85731cac4ee088e38c3ac9765871",
+      "derived_from": "regenerate-mistral-gateway-hidpi-2026-09-16.svg",
+      "layout": "Original enlarged screenshot, Regenerate label, outline, and arrow, extracted from the composite without changing raster pixels.",
+      "derived_viewbox": "1420 175 2370 865",
+      "original_composite_processing": "Lossless crops of two authentic captures of one unchanged chat at different viewport widths. Full context at left retains original question, full response, original model identity and timing, and message box. Enlarged detail at right contains complete recommendation and response action row. Neutral white outline and arrow identify Regenerate. Matching region outline and connector relate context to detail; text naturally reflows in narrower source viewport. Account avatar and private chat address excluded. No UI or response wording reconstructed.",
+      "original_composite_dimensions": [
+        3780,
+        1210
+      ],
+      "processing": "Original enlarged screenshot, Regenerate label, outline, and arrow, extracted from the composite without changing raster pixels.",
+      "output_dimensions": [
+        2370.0,
+        865.0
+      ]
     }
   ]
 }

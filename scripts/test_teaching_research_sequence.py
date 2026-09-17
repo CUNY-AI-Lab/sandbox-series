@@ -9,7 +9,7 @@ class TeachingResearchSequence(unittest.TestCase):
     def test_options_precede_clone_and_configuration(self):
         slides = Parser((ROOT / 'index.html').read_text()).root.all(lambda n: n.has_class('slide'))
         titles = [s.attrs['data-title'] for s in slides]
-        sequence = ['Open Workspace', 'Review Custom Models', 'Model Configuration', 'Choose Model Cards', 'Clone Model Cards']
+        sequence = ['Open Workspace', 'Model Configuration', 'Choose Model Cards', 'Clone Model Cards']
         positions = [titles.index(title) for title in sequence]
         self.assertEqual(positions, list(range(positions[0], positions[0] + len(sequence))))
         options = slides[titles.index('Choose Model Cards')]

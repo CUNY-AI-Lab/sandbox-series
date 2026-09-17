@@ -7,6 +7,8 @@
   const outline = document.getElementById('outline-dialog');
   const outlineList = document.getElementById('outline-list');
   let current = 0;
+  let fragment = 0;
+  const fragments = slides.map(slide => [...slide.querySelectorAll('[data-fragment-step]')]);
   document.getElementById('nav-total').textContent = total;
   progress.max = total;
   slides.forEach((slide, index) => {
@@ -23,11 +25,24 @@
     const match = location.hash.match(/^#(\d+)$/);
     return match ? Math.min(total - 1, Math.max(0, Number(match[1]) - 1)) : 0;
   }
-  function goTo(index) {
+  function updateFragment() {
+    fragments.forEach((steps, slideIndex) => steps.forEach((step, stepIndex) => {
+      const visible = slideIndex === current && stepIndex === fragment;
+      if (!visible && step.contains(document.activeElement)) document.getElementById('arrow-next').focus();
+      step.hidden = !visible;
+      step.inert = !visible;
+      step.setAttribute('aria-hidden', String(!visible));
+    }));
+    document.getElementById('arrow-prev').disabled = current === 0 && fragment === 0;
+    document.getElementById('arrow-next').disabled = current === total - 1 && fragment === Math.max(0, fragments[current].length - 1);
+    announcer.textContent = slides[current].getAttribute('aria-label') + (fragments[current].length ? ', image ' + (fragment + 1) + ' of ' + fragments[current].length : '');
+  }
+  function goTo(index, step = 0) {
     if (!Number.isInteger(index) || index < 0 || index >= total) return;
     const old = slides[current];
     if (old.contains(document.activeElement)) document.getElementById('arrow-next').focus();
     current = index;
+    fragment = Math.min(Math.max(0, step), Math.max(0, fragments[current].length - 1));
     slides.forEach((slide, i) => {
       slide.classList.toggle('active', i === current);
       slide.inert = i !== current;
@@ -39,20 +54,31 @@
     document.getElementById('nav-current').textContent = current + 1;
     progress.value = current + 1;
     progress.setAttribute('aria-valuetext', slides[current].getAttribute('aria-label'));
-    document.getElementById('arrow-prev').disabled = current === 0;
-    document.getElementById('arrow-next').disabled = current === total - 1;
     [...outlineList.querySelectorAll('button')].forEach((button, i) => {
       if (i === current) button.setAttribute('aria-current', 'step');
       else button.removeAttribute('aria-current');
     });
     history.replaceState(null, '', '#' + (current + 1));
-    announcer.textContent = slides[current].getAttribute('aria-label');
+    updateFragment();
+  }
+  function advance(direction) {
+    if (direction > 0 && fragment < fragments[current].length - 1) {
+      fragment++;
+      updateFragment();
+    } else if (direction < 0 && fragment > 0) {
+      fragment--;
+      updateFragment();
+    } else if (direction < 0 && current > 0) {
+      goTo(current - 1, Math.max(0, fragments[current - 1].length - 1));
+    } else {
+      goTo(current + direction);
+    }
   }
   function openOutline() { outline.showModal(); outline.scrollTop = 0; document.getElementById('close-outline').focus(); }
   document.getElementById('overview-button').addEventListener('click', openOutline);
   document.getElementById('close-outline').addEventListener('click', () => outline.close());
-  document.getElementById('arrow-prev').addEventListener('click', () => goTo(current - 1));
-  document.getElementById('arrow-next').addEventListener('click', () => goTo(current + 1));
+  document.getElementById('arrow-prev').addEventListener('click', () => advance(-1));
+  document.getElementById('arrow-next').addEventListener('click', () => advance(1));
   progress.addEventListener('input', () => goTo(Number(progress.value) - 1));
   // Swipe only on the labeled navigation area, outside selectable slide content.
   const swipeArea = document.querySelector('.nav-info');
@@ -80,7 +106,7 @@
       if (selection && !selection.isCollapsed) return;
       const dx = event.clientX - start.x;
       const dy = event.clientY - start.y;
-      if (Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy) * 1.5) goTo(current + (dx < 0 ? 1 : -1));
+      if (Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy) * 1.5) advance(dx < 0 ? 1 : -1);
     });
     swipeArea.addEventListener('pointercancel', () => { swipeStart = null; });
     swipeArea.addEventListener('lostpointercapture', () => { swipeStart = null; });
@@ -94,8 +120,8 @@
     if (selection && !selection.isCollapsed) return;
     if (event.target.closest('.prompt-block') && ['ArrowUp','ArrowDown',' ','Home','End'].includes(event.key)) return;
     if (event.target.closest('button,a') && [' ','Enter'].includes(event.key)) return;
-    if (['ArrowRight','PageDown',' '].includes(event.key)) { event.preventDefault(); goTo(current + 1); }
-    else if (['ArrowLeft','PageUp'].includes(event.key)) { event.preventDefault(); goTo(current - 1); }
+    if (['ArrowRight','PageDown',' '].includes(event.key)) { event.preventDefault(); advance(1); }
+    else if (['ArrowLeft','PageUp'].includes(event.key)) { event.preventDefault(); advance(-1); }
     else if (event.key === 'Home') { event.preventDefault(); goTo(0); }
     else if (event.key === 'End') { event.preventDefault(); goTo(total - 1); }
   });
@@ -119,6 +145,6 @@
   window.addEventListener('hashchange', () => {
     if (location.hash !== '#deck') goTo(readHash());
   });
-  window.deckEngine = {goTo, currentSlide:()=>current, totalSlides:()=>total};
+  window.deckEngine = {goTo, advance, currentSlide:()=>current, currentFragment:()=>fragment, totalSlides:()=>total};
   goTo(readHash());
 })();

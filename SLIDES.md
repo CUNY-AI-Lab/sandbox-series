@@ -227,9 +227,13 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ### Regenerate Responses
 
-![Mistral Large 3 response recommending walking, with original question and message box; enlarged recommendation and response controls show Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-gateway-hidpi-2026-09-16.svg)
+![Mistral Large 3 response recommending walking, with original question and message box; white annotation marks response controls for Regenerate.](images/current/regenerate-mistral-context-2026-09-17.svg)
 
-**Alt text:** Mistral Large 3 response recommending walking, with original question and message box; enlarged recommendation and response controls show Regenerate outlined and marked by an arrow.
+**Alt text:** Mistral Large 3 response recommending walking, with original question and message box; white annotation marks response controls for Regenerate.
+
+![Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-detail-2026-09-17.svg)
+
+**Alt text:** Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.
 
 Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
 
@@ -261,20 +265,6 @@ Select Workspace in left sidebar.
 
 ## Composing system prompts — 18
 
-### Review Custom Models
-
-Choose **Models** to find custom model cards. Each combines a base model with setup instructions and any attached resources.
-
-Review **Base Model** and **System Prompt** before choosing a card to adapt.
-
-Continue in chat if Workspace is unavailable.
-
-[Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
-
----
-
-## Composing system prompts — 19
-
 ### Model Configuration
 
 ![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.](images/current/model-create-hidpi-2026-09-16.svg)
@@ -285,7 +275,7 @@ Review Model Name, Base Model, and System Prompt when configuring your copy.
 
 ---
 
-## Composing system prompts — 20
+## Composing system prompts — 19
 
 ### Choose Model Cards
 
@@ -303,7 +293,7 @@ Classify edits to Wikipedia’s academic freedom article using quoted evidence.
 
 ---
 
-## Composing system prompts — 21
+## Composing system prompts — 20
 
 ### Clone Model Cards
 
@@ -321,7 +311,7 @@ Save an initial response before changing instructions.
 
 ---
 
-## Composing system prompts — 22
+## Composing system prompts — 21
 
 ### Add Prompt Suggestions
 
@@ -333,7 +323,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-## Composing system prompts — 23
+## Composing system prompts — 22
 
 Examples
 
@@ -341,7 +331,7 @@ Examples
 
 ---
 
-## Composing system prompts — 24
+## Composing system prompts — 23
 
 ### STEM Adventure Games
 
@@ -353,7 +343,7 @@ For STEM Adventure Games, type Start an adventure. Choose an experiment, then re
 
 ---
 
-## Composing system prompts — 25
+## Composing system prompts — 24
 
 ### Read Game Instructions
 
@@ -371,7 +361,7 @@ What should happen after you choose an action?
 
 ---
 
-## Composing system prompts — 26
+## Composing system prompts — 25
 
 ### Adapt Research Prompts
 
@@ -387,13 +377,13 @@ For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wiki
 
 ---
 
-## Composing system prompts — 27
+## Composing system prompts — 26
 
 ### Draft System Prompts
 
 ---
 
-## Composing system prompts — 28
+## Composing system prompts — 27
 
 ### Define Prompt Components
 
@@ -409,7 +399,7 @@ Use either example. Choose one component to change in your cloned model.
 
 ---
 
-## Composing system prompts — 29
+## Composing system prompts — 28
 
 ### Define Purpose
 
@@ -429,7 +419,7 @@ For research, name your question, source material, and intended users.
 
 ---
 
-## Composing system prompts — 30
+## Composing system prompts — 29
 
 ### Write Procedures
 
@@ -446,7 +436,7 @@ For research, check inputs, quote changed passages, then classify changes.
 
 ---
 
-## Composing system prompts — 31
+## Composing system prompts — 30
 
 ### Set Constraints
 
@@ -464,7 +454,7 @@ Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Composing system prompts — 32
+## Composing system prompts — 31
 
 ### Specify Format
 
@@ -480,7 +470,7 @@ For research, use Before and After quotations, categories, and brief explanation
 
 ---
 
-## Composing system prompts — 33
+## Composing system prompts — 32
 
 Refine
 
@@ -488,7 +478,7 @@ Refine
 
 ---
 
-## Composing system prompts — 34
+## Composing system prompts — 33
 
 ### Extend Instructions
 
@@ -502,7 +492,7 @@ Select Save & Update, then test that condition in a new chat. After revising, sa
 
 ---
 
-## Composing system prompts — 35
+## Composing system prompts — 34
 
 Watch Out
 
@@ -526,7 +516,7 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Composing system prompts — 36
+## Composing system prompts — 35
 
 ### Save Prompts
 
@@ -534,7 +524,7 @@ Save changes to your cloned model. Review **Access** and select **Save & Update*
 
 ---
 
-## Composing system prompts — 37
+## Composing system prompts — 36
 
 ### Share Custom Models
 
@@ -548,7 +538,7 @@ Save changes to your cloned model. Review **Access** and select **Save & Update*
 
 ---
 
-## Composing system prompts — 38
+## Composing system prompts — 37
 
 ### Record Comparisons
 
@@ -566,7 +556,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Composing system prompts — 39
+## Composing system prompts — 38
 
 ### Prepare Source Documents
 
