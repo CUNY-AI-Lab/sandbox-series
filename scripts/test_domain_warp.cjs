@@ -9,8 +9,6 @@ function environment({reduced = false, webgl = true, shader = true, active = tru
   const callbacks = new Map();
   const listeners = new Map();
   const media = {matches: reduced, addEventListener(_, callback) { this.change = callback; }};
-  const button = () => ({textContent: '', addEventListener(_, fn) { this.click = fn; }, setAttribute(name, value) { this[name] = value; }});
-  const motion = button(), pattern = button(), controls = {style: {}};
   const draws = [];
   const gl = new Proxy({
     createShader: () => ({}), getShaderParameter: () => shader,
@@ -22,10 +20,7 @@ function environment({reduced = false, webgl = true, shader = true, active = tru
   const canvas = {width: 0, height: 0, style: {}, getContext: () => webgl ? gl : null,
     addEventListener(name, fn) { listeners.set(name, fn); }};
   const cover = {clientWidth: 3840, clientHeight: 2160, dataset: {warpVariant: '0'},
-    classList: {contains: () => active}, querySelector: selector => ({
-      '.warp-canvas': canvas, '[data-warp-motion]': motion,
-      '[data-warp-pattern]': pattern, '.cover-controls': controls
-    })[selector]};
+    classList: {contains: () => active}, querySelector: selector => selector === '.warp-canvas' ? canvas : null};
   const document = {hidden: false, querySelector: () => cover, addEventListener(name, fn) {listeners.set(name, fn);}};
   let mutate;
   let id = 0;
@@ -37,7 +32,7 @@ function environment({reduced = false, webgl = true, shader = true, active = tru
     requestAnimationFrame(fn) {callbacks.set(++id, fn); return id;},
     cancelAnimationFrame(key) {callbacks.delete(key);}
   });
-  return {cover, canvas, controls, motion, pattern, media, document, draws, callbacks,
+  return {cover, canvas, media, document, draws, callbacks,
     event(name, event = {}) {listeners.get(name)(event);},
     activate(value) {active = value; mutate();},
     tick(now) {const pending = [...callbacks.values()]; callbacks.clear(); pending.forEach(fn => fn(now));}};
@@ -47,22 +42,18 @@ check(live.canvas.width * live.canvas.height <= 960 * 600, '4K displays stay wit
 check(live.cover.dataset.warpState === 'running' && live.callbacks.size === 1, 'visible title runs one loop');
 live.tick(1); live.tick(51);
 check(live.draws.length >= 2, 'animation draws successive frames');
-live.motion.click();
+live.media.change({matches: true});
 const stopped = live.draws.length;
 live.tick(101);
-check(live.callbacks.size === 0 && live.draws.length === stopped, 'pause stops work');
-live.pattern.click();
-check(live.cover.dataset.warpVariant === '1' && live.draws.length === stopped + 1, 'variation redraws while paused');
-live.pattern.click(); live.pattern.click();
-check(live.cover.dataset.warpVariant === '0', 'three variations cycle predictably');
+check(live.callbacks.size === 0 && live.draws.length === stopped, 'reduced motion stops work');
 live.activate(false);
 check(live.cover.dataset.warpState === 'idle' && live.callbacks.size === 0, 'other slides stop rendering');
 const offscreen = live.draws.length;
-live.pattern.click();
+live.media.change({matches: true});
 check(live.draws.length === offscreen, 'offscreen changes do not draw');
 live.activate(true);
 check(live.cover.dataset.warpState === 'paused' && live.callbacks.size === 0, 'navigation preserves pause');
-live.motion.click();
+live.media.change({matches: false});
 live.document.hidden = true; live.event('visibilitychange');
 check(live.callbacks.size === 0, 'background tabs stop rendering');
 live.document.hidden = false; live.event('visibilitychange');
@@ -81,6 +72,6 @@ const away = environment({active: false});
 check(away.draws.length === 0 && away.callbacks.size === 0, 'deep links skip background work');
 for (const options of [{webgl: false}, {shader: false}]) {
   const fallback = environment(options);
-  check(fallback.cover.dataset.warpState === 'fallback' && fallback.controls.style.display === 'none', 'unavailable WebGL keeps CSS fallback without broken controls');
+  check(fallback.cover.dataset.warpState === 'fallback' && fallback.canvas.style.display === 'none', 'unavailable WebGL keeps CSS fallback');
 }
 console.log(`Passed ${checks} background checks.`);

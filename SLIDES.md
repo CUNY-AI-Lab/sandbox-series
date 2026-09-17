@@ -8,9 +8,7 @@
 
 ### Getting Started with the CUNY AI Lab Sandbox
 
-Sandbox Workshop Series  Part 1/3
-
-Developed and led by  Zach Muhlbauer
+Led by  Zach Muhlbauer
 
 New Media Lab · Room 7388.01
 CUNY Graduate Center

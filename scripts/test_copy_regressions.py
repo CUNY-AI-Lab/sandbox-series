@@ -104,11 +104,13 @@ class CopyRegressions(unittest.TestCase):
         cover=self.decks['index.html'][0]
         self.assertTrue(cover.has_class('workshop-cover'))
         copy=cover.text()
-        for text in [COVER_TITLE,'Sandbox Workshop Series Part 1/3','Developed and led by Zach Muhlbauer','New Media Lab · Room 7388.01','CUNY Graduate Center','Thursday, September 17, 2026','2:30–4:00 p.m.']:
+        for text in [COVER_TITLE,'Led by Zach Muhlbauer','New Media Lab · Room 7388.01','CUNY Graduate Center','Thursday, September 17, 2026','2:30–4:00 p.m.']:
             self.assertIn(text,copy)
         self.assertEqual(cover.all(lambda n:n.tag=='time')[0].attrs['datetime'],'2026-09-17T14:30:00-04:00')
         self.assertEqual(cover.all(lambda n:n.tag=='canvas')[0].attrs['aria-hidden'],'true')
-        self.assertEqual(len(cover.all(lambda n:n.tag=='button')),2)
+        self.assertNotIn('Sandbox Workshop Series',copy)
+        self.assertNotIn('Developed and led by',copy)
+        self.assertEqual(len(cover.all(lambda n:n.tag=='button')),0)
         self.assertFalse(any(s.has_class('workshop-cover') for route in ROUTES[1:] for s in self.decks[route]))
     def test_03_participant_copy_excludes_editorial_instructions(self):
         for tree in [*self.trees.values(),self.example,*self.references.values()]:
@@ -575,7 +577,7 @@ class CopyRegressions(unittest.TestCase):
             ('index.html', '<figcaption>', '<figcaption hidden>', self.test_18_screenshots_and_controls_preserve_requested_evidence),
             ('index.html', NURSE, NURSE.replace('she','he'), self.test_05_prompts_remain_exact),
             ('index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
-            ('index.html', 'Sandbox Workshop Series ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
+            ('index.html', 'Led by ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
             ('index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
             ('skills/index.html', 'Remove your skill', 'Toggle this skill', self.test_14_skill_comparisons_remove_attached_skill),
             ('index.html', 'id="stem-game-excerpt">', 'id="stem-game-excerpt">Edit scenario_json variables. ', self.test_25_introductory_workshops_use_chat_adventure),

@@ -7,8 +7,6 @@
   const cover = document.querySelector('.workshop-cover');
   if (!cover) return;
   const canvas = cover.querySelector('.warp-canvas');
-  const motionButton = cover.querySelector('[data-warp-motion]');
-  const patternButton = cover.querySelector('[data-warp-pattern]');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const gl = canvas.getContext('webgl', {
     alpha: false, antialias: false, depth: false, stencil: false,
@@ -23,7 +21,7 @@
   let paused = reducedMotion.matches;
   let lost = false;
   let printing = false;
-  let pattern = Number(cover.dataset.warpVariant || 0) % 3;
+  const pattern = Number(cover.dataset.warpVariant || 0) % 3;
   const FRAME_MS = 1000 / 24;
   const MAX_PIXELS = 960 * 600;
 
@@ -71,7 +69,7 @@
     void main() {
       vec2 p = (uv - 0.5) * vec2(resolution.x / resolution.y, 1.0);
       p = p * (2.8 + variation * 0.35) + variation * vec2(5.3, 2.1);
-      float drift = time * 0.012;
+      float drift = time * 0.075;
       vec2 q = vec2(fbm(p + drift), fbm(p + vec2(3.1, 7.9) - drift * 0.6));
       vec2 r = vec2(fbm(p + 3.8 * q + vec2(8.2, 1.7)),
                     fbm(p + 3.8 * q + vec2(2.8, 6.3) + drift * 0.25));
@@ -94,7 +92,6 @@
     canvas.style.display = 'none';
     cover.dataset.warpState = 'fallback';
     // Keep the CSS gradients and the complete title if WebGL is unavailable.
-    cover.querySelector('.cover-controls').style.display = 'none';
   }
   if (!gl) { fallback(); return; }
 
@@ -167,20 +164,12 @@
     cancelAnimationFrame(frame);
     frame = 0;
     lastTime = 0;
-    motionButton.textContent = paused ? 'Resume motion' : 'Pause motion';
-    motionButton.setAttribute('aria-pressed', String(paused));
     cover.dataset.warpState = lost ? 'lost' : !visible() ? 'idle' : paused ? 'paused' : 'running';
     if (lost || !visible()) return;
     resize();
     if (!paused) frame = requestAnimationFrame(tick);
   }
   try { initialize(); } catch { fallback(); return; }
-  motionButton.addEventListener('click', () => { paused = !paused; sync(); });
-  patternButton.addEventListener('click', () => {
-    pattern = (pattern + 1) % 3;
-    cover.dataset.warpVariant = String(pattern);
-    draw();
-  });
   reducedMotion.addEventListener('change', event => { paused = event.matches; sync(); });
   document.addEventListener('visibilitychange', sync);
   new MutationObserver(sync).observe(cover, {attributes: true, attributeFilter: ['class']});
