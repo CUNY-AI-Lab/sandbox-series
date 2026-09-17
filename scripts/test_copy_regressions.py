@@ -377,6 +377,65 @@ class CopyRegressions(unittest.TestCase):
                 self.assertEqual(record.get('request'),CAR)
                 self.assertIn('walking',record['capture'].lower())
 
+    def test_29_research_example_preserves_prompt_and_revision_evidence(self):
+        folder=ROOT/'examples/research'
+        prompt=(folder/'system-prompt.txt').read_text().strip()
+        headings=re.findall(r'^(?:#{1,6}\s+)?(Context|Procedure|Constraints|Format|Tone)\s*$',prompt,re.M)
+        self.assertEqual(headings,['Context','Procedure','Constraints','Format'])
+        self.assertNotRegex(prompt,r'(?i)\bTone\b')
+        self.assertIn('Wikipedia revisions about academic freedom',prompt)
+        self.assertNotRegex(prompt,r'STEM|Prism Laboratory|Newton')
+        sections=self.example.all(lambda n:n.attrs.get('id')=='wikipedia-revisions')
+        self.assertEqual(len(sections),1)
+        blocks=sections[0].all(lambda n:n.has_class('prompt-block'))
+        self.assertEqual(len(blocks),1)
+        self.assertEqual(blocks[0].text().strip(),prompt)
+        self.assertFalse(sections[0].all(lambda n:'hidden' in n.attrs or n.tag=='details'))
+        links={n.attrs.get('href') for n in sections[0].all(lambda n:n.tag=='a')}
+        for name in ['system-prompt.txt','model-card.md','sample-revisions.md']:
+            self.assertIn('examples/research/'+name,links)
+
+        card=(folder/'model-card.md').read_text()
+        fields=dict(re.findall(r'^\| ([^|]+?) \| ([^|]+?) \|$',card,re.M))
+        self.assertEqual(fields['Access'],'Private')
+        for resource in ['Knowledge','Skills','Tools']:
+            self.assertRegex(fields[resource],r'^None(?: for Workshop 1)?$')
+        self.assertIn('paste or attach',card.lower())
+        self.assertIn('in chat',card)
+
+        fixture=(folder/'sample-revisions.md').read_text()
+        evidence=json.loads((folder/'sample-revisions.sources.json').read_text())
+        self.assertEqual(evidence['article'],'Academic freedom')
+        self.assertEqual(evidence['article_url'],'https://en.wikipedia.org/wiki/Academic_freedom')
+        self.assertEqual(evidence['license']['url'],'https://creativecommons.org/licenses/by-sa/4.0/deed.en')
+        self.assertIn(evidence['license']['url'],fixture)
+        expected=[(1346428851,1346430780,
+                   'bd76b4de364409dfe775c4b898324f6d45db07bcf76b83214f3a9ca46fb14d03',
+                   '41f399c59bd3668a9c810d4c30e44c41a74106fa8ce64b1e62a52aceb54c7d5a'),
+                  (1353191720,1353192126,
+                   'b9731786906d9ec6fa48fad0a7b310dd756ea378b65dccdc957d5dfd9bf4e19b',
+                   'ecb10476e24e4527604e218da03fb86d3e759e61408fba7ad069a7f7f19c5399')]
+        excerpts=re.findall(r'```text\n(.*?)\n```',fixture,re.S)
+        self.assertEqual(len(evidence['pairs']),len(expected))
+        self.assertEqual(len(excerpts),len(expected))
+        for pair,block,(before_id,after_id,before_hash,after_hash) in zip(evidence['pairs'],excerpts,expected):
+            self.assertEqual(pair['article'],'Academic freedom')
+            self.assertTrue(pair['adjacent_revisions'])
+            self.assertEqual(pair['after']['parent_revision_id'],before_id)
+            quotes=re.search(r'\nBefore:\n(.*?)\n\nAfter:\n(.*)\Z',block,re.S)
+            self.assertIsNotNone(quotes)
+            for position,(side,revision_id,quote_hash) in enumerate([('before',before_id,before_hash),('after',after_id,after_hash)],1):
+                record=pair[side]
+                self.assertEqual(record['revision_id'],revision_id)
+                self.assertEqual(record['quote_sha256_utf8'],quote_hash)
+                self.assertEqual(hashlib.sha256(record['quote'].encode()).hexdigest(),quote_hash)
+                self.assertEqual(quotes.group(position),record['quote'])
+                self.assertIn(f'{side.title()}: {revision_id} — {record["timestamp_utc"]}',block)
+                self.assertEqual(record['revision_url'],f'https://en.wikipedia.org/w/index.php?title=Academic_freedom&oldid={revision_id}')
+                self.assertIn(record['revision_url'],fixture)
+            self.assertEqual(pair['diff_url'],f'https://en.wikipedia.org/w/index.php?title=Academic_freedom&diff={after_id}&oldid={before_id}')
+            self.assertIn(pair['diff_url'],fixture)
+
     def test_20_ninety_minute_plans(self):
         text=(ROOT/'WORKSHOP.md').read_text()
         plans=re.findall(r'### Lesson Plan\n(.*?)(?=\n\n[^|]|\Z)',text,re.S)

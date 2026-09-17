@@ -1,0 +1,122 @@
+{
+  "retrieved_at_utc": "2026-09-17T03:01:29.424080+00:00",
+  "article": "Academic freedom",
+  "article_url": "https://en.wikipedia.org/wiki/Academic_freedom",
+  "history_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&action=history",
+  "attribution": "Wikipedia contributors, Academic freedom. Individual revision links identify source versions and their contribution histories.",
+  "license": {
+    "name": "Creative Commons Attribution-Share Alike 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "verified_via": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&meta=siteinfo&siprop=rightsinfo",
+    "rights_api_response_sha256": "088eb6f5f2df77fd6e01c370b16dd9a6c7ca21b35992c980cac29aaea9301712"
+  },
+  "processing": "Retrieved original wikitext through read-only MediaWiki Action API. Exact first sentences extracted; bold markup and following reference markers excluded from display. Words, spelling, and punctuation preserved. No source claims or editorial motivations independently verified.",
+  "retrieval": {
+    "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&revids=1344890370%7C1346428851%7C1346430780%7C1353191720%7C1353192126&rvprop=ids%7Ctimestamp%7Cuser%7Ccomment%7Ccontent%7Csha1&rvslots=main",
+    "api_response_sha256": "54eaaf5bfd7f92ff9deecfdd25208c0106de694f1d26f59d94a485bbbaf5db54"
+  },
+  "pairs": [
+    {
+      "id": "definition",
+      "article": "Academic freedom",
+      "page_id": 614484,
+      "section": "Lead",
+      "adjacent_revisions": true,
+      "diff_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&diff=1346430780&oldid=1346428851",
+      "excerpt_scope": "First sentence only; other changes in this revision are outside this excerpt.",
+      "before": {
+        "revision_id": 1346428851,
+        "parent_revision_id": 1344890370,
+        "timestamp_utc": "2026-03-31T19:52:37Z",
+        "revision_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&oldid=1346428851",
+        "revision_contributor": "HudecEmil",
+        "edit_summary": "self-censorship",
+        "revision_sha1_from_api": "ec6da333bc9ef516e1ea93b1524fd82649706080",
+        "revision_wikitext_sha256": "ee01d18d4f815527dc2a06cb1a67f25044fe81c744c9050a89dac25a6bfbbae1",
+        "excerpt_line_number": 3,
+        "excerpt_wikitext": "'''Academic freedom''' is the right of a teacher to instruct and the right of a student to learn in an academic setting unhampered by outside interference.",
+        "quote": "Academic freedom is the right of a teacher to instruct and the right of a student to learn in an academic setting unhampered by outside interference.",
+        "quote_sha256_utf8": "bd76b4de364409dfe775c4b898324f6d45db07bcf76b83214f3a9ca46fb14d03",
+        "following_reference_markup": [
+          "<ref name=\"Lerch-2024\" />",
+          "<ref>{{cite web |title=FAQs on Academic Freedom |url=https://www.aaup.org/programs/academic-freedom/faqs-academic-freedom |website=AAUP |publisher=American Association of University Professors |access-date=18 November 2024 |language=en |date=14 July 2021 |archive-date=18 November 2024 |archive-url=https://web.archive.org/web/20241118063911/https://www.aaup.org/programs/academic-freedom/faqs-academic-freedom |url-status=live }}</ref>"
+        ]
+      },
+      "after": {
+        "revision_id": 1346430780,
+        "parent_revision_id": 1346428851,
+        "timestamp_utc": "2026-03-31T20:04:25Z",
+        "revision_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&oldid=1346430780",
+        "revision_contributor": "HudecEmil",
+        "edit_summary": "democratic accountability",
+        "revision_sha1_from_api": "9f01d1a1d717b848f4a363a6d0e1ba31eab9a8e5",
+        "revision_wikitext_sha256": "86509723d8e7c17ddb3501174e834671a313da961fb1e8a84c7f18b6a50bbad2",
+        "excerpt_line_number": 3,
+        "excerpt_wikitext": "'''Academic freedom''' is the right of a teacher to instruct and the right of a student to learn in an academic setting unhampered by interference.",
+        "quote": "Academic freedom is the right of a teacher to instruct and the right of a student to learn in an academic setting unhampered by interference.",
+        "quote_sha256_utf8": "41f399c59bd3668a9c810d4c30e44c41a74106fa8ce64b1e62a52aceb54c7d5a",
+        "following_reference_markup": [
+          "<ref name=\"Lerch-2024\" />",
+          "<ref>{{cite web |title=FAQs on Academic Freedom |url=https://www.aaup.org/programs/academic-freedom/faqs-academic-freedom |website=AAUP |publisher=American Association of University Professors |access-date=18 November 2024 |language=en |date=14 July 2021 |archive-date=18 November 2024 |archive-url=https://web.archive.org/web/20241118063911/https://www.aaup.org/programs/academic-freedom/faqs-academic-freedom |url-status=live }}</ref>"
+        ]
+      },
+      "verification": {
+        "compare_api_url": "https://en.wikipedia.org/w/api.php?action=compare&format=json&fromrev=1346428851&torev=1346430780&prop=diff%7Cids%7Ctitle",
+        "compare_api_response_sha256": "521a01837cb4bddd6dfdc94a9d804942ae0fdf699e42ae0f7d6419793c18b80e",
+        "before_quote_found_in_revision": true,
+        "after_quote_found_in_revision": true,
+        "after_parent_matches_before": true
+      }
+    },
+    {
+      "id": "dated-claim",
+      "article": "Academic freedom",
+      "page_id": 614484,
+      "section": "South Africa / Movements and controversies",
+      "adjacent_revisions": true,
+      "diff_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&diff=1353192126&oldid=1353191720",
+      "excerpt_scope": "First sentence only; other changes in this revision are outside this excerpt.",
+      "before": {
+        "revision_id": 1353191720,
+        "parent_revision_id": 1353190466,
+        "timestamp_utc": "2026-05-08T19:05:30Z",
+        "revision_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&oldid=1353191720",
+        "revision_contributor": "Superb Owl",
+        "edit_summary": "removing original research (no mention of Academic Freedom in Amnesty International article), removing missing citations and removing a citation to a claim from 1994 before reforms could be implemented which is very much out of date and not useful anymore",
+        "revision_sha1_from_api": "ffa3e87dbcae0d83f1935d6b82b1d53666af4412",
+        "revision_wikitext_sha256": "c471020d4fbd6c59b46664f9bb7bfd662d44620cf61085324fc379590315b405",
+        "excerpt_line_number": 153,
+        "excerpt_wikitext": "There have been an abundance of scandals over the restricted academic freedom at a number of universities in South Africa.",
+        "quote": "There have been an abundance of scandals over the restricted academic freedom at a number of universities in South Africa.",
+        "quote_sha256_utf8": "b9731786906d9ec6fa48fad0a7b310dd756ea378b65dccdc957d5dfd9bf4e19b",
+        "following_reference_markup": [
+          "<ref name=\"Lindow-2007\">{{Cite journal|last=Lindow|first=Megan|date=25 May 2007|title=Academic Freedom Is Eroding in South Africa, Critics Say|url=https://www.chronicle.com/article/Academic-Freedom-Is-Eroding-in/5961|journal=Chronicle of Higher Education|volume=53|page=A50|issue=38|url-access=subscription|archive-date=19 August 2022|access-date=22 March 2019|archive-url=https://web.archive.org/web/20220819144659/https://www.chronicle.com/article/Academic-Freedom-Is-Eroding-in/5961|url-status=live}}</ref>"
+        ]
+      },
+      "after": {
+        "revision_id": 1353192126,
+        "parent_revision_id": 1353191720,
+        "timestamp_utc": "2026-05-08T19:08:37Z",
+        "revision_url": "https://en.wikipedia.org/w/index.php?title=Academic_freedom&oldid=1353192126",
+        "revision_contributor": "Superb Owl",
+        "edit_summary": "/* Movements and controversies */ removing Rhodes statue controversy - article did not mention it as an academic freedom issue. Clarifying the date up to which that statement was made and softening to make more encyclopedic (strong global claims need more citations, and especially more recent ones)",
+        "revision_sha1_from_api": "72927599cca37df2e7210bb22b2f789984a47e54",
+        "revision_wikitext_sha256": "f8d29ed298fce77530782a4f869d41aafbf4b1f59fa70ffb1aa00b25b7d2d19f",
+        "excerpt_line_number": 153,
+        "excerpt_wikitext": "As of 2007, there have been scandals over the restricted academic freedom at a number of universities in South Africa.",
+        "quote": "As of 2007, there have been scandals over the restricted academic freedom at a number of universities in South Africa.",
+        "quote_sha256_utf8": "ecb10476e24e4527604e218da03fb86d3e759e61408fba7ad069a7f7f19c5399",
+        "following_reference_markup": [
+          "<ref name=\"Lindow-2007\">{{Cite journal|last=Lindow|first=Megan|date=25 May 2007|title=Academic Freedom Is Eroding in South Africa, Critics Say|url=https://www.chronicle.com/article/Academic-Freedom-Is-Eroding-in/5961|journal=Chronicle of Higher Education|volume=53|page=A50|issue=38|url-access=subscription|archive-date=19 August 2022|access-date=22 March 2019|archive-url=https://web.archive.org/web/20220819144659/https://www.chronicle.com/article/Academic-Freedom-Is-Eroding-in/5961|url-status=live}}</ref>"
+        ]
+      },
+      "verification": {
+        "compare_api_url": "https://en.wikipedia.org/w/api.php?action=compare&format=json&fromrev=1353191720&torev=1353192126&prop=diff%7Cids%7Ctitle",
+        "compare_api_response_sha256": "aa5dd623334c25c755686413b6c99ae735d6802b74513ac5a20d2d82cd526f78",
+        "before_quote_found_in_revision": true,
+        "after_quote_found_in_revision": true,
+        "after_parent_matches_before": true
+      }
+    }
+  ]
+}
