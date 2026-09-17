@@ -410,7 +410,7 @@ height:auto}
  .discussion-slide .slide-inner{gap:24px}
  .discussion-questions,.sign-in-columns{grid-template-columns:1fr;gap:28px}
  .discussion-questions{align-content:space-evenly}
- .discussion-questions p{font-size:clamp(32px,10vw,44px)}
+ .discussion-questions p{font-size:clamp(26px,7vw,30px)}
  .sign-in-columns{align-content:center}
  .sign-in-columns p,.sign-in-columns .access-link a{font-size:clamp(25px,6.8vw,32px)}
 }

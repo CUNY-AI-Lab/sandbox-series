@@ -118,8 +118,8 @@ align-items:start;
 align-content:center;
 gap:clamp(36px,5vw,80px)}
 .discussion-questions p{
-font-size:clamp(42px,5.2vw,72px);
-line-height:1.2;
+font-size:clamp(32px,3vw,42px);
+line-height:1.35;
 color:var(--text);
 text-wrap:balance;
 margin:0}
