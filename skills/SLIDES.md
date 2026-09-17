@@ -96,7 +96,7 @@ Use provided game files to describe rooms, objects, and rules.
 
 ![STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.](../images/current/integrations-advanced-2026-09-17.png)
 
-With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
+With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -106,7 +106,7 @@ With STEM Adventure Games — Advanced selected, open Integrations beside +. Und
 
 ![Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.](../images/current/stem-advanced-clean-2026-09-17.png)
 
-Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.json)
+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.json) · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -181,8 +181,6 @@ Markdown is plain text with formatting such as headings and lists.
 ---
 
 ## Configuring skills and tools — 13
-
-Structure
 
 ### Structure Skills
 

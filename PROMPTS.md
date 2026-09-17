@@ -89,7 +89,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
 
-Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
+Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -119,7 +119,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats.
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -199,6 +199,8 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 ![CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.](images/current/chat-controls-populated-annotated-2026-09-17.svg)
 
+[Model Registry](https://ailab.gc.cuny.edu/models/)
+
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
 ```text
@@ -215,7 +217,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ![Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-detail-2026-09-17.svg)
 
-Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
+Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -364,6 +366,8 @@ Select Workspace → Models → Create to configure your own model.
 
 - Consult [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/) and [Open WebUI Models](https://docs.openwebui.com/features/workspace/models/).
 
-- Check [monthly usage](https://tools.ailab.gc.cuny.edu/model-access).
+- Check [Model Registry](https://ailab.gc.cuny.edu/models/) and [monthly usage](https://tools.ailab.gc.cuny.edu/model-access).
 
 Keep your draft and choose source documents for your next workshop.
+
+[CUNY AI Lab](https://ailab.gc.cuny.edu/) · [CAIL Sandbox](https://chat.ailab.gc.cuny.edu/) · [System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/) · [Winograd Schema Challenge (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
