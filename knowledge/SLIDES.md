@@ -64,7 +64,7 @@ Use [system-prompt examples](../examples.html) if you need a prompt to begin.
 
 ![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](../images/current/workspace-sidebar-2026-09-15-annotated.svg)
 
-Select Workspace in left sidebar. Choose Models and open your custom model.
+Select Workspace in left sidebar. Choose Models and open your custom model. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 

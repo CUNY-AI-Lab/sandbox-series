@@ -95,7 +95,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.
 
-Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
+Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -127,7 +127,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats.
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -213,6 +213,8 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 **Alt text:** CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.
 
+[Model Registry](https://ailab.gc.cuny.edu/models/)
+
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
 ```text
@@ -233,7 +235,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 **Alt text:** Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.
 
-Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
+Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -351,6 +353,8 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 - [CAIL Sandbox](https://chat.ailab.gc.cuny.edu/)
 
+- [Model Registry](https://ailab.gc.cuny.edu/models/)
+
 - [Workshop copy](PROMPTS.md)
 
 - [System prompt examples](examples.html#assumptions)
@@ -434,7 +438,7 @@ Use [system-prompt examples](examples.html) if you need a prompt to begin.
 
 **Alt text:** Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar
 
-Select Workspace in left sidebar. Choose Models and open your custom model.
+Select Workspace in left sidebar. Choose Models and open your custom model. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -783,7 +787,7 @@ Use provided game files to describe rooms, objects, and rules.
 
 **Alt text:** STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.
 
-With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
+With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -795,7 +799,7 @@ With STEM Adventure Games — Advanced selected, open Integrations beside +. Und
 
 **Alt text:** Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.
 
-Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read game file](examples/adventure/prism.json)
+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read game file](examples/adventure/prism.json) · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
