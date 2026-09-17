@@ -16,7 +16,7 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertEqual(len(matches), 1, title)
         return matches[0]
 
-    def stages(self, title='Compare Custom Models'):
+    def stages(self, title='Explore'):
         stages = self.slide(title).all(lambda node: 'data-fragment-step' in node.attrs)
         self.assertEqual([node.attrs['data-fragment-step'] for node in stages], ['0', '1'], title)
         return stages
@@ -25,7 +25,7 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertEqual(len(self.slides), 24, 'Include Next Workshops while preserving exercise order')
         self.assertEqual(self.titles[2:5], ['Workshop Agenda', 'Introductions', 'Sandbox Access'])
         self.assertEqual(self.titles[17:], [
-            'Compare Custom Models', 'Clone Models', 'Compare Configurations',
+            'Explore', 'Clone Models', 'Compare Configurations',
             'Draft System Prompts', 'Create Models', 'Next Workshops', 'Workshop Resources',
         ])
         labels = ['Try Examples', 'Review Settings']

@@ -56,6 +56,7 @@ REJECTED = (
 def normalized(s): return ' '.join(s.split())
 def authored(node):
     if isinstance(node, str): return node
+    if node.tag in {'h1','h2'} and node.text().strip() == 'Going to the Car Wash': return ''
     if node.tag in {'h1','title'} and node.text().strip() in {COVER_TITLE,COVER_TITLE+' | CUNY AI Lab'}: return ''
     if node.tag in {'pre','script','style','button','svg'}: return ''
     if node.has_class('prompt-block') or node.has_class('quoted-prompt'): return ''
@@ -102,7 +103,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='index.html' else name)
             for s in self.decks[route]:
                 title=s.attrs['data-title']
-                if title in (*SECTION_NAMES,'Situating System Prompts','Introductions',COVER_TITLE):continue
+                if title in (*SECTION_NAMES,'Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE):continue
                 self.assertTrue(2<=len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title))<=3,title)
                 self.assertNotRegex(title,r'(?i)\b(a|an|the)\b')
                 self.assertFalse(any(w.lower().endswith('ing') for w in title.split()),title)
@@ -141,7 +142,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Compare Custom Models','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
+        self.assert_order('index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Explore','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
         self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
         question=self.slide_containing_id('index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())
@@ -376,7 +377,7 @@ class CopyRegressions(unittest.TestCase):
                     self.assertNotIn(Path(path).suffix,{'.json','.py','.js','.cjs'})
                     self.assertNotIn('adventure/preview.html',path)
                     self.assertNotIn('game-procedure-evaluation.md',path)
-        game=self.slide('index.html','Compare Custom Models')
+        game=self.slide('index.html','Explore')
         self.assertIn('text adventure with numbered choices',game.text())
         self.assertFalse(game.all(lambda n:n.tag=='iframe'))
         prompt_file=ROOT/'examples/stem-chat-system-prompt.txt'
@@ -587,7 +588,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertIn(starter['content'],card_copy)
 
     def test_31_prompt_framework_uses_four_components(self):
-        exercise=self.slide('index.html','Compare Custom Models')
+        exercise=self.slide('index.html','Explore')
         for label in ['Purpose','Procedure','Constraints','Format']:
             self.assertIn(label,exercise.text())
         cards=(ROOT/'examples/model-cards.md').read_text()

@@ -145,7 +145,7 @@ Find model selector in bottom right of message box, then select Gemma 4 26B A4B 
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.
 
-Reopen model selector and select Compare beside search field. Choose Gemma and another Gateway model.
+Reopen model selector and select Compare beside search field. Choose Gemma and another model, such as Mistral Large 3.
 
 [Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
@@ -215,7 +215,7 @@ What do you think this person wants to accomplish?
 
 ## Composing system prompts — 14
 
-### Compare Models
+### Going to the Car Wash
 
 Start a new chat, select two models, and send this question.
 
@@ -273,7 +273,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ## Composing system prompts — 18
 
-### Compare Custom Models
+### Explore
 
 ### Try Examples
 
