@@ -71,9 +71,11 @@ What brings you to this workshop today?
 
 ### Sign In
 
+[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
+
 Select **Continue with CUNY Login** and sign in with your CUNY account.
 
-[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 

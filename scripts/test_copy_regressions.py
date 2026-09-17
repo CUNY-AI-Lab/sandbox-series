@@ -199,6 +199,20 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('Check monthly usage',agenda.text())
         self.assertTrue(agenda.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://tools.ailab.gc.cuny.edu/model-access'))
 
+    def test_shared_lab_header(self):
+        logo=ROOT/'images/cail-wordmark-white.png'
+        for route,tree in self.trees.items():
+            with self.subTest(route=route):
+                headers=tree.all(lambda n:n.tag=='header' and n.has_class('deck-header'))
+                self.assertEqual(len(headers),1)
+                links=headers[0].all(lambda n:n.tag=='a')
+                self.assertEqual(len(links),1)
+                self.assertEqual(links[0].attrs['href'],'https://ailab.gc.cuny.edu/')
+                self.assertEqual(links[0].attrs['target'],'_blank')
+                image=links[0].all(lambda n:n.tag=='img')[0]
+                self.assertEqual(image.attrs['alt'],'CUNY AI Lab')
+                self.assertEqual((ROOT/route).parent.joinpath(image.attrs['src']).resolve(),logo.resolve())
+
     def test_10_agendas_and_next_steps_use_verbs(self):
         verbs={'Introduce','Sign','Draft','Consult','Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
         for route in ROUTES:

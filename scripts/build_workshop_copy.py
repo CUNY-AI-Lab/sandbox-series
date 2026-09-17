@@ -135,7 +135,9 @@ def main():
     copied_prompts = [node.text() for node in copied.all(lambda node: node.tag == 'pre')]
     if copied_prompts != source_prompts:
         raise ValueError('Workshop HTML copy changed prompt text.')
-    source_images = [node.attrs['src'] for node in source.all(lambda node: node.tag == 'img' and node.attrs.get('src'))]
+    # Shared navigation branding is outside slide content and its transcript.
+    source_images = [node.attrs['src'] for slide in source.all(lambda node: node.has_class('slide'))
+                     for node in slide.all(lambda node: node.tag == 'img' and node.attrs.get('src'))]
     copied_images = [node.attrs['src'] for node in copied.all(lambda node: node.tag == 'img')]
     if copied_images != source_images:
         raise ValueError('Workshop HTML copy changed image sources.')
