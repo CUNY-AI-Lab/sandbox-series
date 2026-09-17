@@ -38,6 +38,8 @@ REJECTED = (
  'Select the model name on the right inside the message box.',
  'care-wash prompts', 'two-model', 'system instructions', 'Compare Recommendations',
  'Women in science discusses on',
+ 'Add web search, code execution, and reusable instructions.',
+ 'and common-sense knowledge.',
 )
 
 def normalized(s): return ' '.join(s.split())
@@ -383,7 +385,7 @@ class CopyRegressions(unittest.TestCase):
         for source in ['https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/','https://ailab.gc.cuny.edu/sandbox-docs/models/']:
             self.assertIn(source,links)
         context=self.slide('index.html','Winograd Schema Challenge')
-        for term in ['ambiguous pronouns','context','common-sense knowledge','paired sentences','either person could be late']:
+        for term in ['ambiguous pronouns','context','common-sense reasoning','paired sentences','either person could be late']:
             self.assertIn(term,context.text())
         self.assertTrue(context.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf'))
 

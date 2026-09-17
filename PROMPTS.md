@@ -21,9 +21,9 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - **Composing system prompts** Configure model behavior with system prompts.
 
-- **Curating knowledge collections** Upload documents so models can reference them.
+- **Curating knowledge collections** Organize source documents in knowledge collections.
 
-- **Configuring skills and tools** Add web search, code execution, and reusable instructions.
+- **Configuring skills and tools** Extend model capabilities with skills and tools.
 
 [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
 
@@ -143,7 +143,7 @@ Send this question to both models.
 
 ### Winograd Schema Challenge
 
-This challenge tests how models interpret ambiguous pronouns using context and common-sense knowledge. Changing one or two words between paired sentences changes who a pronoun refers to.
+This challenge tests how models interpret ambiguous pronouns using context and common-sense reasoning. Changing one or two words between paired sentences changes who a pronoun refers to.
 
 In our question, either person could be late.
 

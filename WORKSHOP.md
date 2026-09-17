@@ -11,8 +11,8 @@ Participants first compare models, then choose STEM Adventure Games for teaching
 | Workshop | Activity | Required access | Next steps |
 | --- | --- | --- | --- |
 | Composing system prompts | Configure model behavior with system prompts | Individual access approval and Sandbox sign-in | Save tested prompts; request Workspace and Knowledge access |
-| Curating knowledge collections | Upload documents so models can reference them | Workshop 1 access, Workspace, Knowledge collection access | Save retrieval tests; request Skills and Tools access |
-| Configuring skills and tools | Configure an adventure tool and reusable instructions | Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing | Save configurations; verify shared access; retest after changes |
+| Curating knowledge collections | Organize source documents in knowledge collections | Workshop 1 access, Workspace, Knowledge collection access | Save retrieval tests; request Skills and Tools access |
+| Configuring skills and tools | Extend model capabilities with skills and tools | Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing | Save configurations; verify shared access; retest after changes |
 
 Workshop 3 needs Knowledge access when a procedure retrieves from a collection. Its advanced STEM example uses an attached collection for historical claims, while a separate tool runs game commands. Workshops 1 and 2 use scenes and choices generated in chat without attached skills or tools.
 
