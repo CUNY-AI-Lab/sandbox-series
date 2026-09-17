@@ -141,7 +141,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Compare Responses','Compare Custom Models','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Workshop Resources'])
+        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Compare Custom Models','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
         self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
         question=self.slide_containing_id('index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())
@@ -171,8 +171,8 @@ class CopyRegressions(unittest.TestCase):
         for removed in ['Open Chat Controls','Test System Prompts']:
             self.assertNotIn(removed,[s.attrs['data-title'] for s in root])
         for slide in [add,regenerate]:self.assertFalse(slide.all(lambda n:n.has_class('slide-notes')))
-        self.assertNotIn('settings unchanged',self.slide('index.html','Compare Responses').text())
-        reflection=self.slide('index.html','Compare Responses')
+        self.assertNotIn('settings unchanged',self.slide('index.html','Debrief Questions').text())
+        reflection=self.slide('index.html','Debrief Questions')
         self.assertEqual([node.text() for node in reflection.all(lambda n:n.tag=='li')], [
             'What changed in each model’s answer to your car wash question after you added system prompt instructions?',
             'Did either model ask about your purpose or explain its assumptions before recommending walking or driving?',
@@ -616,8 +616,19 @@ class CopyRegressions(unittest.TestCase):
         links={link.attrs.get('href') for link in resources.all(lambda n:n.tag=='a')}
         for href in ['workshop-copy.html','https://ailab.gc.cuny.edu/sandbox-docs/',
                      'https://docs.openwebui.com/features/workspace/models/',
-                     'https://tools.ailab.gc.cuny.edu/model-access']:
+                     'https://tools.ailab.gc.cuny.edu/model-access','https://ailab.gc.cuny.edu/guides/']:
             self.assertIn(href,links)
+
+    def test_next_workshops_and_resource_groups(self):
+        upcoming=self.slide('index.html','Next Workshops')
+        for text in ['Thursday, October 1, 2026','Thursday, October 15, 2026','2:30–4:00 pm','Room 7388.01']:
+            self.assertIn(text,upcoming.text())
+        self.assertIn('https://cail-workshop-registration.ailab-452.workers.dev/',
+                      {n.attrs.get('href') for n in upcoming.all(lambda n:n.tag=='a')})
+        groups=self.slide('index.html','Workshop Resources').all(lambda n:n.has_class('resource-group'))
+        self.assertIn('Consult Open WebUI Models',groups[0].text())
+        self.assertNotIn('Consult Open WebUI Models',groups[1].text())
+        self.assertIn('Consult AI Lab guides',groups[1].text())
 
     def test_33_full_workshop_copy_is_readable_and_complete(self):
         from build_workshop_copy import build
@@ -625,7 +636,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(path.read_text(),build(),'Regenerate workshop-copy.html after slide changes')
         copy=Parser(path.read_text()).root
         sections=copy.all(lambda n:n.has_class('copy-section'))
-        self.assertEqual(len(sections),23)
+        self.assertEqual(len(sections),24)
         self.assertEqual([section.all(lambda n:n.tag=='h2')[0].text() for section in sections],
                          [slide.attrs['data-title'] for slide in self.decks['index.html']])
         for source,destination in zip(self.decks['index.html'],sections):

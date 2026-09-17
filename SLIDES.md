@@ -263,7 +263,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ## Composing system prompts — 17
 
-### Compare Responses
+### Debrief Questions
 
 - What changed in each model’s answer to your car wash question after you added system prompt instructions?
 
@@ -387,6 +387,31 @@ Select Workspace → Models → Create to configure your own model.
 
 ## Composing system prompts — 23
 
+### Next Workshops
+
+### Knowledge Collections
+
+**Building Custom Models with Knowledge Collections**
+
+Thursday, October 1, 2026
+2:30–4:00 pm
+
+### Skills & Tools
+
+**Extending Custom Models with Skills & Tools**
+
+Thursday, October 15, 2026
+2:30–4:00 pm
+
+New Media Lab · Room 7388.01
+CUNY Graduate Center
+
+[Register for workshops  https://cail-workshop-registration.ailab-452.workers.dev/](https://cail-workshop-registration.ailab-452.workers.dev/)
+
+---
+
+## Composing system prompts — 24
+
 ### Workshop Resources
 
 Keep your draft and choose source documents for your next workshop.
@@ -397,13 +422,15 @@ Keep your draft and choose source documents for your next workshop.
 
 - [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
+- [Consult Open WebUI Models  https://docs.openwebui.com/features/workspace/models/](https://docs.openwebui.com/features/workspace/models/)
+
 ### Model Resources
 
 - [Check Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 - [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
 
-- [Consult Open WebUI Models  https://docs.openwebui.com/features/workspace/models/](https://docs.openwebui.com/features/workspace/models/)
+- [Consult AI Lab guides  https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
 
 
 ## Curating knowledge collections — 1
