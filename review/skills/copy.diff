@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,677 +1,448 @@
+@@ -1,677 +1,446 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Customizing Skills & Tools
@@ -536,6 +536,12 @@
 -### Writing Your Own Skills
 -
 ----
+-
+-Structure
+-
+-### Anatomy of a Skill
+-
+-Every skill has three parts.
 +Extend STEM Adventures describes how to change experimental procedures.
 +
 +Tool
@@ -637,12 +643,7 @@
 +---
 +
 +## Configuring skills and tools — 13
- 
- Structure
- 
--### Anatomy of a Skill
--
--Every skill has three parts.
++
 +### Structure Skills
 +
 +Use three parts to draft this skill.

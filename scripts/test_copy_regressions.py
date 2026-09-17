@@ -185,7 +185,9 @@ class CopyRegressions(unittest.TestCase):
     def test_10_agendas_and_next_steps_use_verbs(self):
         verbs={'Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
         for route in ROUTES:
-            for s in [self.slide(route,'Workshop Agenda'),self.decks[route][-1]]:
+            next_steps=[s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
+            self.assertEqual(len(next_steps),1,route)
+            for s in [self.slide(route,'Workshop Agenda'),*next_steps]:
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):

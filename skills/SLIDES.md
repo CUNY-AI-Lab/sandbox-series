@@ -182,8 +182,6 @@ Markdown is plain text with formatting such as headings and lists.
 
 ## Configuring skills and tools — 13
 
-Structure
-
 ### Structure Skills
 
 Use three parts to draft this skill.

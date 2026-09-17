@@ -322,3 +322,31 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 - Review [system-prompt examples](examples.html)
 
 - Continue to [Curating knowledge collections](knowledge/)
+
+---
+
+## Slide 20: Links & References
+
+### Links & References
+
+### Workshop Links
+
+- [CUNY AI Lab](https://ailab.gc.cuny.edu/)
+
+- [CAIL Sandbox](https://chat.ailab.gc.cuny.edu/)
+
+- [Workshop copy](PROMPTS.md)
+
+- [System prompt examples](examples.html#assumptions)
+
+### Read Documentation
+
+- [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
+
+- [System prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)
+
+- [Custom models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+
+- [Open WebUI models](https://docs.openwebui.com/features/workspace/models/)
+
+[Winograd Schema Challenge — Levesque, Davis, and Morgenstern (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)

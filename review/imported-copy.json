@@ -507,6 +507,11 @@
         "before": "\nStructure\nStructure Skills\nUse three parts to draft this skill.\n\nTrigger \u2014 When should this skill activate?\nProcedure \u2014 Which steps should your model follow?\nFormat \u2014 How should responses appear?\n\n",
         "after": "\nStructure\nStructure Skills\nUse three parts to draft this skill.\n\nTrigger \u2014 When should this skill activate?\nProcedure \u2014 Which steps should your model follow?\nFormat \u2014 How should responses appear?\n\nRead blank templateRead complete skill",
         "reason": "Approved clarity proposal, 2026-09-16"
+      },
+      {
+        "before": "\nStructure\nStructure Skills",
+        "after": "\nStructure Skills",
+        "reason": "Remove duplicated label above unchanged slide heading during visual review."
       }
     ]
   },
