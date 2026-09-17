@@ -367,6 +367,8 @@ class CopyRegressions(unittest.TestCase):
             'Keep each scene under 80 words',
             'Render diagrams as plain text, never fenced code blocks.',
             'query_knowledge_files',
+            'Retrieve only from the attached STEM Wikipedia Experiments collection.',
+            'Pass that collection’s ID to searches; do not select files from other collections.',
             'Limited search results do not establish that a file is unavailable.',
             'Do not mention file names unless explicitly asked.',
             'Use the knowledge base silently',
