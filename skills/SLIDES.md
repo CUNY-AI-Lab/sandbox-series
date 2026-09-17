@@ -54,7 +54,7 @@ Test a request that needs your skill or tool. Check what your model used and whe
 
 ### Review Previous Work
 
-Continue from your chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
+Review your model and source collection. This example builds on our chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
 
 - Identify instructions for opening Prism Laboratory.
 
@@ -94,7 +94,7 @@ Use provided game files to describe rooms, objects, and rules.
 
 ### Enable Tools
 
-![STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.](../images/current/integrations-advanced-hidpi-2026-09-16.svg)
+![STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.](../images/current/integrations-advanced-2026-09-17.png)
 
 With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
@@ -104,7 +104,7 @@ With STEM Adventure Games — Advanced selected, open Integrations beside +. Und
 
 ### Inspect Game Rules
 
-![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](../images/current/stem-game-2026-09-14.png)
+![Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.](../images/current/stem-advanced-clean-2026-09-17.png)
 
 Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.json)
 
@@ -255,7 +255,7 @@ Observed result: [Fill only after testing]
 
 ### Clone Custom Models
 
-![Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.](../images/current/model-clone-advanced-hidpi-2026-09-16.svg)
+![Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.](../images/current/model-clone-advanced-2026-09-17.png)
 
 In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and choose Clone.
 
@@ -359,17 +359,15 @@ Save generated scenarios and play records.
 
 ### Create Adventure Tools
 
-Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.
+CAIL Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.
 
 ```text
 Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
 ```
 
-[Open Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](../examples/tools/stem_adventure.py)
+[Open CAIL Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](../examples/tools/stem_adventure.py)
 
 [Review code evaluation](reference.html#check-generated-code)
-
-[Read tested code](../examples/tools/stem_adventure.py)
 
 ---
 
@@ -379,15 +377,13 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 - Open **Workspace → Tools → Create**.
 
-- Enter Name, ID, and Description.
+- Enter a unique Name and ID, then add a Description.
 
-- Paste and review [tested STEM Adventure code](../examples/tools/stem_adventure.py). Keep your creator draft separate.
+- Paste provided [tested STEM Adventure code](../examples/tools/stem_adventure.py). Save your creator draft for separate review.
 
 - Select **Save & Create**.
 
-- Enable your tool through **Integrations → Tools**.
-
-Use a private copy when changing code. Attach reusable tools under Tools in your model editor.
+- In your private model, replace STEM Adventure under **Tools** with your installed copy. Update System Prompt to name it and select **Save & Update**.
 
 ---
 

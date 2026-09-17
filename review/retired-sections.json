@@ -1,5 +1,5 @@
 {
-  "reason": "User requested removal of all discipline-specific example progressions and replacement with STEM Adventure Games across all three workshops.",
+  "reason": "User requested removal of all discipline-specific example progressions and replacement with STEM Adventure Games across all three workshops. User also requested a four-component prompt framework with Purpose in place of Context and removal of Set Tone (source section 25).",
   "prompts": [
     "8",
     "9",
@@ -12,7 +12,8 @@
     "16",
     "17",
     "18",
-    "19"
+    "19",
+    "25"
   ],
   "imported": [
     "knowledge:12",

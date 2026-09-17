@@ -1,0 +1,18 @@
+{
+  "original_file": "review/live/stem-system-prompt-before.txt",
+  "restored_file": "examples/stem-chat-system-prompt.txt",
+  "original_commit": "509ee6c4c9ff815b32819cc6c58625b7461cf1cd",
+  "sha256": "888f4a39ce25a1cfae8adf987fd28026d740bb6fd729a74e30d903e8a96b27ad",
+  "byte_match": true,
+  "cards": [
+    "stem-adventure-games",
+    "stem-adventure-games-sources"
+  ],
+  "base_model": "deepseek-v4-flash-0731",
+  "card_inputs_match": true,
+  "reference_matches": true,
+  "source_check_unchanged": true,
+  "other_cards_unchanged": true,
+  "slide_fragments_changed": false,
+  "live_test_claimed": false
+}

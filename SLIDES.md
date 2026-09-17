@@ -40,11 +40,13 @@ Developed by Zach Muhlbauer
 
 - Revise in-chat system prompts
 
-- Explore Workspace models
+- Review Workspace model cards
 
-- Save prompts for reuse
+- Choose teaching or research examples
 
-Before attending, request individual access and sign into Sandbox.
+- Clone model cards and test revisions
+
+Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
 
 ---
 
@@ -258,9 +260,9 @@ Select Workspace in left sidebar.
 
 ### Review Custom Models
 
-Choose **Models** and open a custom model shared with you.
+Choose **Models** to find custom model cards. Each combines a base model with setup instructions and any attached resources.
 
-Review **Base Model** and **System Prompt**, then compare its instructions with your tested prompt.
+Review **Base Model** and **System Prompt** before choosing a card to adapt.
 
 Continue in chat if Workspace is unavailable.
 
@@ -276,11 +278,49 @@ Continue in chat if Workspace is unavailable.
 
 **Alt text:** New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.
 
-Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
+Review Model Name, Base Model, and System Prompt when configuring your copy.
 
 ---
 
 ## Composing system prompts — 20
+
+### Choose Examples
+
+**Teaching**
+
+[STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
+
+Explore scientific experiments through a text adventure with numbered choices.
+
+**Research**
+
+[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+
+Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+
+Choose either model for your own work.
+
+---
+
+## Composing system prompts — 21
+
+### Clone Model Cards
+
+- In Workspace → Models, find your chosen model and open ⋯ → **Clone**.
+
+- Rename your copy and give it a unique ID.
+
+- Read **System Prompt** and identify one instruction to revise.
+
+- Review **Access**, keep Private, remove copied access grants, and select **Save & Create**.
+
+Save an initial response before changing instructions.
+
+[Model management](https://docs.openwebui.com/features/workspace/models/)
+
+---
+
+## Composing system prompts — 22
 
 ### Add Prompt Suggestions
 
@@ -292,7 +332,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-## Composing system prompts — 21
+## Composing system prompts — 23
 
 Examples
 
@@ -300,39 +340,15 @@ Examples
 
 ---
 
-## Composing system prompts — 22
-
-### Select STEM Games
-
-![Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.](images/current/stem-selector-2026-09-14.png)
-
-**Alt text:** Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.
-
-Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.
-
----
-
-## Composing system prompts — 23
+## Composing system prompts — 24
 
 ### STEM Adventure Games
 
-![STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.](images/current/stem-chat-play-hidpi-2026-09-16.png)
+![STEM Adventure Games presents Pasteur’s flask experiment with four numbered choices, CUNY AI Lab icon, and message box visible.](images/current/stem-original-play-clean-2026-09-17.png)
 
-**Alt text:** STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.
+**Alt text:** STEM Adventure Games presents Pasteur’s flask experiment with four numbered choices, CUNY AI Lab icon, and message box visible.
 
-Type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
-
----
-
-## Composing system prompts — 24
-
-### Inspect System Prompt
-
-![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](images/current/stem-chat-model-hidpi-2026-09-16.svg)
-
-**Alt text:** STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.
-
-Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt.
+For STEM Adventure Games, type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
 
 ---
 
@@ -341,7 +357,11 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 ### Read Game Instructions
 
 ```text
-End each scene with three numbered choices. Accept a number or an action in ordinary language, such as looking around, examining an object, or asking for a hint. Wait for a response before continuing.
+Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.
+
+Each stage presents 4 numbered choices based on historically accurate experimental decisions.
+
+After each choice, briefly state what the player observes, what the result suggests, and what question remains open.
 ```
 
 What should happen after you choose an action?
@@ -354,15 +374,15 @@ What should happen after you choose an action?
 
 ### Adapt Research Prompts
 
-You can adapt this exercise to a research task, such as comparing article abstracts or documenting a method.
+For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), paste one pair from [sample revisions](examples/research/sample-revisions.md) into your copy.
 
-- State your research question and identify permitted source material.
+- Ask it to classify one change and quote evidence.
 
-- Specify steps and what counts as evidence.
+- Check quotations against both passages.
 
-- Ask your model to explain uncertainty and consider other interpretations.
+- Identify an instruction to revise if its classification is unclear.
 
-Save your source material, prompt, response, and assessment together.
+[Read full system prompt](examples.html#wikipedia-revisions)
 
 ---
 
@@ -376,34 +396,35 @@ Save your source material, prompt, response, and assessment together.
 
 ### Define Prompt Components
 
-Choose one component to change.
+Use either example. Choose one component to change in your cloned model.
 
-- **Context** — Experiment, historical setting, and intended users.
+- **Purpose** — What your model should help users do.
 
 - **Procedure** — Steps your model should follow.
 
 - **Constraints** — Boundaries and missing information.
 
-- **Tone and format** — Language, length, and presentation.
+- **Format** — Length and presentation.
 
 ---
 
 ## Composing system prompts — 29
 
-### Define Context
+### Define Purpose
 
 Describe what your model should help users do.
 
 - Who will use this model?
 
-- Which experiment or research question will they explore?
+- Which task or question will they explore?
 
 - What prior knowledge can you assume?
 
 ```text
-Guide a short text adventure about light and colour.
-Help players explore how a prism changes a beam of sunlight.
+Guide a short text adventure in which players explore how a prism changes a beam of sunlight.
 ```
+
+For research, name your question, source material, and intended users.
 
 ---
 
@@ -411,14 +432,16 @@ Help players explore how a prism changes a beam of sunlight.
 
 ### Write Procedures
 
-What should happen before and after each choice?
+Which steps should your model follow?
 
 ```text
 1. Introduce an experiment about light and colour.
 2. Describe an opening scene and a question to investigate.
-3. Offer three numbered choices and wait.
-4. Describe observations after players choose.
+3. Offer four numbered choices and wait.
+4. Describe what players observe after each choice.
 ```
+
+For research, check inputs, quote changed passages, then classify changes.
 
 ---
 
@@ -430,9 +453,11 @@ Specify how your model should handle missing evidence.
 
 ```text
 Do not invent historical details when sources are missing.
-Distinguish documented events from choices created for the game.
+Distinguish documented events from invented scenes and choices.
 If a source is unavailable, explain what cannot be checked.
 ```
+
+For research, request missing excerpts and mark uncertain classifications.
 
 Test a request that asks for a detail absent from your sources.
 
@@ -440,35 +465,21 @@ Test a request that asks for a detail absent from your sources.
 
 ## Composing system prompts — 32
 
-### Set Tone
-
-Describe how your model should address players.
-
-```text
-Address the player as “you.”
-Use concise language for scenes and choices.
-Explain unfamiliar scientific terms when they first appear.
-```
-
-Which terms need explanation for your intended users?
-
----
-
-## Composing system prompts — 33
-
 ### Specify Format
 
-Specify how scenes and choices should appear.
+Specify response structure and length.
 
 ```text
-Write a short scene followed by three numbered choices.
+Write a short scene followed by four numbered choices.
 Use simple Unicode headings.
 Wait for a reply before continuing.
 ```
 
+For research, use Before and After quotations, categories, and brief explanations.
+
 ---
 
-## Composing system prompts — 34
+## Composing system prompts — 33
 
 Refine
 
@@ -476,21 +487,21 @@ Refine
 
 ---
 
-## Composing system prompts — 35
+## Composing system prompts — 34
 
 ### Extend Instructions
 
-- Specify what happens when a player asks for a hint.
+Specify what your model should do when a request needs additional guidance.
 
-- Explain how to revisit an earlier decision.
+- **Teaching** — Explain how to offer a hint or revisit an earlier choice.
 
-- Require source checks when players ask about historical claims.
+- **Research** — Explain when to request missing passages or mark a classification uncertain.
 
-- Test how your model responds when evidence is missing.
+Select Save & Update, then test that condition in a new chat. After revising, save again and repeat your request.
 
 ---
 
-## Composing system prompts — 36
+## Composing system prompts — 35
 
 Watch Out
 
@@ -504,9 +515,9 @@ Check instructions for conflicts. Prioritize essential steps and test whether yo
 
 Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
 
-### Test Player Requests
+### Test User Requests
 
-Test game choices, requests for hints, and questions about sources.
+Test likely requests, including questions about missing evidence.
 
 ### Retest Revised Prompts
 
@@ -514,15 +525,15 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Composing system prompts — 37
+## Composing system prompts — 36
 
 ### Save Prompts
 
-Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
+Save changes to your cloned model. Review **Access** and select **Save & Update**. Reuse this model when adding documents in Workshop 2.
 
 ---
 
-## Composing system prompts — 38
+## Composing system prompts — 37
 
 ### Share Custom Models
 
@@ -536,7 +547,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Composing system prompts — 39
+## Composing system prompts — 38
 
 ### Record Comparisons
 
@@ -554,7 +565,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Composing system prompts — 40
+## Composing system prompts — 39
 
 ### Prepare Source Documents
 
@@ -643,11 +654,11 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 
 ### Review Model Settings
 
-![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](images/current/stem-chat-model-hidpi-2026-09-16.svg)
+Open your private copy of **STEM Adventure Games** or **Compare Wikipedia Edits**.
 
-**Alt text:** STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.
+Review **Base Model** and **System Prompt**. Keep instructions from Workshop 1. Leave Skills and Tools unselected.
 
-Review **Base Model** and **System Prompt** in your custom model. Use [STEM Adventure Games instructions](examples.html#stem-chat) from Workshop 1. Leave Skills and Tools unselected.
+[Review system prompts](examples.html)
 
 ---
 
@@ -681,9 +692,9 @@ Which passages did your model use, and do they support its claims?
 
 ### Open STEM Collection
 
-![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, Newton’s optical experiments, procedural variations, and software checks.](images/current/stem-knowledge-2026-09-14.png)
+![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, List of experiments, procedural variations, and software checks.](images/current/stem-knowledge-2026-09-14.png)
 
-**Alt text:** STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, Newton’s optical experiments, procedural variations, and software checks.
+**Alt text:** STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, List of experiments, procedural variations, and software checks.
 
 Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments.
 
@@ -695,9 +706,9 @@ Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiment
 
 Use sources for different questions.
 
-Newton’s optical experiments
+List of experiments
 
-Check apparatus, procedures, and observations.
+Choose experiments, scientists, and questions to investigate.
 
 Scientific method
 
@@ -723,7 +734,7 @@ Open each file and compare its contents with its source page.
 
 - Record article title, source URL, and revision date.
 
-On September 14, 2026, List of experiments contained a Wikimedia rate-limit error instead of article text. Its filename alone did not establish usable content.
+List of experiments once imported a Wikimedia rate-limit error. Article text was restored on September 17, 2026. Check contents after every import.
 
 ---
 
@@ -735,7 +746,7 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 **Alt text:** STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.
 
-Select STEM Wikipedia Experiments under Knowledge in your custom model and choose Save & Update. Skills and Tools are added in Workshop 3.
+In your STEM copy, select STEM Wikipedia Experiments under Knowledge and choose Save & Update. Skills and Tools are added in Workshop 3.
 
 ---
 
@@ -743,7 +754,7 @@ Select STEM Wikipedia Experiments under Knowledge in your custom model and choos
 
 ### Check Game Sources
 
-In your custom model, start an adventure about light and colour. Choose one action, then ask about its historical sources.
+In your STEM copy, start an adventure about light and colour. Choose one action, then ask about its historical sources.
 
 ```text
 Which objects in this scene appear in Newton: Light and Colour? Quote a relevant passage. Which details were invented for this game?
@@ -787,13 +798,13 @@ Choose documents that explain your course or research project and describe what 
 
 ### Choose Reference Materials
 
-Choose source documents that help players investigate an experiment.
+Choose documents for your teaching or research task.
 
 - Use [Newton: Light and Colour](examples/knowledge/newton-light-colour.md) for apparatus and observations.
 
 - Use [Newton: Experimental Variants](examples/knowledge/newton-experimental-variants.md) for changes to experimental procedures.
 
-Read entries before uploading. Distinguish these summaries from original historical accounts.
+For Compare Wikipedia Edits, use [sample revision excerpts](examples/research/sample-revisions.md) and [classification criteria](examples/research/system-prompt.txt). Read documents before uploading; distinguish summaries from original accounts.
 
 [Download Light and Colour](examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](examples/knowledge/newton-experimental-variants.md)
 
@@ -819,7 +830,7 @@ Open Workspace → Knowledge → Create. Enter a name and description, keep acce
 
 - Check extracted text against each source.
 
-- Return to **Workspace → Models**, open your custom model, and replace STEM Wikipedia Experiments with your collection under **Knowledge**.
+- Return to **Workspace → Models**, open your chosen custom model, and select your collection under **Knowledge**. Remove collections unrelated to your question.
 
 - Choose **Save & Update**, then start a new chat with your custom model.
 
@@ -940,7 +951,7 @@ Test a request that needs your skill or tool. Check what your model used and whe
 
 ### Review Previous Work
 
-Continue from your chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
+Review your model and source collection. This example builds on our chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
 
 - Identify instructions for opening Prism Laboratory.
 
@@ -980,9 +991,9 @@ Use provided game files to describe rooms, objects, and rules.
 
 ### Enable Tools
 
-![STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.](images/current/integrations-advanced-hidpi-2026-09-16.svg)
+![STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.](images/current/integrations-advanced-2026-09-17.png)
 
-**Alt text:** STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.
+**Alt text:** STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.
 
 With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
 
@@ -992,9 +1003,9 @@ With STEM Adventure Games — Advanced selected, open Integrations beside +. Und
 
 ### Inspect Game Rules
 
-![Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.](images/current/stem-game-2026-09-14.png)
+![Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.](images/current/stem-advanced-clean-2026-09-17.png)
 
-**Alt text:** Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.
+**Alt text:** Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.
 
 Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read game file](examples/adventure/prism.json)
 
@@ -1145,9 +1156,9 @@ Observed result: [Fill only after testing]
 
 ### Clone Custom Models
 
-![Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.](images/current/model-clone-advanced-hidpi-2026-09-16.svg)
+![Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.](images/current/model-clone-advanced-2026-09-17.png)
 
-**Alt text:** Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.
+**Alt text:** Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.
 
 In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and choose Clone.
 
@@ -1255,17 +1266,15 @@ Save generated scenarios and play records.
 
 ### Create Adventure Tools
 
-Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.
+CAIL Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.
 
 ```text
 Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
 ```
 
-[Open Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](examples/tools/stem_adventure.py)
+[Open CAIL Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](examples/tools/stem_adventure.py)
 
 [Review code evaluation](skills/reference.html#check-generated-code)
-
-[Read tested code](examples/tools/stem_adventure.py)
 
 ---
 
@@ -1275,15 +1284,13 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 - Open **Workspace → Tools → Create**.
 
-- Enter Name, ID, and Description.
+- Enter a unique Name and ID, then add a Description.
 
-- Paste and review [tested STEM Adventure code](examples/tools/stem_adventure.py). Keep your creator draft separate.
+- Paste provided [tested STEM Adventure code](examples/tools/stem_adventure.py). Save your creator draft for separate review.
 
 - Select **Save & Create**.
 
-- Enable your tool through **Integrations → Tools**.
-
-Use a private copy when changing code. Attach reusable tools under Tools in your model editor.
+- In your private model, replace STEM Adventure under **Tools** with your installed copy. Update System Prompt to name it and select **Save & Update**.
 
 ---
 

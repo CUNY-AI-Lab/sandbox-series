@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "file": "examples/stem-chat-system-prompt.txt",
+      "before_sha256": "41d76c4ee0c7e0e96a60fb8b825be3072223e07fe18626126ab1322c2220da7e",
+      "after_sha256": "0b8f694426a89b962156296187e9b6b50ae47204a6549ea567c79ce6aa365b1b",
+      "before_words": 310,
+      "after_words": 301,
+      "prose_colons_excluding_source_titles": 0
+    },
+    {
+      "file": "examples/stem-system-prompt.txt",
+      "before_sha256": "c599f4007dde4e6e974a58f89558c9fd036754eb9abd8be5c22bf969ba366b7a",
+      "after_sha256": "1a1caba8cc8ab5e74b21a47a231986ef48d74d545c8f69bffddc4b7632d3af54",
+      "before_words": 481,
+      "after_words": 532,
+      "prose_colons_excluding_source_titles": 0
+    }
+  ],
+  "exact_scene_excerpt_preserved": true,
+  "plainchat_has_no_tool_or_skill_contracts": true,
+  "plainchat_source_pause_quote_resume_preserved": true,
+  "advanced_named_resources_and_commands_preserved": true,
+  "unicode_headings_preserved": true,
+  "short_operational_sentences_retained": true,
+  "card_descriptions_and_starters_parsed": true,
+  "live_sandbox_testing": "Not performed in this bounded copy task. Parent handles integration and live testing."
+}

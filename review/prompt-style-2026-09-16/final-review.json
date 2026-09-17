@@ -1,0 +1,106 @@
+{
+  "review_date": "2026-09-17",
+  "active_prompts_changed_in_final_review": true,
+  "models": [
+    {
+      "model": "STEM Adventure Games",
+      "prompt_file": "examples/stem-chat-system-prompt.txt",
+      "sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459",
+      "catalog_matches": true,
+      "editable_prose_colons": 0,
+      "starter_count": 2,
+      "model_id": "stem-adventure-games",
+      "framework_sections": [
+        "Purpose",
+        "Procedure",
+        "Constraints",
+        "Format"
+      ],
+      "original_source_roles_preserved": true,
+      "experimental_evidence_guard": true,
+      "base_model": "deepseek-v4-flash-0731",
+      "base_label": "DeepSeek V4 Flash 0731"
+    },
+    {
+      "model": "STEM Adventure Games — Sources",
+      "prompt_file": "examples/stem-chat-system-prompt.txt",
+      "sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459",
+      "catalog_matches": true,
+      "editable_prose_colons": 0,
+      "starter_count": 2,
+      "model_id": "stem-adventure-games-sources",
+      "framework_sections": [
+        "Purpose",
+        "Procedure",
+        "Constraints",
+        "Format"
+      ],
+      "original_source_roles_preserved": true,
+      "experimental_evidence_guard": true,
+      "base_model": "deepseek-v4-flash-0731",
+      "base_label": "DeepSeek V4 Flash 0731"
+    },
+    {
+      "model": "STEM Adventure Games — Advanced",
+      "prompt_file": "examples/stem-system-prompt.txt",
+      "sha256": "52926b8016c2a6a46e5b52d3e1d38b064184ac5338318251265174f7e194a489",
+      "catalog_matches": true,
+      "editable_prose_colons": 0,
+      "starter_count": 3,
+      "model_id": "stem-adventure-games-advanced",
+      "base_model": "deepseek-v4-pro-0813",
+      "base_label": "DeepSeek V4 Pro 0813"
+    },
+    {
+      "model": "Kale Skill Builder",
+      "prompt_file": "examples/creators/skill-creator-system-prompt.txt",
+      "sha256": "0989642225f1ca34ba604f8304d8e57ebab1c71730ec04e990a8d06727358daa",
+      "catalog_matches": true,
+      "editable_prose_colons": 0,
+      "starter_count": 2,
+      "model_id": "cail-sandbox-skill-builder",
+      "base_model": "deepseek-v4-flash-0731",
+      "base_label": "DeepSeek V4 Flash 0731"
+    },
+    {
+      "model": "CAIL Tool Creator",
+      "prompt_file": "examples/creators/tool-creator-system-prompt.txt",
+      "sha256": "9da1dd7e6b3833cbe9b46eaa4982f7f643071a9e31668b060547b8bb90f29b4a",
+      "catalog_matches": true,
+      "editable_prose_colons": 0,
+      "starter_count": 2,
+      "model_id": "cail-sandbox-tool-creator",
+      "base_model": "kimi-k2.7-code",
+      "base_label": "Kimi K2.7 Code"
+    },
+    {
+      "model": "Compare Wikipedia Edits",
+      "prompt_file": "examples/research/system-prompt.txt",
+      "sha256": "d0dfd58d664c2771ef1229be5f70d35bcba3dcb766adeffeda0f473b899ea1ef",
+      "catalog_matches": true,
+      "editable_prose_colons": 0,
+      "starter_count": 3,
+      "model_id": "compare-wikipedia-revisions",
+      "base_model": "deepseek-v4-flash-0731",
+      "base_label": "DeepSeek V4 Flash 0731"
+    }
+  ],
+  "copy_regression_tests": 31,
+  "copy_regression_result": "passed",
+  "series_slides": 90,
+  "imported_sections": 34,
+  "series_result": "passed",
+  "whitespace_result": "passed",
+  "live_test_status": "Parent task in progress; no live behavior result claimed by this review.",
+  "followup": "Original game tone and sources reorganized into four workshop components; integration checks passed.",
+  "card_inputs_match_sources": true,
+  "original_restoration": "original-restoration-checks.json",
+  "current_framework_review": "stem-framework-checks.json",
+  "introductory_card_readback": "Parent confirmed saved-prompt readback before the evidence constraint; latest constraint awaits live application and playtest.",
+  "series_count_scope": "Current verified checkout; concurrent slide audits remain active.",
+  "knowledge_repair": "knowledge-repair/provenance.json",
+  "current_evidence_review": "stem-evidence-checks.json",
+  "tool_creator_live_base_status": "Preserved parent-reported live Kimi K2.7 Code selection in local manifest; historical Qwen results do not verify Kimi behavior.",
+  "research_live_base_status": "Preserved parent-reported live DeepSeek V4 Flash 0731 selection; historical Gemma results do not verify DeepSeek behavior.",
+  "current_base_readback_review": "live-base-readback.md"
+}

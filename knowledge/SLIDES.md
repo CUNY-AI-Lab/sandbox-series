@@ -72,9 +72,11 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 
 ### Review Model Settings
 
-![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](../images/current/stem-chat-model-hidpi-2026-09-16.svg)
+Open your private copy of **STEM Adventure Games** or **Compare Wikipedia Edits**.
 
-Review **Base Model** and **System Prompt** in your custom model. Use [STEM Adventure Games instructions](../examples.html#stem-chat) from Workshop 1. Leave Skills and Tools unselected.
+Review **Base Model** and **System Prompt**. Keep instructions from Workshop 1. Leave Skills and Tools unselected.
+
+[Review system prompts](../examples.html)
 
 ---
 
@@ -108,7 +110,7 @@ Which passages did your model use, and do they support its claims?
 
 ### Open STEM Collection
 
-![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, Newton’s optical experiments, procedural variations, and software checks.](../images/current/stem-knowledge-2026-09-14.png)
+![STEM Wikipedia Experiments listing three Wikipedia imports and four added entries. Entries cover source status, List of experiments, procedural variations, and software checks.](../images/current/stem-knowledge-2026-09-14.png)
 
 Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiments.
 
@@ -120,9 +122,9 @@ Open Workspace → Knowledge. Search for STEM and open STEM Wikipedia Experiment
 
 Use sources for different questions.
 
-Newton’s optical experiments
+List of experiments
 
-Check apparatus, procedures, and observations.
+Choose experiments, scientists, and questions to investigate.
 
 Scientific method
 
@@ -148,7 +150,7 @@ Open each file and compare its contents with its source page.
 
 - Record article title, source URL, and revision date.
 
-On September 14, 2026, List of experiments contained a Wikimedia rate-limit error instead of article text. Its filename alone did not establish usable content.
+List of experiments once imported a Wikimedia rate-limit error. Article text was restored on September 17, 2026. Check contents after every import.
 
 ---
 
@@ -158,7 +160,7 @@ On September 14, 2026, List of experiments contained a Wikimedia rate-limit erro
 
 ![STEM Adventure Games model editor with STEM Wikipedia Experiments attached under Knowledge; Tools and Skills have no selections. White outlines identify these controls.](../images/current/knowledge-attachments-3x-2026-09-16.svg)
 
-Select STEM Wikipedia Experiments under Knowledge in your custom model and choose Save & Update. Skills and Tools are added in Workshop 3.
+In your STEM copy, select STEM Wikipedia Experiments under Knowledge and choose Save & Update. Skills and Tools are added in Workshop 3.
 
 ---
 
@@ -166,7 +168,7 @@ Select STEM Wikipedia Experiments under Knowledge in your custom model and choos
 
 ### Check Game Sources
 
-In your custom model, start an adventure about light and colour. Choose one action, then ask about its historical sources.
+In your STEM copy, start an adventure about light and colour. Choose one action, then ask about its historical sources.
 
 ```text
 Which objects in this scene appear in Newton: Light and Colour? Quote a relevant passage. Which details were invented for this game?
@@ -210,13 +212,13 @@ Choose documents that explain your course or research project and describe what 
 
 ### Choose Reference Materials
 
-Choose source documents that help players investigate an experiment.
+Choose documents for your teaching or research task.
 
 - Use [Newton: Light and Colour](../examples/knowledge/newton-light-colour.md) for apparatus and observations.
 
 - Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.md) for changes to experimental procedures.
 
-Read entries before uploading. Distinguish these summaries from original historical accounts.
+For Compare Wikipedia Edits, use [sample revision excerpts](../examples/research/sample-revisions.md) and [classification criteria](../examples/research/system-prompt.txt). Read documents before uploading; distinguish summaries from original accounts.
 
 [Download Light and Colour](../examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](../examples/knowledge/newton-experimental-variants.md)
 
@@ -240,7 +242,7 @@ Open Workspace → Knowledge → Create. Enter a name and description, keep acce
 
 - Check extracted text against each source.
 
-- Return to **Workspace → Models**, open your custom model, and replace STEM Wikipedia Experiments with your collection under **Knowledge**.
+- Return to **Workspace → Models**, open your chosen custom model, and select your collection under **Knowledge**. Remove collections unrelated to your question.
 
 - Choose **Save & Update**, then start a new chat with your custom model.
 

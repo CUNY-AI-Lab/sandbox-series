@@ -1,0 +1,127 @@
+--- SLIDES.md before
++++ SLIDES.md after
+@@ -282,7 +282,7 @@
+ 
+ **Research**
+ 
+-[Compare Wikipedia Revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
++[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+ 
+ Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+ 
+@@ -398,7 +398,7 @@
+ 
+ ### Adapt Research Prompts
+ 
+-For [Compare Wikipedia Revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), use [sample revisions](examples/research/sample-revisions.md) to test your copy.
++For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), use [sample revisions](examples/research/sample-revisions.md) to test your copy.
+ 
+ - State your research question and identify permitted source material.
+ 
+--- index.html before
++++ index.html after
+@@ -31,7 +31,7 @@
+ <section aria-label="Slide 16: Compare Responses" aria-roledescription="slide" class="slide layout-content" data-group="Prompt" data-source-slide="5" data-title="Compare Responses" role="group" tabindex="-1"><div class="slide-inner"><h2>Compare Responses</h2><ol class="steps"><li>Compare responses before and after adding system prompt instructions.</li><li>Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?</li><li>Repeat our opening question about who was late. Do these instructions help identify ambiguity?</li></ol></div></section>
+ <section aria-label="Slide 17: Open Workspace" aria-roledescription="slide" class="slide screenshot-slide" data-group="Workspace" data-title="Open Workspace" role="group" tabindex="-1"><div class="slide-inner"><h1>Open Workspace</h1><figure><img alt="Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar" class="screenshot-img" style="--screenshot-max-width:4089px" src="images/current/workspace-sidebar-2026-09-15-annotated.svg"/><figcaption>Select Workspace in left sidebar.</figcaption></figure></div></section>
+ <section aria-label="Slide 18: Review Custom Models" aria-roledescription="slide" class="slide layout-content" data-group="Workspace" data-title="Review Custom Models" role="group" tabindex="-1"><div class="slide-inner"><h2>Review Custom Models</h2><p>Choose <strong>Models</strong> to find custom model cards. Each combines a base model with setup instructions and any attached resources.</p><p>Review <strong>Base Model</strong> and <strong>System Prompt</strong>, then compare its instructions with your tested prompt.</p><p class="note">Continue in chat if Workspace is unavailable.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/models/" rel="noopener" target="_blank">Custom Models</a></p></div></section>
+-<section aria-label="Slide 19: Choose Examples" aria-roledescription="slide" class="slide layout-content" data-group="Workspace" data-title="Choose Examples" role="group" tabindex="-1"><div class="slide-inner"><h2>Choose Examples</h2><div class="grid-2"><div class="card"><p><strong>Teaching</strong></p><p><a href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games">STEM Adventure Games</a></p><p>Explore scientific experiments through a text adventure with numbered choices.</p></div><div class="card"><p><strong>Research</strong></p><p><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions">Compare Wikipedia Revisions</a></p><p>Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.</p></div></div><p>Choose either model for your own work.</p></div></section>
++<section aria-label="Slide 19: Choose Examples" aria-roledescription="slide" class="slide layout-content" data-group="Workspace" data-title="Choose Examples" role="group" tabindex="-1"><div class="slide-inner"><h2>Choose Examples</h2><div class="grid-2"><div class="card"><p><strong>Teaching</strong></p><p><a href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games">STEM Adventure Games</a></p><p>Explore scientific experiments through a text adventure with numbered choices.</p></div><div class="card"><p><strong>Research</strong></p><p><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions">Compare Wikipedia Edits</a></p><p>Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.</p></div></div><p>Choose either model for your own work.</p></div></section>
+ <section aria-label="Slide 20: Clone Model Cards" aria-roledescription="slide" class="slide layout-content" data-group="Workspace" data-title="Clone Model Cards" role="group" tabindex="-1"><div class="slide-inner"><h2>Clone Model Cards</h2><ol class="steps"><li>In Workspace → Models, find your chosen model and open ⋯ → <strong>Clone</strong>.</li><li>Rename your copy and give it a unique ID.</li><li>Adjust <strong>System Prompt</strong> for your intended users or research question.</li><li>Review <strong>Access</strong>, keep Private, remove copied access grants, and select <strong>Save &amp; Create</strong>.</li></ol><p>Test your copy in chat, then revise its instructions.</p><p class="source"><a href="https://docs.openwebui.com/features/workspace/models/">Model management</a></p></div></section>
+ <section aria-label="Slide 21: Model Configuration" aria-roledescription="slide" class="slide screenshot-slide" data-group="Workspace" data-title="Model Configuration" role="group" tabindex="-1"><div class="slide-inner"><h1>Model Configuration</h1><figure><img alt="New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view." class="screenshot-img" style="--screenshot-max-width:2080px" src="images/current/model-create-hidpi-2026-09-16.svg"/><figcaption>Use Model Name, Base Model, and System Prompt to review and adjust your copy. This blank form identifies those fields.</figcaption></figure></div></section>
+ <section aria-label="Slide 22: Add Prompt Suggestions" aria-roledescription="slide" class="slide layout-content" data-group="Workspace" data-title="Add Prompt Suggestions" role="group" tabindex="-1"><div class="slide-inner"><h2>Add Prompt Suggestions</h2><p>Add a description and prompt suggestions for tasks your model should support.</p><p>Users select your custom model to use its instructions and resources.</p><p><a href="https://ailab.gc.cuny.edu/sandbox-docs/models/">Custom Models</a></p></div></section>
+@@ -47,7 +47,7 @@
+ Each stage presents 4 numbered choices based on historically accurate experimental decisions.
+ 
+ After each choice, briefly state what the player observes, what the result suggests, and what question remains open.</pre></div><p>What should happen after you choose an action?</p><p class="source"><a href="examples.html#stem-chat">Read full system prompt</a></p></div></section>
+-<section aria-label="Slide 28: Adapt Research Prompts" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-title="Adapt Research Prompts" role="group" tabindex="-1"><div class="slide-inner"><h2>Adapt Research Prompts</h2><p>For <a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions">Compare Wikipedia Revisions</a>, use <a href="examples/research/sample-revisions.md">sample revisions</a> to test your copy.</p><ul><li>State your research question and identify permitted source material.</li><li>Specify steps and what counts as evidence.</li><li>Ask your model to explain uncertainty and consider other interpretations.</li></ul><p class="note">Save your source material, prompt, response, and assessment together.</p></div></section>
++<section aria-label="Slide 28: Adapt Research Prompts" aria-roledescription="slide" class="slide layout-content" data-group="Draft" data-title="Adapt Research Prompts" role="group" tabindex="-1"><div class="slide-inner"><h2>Adapt Research Prompts</h2><p>For <a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions">Compare Wikipedia Edits</a>, use <a href="examples/research/sample-revisions.md">sample revisions</a> to test your copy.</p><ul><li>State your research question and identify permitted source material.</li><li>Specify steps and what counts as evidence.</li><li>Ask your model to explain uncertainty and consider other interpretations.</li></ul><p class="note">Save your source material, prompt, response, and assessment together.</p></div></section>
+ <div aria-label="Slide 29: Draft System Prompts" aria-roledescription="slide" class="slide layout-divider" data-group="Draft" data-source-slide="20" data-title="Draft System Prompts" role="group" tabindex="-1"><div class="slide-inner">
+ <h2>Draft System Prompts</h2>
+ <div class="divider-line"></div>
+--- examples.html before
++++ examples.html after
+@@ -1,6 +1,6 @@
+ <!DOCTYPE html>
+ 
+-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>System-prompt examples | CUNY AI Lab</title><link href="css/styles.css?v=20260916-resolution" rel="stylesheet"/><link href="css/reference.css" rel="stylesheet"/></head><body><main><h1>System Prompt Examples</h1><p>Choose a prompt and adapt its purpose, procedure, constraints, and format to your teaching or research task. Test your prompt with a selected base model. <a href="examples/model-cards.md">View model cards</a>.</p><nav aria-label="Workshop sections"><a href="./">Composing system prompts</a> · <a href="knowledge/">Curating knowledge collections</a> · <a href="skills/">Configuring skills and tools</a></nav><nav aria-label="Prompt examples"><a href="#assumptions">Examine Assumptions</a> · <a href="#stem-chat">STEM Adventure Games</a> · <a href="#wikipedia-revisions">Compare Wikipedia Revisions</a> · <a href="#stem-sources">Check Game Sources</a> · <a href="#stem-system">Advanced Game Instructions</a></nav><section class="reference-example" id="assumptions"><h2>Examine Assumptions</h2><p>Paste into System Prompt under in-chat Controls for model comparisons.</p><div class="prompt-container"><button data-example-copy="assumptions-copy">Copy prompt</button><pre class="prompt-block" id="assumptions-copy">Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.</pre></div></section><section class="reference-example" id="stem-chat"><h2>STEM Adventure Games</h2><p>Workshops 1 and 2 use scenes and choices in chat. Paste these instructions into System Prompt under Workspace → Models. Leave Skills and Tools unselected; add source documents in Workshop 2.</p><div class="prompt-container"><button data-example-copy="stem-chat-copy">Copy prompt</button><pre class="prompt-block" id="stem-chat-copy">◉ Purpose ◉
++<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>System-prompt examples | CUNY AI Lab</title><link href="css/styles.css?v=20260916-resolution" rel="stylesheet"/><link href="css/reference.css" rel="stylesheet"/></head><body><main><h1>System Prompt Examples</h1><p>Choose a prompt and adapt its purpose, procedure, constraints, and format to your teaching or research task. Test your prompt with a selected base model. <a href="examples/model-cards.md">View model cards</a>.</p><nav aria-label="Workshop sections"><a href="./">Composing system prompts</a> · <a href="knowledge/">Curating knowledge collections</a> · <a href="skills/">Configuring skills and tools</a></nav><nav aria-label="Prompt examples"><a href="#assumptions">Examine Assumptions</a> · <a href="#stem-chat">STEM Adventure Games</a> · <a href="#wikipedia-revisions">Compare Wikipedia Edits</a> · <a href="#stem-sources">Check Game Sources</a> · <a href="#stem-system">Advanced Game Instructions</a></nav><section class="reference-example" id="assumptions"><h2>Examine Assumptions</h2><p>Paste into System Prompt under in-chat Controls for model comparisons.</p><div class="prompt-container"><button data-example-copy="assumptions-copy">Copy prompt</button><pre class="prompt-block" id="assumptions-copy">Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer briefly without inventing context.</pre></div></section><section class="reference-example" id="stem-chat"><h2>STEM Adventure Games</h2><p>Workshops 1 and 2 use scenes and choices in chat. Paste these instructions into System Prompt under Workspace → Models. Leave Skills and Tools unselected; add source documents in Workshop 2.</p><div class="prompt-container"><button data-example-copy="stem-chat-copy">Copy prompt</button><pre class="prompt-block" id="stem-chat-copy">◉ Purpose ◉
+ 
+ Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.
+ 
+@@ -41,7 +41,7 @@
+ 
+ Keep stages 1-2 concise, then add more narrative detail and historical consequence from stage 3 onward.
+ 
+-Show only the game menu, scenes, choices, observations, consequences, and brief historical context needed for play.</pre></div></section><section class="reference-example" id="wikipedia-revisions"><h2>Compare Wikipedia Revisions</h2><p>Use provided before-and-after excerpts from Wikipedia’s academic freedom article to classify a change and explain it with quoted evidence.</p><p><a href="examples/research/model-card.md">Model settings</a> · <a href="examples/research/sample-revisions.md">Sample revisions</a> · <a download="compare-wikipedia-revisions.txt" href="examples/research/system-prompt.txt">Download prompt</a></p><div class="prompt-container"><button data-example-copy="wikipedia-revisions-copy">Copy prompt</button><pre class="prompt-block" id="wikipedia-revisions-copy">Purpose
++Show only the game menu, scenes, choices, observations, consequences, and brief historical context needed for play.</pre></div></section><section class="reference-example" id="wikipedia-revisions"><h2>Compare Wikipedia Edits</h2><p>Use provided before-and-after excerpts from Wikipedia’s academic freedom article to classify a change and explain it with quoted evidence.</p><p><a href="examples/research/model-card.md">Model settings</a> · <a href="examples/research/sample-revisions.md">Sample revisions</a> · <a download="compare-wikipedia-revisions.txt" href="examples/research/system-prompt.txt">Download prompt</a></p><div class="prompt-container"><button data-example-copy="wikipedia-revisions-copy">Copy prompt</button><pre class="prompt-block" id="wikipedia-revisions-copy">Purpose
+ 
+ Compare revisions of Wikipedia’s academic freedom article. Use qualitative content analysis to classify changes to claims, qualifications, and citations, working from one pair of passages pasted or attached in chat.
+ 
+--- PROMPTS.md before
++++ PROMPTS.md after
+@@ -268,7 +268,7 @@
+ 
+ **Research**
+ 
+-[Compare Wikipedia Revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
++[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+ 
+ Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+ 
+@@ -376,7 +376,7 @@
+ 
+ ### Adapt Research Prompts
+ 
+-For [Compare Wikipedia Revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), use [sample revisions](examples/research/sample-revisions.md) to test your copy.
++For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), use [sample revisions](examples/research/sample-revisions.md) to test your copy.
+ 
+ - State your research question and identify permitted source material.
+ 
+--- examples/model-cards.json before
++++ examples/model-cards.json after
+@@ -112,7 +112,7 @@
+     },
+     {
+       "id": "compare-wikipedia-revisions",
+-      "name": "Compare Wikipedia Revisions",
++      "name": "Compare Wikipedia Edits",
+       "description": "Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.",
+       "base_model": "gemma-4-26b-a4b-it",
+       "base_label": "Gemma 4 26B A4B IT",
+--- examples/model-cards.md before
++++ examples/model-cards.md after
+@@ -13,7 +13,7 @@
+ | STEM Adventure Games — Advanced | DeepSeek V4 Pro 0813 | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced) |
+ | Kale Skill Builder | DeepSeek V4 Flash 0731 | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) |
+ | CAIL Tool Creator | Qwen: Qwen3 Coder Next | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) |
+-| Compare Wikipedia Revisions | Gemma 4 26B A4B IT | [Open model](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) |
++| Compare Wikipedia Edits | Gemma 4 26B A4B IT | [Open model](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) |
+ 
+ ## STEM Adventure Games
+ 
+@@ -345,7 +345,7 @@
+ Write concise instructions for the intended user. Use literal interface labels, ordinary verbs, and short headings. Avoid invented feature names, inflated claims, and facilitator commentary. Preserve user-provided requirements when revising an artifact.
+ ````
+ 
+-## Compare Wikipedia Revisions
++## Compare Wikipedia Edits
+ 
+ Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+ 
+--- examples/research/model-card.md before
++++ examples/research/model-card.md after
+@@ -1,4 +1,4 @@
+-# Compare Wikipedia Revisions
++# Compare Wikipedia Edits
+ 
+ ## Model Description
+ 
+@@ -8,7 +8,7 @@
+ 
+ | Field | Value |
+ | --- | --- |
+-| Name | Compare Wikipedia Revisions |
++| Name | Compare Wikipedia Edits |
+ | Base Model | Gemma 4 26B A4B IT |
+ | Connection | Gateway |
+ | Access | Private |

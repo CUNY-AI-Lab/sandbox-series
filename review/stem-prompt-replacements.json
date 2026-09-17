@@ -4,7 +4,7 @@
       "You are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge]."
     ],
     "after": [
-      "Guide a short text adventure about light and colour.\nHelp players explore how a prism changes a beam of sunlight."
+      "Guide a short text adventure in which players explore how a prism changes a beam of sunlight."
     ],
     "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
   },
@@ -13,16 +13,16 @@
       "Procedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it]."
     ],
     "after": [
-      "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose."
+      "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer four numbered choices and wait.\n4. Describe what players observe after each choice."
     ],
-    "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+    "reason": "User restored original STEM Adventure Games prompt, whose stages present four choices; align workshop example without rewriting original instructions."
   },
   "24": {
     "before": [
       "Constraints:\n- Never [specific output to avoid].\n- If asked to [common student request], redirect by [specific alternative].\n- If uncertain about [domain content], say so explicitly."
     ],
     "after": [
-      "Do not invent historical details when sources are missing.\nDistinguish documented events from choices created for the game.\nIf a source is unavailable, explain what cannot be checked."
+      "Do not invent historical details when sources are missing.\nDistinguish documented events from invented scenes and choices.\nIf a source is unavailable, explain what cannot be checked."
     ],
     "reason": "User requested STEM Adventure Games replace discipline-specific examples; related templates now follow that use case."
   },
@@ -40,8 +40,8 @@
       "Format each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]"
     ],
     "after": [
-      "Write a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing."
+      "Write a short scene followed by four numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing."
     ],
-    "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+    "reason": "User restored original STEM Adventure Games prompt, whose stages present four choices; align workshop example without rewriting original instructions."
   }
 }

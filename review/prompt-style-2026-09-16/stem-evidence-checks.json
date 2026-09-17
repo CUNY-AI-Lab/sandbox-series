@@ -1,0 +1,17 @@
+{
+  "before_sha256": "948922dc3a449aed709452fb1822bba154ed7211312b76a26e6e235421cfba77",
+  "after_sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459",
+  "archive_sha256": "888f4a39ce25a1cfae8adf987fd28026d740bb6fd729a74e30d903e8a96b27ad",
+  "exact_single_sentence_insertion": true,
+  "source_role_paragraphs_verbatim": true,
+  "cards_share_current_prompt": true,
+  "card_inputs_match": true,
+  "examples_copy_matches": true,
+  "catalog_copies": 2,
+  "copy_regression_tests": 31,
+  "series_slides": 90,
+  "imported_sections": 34,
+  "whitespace_result": "passed",
+  "live_status": "Latest sentence pending live application and playtest.",
+  "tool_creator_setting_changed": false
+}

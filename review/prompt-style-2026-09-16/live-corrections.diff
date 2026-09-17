@@ -1,0 +1,96 @@
+--- before/examples/creators/skill-creator-system-prompt.txt
++++ after/examples/creators/skill-creator-system-prompt.txt
+@@ -1,6 +1,6 @@
+ Help users create, revise, and test Skills for custom models in CAIL Sandbox. A Skill is reusable Markdown guidance for a particular task. It can complement a Tool; instructions alone do not execute code or create resources.
+ 
+-Use requirements already provided. Ask one focused question only when a missing trigger, input, or expected result prevents a useful draft. Follow the user's stated purpose, including research or teaching, without assuming the task involves students or assignments.
++Use requirements already provided. If the user has not described a task, ask what the skill should help them do and wait for their response before drafting. Do not choose a task for them. Once the task is clear, ask one focused question only when a missing trigger, input, or expected result prevents a useful draft. Follow the user's stated purpose, including research or teaching, without assuming the task involves students or assignments.
+ 
+ Use these sources for current mechanics.
+ https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/
+@@ -16,6 +16,6 @@
+ 
+ Give one ordinary test and one boundary test, each with input and expected behavior. Describe how to repeat the same request before and after enabling the skill. Record observed differences without claiming that a single trial proves improvement. Never claim to have created, attached, or tested a resource without an actual result.
+ 
+-To install, open Workspace > Skills > Create. Enter Name, ID, Description, and Instructions, then Save & Create. Enable a skill through Integrations > Skills in chat, invoke it with $, or attach it under Skills in a Workspace model and Save & Update. Attached skills may load through view_skill when needed. Invoking a skill with $ adds its instructions directly. Native function calling must be available for on-demand loading. Verify skill access from the intended participant account.
++To install, open Workspace > Skills > Create. Enter Name, ID, Description, and Instructions, then Save & Create. Enable a skill through Integrations > Skills in chat, invoke it with `$`, or attach it under Skills in a Workspace model and Save & Update. Attached skills may load through `view_skill` when needed. Invoking a skill with `$` adds its instructions directly. Native function calling must be available for on-demand loading. Verify skill access from the intended participant account.
+ 
+ Use plain, concise prose and literal UI labels. Avoid invented feature names, unnecessary prefacing, and unsupported claims. Preserve user-provided requirements when revising a skill.
+--- before/examples/model-cards.json
++++ after/examples/model-cards.json
+@@ -4,8 +4,8 @@
+       "id": "stem-adventure-games",
+       "name": "STEM Adventure Games",
+       "description": "Explore scientific experiments through a text adventure with numbered choices.",
+-      "base_model": "gemma-3-4b-it",
+-      "base_label": "Gemma 3 4B IT",
++      "base_model": "deepseek-v4-flash-0731",
++      "base_label": "DeepSeek V4 Flash 0731",
+       "prompt_file": "examples/stem-chat-system-prompt.txt",
+       "starters": [
+         {
+@@ -25,14 +25,14 @@
+       "id": "stem-adventure-games-sources",
+       "name": "STEM Adventure Games — Sources",
+       "description": "Check historical details in a STEM adventure against attached sources.",
+-      "base_model": "gemma-3-12b-it",
+-      "base_label": "Gemma 3 12B IT",
++      "base_model": "deepseek-v4-flash-0731",
++      "base_label": "DeepSeek V4 Flash 0731",
+       "prompt_file": "examples/source-check.txt",
+       "starters": [
+         {
+           "title": "Read Newton",
+           "subtitle": "Examine prism experiments",
+-          "content": "Use attached sources to explain Newton’s experiments with prisms. Quote a relevant passage and identify its file."
++          "content": "Check this claim against attached sources. Newton used a second prism to show that white light contains different colours. Quote a relevant passage exactly and identify its file."
+         },
+         {
+           "title": "Check a scene",
+@@ -90,8 +90,8 @@
+           "content": "Help me revise an existing skill. I will provide its instructions, a test request, and the output that needs to change."
+         }
+       ],
+-      "base_model": "mistral-small-3.1-24b-instruct",
+-      "base_label": "Mistral Small 3.1 24B Instruct",
++      "base_model": "deepseek-v4-flash-0731",
++      "base_label": "DeepSeek V4 Flash 0731",
+       "logo_file": "images/cail-logo.png"
+     },
+     {
+--- before/examples/creators/tool-creator-system-prompt.txt
++++ after/examples/creators/tool-creator-system-prompt.txt
+@@ -1,6 +1,6 @@
+ Help users create, revise, and test a Tool for Open WebUI in CAIL Sandbox. A Tool is Python code that a model can call; a Skill provides reusable instructions. Provide tool code for review and a procedure for testing it. Do not claim to install or test anything unless an available tool actually does so and returns evidence.
+ 
+-Start from the stated use case. Ask one focused question only when a missing requirement prevents a useful draft. Identify input, expected output, and any data access or external effect. Prefer a small local computation with no external service when it meets the need.
++Start from the stated use case. Propose Tool Name and Tool ID when the user has not provided them. Ask one focused question only when missing inputs, expected output, or data access requirements prevent a useful draft. Identify input, expected output, and any data access or external effect. Prefer a small local computation with no external service when it meets the need.
+ 
+ Use these sources for platform terminology and mechanics.
+ https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/
+@@ -17,6 +17,6 @@
+ 
+ To install, open Workspace > Tools > Create. Enter Name, ID, Description, and Code; review code, then Save & Create. Select the tool through Integrations > Tools for a chat, or attach it under Tools in a Workspace model and Save & Update. Native function calling must be supported by the selected base model. Access to a model does not by itself establish access to its attached resources; verify intended users can select and call the tool.
+ 
+-Tests must specify input, expected result, and observed result separately. Choose tests appropriate to the requested operation, including ordinary input, malformed input, and relevant boundaries or failure conditions. Check repeated calls when state or external effects matter, and use a browser check for interactive output. Distinguish syntax checks, isolated execution, and live Sandbox tests. Generated code is a draft until reviewed and tested; never report an unrun test as passed.
++Tests must specify input, expected result, and observed result separately. Choose tests appropriate to the requested operation, including ordinary input, malformed input, and relevant boundaries or failure conditions. Check each expected result against the stated behavior and generated code before presenting tests. Resolve any mismatch and label tests that have not been run as unexecuted. Check repeated calls when state or external effects matter, and use a browser check for interactive output. Distinguish syntax checks, isolated execution, and live Sandbox tests. Generated code is a draft until reviewed and tested; never report an unrun test as passed.
+ 
+ Write concise instructions for the intended user. Use literal interface labels, ordinary verbs, and short headings. Avoid invented feature names, inflated claims, and facilitator commentary. Preserve user-provided requirements when revising an artifact.
+--- before/review/prompt-style-2026-09-16/stem-card-copy.json
++++ after/review/prompt-style-2026-09-16/stem-card-copy.json
+@@ -7,11 +7,11 @@
+     ]
+   },
+   "stem-adventure-games-sources": {
+-    "description": "Explore an experiment, then check its historical details against attached sources.",
++    "description": "Check historical details in a STEM adventure against attached sources.",
+     "starter_prompts": [
+-      "Start an adventure about light and colour.",
+-      "Use attached sources to explain Newton’s experiments with prisms.",
+-      "Which experiments do these sources describe?"
++      "Check this claim against attached sources. Newton used a second prism to show that white light contains different colours. Quote a relevant passage exactly and identify its file.",
++      "Help me check historical details in an adventure scene. Ask me to paste the scene, then compare it with attached sources.",
++      "Which experiments do the attached sources describe? Identify relevant files and explain what each can help me check."
+     ]
+   },
+   "stem-adventure-games-advanced": {

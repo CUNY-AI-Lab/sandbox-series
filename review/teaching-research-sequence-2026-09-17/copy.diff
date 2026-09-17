@@ -1,0 +1,114 @@
+--- before.md
++++ after.md
+@@ -46,9 +46,11 @@
+ 
+ - Revise in-chat system prompts
+ 
+-- Explore Workspace models
+-
+-- Save prompts for reuse
++- Review Workspace model cards
++
++- Choose teaching or research examples
++
++- Clone model cards and test revisions
+ 
+ 
+ 
+@@ -314,7 +316,7 @@
+ 
+ 
+ 
+-Choose **Models** and open a custom model shared with you.
++Choose **Models** to find custom model cards. Each combines a base model with setup instructions and any attached resources.
+ 
+ 
+ 
+@@ -330,6 +332,60 @@
+ 
+ ---
+ 
++### Choose Examples
++
++
++
++**Teaching**
++
++
++
++[STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
++
++
++
++Explore scientific experiments through a text adventure with numbered choices.
++
++
++
++**Research**
++
++
++
++[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
++
++
++
++Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
++
++
++
++Choose either model for your own work.
++
++---
++
++### Clone Model Cards
++
++
++
++- In Workspace → Models, find your chosen model and open ⋯ → **Clone**.
++
++- Rename your copy and give it a unique ID.
++
++- Adjust **System Prompt** for your intended users or research question.
++
++- Review **Access**, keep Private, remove copied access grants, and select **Save & Create**.
++
++
++
++Test your copy in chat, then revise its instructions.
++
++
++
++[Model management](https://docs.openwebui.com/features/workspace/models/)
++
++---
++
+ ### Model Configuration
+ 
+ 
+@@ -338,7 +394,7 @@
+ 
+ 
+ 
+-Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
++Use Model Name, Base Model, and System Prompt to review and adjust your copy. This blank form identifies those fields.
+ 
+ ---
+ 
+@@ -426,7 +482,7 @@
+ 
+ 
+ 
+-You can adapt this exercise to a research task, such as comparing article abstracts or documenting a method.
++For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), use [sample revisions](examples/research/sample-revisions.md) to test your copy.
+ 
+ 
+ 
+@@ -621,7 +677,7 @@
+ 
+ 
+ 
+-Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
++Save changes to your cloned model. Review **Access** and select **Save & Update**. Reuse this model when adding documents in Workshop 2.
+ 
+ ---
+ 

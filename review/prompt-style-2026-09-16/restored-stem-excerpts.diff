@@ -1,0 +1,24 @@
+--- before/index.html#stem-game-excerpt
++++ after/index.html#stem-game-excerpt
+@@ -1 +1,5 @@
+-End each scene with three numbered choices. Accept a number or an action in ordinary language, such as looking around, examining an object, or asking for a hint. Wait for a response before continuing.
++Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.
++
++Each stage presents 4 numbered choices based on historically accurate experimental decisions.
++
++After each choice, briefly state what the player observes, what the result suggests, and what question remains open.
+--- before/index.html#tpl-procedure
++++ after/index.html#tpl-procedure
+@@ -1,4 +1,4 @@
+ 1. Introduce an experiment about light and colour.
+ 2. Describe an opening scene and a question to investigate.
+-3. Offer three numbered choices and wait.
++3. Offer four numbered choices and wait.
+ 4. Describe what players observe after each choice.
+--- before/index.html#tpl-format
++++ after/index.html#tpl-format
+@@ -1,3 +1,3 @@
+-Write a short scene followed by three numbered choices.
++Write a short scene followed by four numbered choices.
+ Use simple Unicode headings.
+ Wait for a reply before continuing.

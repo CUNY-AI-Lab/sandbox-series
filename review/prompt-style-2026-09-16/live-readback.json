@@ -1,0 +1,76 @@
+{
+  "observed_date": "2026-09-17",
+  "method": "Firefox model editor JSON Preview after save and reopen. Exact prompt, description, starters, base ID compared with current card manifest. No access grants or account records exported.",
+  "cards": [
+    {
+      "id": "stem-adventure-games",
+      "base": "deepseek-v4-flash-0731",
+      "base_matches": true,
+      "prompt_matches": true,
+      "description_matches": true,
+      "starters_match": true,
+      "custom_logo_present": true,
+      "prompt_sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459"
+    },
+    {
+      "id": "stem-adventure-games-sources",
+      "base": "deepseek-v4-flash-0731",
+      "base_matches": true,
+      "prompt_matches": true,
+      "description_matches": true,
+      "starters_match": true,
+      "custom_logo_present": true,
+      "prompt_sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459"
+    },
+    {
+      "id": "stem-adventure-games-advanced",
+      "base": "deepseek-v4-pro-0813",
+      "base_matches": true,
+      "prompt_matches": true,
+      "description_matches": true,
+      "starters_match": true,
+      "custom_logo_present": true,
+      "prompt_sha256": "52926b8016c2a6a46e5b52d3e1d38b064184ac5338318251265174f7e194a489"
+    },
+    {
+      "id": "cail-sandbox-skill-builder",
+      "base": "deepseek-v4-flash-0731",
+      "base_matches": true,
+      "prompt_matches": true,
+      "description_matches": true,
+      "starters_match": true,
+      "custom_logo_present": true,
+      "prompt_sha256": "0989642225f1ca34ba604f8304d8e57ebab1c71730ec04e990a8d06727358daa"
+    },
+    {
+      "id": "cail-sandbox-tool-creator",
+      "base": "kimi-k2.7-code",
+      "base_matches": true,
+      "prompt_matches": true,
+      "description_matches": true,
+      "starters_match": true,
+      "custom_logo_present": true,
+      "prompt_sha256": "9da1dd7e6b3833cbe9b46eaa4982f7f643071a9e31668b060547b8bb90f29b4a"
+    },
+    {
+      "id": "compare-wikipedia-revisions",
+      "base": "deepseek-v4-flash-0731",
+      "base_matches": true,
+      "prompt_matches": true,
+      "description_matches": true,
+      "starters_match": true,
+      "custom_logo_present": true,
+      "prompt_sha256": "d0dfd58d664c2771ef1229be5f70d35bcba3dcb766adeffeda0f473b899ea1ef"
+    }
+  ],
+  "introductory_settings": {
+    "function_calling": "legacy",
+    "builtin_tools": false,
+    "custom_tools": [],
+    "custom_skills": [],
+    "knowledge": [
+      "STEM Wikipedia Experiments"
+    ]
+  },
+  "default_feature_note": "Stored defaultFeatureIds still includes web_search. Introductory Web Search capability is disabled; no claim that default feature metadata was cleared."
+}

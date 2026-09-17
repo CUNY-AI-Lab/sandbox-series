@@ -1,0 +1,131 @@
+{
+  "source_original": "review/live/stem-system-prompt-before.txt",
+  "source_original_sha256": "888f4a39ce25a1cfae8adf987fd28026d740bb6fd729a74e30d903e8a96b27ad",
+  "excerpts": {
+    "stem-game-excerpt": "End each scene with three numbered choices. Accept a number or an action in ordinary language, such as looking around, examining an object, or asking for a hint. Wait for a response before continuing.",
+    "tpl-procedure": "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe what players observe after each choice.",
+    "tpl-format": "Write a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing."
+  },
+  "preserved_copy": {
+    "23": {
+      "before": "\n\nComponent 2\nProcedure\nTell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.\n\nWhat should the tool request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn: Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.\n\n\n",
+      "allowed_replacements": [
+        {
+          "before": "Your turn:",
+          "after": "Your turn"
+        },
+        {
+          "before": "\n\nComponent 2\nProcedure\nTell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.\n\nWhat should the tool request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.\n\n\n",
+          "after": "\n\nComponent 2\nWrite Procedures\nTell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.\n\nWhat should the tool request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.\n\n\n",
+          "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+        },
+        {
+          "before": "\n\nComponent 2\nWrite Procedures\nTell the tool what to do, step by step. Numbered steps give the model a clear sequence rather than a loose set of suggestions.\n\nWhat should the tool request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and fill in the placeholders. Think about the sequence that matters for your discipline.\n\n\n",
+          "after": "\n\nComponent 2\nWrite Procedures\nWrite numbered steps for your model to follow.\n\nWhat should your model request before responding?\nWhat should it prioritize?\nHow should it respond to each student input?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and describe steps you use in your discipline.\n\n\n",
+          "reason": "User requested article-free participant language and clearer instructions; substantive sample prompts preserved."
+        },
+        {
+          "before": "What should your model request before responding?",
+          "after": "What information should users provide first?",
+          "reason": "User requested clearer wording and broader scope beyond student input."
+        },
+        {
+          "before": "How should it respond to each student input?",
+          "after": "How should your model respond to different requests?",
+          "reason": "User requested clearer wording and broader scope beyond student input."
+        },
+        {
+          "before": "\n\nComponent 2\nWrite Procedures\nWrite numbered steps for your model to follow.\n\nWhat information should users provide first?\nWhat should it prioritize?\nHow should your model respond to different requests?\n\n\n\n\nCopy\nProcedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it].\n\n\nYour turn Copy this template and describe steps you use in your discipline.\n\n\n",
+          "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Ask the player to choose an experiment.\n2. Establish its historical setting and experimental question.\n3. Present four numbered choices and wait.\n4. Describe observations after the player chooses.",
+          "reason": "User requested one situated STEM use case in place of discipline-specific examples; adapt related exercise instructions."
+        },
+        {
+          "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Ask the player to choose an experiment.\n2. Establish its historical setting and experimental question.\n3. Present four numbered choices and wait.\n4. Describe observations after the player chooses.",
+          "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+          "reason": "User requested tested STEM game, complementary skill, and tool as primary examples."
+        },
+        {
+          "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?What should it prioritize?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+          "after": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?Which steps must happen before your model responds?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+          "reason": "Clarify prerequisites, referents, and verified controls in systematic copy audit."
+        },
+        {
+          "before": "Write ProceduresWrite numbered steps for your model to follow.What information should users provide first?Which steps must happen before your model responds?How should your model respond to different requests?Copy prompt1. Open Prism Laboratory when users ask to play.\n2. Let users enter commands inside the game.\n3. Ask users to send a play record before interpreting their choices.\n4. Check relevant sources before making historical claims.",
+          "after": "Write ProceduresWhat should happen before and after each choice?Copy prompt1. Ask players to choose an experiment.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+          "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+        },
+        {
+          "before": "Write ProceduresWhat should happen before and after each choice?Copy prompt1. Ask players to choose an experiment.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+          "after": "Write ProceduresWhat should happen before and after each choice?Copy prompt1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+          "reason": "Limit 90-minute exercise to one prompt component and keep procedure consistent with its light-and-colour context."
+        },
+        {
+          "before": "4. Describe observations after players choose.",
+          "after": "4. Describe what players observe after each choice.",
+          "reason": "Clarify system-prompt instructions in requested humanizer, no-ai-slop, and milwrite-style pass."
+        }
+      ],
+      "allowed_additions": []
+    },
+    "26": {
+      "before": "\n\nComponent 5\nOutput Format\nOptional, but useful when consistent structure helps students know what to expect from each response.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn: Copy this template and fill in the placeholders. Not every prompt needs an output format section.\n\n\n",
+      "allowed_replacements": [
+        {
+          "before": "Your turn:",
+          "after": "Your turn"
+        },
+        {
+          "before": "\n\nComponent 5\nOutput Format\nOptional, but useful when consistent structure helps students know what to expect from each response.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template and fill in the placeholders. Not every prompt needs an output format section.\n\n\n",
+          "after": "\n\nComponent 5\nSpecify Format\nOptional, but useful when consistent structure helps students know what to expect from each response.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template and fill in the placeholders. Not every prompt needs an output format section.\n\n\n",
+          "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+        },
+        {
+          "before": "\n\nComponent 5\nSpecify Format\nOptional, but useful when consistent structure helps students know what to expect from each response.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template and fill in the placeholders. Not every prompt needs an output format section.\n\n\n",
+          "after": "\n\nComponent 5\nSpecify Format\nSpecify a response format if your task requires consistent structure.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template and fill in the placeholders. Not every prompt needs an output format section.\n\n\n",
+          "reason": "Participant-facing copy review; prompt blocks unchanged."
+        },
+        {
+          "before": "\n\nComponent 5\nSpecify Format\nSpecify a response format if your task requires consistent structure.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template and fill in the placeholders. Not every prompt needs an output format section.\n\n\n",
+          "after": "\n\nComponent 5\nSpecify Format\nSpecify a response format if your task requires consistent structure.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template if your task requires a consistent response format.\n\n\n",
+          "reason": "User requested article-free participant language and clearer instructions; substantive sample prompts preserved."
+        },
+        {
+          "before": "\n\nComponent 5\nSpecify Format\nSpecify a response format if your task requires consistent structure.\n\nShould each response end with a question?\nShould it follow a fixed structure?\nWhat length is appropriate?\n\n\n\n\nCopy\nFormat each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]\n\n\nYour turn Copy this template if your task requires a consistent response format.\n\n\n",
+          "after": "Specify FormatSpecify how each stage should appear.Copy prompt[Brief scene]\n[Observation and what remains uncertain]\n\n1. [Experimental choice]\n2. [Experimental choice]\n3. [Experimental choice]\n4. [Option to revisit an earlier decision]\n\nWait for the player to choose.",
+          "reason": "User requested one situated STEM use case in place of discipline-specific examples; adapt related exercise instructions."
+        },
+        {
+          "before": "Specify FormatSpecify how each stage should appear.Copy prompt[Brief scene]\n[Observation and what remains uncertain]\n\n1. [Experimental choice]\n2. [Experimental choice]\n3. [Experimental choice]\n4. [Option to revisit an earlier decision]\n\nWait for the player to choose.",
+          "after": "Specify FormatSpecify how your model should discuss a submitted record.Copy promptObserved decision: [Command and result]\nPrerequisite: [Condition required for that action]\nSource comparison: [What historical evidence supports]\nQuestion: [One limitation to examine]",
+          "reason": "User requested tested STEM game, complementary skill, and tool as primary examples."
+        },
+        {
+          "before": "Specify FormatSpecify how your model should discuss a submitted record.Copy promptObserved decision: [Command and result]\nPrerequisite: [Condition required for that action]\nSource comparison: [What historical evidence supports]\nQuestion: [One limitation to examine]",
+          "after": "Specify FormatSpecify how scenes and choices should appear.Copy promptWrite a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing.",
+          "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+        }
+      ],
+      "allowed_additions": []
+    }
+  },
+  "stem_prompt_replacements": {
+    "23": {
+      "before": [
+        "Procedure:\n1. Ask the student for [specific input] before responding.\n2. Identify [priority concern] before addressing [secondary concerns].\n3. For each issue, [specific action, e.g. ask a question rather than fix it]."
+      ],
+      "after": [
+        "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe what players observe after each choice."
+      ],
+      "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+    },
+    "26": {
+      "before": [
+        "Format each response as:\nObservation: [what you notice]\nFocus: [one thing to work on]\nNext step: [a specific, actionable suggestion]\nQuestion: [something for the student to consider]"
+      ],
+      "after": [
+        "Write a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing."
+      ],
+      "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+    }
+  }
+}

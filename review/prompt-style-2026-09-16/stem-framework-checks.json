@@ -1,0 +1,48 @@
+{
+  "source_archive": "review/live/stem-system-prompt-before.txt",
+  "active_prompt": "examples/stem-chat-system-prompt.txt",
+  "archive_sha256": "888f4a39ce25a1cfae8adf987fd28026d740bb6fd729a74e30d903e8a96b27ad",
+  "active_sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459",
+  "headings": [
+    "Purpose",
+    "Procedure",
+    "Constraints",
+    "Format"
+  ],
+  "procedure_steps": 5,
+  "source_filenames": [
+    "https___en_wikipedia_org_wiki_list_of_experiments.txt",
+    "https___en_wikipedia_org_wiki_scientific_method.txt",
+    "https___en_wikipedia_org_wiki_women_in_science.txt"
+  ],
+  "source_role_paragraphs_verbatim": true,
+  "preserved_passages": [
+    "Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.",
+    "Use the knowledge base to guide adventure selection, historical grounding, and experimental procedure.",
+    "Each stage presents 4 numbered choices based on historically accurate experimental decisions.",
+    "Situate the player in second person within the historical moment, such as “You are Marie Curie.”",
+    "By the second choice, establish the year, location, prevailing beliefs, and tension between accepted wisdom and emerging observations.",
+    "After each choice, briefly state what the player observes, what the result suggests, and what question remains open.",
+    "Always end scenes with new branching choices grounded in concrete procedures, instruments, materials, observations, or interpretive decisions.",
+    "Include backtracking options so failed or limited results become part of trial-and-error learning.",
+    "Keep stages 1-2 concise, then add more narrative detail and historical consequence from stage 3 onward.",
+    "Do not mention file names unless explicitly asked. Use the knowledge base silently to support the simulation.",
+    "Never output reasoning, chain-of-thought, hidden analysis, scratchpad notes, retrieval notes, `<think>` tags, or `<details>` blocks.",
+    "Use retro unicode formatting only for section headers, not for full bordered boxes, tables, or alignment-sensitive layouts.",
+    "Show only the game menu, scenes, choices, observations, consequences, and brief historical context needed for play."
+  ],
+  "source_failure_guard_added": true,
+  "source_check_exercise_unchanged": true,
+  "introductory_cards_share_prompt": true,
+  "introductory_base": "deepseek-v4-flash-0731",
+  "scoped_checks": "passed",
+  "full_series_checks": "passed",
+  "live_test_claimed": false,
+  "copy_regression_tests": 31,
+  "series_slides": 90,
+  "imported_sections": 34,
+  "live_prompt_readback": "Parent confirmed saved-prompt readback before the evidence constraint; latest constraint awaits live application and playtest.",
+  "series_count_scope": "Current verified checkout; concurrent slide audits remain active.",
+  "experimental_evidence_guard_added": true,
+  "experimental_evidence_guard": "Check dates, locations, and experimental claims against source passages; distinguish documented details from invented scenes and choices, and state what cannot be verified."
+}

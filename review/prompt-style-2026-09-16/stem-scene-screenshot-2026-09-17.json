@@ -1,0 +1,28 @@
+{
+  "source": {
+    "file": "stem-original-play-clean-2026-09-17.png",
+    "source": "https://chat.ailab.gc.cuny.edu/",
+    "source_file": "/private/tmp/stem-original-play-clean-2026-09-17.png",
+    "observed_date": "2026-09-17",
+    "browser": "Firefox",
+    "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Authentic STEM Adventure Games response presents Louis Pasteur in Paris in 1861, a question about spontaneous generation, and four numbered choices about flasks. Model name, CUNY AI Lab icon, source count, and full message box are visible. Capture taken after unrelated notification toast was dismissed, without changing model response. Private chat address is absent.",
+    "browser_zoom_percent": 170,
+    "source_dimensions": [
+      4510,
+      2226
+    ],
+    "output_dimensions": [
+      4510,
+      2226
+    ],
+    "source_sha256": "9613c150f91343e74688014a1852d258f0776fb0f534e8f8099adce24f799a85",
+    "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+    "sha256": "9613c150f91343e74688014a1852d258f0776fb0f534e8f8099adce24f799a85",
+    "selected_model_id": "stem-adventure-games",
+    "selected_model_name": "STEM Adventure Games",
+    "base_model_id": "deepseek-v4-flash-0731",
+    "base_model_name": "DeepSeek V4 Flash 0731"
+  },
+  "before_tag": "<img alt=\"STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.\" class=\"screenshot-img\" style=\"--screenshot-max-width:2025px\" src=\"images/current/stem-chat-play-hidpi-2026-09-16.png\"/>",
+  "after_tag": "<img alt=\"STEM Adventure Games presents Pasteur’s flask experiment with four numbered choices, CUNY AI Lab icon, and message box visible.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4510px\" src=\"images/current/stem-original-play-clean-2026-09-17.png\"/>"
+}

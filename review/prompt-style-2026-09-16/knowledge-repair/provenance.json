@@ -1,0 +1,137 @@
+{
+  "title": "List of experiments",
+  "filename": "https___en_wikipedia_org_wiki_list_of_experiments.txt",
+  "source_url": "https://en.wikipedia.org/wiki/List_of_experiments",
+  "permanent_url": "https://en.wikipedia.org/w/index.php?title=List_of_experiments&oldid=1371680817",
+  "page_id": 318374,
+  "revision_id": 1371680817,
+  "parent_revision_id": 1371680685,
+  "revision_timestamp_utc": "2026-08-27T21:03:19Z",
+  "retrieved_utc": "2026-09-17T04:50:00+00:00",
+  "attribution": "Wikipedia contributors",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "contributor_history_url": "https://en.wikipedia.org/w/index.php?title=List_of_experiments&action=history",
+  "extraction": "Rendered HTML for the exact revision, converted to plain text without paraphrase. Retained visible article text, headings, figure captions, and references. Removed style, metadata, edit controls, citation backlinks, and navigational templates. Added attribution header and reference URLs. All retained text passed a whitespace-insensitive sequential equality check.",
+  "removed_nodes": [
+    {
+      "selector": "script",
+      "count": 0
+    },
+    {
+      "selector": "style",
+      "count": 7
+    },
+    {
+      "selector": "meta",
+      "count": 1
+    },
+    {
+      "selector": ".navbox",
+      "count": 1
+    },
+    {
+      "selector": ".vertical-navbox",
+      "count": 0
+    },
+    {
+      "selector": ".portalbox",
+      "count": 1
+    },
+    {
+      "selector": ".mw-editsection",
+      "count": 0
+    },
+    {
+      "selector": ".mw-cite-backlink",
+      "count": 2
+    }
+  ],
+  "section_names": [
+    "Astronomy",
+    "Biology",
+    "Chemistry",
+    "Economics and political science",
+    "Geology",
+    "Physics",
+    "Psychology",
+    "See also",
+    "References"
+  ],
+  "reference_count": 2,
+  "reference_urls": [
+    {
+      "number": 1,
+      "urls": [
+        "https://www.discovermagazine.com/the-sciences/the-top-10-science-experiments-of-all-time"
+      ]
+    },
+    {
+      "number": 2,
+      "urls": [
+        "https://www.livescience.com/physics-mathematics/32-physics-experiments-that-changed-the-world"
+      ]
+    }
+  ],
+  "bytes_utf8": 18779,
+  "characters": 18709,
+  "sha256": "6bb8223134e2fedc6f4d33c83b36245c975679717f682812e4378c765591bbe5",
+  "article_text_sha256": "4d4aa12c51fcc10eb54863f7d605f6a1e82c5a8c3368a4b602575bf55f4f7fa7",
+  "live_import_status": "Repaired in place and verified by the parent task through Firefox.",
+  "downloaded_inputs": [
+    {
+      "filename": "wikipedia-parse.json",
+      "bytes": 105018,
+      "sha256": "a4d3a74b6037c876538b5b3c6c4ffaaa9a2bc419c4ba14bf6b5260fb88f03ede",
+      "secret_pattern_scan": "no matches",
+      "source": "Public Wikipedia API response; request had no credentials or cookies."
+    },
+    {
+      "filename": "wikipedia-revision.json",
+      "bytes": 574,
+      "sha256": "09cdd721cea35472f4e40eb63d471a4f0fc6ea7198b31d9dd503c5a496170dad",
+      "secret_pattern_scan": "no matches",
+      "source": "Public Wikipedia API response; request had no credentials or cookies."
+    },
+    {
+      "filename": "List_of_experiments.html",
+      "bytes": 77619,
+      "sha256": "84493b18f4a25694adf2b26c7f9badb99d727e9f7d42dd4f504dff570db3ba87",
+      "secret_pattern_scan": "no matches",
+      "source": "Public Wikipedia API response; request had no credentials or cookies."
+    },
+    {
+      "filename": "List_of_experiments.wikitext",
+      "bytes": 22193,
+      "sha256": "260e42aaef2e8155f2f350800e0612e33dc03612990265abc6c8febd36676847",
+      "secret_pattern_scan": "no matches",
+      "source": "Public Wikipedia API response; request had no credentials or cookies."
+    }
+  ],
+  "retained_files": [
+    "https___en_wikipedia_org_wiki_list_of_experiments.txt",
+    "import.html",
+    "provenance.json",
+    "README.md",
+    "source-register-import.html",
+    "source-register.before.md",
+    "source-register.after.md",
+    "advanced-prompt.before.txt",
+    "advanced-prompt.after.txt",
+    "repair-copy.diff"
+  ],
+  "input_retention": "Redundant rendered HTML, wikitext, and API copies removed after extraction verification; their hashes and revision link are retained.",
+  "secret_review": "Public article and revision endpoints only. No authentication or cookie headers were sent or recorded; downloaded contents contain no credential-pattern matches.",
+  "live_readback": {
+    "confirmation_date": "2026-09-17",
+    "method": "Edited original existing Knowledge file, saved, closed, and reopened in Firefox. Parent task compared complete persisted text against the prepared import after trimming surrounding whitespace.",
+    "filename_preserved": true,
+    "prepared_characters": 18709,
+    "trimmed_characters": 18708,
+    "full_text_equal_after_trim": true,
+    "expected_trimmed_sha256": "534a3ee0017bda2571958a9f21f04d9b7c3655b113b7a5ed5d5ba06ddca0b161",
+    "revision_header_verified": 1371680817,
+    "rate_limit_error_absent": true,
+    "retrieval_behavior_verified_by_this_record": false
+  }
+}

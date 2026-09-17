@@ -1,0 +1,42 @@
+{
+  "source": {
+    "file": "stem-original-framework-2026-09-17.png",
+    "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+    "source_file": "/private/tmp/stem-original-framework-2026-09-17.png",
+    "observed_date": "2026-09-17",
+    "browser": "Firefox",
+    "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Saved STEM Adventure Games editor shows current CUNY AI Lab icon, DeepSeek V4 Flash 0731 base model, description, Purpose heading, original game purpose, and roles for three Wikipedia source documents. Lower Procedure, Constraints, and Format sections continue below visible viewport.",
+    "browser_zoom_percent": 170,
+    "source_dimensions": [
+      4510,
+      2226
+    ],
+    "output_dimensions": [
+      4510,
+      2226
+    ],
+    "source_sha256": "097da08b799cf78b9a7c234c2db03f456096d4e5a4f915d5639ed2cea7882c2b",
+    "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+    "sha256": "097da08b799cf78b9a7c234c2db03f456096d4e5a4f915d5639ed2cea7882c2b",
+    "selected_model_id": "stem-adventure-games",
+    "selected_model_name": "STEM Adventure Games",
+    "base_model_id": "deepseek-v4-flash-0731",
+    "base_model_name": "DeepSeek V4 Flash 0731"
+  },
+  "changes": [
+    {
+      "route": "index.html",
+      "before_tag": "<img alt=\"STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.\" class=\"screenshot-img\" style=\"--screenshot-max-width:2080px\" src=\"images/current/stem-chat-model-hidpi-2026-09-16.svg\"/>",
+      "after_tag": "<img alt=\"STEM Adventure Games model editor with CUNY AI Lab icon, DeepSeek V4 Flash 0731 as Base Model, and System Prompt showing Purpose and Wikipedia source instructions.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4510px\" src=\"images/current/stem-original-framework-2026-09-17.png\"/>",
+      "before_alt": "STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.",
+      "after_alt": "STEM Adventure Games model editor with CUNY AI Lab icon, DeepSeek V4 Flash 0731 as Base Model, and System Prompt showing Purpose and Wikipedia source instructions."
+    },
+    {
+      "route": "knowledge/index.html",
+      "before_tag": "<img alt=\"STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.\" class=\"screenshot-img\" style=\"--screenshot-max-width:2080px\" src=\"../images/current/stem-chat-model-hidpi-2026-09-16.svg\"/>",
+      "after_tag": "<img alt=\"STEM Adventure Games model editor with CUNY AI Lab icon, DeepSeek V4 Flash 0731 as Base Model, and System Prompt showing Purpose and Wikipedia source instructions.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4510px\" src=\"../images/current/stem-original-framework-2026-09-17.png\"/>",
+      "before_alt": "STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.",
+      "after_alt": "STEM Adventure Games model editor with CUNY AI Lab icon, DeepSeek V4 Flash 0731 as Base Model, and System Prompt showing Purpose and Wikipedia source instructions."
+    }
+  ]
+}

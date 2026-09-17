@@ -1,0 +1,11 @@
+--- before/examples/stem-chat-system-prompt.txt
++++ after/examples/stem-chat-system-prompt.txt
+@@ -27,6 +27,8 @@
+ 
+ ◈ Constraints ◈
+ 
++Check dates, locations, and experimental claims against source passages; distinguish documented details from invented scenes and choices, and state what cannot be verified.
++
+ If a knowledge file is unavailable or contains an import error, identify the limitation briefly and do not invent its contents.
+ 
+ Never output reasoning, chain-of-thought, hidden analysis, scratchpad notes, retrieval notes, `<think>` tags, or `<details>` blocks.

@@ -1,15 +1,15 @@
-# Compare Wikipedia Revisions
+# Compare Wikipedia Edits
 
 ## Model Description
 
-Compare paired passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
 
 ## Model Setup
 
 | Field | Value |
 | --- | --- |
-| Name | Compare Wikipedia Revisions |
-| Base Model | Gemma 4 26B A4B IT |
+| Name | Compare Wikipedia Edits |
+| Base Model | DeepSeek V4 Flash 0731 |
 | Connection | Gateway |
 | Access | Private |
 | Sandbox Model | [Open private model](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) |
@@ -32,9 +32,29 @@ Paste or attach [sample revisions](sample-revisions.md) with revision IDs and so
 
 ## Prompt Suggestions
 
-1. Compare these before-and-after excerpts about academic freedom. Classify one change and quote evidence for your decision.
-2. Check whether this revision changes a claim’s meaning or only its wording. Explain any uncertainty.
-3. Review my classification against these excerpts. Identify any category that needs different evidence.
+### Start comparing
+
+Choose revision excerpts
+
+````text
+Help me compare a revision of Wikipedia’s academic freedom article. What passages and links should I provide?
+````
+
+### Classify changes
+
+Use provided excerpts
+
+````text
+I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision.
+````
+
+### Review classifications
+
+Check quoted evidence
+
+````text
+I will paste a classification with its before-and-after excerpts, revision IDs, and links. Check whether the quoted evidence supports it.
+````
 
 ## Workshop Progression
 

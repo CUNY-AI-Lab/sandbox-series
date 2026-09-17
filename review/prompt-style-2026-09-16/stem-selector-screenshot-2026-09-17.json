@@ -1,0 +1,26 @@
+{
+  "source": {
+    "file": "stem-original-selector-2026-09-17.png",
+    "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games",
+    "source_file": "/private/tmp/stem-original-selector-2026-09-17.png",
+    "observed_date": "2026-09-17",
+    "browser": "Firefox",
+    "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Saved STEM Adventure Games selected in model selector filtered by STEM Adventure. Current CUNY AI Lab icon, game description, Choose adventures and Explore light starters, full message box, and page logo visible. No message submitted.",
+    "browser_zoom_percent": 170,
+    "source_dimensions": [
+      4510,
+      2226
+    ],
+    "output_dimensions": [
+      4510,
+      2226
+    ],
+    "source_sha256": "98d08df01f4f8ab7d0c5f06f50af3167a997a6519fe995758eaebaaad964046d",
+    "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+    "sha256": "98d08df01f4f8ab7d0c5f06f50af3167a997a6519fe995758eaebaaad964046d",
+    "selected_model_id": "stem-adventure-games",
+    "selected_model_name": "STEM Adventure Games"
+  },
+  "before_tag": "<img alt=\"Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4089px\" src=\"images/current/stem-selector-2026-09-14.png\"/>",
+  "after_tag": "<img alt=\"Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo, message box, and starter prompts visible.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4510px\" src=\"images/current/stem-original-selector-2026-09-17.png\"/>"
+}

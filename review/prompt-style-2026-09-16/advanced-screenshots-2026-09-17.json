@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Enable Tools",
+    "old": "integrations-advanced-hidpi-2026-09-16.svg",
+    "new": "integrations-advanced-2026-09-17.png",
+    "alt": "STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.",
+    "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced",
+    "zoom": 170,
+    "capture_detail": "Advanced model home with current CUNY AI Lab model icon and description. Integrations menu is open, showing Tools, Skills, and Web Search. Message box shows one tool and one skill enabled.",
+    "old_alt": "STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.",
+    "source_path": "/private/tmp/integrations-advanced-2026-09-17.png",
+    "sha256": "c7ed58138432844d378d59f41bbf37a061604d8771f6e8db03771c0f9440182b",
+    "dimensions": [
+      4510,
+      2226
+    ],
+    "before_tag": "<img alt=\"STEM Adventure Games — Advanced with full message box and Tools menu open; white outlines and arrows identify Integrations and enabled STEM Adventure tool.\" class=\"screenshot-img\" style=\"--screenshot-max-width:1680px\" src=\"../images/current/integrations-advanced-hidpi-2026-09-16.svg\"/>",
+    "after_tag": "<img alt=\"STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4510px\" src=\"../images/current/integrations-advanced-2026-09-17.png\"/>"
+  },
+  {
+    "title": "Inspect Game Rules",
+    "old": "stem-game-2026-09-14.png",
+    "new": "stem-advanced-clean-2026-09-17.png",
+    "alt": "Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.",
+    "source": "https://chat.ailab.gc.cuny.edu/",
+    "zoom": 120,
+    "capture_detail": "Advanced model invoked render_stem_adventure and displays actual embedded Prism Laboratory. Game is restarted at Study with zero moves, one command box, and chat message box visible. Private chat address is absent.",
+    "old_alt": "Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.",
+    "source_path": "/private/tmp/stem-advanced-clean-2026-09-17.png",
+    "sha256": "2688192737fe24f3ac6bdc4b85d114866625543a377648004d7c402fdc3e83bb",
+    "dimensions": [
+      4507,
+      2222
+    ],
+    "before_tag": "<img alt=\"Prism Laboratory embedded in Sandbox with Unicode borders, room and move status, game transcript, and one command line.\" class=\"screenshot-img\" style=\"--screenshot-max-width:3950px\" src=\"../images/current/stem-game-2026-09-14.png\"/>",
+    "after_tag": "<img alt=\"Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4507px\" src=\"../images/current/stem-advanced-clean-2026-09-17.png\"/>"
+  },
+  {
+    "title": "Clone Custom Models",
+    "old": "model-clone-advanced-hidpi-2026-09-16.svg",
+    "new": "model-clone-advanced-2026-09-17.png",
+    "alt": "Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.",
+    "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+    "zoom": 170,
+    "capture_detail": "Workspace Models filtered to Advanced model, showing current CUNY AI Lab icon and description. More menu is open with Clone visible; no clone created in this capture.",
+    "old_alt": "Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.",
+    "source_path": "/private/tmp/model-clone-advanced-2026-09-17.png",
+    "sha256": "9ee6f97a9639e0e9f1b595e2065297141a99ca52435c77fe38f524f0574b3d23",
+    "dimensions": [
+      4510,
+      2226
+    ],
+    "before_tag": "<img alt=\"Workspace Models filtered to STEM Adventure Games — Advanced with More menu open; white outline and arrow identify Clone.\" class=\"screenshot-img\" style=\"--screenshot-max-width:2075px\" src=\"../images/current/model-clone-advanced-hidpi-2026-09-16.svg\"/>",
+    "after_tag": "<img alt=\"Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.\" class=\"screenshot-img\" style=\"--screenshot-max-width:4510px\" src=\"../images/current/model-clone-advanced-2026-09-17.png\"/>"
+  }
+]

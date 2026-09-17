@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "21": {
+      "html": "<section aria-label=\"Slide 30: Define Prompt Components\" aria-roledescription=\"slide\" class=\"slide layout-content\" data-group=\"Draft\" data-source-slide=\"21\" data-title=\"Define Prompt Components\" role=\"group\" tabindex=\"-1\"><div class=\"slide-inner\"><h2>Define Prompt Components</h2><p>Choose one component to change.</p><ul><li><strong>Context</strong> — Experiment, historical setting, and intended users.</li><li><strong>Procedure</strong> — Steps your model should follow.</li><li><strong>Constraints</strong> — Boundaries and missing information.</li><li><strong>Tone and format</strong> — Language, length, and presentation.</li></ul></div></section>",
+      "copy": "Define Prompt ComponentsChoose one component to change.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation."
+    },
+    "22": {
+      "html": "<section aria-label=\"Slide 31: Define Context\" aria-roledescription=\"slide\" class=\"slide layout-content\" data-group=\"Draft\" data-source-slide=\"22\" data-title=\"Define Context\" role=\"group\" tabindex=\"-1\"><div class=\"slide-inner\"><h2>Define Context</h2><p>Describe what your model should help users do.</p><ul><li>Who will use this model?</li><li>Which experiment or research question will they explore?</li><li>What prior knowledge can you assume?</li></ul><div class=\"prompt-container\"><button class=\"copy-btn\" data-copy=\"tpl-context\">Copy prompt</button><pre class=\"prompt-block\" id=\"tpl-context\">Guide a short text adventure in which players explore how a prism changes a beam of sunlight.</pre></div></div></section>",
+      "copy": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide a short text adventure in which players explore how a prism changes a beam of sunlight."
+    },
+    "25": {
+      "html": "<section aria-label=\"Slide 34: Set Tone\" aria-roledescription=\"slide\" class=\"slide layout-content\" data-group=\"Draft\" data-source-slide=\"25\" data-title=\"Set Tone\" role=\"group\" tabindex=\"-1\"><div class=\"slide-inner\"><h2>Set Tone</h2><p>Describe how your model should address players.</p><div class=\"prompt-container\"><button class=\"copy-btn\" data-copy=\"tpl-tone\">Copy prompt</button><pre class=\"prompt-block\" id=\"tpl-tone\">Address the player as “you.”\nUse concise language for scenes and choices.\nExplain unfamiliar scientific terms when they first appear.</pre></div><p>Which terms need explanation for your intended users?</p></div></section>",
+      "copy": "Set ToneDescribe how your model should address players.Copy promptAddress the player as “you.”\nUse concise language for scenes and choices.\nExplain unfamiliar scientific terms when they first appear.Which terms need explanation for your intended users?"
+    }
+  },
+  "examples_intro": "Choose a prompt and adapt its purpose, procedure, and constraints to your teaching or research task.",
+  "custody": {
+    "21": {
+      "before": "\nStructure\nCore Components of a System Prompt\nEach system prompt is built from modular components. We’ll draft yours one piece at a time.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should the tool follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+      "allowed_replacements": [
+        {
+          "before": "\nStructure\nCore Components of a System Prompt\nEach system prompt is built from modular components. We’ll draft yours one piece at a time.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should the tool follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "after": "\nStructure\nDefine Prompt Components\nEach system prompt is built from modular components. We’ll draft yours one piece at a time.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should the tool follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+        },
+        {
+          "before": "\nStructure\nDefine Prompt Components\nEach system prompt is built from modular components. We’ll draft yours one piece at a time.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should the tool follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "after": "\nStructure\nDefine Prompt Components\nDraft a system prompt using these components.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should the tool follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "reason": "Participant-facing copy review; prompt blocks unchanged."
+        },
+        {
+          "before": "\nStructure\nDefine Prompt Components\nDraft a system prompt using these components.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should the tool follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "after": "\nStructure\nDefine Prompt Components\nDraft a system prompt using these components.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should your model follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "reason": "User requested article-free participant language and clearer instructions; substantive sample prompts preserved."
+        },
+        {
+          "before": "\nStructure\nDefine Prompt Components\nDraft a system prompt using these components.\n\nContext & Problem — What course, what students, what learning challenge?\nProcedure — What steps should your model follow?\nConstraints — What should it refuse to do, and how should it redirect?\nTone — What register and affect should it use with your students?\nOutput Format — How should it structure its responses?\n\n",
+          "after": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Scientific experiment, historical setting, and intended users.Procedure — Actions your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and numbered choices.",
+          "reason": "User requested one situated STEM use case in place of discipline-specific examples; adapt related exercise instructions."
+        },
+        {
+          "before": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Scientific experiment, historical setting, and intended users.Procedure — Actions your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and numbered choices.",
+          "after": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation.",
+          "reason": "User requested tested STEM game, complementary skill, and tool as primary examples."
+        },
+        {
+          "before": "Define Prompt ComponentsAdapt STEM Adventure Games through these components.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation.",
+          "after": "Define Prompt ComponentsChoose one component to change.Context — Experiment, historical setting, and intended users.Procedure — Steps your model should follow.Constraints — Boundaries and missing information.Tone and format — Language, length, and presentation.",
+          "reason": "Limit 90-minute exercise to one prompt component and keep procedure consistent with its light-and-colour context."
+        }
+      ],
+      "allowed_additions": []
+    },
+    "22": {
+      "before": "\n\nComponent 1\nContext & Problem\nName the tool, the course, the students, and the specific learning challenge. Everything else follows from this.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn: Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.\n\n\n",
+      "allowed_replacements": [
+        {
+          "before": "Your turn:",
+          "after": "Your turn"
+        },
+        {
+          "before": "\n\nComponent 1\nContext & Problem\nName the tool, the course, the students, and the specific learning challenge. Everything else follows from this.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.\n\n\n",
+          "after": "\n\nComponent 1\nDefine Context\nName the tool, the course, the students, and the specific learning challenge. Everything else follows from this.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.\n\n\n",
+          "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+        },
+        {
+          "before": "\n\nComponent 1\nDefine Context\nName the tool, the course, the students, and the specific learning challenge. Everything else follows from this.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.\n\n\n",
+          "after": "\n\nComponent 1\nDefine Context\nName the tool, the course, the students, and the specific learning challenge.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.\n\n\n",
+          "reason": "Participant-facing copy review; prompt blocks unchanged."
+        },
+        {
+          "before": "\n\nComponent 1\nDefine Context\nName the tool, the course, the students, and the specific learning challenge.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template and fill in the placeholders. Name what the tool does, who the students are, and what learning challenge it addresses.\n\n\n",
+          "after": "\n\nComponent 1\nDefine Context\nDescribe your course, students, and learning objectives.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template. Describe what your model should help students do.\n\n\n",
+          "reason": "User requested article-free participant language and clearer instructions; substantive sample prompts preserved."
+        },
+        {
+          "before": "\n\nComponent 1\nDefine Context\nDescribe your course, students, and learning objectives.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template. Describe what your model should help students do.\n\n\n",
+          "after": "\n\nComponent 1\nDefine Context\nDescribe your course, students, and learning challenge.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template. Describe what your model should help students do.\n\n\n",
+          "reason": "Second prose review for clear referents and direct instructions."
+        },
+        {
+          "before": "\n\nComponent 1\nDefine Context\nDescribe your course, students, and learning challenge.\n\nWhat kind of tool is this?\nWho are your students?\nWhat learning challenge does it address?\n\n\n\n\nCopy\nYou are a [tool type] for [course name].\nStudents are [relevant context].\n\nThe core problem: [specific learning challenge].\n\n\nYour turn Copy this template. Describe what your model should help students do.\n\n\n",
+          "after": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide an interactive adventure about [experiment].\nUsers will explore [question] through [available choices or methods].\nUse [source material] for historical context.",
+          "reason": "User requested one situated STEM use case in place of discipline-specific examples; adapt related exercise instructions."
+        },
+        {
+          "before": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide an interactive adventure about [experiment].\nUsers will explore [question] through [available choices or methods].\nUse [source material] for historical context.",
+          "after": "Define ContextDescribe what your model should help users do.Who will use this model?Which experiment or research question will they explore?What prior knowledge can you assume?Copy promptGuide a short text adventure about light and colour.\nHelp players explore how a prism changes a beam of sunlight.",
+          "reason": "User requested accessible plain-chat adventures in Workshops 1 and 2, reserving tools, skills, and advanced game configuration for Workshop 3; simplify slide layout and copy."
+        },
+        {
+          "before": "Guide a short text adventure about light and colour.\nHelp players explore how a prism changes a beam of sunlight.",
+          "after": "Guide a short text adventure in which players explore how a prism changes a beam of sunlight.",
+          "reason": "Clarify system-prompt instructions in requested humanizer, no-ai-slop, and milwrite-style pass."
+        }
+      ],
+      "allowed_additions": []
+    },
+    "25": {
+      "before": "\n\nComponent 4\nTone\nOne sentence on tone shapes how the tool communicates with every student it encounters.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nAre there phrases that model the right affect?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn: Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?\n\n\n",
+      "allowed_replacements": [
+        {
+          "before": "Your turn:",
+          "after": "Your turn"
+        },
+        {
+          "before": "\n\nComponent 4\nTone\nOne sentence on tone shapes how the tool communicates with every student it encounters.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nAre there phrases that model the right affect?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?\n\n\n",
+          "after": "\n\nComponent 4\nSet Tone\nOne sentence on tone shapes how the tool communicates with every student it encounters.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nAre there phrases that model the right affect?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?\n\n\n",
+          "reason": "User requested short headings without articles or gerunds; original prompt text remains unchanged."
+        },
+        {
+          "before": "\n\nComponent 4\nSet Tone\nOne sentence on tone shapes how the tool communicates with every student it encounters.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nAre there phrases that model the right affect?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?\n\n\n",
+          "after": "\n\nComponent 4\nSet Tone\nDescribe how the model should address your students.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nAre there phrases that model the right affect?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?\n\n\n",
+          "reason": "Participant-facing copy review; prompt blocks unchanged."
+        },
+        {
+          "before": "\n\nComponent 4\nSet Tone\nDescribe how the model should address your students.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nAre there phrases that model the right affect?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template and fill in the placeholders. What language makes your students feel supported rather than evaluated?\n\n\n",
+          "after": "\n\nComponent 4\nSet Tone\nDescribe how your model should address students.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nWhich phrases demonstrate your intended tone?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template. What language helps your students feel supported?\n\n\n",
+          "reason": "User requested article-free participant language and clearer instructions; substantive sample prompts preserved."
+        },
+        {
+          "before": "\n\nComponent 4\nSet Tone\nDescribe how your model should address students.\n\nWhat register fits your students?\nShould it feel warm, direct, encouraging?\nWhich phrases demonstrate your intended tone?\n\n\n\n\nCopy\nTone: [Adjective and adjective]. Use phrases like \"[example phrase]\" and \"[example phrase].\"\n\n\nYour turn Copy this template. What language helps your students feel supported?\n\n\n",
+          "after": "Set ToneDescribe how your model should address players.Copy promptAddress the player as “you.”\nUse concise language for scenes and choices.\nExplain unfamiliar scientific terms when they first appear.Which terms need explanation for your intended users?",
+          "reason": "User requested one situated STEM use case in place of discipline-specific examples; adapt related exercise instructions."
+        }
+      ],
+      "allowed_additions": []
+    }
+  },
+  "retired_sections": {
+    "reason": "User requested removal of all discipline-specific example progressions and replacement with STEM Adventure Games across all three workshops.",
+    "prompts": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "imported": [
+      "knowledge:12",
+      "knowledge:13",
+      "knowledge:14",
+      "knowledge:15",
+      "knowledge:16",
+      "knowledge:17",
+      "knowledge:18",
+      "knowledge:19",
+      "knowledge:20",
+      "knowledge:21",
+      "knowledge:22",
+      "knowledge:23",
+      "skills:10",
+      "skills:11",
+      "skills:12",
+      "skills:13",
+      "skills:14",
+      "skills:15",
+      "skills:16",
+      "skills:17",
+      "skills:18"
+    ]
+  },
+  "slide_count": 42
+}

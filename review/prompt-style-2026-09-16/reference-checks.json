@@ -1,0 +1,109 @@
+{
+  "manifest_sha256": "39b19fc35bf5ebf63595ca26d1d2d77997699099bcf2c0c773d71b198a52e7be",
+  "changed_prompts": [
+    {
+      "file": "examples/stem-chat-system-prompt.txt",
+      "models": [
+        "STEM Adventure Games",
+        "STEM Adventure Games — Sources"
+      ],
+      "before_sha256": "888f4a39ce25a1cfae8adf987fd28026d740bb6fd729a74e30d903e8a96b27ad",
+      "after_sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459"
+    },
+    {
+      "file": "examples/stem-system-prompt.txt",
+      "models": [
+        "STEM Adventure Games — Advanced"
+      ],
+      "before_sha256": "c599f4007dde4e6e974a58f89558c9fd036754eb9abd8be5c22bf969ba366b7a",
+      "after_sha256": "52926b8016c2a6a46e5b52d3e1d38b064184ac5338318251265174f7e194a489"
+    },
+    {
+      "file": "examples/creators/skill-creator-system-prompt.txt",
+      "models": [
+        "Kale Skill Builder"
+      ],
+      "before_sha256": "2a4043b49e11f50ea465f155fa16fb491f1e2350482636bd3427a3a1e26ff250",
+      "after_sha256": "0989642225f1ca34ba604f8304d8e57ebab1c71730ec04e990a8d06727358daa"
+    },
+    {
+      "file": "examples/creators/tool-creator-system-prompt.txt",
+      "models": [
+        "CAIL Tool Creator"
+      ],
+      "before_sha256": "ef26bc75d6dfb25cf46f4f733b1d2bc8dc98cc1e231c7c234b3ab512b665a7f9",
+      "after_sha256": "9da1dd7e6b3833cbe9b46eaa4982f7f643071a9e31668b060547b8bb90f29b4a"
+    },
+    {
+      "file": "examples/research/system-prompt.txt",
+      "models": [
+        "Compare Wikipedia Edits"
+      ],
+      "before_sha256": "340712bca05cd75e1160c16a1b03a7e529d6ad6eb6f2410bc3d808fff9788b7b",
+      "after_sha256": "d0dfd58d664c2771ef1229be5f70d35bcba3dcb766adeffeda0f473b899ea1ef"
+    }
+  ],
+  "changed_workshop_passages": [
+    {
+      "file": "index.html",
+      "source_slide": "22",
+      "prompt_id": "tpl-purpose",
+      "before": "Guide a short text adventure about light and colour.\nHelp players explore how a prism changes a beam of sunlight.",
+      "after": "Guide a short text adventure in which players explore how a prism changes a beam of sunlight."
+    },
+    {
+      "file": "index.html",
+      "source_slide": "23",
+      "prompt_id": "tpl-procedure",
+      "before": "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer three numbered choices and wait.\n4. Describe observations after players choose.",
+      "after": "1. Introduce an experiment about light and colour.\n2. Describe an opening scene and a question to investigate.\n3. Offer four numbered choices and wait.\n4. Describe what players observe after each choice."
+    },
+    {
+      "file": "index.html",
+      "source_slide": "24",
+      "prompt_id": "tpl-constraints",
+      "before": "Do not invent historical details when sources are missing.\nDistinguish documented events from choices created for the game.\nIf a source is unavailable, explain what cannot be checked.",
+      "after": "Do not invent historical details when sources are missing.\nDistinguish documented events from invented scenes and choices.\nIf a source is unavailable, explain what cannot be checked."
+    },
+    {
+      "file": "index.html",
+      "location": "Workshop Agenda note",
+      "before": "Before attending, request individual access and sign into Sandbox.",
+      "after": "Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access)."
+    },
+    {
+      "file": "index.html",
+      "prompt_id": "tpl-tone",
+      "before": "Address the player as “you.”\nUse concise language for scenes and choices.\nExplain unfamiliar scientific terms when they first appear.",
+      "after": "",
+      "removed": true
+    },
+    {
+      "file": "index.html",
+      "prompt_id": "tpl-format",
+      "before": "Write a short scene followed by three numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing.",
+      "after": "Write a short scene followed by four numbered choices.\nUse simple Unicode headings.\nWait for a reply before continuing.",
+      "removed": false
+    }
+  ],
+  "unchanged_reference_prompts": [
+    {
+      "id": "assumptions-copy",
+      "file": "examples/assumption-check.txt",
+      "sha256": "f3ffbbba1dfd081aa78f9e38b1067e07f28da250f6ed9eda1d0454224048fd12",
+      "unchanged": true
+    },
+    {
+      "id": "stem-sources-copy",
+      "file": "examples/source-check.txt",
+      "sha256": "5b1d7ba6f7cc995bfd0f8388333abd2e75b6bbe5a146bef0ea651e678f014c21",
+      "unchanged": true
+    }
+  ],
+  "reference_blocks_match_source_files": true,
+  "research_model_settings_preserved": true,
+  "model_count": 6,
+  "unique_model_prompt_files": 5,
+  "catalog_contains_full_prompt_for_each_model": true,
+  "catalog_logo": "images/cail-logo.png"
+}

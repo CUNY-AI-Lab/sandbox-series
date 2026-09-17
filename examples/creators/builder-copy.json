@@ -2,20 +2,37 @@
   "skill": {
     "id": "cail-sandbox-skill-builder",
     "name": "Kale Skill Builder",
-    "description": "Create and test reusable skills for CAIL Sandbox.",
+    "description": "Create, revise, and test reusable skills for CAIL Sandbox.",
     "prompt_file": "skill-creator-system-prompt.txt",
     "starters": [
-      {"title": "Create a skill", "subtitle": "for a recurring task", "content": "Help me create a reusable skill. I will describe my task, required inputs, and expected output."},
-      {"title": "Revise a skill", "subtitle": "using observed results", "content": "Help me revise an existing skill. I will provide its instructions, a test request, and the output that needs to change."}
+      {
+        "title": "Create a skill",
+        "subtitle": "for a recurring task",
+        "content": "Help me create a reusable skill. I will describe my task, required inputs, and expected output."
+      },
+      {
+        "title": "Revise a skill",
+        "subtitle": "using observed results",
+        "content": "Help me revise an existing skill. I will provide its instructions, a test request, and the output that needs to change."
+      }
     ]
   },
   "tool": {
     "id": "cail-sandbox-tool-creator",
-    "name": "Tool Creator",
-    "description": "Create and test Python tools for CAIL Sandbox.",
+    "name": "CAIL Tool Creator",
+    "description": "Create, revise, and test Python tools for CAIL Sandbox.",
     "prompt_file": "tool-creator-system-prompt.txt",
     "starters": [
-      {"title": "Create a tool", "subtitle": "for a specific task", "content": "Help me create a Python tool for Open WebUI. I will describe its inputs, expected output, and any required data access."}
+      {
+        "title": "Create a tool",
+        "subtitle": "for a specific task",
+        "content": "Help me create a Python tool for Open WebUI. I will describe its inputs, expected output, and any required data access."
+      },
+      {
+        "title": "Revise a tool",
+        "subtitle": "using observed results",
+        "content": "Help me revise an existing Python tool for Open WebUI. I will provide its code, a test input, and the result that needs to change."
+      }
     ]
   }
 }

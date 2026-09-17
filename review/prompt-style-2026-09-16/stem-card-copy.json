@@ -1,0 +1,24 @@
+{
+  "stem-adventure-games": {
+    "description": "Explore scientific experiments through a text adventure with numbered choices.",
+    "starter_prompts": [
+      "Show me the adventure menu.",
+      "Start an adventure about Newton’s experiments with light and colour."
+    ]
+  },
+  "stem-adventure-games-sources": {
+    "description": "Explore scientific experiments through a text adventure with numbered choices.",
+    "starter_prompts": [
+      "Show me the adventure menu.",
+      "Start an adventure about Newton’s experiments with light and colour."
+    ]
+  },
+  "stem-adventure-games-advanced": {
+    "description": "Play Prism Laboratory, then review or change its experimental procedures.",
+    "starter_prompts": [
+      "Start Prism Laboratory.",
+      "How can I save my progress?",
+      "Help me change an experiment and test whether it works."
+    ]
+  }
+}

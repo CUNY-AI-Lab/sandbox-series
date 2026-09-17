@@ -1,0 +1,319 @@
+{
+  "source": "https://tools.ailab.gc.cuny.edu/v1/catalog",
+  "checked_on": "2026-09-16",
+  "models": [
+    {
+      "id": "gemma-3-4b-it",
+      "object": "model",
+      "name": "Gemma 3 4B IT",
+      "task": "Text Generation",
+      "recommended": false,
+      "tier": "advanced",
+      "order": 15,
+      "status": "active",
+      "modality": "text",
+      "provider": "bedrock-mantle",
+      "upstream_model": "gemma-3-4b-it",
+      "pricing_known": "catalog",
+      "streaming": true,
+      "sunset": null,
+      "capabilities": [
+        "text-generation",
+        "vision"
+      ],
+      "context_length": 131072,
+      "registry_url": null,
+      "pricing": {
+        "currency": "USD",
+        "unit": "million_tokens",
+        "input": 0.04,
+        "output": 0.08,
+        "basis": "standard"
+      },
+      "description": "Open multimodal Gemma instruction model for efficient text generation and image understanding",
+      "model_name": "Gemma 3 4B IT",
+      "specifications": {
+        "checked_at": "2026-09-16T09:45:33.400Z",
+        "model_url": "https://huggingface.co/google/gemma-3-4b-it",
+        "weights": {
+          "available": true,
+          "source_url": "https://huggingface.co/google/gemma-3-4b-it/tree/093f9f388b31de276ce2de164bdc2081324b9767"
+        },
+        "license": {
+          "name": "gemma",
+          "url": "https://huggingface.co/google/gemma-3-4b-it/blob/093f9f388b31de276ce2de164bdc2081324b9767/README.md",
+          "source_url": "https://huggingface.co/google/gemma-3-4b-it/blob/093f9f388b31de276ce2de164bdc2081324b9767/README.md"
+        },
+        "architecture": {
+          "name": "Gemma3ForConditionalGeneration",
+          "source_url": "https://huggingface.co/google/gemma-3-4b-it/blob/093f9f388b31de276ce2de164bdc2081324b9767/config.json"
+        },
+        "size": {
+          "label": "4B",
+          "basis": "advertised",
+          "source_url": "https://tools.ailab.gc.cuny.edu/v1/catalog"
+        }
+      },
+      "model_group": "google/gemma-3-4b-it"
+    },
+    {
+      "id": "gemma-3-12b-it",
+      "object": "model",
+      "name": "Gemma 3 12B IT",
+      "task": "Text Generation",
+      "recommended": false,
+      "tier": "advanced",
+      "order": 13,
+      "status": "active",
+      "modality": "text",
+      "provider": "bedrock-mantle",
+      "upstream_model": "gemma-3-12b-it",
+      "pricing_known": "catalog",
+      "streaming": true,
+      "sunset": null,
+      "capabilities": [
+        "text-generation",
+        "vision",
+        "structured-output"
+      ],
+      "context_length": 131072,
+      "registry_url": null,
+      "pricing": {
+        "currency": "USD",
+        "unit": "million_tokens",
+        "input": 0.09,
+        "output": 0.29,
+        "basis": "standard"
+      },
+      "description": "Open multimodal Gemma instruction model for multilingual text generation and image understanding",
+      "model_name": "Gemma 3 12B IT",
+      "specifications": {
+        "checked_at": "2026-09-16T09:45:33.400Z",
+        "model_url": "https://huggingface.co/google/gemma-3-12b-it",
+        "weights": {
+          "available": true,
+          "source_url": "https://huggingface.co/google/gemma-3-12b-it/tree/96b6f1eccf38110c56df3a15bffe176da04bfd80"
+        },
+        "license": {
+          "name": "gemma",
+          "url": "https://huggingface.co/google/gemma-3-12b-it/blob/96b6f1eccf38110c56df3a15bffe176da04bfd80/README.md",
+          "source_url": "https://huggingface.co/google/gemma-3-12b-it/blob/96b6f1eccf38110c56df3a15bffe176da04bfd80/README.md"
+        },
+        "architecture": {
+          "name": "Gemma3ForConditionalGeneration",
+          "source_url": "https://huggingface.co/google/gemma-3-12b-it/blob/96b6f1eccf38110c56df3a15bffe176da04bfd80/config.json"
+        },
+        "size": {
+          "label": "12B",
+          "basis": "advertised",
+          "source_url": "https://tools.ailab.gc.cuny.edu/v1/catalog"
+        }
+      },
+      "model_group": "google/gemma-3-12b-it"
+    },
+    {
+      "id": "deepseek-v4-flash-0731",
+      "object": "model",
+      "name": "DeepSeek V4 Flash 0731",
+      "task": "Text Generation",
+      "recommended": true,
+      "tier": "recommended",
+      "order": 1,
+      "status": "active",
+      "modality": "text",
+      "provider": "workers-ai",
+      "upstream_model": "deepseek-v4-flash-0731",
+      "pricing_known": "catalog",
+      "streaming": true,
+      "sunset": null,
+      "capabilities": [
+        "text-generation",
+        "function-calling",
+        "reasoning"
+      ],
+      "context_length": 1310720,
+      "registry_url": null,
+      "pricing": {
+        "currency": "USD",
+        "unit": "million_tokens",
+        "input": 0.44,
+        "output": 1.32,
+        "basis": "standard"
+      },
+      "description": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. ",
+      "model_name": "DeepSeek V4 Flash 0731",
+      "specifications": {
+        "checked_at": "2026-09-16T09:45:33.400Z",
+        "model_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+        "weights": {
+          "available": true,
+          "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/tree/7872f01b1d1fe23eabc4c98b48bffcef5a386062"
+        },
+        "license": {
+          "name": "mit",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/blob/7872f01b1d1fe23eabc4c98b48bffcef5a386062/LICENSE",
+          "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/blob/7872f01b1d1fe23eabc4c98b48bffcef5a386062/README.md"
+        },
+        "architecture": {
+          "name": "DeepseekV4ForCausalLM",
+          "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/blob/7872f01b1d1fe23eabc4c98b48bffcef5a386062/config.json"
+        }
+      },
+      "model_group": "deepseek/deepseek-v4-flash-0731"
+    },
+    {
+      "id": "mistral-small-3.1-24b-instruct",
+      "object": "model",
+      "name": "Mistral Small 3.1 24B Instruct",
+      "task": "Text Generation",
+      "recommended": false,
+      "tier": "advanced",
+      "order": 45,
+      "status": "active",
+      "modality": "text",
+      "provider": "workers-ai",
+      "upstream_model": "mistral-small-3.1-24b-instruct",
+      "pricing_known": "catalog",
+      "streaming": true,
+      "sunset": null,
+      "capabilities": [
+        "text-generation",
+        "function-calling"
+      ],
+      "context_length": 128000,
+      "registry_url": null,
+      "pricing": {
+        "currency": "USD",
+        "unit": "million_tokens",
+        "input": 0.351,
+        "output": 0.555,
+        "basis": "standard"
+      },
+      "description": "Building upon Mistral Small 3 (2501), Mistral Small 3.1 (2503) adds state-of-the-art vision understanding and enhances long context capabilities up to 128k tokens without compromising text performance. With 24 billion parameters, this model achieves top-tier capabilities in both text and vision tasks.",
+      "model_name": "Mistral Small 3.1 24B Instruct",
+      "specifications": {
+        "checked_at": "2026-09-16T09:45:33.400Z",
+        "weights": {
+          "available": true,
+          "source_url": "https://github.com/anomalyco/models.dev/blob/f65073a13de7de21092a9ad4522dfcda9001f914/providers/cloudflare-workers-ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct.toml"
+        },
+        "size": {
+          "label": "24B",
+          "basis": "advertised",
+          "source_url": "https://tools.ailab.gc.cuny.edu/v1/catalog"
+        }
+      }
+    },
+    {
+      "id": "qwen3-coder-next",
+      "object": "model",
+      "name": "Qwen3 Coder Next",
+      "task": "Text Generation",
+      "recommended": false,
+      "tier": "advanced",
+      "order": 53,
+      "status": "active",
+      "modality": "text",
+      "provider": "bedrock-mantle",
+      "upstream_model": "qwen3-coder-next",
+      "pricing_known": "catalog",
+      "streaming": true,
+      "sunset": null,
+      "capabilities": [
+        "text-generation",
+        "function-calling",
+        "structured-output"
+      ],
+      "context_length": 262144,
+      "registry_url": null,
+      "pricing": {
+        "currency": "USD",
+        "unit": "million_tokens",
+        "input": 0.5,
+        "output": 1.2,
+        "basis": "standard"
+      },
+      "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
+      "model_name": "Qwen3 Coder Next",
+      "specifications": {
+        "checked_at": "2026-09-16T09:45:33.400Z",
+        "model_url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+        "weights": {
+          "available": true,
+          "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/tree/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb"
+        },
+        "license": {
+          "name": "apache-2.0",
+          "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/LICENSE",
+          "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md"
+        },
+        "architecture": {
+          "name": "Qwen3NextForCausalLM",
+          "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/config.json"
+        },
+        "size": {
+          "label": "79.7B",
+          "basis": "checkpoint",
+          "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-Next/revision/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb"
+        }
+      },
+      "model_group": "alibaba/qwen3-coder-next"
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "object": "model",
+      "name": "Gemma 4 26B A4B IT",
+      "task": "Text Generation",
+      "recommended": true,
+      "tier": "recommended",
+      "order": 6,
+      "status": "active",
+      "modality": "text",
+      "provider": "workers-ai",
+      "upstream_model": "gemma-4-26b-a4b-it",
+      "pricing_known": "catalog",
+      "streaming": true,
+      "sunset": null,
+      "capabilities": [
+        "text-generation",
+        "function-calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_length": 256000,
+      "registry_url": null,
+      "pricing": {
+        "currency": "USD",
+        "unit": "million_tokens",
+        "input": 0.1,
+        "output": 0.3,
+        "basis": "standard"
+      },
+      "description": "Gemma 4 is Google's most intelligent family of open models, built from Gemini 3 research to maximize intelligence-per-parameter.",
+      "model_name": "Gemma 4 26B A4B IT",
+      "specifications": {
+        "checked_at": "2026-09-16T09:45:33.400Z",
+        "model_url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+        "weights": {
+          "available": true,
+          "source_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/tree/4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+        },
+        "license": {
+          "name": "apache-2.0",
+          "url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+          "source_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md"
+        },
+        "architecture": {
+          "name": "Gemma4ForConditionalGeneration",
+          "source_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json"
+        },
+        "size": {
+          "label": "26B",
+          "basis": "advertised",
+          "source_url": "https://tools.ailab.gc.cuny.edu/v1/catalog"
+        }
+      },
+      "model_group": "google/gemma-4-26b-a4b-it"
+    }
+  ]
+}

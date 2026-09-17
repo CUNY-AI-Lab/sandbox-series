@@ -1,0 +1,24 @@
+--- before/examples/model-cards.json
++++ after/examples/model-cards.json
+@@ -4,8 +4,8 @@
+       "id": "stem-adventure-games",
+       "name": "STEM Adventure Games",
+       "description": "Explore scientific experiments through a text adventure with numbered choices.",
+-      "base_model": "gemma-3-4b-it",
+-      "base_label": "Gemma 3 4B IT",
++      "base_model": "deepseek-v4-flash-0731",
++      "base_label": "DeepSeek V4 Flash 0731",
+       "prompt_file": "examples/stem-chat-system-prompt.txt",
+       "starters": [
+         {
+@@ -25,8 +25,8 @@
+       "id": "stem-adventure-games-sources",
+       "name": "STEM Adventure Games — Sources",
+       "description": "Check historical details in a STEM adventure against attached sources.",
+-      "base_model": "gemma-4-26b-a4b-it",
+-      "base_label": "Gemma 4 26B A4B IT",
++      "base_model": "deepseek-v4-flash-0731",
++      "base_label": "DeepSeek V4 Flash 0731",
+       "prompt_file": "examples/source-check.txt",
+       "starters": [
+         {

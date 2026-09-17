@@ -40,11 +40,13 @@ Developed by Zach Muhlbauer
 
 - Revise in-chat system prompts
 
-- Explore Workspace models
+- Review Workspace model cards
 
-- Save prompts for reuse
+- Choose teaching or research examples
 
-Before attending, request individual access and sign into Sandbox.
+- Clone model cards and test revisions
+
+Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
 
 ---
 
@@ -244,9 +246,9 @@ Select Workspace in left sidebar.
 
 ### Review Custom Models
 
-Choose **Models** and open a custom model shared with you.
+Choose **Models** to find custom model cards. Each combines a base model with setup instructions and any attached resources.
 
-Review **Base Model** and **System Prompt**, then compare its instructions with your tested prompt.
+Review **Base Model** and **System Prompt** before choosing a card to adapt.
 
 Continue in chat if Workspace is unavailable.
 
@@ -260,11 +262,49 @@ Continue in chat if Workspace is unavailable.
 
 ![New model form in Workspace with empty Model Name, Base Model, and System Prompt fields outlined; advanced settings are outside view.](images/current/model-create-hidpi-2026-09-16.svg)
 
-Select Create in Models. Enter a recognizable name, choose a tested base model, and add your tested system prompt.
+Review Model Name, Base Model, and System Prompt when configuring your copy.
 
 ---
 
-## Slide 20: Add Prompt Suggestions
+## Slide 20: Choose Examples
+
+### Choose Examples
+
+**Teaching**
+
+[STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
+
+Explore scientific experiments through a text adventure with numbered choices.
+
+**Research**
+
+[Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+
+Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.
+
+Choose either model for your own work.
+
+---
+
+## Slide 21: Clone Model Cards
+
+### Clone Model Cards
+
+- In Workspace → Models, find your chosen model and open ⋯ → **Clone**.
+
+- Rename your copy and give it a unique ID.
+
+- Read **System Prompt** and identify one instruction to revise.
+
+- Review **Access**, keep Private, remove copied access grants, and select **Save & Create**.
+
+Save an initial response before changing instructions.
+
+[Model management](https://docs.openwebui.com/features/workspace/models/)
+
+---
+
+## Slide 22: Add Prompt Suggestions
 
 ### Add Prompt Suggestions
 
@@ -276,7 +316,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-## Slide 21: Situating System Prompts
+## Slide 23: Situating System Prompts
 
 Examples
 
@@ -284,33 +324,13 @@ Examples
 
 ---
 
-## Slide 22: Select STEM Games
-
-### Select STEM Games
-
-![Model Selector filtered to STEM Adventure Games, with CUNY AI Lab logo and message box visible.](images/current/stem-selector-2026-09-14.png)
-
-Select model ID on bottom right of message box. Search for STEM Adventure Games and select it.
-
----
-
-## Slide 23: STEM Adventure Games
+## Slide 24: STEM Adventure Games
 
 ### STEM Adventure Games
 
-![STEM Adventure Games presents a short scene and numbered choices directly in Sandbox chat.](images/current/stem-chat-play-hidpi-2026-09-16.png)
+![STEM Adventure Games presents Pasteur’s flask experiment with four numbered choices, CUNY AI Lab icon, and message box visible.](images/current/stem-original-play-clean-2026-09-17.png)
 
-Type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
-
----
-
-## Slide 24: Inspect System Prompt
-
-### Inspect System Prompt
-
-![STEM Adventure Games model editor showing Gemma 3 4B IT as Base Model and opening System Prompt instructions for an adventure played directly in chat.](images/current/stem-chat-model-hidpi-2026-09-16.svg)
-
-Open Workspace → Models → STEM Adventure Games. Review Base Model and System Prompt.
+For STEM Adventure Games, type Start an adventure. Choose an experiment, then reply with a number or describe what you want to do.
 
 ---
 
@@ -319,7 +339,11 @@ Open Workspace → Models → STEM Adventure Games. Review Base Model and System
 ### Read Game Instructions
 
 ```text
-End each scene with three numbered choices. Accept a number or an action in ordinary language, such as looking around, examining an object, or asking for a hint. Wait for a response before continuing.
+Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.
+
+Each stage presents 4 numbered choices based on historically accurate experimental decisions.
+
+After each choice, briefly state what the player observes, what the result suggests, and what question remains open.
 ```
 
 What should happen after you choose an action?
@@ -332,15 +356,15 @@ What should happen after you choose an action?
 
 ### Adapt Research Prompts
 
-You can adapt this exercise to a research task, such as comparing article abstracts or documenting a method.
+For [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions), paste one pair from [sample revisions](examples/research/sample-revisions.md) into your copy.
 
-- State your research question and identify permitted source material.
+- Ask it to classify one change and quote evidence.
 
-- Specify steps and what counts as evidence.
+- Check quotations against both passages.
 
-- Ask your model to explain uncertainty and consider other interpretations.
+- Identify an instruction to revise if its classification is unclear.
 
-Save your source material, prompt, response, and assessment together.
+[Read full system prompt](examples.html#wikipedia-revisions)
 
 ---
 
@@ -354,34 +378,35 @@ Save your source material, prompt, response, and assessment together.
 
 ### Define Prompt Components
 
-Choose one component to change.
+Use either example. Choose one component to change in your cloned model.
 
-- **Context** — Experiment, historical setting, and intended users.
+- **Purpose** — What your model should help users do.
 
 - **Procedure** — Steps your model should follow.
 
 - **Constraints** — Boundaries and missing information.
 
-- **Tone and format** — Language, length, and presentation.
+- **Format** — Length and presentation.
 
 ---
 
-## Slide 29: Define Context
+## Slide 29: Define Purpose
 
-### Define Context
+### Define Purpose
 
 Describe what your model should help users do.
 
 - Who will use this model?
 
-- Which experiment or research question will they explore?
+- Which task or question will they explore?
 
 - What prior knowledge can you assume?
 
 ```text
-Guide a short text adventure about light and colour.
-Help players explore how a prism changes a beam of sunlight.
+Guide a short text adventure in which players explore how a prism changes a beam of sunlight.
 ```
+
+For research, name your question, source material, and intended users.
 
 ---
 
@@ -389,14 +414,16 @@ Help players explore how a prism changes a beam of sunlight.
 
 ### Write Procedures
 
-What should happen before and after each choice?
+Which steps should your model follow?
 
 ```text
 1. Introduce an experiment about light and colour.
 2. Describe an opening scene and a question to investigate.
-3. Offer three numbered choices and wait.
-4. Describe observations after players choose.
+3. Offer four numbered choices and wait.
+4. Describe what players observe after each choice.
 ```
+
+For research, check inputs, quote changed passages, then classify changes.
 
 ---
 
@@ -408,45 +435,33 @@ Specify how your model should handle missing evidence.
 
 ```text
 Do not invent historical details when sources are missing.
-Distinguish documented events from choices created for the game.
+Distinguish documented events from invented scenes and choices.
 If a source is unavailable, explain what cannot be checked.
 ```
+
+For research, request missing excerpts and mark uncertain classifications.
 
 Test a request that asks for a detail absent from your sources.
 
 ---
 
-## Slide 32: Set Tone
-
-### Set Tone
-
-Describe how your model should address players.
-
-```text
-Address the player as “you.”
-Use concise language for scenes and choices.
-Explain unfamiliar scientific terms when they first appear.
-```
-
-Which terms need explanation for your intended users?
-
----
-
-## Slide 33: Specify Format
+## Slide 32: Specify Format
 
 ### Specify Format
 
-Specify how scenes and choices should appear.
+Specify response structure and length.
 
 ```text
-Write a short scene followed by three numbered choices.
+Write a short scene followed by four numbered choices.
 Use simple Unicode headings.
 Wait for a reply before continuing.
 ```
 
+For research, use Before and After quotations, categories, and brief explanations.
+
 ---
 
-## Slide 34: Refine Instructions
+## Slide 33: Refine Instructions
 
 Refine
 
@@ -454,21 +469,21 @@ Refine
 
 ---
 
-## Slide 35: Extend Instructions
+## Slide 34: Extend Instructions
 
 ### Extend Instructions
 
-- Specify what happens when a player asks for a hint.
+Specify what your model should do when a request needs additional guidance.
 
-- Explain how to revisit an earlier decision.
+- **Teaching** — Explain how to offer a hint or revisit an earlier choice.
 
-- Require source checks when players ask about historical claims.
+- **Research** — Explain when to request missing passages or mark a classification uncertain.
 
-- Test how your model responds when evidence is missing.
+Select Save & Update, then test that condition in a new chat. After revising, save again and repeat your request.
 
 ---
 
-## Slide 36: Review Common Problems
+## Slide 35: Review Common Problems
 
 Watch Out
 
@@ -482,9 +497,9 @@ Check instructions for conflicts. Prioritize essential steps and test whether yo
 
 Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
 
-### Test Player Requests
+### Test User Requests
 
-Test game choices, requests for hints, and questions about sources.
+Test likely requests, including questions about missing evidence.
 
 ### Retest Revised Prompts
 
@@ -492,15 +507,15 @@ Save each prompt version with its responses. Revise when a test reveals a proble
 
 ---
 
-## Slide 37: Save Prompts
+## Slide 36: Save Prompts
 
 ### Save Prompts
 
-Save your tested prompt in a private custom model. Choose a base model, review **Access**, and select **Save & Create**. Reuse this model when adding documents in Workshop 2.
+Save changes to your cloned model. Review **Access** and select **Save & Update**. Reuse this model when adding documents in Workshop 2.
 
 ---
 
-## Slide 38: Share Custom Models
+## Slide 37: Share Custom Models
 
 ### Share Custom Models
 
@@ -514,7 +529,7 @@ Save your tested prompt in a private custom model. Choose a base model, review *
 
 ---
 
-## Slide 39: Record Comparisons
+## Slide 38: Record Comparisons
 
 ### Record Comparisons
 
@@ -532,7 +547,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 40: Prepare Source Documents
+## Slide 39: Prepare Source Documents
 
 ### Prepare Source Documents
 

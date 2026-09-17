@@ -1092,6 +1092,142 @@
       "source_sha256": "d93979ae80762d388ce6c3a7e40365d47b6754f0fcfcd5801afd2a282e942819",
       "processing": "Lossless crop at native resolution; no raster resizing. Browser chrome, account avatar, and unrelated account content excluded. Neutral white outlines identify controls. No UI or text reconstructed.",
       "sha256": "7e85cf58e62bc434551a4ff011461a93b5d9c4712d9b0393049790c9fd499967"
+    },
+    {
+      "file": "integrations-advanced-2026-09-17.png",
+      "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced",
+      "source_file": "/private/tmp/integrations-advanced-2026-09-17.png",
+      "observed_date": "2026-09-17",
+      "browser": "Firefox",
+      "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Advanced model home with current CUNY AI Lab model icon and description. Integrations menu is open, showing Tools, Skills, and Web Search. Message box shows one tool and one skill enabled.",
+      "browser_zoom_percent": 170,
+      "source_dimensions": [
+        4510,
+        2226
+      ],
+      "output_dimensions": [
+        4510,
+        2226
+      ],
+      "source_sha256": "c7ed58138432844d378d59f41bbf37a061604d8771f6e8db03771c0f9440182b",
+      "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+      "sha256": "c7ed58138432844d378d59f41bbf37a061604d8771f6e8db03771c0f9440182b",
+      "selected_model_id": "stem-adventure-games-advanced",
+      "selected_model_name": "STEM Adventure Games \u2014 Advanced"
+    },
+    {
+      "file": "stem-advanced-clean-2026-09-17.png",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "source_file": "/private/tmp/stem-advanced-clean-2026-09-17.png",
+      "observed_date": "2026-09-17",
+      "browser": "Firefox",
+      "capture": "Native Firefox built-in Save visible screenshot at 120% browser zoom. Advanced model invoked render_stem_adventure and displays actual embedded Prism Laboratory. Game is restarted at Study with zero moves, one command box, and chat message box visible. Private chat address is absent.",
+      "browser_zoom_percent": 120,
+      "source_dimensions": [
+        4507,
+        2222
+      ],
+      "output_dimensions": [
+        4507,
+        2222
+      ],
+      "source_sha256": "2688192737fe24f3ac6bdc4b85d114866625543a377648004d7c402fdc3e83bb",
+      "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+      "sha256": "2688192737fe24f3ac6bdc4b85d114866625543a377648004d7c402fdc3e83bb",
+      "selected_model_id": "stem-adventure-games-advanced",
+      "selected_model_name": "STEM Adventure Games \u2014 Advanced"
+    },
+    {
+      "file": "model-clone-advanced-2026-09-17.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models",
+      "source_file": "/private/tmp/model-clone-advanced-2026-09-17.png",
+      "observed_date": "2026-09-17",
+      "browser": "Firefox",
+      "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Workspace Models filtered to Advanced model, showing current CUNY AI Lab icon and description. More menu is open with Clone visible; no clone created in this capture.",
+      "browser_zoom_percent": 170,
+      "source_dimensions": [
+        4510,
+        2226
+      ],
+      "output_dimensions": [
+        4510,
+        2226
+      ],
+      "source_sha256": "9ee6f97a9639e0e9f1b595e2065297141a99ca52435c77fe38f524f0574b3d23",
+      "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+      "sha256": "9ee6f97a9639e0e9f1b595e2065297141a99ca52435c77fe38f524f0574b3d23",
+      "selected_model_id": "stem-adventure-games-advanced",
+      "selected_model_name": "STEM Adventure Games \u2014 Advanced"
+    },
+    {
+      "file": "stem-original-framework-2026-09-17.png",
+      "source": "https://chat.ailab.gc.cuny.edu/workspace/models/edit?id=stem-adventure-games",
+      "source_file": "/private/tmp/stem-original-framework-2026-09-17.png",
+      "observed_date": "2026-09-17",
+      "browser": "Firefox",
+      "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Saved STEM Adventure Games editor shows current CUNY AI Lab icon, DeepSeek V4 Flash 0731 base model, description, Purpose heading, original game purpose, and roles for three Wikipedia source documents. Lower Procedure, Constraints, and Format sections continue below visible viewport.",
+      "browser_zoom_percent": 170,
+      "source_dimensions": [
+        4510,
+        2226
+      ],
+      "output_dimensions": [
+        4510,
+        2226
+      ],
+      "source_sha256": "097da08b799cf78b9a7c234c2db03f456096d4e5a4f915d5639ed2cea7882c2b",
+      "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+      "sha256": "097da08b799cf78b9a7c234c2db03f456096d4e5a4f915d5639ed2cea7882c2b",
+      "selected_model_id": "stem-adventure-games",
+      "selected_model_name": "STEM Adventure Games",
+      "base_model_id": "deepseek-v4-flash-0731",
+      "base_model_name": "DeepSeek V4 Flash 0731"
+    },
+    {
+      "file": "stem-original-selector-2026-09-17.png",
+      "source": "https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games",
+      "source_file": "/private/tmp/stem-original-selector-2026-09-17.png",
+      "observed_date": "2026-09-17",
+      "browser": "Firefox",
+      "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Saved STEM Adventure Games selected in model selector filtered by STEM Adventure. Current CUNY AI Lab icon, game description, Choose adventures and Explore light starters, full message box, and page logo visible. No message submitted.",
+      "browser_zoom_percent": 170,
+      "source_dimensions": [
+        4510,
+        2226
+      ],
+      "output_dimensions": [
+        4510,
+        2226
+      ],
+      "source_sha256": "98d08df01f4f8ab7d0c5f06f50af3167a997a6519fe995758eaebaaad964046d",
+      "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+      "sha256": "98d08df01f4f8ab7d0c5f06f50af3167a997a6519fe995758eaebaaad964046d",
+      "selected_model_id": "stem-adventure-games",
+      "selected_model_name": "STEM Adventure Games"
+    },
+    {
+      "file": "stem-original-play-clean-2026-09-17.png",
+      "source": "https://chat.ailab.gc.cuny.edu/",
+      "source_file": "/private/tmp/stem-original-play-clean-2026-09-17.png",
+      "observed_date": "2026-09-17",
+      "browser": "Firefox",
+      "capture": "Native Firefox built-in Save visible screenshot at 170% browser zoom. Authentic STEM Adventure Games response presents Louis Pasteur in Paris in 1861, a question about spontaneous generation, and four numbered choices about flasks. Model name, CUNY AI Lab icon, source count, and full message box are visible. Capture taken after unrelated notification toast was dismissed, without changing model response. Private chat address is absent.",
+      "browser_zoom_percent": 170,
+      "source_dimensions": [
+        4510,
+        2226
+      ],
+      "output_dimensions": [
+        4510,
+        2226
+      ],
+      "source_sha256": "9613c150f91343e74688014a1852d258f0776fb0f534e8f8099adce24f799a85",
+      "processing": "Original PNG copied byte for byte. No crop, resizing, annotation, synthetic pixels, or interface reconstruction.",
+      "sha256": "9613c150f91343e74688014a1852d258f0776fb0f534e8f8099adce24f799a85",
+      "selected_model_id": "stem-adventure-games",
+      "selected_model_name": "STEM Adventure Games",
+      "base_model_id": "deepseek-v4-flash-0731",
+      "base_model_name": "DeepSeek V4 Flash 0731"
     }
   ]
 }
