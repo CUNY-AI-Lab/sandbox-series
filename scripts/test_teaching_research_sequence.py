@@ -80,20 +80,24 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertLess(clone.index('Save & Create'), clone.lower().index('new chat'))
         self.assertNotIn('remove copied access grants', clone)
 
-    def test_comparison_reuses_request_with_original_and_copy(self):
-        illustration, instructions = self.stages('Compare Configurations')
+    def test_comparison_reflects_on_completed_experiment(self):
+        illustration, reflection = self.stages('Compare Configurations')
         self.assertTrue(illustration.all(lambda node: node.tag == 'img'))
-        self.assertFalse(instructions.all(lambda node: node.tag == 'img'))
+        self.assertFalse(reflection.all(lambda node: node.tag == 'img'))
         comparison = ' '.join(self.slide('Compare Configurations').text().split()).lower()
         self.assertRegex(comparison, r'(new|fresh) chat')
         self.assertIn('original', comparison)
         self.assertRegex(comparison, r'(copy|clone)')
-        self.assertRegex(comparison, r'(same|saved|original) (request|prompt)')
-        self.assertRegex(comparison, r'(source|research) passages')
-        self.assertIn('identical source passages and revision links', comparison)
+        self.assertEqual([node.text() for node in reflection.all(lambda node: node.tag == 'li')], [
+            'What did you change?',
+            'Did your intended revision prove effective?',
+            'How could you imagine testing custom models like this in the future?',
+        ])
+        self.assertNotIn('source passages', comparison)
+        self.assertNotIn('revision links', comparison)
+        self.assertNotIn('Send your original request', reflection.text())
         self.assertNotRegex(comparison, r'save.{0,45}(both|responses)')
         self.assertLess(comparison.index('original'), comparison.index('?'))
-        self.assertLess(comparison.index('request'), comparison.index('?'))
 
     def test_repeated_save_reminders_stay_removed(self):
         copy = ' '.join(slide.text() for slide in self.slides)

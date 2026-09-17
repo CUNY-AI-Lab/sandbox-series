@@ -17,12 +17,15 @@ ROOT = Path(__file__).resolve().parents[1]
 ROUTES = ('index.html', 'knowledge/index.html', 'skills/index.html')
 SECTION_NAMES = ('Composing system prompts', 'Curating knowledge collections', 'Configuring skills and tools')
 COVER_TITLE = 'Getting Started with the CUNY AI Lab Sandbox'
+# Exact user-authored wording takes precedence over the general article rule.
+REFLECTION_QUESTION = 'How could you imagine testing custom models like this in the future?'
 SELECTOR = 'Select model ID on bottom right of message box.'
 NURSE = 'The nurse yelled at the doctor because she was late. Who was late?'
 CAR = 'The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.'
 SHORT_SYSTEM = 'Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.'
 # Exact rejected passages from this chat, not a vocabulary blacklist.
 REJECTED = (
+ 'Include identical source passages and revision links if you chose research.',
  'small models',
  'Changing one or two words between paired sentences changes who a pronoun refers to.',
  'If Compare is unavailable, send identical prompts in separate new chats.',
@@ -125,7 +128,7 @@ class CopyRegressions(unittest.TestCase):
     def test_03_participant_copy_excludes_editorial_instructions(self):
         for tree in [*self.trees.values(),self.example,*self.references.values()]:
             copy=authored(tree)
-            self.assertNotRegex(copy,r'(?i)\b(the|facilitator|presenter)\b')
+            self.assertNotRegex(copy.replace(REFLECTION_QUESTION,''),r'(?i)\b(the|facilitator|presenter)\b')
             self.assertFalse(prose_colons(copy))
             self.assertFalse(tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')))
     def test_04_explicit_deletions_stay_deleted(self):

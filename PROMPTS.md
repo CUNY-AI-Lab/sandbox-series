@@ -317,9 +317,11 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 Start a new chat. Select model ID on bottom right of message box, then Compare. Choose your original model and your copy.
 
-Send your original request to both models. Include identical source passages and revision links if you chose research. Select each model name to review its response.
+- What did you change?
 
-What changed? Did your revised instruction work?
+- Did your intended revision prove effective?
+
+- How could you imagine testing custom models like this in the future?
 
 ---
 

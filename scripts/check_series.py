@@ -6,6 +6,8 @@ from check_workshop import Parser,Node,render
 R=Path(__file__).resolve().parents[1];write='--write' in sys.argv;issues=[];sections=[]
 # Exact event title requested by Zach; general slide-title constraints still apply elsewhere.
 COVER_TITLE='Getting Started with the CUNY AI Lab Sandbox'
+# Preserve Zach's exact reflection question requested on September 17.
+REFLECTION_QUESTION='How could you imagine testing custom models like this in the future?'
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
 def check_title(title,location):
@@ -30,7 +32,7 @@ def check_participant_copy(tree,location):
   headings=slide.all(lambda n:n.tag in {'h1','h2'})
   if not headings or headings[0].text().strip()!=slide.attrs.get('data-title'):issues.append(location+' heading and outline disagree')
  text=participant_text(tree)
- if re.search(r'\bthe\b',text,re.I):issues.append(location+' definite article in participant copy outside quoted prompts')
+ if re.search(r'\bthe\b',text.replace(REFLECTION_QUESTION,''),re.I):issues.append(location+' definite article in participant copy outside quoted prompts or approved wording')
  if re.search(r'\b(facilitator|presenter)\b',text,re.I):issues.append(location+' presenter directions in participant copy')
  for phrase in ['preserve their original disciplinary purposes','instruction drafts, not measured outcomes','these excerpts are discussion material']:
   if phrase in text.lower():issues.append(location+' editorial commentary in participant copy: '+phrase)
