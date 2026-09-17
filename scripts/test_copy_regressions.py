@@ -626,7 +626,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('SLIDES.md',links)
         resources=self.slide('index.html','Workshop Resources')
         links={link.attrs.get('href') for link in resources.all(lambda n:n.tag=='a')}
-        for href in ['workshop-copy.html','examples.html','https://ailab.gc.cuny.edu/sandbox-docs/',
+        for href in ['workshop-copy.html','https://ailab.gc.cuny.edu/sandbox-docs/',
                      'https://docs.openwebui.com/features/workspace/models/',
                      'https://tools.ailab.gc.cuny.edu/model-access']:
             self.assertIn(href,links)

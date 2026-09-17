@@ -372,8 +372,6 @@ Keep your draft and choose source documents for your next workshop.
 
 - [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
 
-- [Review prompt examples  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)
-
 - [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
 ### Model Resources

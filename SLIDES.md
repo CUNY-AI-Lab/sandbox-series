@@ -394,8 +394,6 @@ Keep your draft and choose source documents for your next workshop.
 
 - [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
 
-- [Review prompt examples  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)
-
 - [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
 ### Model Resources
@@ -459,8 +457,6 @@ Choose a question your documents can answer.
 
 Bring course materials, research papers, or other documents you know well enough to check.
 
-Use [system-prompt examples](examples.html) if you need a prompt to begin.
-
 ---
 
 ## Curating knowledge collections — 5
@@ -484,8 +480,6 @@ Select Workspace in left sidebar. Choose Models and open your custom model.
 Open your private copy of **STEM Adventure Games** or **Compare Wikipedia Edits**.
 
 Review **Base Model** and **System Prompt**. Keep instructions from Workshop 1. Leave Skills and Tools unselected.
-
-[Review system prompts  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)
 
 ---
 
@@ -716,8 +710,6 @@ Share your collection with people who will use your custom model.
 - Request Skills and Tools access
 
 - Choose recurring teaching or research procedures
-
-- Review [system-prompt examples](examples.html)
 
 - Continue to [Configuring skills and tools](skills)
 
@@ -1167,4 +1159,4 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 - Retest after model or tool updates
 
-[Browse system-prompt examples  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)[Return to Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/](.)
+[Return to Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/](.)

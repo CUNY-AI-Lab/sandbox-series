@@ -2,7 +2,7 @@
 
 Choose an example to adapt for your teaching or research.
 
-[Return to workshop](.) · [System prompt examples](../examples.html)[Write Instructions](#write-instructions) · [Check Interpretations](#check-interpretations) · [Check Skill Drafts](#check-skill-drafts) · [Check Generated Code](#check-generated-code) · [Test Game Commands](#game-commands)
+[Return to workshop](.)[Write Instructions](#write-instructions) · [Check Interpretations](#check-interpretations) · [Check Skill Drafts](#check-skill-drafts) · [Check Generated Code](#check-generated-code) · [Test Game Commands](#game-commands)
 
 ### Write Instructions
 

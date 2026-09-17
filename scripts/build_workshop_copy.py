@@ -103,7 +103,6 @@ def build(route=''):
     title = 'Full Workshop Copy' if not route else dict(DECKS)[route]
     source_copy = 'SLIDES.md' if route else 'PROMPTS.md'
     nav = [link('./', 'Return to workshop'),
-           link(relative('examples.html', destination), 'Prompt examples'),
            link(source_copy, 'Download Markdown', source_copy)]
     outline = '<nav class="copy-outline" aria-label="Workshop outline"><ol>' + contents + '</ol></nav>'
     return page(title, content, destination, nav, outline)
@@ -119,7 +118,7 @@ def build_series():
                          rf'\1="workshop-{number}-\2"', content)
         sections.append(f'<section id="workshop-{number}"><h2>{escape(label)}</h2>{content}</section>')
         contents.append(f'<li>{link(f"#workshop-{number}", label)}</li>')
-    nav = [link('index.html', 'Return to workshop'), link('examples.html', 'Prompt examples'),
+    nav = [link('index.html', 'Return to workshop'),
            link('SLIDES.md', 'Download Markdown', 'SLIDES.md')]
     outline = '<nav class="copy-outline" aria-label="Workshop outline"><ol>' + ''.join(contents) + '</ol></nav>'
     return page('Full Series Copy', '\n'.join(sections), destination, nav, outline)

@@ -115,6 +115,14 @@ class ReadingPages(unittest.TestCase):
                     continue
                 content = path.read_text()
                 self.assertNotRegex(content, r'sample-revisions|research/model-card', str(path))
+                if path.suffix == '.html':
+                    tree = Parser(content).root
+                    for menu in tree.all(lambda node: node.tag == 'nav' or node.attrs.get('id') == 'outline-dialog'):
+                        for item in menu.all(lambda node: node.tag == 'a'):
+                            self.assertNotIn('examples.html', item.attrs.get('href', ''), str(path))
+                    if path == ROOT / 'examples.html':
+                        menu = tree.all(lambda node: node.attrs.get('aria-label') == 'Prompt examples')[0]
+                        self.assertNotIn('Compare Wikipedia Edits', menu.text())
 
     def test_first_workshop_stays_self_contained(self):
         for name in ['index.html', 'workshop-copy.html']:

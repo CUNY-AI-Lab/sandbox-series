@@ -71,7 +71,6 @@ def build(source):
                       '.json': 'Download JSON', '.py': 'Download Python'}
     suffix = '.' + source.rsplit('.', 1)[-1]
     nav = [link(relative('index.html', destination), 'Return to workshop'),
-           link(relative('examples.html', destination), 'Prompt examples'),
            link(relative(source, destination), download_label[suffix], source.rsplit('/', 1)[-1])]
     return page(title, content, destination, nav, outline)
 
