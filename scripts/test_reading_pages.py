@@ -53,7 +53,7 @@ class ReadingPages(unittest.TestCase):
     def test_every_reading_link_opens_formatted_html(self):
         pending = [ROOT / path for path in [
             'index.html', 'knowledge/index.html', 'skills/index.html',
-            'examples.html', 'workshop-copy.html', 'knowledge/workshop-copy.html',
+            'workshop-copy.html', 'knowledge/workshop-copy.html',
             'skills/workshop-copy.html', 'SLIDES.html', 'WORKSHOP.html',
             *DESTINATIONS.values(),
         ]]
@@ -105,6 +105,7 @@ class ReadingPages(unittest.TestCase):
         self.assertTrue({(ROOT / target).resolve() for target in DESTINATIONS.values()} <= seen)
 
     def test_removed_research_pages_stay_removed(self):
+        self.assertFalse((ROOT / 'examples.html').exists())
         for name in ['model-card.html', 'model-card.md', 'sample-revisions.html',
                      'sample-revisions.md', 'sample-revisions.sources.html',
                      'sample-revisions.sources.json']:
@@ -114,15 +115,12 @@ class ReadingPages(unittest.TestCase):
                 if any(part in {'review', '.git', 'node_modules'} for part in path.relative_to(ROOT).parts):
                     continue
                 content = path.read_text()
-                self.assertNotRegex(content, r'sample-revisions|research/model-card', str(path))
+                self.assertNotRegex(content, r'sample-revisions|research/model-card|examples\.html', str(path))
                 if path.suffix == '.html':
                     tree = Parser(content).root
                     for menu in tree.all(lambda node: node.tag == 'nav' or node.attrs.get('id') == 'outline-dialog'):
                         for item in menu.all(lambda node: node.tag == 'a'):
                             self.assertNotIn('examples.html', item.attrs.get('href', ''), str(path))
-                    if path == ROOT / 'examples.html':
-                        menu = tree.all(lambda node: node.attrs.get('aria-label') == 'Prompt examples')[0]
-                        self.assertNotIn('Compare Wikipedia Edits', menu.text())
 
     def test_first_workshop_stays_self_contained(self):
         for name in ['index.html', 'workshop-copy.html']:

@@ -15,7 +15,7 @@ This repository is the consolidated CUNY AI Lab Sandbox workshop series. HTML is
 - Keep navigation, keyboard use, focus visibility, image alternatives, and reduced-motion behavior accessible.
 - Do not add Co-Authored-By lines to commits.
 
-Routes are `/`, `/knowledge/`, `/skills/`, and `/examples.html` within the Pages project. Shared assets live in css/, js/, images/, and examples/. Each deck opens directly without a build step.
+Routes are `/`, `/knowledge/`, and `/skills/` within the Pages project. Shared assets live in css/, js/, images/, and examples/. Each deck opens directly without a build step.
 
 - Use 2–3 words for slide headings. Omit articles and gerunds. Use documented terms; do not invent conceptual labels.
 - Base platform descriptions on the Sandbox docs and Open WebUI docs. Preserve original workshop examples.

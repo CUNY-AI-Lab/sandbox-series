@@ -114,8 +114,6 @@ image_pattern=r'(\[!\[([^\]]*)\]\([^)]+\)\]\([^)]+\)|!\[([^\]]*)\]\([^)]+\))'
 full=re.sub(image_pattern,lambda m:m.group(1)+'\n\n**Alt text:** '+(m.group(2) or m.group(3)),full)
 if write:(R/'SLIDES.md').write_text(full)
 elif not (R/'SLIDES.md').exists() or (R/'SLIDES.md').read_text()!=full:issues.append('Full copy out of sync')
-example_tree=Parser((R/'examples.html').read_text()).root
-check_participant_copy(example_tree,'examples')
 r=subprocess.run([sys.executable,str(R/'scripts/check_workshop.py')]+(['--write'] if write else []),capture_output=True,text=True)
 if r.returncode:issues.append(r.stdout)
 r=subprocess.run([sys.executable,str(R/'scripts/build_workshop_copy.py')]+(['--write'] if write else []),capture_output=True,text=True)

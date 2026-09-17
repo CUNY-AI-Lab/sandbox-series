@@ -6,7 +6,6 @@ Composing system prompts begins the series. Use **Outline** to review slides and
 
 - [Full slide copy](https://cuny-ai-lab.github.io/sandbox-series/SLIDES.html)
 - [Presenter lesson plans and access requirements](https://cuny-ai-lab.github.io/sandbox-series/WORKSHOP.html)
-- [System-prompt examples](https://cuny-ai-lab.github.io/sandbox-series/examples.html)
 - [Latest copy refinements and before/after](review/streamline-review.md)
 - [Source history](review/README.md)
 

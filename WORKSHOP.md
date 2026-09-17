@@ -4,7 +4,7 @@ The CUNY AI Lab Sandbox supports teaching, research, and experimentation with op
 
 Participants first compare models, then try STEM Adventure Games for teaching or Compare Wikipedia Edits for research, review its system prompt and base model, and revise a clone. They compare the original with their clone using the same request, then use Purpose, Procedure, Constraints, and Format to draft instructions and create a configuration of their own. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.
 
-[Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read workshop copy](workshop-copy.html) · [Browse system-prompt examples](examples.html) · [Review copy changes](review/README.md)
+[Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read workshop copy](workshop-copy.html) · [Review copy changes](review/README.md)
 
 ## Workshop Roadmap
 
@@ -116,7 +116,7 @@ Participants add source documents to their chosen teaching or research model fro
 | 55–80 | Repeat the saved question with base model and system prompt unchanged. Check cited passages, try questions requiring two sources or missing information, and diagnose one failure. | Before/after responses and source checks |
 | 80–90 | Retest one change, check sharing, and choose a procedure for Workshop 3. | Retest and next procedure |
 
-Keep the system prompt from your chosen model in Workshop 1. The [adventure prompt](examples.html#stem-chat) and [research prompt](examples.html#wikipedia-revisions) remain available for comparison. The [source-checking instructions](examples.html#stem-sources) can extend the adventure prompt when participants ask about evidence. Keep Skills and Tools unselected. Participants can build a small collection for another experiment or adapt the procedure to their own teaching or research. They should know the source material well enough to check model claims independently.
+Keep the system prompt from your chosen model in Workshop 1. Keep Skills and Tools unselected. Participants can build a small collection for another experiment or adapt the procedure to their own teaching or research. They should know the source material well enough to check model claims independently.
 
 A generic or incorrect answer can arise from processing, retrieval, access, instructions, or interpretation. Check the actual evidence before diagnosing the cause. File length alone does not determine retrieval quality. Scanned or multi-column PDFs deserve particular attention during text extraction.
 

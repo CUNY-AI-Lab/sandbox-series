@@ -77,7 +77,6 @@ class CopyRegressions(unittest.TestCase):
     def setUpClass(cls):
         cls.trees = {r:Parser((ROOT/r).read_text()).root for r in ROUTES}
         cls.decks = {r:t.all(lambda n:n.has_class('slide')) for r,t in cls.trees.items()}
-        cls.example = Parser((ROOT/'examples.html').read_text()).root
         cls.references = {r:Parser((ROOT/r/'reference.html').read_text()).root for r in ('knowledge','skills')}
     def slide(self, route, title):
         matches=[s for s in self.decks[route] if s.attrs['data-title']==title]
@@ -126,13 +125,13 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(len(cover.all(lambda n:n.tag=='button')),0)
         self.assertFalse(any(s.has_class('workshop-cover') for route in ROUTES[1:] for s in self.decks[route]))
     def test_03_participant_copy_excludes_editorial_instructions(self):
-        for tree in [*self.trees.values(),self.example,*self.references.values()]:
+        for tree in [*self.trees.values(),*self.references.values()]:
             copy=authored(tree)
             self.assertNotRegex(copy.replace(REFLECTION_QUESTION,''),r'(?i)\b(the|facilitator|presenter)\b')
             self.assertFalse(prose_colons(copy))
             self.assertFalse(tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')))
     def test_04_explicit_deletions_stay_deleted(self):
-        for tree in [*self.trees.values(),self.example,*self.references.values()]:
+        for tree in [*self.trees.values(),*self.references.values()]:
             copy=normalized(tree.text()).casefold()
             for phrase in REJECTED:self.assertNotIn(phrase.casefold(),copy)
     def test_05_prompts_remain_exact(self):
@@ -263,16 +262,13 @@ class CopyRegressions(unittest.TestCase):
         self.assertTrue(extend.all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/adventure/prism.json'))
         self.assertIn('Integrations → Skills',extend.text())
     def test_15_reference_files_match(self):
-        for id,file in [('assumptions-copy','examples/assumption-check.txt'),
-                        ('stem-chat-copy','examples/stem-chat-system-prompt.txt'),
-                        ('stem-sources-copy','examples/source-check.txt'),
-                        ('stem-system-copy','examples/stem-system-prompt.txt')]:
-            expected=re.sub(r'^---[\s\S]*?---\s*','',(ROOT/file).read_text()).strip()
-            blocks=self.example.all(lambda n:n.attrs.get('id')==id)
-            self.assertEqual(len(blocks),1,id)
-            actual=blocks[0].text().strip()
-            self.assertEqual(actual,expected)
-        self.assertFalse(self.example.all(lambda n:n.attrs.get('id')=='stem-skill-copy'))
+        for file in ['examples/assumption-check.txt', 'examples/stem-chat-system-prompt.txt',
+                     'examples/source-check.txt', 'examples/stem-system-prompt.txt']:
+            source = ROOT / file
+            page = Parser(source.with_suffix('.html').read_text()).root
+            blocks = page.all(lambda n:n.tag == 'pre')
+            self.assertEqual(len(blocks), 1, file)
+            self.assertEqual(blocks[0].text(), source.read_text())
         self.assertTrue(self.slide('skills/index.html','Structure Skills').all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/stem-game-skill.html'))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
@@ -314,7 +310,7 @@ class CopyRegressions(unittest.TestCase):
                 self.assertTrue(parent and parent.has_class('prompt-container'))
                 self.assertTrue(parent.all(lambda c:c.tag=='pre'))
             for child in n.children:visit(child,n)
-        for tree in [*self.trees.values(),self.example,*self.references.values()]:visit(tree)
+        for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
         self.assertEqual(len(self.decks['knowledge/index.html']),22)
@@ -538,15 +534,6 @@ class CopyRegressions(unittest.TestCase):
                             'without referring to system prompt instructions']:
             self.assertIn(instruction,prompt)
         self.assertNotRegex(prompt,r'STEM|Prism Laboratory|Newton')
-        sections=self.example.all(lambda n:n.attrs.get('id')=='wikipedia-revisions')
-        self.assertEqual(len(sections),1)
-        blocks=sections[0].all(lambda n:n.has_class('prompt-block'))
-        self.assertEqual(len(blocks),1)
-        self.assertEqual(blocks[0].text().strip(),prompt)
-        self.assertFalse(sections[0].all(lambda n:'hidden' in n.attrs or n.tag=='details'))
-        links={n.attrs.get('href') for n in sections[0].all(lambda n:n.tag=='a')}
-        self.assertIn('examples/research/system-prompt.txt',links)
-
     def test_30_model_cards_preserve_metadata_and_logo(self):
         cards=json.loads((ROOT/'examples/model-cards.json').read_text())['models']
         expected_prompts={
@@ -586,10 +573,6 @@ class CopyRegressions(unittest.TestCase):
                     self.assertNotRegex(starter['content'],r'(?i)\b(?:TODO|TBD)\b|\[[^\]]+\]')
 
         by_id={card['id']:card for card in cards}
-        for section,model in [('stem-chat','stem-adventure-games'),('wikipedia-revisions','compare-wikipedia-revisions')]:
-            reference=self.example.all(lambda n:n.attrs.get('id')==section)[0]
-            label=reference.all(lambda n:n.has_class('model-base'))[0].text()
-            self.assertIn(by_id[model]['base_label'],label)
         builders=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
         for builder in builders.values():
             card=by_id[builder['id']]
@@ -617,8 +600,7 @@ class CopyRegressions(unittest.TestCase):
 
     def test_32_workshop_links_stay_within_current_workshop(self):
         from urllib.parse import urlsplit
-        example_navs=self.example.all(lambda n:n.tag=='nav')
-        for scope in [self.trees['index.html'],*example_navs]:
+        for scope in [self.trees['index.html']]:
             for link in scope.all(lambda n:n.tag=='a'):
                 href=link.attrs.get('href','')
                 url=urlsplit(href)
@@ -717,8 +699,5 @@ class CopyRegressions(unittest.TestCase):
         definition=next(s for s in root if s.attrs['data-title']=='System Prompts')
         root.remove(definition);root.append(definition)
         with patch.object(self,'decks',decks),self.assertRaises(AssertionError):self.test_06_comparison_scaffolding()
-        reference=Parser((ROOT/'examples.html').read_text()).root
-        reference.all(lambda n:n.attrs.get('id')=='stem-system-copy')[0].children.append(' Unrecorded instruction change.')
-        with patch.object(self,'example',reference),self.assertRaises(AssertionError):self.test_15_reference_files_match()
 
 if __name__=='__main__':unittest.main(verbosity=2)
