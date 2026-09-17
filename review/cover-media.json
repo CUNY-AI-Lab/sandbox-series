@@ -9,6 +9,15 @@
       "height": 259,
       "changes": "None. Original white wordmark, displayed over black background.",
       "link": "https://ailab.gc.cuny.edu/"
+    },
+    {
+      "file": "images/cail-favicon.svg",
+      "source_url": "https://cuny-ai-lab.github.io/links/logo.png",
+      "sha256": "faa92e9f154fba5adafaa1b0d1fbd7952503b55b77a1b29c158528dd9e5c8cb8",
+      "width": 416,
+      "height": 416,
+      "changes": "Original PNG embedded unchanged. SVG viewport shows logo symbol from x=0 to 354 and y=0 to 259, centered on black background.",
+      "link": "https://ailab.gc.cuny.edu/"
     }
   ]
 }
