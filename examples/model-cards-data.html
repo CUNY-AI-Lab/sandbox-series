@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model Card Data | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../images/cail-favicon.svg">
+<link rel="stylesheet" href="../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Model Card Data</h1>
+<nav aria-label="Workshop links"><a href="../index.html">Return to workshop</a> · <a href="../examples.html">Prompt examples</a> · <a href="model-cards.json" download="model-cards.json">Download JSON</a></nav></header>
+<main id="workshop-copy" class="reading-content">
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="source-copy">Copy text</button><pre class="reference-code" id="source-copy">{
+  &quot;models&quot;: [
+    {
+      &quot;id&quot;: &quot;stem-adventure-games&quot;,
+      &quot;name&quot;: &quot;STEM Adventure Games&quot;,
+      &quot;description&quot;: &quot;Explore scientific experiments through a text adventure with numbered choices.&quot;,
+      &quot;base_model&quot;: &quot;deepseek-v4-flash-0731&quot;,
+      &quot;base_label&quot;: &quot;DeepSeek V4 Flash 0731&quot;,
+      &quot;prompt_file&quot;: &quot;examples/stem-chat-system-prompt.txt&quot;,
+      &quot;starters&quot;: [
+        {
+          &quot;title&quot;: &quot;Choose adventures&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;Show me the adventure menu.&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Explore light&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;Start an adventure about Newton’s experiments with light and colour.&quot;
+        }
+      ],
+      &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
+    },
+    {
+      &quot;id&quot;: &quot;stem-adventure-games-sources&quot;,
+      &quot;name&quot;: &quot;STEM Adventure Games — Sources&quot;,
+      &quot;description&quot;: &quot;Explore scientific experiments through a text adventure with numbered choices.&quot;,
+      &quot;base_model&quot;: &quot;deepseek-v4-flash-0731&quot;,
+      &quot;base_label&quot;: &quot;DeepSeek V4 Flash 0731&quot;,
+      &quot;prompt_file&quot;: &quot;examples/stem-chat-system-prompt.txt&quot;,
+      &quot;starters&quot;: [
+        {
+          &quot;title&quot;: &quot;Choose adventures&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;Show me the adventure menu.&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Explore light&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;Start an adventure about Newton’s experiments with light and colour.&quot;
+        }
+      ],
+      &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
+    },
+    {
+      &quot;id&quot;: &quot;stem-adventure-games-advanced&quot;,
+      &quot;name&quot;: &quot;STEM Adventure Games — Advanced&quot;,
+      &quot;description&quot;: &quot;Play Prism Laboratory, then review or change its experimental procedures.&quot;,
+      &quot;base_model&quot;: &quot;deepseek-v4-pro-0813&quot;,
+      &quot;base_label&quot;: &quot;DeepSeek V4 Pro 0813&quot;,
+      &quot;prompt_file&quot;: &quot;examples/stem-system-prompt.txt&quot;,
+      &quot;starters&quot;: [
+        {
+          &quot;title&quot;: &quot;Start playing&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;Start Prism Laboratory.&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Save progress&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;How can I save my progress?&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Change experiments&quot;,
+          &quot;subtitle&quot;: &quot;&quot;,
+          &quot;content&quot;: &quot;Help me change an experiment and test whether it works.&quot;
+        }
+      ],
+      &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
+    },
+    {
+      &quot;id&quot;: &quot;cail-sandbox-skill-builder&quot;,
+      &quot;name&quot;: &quot;Kale Skill Builder&quot;,
+      &quot;description&quot;: &quot;Create, revise, and test reusable skills for CAIL Sandbox.&quot;,
+      &quot;prompt_file&quot;: &quot;examples/creators/skill-creator-system-prompt.txt&quot;,
+      &quot;starters&quot;: [
+        {
+          &quot;title&quot;: &quot;Create a skill&quot;,
+          &quot;subtitle&quot;: &quot;for a recurring task&quot;,
+          &quot;content&quot;: &quot;Help me create a reusable skill. I will describe my task, required inputs, and expected output.&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Revise a skill&quot;,
+          &quot;subtitle&quot;: &quot;using observed results&quot;,
+          &quot;content&quot;: &quot;Help me revise an existing skill. I will provide its instructions, a test request, and the output that needs to change.&quot;
+        }
+      ],
+      &quot;base_model&quot;: &quot;deepseek-v4-flash-0731&quot;,
+      &quot;base_label&quot;: &quot;DeepSeek V4 Flash 0731&quot;,
+      &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
+    },
+    {
+      &quot;id&quot;: &quot;cail-sandbox-tool-creator&quot;,
+      &quot;name&quot;: &quot;CAIL Tool Creator&quot;,
+      &quot;description&quot;: &quot;Create, revise, and test Python tools for CAIL Sandbox.&quot;,
+      &quot;prompt_file&quot;: &quot;examples/creators/tool-creator-system-prompt.txt&quot;,
+      &quot;starters&quot;: [
+        {
+          &quot;title&quot;: &quot;Create a tool&quot;,
+          &quot;subtitle&quot;: &quot;for a specific task&quot;,
+          &quot;content&quot;: &quot;Help me create a Python tool for Open WebUI. I will describe its inputs, expected output, and any required data access.&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Revise a tool&quot;,
+          &quot;subtitle&quot;: &quot;using observed results&quot;,
+          &quot;content&quot;: &quot;Help me revise an existing Python tool for Open WebUI. I will provide its code, a test input, and the result that needs to change.&quot;
+        }
+      ],
+      &quot;base_model&quot;: &quot;kimi-k2.7-code&quot;,
+      &quot;base_label&quot;: &quot;Kimi K2.7 Code&quot;,
+      &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
+    },
+    {
+      &quot;id&quot;: &quot;compare-wikipedia-revisions&quot;,
+      &quot;name&quot;: &quot;Compare Wikipedia Edits&quot;,
+      &quot;description&quot;: &quot;Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.&quot;,
+      &quot;base_model&quot;: &quot;deepseek-v4-flash-0731&quot;,
+      &quot;base_label&quot;: &quot;DeepSeek V4 Flash 0731&quot;,
+      &quot;prompt_file&quot;: &quot;examples/research/system-prompt.txt&quot;,
+      &quot;starters&quot;: [
+        {
+          &quot;title&quot;: &quot;Start comparing&quot;,
+          &quot;subtitle&quot;: &quot;Choose revision excerpts&quot;,
+          &quot;content&quot;: &quot;Help me compare a revision of Wikipedia’s academic freedom article. What passages and links should I provide?&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Classify changes&quot;,
+          &quot;subtitle&quot;: &quot;Use provided excerpts&quot;,
+          &quot;content&quot;: &quot;I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision.&quot;
+        },
+        {
+          &quot;title&quot;: &quot;Review classifications&quot;,
+          &quot;subtitle&quot;: &quot;Check quoted evidence&quot;,
+          &quot;content&quot;: &quot;I will paste a classification with its before-and-after excerpts, revision IDs, and links. Check whether the quoted evidence supports it.&quot;
+        }
+      ],
+      &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
+    }
+  ]
+}
+</pre></div>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../js/examples.js" defer></script>
+</body>
+</html>

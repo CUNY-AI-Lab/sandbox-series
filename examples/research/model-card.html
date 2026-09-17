@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare Wikipedia Edits | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Compare Wikipedia Edits</h1>
+<nav aria-label="Workshop links"><a href="../../index.html">Return to workshop</a> · <a href="../../examples.html">Prompt examples</a> · <a href="model-card.md" download="model-card.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#model-description">Model Description</a></li><li><a href="#model-setup">Model Setup</a></li><li><a href="#prompt-sections">Prompt Sections</a></li><li><a href="#prompt-suggestions">Prompt Suggestions</a></li><li><a href="#workshop-progression">Workshop Progression</a></li></ul></nav></header>
+<main id="workshop-copy" class="reading-content">
+
+<h2 id="model-description">Model Description</h2>
+<p>Compare passages from Wikipedia’s academic freedom article. Classify changes and explain each decision with quoted evidence.</p>
+<h2 id="model-setup">Model Setup</h2>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Compare Wikipedia Edits</td>
+</tr>
+<tr>
+<td>Base Model</td>
+<td>DeepSeek V4 Flash 0731</td>
+</tr>
+<tr>
+<td>Connection</td>
+<td>Gateway</td>
+</tr>
+<tr>
+<td>Access</td>
+<td>Private</td>
+</tr>
+<tr>
+<td>Sandbox Model</td>
+<td><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions">Open private model</a></td>
+</tr>
+<tr>
+<td>Capabilities</td>
+<td>File Upload, File Context, Citations, Status Updates</td>
+</tr>
+<tr>
+<td>Other Capabilities</td>
+<td>Disabled, including Web Search, Memory, and Builtin Tools</td>
+</tr>
+<tr>
+<td>Default Features</td>
+<td>None</td>
+</tr>
+<tr>
+<td>System Prompt</td>
+<td><a href="system-prompt.html">system-prompt.txt</a></td>
+</tr>
+<tr>
+<td>Knowledge</td>
+<td>None for Workshop 1</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>None for Workshop 1</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>None for Workshop 1</td>
+</tr>
+</tbody>
+</table>
+<p>Paste or attach <a href="sample-revisions.html">sample revisions</a> with revision IDs and source links in chat.</p>
+<h2 id="prompt-sections">Prompt Sections</h2>
+<ol>
+<li>Purpose</li>
+<li>Procedure</li>
+<li>Constraints</li>
+<li>Format</li>
+</ol>
+<h2 id="prompt-suggestions">Prompt Suggestions</h2>
+<h3 id="start-comparing">Start comparing</h3>
+<p>Choose revision excerpts</p>
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-1">Copy text</button><pre id="copy-1" class="reference-code"><code class="language-text">Help me compare a revision of Wikipedia’s academic freedom article. What passages and links should I provide?
+</code></pre></div>
+<h3 id="classify-changes">Classify changes</h3>
+<p>Use provided excerpts</p>
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-2">Copy text</button><pre id="copy-2" class="reference-code"><code class="language-text">I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision.
+</code></pre></div>
+<h3 id="review-classifications">Review classifications</h3>
+<p>Check quoted evidence</p>
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-3">Copy text</button><pre id="copy-3" class="reference-code"><code class="language-text">I will paste a classification with its before-and-after excerpts, revision IDs, and links. Check whether the quoted evidence supports it.
+</code></pre></div>
+<h2 id="workshop-progression">Workshop Progression</h2>
+<p>Workshop 1 uses one provided revision pair to test system prompt instructions. Workshop 2 can add a classification guide and saved examples as a knowledge collection. Workshop 3 can introduce a skill for repeating these steps and a tool for retrieving specified public revisions.</p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

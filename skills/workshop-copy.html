@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configuring skills and tools | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../images/cail-favicon.svg">
+<link rel="stylesheet" href="../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Configuring skills and tools</h1>
+<nav aria-label="Workshop links"><a href="./">Return to workshop</a> · <a href="../examples.html">Prompt examples</a> · <a href="SLIDES.md" download="SLIDES.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Workshop outline"><ol><li><a href="#slide-1">Configuring skills and tools</a></li><li><a href="#slide-2">Workshop Agenda</a></li><li><a href="#slide-3">Tools &amp; Skills</a></li><li><a href="#slide-4">Review Previous Work</a></li><li><a href="#slide-5">Connect Resources</a></li><li><a href="#slide-6">Enable Tools</a></li><li><a href="#slide-7">Inspect Game Rules</a></li><li><a href="#slide-8">Test Game Commands</a></li><li><a href="#slide-9">Discuss Play Records</a></li><li><a href="#slide-10">Choose Procedures</a></li><li><a href="#slide-11">Define Skills</a></li><li><a href="#slide-12">Write Skills</a></li><li><a href="#slide-13">Structure Skills</a></li><li><a href="#slide-14">Define Triggers</a></li><li><a href="#slide-15">Write Procedures</a></li><li><a href="#slide-16">Specify Format</a></li><li><a href="#slide-17">Clone Custom Models</a></li><li><a href="#slide-18">Save Private Copy</a></li><li><a href="#slide-19">Draft Skills</a></li><li><a href="#slide-20">Create Skills</a></li><li><a href="#slide-21">Attach Skills</a></li><li><a href="#slide-22">Extend Procedures</a></li><li><a href="#slide-23">Test Skills</a></li><li><a href="#slide-24">Create Adventure Tools</a></li><li><a href="#slide-25">Install Tool Code</a></li><li><a href="#slide-26">Inspect Tool Results</a></li><li><a href="#slide-27">Compare Game Records</a></li><li><a href="#slide-28">Record Test Results</a></li><li><a href="#slide-29">Repeat Tests</a></li></ol></nav></header>
+<main id="workshop-copy" class="reading-content">
+<section class="copy-section" id="slide-1" aria-labelledby="copy-heading-1">
+<p class="slide-link"><a href="index.html#1">Slide 1</a></p>
+<h2 id="copy-heading-1">Configuring skills and tools</h2>
+<div class="copy-content"><p class="subtitle">Add tools and reusable instructions for teaching and research</p><p>CUNY AI Lab Sandbox</p><p class="small">Developed by Zach Muhlbauer</p></div>
+</section>
+
+<section class="copy-section" id="slide-2" aria-labelledby="copy-heading-2">
+<p class="slide-link"><a href="index.html#2">Slide 2</a></p>
+<h2 id="copy-heading-2">Workshop Agenda</h2>
+<div class="copy-content"><ol class="agenda"><li>Confirm Skills and Tools access</li><li>Play STEM Adventure</li><li>Inspect commands and results</li><li>Configure reusable skills</li><li>Create and test tools</li><li>Compare procedural changes</li></ol><p class="note">Before attending, confirm individual access and Sandbox sign-in. Creating or editing resources also requires Workspace access. Knowledge access is needed when your task uses a collection.</p></div>
+</section>
+
+<section class="copy-section" id="slide-3" aria-labelledby="copy-heading-3">
+<p class="slide-link"><a href="index.html#3">Slide 3</a></p>
+<h2 id="copy-heading-3">Tools &amp; Skills</h2>
+<div class="copy-content"><dl class="feature-list"><div><dt>Skills</dt><dd>Reusable instructions for tasks or procedures.</dd></div><div><dt>Tools</dt><dd>Operations such as web search, code execution, or database queries.</dd></div></dl><p>Test a request that needs your skill or tool. Check what your model used and whether its response is correct.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/" rel="noopener" target="_blank">Tools &amp; Skills</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-4" aria-labelledby="copy-heading-4">
+<p class="slide-link"><a href="index.html#4">Slide 4</a></p>
+<h2 id="copy-heading-4">Review Previous Work</h2>
+<div class="copy-content"><p>Review your model and source collection. This example builds on our chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.</p><ul><li>Identify instructions for opening Prism Laboratory.</li><li>Review attached STEM Wikipedia Experiments collection.</li><li>Distinguish source material, skill instructions, and tool operations.</li></ul><p>Use a private copy when adapting this configuration.</p></div>
+</section>
+
+<section class="copy-section" id="slide-5" aria-labelledby="copy-heading-5">
+<p class="slide-link"><a href="index.html#5">Slide 5</a></p>
+<h2 id="copy-heading-5">Connect Resources</h2>
+<div class="copy-content"><dl class="feature-list"><div><dt>System prompt</dt><dd>Tell your model when to open a game or consult sources.</dd></div><div><dt>Knowledge</dt><dd>STEM Wikipedia Experiments contains scientific and historical sources.</dd></div><div><dt>Skill</dt><dd>Extend STEM Adventures describes how to change experimental procedures.</dd></div><div><dt>Tool</dt><dd>STEM Adventure opens a game and applies its rules.</dd></div></dl><p>Use provided game files to describe rooms, objects, and rules.</p></div>
+</section>
+
+<section class="copy-section" id="slide-6" aria-labelledby="copy-heading-6">
+<p class="slide-link"><a href="index.html#6">Slide 6</a></p>
+<h2 id="copy-heading-6">Enable Tools</h2>
+<div class="copy-content"><figure><img alt="STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills." class="screenshot-img" src="../images/current/integrations-advanced-2026-09-17.png" loading="lazy" decoding="async" width="4510" height="2226"><p class="image-alt"><strong>Alt text:</strong> STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.</p><figcaption>With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat. · <a href="https://ailab.gc.cuny.edu/models/" target="_blank" rel="noopener">Model Registry</a></figcaption></figure></div>
+</section>
+
+<section class="copy-section" id="slide-7" aria-labelledby="copy-heading-7">
+<p class="slide-link"><a href="index.html#7">Slide 7</a></p>
+<h2 id="copy-heading-7">Inspect Game Rules</h2>
+<div class="copy-content"><figure><img alt="Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box." class="screenshot-img" src="../images/current/stem-advanced-clean-2026-09-17.png" loading="lazy" decoding="async" width="4507" height="2222"><p class="image-alt"><strong>Alt text:</strong> Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.</p><figcaption>Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. <a href="../examples/adventure/preview.html">Open game</a> · <a href="../examples/adventure/prism.html">Read game file</a> · <a href="https://ailab.gc.cuny.edu/models/" target="_blank" rel="noopener">Model Registry</a></figcaption></figure></div>
+</section>
+
+<section class="copy-section" id="slide-8" aria-labelledby="copy-heading-8">
+<p class="slide-link"><a href="index.html#8">Slide 8</a></p>
+<h2 id="copy-heading-8">Test Game Commands</h2>
+<div class="copy-content"><ol class="steps"><li>Enter <strong>restart</strong>, then try <strong>record result</strong> before completing required steps.</li><li>Follow <a href="reference.html#game-commands">winning command sequence</a>. Immediately after take prism, repeat take prism and check its response.</li><li>Enter <strong>save</strong> to download your play record.</li><li>Enter <strong>restart</strong>, then <strong>load</strong> and choose your saved file.</li><li>Enter <strong>inventory</strong>. Check restored items, room, and completion. Enter <strong>undo</strong> to reverse your last move.</li></ol></div>
+</section>
+
+<section class="copy-section" id="slide-9" aria-labelledby="copy-heading-9">
+<p class="slide-link"><a href="index.html#9">Slide 9</a></p>
+<h2 id="copy-heading-9">Discuss Play Records</h2>
+<div class="copy-content"><ol class="steps"><li>Enter <strong>discuss</strong> inside your game.</li><li>Review record in message box, then send it.</li><li>Check how your model explains a failed action.</li><li>Compare programmed observations with historical sources.</li></ol><p>A completed game does not establish conceptual understanding.</p></div>
+</section>
+
+<section class="copy-section" id="slide-10" aria-labelledby="copy-heading-10">
+<p class="slide-link"><a href="index.html#10">Slide 10</a></p>
+<h2 id="copy-heading-10">Choose Procedures</h2>
+<div class="copy-content"><p>Choose one procedure to change or examine.</p><ul><li>Change size of an opening that admits light, called an aperture.</li><li>Inspect a failed command and its prerequisite.</li><li>Check a historical claim against source material.</li></ul><p>Describe expected behavior before testing.</p></div>
+</section>
+
+<section class="copy-section" id="slide-11" aria-labelledby="copy-heading-11">
+<p class="slide-link"><a href="index.html#11">Slide 11</a></p>
+<h2 id="copy-heading-11">Define Skills</h2>
+<div class="copy-content"><p>Skills contain reusable Markdown instructions for tasks or procedures.</p><p>Models can load attached skills when needed. Enable a skill under Integrations → Skills to include its full instructions in this chat.</p><p>Markdown is plain text with formatting such as headings and lists.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/" rel="noopener" target="_blank">Tools &amp; Skills</a></p><p class="source"><a href="https://docs.openwebui.com/features/workspace/skills/" rel="noopener" target="_blank">Open WebUI Skills</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-12" aria-labelledby="copy-heading-12">
+<p class="slide-link"><a href="index.html#12">Slide 12</a></p>
+<h2 id="copy-heading-12">Write Skills</h2>
+<div class="copy-content">
+
+<div class="divider-line"></div>
+</div>
+</section>
+
+<section class="copy-section" id="slide-13" aria-labelledby="copy-heading-13">
+<p class="slide-link"><a href="index.html#13">Slide 13</a></p>
+<h2 id="copy-heading-13">Structure Skills</h2>
+<div class="copy-content">
+
+
+<p>Use three parts to draft this skill.</p>
+<ol class="stream-list component-list">
+<li><strong>Trigger</strong> — When should this skill activate?</li>
+<li><strong>Procedure</strong> — Which steps should your model follow?</li>
+<li><strong>Format</strong> — How should responses appear?</li>
+</ol>
+<p><a href="reference.html#write-instructions">Read blank template</a></p><p><a href="../examples/stem-game-skill.html">Read complete skill</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-14" aria-labelledby="copy-heading-14">
+<p class="slide-link"><a href="index.html#14">Slide 14</a></p>
+<h2 id="copy-heading-14">Define Triggers</h2>
+<div class="copy-content"><p>Describe when your skill should be used.</p><ul><li>Should it load when users request a procedural change?</li><li>Should it also apply to submitted play records?</li><li>Which requests should leave it unused?</li></ul><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="skills-tpl-trigger">Copy prompt</button><pre class="prompt-block" id="skills-tpl-trigger">Use this skill when users request an experimental variation in STEM Adventure or ask to examine a submitted play record.</pre></div></div>
+</section>
+
+<section class="copy-section" id="slide-15" aria-labelledby="copy-heading-15">
+<p class="slide-link"><a href="index.html#15">Slide 15</a></p>
+<h2 id="copy-heading-15">Write Procedures</h2>
+<div class="copy-content"><p>Specify one change to your experiment. Use fields listed in <a href="../examples/stem-game-skill.html">scenario instructions</a> when editing your game file.</p><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="skills-tpl-procedure">Copy prompt</button><pre class="prompt-block" id="skills-tpl-procedure">1. Identify one experimental decision to change.
+2. Check source material for that procedure.
+3. Revise scenario JSON using fields listed in attached instructions.
+4. List commands that complete your game and one command that should fail, then open your game.
+5. Compare a submitted record with expected behavior.</pre></div></div>
+</section>
+
+<section class="copy-section" id="slide-16" aria-labelledby="copy-heading-16">
+<p class="slide-link"><a href="index.html#16">Slide 16</a></p>
+<h2 id="copy-heading-16">Specify Format</h2>
+<div class="copy-content"><p>Separate your game file, source evidence, and test results.</p><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="skills-tpl-format">Copy prompt</button><pre class="prompt-block" id="skills-tpl-format">Scenario JSON: [Complete scenario]
+Source: [Relevant historical passage]
+Invented elements: [Rooms or simplified observations]
+Winning commands: [Sequence]
+Blocked command: [Command and missing prerequisite]
+Observed result: [Fill only after testing]</pre></div></div>
+</section>
+
+<section class="copy-section" id="slide-17" aria-labelledby="copy-heading-17">
+<p class="slide-link"><a href="index.html#17">Slide 17</a></p>
+<h2 id="copy-heading-17">Clone Custom Models</h2>
+<div class="copy-content"><figure><img alt="Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible." class="screenshot-img" src="../images/current/model-clone-advanced-2026-09-17.png" loading="lazy" decoding="async" width="4510" height="2226"><p class="image-alt"><strong>Alt text:</strong> Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.</p><figcaption>In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and choose Clone.</figcaption></figure></div>
+</section>
+
+<section class="copy-section" id="slide-18" aria-labelledby="copy-heading-18">
+<p class="slide-link"><a href="index.html#18">Slide 18</a></p>
+<h2 id="copy-heading-18">Save Private Copy</h2>
+<div class="copy-content"><figure><img alt="Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you." class="screenshot-img" src="../images/current/model-private-3x-2026-09-16.svg" loading="lazy" decoding="async" width="2490" height="1090"><p class="image-alt"><strong>Alt text:</strong> Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.</p><figcaption>Rename model and ID. Open Access, keep Private, and remove copied users or groups from Access List. Close Access and choose Save &amp; Create.</figcaption></figure></div>
+</section>
+
+<section class="copy-section" id="slide-19" aria-labelledby="copy-heading-19">
+<p class="slide-link"><a href="index.html#19">Slide 19</a></p>
+<h2 id="copy-heading-19">Draft Skills</h2>
+<div class="copy-content"><p>Kale Skill Builder is a custom model that drafts skills for tasks you describe.</p><p>Select model ID on bottom right of message box. Choose Kale Skill Builder.</p><p>Attach <a href="../examples/stem-game-skill.html">scenario instructions</a> before sending this example.</p><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="skill-creator-request">Copy prompt</button><pre class="prompt-block" id="skill-creator-request">Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed.</pre></div><p><a href="https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder">Open Kale Skill Builder</a> · <a href="../examples/stem-game-skill.html">Read tested skill</a></p><p><a href="reference.html#check-skill-drafts">Review draft evaluation</a></p><p class="artifact-links"><a download="stem-game-skill.md" href="../examples/stem-game-skill.md">Download skill instructions</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-20" aria-labelledby="copy-heading-20">
+<p class="slide-link"><a href="index.html#20">Slide 20</a></p>
+<h2 id="copy-heading-20">Create Skills</h2>
+<div class="copy-content"><figure><img alt="Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions." class="screenshot-img" src="../images/current/skill-create-3x-2026-09-16.svg" loading="lazy" decoding="async" width="2520" height="1650"><p class="image-alt"><strong>Alt text:</strong> Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.</p><figcaption>Open Workspace → Skills → Create. Name your skill and add an identifier and description. Paste your saved draft into Instructions, review Access, and choose Save &amp; Create.</figcaption></figure></div>
+</section>
+
+<section class="copy-section" id="slide-21" aria-labelledby="copy-heading-21">
+<p class="slide-link"><a href="index.html#21">Slide 21</a></p>
+<h2 id="copy-heading-21">Attach Skills</h2>
+<div class="copy-content"><ol class="steps"><li>Open your private copy under <strong>Workspace → Models</strong>.</li><li>Replace Extend STEM Adventures with your saved draft under <strong>Skills</strong>. Update System Prompt to name your skill.</li><li>Set <strong>Function Calling</strong> to <strong>Native</strong> under <strong>Advanced Parameters</strong>.</li><li>Select <strong>Save &amp; Update</strong> and test a request that uses your skill.</li></ol><p>Native function calling lets your model call tools and load attached skill instructions.</p><p class="source"><a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/" rel="noopener" target="_blank">Attach skills</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-22" aria-labelledby="copy-heading-22">
+<p class="slide-link"><a href="index.html#22">Slide 22</a></p>
+<h2 id="copy-heading-22">Extend Procedures</h2>
+<div class="copy-content"><p>Open your private copy. Attach <a href="../examples/adventure/prism.html">Prism Laboratory JSON</a> and enable your saved draft under <strong>Integrations → Skills</strong>. Send this request.</p><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="stem-stage-skill">Copy prompt</button><pre class="prompt-block" id="stem-stage-skill">Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.</pre></div><p><a href="../examples/stem-game-skill.html">Read skill instructions</a> · <a download="aperture.json" href="../examples/adventure/aperture.json">Download tested scenario</a></p><p class="artifact-links"><a download="prism.json" href="../examples/adventure/prism.json">Download Prism Laboratory</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-23" aria-labelledby="copy-heading-23">
+<p class="slide-link"><a href="index.html#23">Slide 23</a></p>
+<h2 id="copy-heading-23">Test Skills</h2>
+<div class="copy-content"><p>Use your private copy for both tests. Remove any additional skills from this copy before comparing your draft.</p><ul class="comparison-steps"><li>Remove your skill under <strong>Workspace → Models → Skills</strong>. Save, start a new chat, and confirm it is off under <strong>Integrations → Skills</strong>. Repeat your extension request with Prism Laboratory JSON attached.</li><li>Attach your skill again, save, and repeat that request in another new chat. Attach Prism Laboratory JSON and enable your saved draft under Integrations → Skills.</li><li>Keep base model, system prompt, sources, and tool unchanged.</li><li>Run winning and blocked commands. Compare expected and observed results.</li></ul><p>Save generated scenarios and play records.</p></div>
+</section>
+
+<section class="copy-section" id="slide-24" aria-labelledby="copy-heading-24">
+<p class="slide-link"><a href="index.html#24">Slide 24</a></p>
+<h2 id="copy-heading-24">Create Adventure Tools</h2>
+<div class="copy-content"><p>CAIL Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.</p><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="stem-tool-request">Copy prompt</button><pre class="prompt-block" id="stem-tool-request">Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.</pre></div><p><a href="https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator">Open CAIL Tool Creator</a> · <a download="stem_adventure.py" href="../examples/tools/stem_adventure.py">Download tested tool</a></p><p><a href="reference.html#check-generated-code">Review code evaluation</a></p></div>
+</section>
+
+<section class="copy-section" id="slide-25" aria-labelledby="copy-heading-25">
+<p class="slide-link"><a href="index.html#25">Slide 25</a></p>
+<h2 id="copy-heading-25">Install Tool Code</h2>
+<div class="copy-content"><ol class="steps"><li>Open <strong>Workspace → Tools → Create</strong>.</li><li>Enter a unique Name and ID, then add a Description.</li><li>Paste provided <a href="../examples/tools/stem_adventure.html">tested STEM Adventure code</a>. Save your creator draft for separate review.</li><li>Select <strong>Save &amp; Create</strong>.</li><li>In your private model, replace STEM Adventure under <strong>Tools</strong> with your installed copy. Update System Prompt to name it and select <strong>Save &amp; Update</strong>.</li></ol></div>
+</section>
+
+<section class="copy-section" id="slide-26" aria-labelledby="copy-heading-26">
+<p class="slide-link"><a href="index.html#26">Slide 26</a></p>
+<h2 id="copy-heading-26">Inspect Tool Results</h2>
+<div class="copy-content"><p>Start a new chat with your private model. Under Integrations → Tools, select only your installed adventure tool. Send Begin Prism Laboratory, then open its tool-call details.</p><ul><li>Check which scenario was passed to render_stem_adventure.</li><li>Compare returned result with your request.</li><li>Confirm displayed game matches that scenario.</li></ul><p>Save any error before revising your request.</p></div>
+</section>
+
+<section class="copy-section" id="slide-27" aria-labelledby="copy-heading-27">
+<p class="slide-link"><a href="index.html#27">Slide 27</a></p>
+<h2 id="copy-heading-27">Compare Game Records</h2>
+<div class="copy-content"><p>Attach saved play records from original and revised games, then send this request.</p><div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="tool-test">Copy prompt</button><pre class="prompt-block" id="tool-test">Review both play records. Which commands and prerequisites changed? Which observations were programmed? Which historical claims can the uploaded sources support?</pre></div><p>Check your model’s account against commands and source passages. Keep expected and observed results separate.</p></div>
+</section>
+
+<section class="copy-section" id="slide-28" aria-labelledby="copy-heading-28">
+<p class="slide-link"><a href="index.html#28">Slide 28</a></p>
+<h2 id="copy-heading-28">Record Test Results</h2>
+<div class="copy-content"><table class="rubric"><thead><tr><th>Record</th><th>Include</th></tr></thead><tbody><tr><th scope="row">Configuration</th><td>Model ID, system prompt, documents, skill instructions, and enabled tools.</td></tr><tr><th scope="row">Action</th><td>Request, instructions used, tool calls and results, and final response.</td></tr><tr><th scope="row">Judgment</th><td>What you expected, what happened, and any change you plan to test.</td></tr></tbody></table><p>Before sharing, confirm others can access your model, collections, skills, and tools. Repeat relevant tests after updates.</p></div>
+</section>
+
+<section class="copy-section" id="slide-29" aria-labelledby="copy-heading-29">
+<p class="slide-link"><a href="index.html#29">Slide 29</a></p>
+<h2 id="copy-heading-29">Repeat Tests</h2>
+<div class="copy-content"><ul class="agenda"><li>Save prompts, sources, skills, and tool settings</li><li>Compare expected and observed behavior</li><li>Revise instructions from recorded failures</li><li>Verify shared access with intended users</li><li>Retest after model or tool updates</li></ul><p><a href="../examples.html">Browse system-prompt examples</a> · <a href="..">Return to Composing system prompts</a></p></div>
+</section>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../js/examples.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tool Test Results | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Tool Test Results</h1>
+<nav aria-label="Workshop links"><a href="../../index.html">Return to workshop</a> · <a href="../../examples.html">Prompt examples</a> · <a href="tool-creator-corrected-tests.json" download="tool-creator-corrected-tests.json">Download JSON</a></nav></header>
+<main id="workshop-copy" class="reading-content">
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="source-copy">Copy text</button><pre class="reference-code" id="source-copy">[
+  {
+    &quot;case&quot;: &quot;ordinary&quot;,
+    &quot;expect_error&quot;: false,
+    &quot;result&quot;: {
+      &quot;total_commands&quot;: 2,
+      &quot;failed_commands&quot;: [
+        &quot;jump&quot;
+      ]
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;numeric commands&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Command at index 0 must be a string.&quot;
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;numeric input&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Input must be a string.&quot;
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;event numeric command&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Event command at index 0 must be a string.&quot;
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;malformed&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Invalid JSON format.&quot;
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;mismatch&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Mismatch: 1 commands vs 0 events.&quot;
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;overlong&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Input exceeds 50,000 character limit.&quot;
+    },
+    &quot;pass&quot;: true
+  },
+  {
+    &quot;case&quot;: &quot;301 commands&quot;,
+    &quot;expect_error&quot;: true,
+    &quot;result&quot;: {
+      &quot;error&quot;: &quot;Command count exceeds 300 limit.&quot;
+    },
+    &quot;pass&quot;: true
+  }
+]
+</pre></div>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

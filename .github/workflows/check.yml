@@ -10,7 +10,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - run: python3 -m pip install -r requirements-build.txt
       - run: python3 scripts/check_series.py
+      - run: python3 scripts/test_reading_pages.py
       - run: python3 scripts/check_screenshot_resolution.py
       - run: python3 scripts/test_copy_regressions.py
       - run: python3 scripts/test_teaching_research_sequence.py

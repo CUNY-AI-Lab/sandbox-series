@@ -176,7 +176,7 @@ Which objects in this scene appear in Newton: Light and Colour? Quote a relevant
 
 Open cited material. Does it support your model’s response?
 
-[Read Newton source summary](../examples/knowledge/newton-light-colour.md) · [Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
+[Read Newton source summary](../examples/knowledge/newton-light-colour.html) · [Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
 
 ---
 
@@ -214,11 +214,11 @@ Choose documents that explain your course or research project and describe what 
 
 Choose documents for your teaching or research task.
 
-- Use [Newton: Light and Colour](../examples/knowledge/newton-light-colour.md) for apparatus and observations.
+- Use [Newton: Light and Colour](../examples/knowledge/newton-light-colour.html) for apparatus and observations.
 
-- Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.md) for changes to experimental procedures.
+- Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.html) for changes to experimental procedures.
 
-For Compare Wikipedia Edits, use [sample revision excerpts](../examples/research/sample-revisions.md) and [classification criteria](../examples/research/system-prompt.txt). Read documents before uploading; distinguish summaries from original accounts.
+For Compare Wikipedia Edits, use [sample revision excerpts](../examples/research/sample-revisions.html) and [classification criteria](../examples/research/system-prompt.html). Read documents before uploading; distinguish summaries from original accounts.
 
 [Download Light and Colour](../examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](../examples/knowledge/newton-experimental-variants.md)
 
@@ -306,4 +306,4 @@ Share your collection with people who will use your custom model.
 
 - Review [system-prompt examples](../examples.html)
 
-- Continue to [Configuring skills and tools](../skills/)
+- Continue to [Configuring skills and tools](../skills)

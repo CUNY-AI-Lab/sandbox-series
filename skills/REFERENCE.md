@@ -2,7 +2,7 @@
 
 Choose an example to adapt for your teaching or research.
 
-[Return to workshop](./) · [System prompt examples](../examples.html)[Write Instructions](#write-instructions) · [Check Interpretations](#check-interpretations) · [Check Skill Drafts](#check-skill-drafts) · [Check Generated Code](#check-generated-code) · [Test Game Commands](#game-commands)
+[Return to workshop](.) · [System prompt examples](../examples.html)[Write Instructions](#write-instructions) · [Check Interpretations](#check-interpretations) · [Check Skill Drafts](#check-skill-drafts) · [Check Generated Code](#check-generated-code) · [Test Game Commands](#game-commands)
 
 ### Write Instructions
 
@@ -52,7 +52,7 @@ An empty history cannot establish completion. Request a full record or replay.
 
 Send this example to Kale Skill Builder with your skill draft. Check whether revised instructions flag missing evidence.
 
-[Read corrected skill draft](../examples/creators/record-interpreter-skill.md) · [Inspect initial response](../review/live/skill-builder-consistency-failure.md)
+[Read corrected skill draft](../examples/creators/record-interpreter-skill.html) · [Inspect initial response](../review/live/skill-builder-consistency-failure.html)
 
 ### Check Generated Code
 
@@ -66,7 +66,7 @@ Expected behavior is to reject numeric commands. Initial creator output accepted
 
 Send observed failure back to Tool Creator, then repeat your tests.
 
-[Inspect original draft](../review/live/record-validator-before.py) · [Read corrected tool](../examples/creators/record-validator.py) · [Review executed tests](../review/live/tool-creator-corrected-tests.json)
+[Inspect original draft](../review/live/record-validator-before.html) · [Read corrected tool](../examples/creators/record-validator.html) · [Review executed tests](../review/live/tool-creator-corrected-tests.html)
 
 ### Test Game Commands
 

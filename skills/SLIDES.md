@@ -106,7 +106,7 @@ With STEM Adventure Games — Advanced selected, open Integrations beside +. Und
 
 ![Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.](../images/current/stem-advanced-clean-2026-09-17.png)
 
-Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.json) · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.html) · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -194,7 +194,7 @@ Use three parts to draft this skill.
 
 [Read blank template](reference.html#write-instructions)
 
-[Read complete skill](../examples/stem-game-skill.md)
+[Read complete skill](../examples/stem-game-skill.html)
 
 ---
 
@@ -220,7 +220,7 @@ Use this skill when users request an experimental variation in STEM Adventure or
 
 ### Write Procedures
 
-Specify one change to your experiment. Use fields listed in [scenario instructions](../examples/stem-game-skill.md) when editing your game file.
+Specify one change to your experiment. Use fields listed in [scenario instructions](../examples/stem-game-skill.html) when editing your game file.
 
 ```text
 1. Identify one experimental decision to change.
@@ -277,13 +277,13 @@ Kale Skill Builder is a custom model that drafts skills for tasks you describe.
 
 Select model ID on bottom right of message box. Choose Kale Skill Builder.
 
-Attach [scenario instructions](../examples/stem-game-skill.md) before sending this example.
+Attach [scenario instructions](../examples/stem-game-skill.html) before sending this example.
 
 ```text
 Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed.
 ```
 
-[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](../examples/stem-game-skill.md)
+[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](../examples/stem-game-skill.html)
 
 [Review draft evaluation](reference.html#check-skill-drafts)
 
@@ -323,13 +323,13 @@ Native function calling lets your model call tools and load attached skill instr
 
 ### Extend Procedures
 
-Open your private copy. Attach [Prism Laboratory JSON](../examples/adventure/prism.json) and enable your saved draft under **Integrations → Skills**. Send this request.
+Open your private copy. Attach [Prism Laboratory JSON](../examples/adventure/prism.html) and enable your saved draft under **Integrations → Skills**. Send this request.
 
 ```text
 Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
 ```
 
-[Read skill instructions](../examples/stem-game-skill.md) · [Download tested scenario](../examples/adventure/aperture.json)
+[Read skill instructions](../examples/stem-game-skill.html) · [Download tested scenario](../examples/adventure/aperture.json)
 
 [Download Prism Laboratory](../examples/adventure/prism.json)
 
@@ -377,7 +377,7 @@ Create a minimalist text adventure tool for Open WebUI. Return an interactive HT
 
 - Enter a unique Name and ID, then add a Description.
 
-- Paste provided [tested STEM Adventure code](../examples/tools/stem_adventure.py). Save your creator draft for separate review.
+- Paste provided [tested STEM Adventure code](../examples/tools/stem_adventure.html). Save your creator draft for separate review.
 
 - Select **Save & Create**.
 
@@ -443,4 +443,4 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 - Retest after model or tool updates
 
-[Browse system-prompt examples](../examples.html) · [Return to Composing system prompts](../)
+[Browse system-prompt examples](../examples.html) · [Return to Composing system prompts](..)

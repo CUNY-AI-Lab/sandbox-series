@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Initial Tool Draft | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Initial Tool Draft</h1>
+<nav aria-label="Workshop links"><a href="../../index.html">Return to workshop</a> · <a href="../../examples.html">Prompt examples</a> · <a href="record-validator-before.py" download="record-validator-before.py">Download Python</a></nav></header>
+<main id="workshop-copy" class="reading-content">
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="source-copy">Copy text</button><pre class="reference-code" id="source-copy">import json
+
+class Tools:
+    def validate_play_record(self, json_input: str) -&gt; dict:
+        &quot;&quot;&quot;
+        Validates a JSON play-record for structural integrity and command-event alignment.
+
+        :param json_input: A JSON string containing &#x27;commands&#x27; (list of strings)
+                           and &#x27;events&#x27; (list of objects with &#x27;command&#x27; and &#x27;valid&#x27; keys).
+        :return: A dictionary containing &#x27;total_commands&#x27; and &#x27;failed_commands&#x27;,
+                 or a dictionary with an &#x27;error&#x27; key describing the violation.
+        &quot;&quot;&quot;
+        # 1. Input Size Constraint
+        if len(json_input) &gt; 50000:
+            return {&quot;error&quot;: &quot;Input exceeds 50,000 character limit.&quot;}
+
+        # 2. JSON Parsing
+        try:
+            data = json.loads(json_input)
+        except json.JSONDecodeError:
+            return {&quot;error&quot;: &quot;Invalid JSON format.&quot;}
+
+        # 3. Structure Validation
+        if not isinstance(data, dict):
+            return {&quot;error&quot;: &quot;Root must be a JSON object.&quot;}
+
+        commands = data.get(&quot;commands&quot;)
+        events = data.get(&quot;events&quot;)
+
+        if not isinstance(commands, list) or not isinstance(events, list):
+            return {&quot;error&quot;: &quot;Missing or invalid &#x27;commands&#x27; or &#x27;events&#x27; arrays.&quot;}
+
+        # 4. Command Count Constraint
+        command_count = len(commands)
+        if command_count &gt; 300:
+            return {&quot;error&quot;: &quot;Command count exceeds 300 limit.&quot;}
+
+        # 5. Count Mismatch Check
+        event_count = len(events)
+        if command_count != event_count:
+            return {&quot;error&quot;: f&quot;Mismatch: {command_count} commands vs {event_count} events.&quot;}
+
+        # 6. Value and Integrity Validation
+        failed_commands = []
+        for i in range(command_count):
+            cmd_val = commands[i]
+            event_val = events[i]
+
+            # Verify event structure
+            if not isinstance(event_val, dict) or &quot;command&quot; not in event_val or &quot;valid&quot; not in event_val:
+                return {&quot;error&quot;: f&quot;Event at index {i} is missing required &#x27;command&#x27; or &#x27;valid&#x27; fields.&quot;}
+
+            # Verify value matching (Command name must match Event command name at same index)
+            if event_val[&quot;command&quot;] != cmd_val:
+                return {&quot;error&quot;: f&quot;Mismatch: command name at index {i} (&#x27;{cmd_val}&#x27;) does not match event record (&#x27;{event_val[&#x27;command&#x27;]}&#x27;).&quot;}
+
+            # Verify &#x27;valid&#x27; is boolean
+            if not isinstance(event_val[&quot;valid&quot;], bool):
+                return {&quot;error&quot;: f&quot;Event at index {i} &#x27;valid&#x27; field must be a boolean.&quot;}
+
+            # Collect failures
+            if event_val[&quot;valid&quot;] is False:
+                failed_commands.append(cmd_val)
+
+        return {
+            &quot;total_commands&quot;: command_count,
+            &quot;failed_commands&quot;: failed_commands
+        }
+</pre></div>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

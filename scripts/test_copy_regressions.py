@@ -245,7 +245,7 @@ class CopyRegressions(unittest.TestCase):
             actual=blocks[0].text().strip()
             self.assertEqual(actual,expected)
         self.assertFalse(self.example.all(lambda n:n.attrs.get('id')=='stem-skill-copy'))
-        self.assertTrue(self.slide('skills/index.html','Structure Skills').all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/stem-game-skill.md'))
+        self.assertTrue(self.slide('skills/index.html','Structure Skills').all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/stem-game-skill.html'))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
         for record in config.values():
@@ -506,7 +506,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(blocks[0].text().strip(),prompt)
         self.assertFalse(sections[0].all(lambda n:'hidden' in n.attrs or n.tag=='details'))
         links={n.attrs.get('href') for n in sections[0].all(lambda n:n.tag=='a')}
-        for name in ['system-prompt.txt','model-card.md','sample-revisions.html']:
+        for name in ['system-prompt.txt','model-card.html','sample-revisions.html']:
             self.assertIn('examples/research/'+name,links)
 
         card=(folder/'model-card.md').read_text()

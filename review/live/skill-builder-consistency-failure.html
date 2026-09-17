@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Initial Skill Response | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Initial Skill Response</h1>
+<nav aria-label="Workshop links"><a href="../../index.html">Return to workshop</a> · <a href="../../examples.html">Prompt examples</a> · <a href="skill-builder-consistency-failure.md" download="skill-builder-consistency-failure.md">Download Markdown</a></nav></header>
+<main id="workshop-copy" class="reading-content">
+<p>Skill Name: STEM Adventure Record Interpreter
+Skill ID: stem-adventure-interpreter
+Skill Description: Use this skill to analyze and summarize STEM Adventure play records provided as JSON objects.</p>
+<p>Skill Instructions:
+1. Parse the provided JSON to extract the commands array, the events array, and the result object.
+2. Examine the events array to verify each entry contains a command, a validity boolean, and text.
+3. Check the result object for the current room, inventory, flags, and completion status.
+4. Summarize the player's journey and current state, treating user-supplied success labels as reported evidence rather than proof of execution.</p>
+<p>Proposed Tests:</p>
+<p>Test 1 (Boundary)
+Input: <code>{"commands":[], "events":[], "result":{"room":"Prism Laboratory", "inventory":[], "flags":[], "complete":true}}</code>
+Expected Behavior: Report an empty command history and empty event log, noting the player has reached a completed state in the "Prism Laboratory".</p>
+<p>Test 2 (Incomplete Record)
+Input: <code>{"result":{"room":"Storage"}}</code>
+Expected Behavior: Identify the record as incomplete due to the absence of the commands array, events array, and the full result object.</p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

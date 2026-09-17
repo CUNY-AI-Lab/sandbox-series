@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aperture Test | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Aperture Test</h1>
+<nav aria-label="Workshop links"><a href="../../index.html">Return to workshop</a> · <a href="../../examples.html">Prompt examples</a> · <a href="aperture.json" download="aperture.json">Download JSON</a></nav></header>
+<main id="workshop-copy" class="reading-content">
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="source-copy">Copy text</button><pre class="reference-code" id="source-copy">{
+  &quot;title&quot;: &quot;Prism Laboratory: Aperture Test&quot;,
+  &quot;introduction&quot;: &quot;Enter a fictional laboratory inspired by Newton’s prism experiments. Investigate light, then compare observations with historical sources.&quot;,
+  &quot;start&quot;: &quot;study&quot;,
+  &quot;rooms&quot;: {
+    &quot;study&quot;: {
+      &quot;name&quot;: &quot;Study&quot;,
+      &quot;description&quot;: &quot;A notebook asks whether a prism creates colours or separates light. A storeroom lies north; a dark laboratory lies east.&quot;,
+      &quot;exits&quot;: {
+        &quot;north&quot;: &quot;storeroom&quot;,
+        &quot;east&quot;: &quot;laboratory&quot;
+      },
+      &quot;items&quot;: []
+    },
+    &quot;storeroom&quot;: {
+      &quot;name&quot;: &quot;Storeroom&quot;,
+      &quot;description&quot;: &quot;A glass prism and a screen with a narrow opening rest on a shelf.&quot;,
+      &quot;exits&quot;: {
+        &quot;south&quot;: &quot;study&quot;
+      },
+      &quot;items&quot;: [
+        &quot;prism&quot;,
+        &quot;screen&quot;
+      ]
+    },
+    &quot;laboratory&quot;: {
+      &quot;name&quot;: &quot;Laboratory&quot;,
+      &quot;description&quot;: &quot;A shutter controls a narrow beam of sunlight. A pale wall faces the window. You can open or close the shutter, use a prism and screen, test red light, and record a result.&quot;,
+      &quot;exits&quot;: {
+        &quot;west&quot;: &quot;study&quot;
+      },
+      &quot;items&quot;: []
+    }
+  },
+  &quot;actions&quot;: [
+    {
+      &quot;command&quot;: &quot;open shutter&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [],
+      &quot;requires_flags&quot;: [],
+      &quot;sets_flags&quot;: [
+        &quot;beam&quot;
+      ],
+      &quot;clears_flags&quot;: [],
+      &quot;text&quot;: &quot;A narrow beam of sunlight crosses the dark room and reaches the wall.&quot;
+    },
+    {
+      &quot;command&quot;: &quot;close shutter&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [],
+      &quot;requires_flags&quot;: [],
+      &quot;sets_flags&quot;: [],
+      &quot;clears_flags&quot;: [
+        &quot;beam&quot;,
+        &quot;spectrum&quot;,
+        &quot;red_selected&quot;,
+        &quot;red_tested&quot;,
+        &quot;recorded&quot;,
+        &quot;aperture_tested&quot;
+      ],
+      &quot;text&quot;: &quot;The shutter closes. The beam and visible spectrum disappear. Reopen it to repeat the experiment.&quot;
+    },
+    {
+      &quot;command&quot;: &quot;use prism&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [
+        &quot;prism&quot;
+      ],
+      &quot;requires_flags&quot;: [
+        &quot;beam&quot;
+      ],
+      &quot;sets_flags&quot;: [
+        &quot;spectrum&quot;
+      ],
+      &quot;clears_flags&quot;: [],
+      &quot;text&quot;: &quot;You place the prism in the beam. An elongated band of colours appears on the wall. This observation alone does not settle whether the prism creates or separates colours.&quot;
+    },
+    {
+      &quot;command&quot;: &quot;use screen&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [
+        &quot;screen&quot;
+      ],
+      &quot;requires_flags&quot;: [
+        &quot;spectrum&quot;
+      ],
+      &quot;sets_flags&quot;: [
+        &quot;red_selected&quot;
+      ],
+      &quot;clears_flags&quot;: [],
+      &quot;text&quot;: &quot;The screen&#x27;s opening isolates red light from the coloured band. You can test how that selected light behaves under further refraction.&quot;
+    },
+    {
+      &quot;command&quot;: &quot;test red light&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [
+        &quot;prism&quot;
+      ],
+      &quot;requires_flags&quot;: [
+        &quot;red_selected&quot;,
+        &quot;beam&quot;
+      ],
+      &quot;sets_flags&quot;: [
+        &quot;red_tested&quot;
+      ],
+      &quot;clears_flags&quot;: [],
+      &quot;text&quot;: &quot;In this simplified repeat of the experiment, selected red light is refracted again and remains red. Compare this result with Newton&#x27;s account before interpreting it.&quot;
+    },
+    {
+      &quot;command&quot;: &quot;record result&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [],
+      &quot;requires_flags&quot;: [
+        &quot;red_tested&quot;
+      ],
+      &quot;sets_flags&quot;: [
+        &quot;recorded&quot;
+      ],
+      &quot;clears_flags&quot;: [],
+      &quot;text&quot;: &quot;Recorded: sunlight formed a spectrum, and selected red light remained red after further refraction. Complete the aperture comparison as well, then export your record to examine both procedures.&quot;
+    },
+    {
+      &quot;command&quot;: &quot;narrow aperture&quot;,
+      &quot;room&quot;: &quot;laboratory&quot;,
+      &quot;requires_items&quot;: [
+        &quot;screen&quot;
+      ],
+      &quot;requires_flags&quot;: [
+        &quot;spectrum&quot;
+      ],
+      &quot;sets_flags&quot;: [
+        &quot;aperture_tested&quot;
+      ],
+      &quot;clears_flags&quot;: [],
+      &quot;text&quot;: &quot;In this scripted comparison, reducing the aperture narrows the image without shortening its spectrum. This simplifies the particular arrangement described in Moray’s 1672 proposals and Newton’s observations; it is not a universal prediction for every optical setup.&quot;
+    }
+  ],
+  &quot;goal_flags&quot;: [
+    &quot;recorded&quot;,
+    &quot;aperture_tested&quot;
+  ]
+}
+</pre></div>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

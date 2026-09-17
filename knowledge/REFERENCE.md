@@ -2,7 +2,7 @@
 
 Choose an example to adapt for your teaching or research.
 
-[Return to workshop](./) · [System prompt examples](../examples.html)[Compare Research Methods](#compare-research-methods) · [Describe Experimental Context](#describe-experimental-context) · [Describe Scientific Methods](#describe-scientific-methods) · [Identify Historical Sources](#identify-historical-sources) · [Select Research Materials](#select-research-materials) · [Prism Laboratory](#prism-laboratory)
+[Return to workshop](.) · [System prompt examples](../examples.html)[Compare Research Methods](#compare-research-methods) · [Describe Experimental Context](#describe-experimental-context) · [Describe Scientific Methods](#describe-scientific-methods) · [Identify Historical Sources](#identify-historical-sources) · [Select Research Materials](#select-research-materials) · [Prism Laboratory](#prism-laboratory)
 
 ### Compare Research Methods
 
@@ -38,7 +38,7 @@ An aperture is an opening that admits light. Compare procedures before changing 
 
 - What would a changed observation support?
 
-[Read experimental variants](../examples/knowledge/newton-experimental-variants.md)
+[Read experimental variants](../examples/knowledge/newton-experimental-variants.html)
 
 ### Identify Historical Sources
 

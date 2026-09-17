@@ -2,10 +2,10 @@
 
 [Open the workshop series](https://cuny-ai-lab.github.io/sandbox-series/)
 
-Composing system prompts begins the series. Use **Outline** to move to Curating knowledge collections and Configuring skills and tools. All three share one repository, presentation engine, and neutral dark design.
+Composing system prompts begins the series. Use **Outline** to review slides and open formatted workshop copy. All three share one repository, presentation engine, and neutral dark design.
 
-- [Full slide copy](SLIDES.md)
-- [Presenter lesson plans and access requirements](WORKSHOP.md)
+- [Full slide copy](https://cuny-ai-lab.github.io/sandbox-series/SLIDES.html)
+- [Presenter lesson plans and access requirements](https://cuny-ai-lab.github.io/sandbox-series/WORKSHOP.html)
 - [System-prompt examples](https://cuny-ai-lab.github.io/sandbox-series/examples.html)
 - [Latest copy refinements and before/after](review/streamline-review.md)
 - [Source history](review/README.md)
@@ -16,12 +16,12 @@ Participants learn how user prompts and system prompts differ, then compare how 
 
 ## Workshop Artifacts
 
-- [STEM Adventure tool](examples/tools/stem_adventure.py) and [playable preview](examples/adventure/preview.html)
-- [Extend STEM Adventures skill](examples/stem-game-skill.md)
-- [System prompt](examples/stem-system-prompt.txt)
-- [Prism Laboratory scenario](examples/adventure/prism.json), [aperture variation](examples/adventure/aperture.json), and [winning commands](examples/adventure/winning-commands.json)
-- [Additional knowledge entries](WORKSHOP.md#additional-knowledge-entries)
-- [Skill Creator instructions](examples/creators/skill-creator-system-prompt.txt) and [Tool Creator instructions](examples/creators/tool-creator-system-prompt.txt)
+- [STEM Adventure tool](https://cuny-ai-lab.github.io/sandbox-series/examples/tools/stem_adventure.html) and [playable preview](https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/preview.html)
+- [Extend STEM Adventures skill](https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html)
+- [System prompt](https://cuny-ai-lab.github.io/sandbox-series/examples/stem-system-prompt.html)
+- [Prism Laboratory scenario](https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.html), [aperture variation](https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/aperture.html), and [winning commands](https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/winning-commands.html)
+- [Additional knowledge entries](https://cuny-ai-lab.github.io/sandbox-series/WORKSHOP.html#additional-knowledge-entries)
+- [Skill Creator instructions](https://cuny-ai-lab.github.io/sandbox-series/examples/creators/skill-creator-system-prompt.html) and [Tool Creator instructions](https://cuny-ai-lab.github.io/sandbox-series/examples/creators/tool-creator-system-prompt.html)
 
 Both creators accept requirements for any suitable task. STEM Adventure is a workshop request, not a default in either creator.
 
@@ -29,9 +29,10 @@ The engine checks moves, inventory, and prerequisites. Exported records can be r
 
 ## Development
 
-Static HTML, CSS, and JavaScript. No build step or runtime dependencies.
+Static HTML, CSS, and JavaScript. Published pages have no runtime dependencies. Install the pinned Markdown package to regenerate and check reading pages.
 
 ```sh
+python3 -m pip install -r requirements-build.txt
 python3 -m http.server 8766
 python3 scripts/check_series.py
 python3 scripts/test_copy_regressions.py
@@ -42,7 +43,7 @@ python3 examples/adventure/test-validation.py
 
 After changing game sources, run `python3 examples/adventure/build_tool.py` to rebuild the Open WebUI tool and preview. After changing slide text, run `python3 scripts/check_series.py --write` to update the complete transcript, per-session mirrors, and direct copy diffs. Review the generated diff before committing. The checker protects retained source passages and verifies local links, screenshot hashes, accessible slide labels, and article-free mini-agendas.
 
-Use arrow keys, the slider, or **Outline** to navigate. On mobile, the slider occupies a full row above the navigation buttons. Text selection does not advance slides. Screenshot slides reserve the viewport for the image, heading, and caption. Clicking an image expands it. **Outline** links to each workshop, prompt examples, and the complete transcript, including screenshot instructions. Presenter lesson plans remain available through this README.
+Use arrow keys, the slider, or **Outline** to navigate. On mobile, the slider occupies a full row above the navigation buttons. Text selection does not advance slides. Screenshot slides reserve the viewport for the image, heading, and caption. Clicking an image expands it. **Outline** links to full workshop copy, prompt examples, and Model Registry. Presenter lesson plans remain available through this README.
 
 ## Sources
 

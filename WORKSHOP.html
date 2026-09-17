@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presenter Lesson Plans | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="images/cail-favicon.svg">
+<link rel="stylesheet" href="css/workshop-copy.css?v=6a75184bcdda">
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><h1>Presenter Lesson Plans</h1>
+<nav aria-label="Workshop links"><a href="index.html">Return to workshop</a> · <a href="examples.html">Prompt examples</a> · <a href="WORKSHOP.md" download="WORKSHOP.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#workshop-roadmap">Workshop Roadmap</a></li><li><a href="#prepare-workshop-access">Prepare Workshop Access</a></li><li><a href="#composing-system-prompts">Composing system prompts</a></li><li><a href="#curating-knowledge-collections">Curating knowledge collections</a></li><li><a href="#configuring-skills-and-tools">Configuring skills and tools</a></li><li><a href="#source-documentation">Source Documentation</a></li><li><a href="#stem-configuration">STEM Configuration</a></li><li><a href="#optional-references">Optional References</a></li></ul></nav></header>
+<main id="workshop-copy" class="reading-content">
+
+<p>The CUNY AI Lab Sandbox supports teaching, research, and experimentation with open-weight models. These workshops introduce its chat interface, custom models, knowledge collections, skills, and tools through demonstrations and guided exercises.</p>
+<p>Participants first compare models, then try STEM Adventure Games for teaching or Compare Wikipedia Edits for research, review its system prompt and base model, and revise a clone. They compare the original with their clone using the same request, then use Purpose, Procedure, Constraints, and Format to draft instructions and create a configuration of their own. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.</p>
+<p><a href="https://cuny-ai-lab.github.io/sandbox-series/">Present the series</a> · <a href="workshop-copy.html">Read workshop copy</a> · <a href="examples.html">Browse system-prompt examples</a> · <a href="review/README.md" download="README.md">Download Review copy changes</a></p>
+<h2 id="workshop-roadmap">Workshop Roadmap</h2>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Workshop</th>
+<th>Activity</th>
+<th>Required access</th>
+<th>Next steps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Composing system prompts</td>
+<td>Configure model behavior with system prompts</td>
+<td>Active Sandbox account and Workspace Models access</td>
+<td>Draft original instructions; create a configuration; select source documents</td>
+</tr>
+<tr>
+<td>Curating knowledge collections</td>
+<td>Organize source documents in knowledge collections</td>
+<td>Workshop 1 access, Workspace, Knowledge collection access</td>
+<td>Save retrieval tests; request Skills and Tools access</td>
+</tr>
+<tr>
+<td>Configuring skills and tools</td>
+<td>Extend model capabilities with skills and tools</td>
+<td>Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing</td>
+<td>Save configurations; verify shared access; retest after changes</td>
+</tr>
+</tbody>
+</table>
+<p>Workshop 3 needs Knowledge access when a procedure retrieves from a collection. Its advanced STEM example uses an attached collection for historical claims, while a separate tool runs game commands. Workshops 1 and 2 use scenes and choices generated in chat without attached skills or tools.</p>
+<h2 id="prepare-workshop-access">Prepare Workshop Access</h2>
+<p>Participants arrive with active Sandbox accounts and Workspace Models access. Enter the <a href="https://chat.ailab.gc.cuny.edu/">Sandbox</a> through <strong>Continue with CUNY Login</strong>. Participants do not need an API key for these chat exercises. See <a href="https://ailab.gc.cuny.edu/sandbox-docs/getting-started/">Getting Started</a> for sign-in documentation.</p>
+<p>Workshop 1 uses existing Workspace access throughout its model exercises. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.</p>
+<p>Prepare <strong>Examine Assumptions</strong> using <a href="examples/assumption-check.html">this sample prompt</a> and a tested base model. For Workshops 1 and 2, configure <strong>STEM Adventure Games</strong> with <a href="examples/stem-chat-system-prompt.html">instructions for an adventure played in chat</a>. Leave Skills and Tools unselected. Confirm access to <strong>STEM Wikipedia Experiments</strong> for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Turn File Context off and keep STEM Wikipedia Experiments attached for focused retrieval. Save the tool-based configuration as <strong>STEM Adventure Games — Advanced</strong> for Workshop 3, using its <a href="examples/stem-system-prompt.html">separate system prompt</a>.</p>
+<p>Choose two available small models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.</p>
+<p>Use documents you are permitted to upload and share for collection and skill exercises. Verify sharing through an ordinary participant account, including access to custom models, base models, and attached resources. Course enrollment has a separate invitation route in the documentation; it is not a prerequisite for Workshop 1.</p>
+<h2 id="composing-system-prompts">Composing system prompts</h2>
+<p>Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.</p>
+<h3 id="workshop-agenda">Workshop Agenda</h3>
+<ul>
+<li>Introduce yourselves</li>
+<li>Sign in to Sandbox</li>
+<li>Define system prompts</li>
+<li>Compare responses from small models</li>
+<li>Revise in-chat system prompts</li>
+<li>Choose teaching or research examples</li>
+<li>Review system prompts and base models</li>
+<li>Clone models and compare responses</li>
+<li>Draft instructions and create models</li>
+</ul>
+<h3 id="lesson-plan">Lesson Plan</h3>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Minutes</th>
+<th>Activity</th>
+<th>Evidence to retain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–5</td>
+<td>Introduce yourselves: name, pronouns, role at CUNY, and what brings you to this workshop.</td>
+<td>Workshop interests</td>
+</tr>
+<tr>
+<td>5–10</td>
+<td>Confirm sign-in, define system prompts, and locate the model selector.</td>
+<td>Account readiness and prompt distinction</td>
+</tr>
+<tr>
+<td>10–25</td>
+<td>Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses.</td>
+<td>Exact inputs, model IDs, and responses</td>
+</tr>
+<tr>
+<td>25–45</td>
+<td>Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged.</td>
+<td>Original and regenerated responses</td>
+</tr>
+<tr>
+<td>45–52</td>
+<td>Choose one example, try it in chat, and review its system prompt and base model. Save a request to use again.</td>
+<td>Original request and instruction to revise</td>
+</tr>
+<tr>
+<td>52–65</td>
+<td>Follow the Clone screenshot, revise one instruction, save, and test the copy in a new chat.</td>
+<td>Original and revised instruction</td>
+</tr>
+<tr>
+<td>65–75</td>
+<td>Compare original and clone using the same request. Include identical source passages for research.</td>
+<td>Both responses and evidence of change</td>
+</tr>
+<tr>
+<td>75–85</td>
+<td>Draft original instructions using Purpose, Procedure, Constraints, and Format. Select Create in Workspace Models, choose a base model, add the draft, and save. Try one request if time remains.</td>
+<td>Original system prompt and saved configuration</td>
+</tr>
+<tr>
+<td>85–90</td>
+<td>Review workshop resources and choose source documents to bring to the next workshop.</td>
+<td>Draft prompt, model configuration, and source documents</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compare-small-models">Compare Small Models</h3>
+<blockquote>
+<p>The nurse yelled at the doctor because she was late. Who was late?</p>
+</blockquote>
+<p>Send exactly this question to two small models with matching context. Ask which interpretation each response chooses and whether it acknowledges ambiguity. Either person can be the referent of “she”; the sentence does not establish a unique answer. A plausible interpretation is different from information established by the wording. Avoid turning this single item into a claim about model-wide bias or ability.</p>
+<h3 id="compare-outputs">Compare Outputs</h3>
+<blockquote>
+<p>The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.</p>
+</blockquote>
+<p>Screenshot provenance and inconsistent Qwen labels are documented in <a href="review/showcase-sources.json" download="showcase-sources.json">Download source history</a>. Discuss these responses without treating screenshot labels or timings as reliable model identifiers or comparative measurements.</p>
+<p>Ask “What do you think this person wants to accomplish?” Participants read the sample system prompt before changing settings. Ask what should change in each response. Show Controls at the top right of chat and its System Prompt field alongside the exercise instructions. Participants add the sample instructions, close Controls, and select Regenerate beneath each original response and choose Try Again, leaving their question unchanged. Compare assumptions, explanations, and any change in recommendations.</p>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Model A evidence</th>
+<th>Model B evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identify stated goal or acknowledge missing purpose</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distinguish stated facts from assumptions</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Give reasons that support recommendation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Compare outputs after changing system prompt instructions</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>For the in-chat system-prompt exercise, use <a href="examples/assumption-check.html">Examine Assumptions</a>. It asks the model to examine facts and assumptions without prescribing either demonstration answer. Check whether the added instructions help, cause unnecessary questions, or fail on the second task.</p>
+<h3 id="compare-custom-models">Compare Custom Models</h3>
+<p>Participants choose and review an example on slide 17. Slides 18 and 19 each show a screenshot first, then instructions on the same slide. Links open in new tabs so participants can return to their current step.</p>
+<p>Participants clone their chosen model, revise one instruction, save it, and test their copy. A fresh comparison chat sends the same request to original and clone. Select each model name to review its response. Preserve the base model, attached resources, and other settings. Research comparisons include identical source passages. Ask whether the response changed as intended and retain both outputs.</p>
+<h3 id="create-original-models">Create Original Models</h3>
+<p>Use remaining time to begin drafting instructions for a teaching or research task. Use Purpose, Procedure, Constraints, and Format on slide 21. Slide 22 shows where to select Create, then walks through naming a configuration, choosing a base model, adding the draft system prompt, saving, and trying one request. Participants finish with their own configuration to develop before the next workshop.</p>
+<p>Workshop 1 closes with its <a href="workshop-copy.html">HTML copy</a>, prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and reference navigation do not link to later workshop decks.</p>
+<h2 id="curating-knowledge-collections">Curating knowledge collections</h2>
+<p>Participants add source documents to their chosen teaching or research model from Workshop 1. They ask about objects and events in a scene, then check whether cited passages support the model’s explanation. STEM Wikipedia Experiments provides material for checking historical claims and scientific procedures. Scenes and choices continue in chat; skills and tools begin in Workshop 3.</p>
+<h3 id="workshop-agenda_1">Workshop Agenda</h3>
+<ul>
+<li>Confirm Workspace and Knowledge access</li>
+<li>Select source documents</li>
+<li>Create knowledge collections</li>
+<li>Attach collections to custom models</li>
+<li>Check source citations</li>
+<li>Choose procedures for skills</li>
+</ul>
+<h3 id="lesson-plan_1">Lesson Plan</h3>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Minutes</th>
+<th>Activity</th>
+<th>Evidence to retain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–15</td>
+<td>Confirm access, choose a document question, and save its initial response. Record any sources already used. Keep Skills and Tools unselected.</td>
+<td>Question, settings, and initial response</td>
+</tr>
+<tr>
+<td>15–35</td>
+<td>Inspect STEM Wikipedia Experiments and check imports. Play a short adventure about light and colour, then compare objects in its scene with Newton’s account. Distinguish the uploaded summary from its historical source.</td>
+<td>Game scene, cited passages, and supported claims</td>
+</tr>
+<tr>
+<td>35–55</td>
+<td>Select a few readable documents, create a private collection, upload files, wait for processing, and attach it to the same custom model.</td>
+<td>Documents, collection, and saved model</td>
+</tr>
+<tr>
+<td>55–80</td>
+<td>Repeat the saved question with base model and system prompt unchanged. Check cited passages, try questions requiring two sources or missing information, and diagnose one failure.</td>
+<td>Before/after responses and source checks</td>
+</tr>
+<tr>
+<td>80–90</td>
+<td>Retest one change, check sharing, and choose a procedure for Workshop 3.</td>
+<td>Retest and next procedure</td>
+</tr>
+</tbody>
+</table>
+<p>Keep the system prompt from your chosen model in Workshop 1. The <a href="examples.html#stem-chat">adventure prompt</a> and <a href="examples.html#wikipedia-revisions">research prompt</a> remain available for comparison. The <a href="examples.html#stem-sources">source-checking instructions</a> can extend the adventure prompt when participants ask about evidence. Keep Skills and Tools unselected. Participants can build a small collection for another experiment or adapt the procedure to their own teaching or research. They should know the source material well enough to check model claims independently.</p>
+<p>A generic or incorrect answer can arise from processing, retrieval, access, instructions, or interpretation. Check the actual evidence before diagnosing the cause. File length alone does not determine retrieval quality. Scanned or multi-column PDFs deserve particular attention during text extraction.</p>
+<h3 id="next-steps">Next steps</h3>
+<ul>
+<li>Save source lists and retrieval tests</li>
+<li>Request Skills and Tools access</li>
+<li>Choose recurring teaching or research procedures</li>
+<li>Review system-prompt examples</li>
+<li>Continue to Configuring skills and tools</li>
+</ul>
+<h2 id="configuring-skills-and-tools">Configuring skills and tools</h2>
+<p>Participants use STEM Adventure to play a deterministic text adventure, inspect commands and prerequisites, and export a play record. They draft a skill, attach it to a private copy of STEM Adventure Games — Advanced, test one procedural change, and examine how a model interprets the run. Kale Skill Builder and CAIL Tool Creator accept participants’ own requirements. Their system prompts and starter suggestions are general-purpose. STEM Adventure is a submitted workshop example. CAIL Tool Creator produces a reviewable Python draft with explicit tests. Each participant retains a skill draft, creator output, an installed copy of the tested tool, a scenario, and a play record. Creator output remains a draft until reviewed and tested.</p>
+<h3 id="workshop-agenda_2">Workshop Agenda</h3>
+<ul>
+<li>Confirm Skills and Tools access</li>
+<li>Play STEM Adventure</li>
+<li>Inspect commands and results</li>
+<li>Configure reusable skills</li>
+<li>Create and test tools</li>
+<li>Compare procedural changes</li>
+</ul>
+<h3 id="lesson-plan_2">Lesson Plan</h3>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Minutes</th>
+<th>Activity</th>
+<th>Evidence to retain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–25</td>
+<td>Open STEM Adventure Games — Advanced, test commands, save and reload a play record, and submit it with discuss.</td>
+<td>Commands, failed prerequisite, and play record</td>
+</tr>
+<tr>
+<td>25–45</td>
+<td>Clone STEM Adventure Games — Advanced, remove inherited access grants, and save a private copy. Use Kale Skill Builder to draft one skill, save it, replace the existing attached skill, and update the private system prompt to name the draft.</td>
+<td>Private model and saved skill</td>
+</tr>
+<tr>
+<td>45–65</td>
+<td>Attach Prism Laboratory JSON and request one aperture comparison. Run the resulting scenario. Compare the same request with and without the saved skill, keeping other settings and inputs fixed.</td>
+<td>Generated scenarios, test results, and records</td>
+</tr>
+<tr>
+<td>65–83</td>
+<td>Request a Python draft from CAIL Tool Creator and save it for review. Install provided tested code separately, attach that copy to the private model, update its system prompt to name it, and inspect an actual call and result.</td>
+<td>Creator draft, installed tested code, and tool result</td>
+</tr>
+<tr>
+<td>83–90</td>
+<td>Save artifacts, compare game records with source evidence, and identify a next test.</td>
+<td>Artifacts, observed result, and next question</td>
+</tr>
+</tbody>
+</table>
+<p>The primary artifacts are <a href="examples/tools/stem_adventure.html">STEM Adventure</a>, <a href="examples/stem-game-skill.html">Extend STEM Adventures</a>, <a href="examples/adventure/prism.html">Prism Laboratory</a>, <a href="examples/adventure/aperture.html">Aperture Test</a>, and <a href="examples/adventure/winning-commands.html">winning commands</a>. The <a href="examples/adventure/preview.html">local preview</a> allows practice before Sandbox access is ready. It does not establish that a participant has permission to call the installed tool.</p>
+<p>The tool returns an interactive HTMLResponse with explicit model context. Its engine owns game state. The skill guides a procedural change and interpretation of a record; it cannot change state through prose. The discuss command fills the chat message box for review and sending. The save and load commands preserve progress after reloads; clicks inside the iframe do not automatically reach the model.</p>
+<p>Evaluate source use separately from game correctness. A deterministic winning sequence establishes software behavior. It does not validate a historical interpretation or establish a learning effect. The aperture extension is a scripted comparison based on a particular account, not a general optical simulation.</p>
+<h3 id="next-steps_1">Next steps</h3>
+<ul>
+<li>Save prompts, sources, skills, and tool settings</li>
+<li>Compare expected and observed behavior</li>
+<li>Revise instructions from recorded failures</li>
+<li>Verify shared access with intended users</li>
+<li>Retest after model or tool updates</li>
+</ul>
+<h2 id="source-documentation">Source Documentation</h2>
+<p>Interface instructions draw on the published <a href="https://ailab.gc.cuny.edu/sandbox-docs/">Sandbox documentation</a>, especially <a href="https://ailab.gc.cuny.edu/sandbox-docs/getting-started/">Getting Started</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/">Quick Tour</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/models/">Models</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/">Knowledge Bases</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/">Tools &amp; Skills</a>, and <a href="https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/">Roles &amp; Permissions</a>.</p>
+<p>The live interface was inspected in Firefox on September 13–16, 2026. Creation, Clone, and access controls were checked in an administrator account. Participant-account checks remain with Zach before delivery. <a href="review/screenshot-sources.json" download="screenshot-sources.json">Download Screenshot provenance</a> records source hashes and crop coordinates. <a href="review/showcase-sources.json" download="showcase-sources.json">Download Showcase provenance</a> distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.</p>
+<p>Provider requests are described in the docs as configured for zero retention with training use prohibited. Sandbox history can still be stored and visible to administrators or its shared audience. Retrieved passages enter the model request and may appear in its response. Use materials appropriate for those conditions.</p>
+<p>Open WebUI’s <a href="https://docs.openwebui.com/features/workspace/models/">Models</a>, <a href="https://docs.openwebui.com/features/workspace/knowledge/">Knowledge</a>, and <a href="https://docs.openwebui.com/features/workspace/skills/">Skills</a> documentation supports the descriptions of custom configurations, retrieval, and skill loading. The Sandbox docs govern local access and sign-in instructions.</p>
+<h2 id="stem-configuration">STEM Configuration</h2>
+<p><strong>STEM Adventure Games</strong> is the introductory model for Workshops 1 and 2. Its system prompt opens with three or four adventures, then presents four numbered choices at each stage and responds to actions typed in ordinary language. The model uses attached sources when discussing historical evidence. It has no attached skills or tools.</p>
+<p><strong>STEM Adventure Games — Advanced</strong> is reserved for Workshop 3. It uses STEM Adventure and Extend STEM Adventures with native function calling. Its system prompt describes those components and requires a submitted play record before interpreting actions taken inside the game interface.</p>
+<p>The original collection contained three Wikipedia imports. List of experiments initially contained a Wikimedia error; complete article text was restored on September 17, 2026, as documented in the <a href="review/prompt-style-2026-09-16/knowledge-repair/README.md" download="README.md">Download repair record</a>. Scientific method and Women in science remain alongside it. Additional entries cover Newton’s optical experiments, procedural variants, and software checks. Verify retrieval separately from successful text import.</p>
+<h3 id="additional-knowledge-entries">Additional Knowledge Entries</h3>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Entry</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="examples/knowledge/newton-light-colour.html">Newton: Light and Colour</a></td>
+<td>Check apparatus and distinguish historical claims from game simplifications</td>
+</tr>
+<tr>
+<td><a href="examples/knowledge/newton-experimental-variants.html">Newton: Experimental Variants</a></td>
+<td>Support an aperture comparison with a specific source</td>
+</tr>
+<tr>
+<td><a href="examples/knowledge/game-procedure-evaluation.html">Evaluate Game Procedures</a></td>
+<td>Check commands, prerequisites, replay, and interpretation limits</td>
+</tr>
+<tr>
+<td><a href="examples/knowledge/source-register.html">STEM Source Register</a></td>
+<td>Track provenance and document the repaired Wikipedia import</td>
+</tr>
+</tbody>
+</table>
+<p>The Newton entries summarize primary accounts from the <a href="https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006">Newton Project</a>. They identify their sources and limits; they are not full article imports. Keep Web Search unchanged during comparisons and record whether evidence came from uploaded entries or external pages.</p>
+<h2 id="optional-references">Optional References</h2>
+<p><a href="knowledge/reference.html">Source examples</a> preserve research and historical alternatives. <a href="skills/reference.html">Skill and tool examples</a> preserve the blank template, source interpretation exercise, creator failures, corrections, and test labels. These ordinary pages contain no hidden notes.</p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="js/examples.js" defer></script>
+</body>
+</html>
