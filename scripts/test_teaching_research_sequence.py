@@ -71,7 +71,7 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertTrue(illustration.all(lambda node: node.tag == 'img'))
         self.assertFalse(instructions.all(lambda node: node.tag == 'img'))
         self.assertRegex(clone.lower(), r'(rename|name your copy)')
-        self.assertRegex(clone.lower(), r'unique.{0,15}id')
+        self.assertNotIn('and give it a unique ID', clone)
         self.assertRegex(clone.lower(), r'(revise|change) one instruction')
         self.assertRegex(clone.lower(), r'base model.{0,80}(unchanged|same)')
         self.assertRegex(clone.lower(), r'settings.{0,35}(unchanged|same)')
@@ -106,7 +106,8 @@ class TeachingResearchSequence(unittest.TestCase):
         for term in ['Workspace', 'Models', 'Create']:
             self.assertIn(term, illustration.text())
         create = ' '.join(instructions.text().split())
-        for term in ['unique ID', 'Base Model', 'System Prompt', 'Save & Create', 'new chat']:
+        self.assertNotIn('and give it a unique ID', create)
+        for term in ['Base Model', 'System Prompt', 'Save & Create', 'new chat']:
             self.assertIn(term, create)
         self.assertLess(create.index('Base Model'), create.index('Save & Create'))
         self.assertLess(create.index('System Prompt'), create.index('Save & Create'))

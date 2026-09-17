@@ -307,7 +307,7 @@ Which instruction explains something you noticed in its response?
 
 Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen example and select Clone.
 
-- Rename your copy and give it a unique ID.
+- Rename your copy.
 
 - Revise one instruction in **System Prompt**; keep **Base Model** and other settings unchanged.
 
@@ -382,7 +382,7 @@ How should it present responses?
 
 Select Workspace → Models → Create to configure your own model.
 
-- Name your configuration and give it a unique ID.
+- Name your configuration.
 
 - Select **Base Model** and paste your draft into **System Prompt**.
 
