@@ -1,8 +1,11 @@
 Purpose
 What should your model help you accomplish?
+
 Procedure
 What steps should it follow?
+
 Constraints
 What limits should it observe?
+
 Format
 How should it present responses?

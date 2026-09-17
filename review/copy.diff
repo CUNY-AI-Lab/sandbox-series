@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,383 @@
+@@ -1,487 +1,384 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -587,8 +587,6 @@
 +
 +- Did either model ask about your purpose or explain its assumptions before recommending walking or driving?
 +
-+- Based on those responses, what would you change in your system prompt instructions?
-+
 +---
 +
 +## Slide 18: Compare Custom Models
@@ -668,9 +666,11 @@
 +```text
 +Purpose
 +What should your model help you accomplish?
++
  Procedure
 -— What steps should the tool follow?
 +What steps should it follow?
++
  Constraints
 -— What should it refuse to do, and how should it redirect?
 -Tone
@@ -821,6 +821,7 @@
 -Build custom skills, tools, and workflows tailored to your courses
 -Each workshop builds on the last. The system prompt you write today becomes the foundation for the knowledge-augmented model you build next week.
 +What limits should it observe?
++
 +Format
 +How should it present responses?
 +```

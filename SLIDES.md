@@ -269,8 +269,6 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 - Did either model ask about your purpose or explain its assumptions before recommending walking or driving?
 
-- Based on those responses, what would you change in your system prompt instructions?
-
 ---
 
 ## Composing system prompts — 18
@@ -354,10 +352,13 @@ Use remaining time to begin drafting instructions for your own teaching or resea
 ```text
 Purpose
 What should your model help you accomplish?
+
 Procedure
 What steps should it follow?
+
 Constraints
 What limits should it observe?
+
 Format
 How should it present responses?
 ```

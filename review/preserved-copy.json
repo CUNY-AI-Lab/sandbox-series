@@ -727,6 +727,11 @@
         "before": "Repeat our opening question about who was late. Do these instructions help identify ambiguity?",
         "after": "Based on those responses, what would you change in your system prompt instructions?",
         "reason": "User requested slide 17 be situated in the completed exercise on 2026-09-17."
+      },
+      {
+        "before": "Based on those responses, what would you change in your system prompt instructions?",
+        "after": "",
+        "reason": "User requested only the first two reflection questions on 2026-09-17."
       }
     ],
     "allowed_additions": []

@@ -176,7 +176,6 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual([node.text() for node in reflection.all(lambda n:n.tag=='li')], [
             'What changed in each model’s answer to your car wash question after you added system prompt instructions?',
             'Did either model ask about your purpose or explain its assumptions before recommending walking or driving?',
-            'Based on those responses, what would you change in your system prompt instructions?',
         ])
         self.assertNotIn('Repeat our opening question',reflection.text())
     def test_08_exact_selector_instruction(self):

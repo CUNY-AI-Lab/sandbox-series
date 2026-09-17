@@ -383,7 +383,7 @@ height:auto}
  .task-copy,.task-example{gap:16px}
 }
 @media(max-width:1000px){
- .lowered-content .slide-inner{padding-top:clamp(48px,8vh,80px)}
+ .lowered-content .slide-inner,.lowered-reflection .slide-inner:has(>[data-fragment-step="1"]:not([hidden])){padding-top:clamp(48px,8vh,80px)}
  .task-columns{grid-template-columns:1fr;gap:32px;align-content:start}
  .task-layout .slide-inner{justify-content:flex-start}
  .task-example .prompt-block{font-size:24px}
