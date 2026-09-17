@@ -23,6 +23,8 @@ CAR = 'The car wash is 50 meters from me. Should I walk or take the car? Explain
 SHORT_SYSTEM = 'Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.'
 # Exact rejected passages from this chat, not a vocabulary blacklist.
 REJECTED = (
+ 'small models',
+ 'Changing one or two words between paired sentences changes who a pronoun refers to.',
  'If Compare is unavailable, send identical prompts in separate new chats.',
  'Keep a record of what changes as you build. Evaluation runs through all three workshops.',
  'Workspace access is enabled during guided practice.',
@@ -177,16 +179,18 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual([p.text() for p in root[3].all(lambda n:n.tag=='p')],
                          ['What is your name, pronouns, and role at CUNY?',
                           'What brings you to this workshop today?'])
-        self.assertEqual(root[4].attrs['data-title'],'Sign In')
+        self.assertEqual(root[4].attrs['data-title'],'Sandbox Access')
         links=root[4].all(lambda n:n.tag=='a')
         self.assertIn('https://chat.ailab.gc.cuny.edu/',[n.attrs['href'] for n in links])
         self.assertIn('Continue with CUNY Login',root[4].text())
         self.assertFalse(root[4].all(lambda n:n.tag=='img'))
-        # This audience already has access; do not send them back to an application.
-        self.assertNotRegex(normalized(self.trees['index.html'].text()),r'(?i)request (?:individual |workspace |knowledge collection )?access')
-        self.assertFalse(self.trees['index.html'].all(lambda n:n.tag=='a' and 'request-access' in n.attrs.get('href','')))
+        # Include newcomers who still need to apply, plus approved participants.
+        self.assertIn('https://ailab.gc.cuny.edu/request-access/',[n.attrs['href'] for n in links])
+        for term in ['My own access','intended use','verification','Submit Application','verified CUNY email','approval','Already approved?','two-factor authentication']:
+            self.assertIn(term,root[4].text())
+        self.assertLess(root[4].text().index('Submit Application'),root[4].text().index('Continue with CUNY Login'))
         agenda=self.slide('index.html','Workshop Agenda')
-        self.assertIn('Sign in to Sandbox',agenda.text())
+        self.assertIn('Request access and sign in',agenda.text())
         self.assertNotIn('individual access',agenda.text().lower())
         self.assertNotIn('Workspace access',agenda.text())
         for route in ROUTES[1:]:
@@ -441,7 +445,7 @@ class CopyRegressions(unittest.TestCase):
         for source in ['https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/','https://ailab.gc.cuny.edu/sandbox-docs/models/']:
             self.assertIn(source,links)
         context=self.slide('index.html','Winograd Schema Challenge')
-        for term in ['ambiguous pronouns','context','common-sense reasoning','paired sentences','either person could be late']:
+        for term in ['ambiguous pronouns','context','common-sense reasoning','either person could be late']:
             self.assertIn(term,context.text())
         self.assertTrue(context.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf'))
 

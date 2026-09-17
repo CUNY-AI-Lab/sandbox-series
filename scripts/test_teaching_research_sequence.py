@@ -23,7 +23,7 @@ class TeachingResearchSequence(unittest.TestCase):
 
     def test_introductions_preserve_exercise_order(self):
         self.assertEqual(len(self.slides), 24, 'Add Introductions after Workshop Agenda')
-        self.assertEqual(self.titles[2:5], ['Workshop Agenda', 'Introductions', 'Sign In'])
+        self.assertEqual(self.titles[2:5], ['Workshop Agenda', 'Introductions', 'Sandbox Access'])
         self.assertEqual(self.titles[17:], [
             'Compare Custom Models', 'Clone Models', 'Compare Configurations',
             'Record Comparisons', 'Draft System Prompts', 'Create Models', 'Workshop Resources',
@@ -32,7 +32,7 @@ class TeachingResearchSequence(unittest.TestCase):
         for stage, label in zip(self.stages(), labels):
             self.assertIn(label, stage.text())
         agenda = self.slide('Workshop Agenda').text()
-        for item in ['Introduce yourselves', 'Sign in to Sandbox', 'Compare model outputs',
+        for item in ['Introduce yourselves', 'Request access and sign in', 'Compare model outputs',
                      'Revise system prompts', 'Create custom models']:
             self.assertIn(item, agenda)
 

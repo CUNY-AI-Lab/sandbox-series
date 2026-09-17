@@ -127,10 +127,12 @@ margin:0}
 flex:1;
 display:grid;
 grid-template-columns:repeat(2,minmax(0,1fr));
-align-items:center;
+align-items:start;
+align-content:center;
 gap:clamp(36px,5vw,80px)}
-.sign-in-columns p{font-size:clamp(30px,3vw,42px);line-height:1.35;margin:0}
-.sign-in-columns .access-link a{font-size:clamp(30px,3vw,42px);color:var(--text)}
+.sign-in-columns>div{display:flex;flex-direction:column;gap:16px;min-width:0}
+.sign-in-columns h3,.sign-in-columns p{margin:0}
+.sign-in-columns .steps{gap:16px;line-height:1.35}
 .slide{
 position:absolute;
 inset:0;

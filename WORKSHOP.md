@@ -18,24 +18,24 @@ Workshop 3 needs Knowledge access when a procedure retrieves from a collection. 
 
 ## Prepare Workshop Access
 
-Participants arrive with active Sandbox accounts and Workspace Models access. Enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Participants do not need an API key for these chat exercises. See [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) for sign-in documentation.
+Participants who need CUNY AI Lab access begin with the [individual access application](https://ailab.gc.cuny.edu/request-access/). Choose **My own access**, sign in with **CUNY Login**, enter your details and intended use, complete verification, and select **Submit Application**. Watch your verified CUNY email for approval. After approval, enter the [Sandbox](https://chat.ailab.gc.cuny.edu/) through **Continue with CUNY Login**. Complete two-factor authentication if prompted. Participants do not need an API key for these chat exercises. See [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/) for sign-in documentation.
 
-Workshop 1 uses existing Workspace access throughout its model exercises. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.
+Confirm Workspace Models access before the cloning and creation exercises in Workshop 1. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.
 
 Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. For Workshops 1 and 2, configure **STEM Adventure Games** with [instructions for an adventure played in chat](examples/stem-chat-system-prompt.txt). Leave Skills and Tools unselected. Confirm access to **STEM Wikipedia Experiments** for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Turn File Context off and keep STEM Wikipedia Experiments attached for focused retrieval. Save the tool-based configuration as **STEM Adventure Games — Advanced** for Workshop 3, using its [separate system prompt](examples/stem-system-prompt.txt).
 
-Choose two available small models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.
+Choose two available models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.
 
 Use documents you are permitted to upload and share for collection and skill exercises. Verify sharing through an ordinary participant account, including access to custom models, base models, and attached resources. Course enrollment has a separate invitation route in the documentation; it is not a prerequisite for Workshop 1.
 
 ## Composing system prompts
 
-Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
+Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
 
 ### Workshop Agenda
 
 - Introduce yourselves
-- Sign in to Sandbox
+- Request access and sign in
 - Compare model outputs
 - Revise system prompts
 - Create custom models
@@ -45,8 +45,8 @@ Participants learn how user prompts and system prompts differ before comparing m
 | Minutes | Activity | Evidence to retain |
 | --- | --- | --- |
 | 0–5 | Introduce yourselves: name, pronouns, role at CUNY, and what brings you to this workshop. | Workshop interests |
-| 5–10 | Confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
-| 10–25 | Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
+| 5–10 | Review access requests and sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
+| 10–25 | Demonstrate models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
 | 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
 | 45–52 | Choose one example, try it in chat, and review its system prompt and base model. | Original request and instruction to revise |
 | 52–65 | Follow the Clone screenshot, revise one instruction, save, and test the copy in a new chat. | Original and revised instruction |
@@ -54,11 +54,11 @@ Participants learn how user prompts and system prompts differ before comparing m
 | 75–85 | Draft original instructions using Purpose, Procedure, Constraints, and Format. Select Create in Workspace Models, choose a base model, add the draft, and save. Try one request if time remains. | Original system prompt and saved configuration |
 | 85–90 | Review workshop resources and choose source documents to bring to the next workshop. | Draft prompt, model configuration, and source documents |
 
-### Compare Small Models
+### Compare Models
 
 > The nurse yelled at the doctor because she was late. Who was late?
 
-Send exactly this question to two small models with matching context. Ask which interpretation each response chooses and whether it acknowledges ambiguity. Either person can be the referent of “she”; the sentence does not establish a unique answer. A plausible interpretation is different from information established by the wording. Avoid turning this single item into a claim about model-wide bias or ability.
+Send exactly this question to two models with matching context. Ask which interpretation each response chooses and whether it acknowledges ambiguity. Either person can be the referent of “she”; the sentence does not establish a unique answer. A plausible interpretation is different from information established by the wording. Avoid turning this single item into a claim about model-wide bias or ability.
 
 ### Compare Outputs
 

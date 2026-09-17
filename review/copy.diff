@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,379 @@
+@@ -1,487 +1,391 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -369,7 +369,7 @@
 +
 +- Introduce yourselves
 +
-+- Sign in to Sandbox
++- Request access and sign in
 +
 +- Compare model outputs
 +
@@ -393,15 +393,27 @@
 +
 +---
 +
-+## Slide 5: Sign In
++## Slide 5: Sandbox Access
++
++### Sandbox Access
++
++### Request Access
++
++- Open [access application](https://ailab.gc.cuny.edu/request-access/). Choose **My own access** and sign in with **CUNY Login**.
++
++- Enter your details and intended use, complete verification, and select **Submit Application**.
++
++- Watch your verified CUNY email for approval.
 +
 +### Sign In
 +
-+[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
++Already approved? Open [Sandbox](https://chat.ailab.gc.cuny.edu/).
 +
-+Select **Continue with CUNY Login** and sign in with your CUNY account.
++- Select **Continue with CUNY Login** and enter your CUNY credentials.
 +
-+[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
++- Complete two-factor authentication if prompted.
++
++[https://ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 +
 +---
 +
@@ -471,7 +483,7 @@
 +
 +### Who Was Late?
 +
-+Compare how two small models interpret this sentence.
++Compare how two models interpret this sentence.
 +
 +```text
 +The nurse yelled at the doctor because she was late. Who was late?
@@ -485,7 +497,7 @@
 +
 +### Winograd Schema Challenge
 +
-+This challenge tests how models interpret ambiguous pronouns using context and common-sense reasoning. Changing one or two words between paired sentences changes who a pronoun refers to.
++This challenge tests how models interpret ambiguous pronouns using context and common-sense reasoning.
 +
 +In our question, either person could be late.
 +

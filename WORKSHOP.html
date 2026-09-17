@@ -49,17 +49,17 @@
 </table>
 <p>Workshop 3 needs Knowledge access when a procedure retrieves from a collection. Its advanced STEM example uses an attached collection for historical claims, while a separate tool runs game commands. Workshops 1 and 2 use scenes and choices generated in chat without attached skills or tools.</p>
 <h2 id="prepare-workshop-access">Prepare Workshop Access</h2>
-<p>Participants arrive with active Sandbox accounts and Workspace Models access. Enter the <a href="https://chat.ailab.gc.cuny.edu/">Sandbox</a> through <strong>Continue with CUNY Login</strong>. Participants do not need an API key for these chat exercises. See <a href="https://ailab.gc.cuny.edu/sandbox-docs/getting-started/">Getting Started</a> for sign-in documentation.</p>
-<p>Workshop 1 uses existing Workspace access throughout its model exercises. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.</p>
+<p>Participants who need CUNY AI Lab access begin with the <a href="https://ailab.gc.cuny.edu/request-access/">individual access application</a>. Choose <strong>My own access</strong>, sign in with <strong>CUNY Login</strong>, enter your details and intended use, complete verification, and select <strong>Submit Application</strong>. Watch your verified CUNY email for approval. After approval, enter the <a href="https://chat.ailab.gc.cuny.edu/">Sandbox</a> through <strong>Continue with CUNY Login</strong>. Complete two-factor authentication if prompted. Participants do not need an API key for these chat exercises. See <a href="https://ailab.gc.cuny.edu/sandbox-docs/getting-started/">Getting Started</a> for sign-in documentation.</p>
+<p>Confirm Workspace Models access before the cloning and creation exercises in Workshop 1. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.</p>
 <p>Prepare <strong>Examine Assumptions</strong> using <a href="examples/assumption-check.html">this sample prompt</a> and a tested base model. For Workshops 1 and 2, configure <strong>STEM Adventure Games</strong> with <a href="examples/stem-chat-system-prompt.html">instructions for an adventure played in chat</a>. Leave Skills and Tools unselected. Confirm access to <strong>STEM Wikipedia Experiments</strong> for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Turn File Context off and keep STEM Wikipedia Experiments attached for focused retrieval. Save the tool-based configuration as <strong>STEM Adventure Games — Advanced</strong> for Workshop 3, using its <a href="examples/stem-system-prompt.html">separate system prompt</a>.</p>
-<p>Choose two available small models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.</p>
+<p>Choose two available models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.</p>
 <p>Use documents you are permitted to upload and share for collection and skill exercises. Verify sharing through an ordinary participant account, including access to custom models, base models, and attached resources. Course enrollment has a separate invitation route in the documentation; it is not a prerequisite for Workshop 1.</p>
 <h2 id="composing-system-prompts">Composing system prompts</h2>
-<p>Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two small models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.</p>
+<p>Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.</p>
 <h3 id="workshop-agenda">Workshop Agenda</h3>
 <ul>
 <li>Introduce yourselves</li>
-<li>Sign in to Sandbox</li>
+<li>Request access and sign in</li>
 <li>Compare model outputs</li>
 <li>Revise system prompts</li>
 <li>Create custom models</li>
@@ -81,12 +81,12 @@
 </tr>
 <tr>
 <td>5–10</td>
-<td>Confirm sign-in, define system prompts, and locate the model selector.</td>
+<td>Review access requests and sign-in, define system prompts, and locate the model selector.</td>
 <td>Account readiness and prompt distinction</td>
 </tr>
 <tr>
 <td>10–25</td>
-<td>Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses.</td>
+<td>Demonstrate models on the nurse question and car-wash question. Examine assumptions before showing the saved responses.</td>
 <td>Exact inputs, model IDs, and responses</td>
 </tr>
 <tr>
@@ -121,11 +121,11 @@
 </tr>
 </tbody>
 </table>
-<h3 id="compare-small-models">Compare Small Models</h3>
+<h3 id="compare-models">Compare Models</h3>
 <blockquote>
 <p>The nurse yelled at the doctor because she was late. Who was late?</p>
 </blockquote>
-<p>Send exactly this question to two small models with matching context. Ask which interpretation each response chooses and whether it acknowledges ambiguity. Either person can be the referent of “she”; the sentence does not establish a unique answer. A plausible interpretation is different from information established by the wording. Avoid turning this single item into a claim about model-wide bias or ability.</p>
+<p>Send exactly this question to two models with matching context. Ask which interpretation each response chooses and whether it acknowledges ambiguity. Either person can be the referent of “she”; the sentence does not establish a unique answer. A plausible interpretation is different from information established by the wording. Avoid turning this single item into a claim about model-wide bias or ability.</p>
 <h3 id="compare-outputs">Compare Outputs</h3>
 <blockquote>
 <p>The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.</p>

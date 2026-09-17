@@ -37,7 +37,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Introduce yourselves
 
-- Sign in to Sandbox
+- Request access and sign in
 
 - Compare model outputs
 
@@ -63,13 +63,25 @@ What brings you to this workshop today?
 
 ## Composing system prompts — 5
 
+### Sandbox Access
+
+### Request Access
+
+- Open [access application](https://ailab.gc.cuny.edu/request-access/). Choose **My own access** and sign in with **CUNY Login**.
+
+- Enter your details and intended use, complete verification, and select **Submit Application**.
+
+- Watch your verified CUNY email for approval.
+
 ### Sign In
 
-[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
+Already approved? Open [Sandbox](https://chat.ailab.gc.cuny.edu/).
 
-Select **Continue with CUNY Login** and sign in with your CUNY account.
+- Select **Continue with CUNY Login** and enter your CUNY credentials.
 
-[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+- Complete two-factor authentication if prompted.
+
+[https://ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 
@@ -143,7 +155,7 @@ Start a new chat. Select model ID on bottom right of message box. Select Compare
 
 ### Who Was Late?
 
-Compare how two small models interpret this sentence.
+Compare how two models interpret this sentence.
 
 ```text
 The nurse yelled at the doctor because she was late. Who was late?
@@ -157,7 +169,7 @@ Send this question to both models.
 
 ### Winograd Schema Challenge
 
-This challenge tests how models interpret ambiguous pronouns using context and common-sense reasoning. Changing one or two words between paired sentences changes who a pronoun refers to.
+This challenge tests how models interpret ambiguous pronouns using context and common-sense reasoning.
 
 In our question, either person could be late.
 
