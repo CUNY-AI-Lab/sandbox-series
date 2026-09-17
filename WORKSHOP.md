@@ -34,6 +34,7 @@ Participants learn how user prompts and system prompts differ before comparing m
 
 ### Workshop Agenda
 
+- Introduce yourselves
 - Sign in to Sandbox
 - Define system prompts
 - Compare responses from small models
@@ -47,7 +48,8 @@ Participants learn how user prompts and system prompts differ before comparing m
 
 | Minutes | Activity | Evidence to retain |
 | --- | --- | --- |
-| 0–10 | Introduce the series, confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
+| 0–5 | Introduce yourselves: name, pronouns, role at CUNY, and what brings you to this workshop. | Workshop interests |
+| 5–10 | Confirm sign-in, define system prompts, and locate the model selector. | Account readiness and prompt distinction |
 | 10–25 | Demonstrate small models on the nurse question and car-wash question. Examine assumptions before showing the saved responses. | Exact inputs, model IDs, and responses |
 | 25–45 | Compare the car-wash responses, paste the short in-chat system prompt, then choose Regenerate → Try Again on each original response. Keep the question and other settings unchanged. | Original and regenerated responses |
 | 45–52 | Choose one example, try it in chat, and review its system prompt and base model. Save a request to use again. | Original request and instruction to revise |

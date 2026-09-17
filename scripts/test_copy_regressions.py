@@ -98,7 +98,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='index.html' else name)
             for s in self.decks[route]:
                 title=s.attrs['data-title']
-                if title in (*SECTION_NAMES,'Situating System Prompts',COVER_TITLE):continue
+                if title in (*SECTION_NAMES,'Situating System Prompts','Introductions',COVER_TITLE):continue
                 self.assertTrue(2<=len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title))<=3,title)
                 self.assertNotRegex(title,r'(?i)\b(a|an|the)\b')
                 self.assertFalse(any(w.lower().endswith('ing') for w in title.split()),title)
@@ -173,11 +173,15 @@ class CopyRegressions(unittest.TestCase):
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
         root=self.decks['index.html']
-        self.assertEqual(root[3].attrs['data-title'],'Sign In')
-        links=root[3].all(lambda n:n.tag=='a')
+        self.assertEqual(root[3].attrs['data-title'],'Introductions')
+        self.assertEqual([p.text() for p in root[3].all(lambda n:n.tag=='p')],
+                         ['What is your name, pronouns, and role at CUNY?',
+                          'What brings you to this workshop today?'])
+        self.assertEqual(root[4].attrs['data-title'],'Sign In')
+        links=root[4].all(lambda n:n.tag=='a')
         self.assertIn('https://chat.ailab.gc.cuny.edu/',[n.attrs['href'] for n in links])
-        self.assertIn('Continue with CUNY Login',root[3].text())
-        self.assertFalse(root[3].all(lambda n:n.tag=='img'))
+        self.assertIn('Continue with CUNY Login',root[4].text())
+        self.assertFalse(root[4].all(lambda n:n.tag=='img'))
         # This audience already has access; do not send them back to an application.
         self.assertNotRegex(normalized(self.trees['index.html'].text()),r'(?i)request (?:individual |workspace |knowledge collection )?access')
         self.assertFalse(self.trees['index.html'].all(lambda n:n.tag=='a' and 'request-access' in n.attrs.get('href','')))
@@ -196,7 +200,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertTrue(agenda.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://tools.ailab.gc.cuny.edu/model-access'))
 
     def test_10_agendas_and_next_steps_use_verbs(self):
-        verbs={'Sign','Draft','Consult','Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
+        verbs={'Introduce','Sign','Draft','Consult','Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
         for route in ROUTES:
             next_steps=[self.decks[route][-1]] if route=='index.html' else [s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
             self.assertEqual(len(next_steps),1,route)
@@ -646,7 +650,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(path.read_text(),build(),'Regenerate workshop-copy.html after slide changes')
         copy=Parser(path.read_text()).root
         sections=copy.all(lambda n:n.has_class('copy-section'))
-        self.assertEqual(len(sections),23)
+        self.assertEqual(len(sections),24)
         self.assertEqual([section.all(lambda n:n.tag=='h2')[0].text() for section in sections],
                          [slide.attrs['data-title'] for slide in self.decks['index.html']])
         for source,destination in zip(self.decks['index.html'],sections):
@@ -715,7 +719,9 @@ class CopyRegressions(unittest.TestCase):
                 decks={r:t.all(lambda n:n.has_class('slide')) for r,t in trees.items()}
                 with patch.object(self,'trees',trees),patch.object(self,'decks',decks),self.assertRaises(AssertionError):test()
         decks={r:list(slides) for r,slides in self.decks.items()}
-        root=decks['index.html'];definition=root.pop(4);root.insert(12,definition)
+        root=decks['index.html']
+        definition=next(s for s in root if s.attrs['data-title']=='System Prompts')
+        root.remove(definition);root.append(definition)
         with patch.object(self,'decks',decks),self.assertRaises(AssertionError):self.test_06_comparison_scaffolding()
         reference=Parser((ROOT/'examples.html').read_text()).root
         reference.all(lambda n:n.attrs.get('id')=='stem-system-copy')[0].children.append(' Unrecorded instruction change.')

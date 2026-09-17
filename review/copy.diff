@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,373 @@
+@@ -1,487 +1,385 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -367,6 +367,8 @@
 +
 +### Workshop Agenda
 +
++- Introduce yourselves
++
 +- Sign in to Sandbox
 +
 +- Define system prompts
@@ -387,7 +389,17 @@
 +
 +---
 +
-+## Slide 4: Sign In
++## Slide 4: Introductions
++
++### Introductions
++
++What is your name, pronouns, and role at CUNY?
++
++What brings you to this workshop today?
++
++---
++
++## Slide 5: Sign In
 +
 +### Sign In
 +
@@ -399,7 +411,7 @@
 +
 +---
 +
-+## Slide 5: System Prompts
++## Slide 6: System Prompts
 +
 +### System Prompts
 +
@@ -417,7 +429,7 @@
 +
 +---
 +
-+## Slide 6: Select Models
++## Slide 7: Select Models
 +
 +### Select Models
 +
@@ -427,7 +439,7 @@
 +
 +---
 +
-+## Slide 7: Chat Features
++## Slide 8: Chat Features
 +
 +### Chat Features
 +
@@ -447,7 +459,7 @@
 +
 +---
 +
-+## Slide 8: Compare Models
++## Slide 9: Compare Models
 +
 +### Compare Models
 +
@@ -457,7 +469,7 @@
 +
 +---
 +
-+## Slide 9: Who Was Late?
++## Slide 10: Who Was Late?
 +
 +### Who Was Late?
 +
@@ -471,7 +483,7 @@
 +
 +---
 +
-+## Slide 10: Winograd Schema Challenge
++## Slide 11: Winograd Schema Challenge
 +
 +### Winograd Schema Challenge
 +
@@ -487,7 +499,7 @@
 +
 +---
 +
-+## Slide 11: Compare Outputs
++## Slide 12: Compare Outputs
 +
 +### Compare Outputs
 +
@@ -501,7 +513,7 @@
 +
 +---
 +
-+## Slide 12: Compare Outputs
++## Slide 13: Compare Outputs
 +
 +### Compare Outputs
 +
@@ -515,7 +527,7 @@
 +
 +---
 +
-+## Slide 13: Compare Models
++## Slide 14: Compare Models
 +
 +### Compare Models
 +
@@ -527,7 +539,7 @@
 +
 +---
 +
-+## Slide 14: Add System Prompt
++## Slide 15: Add System Prompt
 +
 +### Add System Prompt
 +
@@ -543,7 +555,7 @@
 +
 +---
 +
-+## Slide 15: Regenerate Responses
++## Slide 16: Regenerate Responses
 +
 +### Regenerate Responses
 +
@@ -555,7 +567,7 @@
 +
 +---
 +
-+## Slide 16: Compare Responses
++## Slide 17: Compare Responses
 +
 +### Compare Responses
 +
@@ -567,7 +579,7 @@
 +
 +---
 +
-+## Slide 17: Compare Custom Models
++## Slide 18: Compare Custom Models
 +
 +### Compare Custom Models
 +
@@ -603,7 +615,7 @@
 +
 +---
 +
-+## Slide 18: Clone Models
++## Slide 19: Clone Models
 +
 +### Clone Models
 +
@@ -621,7 +633,7 @@
 +
 +---
 +
-+## Slide 19: Compare Configurations
++## Slide 20: Compare Configurations
 +
 +### Compare Configurations
 +
@@ -637,7 +649,7 @@
 +
 +---
 +
-+## Slide 20: Record Comparisons
++## Slide 21: Record Comparisons
 +
 +### Record Comparisons
 +
@@ -655,7 +667,7 @@
 +
 +---
 +
-+## Slide 21: Draft System Prompts
++## Slide 22: Draft System Prompts
 +
 +### Draft System Prompts
 +
@@ -823,7 +835,7 @@
 +
 +---
 +
-+## Slide 22: Create Models
++## Slide 23: Create Models
 +
 +### Create Models
 +
@@ -841,7 +853,7 @@
 +
 +---
 +
-+## Slide 23: Workshop Resources
++## Slide 24: Workshop Resources
 +
 +### Workshop Resources
 +

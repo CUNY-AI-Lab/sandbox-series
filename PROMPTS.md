@@ -33,6 +33,8 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ### Workshop Agenda
 
+- Introduce yourselves
+
 - Sign in to Sandbox
 
 - Define system prompts
@@ -53,7 +55,17 @@ Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-acce
 
 ---
 
-## Slide 4: Sign In
+## Slide 4: Introductions
+
+### Introductions
+
+What is your name, pronouns, and role at CUNY?
+
+What brings you to this workshop today?
+
+---
+
+## Slide 5: Sign In
 
 ### Sign In
 
@@ -65,7 +77,7 @@ Select **Continue with CUNY Login** and sign in with your CUNY account.
 
 ---
 
-## Slide 5: System Prompts
+## Slide 6: System Prompts
 
 ### System Prompts
 
@@ -83,7 +95,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ---
 
-## Slide 6: Select Models
+## Slide 7: Select Models
 
 ### Select Models
 
@@ -93,7 +105,7 @@ Select model ID on bottom right of message box. Choose Gateway from filters, the
 
 ---
 
-## Slide 7: Chat Features
+## Slide 8: Chat Features
 
 ### Chat Features
 
@@ -113,7 +125,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ---
 
-## Slide 8: Compare Models
+## Slide 9: Compare Models
 
 ### Compare Models
 
@@ -123,7 +135,7 @@ Start a new chat. Select model ID on bottom right of message box. Select Compare
 
 ---
 
-## Slide 9: Who Was Late?
+## Slide 10: Who Was Late?
 
 ### Who Was Late?
 
@@ -137,7 +149,7 @@ Send this question to both models.
 
 ---
 
-## Slide 10: Winograd Schema Challenge
+## Slide 11: Winograd Schema Challenge
 
 ### Winograd Schema Challenge
 
@@ -153,7 +165,7 @@ In our question, either person could be late.
 
 ---
 
-## Slide 11: Compare Outputs
+## Slide 12: Compare Outputs
 
 ### Compare Outputs
 
@@ -167,7 +179,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Slide 12: Compare Outputs
+## Slide 13: Compare Outputs
 
 ### Compare Outputs
 
@@ -181,7 +193,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Slide 13: Compare Models
+## Slide 14: Compare Models
 
 ### Compare Models
 
@@ -193,7 +205,7 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 ---
 
-## Slide 14: Add System Prompt
+## Slide 15: Add System Prompt
 
 ### Add System Prompt
 
@@ -209,7 +221,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ---
 
-## Slide 15: Regenerate Responses
+## Slide 16: Regenerate Responses
 
 ### Regenerate Responses
 
@@ -221,7 +233,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Slide 16: Compare Responses
+## Slide 17: Compare Responses
 
 ### Compare Responses
 
@@ -233,7 +245,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Slide 17: Compare Custom Models
+## Slide 18: Compare Custom Models
 
 ### Compare Custom Models
 
@@ -269,7 +281,7 @@ Which instruction explains something you noticed in its response?
 
 ---
 
-## Slide 18: Clone Models
+## Slide 19: Clone Models
 
 ### Clone Models
 
@@ -287,7 +299,7 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 ---
 
-## Slide 19: Compare Configurations
+## Slide 20: Compare Configurations
 
 ### Compare Configurations
 
@@ -303,7 +315,7 @@ Save your request and both responses.
 
 ---
 
-## Slide 20: Record Comparisons
+## Slide 21: Record Comparisons
 
 ### Record Comparisons
 
@@ -321,7 +333,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Slide 21: Draft System Prompts
+## Slide 22: Draft System Prompts
 
 ### Draft System Prompts
 
@@ -340,7 +352,7 @@ How should it present responses?
 
 ---
 
-## Slide 22: Create Models
+## Slide 23: Create Models
 
 ### Create Models
 
@@ -358,7 +370,7 @@ Select Workspace → Models → Create to configure your own model.
 
 ---
 
-## Slide 23: Workshop Resources
+## Slide 24: Workshop Resources
 
 ### Workshop Resources
 

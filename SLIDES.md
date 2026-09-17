@@ -35,6 +35,8 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ### Workshop Agenda
 
+- Introduce yourselves
+
 - Sign in to Sandbox
 
 - Define system prompts
@@ -57,6 +59,16 @@ Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-acce
 
 ## Composing system prompts — 4
 
+### Introductions
+
+What is your name, pronouns, and role at CUNY?
+
+What brings you to this workshop today?
+
+---
+
+## Composing system prompts — 5
+
 ### Sign In
 
 [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
@@ -67,7 +79,7 @@ Select **Continue with CUNY Login** and sign in with your CUNY account.
 
 ---
 
-## Composing system prompts — 5
+## Composing system prompts — 6
 
 ### System Prompts
 
@@ -85,7 +97,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ---
 
-## Composing system prompts — 6
+## Composing system prompts — 7
 
 ### Select Models
 
@@ -97,7 +109,7 @@ Select model ID on bottom right of message box. Choose Gateway from filters, the
 
 ---
 
-## Composing system prompts — 7
+## Composing system prompts — 8
 
 ### Chat Features
 
@@ -117,7 +129,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ---
 
-## Composing system prompts — 8
+## Composing system prompts — 9
 
 ### Compare Models
 
@@ -129,7 +141,7 @@ Start a new chat. Select model ID on bottom right of message box. Select Compare
 
 ---
 
-## Composing system prompts — 9
+## Composing system prompts — 10
 
 ### Who Was Late?
 
@@ -143,7 +155,7 @@ Send this question to both models.
 
 ---
 
-## Composing system prompts — 10
+## Composing system prompts — 11
 
 ### Winograd Schema Challenge
 
@@ -159,7 +171,7 @@ In our question, either person could be late.
 
 ---
 
-## Composing system prompts — 11
+## Composing system prompts — 12
 
 ### Compare Outputs
 
@@ -173,7 +185,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Composing system prompts — 12
+## Composing system prompts — 13
 
 ### Compare Outputs
 
@@ -191,7 +203,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Composing system prompts — 13
+## Composing system prompts — 14
 
 ### Compare Models
 
@@ -203,7 +215,7 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 ---
 
-## Composing system prompts — 14
+## Composing system prompts — 15
 
 ### Add System Prompt
 
@@ -221,7 +233,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ---
 
-## Composing system prompts — 15
+## Composing system prompts — 16
 
 ### Regenerate Responses
 
@@ -237,7 +249,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Composing system prompts — 16
+## Composing system prompts — 17
 
 ### Compare Responses
 
@@ -249,7 +261,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Composing system prompts — 17
+## Composing system prompts — 18
 
 ### Compare Custom Models
 
@@ -285,7 +297,7 @@ Which instruction explains something you noticed in its response?
 
 ---
 
-## Composing system prompts — 18
+## Composing system prompts — 19
 
 ### Clone Models
 
@@ -305,7 +317,7 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 ---
 
-## Composing system prompts — 19
+## Composing system prompts — 20
 
 ### Compare Configurations
 
@@ -323,7 +335,7 @@ Save your request and both responses.
 
 ---
 
-## Composing system prompts — 20
+## Composing system prompts — 21
 
 ### Record Comparisons
 
@@ -341,7 +353,7 @@ Use materials you are permitted to upload and share. Sandbox chats may be stored
 
 ---
 
-## Composing system prompts — 21
+## Composing system prompts — 22
 
 ### Draft System Prompts
 
@@ -360,7 +372,7 @@ How should it present responses?
 
 ---
 
-## Composing system prompts — 22
+## Composing system prompts — 23
 
 ### Create Models
 
@@ -380,7 +392,7 @@ Select Workspace → Models → Create to configure your own model.
 
 ---
 
-## Composing system prompts — 23
+## Composing system prompts — 24
 
 ### Workshop Resources
 

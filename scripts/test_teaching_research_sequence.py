@@ -21,9 +21,10 @@ class TeachingResearchSequence(unittest.TestCase):
         self.assertEqual([node.attrs['data-fragment-step'] for node in stages], ['0', '1'], title)
         return stages
 
-    def test_four_added_slides_preserve_exercise_order(self):
-        self.assertEqual(len(self.slides), 23, 'Add exactly four slides to the 19-slide workshop')
-        self.assertEqual(self.titles[16:], [
+    def test_introductions_preserve_exercise_order(self):
+        self.assertEqual(len(self.slides), 24, 'Add Introductions after Workshop Agenda')
+        self.assertEqual(self.titles[2:5], ['Workshop Agenda', 'Introductions', 'Sign In'])
+        self.assertEqual(self.titles[17:], [
             'Compare Custom Models', 'Clone Models', 'Compare Configurations',
             'Record Comparisons', 'Draft System Prompts', 'Create Models', 'Workshop Resources',
         ])

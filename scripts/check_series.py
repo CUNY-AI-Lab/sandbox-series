@@ -9,7 +9,7 @@ COVER_TITLE='Getting Started with the CUNY AI Lab Sandbox'
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
 def check_title(title,location):
- if title in {'Composing system prompts','Curating knowledge collections','Configuring skills and tools','Situating System Prompts',COVER_TITLE}:return
+ if title in {'Composing system prompts','Curating knowledge collections','Configuring skills and tools','Situating System Prompts','Introductions',COVER_TITLE}:return
  words=re.findall(r"[\w]+(?:[’'-][\w]+)*",title)
  if not 2 <= len(words) <= 3:issues.append(location+' heading length: '+title)
  if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(location+' article in heading: '+title)
