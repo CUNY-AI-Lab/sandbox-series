@@ -656,6 +656,11 @@
         "before": "Select Compare beside search field, then choose two small models.",
         "after": "Select Compare beside search field, then choose two Gateway models.",
         "reason": "User requested current Gateway models in selector screenshots; comparison instructions use the same visible filter."
+      },
+      {
+        "before": " If Compare is unavailable, send identical prompts in separate new chats.",
+        "after": "",
+        "reason": "User confirmed Compare is always available and requested removal of this fallback."
       }
     ],
     "allowed_additions": [

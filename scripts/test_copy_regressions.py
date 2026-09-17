@@ -23,6 +23,7 @@ CAR = 'The car wash is 50 meters from me. Should I walk or take the car? Explain
 SHORT_SYSTEM = 'Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.'
 # Exact rejected passages from this chat, not a vocabulary blacklist.
 REJECTED = (
+ 'If Compare is unavailable, send identical prompts in separate new chats.',
  'Keep a record of what changes as you build. Evaluation runs through all three workshops.',
  'Workspace access is enabled during guided practice.',
  'Current Sandbox. Model names and available controls depend on your account.',

@@ -125,7 +125,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. If Compare is unavailable, send identical prompts in separate new chats. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. · [Model Registry](https://ailab.gc.cuny.edu/models/)
 
 ---
 
