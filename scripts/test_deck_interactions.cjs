@@ -15,14 +15,16 @@ class Element {
  closest(selector){let el=this;while(el){if(selector.split(',').some(s=>s===el.tagName||(s==='.prompt-block'&&el.classes.has('prompt-block'))||(s==='[contenteditable="true"]'&&el.attrs.contenteditable==='true')))return el;el=el.parent;}return null;}
  showModal(){this.open=true;} close(){this.open=false;}
 }
-const ids=Object.fromEntries(['deck','slide-progress','slide-announcer','outline-dialog','image-dialog','outline-list','nav-total','nav-current','arrow-prev','arrow-next','overview-button','close-outline'].map(x=>[x,new Element(x.includes('button')||x.startsWith('arrow')?'button':'div')]));
+const ids=Object.fromEntries(['fullscreen-button','deck','slide-progress','slide-announcer','outline-dialog','image-dialog','outline-list','nav-total','nav-current','arrow-prev','arrow-next','overview-button','close-outline'].map(x=>[x,new Element(x.includes('button')||x.startsWith('arrow')?'button':'div')]));
 const slides=Array.from({length:3},(_,i)=>{const s=new Element('section');s.dataset.title='Slide '+(i+1);s.setAttribute('aria-label','Slide '+(i+1));return s;});
 const prompt=new Element('pre');prompt.classes.add('prompt-block');prompt.textContent='Exact prompt\nwith original spacing.';ids.prompt=prompt;slides[0].append(prompt);
 const copy=new Element('button');copy.dataset.copy='prompt';copy.textContent='Copy prompt';slides[0].append(copy);
 const selection={isCollapsed:true,removeAllRanges(){this.isCollapsed=true;},addRange(range){this.isCollapsed=false;this.node=range.node;}};
 const documentHandlers={},windowHandlers={};let clipboardText='';
 const swipeArea=new Element('span');
-const doc={activeElement:null,querySelectorAll:s=>s==='.slide'?slides:s==='[data-copy]'?[copy]:[],getElementById:id=>ids[id],createElement:tag=>new Element(tag),querySelector:s=>s==='.nav-info'?swipeArea:s==='dialog[open]'?[ids['outline-dialog'],ids['image-dialog']].find(dialog=>dialog.open)||null:null,addEventListener:(k,fn)=>documentHandlers[k]=fn,createRange:()=>({selectNodeContents(n){this.node=n;}})};
+const doc={documentElement:new Element('html'),activeElement:null,querySelectorAll:s=>s==='.slide'?slides:s==='[data-copy]'?[copy]:[],getElementById:id=>ids[id],createElement:tag=>new Element(tag),querySelector:s=>s==='.nav-info'?swipeArea:s==='dialog[open]'?[ids['outline-dialog'],ids['image-dialog']].find(dialog=>dialog.open)||null:null,addEventListener:(k,fn)=>documentHandlers[k]=fn,createRange:()=>({selectNodeContents(n){this.node=n;}})};
+doc.documentElement.requestFullscreen=async()=>{doc.fullscreenElement=doc.documentElement;};
+doc.exitFullscreen=async()=>{doc.fullscreenElement=null;};
 const context={document:doc,window:{getSelection:()=>selection,addEventListener:(k,fn)=>windowHandlers[k]=fn},location:{hash:'#1'},history:{replaceState(_s,_t,hash){context.location.hash=hash;}},navigator:{clipboard:{writeText:async text=>{clipboardText=text;}}},setTimeout:()=>{},console};
 vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../js/deck-engine.js'),'utf8'),context);
 const engine=context.window.deckEngine;
@@ -30,6 +32,13 @@ function key(name,extra={}){const e={key:name,target:new Element('div'),preventD
 let checks=0;function check(fn){fn();checks++;}
 (async()=>{
  check(()=>assert.equal(engine.totalSlides(),3));
+ await ids['fullscreen-button'].handlers.click();
+ check(()=>{assert.equal(doc.fullscreenElement,doc.documentElement);assert.equal(ids['fullscreen-button'].getAttribute('aria-label'),'Exit fullscreen');});
+ await ids['fullscreen-button'].handlers.click();
+ check(()=>{assert.equal(doc.fullscreenElement,null);assert.equal(ids['fullscreen-button'].getAttribute('aria-pressed'),'false');});
+ doc.fullscreenElement=doc.documentElement;documentHandlers.fullscreenchange();doc.fullscreenElement=null;documentHandlers.fullscreenchange();
+ check(()=>assert.equal(ids['fullscreen-button'].getAttribute('aria-label'),'Enter fullscreen','native exit updates control'));
+
  check(()=>{key('ArrowRight');assert.equal(engine.currentSlide(),1);assert.equal(ids['slide-progress'].value,2);});
  check(()=>{key('End');key('ArrowRight');assert.equal(engine.currentSlide(),2);});
  check(()=>{key('Home');key('ArrowLeft');assert.equal(engine.currentSlide(),0);});

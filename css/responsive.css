@@ -147,7 +147,7 @@ font-size:var(--support)}
 :root{--nav-height:calc(112px + env(safe-area-inset-bottom,0px))}
 #nav-bar{
 display:grid;
-grid-template-columns:44px minmax(96px,1fr) 44px auto;
+grid-template-columns:44px minmax(64px,1fr) 44px 44px auto;
 grid-template-rows:44px 44px;
 gap:4px 8px;
 padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));

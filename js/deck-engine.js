@@ -82,6 +82,38 @@
   document.getElementById('arrow-prev').addEventListener('click', () => advance(-1));
   document.getElementById('arrow-next').addEventListener('click', () => advance(1));
   progress.addEventListener('input', () => goTo(Number(progress.value) - 1));
+  const fullscreenButton = document.getElementById('fullscreen-button');
+  if (fullscreenButton) {
+    const root = document.documentElement;
+    const request = root.requestFullscreen || root.webkitRequestFullscreen;
+    const exit = document.exitFullscreen || document.webkitExitFullscreen;
+    const active = () => Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+    const syncFullscreen = () => {
+      const label = active() ? 'Exit fullscreen' : 'Enter fullscreen';
+      fullscreenButton.setAttribute('aria-label', label);
+      fullscreenButton.setAttribute('title', label);
+      fullscreenButton.setAttribute('aria-pressed', String(active()));
+    };
+    if (!request || !exit) {
+      fullscreenButton.disabled = true;
+      fullscreenButton.setAttribute('aria-label', 'Fullscreen unavailable in this browser');
+      fullscreenButton.setAttribute('title', 'Fullscreen unavailable in this browser');
+    } else {
+      fullscreenButton.addEventListener('click', async () => {
+        try {
+          if (active()) await exit.call(document);
+          else await request.call(root);
+          syncFullscreen();
+        } catch {
+          announcer.textContent = 'Fullscreen could not open. Try your browser fullscreen control.';
+        }
+      });
+      document.addEventListener('fullscreenchange', syncFullscreen);
+      document.addEventListener('webkitfullscreenchange', syncFullscreen);
+      syncFullscreen();
+    }
+  }
+
   // Keep the labeled footer target and support quick touch swipes on slides.
   const swipeArea = document.querySelector('.nav-info');
   if (swipeArea) {
