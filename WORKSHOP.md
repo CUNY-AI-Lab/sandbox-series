@@ -36,13 +36,9 @@ Participants learn how user prompts and system prompts differ before comparing m
 
 - Introduce yourselves
 - Sign in to Sandbox
-- Define system prompts
 - Compare model outputs
-- Revise in-chat system prompts
-- Choose teaching or research examples
-- Review system prompts and base models
-- Clone models and compare responses
-- Draft instructions and create models
+- Revise system prompts
+- Create custom models
 
 ### Lesson Plan
 

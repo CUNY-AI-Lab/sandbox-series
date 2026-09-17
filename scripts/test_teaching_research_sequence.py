@@ -32,8 +32,8 @@ class TeachingResearchSequence(unittest.TestCase):
         for stage, label in zip(self.stages(), labels):
             self.assertIn(label, stage.text())
         agenda = self.slide('Workshop Agenda').text()
-        for item in ['Choose teaching or research examples', 'Review system prompts and base models',
-                     'Clone models and compare responses', 'Draft instructions and create models']:
+        for item in ['Introduce yourselves', 'Sign in to Sandbox', 'Compare model outputs',
+                     'Revise system prompts', 'Create custom models']:
             self.assertIn(item, agenda)
 
     def test_both_examples_open_without_leaving_exercise(self):

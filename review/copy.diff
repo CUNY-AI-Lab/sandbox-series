@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,387 @@
+@@ -1,487 +1,379 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -371,19 +371,11 @@
 +
 +- Sign in to Sandbox
 +
-+- Define system prompts
-+
 +- Compare model outputs
 +
-+- Revise in-chat system prompts
++- Revise system prompts
 +
-+- Choose teaching or research examples
-+
-+- Review system prompts and base models
-+
-+- Clone models and compare responses
-+
-+- Draft instructions and create models
++- Create custom models
 +
 +Check monthly usage at Model Access.
 +

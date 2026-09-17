@@ -39,19 +39,11 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Sign in to Sandbox
 
-- Define system prompts
-
 - Compare model outputs
 
-- Revise in-chat system prompts
+- Revise system prompts
 
-- Choose teaching or research examples
-
-- Review system prompts and base models
-
-- Clone models and compare responses
-
-- Draft instructions and create models
+- Create custom models
 
 Check monthly usage at Model Access.
 
