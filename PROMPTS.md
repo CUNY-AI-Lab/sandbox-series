@@ -249,11 +249,11 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ### Compare Responses
 
-- Compare responses before and after adding system prompt instructions.
+- What changed in each model’s answer to your car wash question after you added system prompt instructions?
 
-- Does each response identify your goal and state its assumptions? Does either response invent information or ask unnecessary questions?
+- Did either model ask about your purpose or explain its assumptions before recommending walking or driving?
 
-- Repeat our opening question about who was late. Do these instructions help identify ambiguity?
+- Based on those responses, what would you change in your system prompt instructions?
 
 ---
 

@@ -75,7 +75,7 @@ Ask “What do you think this person wants to accomplish?” Participants read t
 | Give reasons that support recommendation | | |
 | Compare outputs after changing system prompt instructions | | |
 
-For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assumption-check.txt). It asks the model to examine facts and assumptions without prescribing either demonstration answer. Check whether the added instructions help, cause unnecessary questions, or fail on the second task.
+For the in-chat system-prompt exercise, use [Examine Assumptions](examples/assumption-check.txt). It asks the model to examine facts and assumptions without prescribing either demonstration answer. Discuss what changed in each model’s answer to the car wash question, whether it asked about purpose or explained its assumptions, and what participants would revise in their system prompt instructions.
 
 ### Compare Custom Models
 
