@@ -82,7 +82,7 @@
   document.getElementById('arrow-prev').addEventListener('click', () => advance(-1));
   document.getElementById('arrow-next').addEventListener('click', () => advance(1));
   progress.addEventListener('input', () => goTo(Number(progress.value) - 1));
-  // Swipe only on the labeled navigation area, outside selectable slide content.
+  // Keep the labeled footer target and support quick touch swipes on slides.
   const swipeArea = document.querySelector('.nav-info');
   if (swipeArea) {
     const hint = document.createElement('span');
@@ -91,27 +91,37 @@
     swipeArea.append(hint);
     swipeArea.setAttribute('role', 'group');
     swipeArea.setAttribute('aria-label', 'Swipe left for next slide; swipe right for previous slide');
+    enableSwipe(swipeArea, false);
+  }
+  const deck = document.getElementById('deck');
+  if (deck) enableSwipe(deck, true);
+  function enableSwipe(area, touchOnly) {
     let swipeStart = null;
-    swipeArea.addEventListener('pointerdown', event => {
-      if (!event.isPrimary || event.button !== 0 || document.querySelector('dialog[open]')) {
+    const protectedTarget = 'a,button,input,textarea,select,[contenteditable="true"],.prompt-block';
+    area.addEventListener('pointerdown', event => {
+      const selection = window.getSelection();
+      if (!event.isPrimary || event.button !== 0 ||
+          (touchOnly && (event.pointerType !== 'touch' || event.target.closest(protectedTarget))) ||
+          (selection && !selection.isCollapsed) || document.querySelector('dialog[open]')) {
         swipeStart = null;
         return;
       }
-      swipeStart = {id: event.pointerId, x: event.clientX, y: event.clientY};
-      swipeArea.setPointerCapture(event.pointerId);
+      swipeStart = {id: event.pointerId, x: event.clientX, y: event.clientY, time: event.timeStamp};
+      area.setPointerCapture(event.pointerId);
     });
-    swipeArea.addEventListener('pointerup', event => {
+    area.addEventListener('pointerup', event => {
       const start = swipeStart;
       swipeStart = null;
       if (!start || start.id !== event.pointerId || document.querySelector('dialog[open]')) return;
       const selection = window.getSelection();
       if (selection && !selection.isCollapsed) return;
+      if (touchOnly && event.timeStamp - start.time > 650) return;
       const dx = event.clientX - start.x;
       const dy = event.clientY - start.y;
       if (Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy) * 1.5) advance(dx < 0 ? 1 : -1);
     });
-    swipeArea.addEventListener('pointercancel', () => { swipeStart = null; });
-    swipeArea.addEventListener('lostpointercapture', () => { swipeStart = null; });
+    area.addEventListener('pointercancel', () => { swipeStart = null; });
+    area.addEventListener('lostpointercapture', () => { swipeStart = null; });
   }
   document.addEventListener('keydown', (event) => {
     if (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey || document.querySelector('dialog[open]')) return;

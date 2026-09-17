@@ -15,7 +15,7 @@ class Element {
  closest(selector){let el=this;while(el){if(selector.split(',').some(s=>s===el.tagName||(s==='.prompt-block'&&el.classes.has('prompt-block'))||(s==='[contenteditable="true"]'&&el.attrs.contenteditable==='true')))return el;el=el.parent;}return null;}
  showModal(){this.open=true;} close(){this.open=false;}
 }
-const ids=Object.fromEntries(['slide-progress','slide-announcer','outline-dialog','image-dialog','outline-list','nav-total','nav-current','arrow-prev','arrow-next','overview-button','close-outline'].map(x=>[x,new Element(x.includes('button')||x.startsWith('arrow')?'button':'div')]));
+const ids=Object.fromEntries(['deck','slide-progress','slide-announcer','outline-dialog','image-dialog','outline-list','nav-total','nav-current','arrow-prev','arrow-next','overview-button','close-outline'].map(x=>[x,new Element(x.includes('button')||x.startsWith('arrow')?'button':'div')]));
 const slides=Array.from({length:3},(_,i)=>{const s=new Element('section');s.dataset.title='Slide '+(i+1);s.setAttribute('aria-label','Slide '+(i+1));return s;});
 const prompt=new Element('pre');prompt.classes.add('prompt-block');prompt.textContent='Exact prompt\nwith original spacing.';ids.prompt=prompt;slides[0].append(prompt);
 const copy=new Element('button');copy.dataset.copy='prompt';copy.textContent='Copy prompt';slides[0].append(copy);
@@ -63,6 +63,18 @@ let checks=0;function check(fn){fn();checks++;}
  check(()=>{down();selection.isCollapsed=false;up();assert.equal(engine.currentSlide(),0,'selection is preserved');selection.isCollapsed=true;});
  check(()=>{down();up({clientX:230});assert.equal(engine.currentSlide(),0);engine.goTo(2);down();up();assert.equal(engine.currentSlide(),2,'swiping stops at deck bounds');});
  check(()=>{assert.equal(documentHandlers.pointerdown,undefined);assert.equal(prompt.handlers.pointerdown,undefined);});
+
+ // Touch swipes work on slide content, without hijacking mouse selection or controls.
+ const touchDown=extra=>ids.deck.handlers.pointerdown({pointerId:7,isPrimary:true,button:0,pointerType:'touch',target:new Element('p'),clientX:300,clientY:200,timeStamp:0,...extra});
+ const touchUp=extra=>ids.deck.handlers.pointerup({pointerId:7,clientX:100,clientY:200,timeStamp:200,...extra});
+ check(()=>{engine.goTo(0);touchDown();touchUp();assert.equal(engine.currentSlide(),1,'touch swipe advances slide');});
+ check(()=>{touchDown({clientX:100});touchUp({clientX:300});assert.equal(engine.currentSlide(),0,'touch swipe goes back');});
+ check(()=>{touchDown({pointerType:'mouse'});touchUp();assert.equal(engine.currentSlide(),0,'mouse selection never advances');});
+ for(const target of [prompt,copy,...['a','input','textarea','select'].map(t=>new Element(t))])check(()=>{touchDown({target});touchUp();assert.equal(engine.currentSlide(),0,'interactive content is protected');});
+ check(()=>{touchDown();touchUp({timeStamp:900});assert.equal(engine.currentSlide(),0,'long press never advances');});
+ check(()=>{touchDown();touchUp({clientY:450});assert.equal(engine.currentSlide(),0,'vertical scrolling never advances');});
+ check(()=>{touchDown();selection.isCollapsed=false;touchUp();assert.equal(engine.currentSlide(),0,'selected text stays selected');selection.isCollapsed=true;});
+ check(()=>{touchDown();ids.deck.handlers.pointercancel();touchUp();assert.equal(engine.currentSlide(),0,'cancelled touch never advances');});
 
  // Reinitialize with replacement screenshots. The original interaction checks above
  // still exercise decks that have no fragments; this fixture tests their addition.

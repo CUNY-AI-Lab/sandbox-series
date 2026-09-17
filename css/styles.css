@@ -108,7 +108,9 @@ min-height:44px;
 width:184px;
 border-radius:3px}
 .deck-brand img{display:block;width:100%;height:auto}
-body:has(.workshop-cover.active) .deck-header{background:#000}
+body:has(.workshop-cover.active) .deck-header{display:none}
+body:has(.workshop-cover.active) #deck{height:calc(100dvh - var(--nav-height))}
+#deck{touch-action:pan-y pinch-zoom}
 .discussion-slide .slide-inner{gap:32px}
 .lowered-content .slide-inner,.lowered-reflection .slide-inner:has(>[data-fragment-step="1"]:not([hidden])){padding-top:clamp(72px,16vh,180px)}
 .slide[data-agenda="prompts"] .agenda{font-size:clamp(30px,2.7vw,38px);line-height:1.4;gap:16px}

@@ -8,10 +8,11 @@
   if (!cover) return;
   const canvas = cover.querySelector('.warp-canvas');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const gl = canvas.getContext('webgl', {
+  let gl;
+  try { gl = canvas.getContext('webgl', {
     alpha: false, antialias: false, depth: false, stencil: false,
     preserveDrawingBuffer: false, powerPreference: 'low-power'
-  });
+  }); } catch { gl = null; }
   let program;
   let vertexBuffer;
   let uniforms;
