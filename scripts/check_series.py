@@ -114,8 +114,6 @@ if write:(R/'SLIDES.md').write_text(full)
 elif not (R/'SLIDES.md').exists() or (R/'SLIDES.md').read_text()!=full:issues.append('Full copy out of sync')
 example_tree=Parser((R/'examples.html').read_text()).root
 check_participant_copy(example_tree,'examples')
-research_tree=Parser((R/'examples/research/sample-revisions.html').read_text()).root
-check_participant_copy(research_tree,'research samples')
 r=subprocess.run([sys.executable,str(R/'scripts/check_workshop.py')]+(['--write'] if write else []),capture_output=True,text=True)
 if r.returncode:issues.append(r.stdout)
 r=subprocess.run([sys.executable,str(R/'scripts/build_workshop_copy.py')]+(['--write'] if write else []),capture_output=True,text=True)

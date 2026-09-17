@@ -102,7 +102,19 @@ class ReadingPages(unittest.TestCase):
                         self.assertTrue(1 <= int(url.fragment) <= len(slides), href)
                     else:
                         self.assertIn(unquote(url.fragment), other_ids, f'{path}: {href}')
-        self.assertGreaterEqual(len(seen), 40)
+        self.assertTrue({(ROOT / target).resolve() for target in DESTINATIONS.values()} <= seen)
+
+    def test_removed_research_pages_stay_removed(self):
+        for name in ['model-card.html', 'model-card.md', 'sample-revisions.html',
+                     'sample-revisions.md', 'sample-revisions.sources.html',
+                     'sample-revisions.sources.json']:
+            self.assertFalse((ROOT / 'examples/research' / name).exists())
+        for pattern in ['*.html', '*.md']:
+            for path in ROOT.rglob(pattern):
+                if any(part in {'review', '.git', 'node_modules'} for part in path.relative_to(ROOT).parts):
+                    continue
+                content = path.read_text()
+                self.assertNotRegex(content, r'sample-revisions|research/model-card', str(path))
 
     def test_first_workshop_stays_self_contained(self):
         for name in ['index.html', 'workshop-copy.html']:

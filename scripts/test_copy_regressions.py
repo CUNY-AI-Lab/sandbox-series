@@ -535,59 +535,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(blocks[0].text().strip(),prompt)
         self.assertFalse(sections[0].all(lambda n:'hidden' in n.attrs or n.tag=='details'))
         links={n.attrs.get('href') for n in sections[0].all(lambda n:n.tag=='a')}
-        for name in ['system-prompt.txt','model-card.html','sample-revisions.html']:
-            self.assertIn('examples/research/'+name,links)
-
-        card=(folder/'model-card.md').read_text()
-        fields=dict(re.findall(r'^\| ([^|]+?) \| ([^|]+?) \|$',card,re.M))
-        self.assertEqual(fields['Access'],'Private')
-        self.assertEqual(fields['Function Calling'],'Native')
-        self.assertEqual(fields['Builtin Tools'],'Web Search only; all other categories disabled')
-        self.assertEqual(fields['Default Features'],'Web Search')
-        for capability in ['Web Search','Builtin Tools']:
-            self.assertIn(capability,fields['Capabilities'])
-        self.assertIn('optional worked example',card)
-        self.assertIn('same passages and revision links',card)
-        for resource in ['Knowledge','Skills','Tools']:
-            self.assertRegex(fields[resource],r'^None(?: for Workshop 1)?$')
-        self.assertIn('paste or attach',card.lower())
-        self.assertIn('in chat',card)
-
-        fixture=(folder/'sample-revisions.md').read_text()
-        sample_page=Parser((folder/'sample-revisions.html').read_text()).root
-        displayed=[node.text() for node in sample_page.all(lambda n:n.has_class('prompt-block'))]
-        self.assertEqual(displayed,re.findall(r'```text\n(.*?)\n```',fixture,re.S))
-        evidence=json.loads((folder/'sample-revisions.sources.json').read_text())
-        self.assertEqual(evidence['article'],'Academic freedom')
-        self.assertEqual(evidence['article_url'],'https://en.wikipedia.org/wiki/Academic_freedom')
-        self.assertEqual(evidence['license']['url'],'https://creativecommons.org/licenses/by-sa/4.0/deed.en')
-        self.assertIn(evidence['license']['url'],fixture)
-        expected=[(1346428851,1346430780,
-                   'bd76b4de364409dfe775c4b898324f6d45db07bcf76b83214f3a9ca46fb14d03',
-                   '41f399c59bd3668a9c810d4c30e44c41a74106fa8ce64b1e62a52aceb54c7d5a'),
-                  (1353191720,1353192126,
-                   'b9731786906d9ec6fa48fad0a7b310dd756ea378b65dccdc957d5dfd9bf4e19b',
-                   'ecb10476e24e4527604e218da03fb86d3e759e61408fba7ad069a7f7f19c5399')]
-        excerpts=re.findall(r'```text\n(.*?)\n```',fixture,re.S)
-        self.assertEqual(len(evidence['pairs']),len(expected))
-        self.assertEqual(len(excerpts),len(expected))
-        for pair,block,(before_id,after_id,before_hash,after_hash) in zip(evidence['pairs'],excerpts,expected):
-            self.assertEqual(pair['article'],'Academic freedom')
-            self.assertTrue(pair['adjacent_revisions'])
-            self.assertEqual(pair['after']['parent_revision_id'],before_id)
-            quotes=re.search(r'\nBefore:\n(.*?)\n\nAfter:\n(.*)\Z',block,re.S)
-            self.assertIsNotNone(quotes)
-            for position,(side,revision_id,quote_hash) in enumerate([('before',before_id,before_hash),('after',after_id,after_hash)],1):
-                record=pair[side]
-                self.assertEqual(record['revision_id'],revision_id)
-                self.assertEqual(record['quote_sha256_utf8'],quote_hash)
-                self.assertEqual(hashlib.sha256(record['quote'].encode()).hexdigest(),quote_hash)
-                self.assertEqual(quotes.group(position),record['quote'])
-                self.assertIn(f'{side.title()}: {revision_id} — {record["timestamp_utc"]}',block)
-                self.assertEqual(record['revision_url'],f'https://en.wikipedia.org/w/index.php?title=Academic_freedom&oldid={revision_id}')
-                self.assertIn(record['revision_url'],fixture)
-            self.assertEqual(pair['diff_url'],f'https://en.wikipedia.org/w/index.php?title=Academic_freedom&diff={after_id}&oldid={before_id}')
-            self.assertIn(pair['diff_url'],fixture)
+        self.assertIn('examples/research/system-prompt.txt',links)
 
     def test_30_model_cards_preserve_metadata_and_logo(self):
         cards=json.loads((ROOT/'examples/model-cards.json').read_text())['models']
@@ -639,9 +587,9 @@ class CopyRegressions(unittest.TestCase):
                 self.assertEqual(card[field],builder[field])
             self.assertEqual(card['prompt_file'],'examples/creators/'+builder['prompt_file'])
         research=by_id['compare-wikipedia-revisions']
-        card_copy=(ROOT/'examples/research/model-card.md').read_text()
+        card_copy=(ROOT/'examples/model-cards.md').read_text()
         self.assertIn(research['description'],card_copy)
-        self.assertIn('| Base Model | '+research['base_label']+' |',card_copy)
+        self.assertIn(research['base_label'],card_copy)
         for starter in research['starters']:
             self.assertIn(starter['content'],card_copy)
 

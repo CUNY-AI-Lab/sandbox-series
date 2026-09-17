@@ -150,8 +150,7 @@ class ParticipantContinuity(unittest.TestCase):
         self.assertIn('chosen custom model', attach)
         self.assertNotIn('replace STEM Wikipedia Experiments', attach)
         refs = self.slide('knowledge/index.html', 'Choose Reference Materials')
-        links = {n.attrs.get('href') for n in refs.all(lambda n: n.tag == 'a')}
-        self.assertTrue({'../examples/research/sample-revisions.html', '../examples/research/system-prompt.html'} <= links)
+        self.assertIn('Read documents before uploading', refs.text())
 
     def test_original_wikipedia_sources_remain_distinct(self):
         roles = self.slide('knowledge/index.html', 'Review Source Roles').text()

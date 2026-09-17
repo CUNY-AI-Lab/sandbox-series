@@ -11,9 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCES = {
     'examples/model-cards.md': 'Sandbox Model Cards',
     'examples/model-cards.json': 'Model Card Data',
-    'examples/research/model-card.md': 'Compare Wikipedia Edits',
     'examples/research/system-prompt.txt': 'Research System Prompt',
-    'examples/research/sample-revisions.sources.json': 'Revision Sources',
     'examples/stem-game-skill.md': 'Extend STEM Adventures',
     'examples/stem-chat-system-prompt.txt': 'STEM Adventure Games',
     'examples/stem-system-prompt.txt': 'Advanced System Prompt',
@@ -50,7 +48,6 @@ DESTINATIONS.update({
     'skills/SLIDES.md': 'skills/workshop-copy.html',
     'knowledge/REFERENCE.md': 'knowledge/reference.html',
     'skills/REFERENCE.md': 'skills/reference.html',
-    'examples/research/sample-revisions.md': 'examples/research/sample-revisions.html',
 })
 
 

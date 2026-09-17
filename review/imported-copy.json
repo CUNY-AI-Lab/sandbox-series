@@ -260,6 +260,11 @@
         "before": "Choose Reference MaterialsChoose documents for your teaching or research task.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.For Compare Wikipedia Edits, use sample revision excerpts and classification criteria. Read documents before uploading; distinguish summaries from original accounts.Download Light and Colour \u00b7 Download Experimental Variants",
         "after": "Choose Reference MaterialsChoose documents for your teaching or research task.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.For Compare Wikipedia Edits, use sample revision excerpts and classification criteria. Read documents before uploading; distinguish summaries from original accounts.Download Light and Colourhttps://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.mdDownload Experimental Variantshttps://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-experimental-variants.md",
         "reason": "User requested reference links in bottom footers with full visible URLs; instructional wording preserved."
+      },
+      {
+        "before": "For Compare Wikipedia Edits, use sample revision excerpts and classification criteria. ",
+        "after": "",
+        "reason": "User requested removal of standalone research sample and model-card pages and all copy pointing to them."
       }
     ]
   },

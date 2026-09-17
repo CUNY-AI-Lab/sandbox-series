@@ -216,7 +216,7 @@ Choose documents for your teaching or research task.
 
 - Use [Newton: Experimental Variants](../examples/knowledge/newton-experimental-variants.html) for changes to experimental procedures.
 
-For Compare Wikipedia Edits, use [sample revision excerpts](../examples/research/sample-revisions.html) and [classification criteria](../examples/research/system-prompt.html). Read documents before uploading; distinguish summaries from original accounts.
+Read documents before uploading; distinguish summaries from original accounts.
 
 [Download Light and Colour  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.md](../examples/knowledge/newton-light-colour.md)[Download Experimental Variants  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-experimental-variants.md](../examples/knowledge/newton-experimental-variants.md)
 
