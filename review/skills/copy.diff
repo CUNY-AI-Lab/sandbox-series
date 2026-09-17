@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,677 +1,446 @@
+@@ -1,677 +1,438 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Customizing Skills & Tools
@@ -121,7 +121,7 @@
 +
 +Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
 +
-+[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++[Tools & Skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 +
 +---
 +
@@ -558,7 +558,9 @@
 +
 +![STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.](../images/current/integrations-advanced-2026-09-17.png)
 +
-+With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat. · [Model Registry](https://ailab.gc.cuny.edu/models/)
++With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
++
++[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 +
 +---
 +
@@ -568,7 +570,9 @@
 +
 +![Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.](../images/current/stem-advanced-clean-2026-09-17.png)
 +
-+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](../examples/adventure/preview.html) · [Read game file](../examples/adventure/prism.html) · [Model Registry](https://ailab.gc.cuny.edu/models/)
++Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism.
++
++[Open game  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/preview.html](../examples/adventure/preview.html)[Read game file  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.html](../examples/adventure/prism.html)[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 +
 +---
 +
@@ -630,9 +634,7 @@
 +
 +Markdown is plain text with formatting such as headings and lists.
 +
-+[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-+
-+[Open WebUI Skills](https://docs.openwebui.com/features/workspace/skills/)
++[Tools & Skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)[Open WebUI Skills  https://docs.openwebui.com/features/workspace/skills/](https://docs.openwebui.com/features/workspace/skills/)
 +
 +---
 +
@@ -863,9 +865,7 @@
 +
 +- **Format** — How should responses appear?
 +
-+[Read blank template](reference.html#write-instructions)
-+
-+[Read complete skill](../examples/stem-game-skill.html)
++ [Read blank template  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#write-instructions](reference.html#write-instructions)[Read complete skill  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](../examples/stem-game-skill.html)
 +
 +---
 +
@@ -954,11 +954,7 @@
 +Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed.
 +```
 +
-+[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](../examples/stem-game-skill.html)
-+
-+[Review draft evaluation](reference.html#check-skill-drafts)
-+
-+[Download skill instructions](../examples/stem-game-skill.md)
++[Open Kale Skill Builder  https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder)[Read tested skill  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](../examples/stem-game-skill.html)[Review draft evaluation  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-skill-drafts](reference.html#check-skill-drafts)[Download skill instructions  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.md](../examples/stem-game-skill.md)
 +
 +---
 +
@@ -986,7 +982,7 @@
 +
 +Native function calling lets your model call tools and load attached skill instructions.
 +
-+[Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
++[Attach skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 +
 +---
 +
@@ -1000,9 +996,7 @@
 +Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
 +```
 +
-+[Read skill instructions](../examples/stem-game-skill.html) · [Download tested scenario](../examples/adventure/aperture.json)
-+
-+[Download Prism Laboratory](../examples/adventure/prism.json)
++[Read skill instructions  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](../examples/stem-game-skill.html)[Download tested scenario  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/aperture.json](../examples/adventure/aperture.json)[Download Prism Laboratory  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.json](../examples/adventure/prism.json)
 +
 +---
 +
@@ -1034,9 +1028,7 @@
 +Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
 +```
 +
-+[Open CAIL Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](../examples/tools/stem_adventure.py)
-+
-+[Review code evaluation](reference.html#check-generated-code)
++[Open CAIL Tool Creator  https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator)[Download tested tool  https://cuny-ai-lab.github.io/sandbox-series/examples/tools/stem_adventure.py](../examples/tools/stem_adventure.py)[Review code evaluation  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-generated-code](reference.html#check-generated-code)
 +
 +---
 +
@@ -1114,4 +1106,4 @@
 +
 +- Retest after model or tool updates
 +
-+[Browse system-prompt examples](../examples.html) · [Return to Composing system prompts](..)
++[Browse system-prompt examples  https://cuny-ai-lab.github.io/sandbox-series/examples.html](../examples.html)[Return to Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/](..)

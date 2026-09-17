@@ -635,6 +635,11 @@
         "before": "System PromptsA system prompt gives a model instructions for its role, behavior, and focus.User PromptsQuestions or tasks you enter in chat.Base ModelsA base model generates responses. A custom model adds instructions and resources without training a new base model.System Prompts \u00b7 Open WebUI model configuration",
         "after": "System PromptsSystem prompts are setup instructions that describe how a model should behave.User PromptsQuestions or tasks you enter in chat.Custom ModelsYou create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.Basic Concepts \u00b7 Custom Models",
         "reason": "User requested prior workshop wording about setup instructions and a positive description of custom models grounded in Sandbox documentation."
+      },
+      {
+        "before": "System PromptsSystem prompts are setup instructions that describe how a model should behave.User PromptsQuestions or tasks you enter in chat.Custom ModelsYou create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.Basic Concepts \u00b7 Custom Models",
+        "after": "System PromptsSystem prompts are setup instructions that describe how a model should behave.User PromptsQuestions or tasks you enter in chat.Custom ModelsYou create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.Basic Conceptshttps://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/Custom Modelshttps://ailab.gc.cuny.edu/sandbox-docs/models/",
+        "reason": "User requested references in bottom footers with full visible URLs and two-column layouts; instructional wording and prompt text preserved."
       }
     ],
     "allowed_additions": []
@@ -661,6 +666,11 @@
         "before": " If Compare is unavailable, send identical prompts in separate new chats.",
         "after": "",
         "reason": "User confirmed Compare is always available and requested removal of this fallback."
+      },
+      {
+        "before": "Compare ModelsStart a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models.",
+        "after": "Compare ModelsStart a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models.Model Registryhttps://ailab.gc.cuny.edu/models/",
+        "reason": "User requested references in bottom footers with full visible URLs and two-column layouts; instructional wording and prompt text preserved."
       }
     ],
     "allowed_additions": [

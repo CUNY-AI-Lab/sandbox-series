@@ -40,9 +40,7 @@ A knowledge collection contains uploaded documents that a model can search when 
 
 Collections support PDFs, Markdown, and plain text. Attach a collection to a custom model under **Knowledge**.
 
-[Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
-[Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
+[Knowledge Bases  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)[Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
 
 ---
 
@@ -64,7 +62,9 @@ Use [system-prompt examples](../examples.html) if you need a prompt to begin.
 
 ![Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar](../images/current/workspace-sidebar-2026-09-15-annotated.svg)
 
-Select Workspace in left sidebar. Choose Models and open your custom model. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Select Workspace in left sidebar. Choose Models and open your custom model.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -76,7 +76,7 @@ Open your private copy of **STEM Adventure Games** or **Compare Wikipedia Edits*
 
 Review **Base Model** and **System Prompt**. Keep instructions from Workshop 1. Leave Skills and Tools unselected.
 
-[Review system prompts](../examples.html)
+[Review system prompts  https://cuny-ai-lab.github.io/sandbox-series/examples.html](../examples.html)
 
 ---
 
@@ -102,7 +102,7 @@ Ask your document question and save its response before attaching documents. Rec
 
 Which passages did your model use, and do they support its claims?
 
-[Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
+[Open WebUI retrieval  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
 
 ---
 
@@ -176,7 +176,7 @@ Which objects in this scene appear in Newton: Light and Colour? Quote a relevant
 
 Open cited material. Does it support your model’s response?
 
-[Read Newton source summary](../examples/knowledge/newton-light-colour.html) · [Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
+[Read Newton source summary  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.html](../examples/knowledge/newton-light-colour.html)[Read Newton’s account  https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
 
 ---
 
@@ -194,9 +194,7 @@ Use Markdown, plain text, or readable PDFs. Name files clearly and use headings 
 
 Check scanned or complex PDFs before uploading. Convert them to text if needed.
 
-[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
-[Explore source examples](reference.html)
+[Document formats  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)[Explore source examples  https://cuny-ai-lab.github.io/sandbox-series/knowledge/reference.html](reference.html)
 
 ---
 
@@ -220,7 +218,7 @@ Choose documents for your teaching or research task.
 
 For Compare Wikipedia Edits, use [sample revision excerpts](../examples/research/sample-revisions.html) and [classification criteria](../examples/research/system-prompt.html). Read documents before uploading; distinguish summaries from original accounts.
 
-[Download Light and Colour](../examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](../examples/knowledge/newton-experimental-variants.md)
+[Download Light and Colour  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.md](../examples/knowledge/newton-light-colour.md)[Download Experimental Variants  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-experimental-variants.md](../examples/knowledge/newton-experimental-variants.md)
 
 ---
 
@@ -246,7 +244,7 @@ Open Workspace → Knowledge → Create. Enter a name and description, keep acce
 
 - Choose **Save & Update**, then start a new chat with your custom model.
 
-[Upload and attach source material](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+[Upload and attach source material  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
@@ -290,7 +288,7 @@ Share your collection with people who will use your custom model.
 
 - Choose **Public** only for documents intended for all signed-in Sandbox users.
 
-[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+[Roles & Permissions  https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
 ---
 

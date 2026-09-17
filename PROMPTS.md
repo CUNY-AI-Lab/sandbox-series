@@ -25,7 +25,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - **Configuring skills and tools** Extend model capabilities with skills and tools.
 
-[Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
+[Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
 ---
 
@@ -51,7 +51,9 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Draft instructions and create models
 
-Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
+Check monthly usage at Model Access.
+
+[https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
 
 ---
 
@@ -69,11 +71,9 @@ What brings you to this workshop today?
 
 ### Sign In
 
-[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
-
 Select **Continue with CUNY Login** and sign in with your CUNY account.
 
-[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 
@@ -91,7 +91,7 @@ Questions or tasks you enter in chat.
 
 You create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.
 
-[Basic Concepts](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+[Basic Concepts  https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/)[Custom Models  https://ailab.gc.cuny.edu/sandbox-docs/models/](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
 ---
 
@@ -101,7 +101,9 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
 
-Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -121,7 +123,7 @@ Message actions
 
 Find actions beneath each response to copy, edit, or regenerate it. Open More (⋯) for additional actions.
 
-[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
+[Sandbox Basics  https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
 
 ---
 
@@ -131,7 +133,9 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -161,7 +165,7 @@ In our question, either person could be late.
 
 - What assumption supports its answer?
 
-[Levesque, Davis, and Morgenstern (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+[Levesque, Davis, and Morgenstern (2012)  https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
 
 ---
 
@@ -211,13 +215,13 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 ![CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.](images/current/chat-controls-populated-annotated-2026-09-17.svg)
 
-[https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
-
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
 ```text
 Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.
 ```
+
+[https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -229,7 +233,9 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ![Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-detail-2026-09-17.svg)
 
-Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -329,7 +335,7 @@ Save your prompt, model settings, and responses.
 
 Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
 
-[Privacy and chat history](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[Privacy and chat history  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 
@@ -382,4 +388,4 @@ Select Workspace → Models → Create to configure your own model.
 
 Keep your draft and choose source documents for your next workshop.
 
-[CUNY AI Lab](https://ailab.gc.cuny.edu/) · [CAIL Sandbox](https://chat.ailab.gc.cuny.edu/) · [System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/) · [Winograd Schema Challenge (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+[CUNY AI Lab  https://ailab.gc.cuny.edu/](https://ailab.gc.cuny.edu/)[CAIL Sandbox  https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[System Prompts  https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)[Custom Models  https://ailab.gc.cuny.edu/sandbox-docs/models/](https://ailab.gc.cuny.edu/sandbox-docs/models/)[Winograd Schema Challenge (2012)  https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)

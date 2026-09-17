@@ -5,6 +5,8 @@ This repository is the consolidated CUNY AI Lab Sandbox workshop series. HTML is
 - Read the frontend-design skill before visual changes.
 - Use shared responsive slide-title sizing: 36–44px on desktop and tablet, 32px on mobile. Preserve cover typography and the neutral dark palette.
 - Give screenshots nearly the whole slide. Keep supporting instructions in the complete transcript, linked through Outline.
+- Pair instructions and examples in two columns when stacked content leaves excessive empty space; stack columns on smaller screens.
+- Put reference and resource links in slide footers above navigation, with full visible URLs. Keep inline action links with their instructions.
 - Keep mini-agendas and next steps short, beginning with action verbs and containing no definite or indefinite articles.
 - Workshop 1 requires only individual access and Sandbox sign-in before attending. Later access requirements are recorded in WORKSHOP.md.
 - Preserve exact demonstration prompts and substantive disciplinary examples. Record justified corrections in review manifests.

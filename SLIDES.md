@@ -27,7 +27,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - **Configuring skills and tools** Extend model capabilities with skills and tools.
 
-[Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/)
+[Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
 ---
 
@@ -53,7 +53,9 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - Draft instructions and create models
 
-Check monthly usage at [Model Access](https://tools.ailab.gc.cuny.edu/model-access).
+Check monthly usage at Model Access.
+
+[https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
 
 ---
 
@@ -71,11 +73,9 @@ What brings you to this workshop today?
 
 ### Sign In
 
-[chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu/)
-
 Select **Continue with CUNY Login** and sign in with your CUNY account.
 
-[Access and sign-in](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 
@@ -93,7 +93,7 @@ Questions or tasks you enter in chat.
 
 You create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.
 
-[Basic Concepts](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+[Basic Concepts  https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/)[Custom Models  https://ailab.gc.cuny.edu/sandbox-docs/models/](https://ailab.gc.cuny.edu/sandbox-docs/models/)
 
 ---
 
@@ -105,7 +105,9 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.
 
-Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Select model ID on bottom right of message box. Choose Gateway from filters, then select Gemma 4 26B A4B IT.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -125,7 +127,7 @@ Message actions
 
 Find actions beneath each response to copy, edit, or regenerate it. Open More (⋯) for additional actions.
 
-[Sandbox Basics](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
+[Sandbox Basics  https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
 
 ---
 
@@ -137,7 +139,9 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -167,7 +171,7 @@ In our question, either person could be late.
 
 - What assumption supports its answer?
 
-[Levesque, Davis, and Morgenstern (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+[Levesque, Davis, and Morgenstern (2012)  https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
 
 ---
 
@@ -223,13 +227,13 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 **Alt text:** CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.
 
-[https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
-
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
 ```text
 Identify purpose and separate facts from assumptions. Ask one clarifying question when needed. Answer concisely.
 ```
+
+[https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -245,7 +249,9 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 **Alt text:** Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.
 
-Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -349,7 +355,7 @@ Save your prompt, model settings, and responses.
 
 Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
 
-[Privacy and chat history](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[Privacy and chat history  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
 
 ---
 
@@ -404,7 +410,7 @@ Select Workspace → Models → Create to configure your own model.
 
 Keep your draft and choose source documents for your next workshop.
 
-[CUNY AI Lab](https://ailab.gc.cuny.edu/) · [CAIL Sandbox](https://chat.ailab.gc.cuny.edu/) · [System Prompts](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/) · [Custom Models](https://ailab.gc.cuny.edu/sandbox-docs/models/) · [Winograd Schema Challenge (2012)](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+[CUNY AI Lab  https://ailab.gc.cuny.edu/](https://ailab.gc.cuny.edu/)[CAIL Sandbox  https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[System Prompts  https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)[Custom Models  https://ailab.gc.cuny.edu/sandbox-docs/models/](https://ailab.gc.cuny.edu/sandbox-docs/models/)[Winograd Schema Challenge (2012)  https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
 
 
 ## Curating knowledge collections — 1
@@ -447,9 +453,7 @@ A knowledge collection contains uploaded documents that a model can search when 
 
 Collections support PDFs, Markdown, and plain text. Attach a collection to a custom model under **Knowledge**.
 
-[Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
-[Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
+[Knowledge Bases  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)[Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
 
 ---
 
@@ -473,7 +477,9 @@ Use [system-prompt examples](examples.html) if you need a prompt to begin.
 
 **Alt text:** Sandbox chat with CUNY AI Lab logo and message box visible; arrow marks Workspace in left sidebar
 
-Select Workspace in left sidebar. Choose Models and open your custom model. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Select Workspace in left sidebar. Choose Models and open your custom model.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -485,7 +491,7 @@ Open your private copy of **STEM Adventure Games** or **Compare Wikipedia Edits*
 
 Review **Base Model** and **System Prompt**. Keep instructions from Workshop 1. Leave Skills and Tools unselected.
 
-[Review system prompts](examples.html)
+[Review system prompts  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)
 
 ---
 
@@ -511,7 +517,7 @@ Ask your document question and save its response before attaching documents. Rec
 
 Which passages did your model use, and do they support its claims?
 
-[Open WebUI retrieval](https://docs.openwebui.com/features/workspace/knowledge/)
+[Open WebUI retrieval  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
 
 ---
 
@@ -589,7 +595,7 @@ Which objects in this scene appear in Newton: Light and Colour? Quote a relevant
 
 Open cited material. Does it support your model’s response?
 
-[Read Newton source summary](examples/knowledge/newton-light-colour.html) · [Read Newton’s account](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
+[Read Newton source summary  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.html](examples/knowledge/newton-light-colour.html)[Read Newton’s account  https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00006)
 
 ---
 
@@ -607,9 +613,7 @@ Use Markdown, plain text, or readable PDFs. Name files clearly and use headings 
 
 Check scanned or complex PDFs before uploading. Convert them to text if needed.
 
-[Document formats](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
-
-[Explore source examples](knowledge/reference.html)
+[Document formats  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)[Explore source examples  https://cuny-ai-lab.github.io/sandbox-series/knowledge/reference.html](knowledge/reference.html)
 
 ---
 
@@ -633,7 +637,7 @@ Choose documents for your teaching or research task.
 
 For Compare Wikipedia Edits, use [sample revision excerpts](examples/research/sample-revisions.html) and [classification criteria](examples/research/system-prompt.html). Read documents before uploading; distinguish summaries from original accounts.
 
-[Download Light and Colour](examples/knowledge/newton-light-colour.md) · [Download Experimental Variants](examples/knowledge/newton-experimental-variants.md)
+[Download Light and Colour  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.md](examples/knowledge/newton-light-colour.md)[Download Experimental Variants  https://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-experimental-variants.md](examples/knowledge/newton-experimental-variants.md)
 
 ---
 
@@ -661,7 +665,7 @@ Open Workspace → Knowledge → Create. Enter a name and description, keep acce
 
 - Choose **Save & Update**, then start a new chat with your custom model.
 
-[Upload and attach source material](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+[Upload and attach source material  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
 
 ---
 
@@ -705,7 +709,7 @@ Share your collection with people who will use your custom model.
 
 - Choose **Public** only for documents intended for all signed-in Sandbox users.
 
-[Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+[Roles & Permissions  https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
 
 ---
 
@@ -770,7 +774,7 @@ Operations such as web search, code execution, or database queries.
 
 Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
 
-[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+[Tools & Skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
 ---
 
@@ -822,7 +826,9 @@ Use provided game files to describe rooms, objects, and rules.
 
 **Alt text:** STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.
 
-With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat. · [Model Registry](https://ailab.gc.cuny.edu/models/)
+With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -834,7 +840,9 @@ With STEM Adventure Games — Advanced selected, open Integrations beside +. Und
 
 **Alt text:** Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.
 
-Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism. [Open game](examples/adventure/preview.html) · [Read game file](examples/adventure/prism.html) · [Model Registry](https://ailab.gc.cuny.edu/models/)
+Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism.
+
+[Open game  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/preview.html](examples/adventure/preview.html)[Read game file  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.html](examples/adventure/prism.html)[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
 ---
 
@@ -896,9 +904,7 @@ Models can load attached skills when needed. Enable a skill under Integrations �
 
 Markdown is plain text with formatting such as headings and lists.
 
-[Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-
-[Open WebUI Skills](https://docs.openwebui.com/features/workspace/skills/)
+[Tools & Skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)[Open WebUI Skills  https://docs.openwebui.com/features/workspace/skills/](https://docs.openwebui.com/features/workspace/skills/)
 
 ---
 
@@ -920,9 +926,7 @@ Use three parts to draft this skill.
 
 - **Format** — How should responses appear?
 
-[Read blank template](skills/reference.html#write-instructions)
-
-[Read complete skill](examples/stem-game-skill.html)
+ [Read blank template  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#write-instructions](skills/reference.html#write-instructions)[Read complete skill  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](examples/stem-game-skill.html)
 
 ---
 
@@ -1015,11 +1019,7 @@ Attach [scenario instructions](examples/stem-game-skill.html) before sending thi
 Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed.
 ```
 
-[Open Kale Skill Builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) · [Read tested skill](examples/stem-game-skill.html)
-
-[Review draft evaluation](skills/reference.html#check-skill-drafts)
-
-[Download skill instructions](examples/stem-game-skill.md)
+[Open Kale Skill Builder  https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder)[Read tested skill  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](examples/stem-game-skill.html)[Review draft evaluation  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-skill-drafts](skills/reference.html#check-skill-drafts)[Download skill instructions  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.md](examples/stem-game-skill.md)
 
 ---
 
@@ -1049,7 +1049,7 @@ Open Workspace → Skills → Create. Name your skill and add an identifier and 
 
 Native function calling lets your model call tools and load attached skill instructions.
 
-[Attach skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+[Attach skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
 
 ---
 
@@ -1063,9 +1063,7 @@ Open your private copy. Attach [Prism Laboratory JSON](examples/adventure/prism.
 Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
 ```
 
-[Read skill instructions](examples/stem-game-skill.html) · [Download tested scenario](examples/adventure/aperture.json)
-
-[Download Prism Laboratory](examples/adventure/prism.json)
+[Read skill instructions  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](examples/stem-game-skill.html)[Download tested scenario  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/aperture.json](examples/adventure/aperture.json)[Download Prism Laboratory  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.json](examples/adventure/prism.json)
 
 ---
 
@@ -1097,9 +1095,7 @@ CAIL Tool Creator is a custom model that drafts Python tools for tasks you descr
 Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
 ```
 
-[Open CAIL Tool Creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) · [Download tested tool](examples/tools/stem_adventure.py)
-
-[Review code evaluation](skills/reference.html#check-generated-code)
+[Open CAIL Tool Creator  https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator)[Download tested tool  https://cuny-ai-lab.github.io/sandbox-series/examples/tools/stem_adventure.py](examples/tools/stem_adventure.py)[Review code evaluation  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-generated-code](skills/reference.html#check-generated-code)
 
 ---
 
@@ -1177,4 +1173,4 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 - Retest after model or tool updates
 
-[Browse system-prompt examples](examples.html) · [Return to Composing system prompts](.)
+[Browse system-prompt examples  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)[Return to Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/](.)

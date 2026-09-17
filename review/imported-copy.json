@@ -255,6 +255,11 @@
       {
         "before": "Choose Reference MaterialsChoose documents for your teaching or research task.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.For Compare Wikipedia Edits, use saved revision excerpts and your classification criteria. Read documents before uploading; distinguish summaries from original accounts.Download Light and Colour \u00b7 Download Experimental Variants",
         "after": "Choose Reference MaterialsChoose documents for your teaching or research task.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.For Compare Wikipedia Edits, use sample revision excerpts and classification criteria. Read documents before uploading; distinguish summaries from original accounts.Download Light and Colour \u00b7 Download Experimental Variants"
+      },
+      {
+        "before": "Choose Reference MaterialsChoose documents for your teaching or research task.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.For Compare Wikipedia Edits, use sample revision excerpts and classification criteria. Read documents before uploading; distinguish summaries from original accounts.Download Light and Colour \u00b7 Download Experimental Variants",
+        "after": "Choose Reference MaterialsChoose documents for your teaching or research task.Use Newton: Light and Colour for apparatus and observations.Use Newton: Experimental Variants for changes to experimental procedures.For Compare Wikipedia Edits, use sample revision excerpts and classification criteria. Read documents before uploading; distinguish summaries from original accounts.Download Light and Colourhttps://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-light-colour.mdDownload Experimental Variantshttps://cuny-ai-lab.github.io/sandbox-series/examples/knowledge/newton-experimental-variants.md",
+        "reason": "User requested reference links in bottom footers with full visible URLs; instructional wording preserved."
       }
     ]
   },
@@ -512,6 +517,11 @@
         "before": "\nStructure\nStructure Skills",
         "after": "\nStructure Skills",
         "reason": "Remove duplicated label above unchanged slide heading during visual review."
+      },
+      {
+        "before": "\nStructure Skills\nUse three parts to draft this skill.\n\nTrigger \u2014 When should this skill activate?\nProcedure \u2014 Which steps should your model follow?\nFormat \u2014 How should responses appear?\n\nRead blank templateRead complete skill",
+        "after": "\nStructure Skills\nUse three parts to draft this skill.\n\nTrigger \u2014 When should this skill activate?\nProcedure \u2014 Which steps should your model follow?\nFormat \u2014 How should responses appear?\n\nRead blank templatehttps://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#write-instructionsRead complete skillhttps://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html",
+        "reason": "User requested reference links in bottom footers with full visible URLs; instructional wording preserved."
       }
     ]
   },
@@ -657,6 +667,11 @@
         "before": "Draft SkillsKale Skill Builder is a custom model that drafts skills for tasks you describe.Select model ID on bottom right of message box.Attach scenario instructions before sending this example.Copy promptDraft a skill for STEM Adventure that extends one experimental procedure or examines a submitted play record. Use render_stem_adventure(scenario_json: str = \"\"). Preserve game rules. Include trigger, 3\u20135 steps, output, and two proposed tests. Do not invent successful tool calls.Open Kale Skill Builder \u00b7 Read tested skill",
         "after": "Draft SkillsKale Skill Builder is a custom model that drafts skills for tasks you describe.Select model ID on bottom right of message box. Choose Kale Skill Builder.Attach scenario instructions before sending this example.Copy promptDraft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3\u20135 steps, expected output, and two proposed tests. Do not claim unrun tests passed.Open Kale Skill Builder \u00b7 Read tested skillReview draft evaluationDownload skill instructions",
         "reason": "Approved clarity proposal, 2026-09-16"
+      },
+      {
+        "before": "Draft SkillsKale Skill Builder is a custom model that drafts skills for tasks you describe.Select model ID on bottom right of message box. Choose Kale Skill Builder.Attach scenario instructions before sending this example.Copy promptDraft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3\u20135 steps, expected output, and two proposed tests. Do not claim unrun tests passed.Open Kale Skill Builder \u00b7 Read tested skillReview draft evaluationDownload skill instructions",
+        "after": "Draft SkillsKale Skill Builder is a custom model that drafts skills for tasks you describe.Select model ID on bottom right of message box. Choose Kale Skill Builder.Attach scenario instructions before sending this example.Copy promptDraft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3\u20135 steps, expected output, and two proposed tests. Do not claim unrun tests passed.Open Kale Skill Builderhttps://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builderRead tested skillhttps://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.htmlReview draft evaluationhttps://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-skill-draftsDownload skill instructionshttps://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.md",
+        "reason": "User requested reference links in bottom footers with full visible URLs; instructional wording preserved."
       }
     ]
   },
