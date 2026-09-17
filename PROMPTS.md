@@ -323,23 +323,7 @@ What changed? Did your revised instruction work?
 
 ---
 
-## Slide 21: Record Comparisons
-
-### Record Comparisons
-
-| Item | Record |
-| --- | --- |
-| Configuration | Custom model name, base model, system prompt, settings, and date. |
-| Test | User request, enabled features, response. |
-| Judgment | What you checked, evidence from each response, and any change you plan to test. |
-
-Use materials you are permitted to upload and share. Sandbox chats may be stored and accessible to administrators or people you share them with.
-
-[Privacy and chat history  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
-
----
-
-## Slide 22: Draft System Prompts
+## Slide 21: Draft System Prompts
 
 ### Draft System Prompts
 
@@ -358,7 +342,7 @@ How should it present responses?
 
 ---
 
-## Slide 23: Create Models
+## Slide 22: Create Models
 
 ### Create Models
 
@@ -376,16 +360,24 @@ Select Workspace → Models → Create to configure your own model.
 
 ---
 
-## Slide 24: Workshop Resources
+## Slide 23: Workshop Resources
 
 ### Workshop Resources
 
-- Review [workshop copy](workshop-copy.html) and [system-prompt examples](examples.html).
-
-- Consult [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/) and [Open WebUI Models](https://docs.openwebui.com/features/workspace/models/).
-
-- Check [Model Registry](https://ailab.gc.cuny.edu/models/) and [monthly usage](https://tools.ailab.gc.cuny.edu/model-access).
-
 Keep your draft and choose source documents for your next workshop.
 
-[CUNY AI Lab  https://ailab.gc.cuny.edu/](https://ailab.gc.cuny.edu/)[CAIL Sandbox  https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[System Prompts  https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/](https://ailab.gc.cuny.edu/sandbox-docs/system-prompts/)[Custom Models  https://ailab.gc.cuny.edu/sandbox-docs/models/](https://ailab.gc.cuny.edu/sandbox-docs/models/)[Winograd Schema Challenge (2012)  https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf](https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf)
+### Workshop Materials
+
+- [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
+
+- [Review prompt examples  https://cuny-ai-lab.github.io/sandbox-series/examples.html](examples.html)
+
+- [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
+
+### Model Resources
+
+- [Check Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
+
+- [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
+
+- [Consult Open WebUI Models  https://docs.openwebui.com/features/workspace/models/](https://docs.openwebui.com/features/workspace/models/)

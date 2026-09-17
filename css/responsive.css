@@ -404,6 +404,10 @@ height:auto}
 }
 
 @media(max-width:700px){
+ .resource-directory{grid-template-columns:1fr;gap:24px}
+ .resource-group{display:block}
+ .resource-group ul{display:grid;gap:20px;padding:0;margin-top:14px}
+ .resource-group .link-url{font-size:20px}
  :root{--header-height:54px}
  .deck-header{padding-inline:max(23px,env(safe-area-inset-left,0px)) max(23px,env(safe-area-inset-right,0px));padding-block:calc(5px + env(safe-area-inset-top,0px)) 5px}
  .deck-brand{width:156px}

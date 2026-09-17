@@ -139,7 +139,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Compare Responses','Compare Custom Models','Clone Models','Compare Configurations','Record Comparisons','Draft System Prompts','Create Models','Workshop Resources'])
+        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Compare Responses','Compare Custom Models','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Workshop Resources'])
         self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
         question=self.slide_containing_id('index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())
@@ -686,7 +686,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(path.read_text(),build(),'Regenerate workshop-copy.html after slide changes')
         copy=Parser(path.read_text()).root
         sections=copy.all(lambda n:n.has_class('copy-section'))
-        self.assertEqual(len(sections),24)
+        self.assertEqual(len(sections),23)
         self.assertEqual([section.all(lambda n:n.tag=='h2')[0].text() for section in sections],
                          [slide.attrs['data-title'] for slide in self.decks['index.html']])
         for source,destination in zip(self.decks['index.html'],sections):
