@@ -141,7 +141,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Compare Custom Models','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
+        self.assert_order('index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Compare Custom Models','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
         self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
         question=self.slide_containing_id('index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())

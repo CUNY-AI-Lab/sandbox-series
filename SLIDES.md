@@ -105,20 +105,6 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ## Composing system prompts — 7
 
-### Select Models
-
-![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
-
-**Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.
-
-Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.
-
-[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
-
----
-
-## Composing system prompts — 8
-
 ### Chat Features
 
 Upload Files (+)
@@ -137,6 +123,20 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ---
 
+## Composing system prompts — 8
+
+### Select Models
+
+![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
+
+**Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.
+
+Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
+
+---
+
 ## Composing system prompts — 9
 
 ### Compare Models
@@ -145,7 +145,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 **Alt text:** Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models.
+Reopen model selector and select Compare beside search field. Choose Gemma and another Gateway model.
 
 [Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 

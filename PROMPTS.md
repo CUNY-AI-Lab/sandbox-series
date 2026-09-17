@@ -101,19 +101,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ---
 
-## Slide 7: Select Models
-
-### Select Models
-
-![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
-
-Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.
-
-[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
-
----
-
-## Slide 8: Chat Features
+## Slide 7: Chat Features
 
 ### Chat Features
 
@@ -133,13 +121,25 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (â
 
 ---
 
+## Slide 8: Select Models
+
+### Select Models
+
+![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
+
+Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.
+
+[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
+
+---
+
 ## Slide 9: Compare Models
 
 ### Compare Models
 
 ![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
 
-Start a new chat. Select model ID on bottom right of message box. Select Compare beside search field, then choose two Gateway models.
+Reopen model selector and select Compare beside search field. Choose Gemma and another Gateway model.
 
 [Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
 
