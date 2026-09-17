@@ -15,6 +15,7 @@ from check_workshop import Parser, Node
 ROOT = Path(__file__).resolve().parents[1]
 ROUTES = ('index.html', 'knowledge/index.html', 'skills/index.html')
 SECTION_NAMES = ('Composing system prompts', 'Curating knowledge collections', 'Configuring skills and tools')
+COVER_TITLE = 'Getting Started with the CUNY AI Lab Sandbox'
 SELECTOR = 'Select model ID on bottom right of message box.'
 NURSE = 'The nurse yelled at the doctor because she was late. Who was late?'
 CAR = 'The car wash is 50 meters from me. Should I walk or take the car? Explain your reasoning.'
@@ -41,6 +42,7 @@ REJECTED = (
 def normalized(s): return ' '.join(s.split())
 def authored(node):
     if isinstance(node, str): return node
+    if node.tag in {'h1','title'} and node.text().strip() in {COVER_TITLE,COVER_TITLE+' | CUNY AI Lab'}: return ''
     if node.tag in {'pre','script','style','button','svg'}: return ''
     if node.has_class('prompt-block') or node.has_class('quoted-prompt'): return ''
     if node.tag == 'img': return node.attrs.get('alt','')
@@ -48,6 +50,7 @@ def authored(node):
 def prose_colons(s):
     # Resource titles, URLs, and code notation are literal identifiers, not prose hinges.
     s = re.sub(r'https?://\S+', '', s)
+    s = re.sub(r'\b\d{1,2}:\d{2}\b', '', s)  # Published event times.
     s = re.sub(r'Newton: (?:Light and Colour|Experimental Variants)', '', s)
     s = re.sub(r'`[^`]+`', '', s)
     return ':' in s
@@ -83,10 +86,10 @@ class CopyRegressions(unittest.TestCase):
 
     def test_01_section_names_and_titles(self):
         for route,name in zip(ROUTES,SECTION_NAMES):
-            self.assertEqual(self.decks[route][0].attrs['data-title'],name)
+            self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='index.html' else name)
             for s in self.decks[route]:
                 title=s.attrs['data-title']
-                if title in (*SECTION_NAMES,'Situating System Prompts'):continue
+                if title in (*SECTION_NAMES,'Situating System Prompts',COVER_TITLE):continue
                 self.assertTrue(2<=len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title))<=3,title)
                 self.assertNotRegex(title,r'(?i)\b(a|an|the)\b')
                 self.assertFalse(any(w.lower().endswith('ing') for w in title.split()),title)
@@ -96,6 +99,16 @@ class CopyRegressions(unittest.TestCase):
                 title=s.attrs['data-title'];heading=s.all(lambda n:n.tag in {'h1','h2'})[0]
                 self.assertEqual(heading.text(),title)
                 self.assertEqual(s.attrs['aria-label'],f'Slide {i}: {title}')
+    def test_30_september_title_and_accessible_background(self):
+        cover=self.decks['index.html'][0]
+        self.assertTrue(cover.has_class('workshop-cover'))
+        copy=cover.text()
+        for text in [COVER_TITLE,'Sandbox Workshop Series Part 1/3','Developed and led by Zach Muhlbauer','New Media Lab · Room 7388.01','CUNY Graduate Center','Thursday, September 17, 2026','2:30–4:00 p.m.']:
+            self.assertIn(text,copy)
+        self.assertEqual(cover.all(lambda n:n.tag=='time')[0].attrs['datetime'],'2026-09-17T14:30:00-04:00')
+        self.assertEqual(cover.all(lambda n:n.tag=='canvas')[0].attrs['aria-hidden'],'true')
+        self.assertEqual(len(cover.all(lambda n:n.tag=='button')),2)
+        self.assertFalse(any(s.has_class('workshop-cover') for route in ROUTES[1:] for s in self.decks[route]))
     def test_03_participant_copy_excludes_editorial_instructions(self):
         for tree in [*self.trees.values(),self.example,*self.references.values()]:
             copy=authored(tree)
@@ -454,7 +467,7 @@ class CopyRegressions(unittest.TestCase):
             ('index.html', '<figcaption>', '<figcaption hidden>', self.test_18_screenshots_and_controls_preserve_requested_evidence),
             ('index.html', NURSE, NURSE.replace('she','he'), self.test_05_prompts_remain_exact),
             ('index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
-            ('index.html', 'Compare and configure models for teaching and research', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
+            ('index.html', 'Sandbox Workshop Series ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
             ('index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
             ('skills/index.html', 'Remove your skill', 'Toggle this skill', self.test_14_skill_comparisons_remove_attached_skill),
             ('index.html', 'id="stem-game-excerpt">', 'id="stem-game-excerpt">Edit scenario_json variables. ', self.test_25_introductory_workshops_use_chat_adventure),
