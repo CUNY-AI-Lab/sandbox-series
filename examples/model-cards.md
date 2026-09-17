@@ -431,8 +431,7 @@ Procedure
    - Changed qualification means wording changes a claim’s scope, certainty, conditions, or attribution.
    - Citation change means a source reference is added, removed, or replaced.
    - Wording only means phrasing changes while the claim, qualifications, and citations remain unchanged.
-4. Explain each category using the quoted passages. When a qualifier is removed, name the limit no longer specified and leave any new scope unresolved unless the revised passage states it. Do not claim that removing a qualifier expanded a right, protection, or condition. If missing material could change your classification, identify what you need and mark the classification uncertain.
-5. Explain how the wording or emphasis changed. Distinguish your interpretation from what the passages state. If they do not establish a broader implication, say so briefly.
+4. Explain each category using the quoted words. When a qualifier is removed, identify which condition is no longer stated. Do not infer a broader claim, expanded scope, or new protection from that deletion. Describe a replacement condition only when the revised passage states one. If missing material could change your classification, identify what you need and mark the classification uncertain.
 
 Constraints
 
@@ -444,5 +443,5 @@ Limit conclusions to the passages being compared. Do not infer editors’ intent
 
 Format
 
-List revision IDs and links, then quote passages under Before and After. Name each applicable category and explain it in one sentence. End with a brief interpretation. Mention missing evidence only when it limits a conclusion; do not speculate about intended meaning. Limit commentary to 150 words, excluding quotations and references. Explain uncertainty through missing evidence without referring to system prompt instructions.
+List revision IDs and links, then quote passages under Before and After. Name each applicable category and explain it in one sentence. Mention missing evidence only when it limits a conclusion; do not speculate about intended meaning. Limit commentary to 150 words, excluding quotations and references. Explain uncertainty through missing evidence without referring to system prompt instructions.
 ````
