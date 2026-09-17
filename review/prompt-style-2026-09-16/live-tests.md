@@ -145,3 +145,7 @@ The final plain-game run still invented an earlier player action. Research inter
 These failures remain part of evaluation history. Current cards use replacement bases; [model-cards.json](../../examples/model-cards.json) contains no Gemma 3 base models.
 
 Replacement screenshots and publication are outside this test record.
+
+## Final Sources Retrieval
+
+After the final prompt and repaired source register were saved, a fresh Sources chat asked what List of experiments says about Pasteur’s S-shaped flasks. It identified the original Wikipedia filename and quoted the complete matching passage exactly. A literal check against the repaired import passed. This verifies retrieval of repaired article text in Legacy mode with Builtin Tools disabled; it does not establish that every game turn retrieves all three original articles.

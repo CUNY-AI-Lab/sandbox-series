@@ -25,7 +25,7 @@ Creator after snapshots, isolated diff, and combined comparison now include this
 
 Skill Creator now asks for a task before drafting and formats `$` and `view_skill` as inline code. Tool Creator proposes missing names and IDs without delaying code for routine naming. It checks expected test results against stated behavior and generated code, resolves mismatches, and labels unexecuted tests. Skill Creator uses DeepSeek V4 Flash 0731. At the user’s request, plain STEM Adventure Games and Sources use DeepSeek V4 Flash 0731 through Gateway. Both introductory STEM cards now use the original game menu starters. The source-checking exercise remains unchanged.
 
-[Complete before-and-after correction record](live-corrections.md) and [isolated diff](live-corrections.diff) document these changes. Current card-inputs JSON and HTML match the manifest and complete prompt files. The parent task confirmed exact saved-prompt readback and settings before the latest evidence constraint. The shared prompt now asks the game to verify dates, locations, and experimental claims against passages and distinguish documented details from invention. [Complete before and after](stem-evidence.md) and [isolated diff](stem-evidence.diff) record this single-sentence addition. Its live application and playtest remain pending.
+[Complete before-and-after correction record](live-corrections.md) and [isolated diff](live-corrections.diff) document these changes. Current card-inputs JSON and HTML match the manifest and complete prompt files. Final Firefox readback confirmed exact saved prompts, descriptions, starters, base IDs, and custom logos for all six cards. Both introductory game cards include the evidence constraint, which asks the game to verify dates, locations, and experimental claims against passages and distinguish documented details from invention. [Complete before and after](stem-evidence.md) and [isolated diff](stem-evidence.diff) record that addition. A fresh playtest confirmed the four-choice game structure but still invented an earlier player action. [Live checks](live-tests.md) distinguish passing observations from remaining failures.
 
 ## Original Restoration
 
@@ -33,15 +33,17 @@ The user first requested restoration of the original game prompt, then clarified
 
 ## Knowledge Repair
 
-The parent task replaced the failed List of experiments content in its existing Knowledge file, saved it, closed it, and reopened it. Persisted text matched the complete prepared article after trimming surrounding whitespace, including revision 1371680817; the rate-limit error was absent. The local source register and Advanced prompt now use the repaired article as an overview for selecting experiments and checking relevant passages. This readback verifies saved content; retrieval behavior requires a separate test.
+The parent task replaced the failed List of experiments content in its existing Knowledge file, saved it, closed it, and reopened it. Persisted text matched the complete prepared article after trimming surrounding whitespace, including revision 1371680817; the rate-limit error was absent. The local source register and Advanced prompt now use the repaired article as an overview for selecting experiments and checking relevant passages. After that readback, a fresh Sources chat quoted the matching Pasteur passage exactly from the repaired article and identified its original filename. This verifies that retrieval in Legacy mode with Builtin Tools disabled, not retrieval of every attached file in every turn.
 
 [Repair provenance](knowledge-repair/provenance.json), [copy diff](knowledge-repair/repair-copy.diff), and [source-register transfer page](knowledge-repair/source-register-import.html) preserve the evidence and updated wording. Other original article entries remain unchanged.
 
 ## Verification
 
-All 31 copy regression tests passed. Series checks passed for the current 90 slides and 34 imported sections, and `git diff --check` passed. Additional checks confirmed complete prompt and starter text in the model-card catalogue, both introductory cards’ shared game-prompt assignment, two or three starters per card, and absence of colons in editable prose. Current hashes are recorded in [final-review.json](final-review.json).
+All 32 copy regression tests and seven teaching-and-research sequence tests passed. Series checks passed for the current 90 slides and 34 imported sections, and `git diff --check` passed. Additional checks confirmed complete prompt and starter text in the model-card catalogue, both introductory cards’ shared game-prompt assignment, two or three starters per card, and absence of colons in editable prose. Current hashes are recorded in [final-review.json](final-review.json).
 
-These checks cover local copy and synchronization. Concurrent slide audits remain active, so counts reflect this validation. Live model behavior remains under test in the parent task.
+These checks cover local copy and synchronization in the merged 90-slide version. The completed slide audit found no broken images or console errors across all slides at 1280 × 720, with additional mobile samples. All 31 interaction checks and 19 background checks passed.
+
+Current live checks cover the game sequence, repaired-source quotation, advanced game completion, Skill Creator response, Kimi Tool Creator output, and Flash research comparison. Ten independent local tests passed for Kimi’s generated code; two proposed test expectations needed correction. Research quoted accurately and declined an unsupported motive inference, but overstated certainty elsewhere. The generated tool was not installed in Sandbox. Participant-account verification remains deferred at the user’s direction. [Live checks](live-tests.md) record these boundaries; [saved-card readback](live-readback.json) records exact configuration matches.
 
 - [Complete comparison](COMPARISON.md)
 - [Combined direct diff](PROMPTS.diff)

@@ -414,7 +414,7 @@ Users select your custom model to use its instructions and resources.
 
 ---
 
-Examples  
+Examples
 
 ### Situating System Prompts
 
@@ -615,7 +615,7 @@ Wait for a reply before continuing.
 
 ---
 
-Refine  
+Refine
 
 ### Refine Instructions
 
@@ -635,39 +635,39 @@ Refine
 
 ---
 
-Watch Out  
+Watch Out
 
 ### Review Common Problems
 
- 
+
 
 ### Prioritize Instructions
 
- 
+
 
 Check instructions for conflicts. Prioritize essential steps and test whether your model follows them.
 
- 
+
 
 ### Resolve Contradictions
 
- 
+
 
 Check whether requested detail fits your length limit. Revise requirements that cannot be met together.
 
- 
+
 
 ### Test Player Requests
 
- 
+
 
 Test game choices, requests for hints, and questions about sources.
 
- 
+
 
 ### Retest Revised Prompts
 
- 
+
 
 Save each prompt version with its responses. Revise when a test reveals a problem, then repeat that test.
 

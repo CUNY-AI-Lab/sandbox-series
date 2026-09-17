@@ -658,4 +658,3 @@ The Newton entries summarize primary accounts from the [Newton Project](https://
 ## Optional References
 
 [Source examples](knowledge/reference.html) preserve research and historical alternatives. [Skill and tool examples](skills/reference.html) preserve the blank template, source interpretation exercise, creator failures, corrections, and test labels. These ordinary pages contain no hidden notes.
-

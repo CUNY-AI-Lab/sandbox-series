@@ -22,7 +22,7 @@
       "base_label": "DeepSeek V4 Flash 0731"
     },
     {
-      "model": "STEM Adventure Games — Sources",
+      "model": "STEM Adventure Games \u2014 Sources",
       "prompt_file": "examples/stem-chat-system-prompt.txt",
       "sha256": "93e9a68f88c21c1d0e6dff2b93e2b4e561ddbc39883ad6b3ae62319aaa7ca459",
       "catalog_matches": true,
@@ -41,7 +41,7 @@
       "base_label": "DeepSeek V4 Flash 0731"
     },
     {
-      "model": "STEM Adventure Games — Advanced",
+      "model": "STEM Adventure Games \u2014 Advanced",
       "prompt_file": "examples/stem-system-prompt.txt",
       "sha256": "52926b8016c2a6a46e5b52d3e1d38b064184ac5338318251265174f7e194a489",
       "catalog_matches": true,
@@ -85,22 +85,26 @@
       "base_label": "DeepSeek V4 Flash 0731"
     }
   ],
-  "copy_regression_tests": 31,
+  "copy_regression_tests": 32,
   "copy_regression_result": "passed",
   "series_slides": 90,
   "imported_sections": 34,
   "series_result": "passed",
   "whitespace_result": "passed",
-  "live_test_status": "Parent task in progress; no live behavior result claimed by this review.",
+  "live_test_status": "Completed bounded checks; live-tests.md records current results and remaining failures.",
   "followup": "Original game tone and sources reorganized into four workshop components; integration checks passed.",
   "card_inputs_match_sources": true,
   "original_restoration": "original-restoration-checks.json",
   "current_framework_review": "stem-framework-checks.json",
-  "introductory_card_readback": "Parent confirmed saved-prompt readback before the evidence constraint; latest constraint awaits live application and playtest.",
-  "series_count_scope": "Current verified checkout; concurrent slide audits remain active.",
+  "introductory_card_readback": "Both final prompts and all six card metadata records match saved Firefox readback; see live-readback.json.",
+  "series_count_scope": "Merged 90-slide release after completed slide audits.",
   "knowledge_repair": "knowledge-repair/provenance.json",
   "current_evidence_review": "stem-evidence-checks.json",
-  "tool_creator_live_base_status": "Preserved parent-reported live Kimi K2.7 Code selection in local manifest; historical Qwen results do not verify Kimi behavior.",
-  "research_live_base_status": "Preserved parent-reported live DeepSeek V4 Flash 0731 selection; historical Gemma results do not verify DeepSeek behavior.",
-  "current_base_readback_review": "live-base-readback.md"
+  "tool_creator_live_base_status": "Kimi K2.7 Code generated code that passed ten local checks. Two proposed test expectations needed correction; no Sandbox installation or invocation of the generated tool was tested.",
+  "research_live_base_status": "DeepSeek V4 Flash 0731 quoted the supplied revision pair accurately and declined a motive inference; interpretation still overstated certainty.",
+  "current_base_readback_review": "live-base-readback.md",
+  "teaching_research_sequence_tests": 7,
+  "interaction_checks": 31,
+  "background_checks": 19,
+  "final_sources_retrieval": "Exact Pasteur quotation from repaired List of experiments verified with final prompt, Legacy function calling, and Builtin Tools disabled."
 }

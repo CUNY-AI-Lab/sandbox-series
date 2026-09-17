@@ -2,15 +2,16 @@
 
 ## Composing system prompts — 1
 
-Workshop 1 of 3
+### Getting Started with the CUNY AI Lab Sandbox
 
-### Composing system prompts
+Sandbox Workshop Series  Part 1/3
 
-Compare and configure models for teaching and research
+Developed and led by  Zach Muhlbauer
 
-CUNY AI Lab Sandbox
+New Media Lab · Room 7388.01
+CUNY Graduate Center
 
-Developed by Zach Muhlbauer
+Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ---
 

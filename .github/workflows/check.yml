@@ -13,7 +13,10 @@ jobs:
       - run: python3 scripts/check_series.py
       - run: python3 scripts/check_screenshot_resolution.py
       - run: python3 scripts/test_copy_regressions.py
+      - run: python3 scripts/test_teaching_research_sequence.py
       - run: node scripts/test_deck_interactions.cjs
+      - run: node scripts/test_domain_warp.cjs
+      - run: node --check js/domain-warp.js
       - run: node --check js/deck-engine.js
       - run: node --check js/lightbox.js
       - run: node --check js/examples.js
