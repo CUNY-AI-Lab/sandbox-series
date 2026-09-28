@@ -147,7 +147,7 @@ class ParticipantContinuity(unittest.TestCase):
         return self.decks[route].all(lambda n: n.has_class('slide') and n.attrs.get('data-title') == title)[0]
 
     def test_knowledge_clones_either_example_before_attaching_sources(self):
-        choices=self.slide('knowledge/index.html','Choose Your Model').text()
+        choices=self.slide('knowledge/index.html','Choose Custom Model').text()
         for name in ['STEM Adventure Games','Compare Wikipedia Edits']:
             self.assertIn(name,choices)
         review=self.slide('knowledge/index.html','Name Your Copy').text()

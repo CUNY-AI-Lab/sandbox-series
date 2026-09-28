@@ -121,3 +121,7 @@ td { color: var(--muted); }
   .copy-section { break-before: page; }
   .page-header, main { width: auto; padding: 0; }
 }
+
+.raw-url { overflow-wrap:anywhere; }
+.source-urls { display:flex; flex-direction:column; gap:8px; }
+.slide-footer > .link-label, .resource-group li > .resource-label { display:block; }

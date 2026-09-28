@@ -49,6 +49,7 @@ def render(node):
         return '\n\n'+(label+'\n\n' if label else '')+chr(96)*3+'text\n'+''.join(c.text() if isinstance(c,Node) else c for c in node.children if not (isinstance(c,Node) and c.has_class('prompt-label'))).strip()+'\n'+chr(96)*3+'\n\n'
     inside=''.join(render(c) for c in node.children)
     if tag=='img':return '\n\n!['+node.attrs.get('alt','')+']('+node.attrs['src']+')\n\n'
+    if tag=='a' and node.has_class('raw-url'):return '<'+inside.strip()+'>'
     if tag=='a':return '['+inside.strip()+']('+node.attrs.get('href','')+')'
     if tag in {'strong','b'}:return '**'+inside.strip()+'**'
     if tag in {'em','i'}:return '*'+inside.strip()+'*'

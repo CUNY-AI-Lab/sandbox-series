@@ -437,7 +437,7 @@ Keep your draft and choose source documents for your next workshop.
 
 ## Curating knowledge collections — 1
 
-[![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
+![CUNY AI Lab](images/cail-wordmark-white.png)
 
 **Alt text:** CUNY AI Lab
 
@@ -466,9 +466,9 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 - Test and revise · 20 minutes
 
-Requires individual access, Sandbox sign-in, Workspace and Knowledge access.
+Requires individual access, Sandbox sign-in.
 
-[Open Sandbox](https://chat.ailab.gc.cuny.edu/)
+Open Sandbox <https://chat.ailab.gc.cuny.edu/>
 
 ---
 
@@ -476,31 +476,35 @@ Requires individual access, Sandbox sign-in, Workspace and Knowledge access.
 
 ### Retrieval-Augmented Generation
 
-A Knowledge collection contains documents your model can search.
+A Knowledge collection contains documents a custom model can search.
 
-**Retrieval-augmented generation (RAG)** combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Your model uses those passages with your request and system prompt instructions to generate a response.
+**Retrieval-augmented generation (RAG)** combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Custom models use those passages with your request and system prompt instructions to generate a response.
 
 **Search sources → Retrieve passages → Generate response**
 
-[Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
+ Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
 
 ---
 
 ## Curating knowledge collections — 4
 
-### Choose Your Model
+### Choose Custom Model
 
 Follow **STEM Adventure Games**, or choose **Compare Wikipedia Edits**. Work with one model throughout.
 
 Teaching
 
-### [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
+### STEM Adventure Games
+
+<https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
 
 Explore scientific experiments through a text adventure with numbered choices.
 
 Research
 
-### [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+### Compare Wikipedia Edits
+
+<https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions>
 
 Compare Wikipedia revisions and examine changes in wording, claims, and citations.
 
@@ -508,7 +512,7 @@ Compare Wikipedia revisions and examine changes in wording, claims, and citation
 
 ## Curating knowledge collections — 5
 
-### Clone Your Model
+### Clone Custom Model
 
 ![Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.](images/knowledge-stem-2026-09-28/clone-model.svg)
 
@@ -534,7 +538,7 @@ Scroll to bottom and select **Save & Create**.
 
 ## Curating knowledge collections — 7
 
-### Try Your Model
+### Try Custom Model
 
 For **STEM Adventure Games**, select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
 
@@ -550,9 +554,11 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 **Alt text:** Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.
 
-Original STEM Adventure Games uses [List of experiments](https://en.wikipedia.org/wiki/List_of_experiments) for options, [Scientific method](https://en.wikipedia.org/wiki/Scientific_method) for experimental choices, and [Women in science](https://en.wikipedia.org/wiki/Women_in_science) for historical context.
+Original STEM Adventure Games uses List of experiments for options, Scientific method for experimental choices, and Women in science for historical context.
 
 Your version will draw on sources you choose.
+
+<https://en.wikipedia.org/wiki/List_of_experiments><https://en.wikipedia.org/wiki/Scientific_method><https://en.wikipedia.org/wiki/Women_in_science>
 
 ---
 
@@ -604,7 +610,7 @@ Wait for processing, then open each file to check text and source links.
 
 **Alt text:** Model editor with white annotations identifying Select Knowledge and an attached collection.
 
-Open your cloned model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
+Open cloned custom model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
 
 Continue to **System Prompt** in this editor.
 
@@ -632,7 +638,7 @@ Select **Save & Update**.
 
 ## Curating knowledge collections — 14
 
-### Test Your Model
+### Test Custom Model
 
 ![STEM Adventure Games chat showing four experiment choices and an annotated model selector.](images/knowledge-stem-2026-09-28/test-retrieval.svg)
 
@@ -658,7 +664,7 @@ Select a citation to inspect its source.
 
 - Does quoted text match your document?
 
-- Does it support your model’s interpretation?
+- Does it support this custom model’s interpretation?
 
 ---
 
@@ -670,7 +676,7 @@ Use one request with original model and your copy. For STEM, choose one experime
 
 - What changed with your sources and instructions? For STEM, check scenes and experimental choices.
 
-- What did your model miss or misinterpret?
+- What did this custom model miss or misinterpret?
 
 ---
 
@@ -680,19 +686,19 @@ Use one request with original model and your copy. For STEM, choose one experime
 
 Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.
 
-If your model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
+If a custom model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
 
 ---
 
 ## Curating knowledge collections — 18
 
-### Share Your Model
+### Share Custom Model
 
-To share your work, grant intended users or groups **Read** access to both your model and its collection.
+To share your work, grant intended users or groups **Read** access to both custom model and collection.
 
-Ask someone to try your model and check its citations.
+Ask someone to try custom model and check its citations.
 
-[Sandbox Roles & Permissions  https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+ Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/>
 
 ---
 
@@ -704,19 +710,19 @@ Choose another experiment or article. Refresh source documents when needed and c
 
 ### Workshop Materials
 
-- [Review Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/index.html](index.html)
+- Review Composing system prompts <https://cuny-ai-lab.github.io/sandbox-series/index.html>
 
-- [Consult Sandbox Knowledge documentation  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+- Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/>
 
-- [Consult Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
+- Consult Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
 
-- [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
+- Check monthly usage <https://tools.ailab.gc.cuny.edu/model-access>
 
 ### Example Models
 
-- [Open STEM Adventure Games  https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
+- Open STEM Adventure Games <https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
 
-- [Open Compare Wikipedia Edits  https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+- Open Compare Wikipedia Edits <https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions>
 
 
 ## Configuring skills and tools — 1

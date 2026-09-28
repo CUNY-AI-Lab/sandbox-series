@@ -192,7 +192,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Repeat our opening question',reflection.text())
     def test_08_exact_selector_instruction(self):
         self.assertIn('Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.',self.slide('index.html','Select Models').text())
-        for route,title in [('knowledge/index.html','Test Your Model'),('skills/index.html','Draft Skills')]:
+        for route,title in [('knowledge/index.html','Test Custom Model'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
         root=self.decks['index.html']
@@ -218,8 +218,11 @@ class CopyRegressions(unittest.TestCase):
             later=self.slide(route,'Workshop Agenda').text().lower()
             self.assertIn('individual access',later)
             self.assertTrue('sign in' in later or 'sign-in' in later or 'sign into' in later)
-        for term in ['Workspace','Knowledge']:
-            self.assertIn(term,self.slide('knowledge/index.html','Workshop Agenda').text())
+        self.assertNotRegex(self.trees['knowledge/index.html'].text(),r'(?i)\byour model\b')
+        self.assertNotIn('Workspace and Knowledge access',self.slide('knowledge/index.html','Workshop Agenda').text())
+        for slide in self.decks['knowledge/index.html']:
+            for link in slide.all(lambda n:n.tag=='a' and n.attrs.get('href','').startswith('http')):
+                self.assertEqual(link.text().strip(),link.attrs['href'])
         self.assertIn('Skills and Tools access',self.slide('skills/index.html','Workshop Agenda').text())
         self.assertIn('Check monthly usage',agenda.text())
         self.assertTrue(agenda.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://tools.ailab.gc.cuny.edu/model-access'))
@@ -230,6 +233,9 @@ class CopyRegressions(unittest.TestCase):
             with self.subTest(route=route):
                 headers=tree.all(lambda n:n.tag=='header' and n.has_class('deck-header'))
                 self.assertEqual(len(headers),1)
+                if route=='knowledge/index.html':
+                    self.assertTrue(headers[0].all(lambda n:n.tag=='img' and n.attrs.get('alt')=='CUNY AI Lab'))
+                    continue
                 links=headers[0].all(lambda n:n.tag=='a')
                 self.assertEqual(len(links),1)
                 self.assertEqual(links[0].attrs['href'],'https://ailab.gc.cuny.edu/')
@@ -247,7 +253,7 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Choose Your Model','Clone Your Model','Name Your Copy','Try Your Model','Example Sources','Choose Your Sources','Create Your Collection','Upload Your Sources','Attach Your Collection','Revise System Prompt','Test Your Model','Check Citations','Compare Responses','Revise and Retest'])
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Choose Custom Model','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Your Sources','Create Your Collection','Upload Your Sources','Attach Your Collection','Revise System Prompt','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
         upload=self.slide('knowledge/index.html','Upload Your Sources')
         self.assertIn('Your new collection starts empty.',upload.text())
         self.assertIn('processing',upload.text())
@@ -313,7 +319,7 @@ class CopyRegressions(unittest.TestCase):
             im=matches[0].all(lambda n:n.tag=='img')[0]
             self.assertRegex(im.attrs['alt'],r'arrow|annotations?');self.assertIn(term,im.attrs['alt']);self.assertTrue(im.attrs['src'].endswith('.svg'))
         for route in ['knowledge/index.html']:
-            workspace=self.slide(route,'Clone Your Model')
+            workspace=self.slide(route,'Clone Custom Model')
             im=workspace.all(lambda n:n.tag=='img')[0]
             self.assertIn('left sidebar',im.attrs['alt'])
             self.assertIn('annotations',im.attrs['alt'])
@@ -343,7 +349,7 @@ class CopyRegressions(unittest.TestCase):
         attach=self.slide('skills/index.html','Attach Skills').text()
         for term in ['private copy','Replace Extend STEM Adventures','saved draft','System Prompt to name your skill']:self.assertIn(term,attach)
         self.assertIn('saved draft',self.slide('skills/index.html','Create Skills').text())
-        self.assertIn('saved revisions in my attached collection',self.slide('knowledge/index.html','Test Your Model').text())
+        self.assertIn('saved revisions in my attached collection',self.slide('knowledge/index.html','Test Custom Model').text())
         self.assertIn('Does quoted text match your document?',self.slide('knowledge/index.html','Check Citations').text())
         for route,titles in [('knowledge',['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']),('skills',['Write Instructions','Check Interpretations','Check Skill Drafts','Check Generated Code'])]:
             current=[s.attrs['data-title'] for s in self.decks[route+'/index.html']]
@@ -380,7 +386,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('render_stem_adventure',text)
         self.assertIn('settings carry over when you clone',text)
         self.assertNotIn('Newton',text)
-        check=self.slide('knowledge/index.html','Test Your Model')
+        check=self.slide('knowledge/index.html','Test Custom Model')
         self.assertIn('scene',check.text())
         self.assertIn('Which passage supports this scene?',check.text())
         self.assertFalse(check.all(lambda n:n.tag=='a' and n.attrs.get('download')=='prism-scenario.md'))

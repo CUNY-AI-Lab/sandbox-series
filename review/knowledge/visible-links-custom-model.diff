@@ -1,0 +1,254 @@
+diff --git a/knowledge/OUTLINE.md b/knowledge/OUTLINE.md
+index d630dba..b3defb7 100644
+--- a/knowledge/OUTLINE.md
++++ b/knowledge/OUTLINE.md
+@@ -2,6 +2,14 @@
+ 
+ ## 1. Curating knowledge collections
+ 
++![CUNY AI Lab](../images/cail-wordmark-white.png)
++
++
++
++### Curating knowledge collections
++
++
++
+ Led by  Zach Muhlbauer  and  Meha Gupta
+ 
+ New Media Lab · Room 7388.01
+@@ -23,43 +31,51 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
+ 
+ - Test and revise · 20 minutes
+ 
+-Requires individual access, Sandbox sign-in, Workspace and Knowledge access.
++Requires individual access, Sandbox sign-in.
+ 
+-[Open Sandbox](https://chat.ailab.gc.cuny.edu/)
++Open Sandbox <https://chat.ailab.gc.cuny.edu/>
+ 
+ ---
+ 
+ ## 3. Retrieval-Augmented Generation
+ 
+-A Knowledge collection contains documents your model can search.
++A Knowledge collection contains documents a custom model can search.
++
++
++
++**Retrieval-augmented generation (RAG)** combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Custom models use those passages with your request and system prompt instructions to generate a response.
++
+ 
+-**Retrieval-augmented generation (RAG)** combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Your model uses those passages with your request and system prompt instructions to generate a response.
+ 
+ **Search sources → Retrieve passages → Generate response**
+ 
+-[Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
++ Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
+ 
+ ---
+ 
+-## 4. Choose Your Model
++## 4. Choose Custom Model
+ 
+ Follow **STEM Adventure Games**, or choose **Compare Wikipedia Edits**. Work with one model throughout.
+ 
+ Teaching
+ 
+-### [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
++### STEM Adventure Games
++
++<https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
+ 
+ Explore scientific experiments through a text adventure with numbered choices.
+ 
+ Research
+ 
+-### [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
++### Compare Wikipedia Edits
++
++<https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions>
+ 
+ Compare Wikipedia revisions and examine changes in wording, claims, and citations.
+ 
+ ---
+ 
+-## 5. Clone Your Model
++## 5. Clone Custom Model
+ 
+ ![Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.](../images/knowledge-stem-2026-09-28/clone-model.svg)
+ 
+@@ -77,10 +93,12 @@ Scroll to bottom and select **Save & Create**.
+ 
+ ---
+ 
+-## 7. Try Your Model
++## 7. Try Custom Model
+ 
+ For **STEM Adventure Games**, select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
+ 
++
++
+ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia articles with dates and links.” Choose an article to compare.
+ 
+ ---
+@@ -89,10 +107,12 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
+ 
+ ![Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
+ 
+-Original STEM Adventure Games uses [List of experiments](https://en.wikipedia.org/wiki/List_of_experiments) for options, [Scientific method](https://en.wikipedia.org/wiki/Scientific_method) for experimental choices, and [Women in science](https://en.wikipedia.org/wiki/Women_in_science) for historical context.
++Original STEM Adventure Games uses List of experiments for options, Scientific method for experimental choices, and Women in science for historical context.
+ 
+ Your version will draw on sources you choose.
+ 
++<https://en.wikipedia.org/wiki/List_of_experiments><https://en.wikipedia.org/wiki/Scientific_method><https://en.wikipedia.org/wiki/Women_in_science>
++
+ ---
+ 
+ ## 9. Choose Your Sources
+@@ -129,7 +149,7 @@ Wait for processing, then open each file to check text and source links.
+ 
+ ![Model editor with white annotations identifying Select Knowledge and an attached collection.](../images/knowledge-stem-2026-09-28/attach-knowledge.svg)
+ 
+-Open your cloned model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
++Open cloned custom model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
+ 
+ Continue to **System Prompt** in this editor.
+ 
+@@ -153,7 +173,7 @@ Select **Save & Update**.
+ 
+ ---
+ 
+-## 14. Test Your Model
++## 14. Test Custom Model
+ 
+ ![STEM Adventure Games chat showing four experiment choices and an annotated model selector.](../images/knowledge-stem-2026-09-28/test-retrieval.svg)
+ 
+@@ -171,9 +191,11 @@ For Wikipedia, ask “Use saved revisions in my attached collection. Compare one
+ 
+ Select a citation to inspect its source.
+ 
++
++
+ - Does quoted text match your document?
+ 
+-- Does it support your model’s interpretation?
++- Does it support this custom model’s interpretation?
+ 
+ ---
+ 
+@@ -181,9 +203,11 @@ Select a citation to inspect its source.
+ 
+ Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
+ 
++
++
+ - What changed with your sources and instructions? For STEM, check scenes and experimental choices.
+ 
+-- What did your model miss or misinterpret?
++- What did this custom model miss or misinterpret?
+ 
+ ---
+ 
+@@ -191,17 +215,19 @@ Use one request with original model and your copy. For STEM, choose one experime
+ 
+ Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.
+ 
+-If your model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
++If a custom model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
+ 
+ ---
+ 
+-## 18. Share Your Model
++## 18. Share Custom Model
++
++To share your work, grant intended users or groups **Read** access to both custom model and collection.
++
+ 
+-To share your work, grant intended users or groups **Read** access to both your model and its collection.
+ 
+-Ask someone to try your model and check its citations.
++Ask someone to try custom model and check its citations.
+ 
+-[Sandbox Roles & Permissions  https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
++ Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/>
+ 
+ ---
+ 
+@@ -211,16 +237,16 @@ Choose another experiment or article. Refresh source documents when needed and c
+ 
+ ### Workshop Materials
+ 
+-- [Review Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/index.html](../index.html)
++- Review Composing system prompts <https://cuny-ai-lab.github.io/sandbox-series/index.html>
+ 
+-- [Consult Sandbox Knowledge documentation  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
++- Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/>
+ 
+-- [Consult Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
++- Consult Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
+ 
+-- [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
++- Check monthly usage <https://tools.ailab.gc.cuny.edu/model-access>
+ 
+ ### Example Models
+ 
+-- [Open STEM Adventure Games  https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
++- Open STEM Adventure Games <https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
+ 
+-- [Open Compare Wikipedia Edits  https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
++- Open Compare Wikipedia Edits <https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions>
+diff --git a/knowledge/index.html b/knowledge/index.html
+index d52c8ab..5cc33bd 100644
+--- a/knowledge/index.html
++++ b/knowledge/index.html
+@@ -7,36 +7,36 @@
+ <title>Curating knowledge collections | CUNY AI Lab</title>
+ <link href="../images/cail-favicon.svg" rel="icon" sizes="any" type="image/svg+xml"/>
+ <link href="../css/styles.css?v=20260928-knowledge" rel="stylesheet"/>
+-<link href="../css/responsive.css?v=20260917-fullscreen" rel="stylesheet"/>
++<link href="../css/responsive.css?v=20260928-visible-links" rel="stylesheet"/>
+ <link href="../css/animations.css" rel="stylesheet"/>
+ <link href="../css/workshop-cover.css?v=20260917-fullscreen" rel="stylesheet"/>
+ </head>
+ <body data-workshop="knowledge">
+ <a class="skip-link" href="#deck">Skip to slides</a>
+-<header class="deck-header"><a aria-label="CUNY AI Lab website" class="deck-brand" href="https://ailab.gc.cuny.edu/" rel="noopener" target="_blank"><img alt="CUNY AI Lab" height="259" src="../images/cail-wordmark-white.png" width="1154"/></a></header>
++<header class="deck-header"><span class="deck-brand"><img alt="CUNY AI Lab" height="259" src="../images/cail-wordmark-white.png" width="1154"/></span></header>
+ <div aria-atomic="true" aria-live="polite" class="sr-only" id="slide-announcer"></div>
+ <div aria-label="Curating knowledge collections presentation" aria-roledescription="slide deck" id="deck" role="region" tabindex="-1"><section aria-label="Slide 1: Curating knowledge collections" aria-roledescription="slide" class="slide title-slide workshop-cover" data-group="Explore" data-title="Curating knowledge collections" data-warp-variant="0" role="group" tabindex="-1">
+ <canvas aria-hidden="true" class="warp-canvas"></canvas>
+ <div class="slide-inner">
+-<a aria-label="CUNY AI Lab website" class="cover-lab" href="https://ailab.gc.cuny.edu/" rel="noopener" target="_blank"><img alt="CUNY AI Lab" class="cover-wordmark" height="259" src="../images/cail-wordmark-white.png" width="1154"/></a>
++<span class="cover-lab"><img alt="CUNY AI Lab" class="cover-wordmark" height="259" src="../images/cail-wordmark-white.png" width="1154"/></span>
+ <div class="cover-heading"><h1 class="cover-title">Curating knowledge collections</h1></div>
+ <div class="cover-details"><p class="cover-credit">Led by <span class="cover-name">Zach Muhlbauer</span> and <span class="cover-name">Meha Gupta</span></p><p class="cover-location">New Media Lab · Room 7388.01<br/>CUNY Graduate Center</p><p class="cover-date"><time datetime="2026-10-01T14:30:00-04:00"><span class="cover-day">Thursday, October 1, 2026</span> <span class="cover-time">2:30–4:00 p.m.</span></time></p></div>
+ </div>
+-</section><section aria-label="Slide 2: Workshop Agenda" aria-roledescription="slide" class="slide layout-content balanced-content" data-agenda="knowledge" data-group="Explore" data-title="Workshop Agenda" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Workshop Agenda</h2><ul class="agenda"><li>Choose and clone models · 15 minutes</li><li>Select new sources · 25 minutes</li><li>Create and populate collections · 20 minutes</li><li>Revise system prompts · 10 minutes</li><li>Test and revise · 20 minutes</li></ul><p>Requires individual access, Sandbox sign-in, Workspace and Knowledge access.</p><p><a href="https://chat.ailab.gc.cuny.edu/" rel="noopener" target="_blank">Open Sandbox</a></p></div></div></section><section aria-label="Slide 3: Retrieval-Augmented Generation" aria-roledescription="slide" class="slide layout-content balanced-content has-footer" data-group="Explore" data-title="Retrieval-Augmented Generation" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Retrieval-Augmented Generation</h2><p>A Knowledge collection contains documents your model can search.</p>
+-<p><strong>Retrieval-augmented generation (RAG)</strong> combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Your model uses those passages with your request and system prompt instructions to generate a response.</p>
++</section><section aria-label="Slide 2: Workshop Agenda" aria-roledescription="slide" class="slide layout-content balanced-content" data-agenda="knowledge" data-group="Explore" data-title="Workshop Agenda" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Workshop Agenda</h2><ul class="agenda"><li>Choose and clone models · 15 minutes</li><li>Select new sources · 25 minutes</li><li>Create and populate collections · 20 minutes</li><li>Revise system prompts · 10 minutes</li><li>Test and revise · 20 minutes</li></ul><p>Requires individual access, Sandbox sign-in.</p><p>Open Sandbox <a class="raw-url link-url" href="https://chat.ailab.gc.cuny.edu/" rel="noopener" target="_blank">https://chat.ailab.gc.cuny.edu/</a></p></div></div></section><section aria-label="Slide 3: Retrieval-Augmented Generation" aria-roledescription="slide" class="slide layout-content balanced-content has-footer" data-group="Explore" data-title="Retrieval-Augmented Generation" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Retrieval-Augmented Generation</h2><p>A Knowledge collection contains documents a custom model can search.</p>
++<p><strong>Retrieval-augmented generation (RAG)</strong> combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Custom models use those passages with your request and system prompt instructions to generate a response.</p>
+ <p><strong>Search sources → Retrieve passages → Generate response</strong></p>
+-</div><footer aria-label="References" class="slide-footer"><a href="https://docs.openwebui.com/features/workspace/knowledge/" rel="noopener" target="_blank"><span class="link-label">Open WebUI Knowledge</span><span class="link-url">https://docs.openwebui.com/features/workspace/knowledge/</span></a></footer></div></section><section aria-label="Slide 4: Choose Your Model" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Explore" data-title="Choose Your Model" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Choose Your Model</h2><p>Follow <strong>STEM Adventure Games</strong>, or choose <strong>Compare Wikipedia Edits</strong>. Work with one model throughout.</p><div class="grid-2 model-options"><article class="card"><p class="model-kind">Teaching</p><h3><a href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games" rel="noopener" target="_blank">STEM Adventure Games</a></h3><p>Explore scientific experiments through a text adventure with numbered choices.</p></article><article class="card"><p class="model-kind">Research</p><h3><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions" rel="noopener" target="_blank">Compare Wikipedia Edits</a></h3><p>Compare Wikipedia revisions and examine changes in wording, claims, and citations.</p></article></div></div></div></section><section aria-label="Slide 5: Clone Your Model" aria-roledescription="slide" class="slide screenshot-slide" data-group="Explore" data-title="Clone Your Model" role="group" tabindex="-1"><div class="slide-inner"><h1>Clone Your Model</h1><figure><img alt="Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/clone-model.svg" style="--screenshot-max-width:1871px"/><figcaption><p>Select <strong>Workspace</strong> in left sidebar, then <strong>Models</strong>. Search for your chosen example. Open <strong>⋯</strong> beside it and select <strong>Clone</strong>.</p></figcaption></figure></div></section><section aria-label="Slide 6: Name Your Copy" aria-roledescription="slide" class="slide screenshot-slide" data-group="Explore" data-title="Name Your Copy" role="group" tabindex="-1"><div class="slide-inner"><h1>Name Your Copy</h1><figure><img alt="STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/review-clone.svg" style="--screenshot-max-width:1790px"/><figcaption><p>Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.</p><p>Scroll to bottom and select <strong>Save &amp; Create</strong>.</p></figcaption></figure></div></section><section aria-label="Slide 7: Try Your Model" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Explore" data-title="Try Your Model" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Try Your Model</h2><p>For <strong>STEM Adventure Games</strong>, select <strong>Start an adventure</strong>. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.</p>
+-<p>For <strong>Compare Wikipedia Edits</strong>, ask “Retrieve three recently edited Wikipedia articles with dates and links.” Choose an article to compare.</p></div></div></section><section aria-label="Slide 8: Example Sources" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Example Sources" role="group" tabindex="-1"><div class="slide-inner"><h1>Example Sources</h1><figure><img alt="Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/collection-documents.svg" style="--screenshot-max-width:1786px"/><figcaption><p>Original STEM Adventure Games uses <a href="https://en.wikipedia.org/wiki/List_of_experiments" rel="noopener" target="_blank">List of experiments</a> for options, <a href="https://en.wikipedia.org/wiki/Scientific_method" rel="noopener" target="_blank">Scientific method</a> for experimental choices, and <a href="https://en.wikipedia.org/wiki/Women_in_science" rel="noopener" target="_blank">Women in science</a> for historical context.</p><p>Your version will draw on sources you choose.</p></figcaption></figure></div></section><section aria-label="Slide 9: Choose Your Sources" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Curate" data-title="Choose Your Sources" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Choose Your Sources</h2><p>Choose a topic for your version of <strong>STEM Adventure Games</strong>. Select two or three documents about experiments, methods, or historical context you want it to use.</p><p>Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.</p><p>For <strong>Compare Wikipedia Edits</strong>, choose an article and save two revisions with their IDs and links.</p></div></div></section><section aria-label="Slide 10: Create Your Collection" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Create Your Collection" role="group" tabindex="-1"><div class="slide-inner"><h1>Create Your Collection</h1><figure><img alt="Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/create-custom-collection.svg" style="--screenshot-max-width:879px"/><figcaption><p>Select <strong>Workspace → Knowledge → Create</strong>. Name your collection and describe what your sources cover.</p><p>Keep access <strong>Private</strong> and select <strong>Create Knowledge</strong>.</p></figcaption></figure></div></section><section aria-label="Slide 11: Upload Your Sources" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Upload Your Sources" role="group" tabindex="-1"><div class="slide-inner"><h1>Upload Your Sources</h1><figure><img alt="New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/upload-custom-sources.svg" style="--screenshot-max-width:1786px"/><figcaption><p>Your new collection starts empty. Select <strong>Add Content → Upload files</strong> and upload documents you prepared.</p><p>Wait for processing, then open each file to check text and source links.</p></figcaption></figure></div></section><section aria-label="Slide 12: Attach Your Collection" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Attach Your Collection" role="group" tabindex="-1"><div class="slide-inner"><h1>Attach Your Collection</h1><figure><img alt="Model editor with white annotations identifying Select Knowledge and an attached collection." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/attach-knowledge.svg" style="--screenshot-max-width:1767px"/><figcaption><p>Open your cloned model in <strong>Workspace → Models</strong>. Under <strong>Knowledge</strong>, remove any inherited collection attachments, then select your own collection.</p><p>Continue to <strong>System Prompt</strong> in this editor.</p></figcaption></figure></div></section><section aria-label="Slide 13: Revise System Prompt" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Configure" data-title="Revise System Prompt" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Revise System Prompt</h2><p>Replace original source list with filenames you uploaded. Explain how each document should guide your game.</p><ul><li><strong>Purpose</strong> · Name your chosen topic.</li><li><strong>Procedure</strong> · Use your sources to develop scenes and choices.</li><li><strong>Constraints</strong> · Require source support for historical details.</li><li><strong>Format</strong> · Preserve brief scenes and four numbered choices.</li></ul><p>For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.</p><p>Select <strong>Save &amp; Update</strong>.</p></div></div></section><section aria-label="Slide 14: Test Your Model" aria-roledescription="slide" class="slide screenshot-slide" data-group="Evaluate" data-title="Test Your Model" role="group" tabindex="-1"><div class="slide-inner"><h1>Test Your Model</h1><figure><img alt="STEM Adventure Games chat showing four experiment choices and an annotated model selector." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/test-retrieval.svg" style="--screenshot-max-width:1871px"/><figcaption><p>Start a new chat. Select model ID on bottom right of message box. Choose your copy.</p><p>Ask for four experiments about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”</p><p>For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”</p></figcaption></figure></div></section><section aria-label="Slide 15: Check Citations" aria-roledescription="slide" class="slide screenshot-slide" data-group="Evaluate" data-title="Check Citations" role="group" tabindex="-1"><div class="slide-inner"><h1>Check Citations</h1><figure><img alt="Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/check-citations.svg" style="--screenshot-max-width:1195px"/><figcaption><p>Select a citation to inspect its source.</p>
++</div><footer aria-label="References" class="slide-footer"><span class="link-label">Open WebUI Knowledge</span><a class="raw-url link-url" href="https://docs.openwebui.com/features/workspace/knowledge/" rel="noopener" target="_blank">https://docs.openwebui.com/features/workspace/knowledge/</a></footer></div></section><section aria-label="Slide 4: Choose Custom Model" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Explore" data-title="Choose Custom Model" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Choose Custom Model</h2><p>Follow <strong>STEM Adventure Games</strong>, or choose <strong>Compare Wikipedia Edits</strong>. Work with one model throughout.</p><div class="grid-2 model-options"><article class="card"><p class="model-kind">Teaching</p><h3>STEM Adventure Games</h3><a class="raw-url link-url" href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games" rel="noopener" target="_blank">https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games</a><p>Explore scientific experiments through a text adventure with numbered choices.</p></article><article class="card"><p class="model-kind">Research</p><h3>Compare Wikipedia Edits</h3><a class="raw-url link-url" href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions" rel="noopener" target="_blank">https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions</a><p>Compare Wikipedia revisions and examine changes in wording, claims, and citations.</p></article></div></div></div></section><section aria-label="Slide 5: Clone Custom Model" aria-roledescription="slide" class="slide screenshot-slide" data-group="Explore" data-title="Clone Custom Model" role="group" tabindex="-1"><div class="slide-inner"><h1>Clone Custom Model</h1><figure><img alt="Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/clone-model.svg" style="--screenshot-max-width:1871px"/><figcaption><p>Select <strong>Workspace</strong> in left sidebar, then <strong>Models</strong>. Search for your chosen example. Open <strong>⋯</strong> beside it and select <strong>Clone</strong>.</p></figcaption></figure></div></section><section aria-label="Slide 6: Name Your Copy" aria-roledescription="slide" class="slide screenshot-slide" data-group="Explore" data-title="Name Your Copy" role="group" tabindex="-1"><div class="slide-inner"><h1>Name Your Copy</h1><figure><img alt="STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/review-clone.svg" style="--screenshot-max-width:1790px"/><figcaption><p>Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.</p><p>Scroll to bottom and select <strong>Save &amp; Create</strong>.</p></figcaption></figure></div></section><section aria-label="Slide 7: Try Custom Model" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Explore" data-title="Try Custom Model" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Try Custom Model</h2><p>For <strong>STEM Adventure Games</strong>, select <strong>Start an adventure</strong>. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.</p>
++<p>For <strong>Compare Wikipedia Edits</strong>, ask “Retrieve three recently edited Wikipedia articles with dates and links.” Choose an article to compare.</p></div></div></section><section aria-label="Slide 8: Example Sources" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Example Sources" role="group" tabindex="-1"><div class="slide-inner"><h1>Example Sources</h1><figure><img alt="Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/collection-documents.svg" style="--screenshot-max-width:1786px"/><figcaption><p>Original STEM Adventure Games uses List of experiments for options, Scientific method for experimental choices, and Women in science for historical context.</p><p>Your version will draw on sources you choose.</p><div class="source-urls"><a class="raw-url" href="https://en.wikipedia.org/wiki/List_of_experiments" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/List_of_experiments</a><a class="raw-url" href="https://en.wikipedia.org/wiki/Scientific_method" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Scientific_method</a><a class="raw-url" href="https://en.wikipedia.org/wiki/Women_in_science" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Women_in_science</a></div></figcaption></figure></div></section><section aria-label="Slide 9: Choose Your Sources" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Curate" data-title="Choose Your Sources" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Choose Your Sources</h2><p>Choose a topic for your version of <strong>STEM Adventure Games</strong>. Select two or three documents about experiments, methods, or historical context you want it to use.</p><p>Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.</p><p>For <strong>Compare Wikipedia Edits</strong>, choose an article and save two revisions with their IDs and links.</p></div></div></section><section aria-label="Slide 10: Create Your Collection" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Create Your Collection" role="group" tabindex="-1"><div class="slide-inner"><h1>Create Your Collection</h1><figure><img alt="Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/create-custom-collection.svg" style="--screenshot-max-width:879px"/><figcaption><p>Select <strong>Workspace → Knowledge → Create</strong>. Name your collection and describe what your sources cover.</p><p>Keep access <strong>Private</strong> and select <strong>Create Knowledge</strong>.</p></figcaption></figure></div></section><section aria-label="Slide 11: Upload Your Sources" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Upload Your Sources" role="group" tabindex="-1"><div class="slide-inner"><h1>Upload Your Sources</h1><figure><img alt="New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/upload-custom-sources.svg" style="--screenshot-max-width:1786px"/><figcaption><p>Your new collection starts empty. Select <strong>Add Content → Upload files</strong> and upload documents you prepared.</p><p>Wait for processing, then open each file to check text and source links.</p></figcaption></figure></div></section><section aria-label="Slide 12: Attach Your Collection" aria-roledescription="slide" class="slide screenshot-slide" data-group="Curate" data-title="Attach Your Collection" role="group" tabindex="-1"><div class="slide-inner"><h1>Attach Your Collection</h1><figure><img alt="Model editor with white annotations identifying Select Knowledge and an attached collection." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/attach-knowledge.svg" style="--screenshot-max-width:1767px"/><figcaption><p>Open cloned custom model in <strong>Workspace → Models</strong>. Under <strong>Knowledge</strong>, remove any inherited collection attachments, then select your own collection.</p><p>Continue to <strong>System Prompt</strong> in this editor.</p></figcaption></figure></div></section><section aria-label="Slide 13: Revise System Prompt" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Configure" data-title="Revise System Prompt" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Revise System Prompt</h2><p>Replace original source list with filenames you uploaded. Explain how each document should guide your game.</p><ul><li><strong>Purpose</strong> · Name your chosen topic.</li><li><strong>Procedure</strong> · Use your sources to develop scenes and choices.</li><li><strong>Constraints</strong> · Require source support for historical details.</li><li><strong>Format</strong> · Preserve brief scenes and four numbered choices.</li></ul><p>For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.</p><p>Select <strong>Save &amp; Update</strong>.</p></div></div></section><section aria-label="Slide 14: Test Custom Model" aria-roledescription="slide" class="slide screenshot-slide" data-group="Evaluate" data-title="Test Custom Model" role="group" tabindex="-1"><div class="slide-inner"><h1>Test Custom Model</h1><figure><img alt="STEM Adventure Games chat showing four experiment choices and an annotated model selector." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/test-retrieval.svg" style="--screenshot-max-width:1871px"/><figcaption><p>Start a new chat. Select model ID on bottom right of message box. Choose your copy.</p><p>Ask for four experiments about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”</p><p>For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”</p></figcaption></figure></div></section><section aria-label="Slide 15: Check Citations" aria-roledescription="slide" class="slide screenshot-slide" data-group="Evaluate" data-title="Check Citations" role="group" tabindex="-1"><div class="slide-inner"><h1>Check Citations</h1><figure><img alt="Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated." class="screenshot-img" src="../images/knowledge-stem-2026-09-28/check-citations.svg" style="--screenshot-max-width:1195px"/><figcaption><p>Select a citation to inspect its source.</p>
+ <ul>
+ <li>Does quoted text match your document?</li>
+-<li>Does it support your model’s interpretation?</li>
++<li>Does it support this custom model’s interpretation?</li>
+ </ul></figcaption></figure></div></section><section aria-label="Slide 16: Compare Responses" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Evaluate" data-title="Compare Responses" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Compare Responses</h2><p>Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.</p>
+ <ul>
+ <li>What changed with your sources and instructions? For STEM, check scenes and experimental choices.</li>
+-<li>What did your model miss or misinterpret?</li>
+-</ul></div></div></section><section aria-label="Slide 17: Revise and Retest" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Evaluate" data-title="Revise and Retest" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Revise and Retest</h2><p>Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.</p><p>If your model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.</p></div></div></section><section aria-label="Slide 18: Share Your Model" aria-roledescription="slide" class="slide layout-content balanced-content has-footer" data-group="Evaluate" data-title="Share Your Model" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Share Your Model</h2><p>To share your work, grant intended users or groups <strong>Read</strong> access to both your model and its collection.</p>
+-<p>Ask someone to try your model and check its citations.</p>
+-</div><footer aria-label="References" class="slide-footer"><a href="https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/" rel="noopener" target="_blank"><span class="link-label">Sandbox Roles &amp; Permissions</span><span class="link-url">https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/</span></a></footer></div></section><section aria-label="Slide 19: Workshop Resources" aria-roledescription="slide" class="slide layout-content resource-slide" data-group="Next" data-title="Workshop Resources" role="group" tabindex="-1"><div class="slide-inner"><h2>Workshop Resources</h2><p>Choose another experiment or article. Refresh source documents when needed and check responses against versions you saved.</p><footer aria-label="Resources" class="slide-footer resource-directory"><div class="resource-group"><h3>Workshop Materials</h3><ul><li><a href="../index.html" rel="noopener" target="_blank"><span class="resource-label">Review Composing system prompts</span><span class="link-url">https://cuny-ai-lab.github.io/sandbox-series/index.html</span></a></li><li><a href="https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/" rel="noopener" target="_blank"><span class="resource-label">Consult Sandbox Knowledge documentation</span><span class="link-url">https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/</span></a></li><li><a href="https://docs.openwebui.com/features/workspace/knowledge/" rel="noopener" target="_blank"><span class="resource-label">Consult Open WebUI Knowledge</span><span class="link-url">https://docs.openwebui.com/features/workspace/knowledge/</span></a></li><li><a href="https://tools.ailab.gc.cuny.edu/model-access" rel="noopener" target="_blank"><span class="resource-label">Check monthly usage</span><span class="link-url">https://tools.ailab.gc.cuny.edu/model-access</span></a></li></ul></div><div class="resource-group"><h3>Example Models</h3><ul><li><a href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games" rel="noopener" target="_blank"><span class="resource-label">Open STEM Adventure Games</span><span class="link-url">https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games</span></a></li><li><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions" rel="noopener" target="_blank"><span class="resource-label">Open Compare Wikipedia Edits</span><span class="link-url">https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions</span></a></li></ul></div></footer></div></section></div>
++<li>What did this custom model miss or misinterpret?</li>
++</ul></div></div></section><section aria-label="Slide 17: Revise and Retest" aria-roledescription="slide" class="slide layout-content balanced-content" data-group="Evaluate" data-title="Revise and Retest" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Revise and Retest</h2><p>Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.</p><p>If a custom model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.</p></div></div></section><section aria-label="Slide 18: Share Custom Model" aria-roledescription="slide" class="slide layout-content balanced-content has-footer" data-group="Evaluate" data-title="Share Custom Model" role="group" tabindex="-1"><div class="slide-inner"><div class="slide-body slide-stack"><h2>Share Custom Model</h2><p>To share your work, grant intended users or groups <strong>Read</strong> access to both custom model and collection.</p>
++<p>Ask someone to try custom model and check its citations.</p>
++</div><footer aria-label="References" class="slide-footer"><span class="link-label">Sandbox Roles &amp; Permissions</span><a class="raw-url link-url" href="https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/" rel="noopener" target="_blank">https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/</a></footer></div></section><section aria-label="Slide 19: Workshop Resources" aria-roledescription="slide" class="slide layout-content resource-slide" data-group="Next" data-title="Workshop Resources" role="group" tabindex="-1"><div class="slide-inner"><h2>Workshop Resources</h2><p>Choose another experiment or article. Refresh source documents when needed and check responses against versions you saved.</p><footer aria-label="Resources" class="slide-footer resource-directory"><div class="resource-group"><h3>Workshop Materials</h3><ul><li><span class="resource-label">Review Composing system prompts</span><a class="raw-url link-url" href="../index.html" rel="noopener" target="_blank">https://cuny-ai-lab.github.io/sandbox-series/index.html</a></li><li><span class="resource-label">Consult Sandbox Knowledge documentation</span><a class="raw-url link-url" href="https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/" rel="noopener" target="_blank">https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/</a></li><li><span class="resource-label">Consult Open WebUI Knowledge</span><a class="raw-url link-url" href="https://docs.openwebui.com/features/workspace/knowledge/" rel="noopener" target="_blank">https://docs.openwebui.com/features/workspace/knowledge/</a></li><li><span class="resource-label">Check monthly usage</span><a class="raw-url link-url" href="https://tools.ailab.gc.cuny.edu/model-access" rel="noopener" target="_blank">https://tools.ailab.gc.cuny.edu/model-access</a></li></ul></div><div class="resource-group"><h3>Example Models</h3><ul><li><span class="resource-label">Open STEM Adventure Games</span><a class="raw-url link-url" href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games" rel="noopener" target="_blank">https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games</a></li><li><span class="resource-label">Open Compare Wikipedia Edits</span><a class="raw-url link-url" href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions" rel="noopener" target="_blank">https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions</a></li></ul></div></footer></div></section></div>
+ <nav aria-label="Slide navigation" id="nav-bar"><button aria-label="Previous slide" id="arrow-prev"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m14 6-6 6 6 6"></path></svg></button><span class="nav-info"><span id="nav-current">1</span> / <span id="nav-total"></span></span><button aria-label="Next slide" id="arrow-next"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m10 6 6 6-6 6"></path></svg></button><button aria-label="Enter fullscreen" aria-pressed="false" id="fullscreen-button" title="Enter fullscreen" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"></path></svg></button><input aria-label="Choose slide" id="slide-progress" max="1" min="1" type="range" value="1"/><button aria-label="Open slide outline" id="overview-button">Outline</button></nav>
+-<dialog aria-label="Expanded screenshot" id="image-dialog"><div class="image-toolbar"><button aria-controls="image-stage" aria-pressed="false" id="zoom-image" type="button">Zoom in</button><button aria-label="Close expanded screenshot" id="close-image" type="button">Close</button></div><div aria-label="Screenshot detail" id="image-stage" role="region" tabindex="0"><img alt=""/></div><p></p></dialog><dialog aria-label="Workshop outline" id="outline-dialog"><div class="dialog-heading"><h2>Workshop outline</h2><button id="close-outline">Close</button></div><ol class="series-links"><li><a href="../">Composing system prompts</a></li><li><a aria-current="page" href="./">Curating knowledge collections</a></li></ol><p class="outline-resources"><a href="workshop-copy.html">Full workshop copy</a></p><p class="source"><a href="https://ailab.gc.cuny.edu/models/" rel="noopener" target="_blank">Model Registry</a></p><ol id="outline-list"></ol></dialog><script defer="" src="../js/deck-engine.js?v=20260917-exercise"></script><script defer="" src="../js/lightbox.js?v=20260917-zoom"></script><script defer="" src="../js/domain-warp.js?v=20260917-fullscreen"></script></body>
++<dialog aria-label="Expanded screenshot" id="image-dialog"><div class="image-toolbar"><button aria-controls="image-stage" aria-pressed="false" id="zoom-image" type="button">Zoom in</button><button aria-label="Close expanded screenshot" id="close-image" type="button">Close</button></div><div aria-label="Screenshot detail" id="image-stage" role="region" tabindex="0"><img alt=""/></div><p></p></dialog><dialog aria-label="Workshop outline" id="outline-dialog"><div class="dialog-heading"><h2>Workshop outline</h2><button id="close-outline">Close</button></div><ol class="series-links"><li><a href="../">Composing system prompts</a></li><li><a aria-current="page" href="./">Curating knowledge collections</a></li></ol><p class="outline-resources"><a href="workshop-copy.html">Full workshop copy</a></p><p class="source">Model Registry <a class="raw-url link-url" href="https://ailab.gc.cuny.edu/models/" rel="noopener" target="_blank">https://ailab.gc.cuny.edu/models/</a></p><ol id="outline-list"></ol></dialog><script defer="" src="../js/deck-engine.js?v=20260917-exercise"></script><script defer="" src="../js/lightbox.js?v=20260917-zoom"></script><script defer="" src="../js/domain-warp.js?v=20260917-fullscreen"></script></body>
+ </html>

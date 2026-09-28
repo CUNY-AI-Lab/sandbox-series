@@ -463,3 +463,10 @@ height:auto}
  .balanced-content.response-comparison-slide .response-comparison figure>h2{font-size:var(--body)}
  .balanced-content.workflow-slide [data-fragment-step="1"]{flex:none}
 }
+
+/* Keep destinations visible and wrap long model URLs within their cards. */
+.raw-url { overflow-wrap:anywhere; }
+.model-options .raw-url { font-size:var(--support); line-height:1.3; }
+.source-urls { display:flex; flex-wrap:wrap; gap:4px 24px; font-size:24px; line-height:1.3; }
+.slide-footer > .link-label { display:block; }
+.resource-group li > .resource-label { display:block; }
