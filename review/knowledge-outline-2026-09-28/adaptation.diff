@@ -1,0 +1,218 @@
+diff --git a/examples/stem-chat-system-prompt.txt b/examples/stem-chat-system-prompt.txt
+index f886d36..10b03eb 100644
+--- a/examples/stem-chat-system-prompt.txt
++++ b/examples/stem-chat-system-prompt.txt
+@@ -2,7 +2,14 @@
+ 
+ Simulate an interactive game-based learning experience through Choose Your Own STEM Adventure games featuring historically significant scientific experiments.
+ 
+-Use the knowledge base to guide adventure selection, historical grounding, and experimental procedure.
++Audience
++Learners exploring scientific experiments through interactive choices.
++
++▣ Procedure ▣
++
++Source documents
++
++Use these documents to guide adventure selection, historical grounding, and experimental procedure.
+ 
+ List of experiments
+ Use this as the main experiment pool for adventures, including the experiment, scientist or scientists, field, period, and core experimental problem.
+@@ -13,13 +20,14 @@ Use this to shape choices around observation, hypothesis, procedure, measurement
+ Women in science
+ Use this to add grounded context about scientific labor, collaboration, recognition, exclusion, institutions, and overlooked contributors when relevant.
+ 
+-Search only collections attached to this model. Use sources named above, along with relevant documents in those collections. Use the player’s interests to choose options rather than repeating a fixed set of experiments.
++
++
++Search only collections attached to this model. Use source documents listed under Procedure, along with relevant documents in those collections. Use the player’s interests to choose options rather than repeating a fixed set of experiments.
+ 
+ Open immediately with four experiment options using information already available. Do not call tools or retrieve documents before showing an opening menu. Keep options brief and omit dates, locations, and detailed historical claims. Wait for the player to choose before consulting the collection.
+ 
+ After the player chooses, consult the collection to begin a short scene. Use passages already available or make one retrieval call for relevant evidence. Omit unsupported dates, locations, and historical details rather than searching repeatedly. Build fictional choices around documented methods and observations. During play, use at most one retrieval call per response and reuse earlier evidence. Limited results do not mean a document is unavailable.
+ 
+-▣ Procedure ▣
+ 
+ 1. Start every new adventure with a retro unicode arcade menu of 4 historical experiments. Name the experiment and scientist in each numbered option. Show only the menu and “Choose 1–4.” Omit greetings and explanations. Offer a fresh selection each time a new menu is requested, changing experiments as well as their order. Draw across fields, periods, and scientists; if the player requests a field, offer four experiments within it. Exclude experiments already offered in this chat. Broaden the field when needed to offer four new options. Never begin a scene before the player selects an option from the menu.
+ 
+diff --git a/knowledge/OUTLINE.md b/knowledge/OUTLINE.md
+index 51f49a9..1af0ce4 100644
+--- a/knowledge/OUTLINE.md
++++ b/knowledge/OUTLINE.md
+@@ -107,31 +107,45 @@ For **Compare Wikipedia Edits**, ask “Use attached source documents to compare
+ 
+ ![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-2)
+ 
+-Inspect sources attached to **STEM Adventure Games**. Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments**.
++Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
+ 
+-![Unfiltered file list in STEM Wikipedia Experiments, with Scientific method outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-3)
++![STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-4)
+ 
+-Open **Scientific method** and read a passage. What could an adventure ask players to learn or do with this information?
++This collection supports adventure choices, experimental methods, and historical context. Next, choose sources for your adapted version.
+ 
+-<https://en.wikipedia.org/wiki/List_of_experiments>
++---
++
++## 9. Choose Purpose
++
++What should participants learn or do with your adapted version?
++
++Choose a topic and audience for **STEM Adventure Games**. Decide what players should explore through their choices.
++
++For **Compare Wikipedia Edits**, choose a topic and a question about how articles change.
+ 
+-<https://en.wikipedia.org/wiki/Scientific_method>
++---
++
++## 10. Find Sources
++
++Locate two or three Wikipedia articles or other documents that fit your purpose. Choose material with enough detail to guide scenes and decisions.
+ 
+-<https://en.wikipedia.org/wiki/Women_in_science>
++Read relevant passages and decide how each source will contribute to your version.
++
++For **Compare Wikipedia Edits**, locate an article related to your question and choose two revisions from its history.
+ 
+ ---
+ 
+-## 9. Choose Your Sources
++## 11. Prepare Documents
+ 
+-Choose a topic or audience for your copy of **STEM Adventure Games**. Select two or three documents with experiments, methods, or historical context for that version.
++Save selected source text as PDF, Markdown, or plain text. Include a title, source URL, and date in each file.
+ 
+-Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.
++Use descriptive filenames. You will name these documents in your system prompt.
+ 
+-For **Compare Wikipedia Edits**, choose an article and save two revisions with their IDs and links.
++For Wikipedia comparisons, include revision IDs and links with both saved versions.
+ 
+ ---
+ 
+-## 10. Create Your Collection
++## 12. Create Your Collection
+ 
+ ![Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.](../images/knowledge-stem-2026-09-28/create-custom-collection.svg)
+ 
+@@ -141,7 +155,7 @@ Keep access **Private** and select **Create Knowledge**.
+ 
+ ---
+ 
+-## 11. Upload Your Sources
++## 13. Upload Your Sources
+ 
+ ![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg)
+ 
+@@ -151,7 +165,7 @@ Wait for processing, then open each file to check text and source links.
+ 
+ ---
+ 
+-## 12. Attach Your Collection
++## 14. Attach Your Collection
+ 
+ ![Model editor with white annotations identifying Select Knowledge and an attached collection.](../images/knowledge-stem-2026-09-28/attach-knowledge.svg)
+ 
+@@ -161,37 +175,55 @@ Continue to **System Prompt** in this editor.
+ 
+ ---
+ 
+-## 13. Revise System Prompt
++## 15. Update Purpose
++
++In **System Prompt**, revise **Purpose** to describe your topic, audience, and task. Replace bracketed text with your choices.
++
++Create a choice-based adventure about [topic] for [audience]. Let players explore [question or practice] through their decisions.
++
++For Wikipedia comparisons, state what changes to examine and which question comparisons should address.
++
++---
++
++## 16. Name Sources
++
++Under **Procedure**, replace original source names with filenames you uploaded. State how each document should guide responses.
++
++Use [filename] for [specific information or method]. Use [filename] for [additional context or evidence].
++
++Remove instructions that refer to sources you replaced.
++
++---
+ 
+-Replace original source list with filenames you uploaded. Explain how each document should guide your game.
++## 17. Revise Instructions
+ 
+-- **Purpose** · Name your chosen topic or audience.
++Review remaining instructions for your adapted purpose.
+ 
+-- **Procedure** · Use your sources to develop scenes and choices.
++- **Procedure** · Describe what players or readers should do.
+ 
+-- **Constraints** · Require source support for historical details.
++- **Constraints** · State which details need source support.
+ 
+-- **Format** · Preserve brief scenes and four numbered choices.
++- **Format** · Specify how responses should appear.
+ 
+-For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.
++For adventures, retain brief scenes and numbered choices. For comparisons, retain quotations from both revisions.
+ 
+ Select **Save & Update**.
+ 
+ ---
+ 
+-## 14. Test Custom Model
++## 18. Test Custom Model
+ 
+ ![STEM Adventure Games chat showing four experiment choices and an annotated model selector.](../images/knowledge-stem-2026-09-28/test-retrieval.svg)
+ 
+ Start a new chat. Select model ID on bottom right of message box. Choose your copy.
+ 
+-Ask for four experiments suited to your chosen topic or audience. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
++Ask for four adventure options about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
+ 
+ For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
+ 
+ ---
+ 
+-## 15. Check Citations
++## 19. Check Citations
+ 
+ ![Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.](../images/knowledge-stem-2026-09-28/check-citations.svg)
+ 
+@@ -205,7 +237,7 @@ Select a citation to inspect its source.
+ 
+ ---
+ 
+-## 16. Compare Responses
++## 20. Compare Responses
+ 
+ Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
+ 
+@@ -217,7 +249,7 @@ Use one request with original model and your copy. For STEM, choose one experime
+ 
+ ---
+ 
+-## 17. Revise and Retest
++## 21. Revise and Retest
+ 
+ Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.
+ 
+@@ -225,7 +257,7 @@ If a custom model misses a source, check that its file finished processing, your
+ 
+ ---
+ 
+-## 18. Share Custom Model
++## 22. Share Custom Model
+ 
+ To share your work, grant intended users or groups **Read** access to your copy and its collection.
+ 
+@@ -237,7 +269,7 @@ Ask someone to try your copy and check its citations.
+ 
+ ---
+ 
+-## 19. Workshop Resources
++## 23. Workshop Resources
+ 
+ Choose another experiment or article. Refresh source documents when needed and check responses against versions you saved.
+ 

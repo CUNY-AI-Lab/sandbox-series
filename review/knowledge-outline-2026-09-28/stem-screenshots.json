@@ -78,21 +78,21 @@
   {
     "name": "collection-documents",
     "raw": "images/knowledge-stem-2026-09-28/collection-documents-raw.png",
-    "sha256": "f2ca7618bc09e3bc17b3cb62331468513eda84f6732b61c945e9a742facc0835",
+    "sha256": "ddb8bc6fb78a45596d91321d58014777f02388c7f8e6943f3ece3f7dc5779c2c",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      155,
-      410,
-      1030,
-      395
+      360,
+      170,
+      1020,
+      300
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/collection-documents-capture.jpg",
-    "capture_sha256": "45b47635d6dad0239fe7b299ddf6701e6ead56e97654fd91540e8967d95708b0"
+    "capture_sha256": "2b2dbc63d915d7f92dbdb229e399fe91611f7ad33dee8e053376ee235fa949f8"
   },
   {
     "name": "attach-knowledge",

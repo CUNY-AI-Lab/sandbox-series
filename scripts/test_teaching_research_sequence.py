@@ -155,15 +155,25 @@ class ParticipantContinuity(unittest.TestCase):
             self.assertIn(term,review)
         attach=self.slide('knowledge/index.html','Attach Your Collection').text()
         self.assertIn('your own collection',attach)
-        self.assertIn('saved versions',self.slide('knowledge/index.html','Choose Your Sources').text())
+        self.assertIn('saved versions',self.slide('knowledge/index.html','Prepare Documents').text())
         comparison=self.slide('knowledge/index.html','Compare Responses').text()
         self.assertIn('choose one experiment for both',comparison)
 
-    def test_original_wikipedia_sources_remain_distinct(self):
+    def test_participants_find_sources_for_adapted_purpose(self):
         sources=self.slide('knowledge/index.html','Example Sources').text()
-        for path in ['/wiki/List_of_experiments','/wiki/Scientific_method','/wiki/Women_in_science']:
-            self.assertIn(path,sources)
-        self.assertIn('historical context',self.slide('knowledge/index.html','Choose Your Sources').text())
+        self.assertNotIn('Open Scientific method',sources)
+        self.assertIn('your adapted version',sources)
+        self.assertIn('Locate two or three',self.slide('knowledge/index.html','Find Sources').text())
+        purpose=self.slide('knowledge/index.html','Update Purpose').text()
+        self.assertIn('[topic]',purpose)
+        self.assertIn('[audience]',purpose)
+        source_instructions=self.slide('knowledge/index.html','Name Sources').text()
+        self.assertIn('[filename]',source_instructions)
+        self.assertIn('Remove instructions that refer to sources you replaced',source_instructions)
+
+    def test_knowledge_examples_have_no_fixed_experiment(self):
+        for path in ['knowledge/index.html','knowledge/reference.html','examples/stem-chat-system-prompt.txt','examples/knowledge/source-register.md']:
+            self.assertNotRegex((ROOT/path).read_text(),r'(?i)newton|prism laboratory',path)
 
     def test_installed_tool_is_attached_before_testing(self):
         installation = self.slide('skills/index.html', 'Install Tool Code').text()

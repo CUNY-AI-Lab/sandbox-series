@@ -112,9 +112,9 @@ Participants clone STEM Adventure Games, choose sources for a topic they want to
 | Minutes | Activity | Evidence to examine |
 | --- | --- | --- |
 | 0–15 | Introduce RAG, choose an example, clone and rename it, and try an initial interaction. | Saved copy and an initial response |
-| 15–40 | Review how original STEM sources contribute to the game. Choose a topic and two or three documents that will guide a different version. Save readable source text with titles, links, and dates. For Wikipedia, choose an article and save two revisions. | Participant-selected sources and intended use for each document |
+| 15–40 | View the example collection. Choose a purpose and audience, then locate two or three sources for an adapted version. Save readable source text with titles, links, and dates. For Wikipedia, choose an article and save two revisions. | Participant-selected sources and intended use for each document |
 | 40–60 | Create a private, empty collection. Upload selected documents, wait for processing, inspect text, and replace the inherited collection attachment on the cloned model. | Uploaded files and the clone's new collection attachment |
-| 60–70 | Replace original source references in the system prompt. Name the chosen topic and explain how each document should guide scenes, choices, and historical details. Retain the game's format and save. | Prompt instructions that match the new source material |
+| 60–70 | Edit Purpose, replace the source list under Procedure, and explain how each uploaded document should be used. Review Constraints and Format for instructions that conflict with the adapted purpose, then save. | Prompt instructions that match the new source material |
 | 70–90 | Start a new chat, choose an experiment, ask for evidence, and check citations. Compare the same request in the original and customized versions. Revise one source or instruction and retest. | Source-supported details, gaps, and effects of customization |
 
 The original collection is shown before the customization activity. Newly created collections contain no files until participants upload them. Do not imply that cloning creates personal copies of shared source documents. Participants replace the inherited attachment in their own model and upload documents to their own collection.

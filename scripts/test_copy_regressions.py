@@ -253,7 +253,7 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Choose Custom Model','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Your Sources','Create Your Collection','Upload Your Sources','Attach Your Collection','Revise System Prompt','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Choose Custom Model','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Prepare Documents','Create Your Collection','Upload Your Sources','Attach Your Collection','Update Purpose','Name Sources','Revise Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
         upload=self.slide('knowledge/index.html','Upload Your Sources')
         self.assertIn('Your new collection starts empty.',upload.text())
         self.assertIn('processing',upload.text())
@@ -261,8 +261,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('No content found',image.attrs['alt'])
         self.assertTrue(image.attrs['src'].endswith('upload-custom-sources.svg'))
         self.assertIn('your own collection',self.slide('knowledge/index.html','Attach Your Collection').text())
-        prompt=self.slide('knowledge/index.html','Revise System Prompt').text()
-        for term in ['Replace original source list','filenames you uploaded','how each document should guide your game','Save & Update']:
+        prompt=' '.join(self.slide('knowledge/index.html',title).text() for title in ['Update Purpose','Name Sources','Revise Instructions'])
+        for term in ['replace original source names','filenames you uploaded','how each document should guide responses','Save & Update']:
             self.assertIn(term,prompt)
         copy=' '.join(s.text() for s in self.decks['knowledge/index.html'])
         for term in ['Function Calling','Advanced Params','Enable Knowledge','Enable Retrieval','Explain RAG']:
@@ -342,7 +342,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),19)
+        self.assertEqual(len(self.decks['knowledge/index.html']),23)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
@@ -401,8 +401,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertTrue(stages[0].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('find-knowledge.svg'))
         self.assertTrue(stages[1].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('collection-documents.svg'))
         links={n.attrs.get('href') for n in sources.all(lambda n:n.tag=='a')}
-        for article in ['List_of_experiments','Scientific_method','Women_in_science']:
-            self.assertIn('https://en.wikipedia.org/wiki/'+article,links)
+        self.assertFalse(links, 'Original source pages are examples, not assigned reading.')
+        self.assertIn('choose sources for your adapted version',sources.text())
     def test_25_introductory_workshops_use_chat_adventure(self):
         # Guard the participant's actual task, not just the workshop labels.
         technical = r'(?i)\bJSON\b|\bscenario_json\b|\brender_stem_adventure\b|\bview_skill\b|\b(?:saved|submitted) (?:play )?records?\b|\bFunction Calling\b'

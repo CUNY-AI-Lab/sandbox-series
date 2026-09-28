@@ -111,33 +111,51 @@ For **Compare Wikipedia Edits**, ask “Use attached source documents to compare
 
 ![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-2)
 
-Inspect sources attached to **STEM Adventure Games**. Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments**.
+Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
 
-![Unfiltered file list in STEM Wikipedia Experiments, with Scientific method outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-3)
+![STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-4)
 
-Open **Scientific method** and read a passage. What could an adventure ask players to learn or do with this information?
-
-<https://en.wikipedia.org/wiki/List_of_experiments>
-
-<https://en.wikipedia.org/wiki/Scientific_method>
-
-<https://en.wikipedia.org/wiki/Women_in_science>
+This collection supports adventure choices, experimental methods, and historical context. Next, choose sources for your adapted version.
 
 ---
 
 ## Curating knowledge collections — 9
 
-### Choose Your Sources
+### Choose Purpose
 
-Choose a topic or audience for your copy of **STEM Adventure Games**. Select two or three documents with experiments, methods, or historical context for that version.
+What should participants learn or do with your adapted version?
 
-Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.
+Choose a topic and audience for **STEM Adventure Games**. Decide what players should explore through their choices.
 
-For **Compare Wikipedia Edits**, choose an article and save two revisions with their IDs and links.
+For **Compare Wikipedia Edits**, choose a topic and a question about how articles change.
 
 ---
 
 ## Curating knowledge collections — 10
+
+### Find Sources
+
+Locate two or three Wikipedia articles or other documents that fit your purpose. Choose material with enough detail to guide scenes and decisions.
+
+Read relevant passages and decide how each source will contribute to your version.
+
+For **Compare Wikipedia Edits**, locate an article related to your question and choose two revisions from its history.
+
+---
+
+## Curating knowledge collections — 11
+
+### Prepare Documents
+
+Save selected source text as PDF, Markdown, or plain text. Include a title, source URL, and date in each file.
+
+Use descriptive filenames. You will name these documents in your system prompt.
+
+For Wikipedia comparisons, include revision IDs and links with both saved versions.
+
+---
+
+## Curating knowledge collections — 12
 
 ### Create Your Collection
 
@@ -149,7 +167,7 @@ Keep access **Private** and select **Create Knowledge**.
 
 ---
 
-## Curating knowledge collections — 11
+## Curating knowledge collections — 13
 
 ### Upload Your Sources
 
@@ -161,7 +179,7 @@ Wait for processing, then open each file to check text and source links.
 
 ---
 
-## Curating knowledge collections — 12
+## Curating knowledge collections — 14
 
 ### Attach Your Collection
 
@@ -173,27 +191,49 @@ Continue to **System Prompt** in this editor.
 
 ---
 
-## Curating knowledge collections — 13
+## Curating knowledge collections — 15
 
-### Revise System Prompt
+### Update Purpose
 
-Replace original source list with filenames you uploaded. Explain how each document should guide your game.
+In **System Prompt**, revise **Purpose** to describe your topic, audience, and task. Replace bracketed text with your choices.
 
-- **Purpose** · Name your chosen topic or audience.
+Create a choice-based adventure about [topic] for [audience]. Let players explore [question or practice] through their decisions.
 
-- **Procedure** · Use your sources to develop scenes and choices.
+For Wikipedia comparisons, state what changes to examine and which question comparisons should address.
 
-- **Constraints** · Require source support for historical details.
+---
 
-- **Format** · Preserve brief scenes and four numbered choices.
+## Curating knowledge collections — 16
 
-For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.
+### Name Sources
+
+Under **Procedure**, replace original source names with filenames you uploaded. State how each document should guide responses.
+
+Use [filename] for [specific information or method]. Use [filename] for [additional context or evidence].
+
+Remove instructions that refer to sources you replaced.
+
+---
+
+## Curating knowledge collections — 17
+
+### Revise Instructions
+
+Review remaining instructions for your adapted purpose.
+
+- **Procedure** · Describe what players or readers should do.
+
+- **Constraints** · State which details need source support.
+
+- **Format** · Specify how responses should appear.
+
+For adventures, retain brief scenes and numbered choices. For comparisons, retain quotations from both revisions.
 
 Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 14
+## Curating knowledge collections — 18
 
 ### Test Custom Model
 
@@ -201,13 +241,13 @@ Select **Save & Update**.
 
 Start a new chat. Select model ID on bottom right of message box. Choose your copy.
 
-Ask for four experiments suited to your chosen topic or audience. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
+Ask for four adventure options about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
 
 For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
 
 ---
 
-## Curating knowledge collections — 15
+## Curating knowledge collections — 19
 
 ### Check Citations
 
@@ -221,7 +261,7 @@ Select a citation to inspect its source.
 
 ---
 
-## Curating knowledge collections — 16
+## Curating knowledge collections — 20
 
 ### Compare Responses
 
@@ -233,7 +273,7 @@ Use one request with original model and your copy. For STEM, choose one experime
 
 ---
 
-## Curating knowledge collections — 17
+## Curating knowledge collections — 21
 
 ### Revise and Retest
 
@@ -243,7 +283,7 @@ If a custom model misses a source, check that its file finished processing, your
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 22
 
 ### Share Custom Model
 
@@ -255,7 +295,7 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 23
 
 ### Workshop Resources
 

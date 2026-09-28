@@ -35,9 +35,9 @@
           "content": "Show me the adventure menu."
         },
         {
-          "title": "Explore light",
+          "title": "Explore a field",
           "subtitle": "",
-          "content": "Start an adventure about Newton’s experiments with light and colour."
+          "content": "Ask which scientific field I want to explore, then offer four different experiment options. Wait for me to choose."
         }
       ],
       "logo_file": "images/cail-logo.png"
