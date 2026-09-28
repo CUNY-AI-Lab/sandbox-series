@@ -113,11 +113,9 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 Select **Workspace** in left sidebar, then **Knowledge**. Search for **STEM Wikipedia Experiments** and open its collection.
 
-![Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
+![STEM Wikipedia Experiments collection filtered to three Wikipedia files, with search and file list outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
 
-Search **https** to show three Wikipedia files. List of experiments guides options, Scientific method guides experimental choices, and Women in science adds historical context.
-
-Your version will draw on sources you choose.
+Search **https** to show three Wikipedia documents. Open a file to inspect its text.
 
 <https://en.wikipedia.org/wiki/List_of_experiments>
 

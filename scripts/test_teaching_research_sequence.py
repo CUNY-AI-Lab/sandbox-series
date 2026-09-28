@@ -160,10 +160,10 @@ class ParticipantContinuity(unittest.TestCase):
         self.assertIn('choose one experiment for both',comparison)
 
     def test_original_wikipedia_sources_remain_distinct(self):
-        roles=self.slide('knowledge/index.html','Example Sources').text()
-        for source in ['List of experiments','Scientific method','Women in science']:
-            self.assertIn(source,roles)
-        self.assertIn('historical context',roles)
+        sources=self.slide('knowledge/index.html','Example Sources').text()
+        for path in ['/wiki/List_of_experiments','/wiki/Scientific_method','/wiki/Women_in_science']:
+            self.assertIn(path,sources)
+        self.assertIn('historical context',self.slide('knowledge/index.html','Choose Your Sources').text())
 
     def test_installed_tool_is_attached_before_testing(self):
         installation = self.slide('skills/index.html', 'Install Tool Code').text()

@@ -78,21 +78,21 @@
   {
     "name": "collection-documents",
     "raw": "images/knowledge-stem-2026-09-28/collection-documents-raw.png",
-    "sha256": "4435f338e6d091d6762a622d013dc1ce2437aaec3704b89cefa323d0dbc5b36c",
+    "sha256": "f929ebf8e407409d7ac89857cf0628ae1da21ba05520933cef0b486e1b8e4be5",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      110,
-      170,
-      1786,
-      505
+      150,
+      345,
+      1170,
+      390
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/collection-documents-capture.jpg",
-    "capture_sha256": "1c141fc05a3a8b3e2d3f62fac9a2969e9bd29e1334d7a55750fbc73518d37f58"
+    "capture_sha256": "aa72fc2ee837f3cb797dbf84a478ba7f29ec4729754b9c617ddc732fe8114108"
   },
   {
     "name": "attach-knowledge",
@@ -211,21 +211,21 @@
   {
     "name": "find-knowledge",
     "raw": "images/knowledge-stem-2026-09-28/find-knowledge-raw.png",
-    "sha256": "109b13a421cd45ff78d3652065c8326eece1a3a8899800a272e31b499d0d653f",
+    "sha256": "f041d633b97491e02abc18da7a63a097acb358b04674365013b6aa6b637c72a5",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      48,
+      55,
       85,
-      850,
-      370
+      1520,
+      430
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/find-knowledge-capture.jpg",
-    "capture_sha256": "84a4e97d19f0bdfd9c7dbcb946ddaaf594f036299021595779b43d574f85e6f5"
+    "capture_sha256": "61cb2cff54358ce1b428086e048103e48d55895c7259a5f36e05b047f5a4a152"
   },
   {
     "name": "create-custom-collection",
