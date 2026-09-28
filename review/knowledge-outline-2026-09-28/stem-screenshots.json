@@ -209,6 +209,25 @@
     "capture_sha256": "7208c94a7df75ddcf66d497d8d2a2c5da5bfb37321046024f7a233ef30c6257d"
   },
   {
+    "name": "find-knowledge",
+    "raw": "images/knowledge-stem-2026-09-28/find-knowledge-raw.png",
+    "sha256": "a5044d31b08a104bd3311e743d26ddce423b927cdb8640a3d87a454d8dc3c04f",
+    "dimensions": [
+      1919,
+      1049
+    ],
+    "view_box": [
+      48,
+      85,
+      1080,
+      505
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay; PNG preserves decoded capture pixels",
+    "capture_file": "images/knowledge-stem-2026-09-28/find-knowledge-capture.jpg",
+    "capture_sha256": "fe7f104b13e8b4c39858dc6d3da15125089e44847711d3f5a0a89a862f7dd6c2"
+  },
+  {
     "name": "create-custom-collection",
     "raw": "images/knowledge-stem-2026-09-28/create-custom-collection-raw.png",
     "sha256": "db65a1a9d8a8c44de2403b965fbc68a059f05bed060fd66c82c5d465867b30a1",

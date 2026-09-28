@@ -109,13 +109,21 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 ### Example Sources
 
+![Knowledge list in Sandbox Workspace with Knowledge tab and STEM Wikipedia Experiments collection outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg)
+
+Select **Workspace** in left sidebar, then **Knowledge**. Search for **STEM Wikipedia Experiments** and open its collection.
+
 ![Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
 
 Original STEM Adventure Games uses List of experiments for options, Scientific method for experimental choices, and Women in science for historical context.
 
 Your version will draw on sources you choose.
 
-<https://en.wikipedia.org/wiki/List_of_experiments><https://en.wikipedia.org/wiki/Scientific_method><https://en.wikipedia.org/wiki/Women_in_science>
+<https://en.wikipedia.org/wiki/List_of_experiments>
+
+<https://en.wikipedia.org/wiki/Scientific_method>
+
+<https://en.wikipedia.org/wiki/Women_in_science>
 
 ---
 
@@ -241,9 +249,9 @@ If a custom model misses a source, check that its file finished processing, your
 
 ### Share Custom Model
 
-To share your work, grant intended users or groups **Read** access to both custom model and collection.
+To share your work, grant intended users or groups **Read** access to your copy and its collection.
 
-Ask someone to try custom model and check its citations.
+Ask someone to try your copy and check its citations.
 
  Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/>
 

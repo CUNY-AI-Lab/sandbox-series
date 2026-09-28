@@ -43,6 +43,8 @@ def render(node):
     if tag in {'button','svg','script','style'} or node.has_class('progression-dots'):return ''
     if node.has_class('slide-notes'):
         return '\n\n'+''.join(render(c) for c in node.children)+'\n\n'
+    if node.has_class('source-urls'):
+        return '\n\n' + '\n\n'.join(render(c).strip() for c in node.children if isinstance(c, Node)) + '\n\n'
     if node.has_class('prompt-block'):
         labels=node.all(lambda n:n.has_class('prompt-label'))
         label=' '.join('**'+n.text().strip()+'**' for n in labels)
