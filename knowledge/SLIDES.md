@@ -2,15 +2,16 @@
 
 ## Curating knowledge collections — 1
 
+[![CUNY AI Lab](../images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
+
 ### Curating knowledge collections
 
-Upload documents for models to reference in teaching and research.
+Led by  Zach Muhlbauer
 
-CUNY AI Lab Sandbox
+New Media Lab · Room 7388.01
+CUNY Graduate Center
 
-Session 2 · Build on system prompts with source documents.
-
-Developed by Zach Muhlbauer
+Thursday, October 1, 2026   2:30–4:00 p.m.
 
 ---
 

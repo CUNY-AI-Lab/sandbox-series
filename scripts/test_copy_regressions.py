@@ -126,7 +126,15 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Sandbox Workshop Series',copy)
         self.assertNotIn('Developed and led by',copy)
         self.assertEqual(len(cover.all(lambda n:n.tag=='button')),0)
-        self.assertFalse(any(s.has_class('workshop-cover') for route in ROUTES[1:] for s in self.decks[route]))
+        knowledge=self.decks['knowledge/index.html'][0]
+        self.assertTrue(knowledge.has_class('workshop-cover'))
+        for class_name in ['cover-lab','cover-heading','cover-title','cover-details','cover-credit','cover-location','cover-date']:
+            self.assertEqual(len(knowledge.all(lambda n:n.has_class(class_name))),1,class_name)
+        for text in ['Curating knowledge collections','Led by Zach Muhlbauer','New Media Lab · Room 7388.01','CUNY Graduate Center','Thursday, October 1, 2026','2:30–4:00 p.m.']:
+            self.assertIn(text,knowledge.text())
+        self.assertEqual(knowledge.all(lambda n:n.tag=='time')[0].attrs['datetime'],'2026-10-01T14:30:00-04:00')
+        self.assertEqual(knowledge.all(lambda n:n.tag=='canvas')[0].attrs['aria-hidden'],'true')
+        self.assertFalse(any(s.has_class('workshop-cover') for s in self.decks['skills/index.html']))
     def test_03_participant_copy_excludes_editorial_instructions(self):
         for tree in [*self.trees.values(),*self.references.values()]:
             copy=authored(tree)
