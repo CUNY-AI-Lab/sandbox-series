@@ -21,21 +21,21 @@
   {
     "name": "review-clone",
     "raw": "images/knowledge-stem-2026-09-28/review-clone-raw.png",
-    "sha256": "1d5a82e294d2e2cba9632b5af0dc8465fc20537c01231044ff8dbe9c8e4fa423",
+    "sha256": "889dccadd56a5f72a2dcfa1969be2b1b04325635b939353170654bb5c8c9cd03",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      108,
-      171,
-      1790,
-      640
+      350,
+      170,
+      1050,
+      340
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/review-clone-capture.jpg",
-    "capture_sha256": "54214baf4900f7d2589b4926736ae6168e5dcb146936e12dbf87e9afb659f94b"
+    "capture_sha256": "b1e0bab1a857950249ddee99a6428952ca7ef02b4b6f604d97ceec03783c21fc"
   },
   {
     "name": "create-collection",
@@ -97,21 +97,21 @@
   {
     "name": "attach-knowledge",
     "raw": "images/knowledge-stem-2026-09-28/attach-knowledge-raw.png",
-    "sha256": "f9f1aff64d0d0405883dcd29e89047bd18d2b77dfbe9a7e943d294bbcd62fa0e",
+    "sha256": "99d003bdbc4754417138ffc02dc9e673fdddfa655f0b1684132cbb74ecbfa3df",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      109,
-      505,
-      1767,
-      306
+      354,
+      568,
+      920,
+      255
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/attach-knowledge-capture.jpg",
-    "capture_sha256": "5f5bca2b5997c202b9ac7c6319e999f636cbf099a88c94279a450ae5e6cd4a05"
+    "capture_sha256": "ce61c296d46392e2a80f646f592eb80a0847adf7d5ceb2e05a2dd61c83e1ab5f"
   },
   {
     "name": "focused-retrieval",
@@ -173,45 +173,45 @@
   {
     "name": "test-retrieval",
     "raw": "images/knowledge-stem-2026-09-28/test-retrieval-raw.png",
-    "sha256": "a3900f94eab5a5f3a3e27b669fdfa661a83ed3c4d29d9b8c767f5eea4b717d4f",
+    "sha256": "a4e08c4a79c10c6d1de86cd5994dbc26705280162028fc95292314ccd9e0b1e9",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      48,
-      86,
-      1871,
-      950
+      347,
+      300,
+      1375,
+      730
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/test-retrieval-capture.jpg",
-    "capture_sha256": "9b58b51bf47edb12b7bc333ff62e34fad845d0ecd38b7409f2848b5fbb6aa8fa"
+    "capture_sha256": "874a3c0da5f44f3e14e86dec1a6fbd7737ce50ad025edba206e6f38d90067d71"
   },
   {
     "name": "check-citations",
     "raw": "images/knowledge-stem-2026-09-28/check-citations-raw.png",
-    "sha256": "7c174253243b0d3eb1bd5ff00cf05e274520d059a0ab119d082323324615b081",
+    "sha256": "eedb8462405d5d82ea8a5a34f98cbeed5ad079b1ab8ea08e96ee8db89819825c",
     "dimensions": [
       1919,
       1049
     ],
     "view_box": [
-      376,
-      285,
-      1195,
-      562
+      396,
+      298,
+      1163,
+      352
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/check-citations-capture.jpg",
-    "capture_sha256": "7208c94a7df75ddcf66d497d8d2a2c5da5bfb37321046024f7a233ef30c6257d"
+    "capture_sha256": "184368b39ec6bdae85073c68e1e7220512a5557f2318dbbb33113533ae37579f"
   },
   {
     "name": "find-knowledge",
     "raw": "images/knowledge-stem-2026-09-28/find-knowledge-raw.png",
-    "sha256": "f041d633b97491e02abc18da7a63a097acb358b04674365013b6aa6b637c72a5",
+    "sha256": "a2a8f23e3a093524e0331f102ff5a3af8155b02aff7703bea016de59ad706529",
     "dimensions": [
       1919,
       1049
@@ -219,13 +219,13 @@
     "view_box": [
       55,
       85,
-      1520,
-      430
+      1010,
+      300
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/find-knowledge-capture.jpg",
-    "capture_sha256": "61cb2cff54358ce1b428086e048103e48d55895c7259a5f36e05b047f5a4a152"
+    "capture_sha256": "3a15ba483f54be72ec9006592ed002519baac9644b286be92cd37844755e7a22"
   },
   {
     "name": "create-custom-collection",
@@ -255,10 +255,10 @@
       1049
     ],
     "view_box": [
-      110,
-      170,
-      1786,
-      510
+      895,
+      215,
+      1000,
+      435
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",

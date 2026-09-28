@@ -115,7 +115,7 @@ Participants clone STEM Adventure Games, choose sources for a topic they want to
 | 15–40 | View the example collection. Choose a purpose and audience, then locate two or three sources for an adapted version. Save readable source text with titles, links, and dates. | Participant-selected sources and intended use for each document |
 | 40–60 | Create a private, empty collection. Upload selected documents, wait for processing, inspect text, and replace the inherited collection attachment on the cloned model. | Uploaded files and the clone's new collection attachment |
 | 60–70 | Edit Purpose, replace the source list under Procedure, and explain how each uploaded document should be used. Review Constraints and Format for instructions that conflict with the adapted purpose, then save. | Prompt instructions that match the new source material |
-| 70–90 | Start a new chat, choose an experiment, ask for evidence, and check citations. Compare the same request in the original and customized versions. Revise one source or instruction and retest. | Source-supported details, gaps, and effects of customization |
+| 70–90 | Start a new chat, request options about the chosen topic, choose one, and check evidence for its scene. Compare a request in the original and customized versions. Revise one source or instruction, upload or save the change, and retest. | Source-supported details, gaps, and effects of customization |
 
 The original collection is shown before the customization activity. Newly created collections contain no files until participants upload them. Do not imply that cloning creates personal copies of shared source documents. Participants replace the inherited attachment in their own model and upload documents to their own collection.
 

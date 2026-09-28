@@ -41,13 +41,9 @@ Open Sandbox <https://chat.ailab.gc.cuny.edu/>
 
 A Knowledge collection contains documents a custom model can search.
 
+**Retrieval-augmented generation (RAG)** combines information retrieval with text generation. It retrieves relevant source passages and adds them to a model’s context alongside your request and system prompt instructions.
 
-
-**Retrieval-augmented generation (RAG)** combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Custom models use those passages with your request and system prompt instructions to generate a response.
-
-
-
-**Search sources → Retrieve passages → Generate response**
+**Search documents → Retrieve passages → Generate response**
 
  Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
 
@@ -73,7 +69,7 @@ Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventu
 
 ## 6. Name Your Copy
 
-![STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.](../images/knowledge-stem-2026-09-28/review-clone.svg)
+![STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.](../images/knowledge-stem-2026-09-28/review-clone.svg?v=20260928-review)
 
 Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.
 
@@ -83,43 +79,47 @@ Scroll to bottom and select **Save & Create**.
 
 ## 7. Try Custom Model
 
-Select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
+Open **New Chat**. Select model ID on bottom right of message box. Choose your saved copy.
+
+Select **Start an adventure**, choose an experiment, and try its numbered choices. Ask for another menu to see new options.
 
 ---
 
 ## 8. Example Sources
 
-![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-2)
+![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-review2)
 
 Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
 
 ![STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-4)
 
-This collection supports adventure choices, experimental methods, and historical context. Next, choose sources for your adapted version.
+**List of experiments** guides adventure options; **Scientific method** guides decisions; **Women in science** adds historical context.
+
+Next, choose sources for your adapted version.
 
 ---
 
 ## 9. Choose Purpose
 
-What should participants learn or do with your adapted version?
+What should players learn or explore?
 
-Choose a topic and audience for **STEM Adventure Games**. Decide what players should explore through their choices.
+Choose a topic and audience for your adaptation of **STEM Adventure Games**. Identify a question players could investigate through their choices.
 
 ---
 
 ## 10. Find Sources
 
-Locate two or three Wikipedia articles or other documents that fit your purpose. Choose material with enough detail to guide scenes and decisions.
+Locate two or three Wikipedia articles or other documents about your chosen topic.
 
-Read relevant passages and decide how each source will contribute to your version.
+Read relevant passages. Choose sources that explain what players could investigate and which decisions they could make.
 
 ---
 
 ## 11. Prepare Documents
 
-Save selected source text as PDF, Markdown, or plain text. Include a title, source URL, and date in each file.
+Copy relevant source text into documents and save as PDF, Markdown, or plain text. Include a title, source URL, and date saved in each file.
 
-Use descriptive filenames. You will name these documents in your system prompt.
+Use descriptive filenames. These saved documents become your collection; links alone do not include article text.
 
 ---
 
@@ -135,7 +135,7 @@ Keep access **Private** and select **Create Knowledge**.
 
 ## 13. Upload Your Sources
 
-![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg)
+![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260928-review2)
 
 Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
 
@@ -145,27 +145,27 @@ Wait for processing, then open each file to check text and source links.
 
 ## 14. Attach Your Collection
 
-![Model editor with white annotations identifying Select Knowledge and an attached collection.](../images/knowledge-stem-2026-09-28/attach-knowledge.svg)
+![Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.](../images/knowledge-stem-2026-09-28/attach-knowledge.svg?v=20260928-review2)
 
-Open cloned custom model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
+Open your copy in **Workspace → Models → Edit**. Under **Knowledge**, remove inherited collection attachments and select your own collection.
 
-Continue to **System Prompt** in this editor.
+Scroll up to **System Prompt** to revise instructions.
 
 ---
 
 ## 15. Update Purpose
 
-In **System Prompt**, revise **Purpose** to describe your topic, audience, and task. Replace bracketed text with your choices.
+In **System Prompt**, revise **Purpose** and **Audience** for your chosen topic. Use this as a starting point.
 
-Create a choice-based adventure about [topic] for [audience]. Let players explore [question or practice] through their decisions.
+Create a text adventure about [topic] for [audience]. Let players investigate [question] through their decisions.
 
 ---
 
-## 16. Name Sources
+## 16. Update Sources
 
-Under **Procedure**, replace original source names with filenames you uploaded. State how each document should guide responses.
+Under **Procedure → Source documents**, replace original source names with filenames you uploaded. Explain how each document should guide play.
 
-Use [filename] for [specific information or method]. Use [filename] for [additional context or evidence].
+Use [filename] to guide [adventure options, decisions, or background details].
 
 Remove instructions that refer to sources you replaced.
 
@@ -173,15 +173,13 @@ Remove instructions that refer to sources you replaced.
 
 ## 17. Revise Instructions
 
-Review remaining instructions for your adapted purpose.
+Check remaining instructions against your chosen topic.
 
-- **Procedure** · Describe what players should do.
+- **Procedure** · Revise directions that conflict with your topic.
 
-- **Constraints** · State which details need source support.
+- **Constraints** · Keep documented details distinct from invented scenes.
 
-- **Format** · Specify how responses should appear.
-
-Retain brief scenes and numbered choices.
+- **Format** · Retain brief scenes and numbered choices.
 
 Select **Save & Update**.
 
@@ -189,53 +187,51 @@ Select **Save & Update**.
 
 ## 18. Test Custom Model
 
-![STEM Adventure Games chat showing four experiment choices and an annotated model selector.](../images/knowledge-stem-2026-09-28/test-retrieval.svg)
+![STEM Adventure Games scene with its citation button annotated and message box visible.](../images/knowledge-stem-2026-09-28/test-retrieval.svg?v=20260928-review)
 
-Start a new chat. Select model ID on bottom right of message box. Choose your copy.
+Start a new chat with your saved copy. Ask for four adventure options about your chosen topic, then choose one.
 
-Ask for four adventure options about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
+After a scene appears, ask “Which passage supports this scene? Quote it and cite your source.”
 
 ---
 
 ## 19. Check Citations
 
-![Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.](../images/knowledge-stem-2026-09-28/check-citations.svg)
+![Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.](../images/knowledge-stem-2026-09-28/check-citations.svg?v=20260928-review)
 
-Select a citation to inspect its source.
+Select a citation to open its source passage.
 
+- Does quoted text match your uploaded document?
 
-
-- Does quoted text match your document?
-
-- Does it support this custom model’s interpretation?
+- Which scene details does it support? Which are invented?
 
 ---
 
 ## 20. Compare Responses
 
-Use one request with original model and your copy. Choose one experiment for both. Compare how each uses source documents.
+Send one request about your chosen topic in separate new chats with **STEM Adventure Games** and your copy.
 
+- How do options or scenes differ?
 
+- Does your copy use new sources as instructed?
 
-- What changed with your sources and instructions? Check scenes and experimental choices.
-
-- What did this custom model miss or misinterpret?
+- What still needs to change for your chosen audience?
 
 ---
 
 ## 21. Revise and Retest
 
-Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.
+Choose one problem you observed and revise its source document or system prompt instruction.
 
-If a custom model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
+For document changes, replace outdated files in your collection and wait for processing. For prompt changes, select **Save & Update**.
+
+Repeat your request in a new chat and check whether this change resolved that problem.
 
 ---
 
 ## 22. Share Custom Model
 
-To share your work, grant intended users or groups **Read** access to your copy and its collection.
-
-
+In your copy’s editor, open **Access** and grant intended users or groups **Read** access. Give those same users **Read** access to its Knowledge collection.
 
 Ask someone to try your copy and check its citations.
 

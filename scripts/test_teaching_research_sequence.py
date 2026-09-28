@@ -157,7 +157,9 @@ class ParticipantContinuity(unittest.TestCase):
         self.assertIn('your own collection',attach)
         self.assertIn('source URL',self.slide('knowledge/index.html','Prepare Documents').text())
         comparison=self.slide('knowledge/index.html','Compare Responses').text()
-        self.assertIn('Choose one experiment for both',comparison)
+        self.assertIn('chosen topic',comparison)
+        self.assertIn('separate new chats',comparison)
+        self.assertNotIn('Choose one experiment for both',comparison)
 
     def test_participants_find_sources_for_adapted_purpose(self):
         sources=self.slide('knowledge/index.html','Example Sources').text()
@@ -167,9 +169,26 @@ class ParticipantContinuity(unittest.TestCase):
         purpose=self.slide('knowledge/index.html','Update Purpose').text()
         self.assertIn('[topic]',purpose)
         self.assertIn('[audience]',purpose)
-        source_instructions=self.slide('knowledge/index.html','Name Sources').text()
+        source_instructions=self.slide('knowledge/index.html','Update Sources').text()
         self.assertIn('[filename]',source_instructions)
         self.assertIn('Remove instructions that refer to sources you replaced',source_instructions)
+
+    def test_knowledge_actions_preserve_cause_and_effect(self):
+        trial=self.slide('knowledge/index.html','Try Custom Model').text()
+        self.assertLess(trial.index('New Chat'),trial.index('Start an adventure'))
+        self.assertIn('Choose your saved copy',trial)
+        prepare=self.slide('knowledge/index.html','Prepare Documents').text()
+        self.assertIn('source text',prepare)
+        self.assertIn('date saved',prepare)
+        self.assertIn('links alone do not include article text',prepare)
+        attach=self.slide('knowledge/index.html','Attach Your Collection').text()
+        self.assertIn('Scroll up',attach)
+        test=self.slide('knowledge/index.html','Test Custom Model').text()
+        self.assertLess(test.index('choose one'),test.index('After a scene appears'))
+        retest=self.slide('knowledge/index.html','Revise and Retest').text()
+        self.assertIn('replace outdated files',retest)
+        self.assertIn('wait for processing',retest)
+        self.assertLess(retest.index('Save & Update'),retest.index('new chat'))
 
     def test_knowledge_examples_have_no_fixed_experiment(self):
         for path in ['knowledge/index.html','knowledge/reference.html','examples/stem-chat-system-prompt.txt','examples/knowledge/source-register.md']:

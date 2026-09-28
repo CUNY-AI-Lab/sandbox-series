@@ -12,6 +12,16 @@ SPECS['collection-documents'] = dict(title='Inspect example sources',view=[360,1
 SPECS['create-custom-collection'] = dict(title='Create Your Collection',view=[538,280,879,577],boxes=[[557,366,818,42],[557,431,830,180],[1187,785,205,60]],arrows=[])
 SPECS['upload-custom-sources'] = dict(title='Upload Your Sources',view=[110,170,1786,510],boxes=[[1849,250,41,38],[1634,337,242,39]],arrows=[['Upload your files',1210,605,[[1422,560],[1622,361]]]])
 
+# Refresh captures and tighten crops around controls used in Workshop 2.
+SPECS['find-knowledge'] = dict(title='Find Knowledge collection',view=[55,85,1010,300],boxes=[[55,264,282,43],[453,96,127,36],[361,215,285,57]],arrows=[])
+SPECS['review-clone'] = dict(title='Name Your Copy',view=[350,170,1050,340],boxes=[[444,180,510,63],[357,267,400,64]],arrows=[['Rename copy',1020,230,[[1010,218],[965,215]]],['Base Model',840,316,[[822,305],[768,305]]]])
+SPECS['attach-knowledge'] = dict(title='Attach Your Collection',view=[354,568,920,255],boxes=[[449,576,141,26],[458,770,320,42]],arrows=[['Select Knowledge',835,610,[[815,605],[600,588]]],['Choose collection',835,750,[[816,762],[792,790]]]])
+
+SPECS['upload-custom-sources']['view'] = [895,215,1000,435]
+
+SPECS['test-retrieval'] = dict(title='Test Custom Model',view=[347,300,1375,730],boxes=[[588,482,199,31]],arrows=[['Citation',365,430,[[480,444],[580,495]]]])
+SPECS['check-citations'] = dict(title='Check Citations',view=[396,298,1163,352],boxes=[[412,311,980,35],[414,438,1091,54]],arrows=[])
+
 manifest=[]
 for name,spec in SPECS.items():
  raw=IMAGES/(name+'-raw.png'); data=raw.read_bytes()
