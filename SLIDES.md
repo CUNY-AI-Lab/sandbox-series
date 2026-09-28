@@ -668,9 +668,9 @@ Select **Save & Update**.
 
 ### Test Custom Model
 
-![STEM Adventure Games scene with its citation button annotated and message box visible.](images/knowledge-stem-2026-09-28/test-retrieval.svg?v=20260928-review)
+![STEM Adventure Games chat showing four adventure options, with model selector annotated and message box visible.](images/knowledge-stem-2026-09-28/test-retrieval.svg?v=20260928-menu)
 
-**Alt text:** STEM Adventure Games scene with its citation button annotated and message box visible.
+**Alt text:** STEM Adventure Games chat showing four adventure options, with model selector annotated and message box visible.
 
 Start a new chat with your saved copy. Ask for four adventure options about your chosen topic, then choose one.
 
@@ -682,15 +682,13 @@ After a scene appears, ask “Which passage supports this scene? Quote it and ci
 
 ### Check Citations
 
-![Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.](images/knowledge-stem-2026-09-28/check-citations.svg?v=20260928-review)
+![STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.](images/knowledge-stem-2026-09-28/check-citations.svg?v=20260928-chat)
 
-**Alt text:** Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.
+**Alt text:** STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.
 
-Select a citation to open its source passage.
+In chat, select a citation beside a response to view its source passage.
 
-- Does quoted text match your uploaded document?
-
-- Which scene details does it support? Which are invented?
+Does this passage support that response?
 
 ---
 

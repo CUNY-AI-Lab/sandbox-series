@@ -350,7 +350,11 @@ class CopyRegressions(unittest.TestCase):
         for term in ['private copy','Replace Extend STEM Adventures','saved draft','System Prompt to name your skill']:self.assertIn(term,attach)
         self.assertIn('saved draft',self.slide('skills/index.html','Create Skills').text())
         self.assertIn('four adventure options',self.slide('knowledge/index.html','Test Custom Model').text())
-        self.assertIn('Does quoted text match your uploaded document?',self.slide('knowledge/index.html','Check Citations').text())
+        citation=self.slide('knowledge/index.html','Check Citations')
+        self.assertIn('In chat, select a citation beside a response',citation.text())
+        self.assertIn('Does this passage support that response?',citation.text())
+        self.assertNotIn('uploaded document',citation.text())
+        self.assertIn('chat',citation.all(lambda n:n.tag=='img')[0].attrs['alt'])
         for route,titles in [('knowledge',['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']),('skills',['Write Instructions','Check Interpretations','Check Skill Drafts','Check Generated Code'])]:
             current=[s.attrs['data-title'] for s in self.decks[route+'/index.html']]
             for title in titles:

@@ -19,8 +19,8 @@ SPECS['attach-knowledge'] = dict(title='Attach Your Collection',view=[354,568,92
 
 SPECS['upload-custom-sources']['view'] = [895,215,1000,435]
 
-SPECS['test-retrieval'] = dict(title='Test Custom Model',view=[347,300,1375,730],boxes=[[588,482,199,31]],arrows=[['Citation',365,430,[[480,444],[580,495]]]])
-SPECS['check-citations'] = dict(title='Check Citations',view=[396,298,1163,352],boxes=[[412,311,980,35],[414,438,1091,54]],arrows=[])
+SPECS['test-retrieval'] = dict(title='Test Custom Model',view=[48,86,1871,950],boxes=[[1264,974,239,45]],arrows=[['Select your copy',1257,863,[[1451,877],[1430,964]]]])
+SPECS['check-citations'] = dict(title='Check Citations',view=[347,300,1375,730],boxes=[[588,482,199,31]],arrows=[['Citation',365,430,[[480,444],[580,495]]]])
 
 manifest=[]
 for name,spec in SPECS.items():

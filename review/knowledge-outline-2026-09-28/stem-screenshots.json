@@ -173,6 +173,25 @@
   {
     "name": "test-retrieval",
     "raw": "images/knowledge-stem-2026-09-28/test-retrieval-raw.png",
+    "sha256": "a3900f94eab5a5f3a3e27b669fdfa661a83ed3c4d29d9b8c767f5eea4b717d4f",
+    "dimensions": [
+      1919,
+      1049
+    ],
+    "view_box": [
+      48,
+      86,
+      1871,
+      950
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay; PNG preserves decoded capture pixels",
+    "capture_file": "images/knowledge-stem-2026-09-28/test-retrieval-capture.jpg",
+    "capture_sha256": "9b58b51bf47edb12b7bc333ff62e34fad845d0ecd38b7409f2848b5fbb6aa8fa"
+  },
+  {
+    "name": "check-citations",
+    "raw": "images/knowledge-stem-2026-09-28/check-citations-raw.png",
     "sha256": "a4e08c4a79c10c6d1de86cd5994dbc26705280162028fc95292314ccd9e0b1e9",
     "dimensions": [
       1919,
@@ -186,27 +205,8 @@
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
-    "capture_file": "images/knowledge-stem-2026-09-28/test-retrieval-capture.jpg",
-    "capture_sha256": "874a3c0da5f44f3e14e86dec1a6fbd7737ce50ad025edba206e6f38d90067d71"
-  },
-  {
-    "name": "check-citations",
-    "raw": "images/knowledge-stem-2026-09-28/check-citations-raw.png",
-    "sha256": "eedb8462405d5d82ea8a5a34f98cbeed5ad079b1ab8ea08e96ee8db89819825c",
-    "dimensions": [
-      1919,
-      1049
-    ],
-    "view_box": [
-      396,
-      298,
-      1163,
-      352
-    ],
-    "capture": "Firefox native CUA screenshot",
-    "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/check-citations-capture.jpg",
-    "capture_sha256": "184368b39ec6bdae85073c68e1e7220512a5557f2318dbbb33113533ae37579f"
+    "capture_sha256": "874a3c0da5f44f3e14e86dec1a6fbd7737ce50ad025edba206e6f38d90067d71"
   },
   {
     "name": "find-knowledge",
