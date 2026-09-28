@@ -8,7 +8,7 @@ SPECS = {'clone-model': {'title': 'Clone Models', 'view': [48, 85, 1871, 600], '
 SPECS['check-citations'] = dict(title='Check Citations',view=[376,285,1195,562],boxes=[[409,311,920,35],[411,505,1092,99]],arrows=[])
 
 SPECS['find-knowledge'] = dict(title='Find Knowledge collection',view=[55,85,1520,430],boxes=[[64,382,459,69],[726,105,216,57],[575,300,390,57]],arrows=[])
-SPECS['collection-documents'] = dict(title='View Wikipedia source documents',view=[150,345,1170,390],boxes=[[198,360,195,66],[200,495,905,220]],arrows=[])
+SPECS['collection-documents'] = dict(title='Inspect example sources',view=[155,410,1030,395],boxes=[[166,741,695,49]],arrows=[])
 SPECS['create-custom-collection'] = dict(title='Create Your Collection',view=[538,280,879,577],boxes=[[557,366,818,42],[557,431,830,180],[1187,785,205,60]],arrows=[])
 SPECS['upload-custom-sources'] = dict(title='Upload Your Sources',view=[110,170,1786,510],boxes=[[1849,250,41,38],[1634,337,242,39]],arrows=[['Upload your files',1210,605,[[1422,560],[1622,361]]]])
 

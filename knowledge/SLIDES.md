@@ -101,7 +101,7 @@ Scroll to bottom and select **Save & Create**.
 
 For **STEM Adventure Games**, select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
 
-For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia articles with dates and links.” Choose an article to compare.
+For **Compare Wikipedia Edits**, ask “Use attached source documents to compare one change between Wikipedia revisions.” Read its comparison.
 
 ---
 
@@ -111,11 +111,11 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 ![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-2)
 
-Select **Workspace** in left sidebar, then **Knowledge**. Search for **STEM Wikipedia Experiments** and open its collection.
+Inspect sources attached to **STEM Adventure Games**. Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments**.
 
-![STEM Wikipedia Experiments collection filtered to three Wikipedia files, with search and file list outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-2)
+![Unfiltered file list in STEM Wikipedia Experiments, with Scientific method outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-3)
 
-Search **https** to show three Wikipedia documents. Open a file to inspect its text.
+Open **Scientific method** and read a passage. What could an adventure ask players to learn or do with this information?
 
 <https://en.wikipedia.org/wiki/List_of_experiments>
 
@@ -129,7 +129,7 @@ Search **https** to show three Wikipedia documents. Open a file to inspect its t
 
 ### Choose Your Sources
 
-Choose a topic for your version of **STEM Adventure Games**. Select two or three documents about experiments, methods, or historical context you want it to use.
+Choose a topic or audience for your copy of **STEM Adventure Games**. Select two or three documents with experiments, methods, or historical context for that version.
 
 Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.
 
@@ -179,7 +179,7 @@ Continue to **System Prompt** in this editor.
 
 Replace original source list with filenames you uploaded. Explain how each document should guide your game.
 
-- **Purpose** · Name your chosen topic.
+- **Purpose** · Name your chosen topic or audience.
 
 - **Procedure** · Use your sources to develop scenes and choices.
 
@@ -201,7 +201,7 @@ Select **Save & Update**.
 
 Start a new chat. Select model ID on bottom right of message box. Choose your copy.
 
-Ask for four experiments about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
+Ask for four experiments suited to your chosen topic or audience. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
 
 For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
 
