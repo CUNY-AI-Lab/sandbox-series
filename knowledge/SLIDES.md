@@ -109,13 +109,13 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 ### Example Sources
 
-![Knowledge list in Sandbox Workspace with Knowledge tab and STEM Wikipedia Experiments collection outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg)
+![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg)
 
 Select **Workspace** in left sidebar, then **Knowledge**. Search for **STEM Wikipedia Experiments** and open its collection.
 
 ![Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
 
-Original STEM Adventure Games uses List of experiments for options, Scientific method for experimental choices, and Women in science for historical context.
+Search **https** to show three Wikipedia files. List of experiments guides options, Scientific method guides experimental choices, and Women in science adds historical context.
 
 Your version will draw on sources you choose.
 
