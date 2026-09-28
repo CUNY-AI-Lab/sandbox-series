@@ -253,7 +253,7 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Choose Custom Model','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Prepare Documents','Create Your Collection','Upload Your Sources','Attach Your Collection','Update Purpose','Name Sources','Revise Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Prepare Documents','Create Your Collection','Upload Your Sources','Attach Your Collection','Update Purpose','Name Sources','Revise Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
         upload=self.slide('knowledge/index.html','Upload Your Sources')
         self.assertIn('Your new collection starts empty.',upload.text())
         self.assertIn('processing',upload.text())
@@ -349,7 +349,7 @@ class CopyRegressions(unittest.TestCase):
         attach=self.slide('skills/index.html','Attach Skills').text()
         for term in ['private copy','Replace Extend STEM Adventures','saved draft','System Prompt to name your skill']:self.assertIn(term,attach)
         self.assertIn('saved draft',self.slide('skills/index.html','Create Skills').text())
-        self.assertIn('saved revisions in my attached collection',self.slide('knowledge/index.html','Test Custom Model').text())
+        self.assertIn('four adventure options',self.slide('knowledge/index.html','Test Custom Model').text())
         self.assertIn('Does quoted text match your document?',self.slide('knowledge/index.html','Check Citations').text())
         for route,titles in [('knowledge',['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']),('skills',['Write Instructions','Check Interpretations','Check Skill Drafts','Check Generated Code'])]:
             current=[s.attrs['data-title'] for s in self.decks[route+'/index.html']]

@@ -97,11 +97,11 @@ Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, San
 
 Led by Zach Muhlbauer and Meha Gupta.
 
-Participants clone STEM Adventure Games, choose sources for a topic they want to explore, build their own collection, and revise the cloned system prompt to use those documents. Compare Wikipedia Edits remains an alternative. Cloning retains the example's base model and settings; participants spend their time curating sources, revising instructions, and testing.
+Participants clone STEM Adventure Games, choose sources for a topic they want to explore, build their own collection, and revise the cloned system prompt to use those documents. Cloning retains the example's base model and settings; participants spend their time curating sources, revising instructions, and testing.
 
 ### Workshop Agenda
 
-- Choose and clone models · 15 minutes
+- Explore and clone · 15 minutes
 - Select new sources · 25 minutes
 - Create and populate collections · 20 minutes
 - Revise system prompts · 10 minutes
@@ -111,8 +111,8 @@ Participants clone STEM Adventure Games, choose sources for a topic they want to
 
 | Minutes | Activity | Evidence to examine |
 | --- | --- | --- |
-| 0–15 | Introduce RAG, choose an example, clone and rename it, and try an initial interaction. | Saved copy and an initial response |
-| 15–40 | View the example collection. Choose a purpose and audience, then locate two or three sources for an adapted version. Save readable source text with titles, links, and dates. For Wikipedia, choose an article and save two revisions. | Participant-selected sources and intended use for each document |
+| 0–15 | Introduce RAG, explore STEM Adventure Games, clone and rename it, and try an initial interaction. | Saved copy and an initial response |
+| 15–40 | View the example collection. Choose a purpose and audience, then locate two or three sources for an adapted version. Save readable source text with titles, links, and dates. | Participant-selected sources and intended use for each document |
 | 40–60 | Create a private, empty collection. Upload selected documents, wait for processing, inspect text, and replace the inherited collection attachment on the cloned model. | Uploaded files and the clone's new collection attachment |
 | 60–70 | Edit Purpose, replace the source list under Procedure, and explain how each uploaded document should be used. Review Constraints and Format for instructions that conflict with the adapted purpose, then save. | Prompt instructions that match the new source material |
 | 70–90 | Start a new chat, choose an experiment, ask for evidence, and check citations. Compare the same request in the original and customized versions. Revise one source or instruction and retest. | Source-supported details, gaps, and effects of customization |
@@ -123,7 +123,6 @@ Settings are prepared on the example cards before participants clone them. The p
 
 The STEM opening menu remains immediate. After a selection, the model consults attached documents. Participants should change the source list and any references to it throughout the prompt so instructions agree with their chosen material. They can retain, replace, or supplement source ideas from the original game without being assigned its original files.
 
-For Compare Wikipedia Edits, live Wikipedia helps participants choose articles. The collection exercise uses saved revisions and preserves their IDs and dates. Make sure Knowledge retrieval is enabled on the original card before cloning.
 
 Participant account verification remains pending. Earlier STEM source checking identified an unsupported location, so historical details still need to be checked against quoted passages.
 

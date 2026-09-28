@@ -146,18 +146,18 @@ class ParticipantContinuity(unittest.TestCase):
     def slide(self, route, title):
         return self.decks[route].all(lambda n: n.has_class('slide') and n.attrs.get('data-title') == title)[0]
 
-    def test_knowledge_clones_either_example_before_attaching_sources(self):
-        choices=self.slide('knowledge/index.html','Choose Custom Model').text()
-        for name in ['STEM Adventure Games','Compare Wikipedia Edits']:
-            self.assertIn(name,choices)
+    def test_knowledge_focuses_on_stem_before_attaching_sources(self):
+        choices=self.slide('knowledge/index.html','Explore STEM Adventures').text()
+        self.assertIn('STEM Adventure Games',choices)
+        self.assertNotRegex(self.decks['knowledge/index.html'].text(),r'Compare Wikipedia Edits|Wikipedia comparisons|revision IDs|both revisions')
         review=self.slide('knowledge/index.html','Name Your Copy').text()
         for term in ['unique name','model ID','Save & Create','settings carry over when you clone']:
             self.assertIn(term,review)
         attach=self.slide('knowledge/index.html','Attach Your Collection').text()
         self.assertIn('your own collection',attach)
-        self.assertIn('saved versions',self.slide('knowledge/index.html','Prepare Documents').text())
+        self.assertIn('source URL',self.slide('knowledge/index.html','Prepare Documents').text())
         comparison=self.slide('knowledge/index.html','Compare Responses').text()
-        self.assertIn('choose one experiment for both',comparison)
+        self.assertIn('Choose one experiment for both',comparison)
 
     def test_participants_find_sources_for_adapted_purpose(self):
         sources=self.slide('knowledge/index.html','Example Sources').text()

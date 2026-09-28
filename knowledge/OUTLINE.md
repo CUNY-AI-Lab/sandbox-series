@@ -21,7 +21,7 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 ## 2. Workshop Agenda
 
-- Choose and clone models · 15 minutes
+- Explore and clone · 15 minutes
 
 - Select new sources · 25 minutes
 
@@ -53,25 +53,13 @@ A Knowledge collection contains documents a custom model can search.
 
 ---
 
-## 4. Choose Custom Model
+## 4. Explore STEM Adventures
 
-Follow **STEM Adventure Games**, or choose **Compare Wikipedia Edits**. Work with one model throughout.
+**STEM Adventure Games** uses source documents to guide a text adventure with numbered choices.
 
-Teaching
-
-### STEM Adventure Games
+Clone this example, then adapt its sources and instructions for a topic and audience you choose.
 
 <https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
-
-Explore scientific experiments through a text adventure with numbered choices.
-
-Research
-
-### Compare Wikipedia Edits
-
-<https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions>
-
-Compare Wikipedia revisions and examine changes in wording, claims, and citations.
 
 ---
 
@@ -79,7 +67,7 @@ Compare Wikipedia revisions and examine changes in wording, claims, and citation
 
 ![Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.](../images/knowledge-stem-2026-09-28/clone-model.svg)
 
-Select **Workspace** in left sidebar, then **Models**. Search for your chosen example. Open **⋯** beside it and select **Clone**.
+Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
 
 ---
 
@@ -95,11 +83,7 @@ Scroll to bottom and select **Save & Create**.
 
 ## 7. Try Custom Model
 
-For **STEM Adventure Games**, select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
-
-
-
-For **Compare Wikipedia Edits**, ask “Use attached source documents to compare one change between Wikipedia revisions.” Read its comparison.
+Select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
 
 ---
 
@@ -121,8 +105,6 @@ What should participants learn or do with your adapted version?
 
 Choose a topic and audience for **STEM Adventure Games**. Decide what players should explore through their choices.
 
-For **Compare Wikipedia Edits**, choose a topic and a question about how articles change.
-
 ---
 
 ## 10. Find Sources
@@ -131,8 +113,6 @@ Locate two or three Wikipedia articles or other documents that fit your purpose.
 
 Read relevant passages and decide how each source will contribute to your version.
 
-For **Compare Wikipedia Edits**, locate an article related to your question and choose two revisions from its history.
-
 ---
 
 ## 11. Prepare Documents
@@ -140,8 +120,6 @@ For **Compare Wikipedia Edits**, locate an article related to your question and 
 Save selected source text as PDF, Markdown, or plain text. Include a title, source URL, and date in each file.
 
 Use descriptive filenames. You will name these documents in your system prompt.
-
-For Wikipedia comparisons, include revision IDs and links with both saved versions.
 
 ---
 
@@ -181,8 +159,6 @@ In **System Prompt**, revise **Purpose** to describe your topic, audience, and t
 
 Create a choice-based adventure about [topic] for [audience]. Let players explore [question or practice] through their decisions.
 
-For Wikipedia comparisons, state what changes to examine and which question comparisons should address.
-
 ---
 
 ## 16. Name Sources
@@ -199,13 +175,13 @@ Remove instructions that refer to sources you replaced.
 
 Review remaining instructions for your adapted purpose.
 
-- **Procedure** · Describe what players or readers should do.
+- **Procedure** · Describe what players should do.
 
 - **Constraints** · State which details need source support.
 
 - **Format** · Specify how responses should appear.
 
-For adventures, retain brief scenes and numbered choices. For comparisons, retain quotations from both revisions.
+Retain brief scenes and numbered choices.
 
 Select **Save & Update**.
 
@@ -218,8 +194,6 @@ Select **Save & Update**.
 Start a new chat. Select model ID on bottom right of message box. Choose your copy.
 
 Ask for four adventure options about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
-
-For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
 
 ---
 
@@ -239,11 +213,11 @@ Select a citation to inspect its source.
 
 ## 20. Compare Responses
 
-Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
+Use one request with original model and your copy. Choose one experiment for both. Compare how each uses source documents.
 
 
 
-- What changed with your sources and instructions? For STEM, check scenes and experimental choices.
+- What changed with your sources and instructions? Check scenes and experimental choices.
 
 - What did this custom model miss or misinterpret?
 
@@ -271,7 +245,7 @@ Ask someone to try your copy and check its citations.
 
 ## 23. Workshop Resources
 
-Choose another experiment or article. Refresh source documents when needed and check responses against versions you saved.
+Choose another topic or experiment. Refresh source documents when needed and check responses against versions you saved.
 
 ### Workshop Materials
 
@@ -283,8 +257,6 @@ Choose another experiment or article. Refresh source documents when needed and c
 
 - Check monthly usage <https://tools.ailab.gc.cuny.edu/model-access>
 
-### Example Models
+### Example Model
 
 - Open STEM Adventure Games <https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
-
-- Open Compare Wikipedia Edits <https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions>
