@@ -735,7 +735,7 @@ border-top:1px solid var(--border)}
 .slide-footer>a:not(:has(.link-url)){text-decoration:underline}
 .slide-footer>.footer-action{margin:0;font-size:inherit;line-height:inherit}
 .resource-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 48px;flex:1;margin:0;padding-top:12px;border:0}
-.resource-group{display:grid;grid-template-rows:subgrid;grid-row:span 4;gap:16px;min-width:0}
+.resource-group{display:flex;flex-direction:column;gap:16px;min-width:0}
 .resource-group h3{font-size:var(--support);margin:0;color:var(--muted)}
 .resource-group ul{display:contents;list-style:none}
 .resource-group li{min-width:0;max-width:none;margin:0;padding-top:12px;border-top:1px solid var(--border)}

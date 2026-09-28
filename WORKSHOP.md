@@ -22,7 +22,7 @@ Participants who need CUNY AI Lab access begin with the [individual access appli
 
 Confirm Workspace Models access before the cloning and creation exercises in Workshop 1. Participants try a teaching or research example, review its system prompt and base model, clone it, and compare the revised clone against the original. They finish by drafting instructions and creating a configuration of their own. Before later workshops, confirm Knowledge access or Skills and Tools access as needed, including authoring permissions for participants who will create or edit resources.
 
-Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. For Workshops 1 and 2, configure **STEM Adventure Games** with [instructions for an adventure played in chat](examples/stem-chat-system-prompt.txt). Leave Skills and Tools unselected. Confirm access to **STEM Wikipedia Experiments** for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Turn File Context off and keep STEM Wikipedia Experiments attached for focused retrieval. Save the tool-based configuration as **STEM Adventure Games — Advanced** for Workshop 3, using its [separate system prompt](examples/stem-system-prompt.txt).
+Prepare **Examine Assumptions** using [this sample prompt](examples/assumption-check.txt) and a tested base model. For Workshops 1 and 2, configure **STEM Adventure Games** with [instructions for an adventure played in chat](examples/stem-chat-system-prompt.txt). Leave Skills and Tools unselected. Confirm access to **STEM Wikipedia Experiments** for Workshop 2. Use Native Function Calling and enable Knowledge Base under Builtin Tools. Leave other built-in categories, custom Tools, and Skills unselected. Keep File Context enabled for uploaded files. Keep STEM Wikipedia Experiments attached with its switch off so the editor reads Using Focused Retrieval. Save the tool-based configuration as **STEM Adventure Games — Advanced** for Workshop 3, using its [separate system prompt](examples/stem-system-prompt.txt).
 
 Choose two available models for the opening demonstration. Record their exact identifiers and settings rather than treating screenshot labels as a current inventory. Check personal defaults, folder instructions, memory, and optional features that may introduce additional context. Keep these consistent during comparisons and document differences you cannot control.
 
@@ -91,42 +91,44 @@ Participants clone their chosen model, revise one instruction, save it, and test
 
 Use remaining time to begin drafting instructions for a teaching or research task. Use Purpose, Procedure, Constraints, and Format in Draft System Prompts. Create Models shows where to select Create, then walks through naming a configuration, choosing a base model, adding the draft system prompt, saving, and trying one request. Participants finish with their own configuration to develop before the next workshop.
 
-Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and reference navigation do not link to later workshop decks.
+Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and resources link to Curating knowledge collections as the second session.
 
 ## Curating knowledge collections
 
-Participants add source documents to their chosen teaching or research model from Workshop 1. They ask about objects and events in a scene, then check whether cited passages support the model’s explanation. STEM Wikipedia Experiments provides material for checking historical claims and scientific procedures. Scenes and choices continue in chat; skills and tools begin in Workshop 3.
+Session two builds on system prompts by attaching source documents and checking how models use them. Participants can join without a configuration from session one. They clone STEM Adventure Games or Compare Wikipedia Edits, curate a small collection, and revise instructions through Purpose, Procedure, Constraints, and Format. STEM is the primary example. Its menu offers four options before retrieval; source checking begins after an experiment is selected.
 
 ### Workshop Agenda
 
-- Confirm Workspace and Knowledge access
-- Select source documents
-- Create knowledge collections
-- Attach collections to custom models
-- Check source citations
-- Choose procedures for skills
+- Choose and clone models · 15 minutes
+- Select source documents · 20 minutes
+- Create knowledge collections · 20 minutes
+- Configure retrieval · 15 minutes
+- Test and revise · 20 minutes
 
 ### Lesson Plan
 
-| Minutes | Activity | Evidence to retain |
+| Minutes | Activity | Evidence to examine |
 | --- | --- | --- |
-| 0–15 | Confirm access, choose a document question, and save its initial response. Record any sources already used. Keep Skills and Tools unselected. | Question, settings, and initial response |
-| 15–35 | Inspect STEM Wikipedia Experiments and check imports. Play a short adventure about light and colour, then compare objects in its scene with Newton’s account. Distinguish the uploaded summary from its historical source. | Game scene, cited passages, and supported claims |
-| 35–55 | Select a few readable documents, create a private collection, upload files, wait for processing, and attach it to the same custom model. | Documents, collection, and saved model |
-| 55–80 | Repeat the saved question with base model and system prompt unchanged. Check cited passages, try questions requiring two sources or missing information, and diagnose one failure. | Before/after responses and source checks |
-| 80–90 | Retest one change, check sharing, and choose a procedure for Workshop 3. | Retest and next procedure |
+| 0–15 | Explain RAG, choose an example, clone and rename it, review its prompt and base model, and try it in chat. | Saved copy and an initial interaction |
+| 15–35 | Review the three original STEM Wikipedia sources or choose a live Wikipedia article and two revisions. Select documents participants can independently check. | Source text, links, dates, and revision IDs when relevant |
+| 35–55 | Create a private collection, upload documents, inspect extracted text, and attach it to the cloned model. Remove unrelated attachments from the copy. | Readable files and saved attachment |
+| 55–70 | Select Focused Retrieval, Native Function Calling, Builtin Tools, Knowledge Base, and Citations. Revise one prompt component to explain when and how to consult the selected documents. | Retrieval settings and revised instructions |
+| 70–90 | Select an experiment, ask for evidence, open citations, and compare the same experiment in the original and the copy. For Wikipedia, compare saved revisions from the collection. Revise one document or instruction and retest. Review sharing and workshop resources. | Supported claims, missing evidence, and observed effects of one change |
 
-Keep the system prompt from your chosen model in Workshop 1. Keep Skills and Tools unselected. Participants can build a small collection for another experiment or adapt the procedure to their own teaching or research. They should know the source material well enough to check model claims independently.
+Use List of experiments, Scientific method, and Women in science as the starting collection for STEM. Participants can add an article about any chosen experiment. Uploaded articles preserve saved versions. New experiment menus should vary; comparisons should name the same experiment to avoid confusing a different scenario with the effect of a source change.
 
-A generic or incorrect answer can arise from processing, retrieval, access, instructions, or interpretation. Check the actual evidence before diagnosing the cause. File length alone does not determine retrieval quality. Scanned or multi-column PDFs deserve particular attention during text extraction.
+For Compare Wikipedia Edits, recent article discovery uses live Wikipedia. Collection exercises explicitly request saved revisions from attached documents. The model should preserve their revision IDs and dates instead of silently replacing them with newer edits.
+
+Keep custom Skills and Tools unselected. Native Knowledge tools are built into Open WebUI and require no custom tool installation. Workshop three introduces custom skills and tools separately.
+
+Successful tests in an administrator account do not establish participant clone or collection access. Participant account verification remains pending. Source checking in the STEM test identified one unsupported location, so historical details still need to be checked against cited passages.
 
 ### Next steps
 
-- Save source lists and retrieval tests
-- Request Skills and Tools access
-- Choose recurring teaching or research procedures
-- Review system-prompt examples
-- Continue to Configuring skills and tools
+- Choose another experiment or article
+- Refresh source documents when needed
+- Check responses against saved versions
+- Review shared access with intended users
 
 ## Configuring skills and tools
 
@@ -169,7 +171,7 @@ Evaluate source use separately from game correctness. A deterministic winning se
 
 Interface instructions draw on the published [Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/), especially [Getting Started](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/), [Quick Tour](https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/), [Models](https://ailab.gc.cuny.edu/sandbox-docs/models/), [Knowledge Bases](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/), [Tools & Skills](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/), and [Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/).
 
-The live interface was inspected in Firefox on September 13–16, 2026. Creation, Clone, and access controls were checked in an administrator account. Participant-account checks remain with Zach before delivery. [Screenshot provenance](review/screenshot-sources.json) records source hashes and crop coordinates. [Showcase provenance](review/showcase-sources.json) distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.
+The first workshop interface was inspected in Firefox on September 13–17, 2026. Knowledge workshop screenshots and model tests were refreshed on September 28, 2026. Creation, Clone, and access controls were checked in an administrator account. Participant-account checks remain with Zach before delivery. [Screenshot provenance](review/screenshot-sources.json) records source hashes and crop coordinates. [Showcase provenance](review/showcase-sources.json) distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.
 
 Provider requests are described in the docs as configured for zero retention with training use prohibited. Sandbox history can still be stored and visible to administrators or its shared audience. Retrieved passages enter the model request and may appear in its response. Use materials appropriate for those conditions.
 
@@ -177,7 +179,7 @@ Open WebUI’s [Models](https://docs.openwebui.com/features/workspace/models/), 
 
 ## STEM Configuration
 
-**STEM Adventure Games** is the introductory model for Workshops 1 and 2. Its system prompt opens with three or four adventures, then presents four numbered choices at each stage and responds to actions typed in ordinary language. The model uses attached sources when discussing historical evidence. It has no attached skills or tools.
+**STEM Adventure Games** is the introductory model for Workshops 1 and 2. Its system prompt opens with four experiment options and waits for a choice before retrieving source passages. It presents four numbered choices at each stage and responds to actions typed in ordinary language. The model uses attached sources when discussing historical evidence. It has no attached skills or tools.
 
 **STEM Adventure Games — Advanced** is reserved for Workshop 3. It uses STEM Adventure and Extend STEM Adventures with native function calling. Its system prompt describes those components and requires a submitted play record before interpreting actions taken inside the game interface.
 

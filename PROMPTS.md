@@ -21,7 +21,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - **Composing system prompts** Configure model behavior with system prompts.
 
-- **Curating knowledge collections** Organize source documents in knowledge collections. Thursday, October 1
+- **[Curating knowledge collections](knowledge/)** Organize source documents in knowledge collections. Thursday, October 1
 
 - **Configuring skills and tools** Extend model capabilities with skills and tools. Thursday, October 15
 
@@ -395,6 +395,8 @@ CUNY Graduate Center
 Keep your draft and choose source documents for your next workshop.
 
 ### Workshop Materials
+
+- [Open Knowledge Collections  https://cuny-ai-lab.github.io/sandbox-series/knowledge/](knowledge/)
 
 - [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
 

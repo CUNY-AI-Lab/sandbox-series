@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,411 @@
+@@ -1,487 +1,413 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -355,7 +355,7 @@
 +
 +- **Composing system prompts** Configure model behavior with system prompts.
 +
-+- **Curating knowledge collections** Organize source documents in knowledge collections. Thursday, October 1
++- **[Curating knowledge collections](knowledge/)** Organize source documents in knowledge collections. Thursday, October 1
 +
 +- **Configuring skills and tools** Extend model capabilities with skills and tools. Thursday, October 15
 +
@@ -878,6 +878,8 @@
 +Keep your draft and choose source documents for your next workshop.
 +
 +### Workshop Materials
++
++- [Open Knowledge Collections  https://cuny-ai-lab.github.io/sandbox-series/knowledge/](knowledge/)
 +
 +- [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
 +

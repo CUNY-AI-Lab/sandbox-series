@@ -18,19 +18,19 @@
       &quot;id&quot;: &quot;stem-adventure-games&quot;,
       &quot;name&quot;: &quot;STEM Adventure Games&quot;,
       &quot;description&quot;: &quot;Explore scientific experiments through a text adventure with numbered choices.&quot;,
-      &quot;base_model&quot;: &quot;deepseek-v4-flash-0731&quot;,
-      &quot;base_label&quot;: &quot;DeepSeek V4 Flash 0731&quot;,
+      &quot;base_model&quot;: &quot;glm-5.3&quot;,
+      &quot;base_label&quot;: &quot;Z.ai: GLM 5.3&quot;,
       &quot;prompt_file&quot;: &quot;examples/stem-chat-system-prompt.txt&quot;,
       &quot;starters&quot;: [
         {
-          &quot;title&quot;: &quot;Choose adventures&quot;,
-          &quot;subtitle&quot;: &quot;&quot;,
-          &quot;content&quot;: &quot;Show me the adventure menu.&quot;
+          &quot;title&quot;: &quot;Start an adventure&quot;,
+          &quot;subtitle&quot;: &quot;Choose from four experiments&quot;,
+          &quot;content&quot;: &quot;Offer four different experiments to start an adventure. Wait for me to choose.&quot;
         },
         {
-          &quot;title&quot;: &quot;Explore light&quot;,
-          &quot;subtitle&quot;: &quot;&quot;,
-          &quot;content&quot;: &quot;Start an adventure about Newton’s experiments with light and colour.&quot;
+          &quot;title&quot;: &quot;Explore a field&quot;,
+          &quot;subtitle&quot;: &quot;Choose experiments within a subject&quot;,
+          &quot;content&quot;: &quot;Ask which scientific field I want to explore, then offer four different experiment options. Wait for me to choose.&quot;
         }
       ],
       &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;
@@ -128,24 +128,24 @@
       &quot;id&quot;: &quot;compare-wikipedia-revisions&quot;,
       &quot;name&quot;: &quot;Compare Wikipedia Edits&quot;,
       &quot;description&quot;: &quot;Choose a Wikipedia article or browse recent edits, then compare revisions with quoted evidence.&quot;,
-      &quot;base_model&quot;: &quot;deepseek-v4-flash-0731&quot;,
-      &quot;base_label&quot;: &quot;DeepSeek V4 Flash 0731&quot;,
+      &quot;base_model&quot;: &quot;glm-5.3&quot;,
+      &quot;base_label&quot;: &quot;Z.ai: GLM 5.3&quot;,
       &quot;prompt_file&quot;: &quot;examples/research/system-prompt.txt&quot;,
       &quot;starters&quot;: [
         {
           &quot;title&quot;: &quot;Browse recent edits&quot;,
-          &quot;subtitle&quot;: &quot;Find recently updated articles&quot;,
-          &quot;content&quot;: &quot;Show me three recently edited Wikipedia articles so I can choose one to compare.&quot;
+          &quot;subtitle&quot;: &quot;Choose from live Wikipedia updates&quot;,
+          &quot;content&quot;: &quot;Retrieve three recently edited Wikipedia articles with edit dates and links. Let me choose one to compare.&quot;
         },
         {
-          &quot;title&quot;: &quot;Choose an article&quot;,
-          &quot;subtitle&quot;: &quot;Use a topic, title, or link&quot;,
-          &quot;content&quot;: &quot;Help me choose a Wikipedia article by topic, title, or link.&quot;
+          &quot;title&quot;: &quot;Explore a topic&quot;,
+          &quot;subtitle&quot;: &quot;Find articles that interest me&quot;,
+          &quot;content&quot;: &quot;Ask which topic I want to explore, then find three Wikipedia articles I can choose from.&quot;
         },
         {
-          &quot;title&quot;: &quot;Compare provided excerpts&quot;,
-          &quot;subtitle&quot;: &quot;Use a revision pair&quot;,
-          &quot;content&quot;: &quot;I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision.&quot;
+          &quot;title&quot;: &quot;Compare an article&quot;,
+          &quot;subtitle&quot;: &quot;Start with a title or link&quot;,
+          &quot;content&quot;: &quot;Ask me for a Wikipedia article title or link, then retrieve and compare its two most recent revisions.&quot;
         }
       ],
       &quot;logo_file&quot;: &quot;images/cail-logo.png&quot;

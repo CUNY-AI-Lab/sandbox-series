@@ -4,19 +4,19 @@
       "id": "stem-adventure-games",
       "name": "STEM Adventure Games",
       "description": "Explore scientific experiments through a text adventure with numbered choices.",
-      "base_model": "deepseek-v4-flash-0731",
-      "base_label": "DeepSeek V4 Flash 0731",
+      "base_model": "glm-5.3",
+      "base_label": "Z.ai: GLM 5.3",
       "prompt_file": "examples/stem-chat-system-prompt.txt",
       "starters": [
         {
-          "title": "Choose adventures",
-          "subtitle": "",
-          "content": "Show me the adventure menu."
+          "title": "Start an adventure",
+          "subtitle": "Choose from four experiments",
+          "content": "Offer four different experiments to start an adventure. Wait for me to choose."
         },
         {
-          "title": "Explore light",
-          "subtitle": "",
-          "content": "Start an adventure about Newton’s experiments with light and colour."
+          "title": "Explore a field",
+          "subtitle": "Choose experiments within a subject",
+          "content": "Ask which scientific field I want to explore, then offer four different experiment options. Wait for me to choose."
         }
       ],
       "logo_file": "images/cail-logo.png"
@@ -114,24 +114,24 @@
       "id": "compare-wikipedia-revisions",
       "name": "Compare Wikipedia Edits",
       "description": "Choose a Wikipedia article or browse recent edits, then compare revisions with quoted evidence.",
-      "base_model": "deepseek-v4-flash-0731",
-      "base_label": "DeepSeek V4 Flash 0731",
+      "base_model": "glm-5.3",
+      "base_label": "Z.ai: GLM 5.3",
       "prompt_file": "examples/research/system-prompt.txt",
       "starters": [
         {
           "title": "Browse recent edits",
-          "subtitle": "Find recently updated articles",
-          "content": "Show me three recently edited Wikipedia articles so I can choose one to compare."
+          "subtitle": "Choose from live Wikipedia updates",
+          "content": "Retrieve three recently edited Wikipedia articles with edit dates and links. Let me choose one to compare."
         },
         {
-          "title": "Choose an article",
-          "subtitle": "Use a topic, title, or link",
-          "content": "Help me choose a Wikipedia article by topic, title, or link."
+          "title": "Explore a topic",
+          "subtitle": "Find articles that interest me",
+          "content": "Ask which topic I want to explore, then find three Wikipedia articles I can choose from."
         },
         {
-          "title": "Compare provided excerpts",
-          "subtitle": "Use a revision pair",
-          "content": "I will paste before-and-after excerpts with revision IDs and links. Classify one change and quote evidence for your decision."
+          "title": "Compare an article",
+          "subtitle": "Start with a title or link",
+          "content": "Ask me for a Wikipedia article title or link, then retrieve and compare its two most recent revisions."
         }
       ],
       "logo_file": "images/cail-logo.png"

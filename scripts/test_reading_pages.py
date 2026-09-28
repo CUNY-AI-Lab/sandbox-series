@@ -128,7 +128,7 @@ class ReadingPages(unittest.TestCase):
             for node in tree.all(lambda node: node.tag == 'a' and 'download' not in node.attrs):
                 href = node.attrs.get('href', '')
                 self.assertNotIn(href, ['SLIDES.html', 'WORKSHOP.html'])
-                self.assertFalse(href.startswith(('knowledge/', 'skills/')), href)
+                self.assertFalse(href.startswith('skills/'), href)
 
 
 if __name__ == '__main__':

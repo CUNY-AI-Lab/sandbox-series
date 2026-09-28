@@ -146,20 +146,24 @@ class ParticipantContinuity(unittest.TestCase):
     def slide(self, route, title):
         return self.decks[route].all(lambda n: n.has_class('slide') and n.attrs.get('data-title') == title)[0]
 
-    def test_knowledge_continues_chosen_private_model(self):
-        review = self.slide('knowledge/index.html', 'Review Model Settings').text()
-        for name in ['private copy', 'STEM Adventure Games', 'Compare Wikipedia Edits', 'Leave Skills and Tools unselected']:
-            self.assertIn(name, review)
-        attach = self.slide('knowledge/index.html', 'Attach Knowledge Collections').text()
-        self.assertIn('chosen custom model', attach)
-        self.assertNotIn('replace STEM Wikipedia Experiments', attach)
-        refs = self.slide('knowledge/index.html', 'Choose Reference Materials')
-        self.assertIn('Read documents before uploading', refs.text())
+    def test_knowledge_clones_either_example_before_attaching_sources(self):
+        choices=self.slide('knowledge/index.html','Choose Models').text()
+        for name in ['STEM Adventure Games','Compare Wikipedia Edits']:
+            self.assertIn(name,choices)
+        review=self.slide('knowledge/index.html','Review Settings').text()
+        for term in ['unique name','model ID','Save & Create','Leave custom Skills and Tools unselected']:
+            self.assertIn(term,review)
+        attach=self.slide('knowledge/index.html','Attach Knowledge').text()
+        self.assertIn('your own collection',attach)
+        self.assertIn('saved versions',self.slide('knowledge/index.html','Select Sources').text())
+        comparison=self.slide('knowledge/index.html','Compare Responses').text()
+        self.assertIn('choose one experiment for both',comparison)
 
     def test_original_wikipedia_sources_remain_distinct(self):
-        roles = self.slide('knowledge/index.html', 'Review Source Roles').text()
-        for source in ['List of experiments', 'Scientific method', 'Women in science']:
-            self.assertIn(source, roles)
+        roles=self.slide('knowledge/index.html','Prepare Documents').text()
+        for source in ['List of experiments','Scientific method','Women in science']:
+            self.assertIn(source,roles)
+        self.assertIn('historical context',roles)
 
     def test_installed_tool_is_attached_before_testing(self):
         installation = self.slide('skills/index.html', 'Install Tool Code').text()
