@@ -132,6 +132,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(len(knowledge.all(lambda n:n.has_class(class_name))),1,class_name)
         for text in ['Curating knowledge collections','Led by Zach Muhlbauer','New Media Lab · Room 7388.01','CUNY Graduate Center','Thursday, October 1, 2026','2:30–4:00 p.m.']:
             self.assertIn(text,knowledge.text())
+        self.assertIn('Zach Muhlbauer and Meha Gupta',knowledge.text())
         self.assertEqual(knowledge.all(lambda n:n.tag=='time')[0].attrs['datetime'],'2026-10-01T14:30:00-04:00')
         self.assertEqual(knowledge.all(lambda n:n.tag=='canvas')[0].attrs['aria-hidden'],'true')
         self.assertFalse(any(s.has_class('workshop-cover') for s in self.decks['skills/index.html']))
@@ -191,7 +192,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Repeat our opening question',reflection.text())
     def test_08_exact_selector_instruction(self):
         self.assertIn('Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.',self.slide('index.html','Select Models').text())
-        for route,title in [('knowledge/index.html','Test Retrieval'),('skills/index.html','Draft Skills')]:
+        for route,title in [('knowledge/index.html','Test Your Model'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
         root=self.decks['index.html']
@@ -246,12 +247,21 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Explain RAG','Choose Models','Clone Models','Review Settings','Try Models','Prepare Documents','Select Sources','Create Collections','Add Sources','Check Documents','Attach Knowledge','Focus Retrieval','Enable Retrieval','Enable Knowledge','Revise Instructions','Test Retrieval','Check Citations','Compare Responses','Revise and Retest'])
-        self.assertIn('processing',self.slide('knowledge/index.html','Add Sources').text())
-        self.assertIn('your own collection',self.slide('knowledge/index.html','Attach Knowledge').text())
-        self.assertIn('Save & Update',self.slide('knowledge/index.html','Revise Instructions').text())
-        self.assertIn('Native',self.slide('knowledge/index.html','Enable Retrieval').text())
-        self.assertIn('Knowledge Base',self.slide('knowledge/index.html','Enable Knowledge').text())
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Choose Your Model','Clone Your Model','Name Your Copy','Try Your Model','Example Sources','Choose Your Sources','Create Your Collection','Upload Your Sources','Attach Your Collection','Revise System Prompt','Test Your Model','Check Citations','Compare Responses','Revise and Retest'])
+        upload=self.slide('knowledge/index.html','Upload Your Sources')
+        self.assertIn('Your new collection starts empty.',upload.text())
+        self.assertIn('processing',upload.text())
+        image=upload.all(lambda n:n.tag=='img')[0]
+        self.assertIn('No content found',image.attrs['alt'])
+        self.assertTrue(image.attrs['src'].endswith('upload-custom-sources.svg'))
+        self.assertIn('your own collection',self.slide('knowledge/index.html','Attach Your Collection').text())
+        prompt=self.slide('knowledge/index.html','Revise System Prompt').text()
+        for term in ['Replace original source list','filenames you uploaded','how each document should guide your game','Save & Update']:
+            self.assertIn(term,prompt)
+        copy=' '.join(s.text() for s in self.decks['knowledge/index.html'])
+        for term in ['Function Calling','Advanced Params','Enable Knowledge','Enable Retrieval','Explain RAG']:
+            self.assertNotIn(term,copy)
+        self.assertIn('settings carry over when you clone',copy)
     def test_12_game_and_skill_orientation(self):
         self.assert_order('skills/index.html',['Tools & Skills','Review Previous Work','Connect Resources','Enable Tools','Inspect Game Rules','Test Game Commands','Discuss Play Records','Define Skills','Draft Skills','Create Skills','Attach Skills','Extend Procedures'])
         review=self.slide('skills/index.html','Review Previous Work').text()
@@ -303,7 +313,7 @@ class CopyRegressions(unittest.TestCase):
             im=matches[0].all(lambda n:n.tag=='img')[0]
             self.assertRegex(im.attrs['alt'],r'arrow|annotations?');self.assertIn(term,im.attrs['alt']);self.assertTrue(im.attrs['src'].endswith('.svg'))
         for route in ['knowledge/index.html']:
-            workspace=self.slide(route,'Clone Models')
+            workspace=self.slide(route,'Clone Your Model')
             im=workspace.all(lambda n:n.tag=='img')[0]
             self.assertIn('left sidebar',im.attrs['alt'])
             self.assertIn('annotations',im.attrs['alt'])
@@ -326,14 +336,14 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),23)
+        self.assertEqual(len(self.decks['knowledge/index.html']),19)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
         attach=self.slide('skills/index.html','Attach Skills').text()
         for term in ['private copy','Replace Extend STEM Adventures','saved draft','System Prompt to name your skill']:self.assertIn(term,attach)
         self.assertIn('saved draft',self.slide('skills/index.html','Create Skills').text())
-        self.assertIn('saved revisions in my attached collection',self.slide('knowledge/index.html','Test Retrieval').text())
+        self.assertIn('saved revisions in my attached collection',self.slide('knowledge/index.html','Test Your Model').text())
         self.assertIn('Does quoted text match your document?',self.slide('knowledge/index.html','Check Citations').text())
         for route,titles in [('knowledge',['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']),('skills',['Write Instructions','Check Interpretations','Check Skill Drafts','Check Generated Code'])]:
             current=[s.attrs['data-title'] for s in self.decks[route+'/index.html']]
@@ -368,16 +378,16 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Begin Prism Laboratory',text)
         self.assertNotIn('enable Extend STEM Adventures',text)
         self.assertNotIn('render_stem_adventure',text)
-        self.assertIn('Leave custom Skills and Tools unselected',text)
+        self.assertIn('settings carry over when you clone',text)
         self.assertNotIn('Newton',text)
-        check=self.slide('knowledge/index.html','Test Retrieval')
+        check=self.slide('knowledge/index.html','Test Your Model')
         self.assertIn('scene',check.text())
         self.assertIn('Which passage supports this scene?',check.text())
         self.assertFalse(check.all(lambda n:n.tag=='a' and n.attrs.get('download')=='prism-scenario.md'))
-        im=self.slide('knowledge/index.html','Attach Knowledge').all(lambda n:n.tag=='img')[0]
+        im=self.slide('knowledge/index.html','Attach Your Collection').all(lambda n:n.tag=='img')[0]
         self.assertIn('attached collection',im.attrs['alt'])
         self.assertTrue(im.attrs['src'].endswith('.svg'))
-        sources=self.slide('knowledge/index.html','Prepare Documents')
+        sources=self.slide('knowledge/index.html','Example Sources')
         links={n.attrs.get('href') for n in sources.all(lambda n:n.tag=='a')}
         for article in ['List_of_experiments','Scientific_method','Women_in_science']:
             self.assertIn('https://en.wikipedia.org/wiki/'+article,links)
@@ -386,7 +396,7 @@ class CopyRegressions(unittest.TestCase):
         technical = r'(?i)\bJSON\b|\bscenario_json\b|\brender_stem_adventure\b|\bview_skill\b|\b(?:saved|submitted) (?:play )?records?\b|\bFunction Calling\b'
         for route in ROUTES[:2]:
             for slide in self.decks[route]:
-                self.assertNotRegex(slide.text()+' '+authored(slide),technical.replace(r'|\bFunction Calling\b','') if route=='knowledge/index.html' else technical,(route,slide.attrs['data-title']))
+                self.assertNotRegex(slide.text()+' '+authored(slide),technical,(route,slide.attrs['data-title']))
                 for link in slide.all(lambda n:n.tag=='a'):
                     path=link.attrs.get('href','').split('#')[0].split('?')[0]
                     self.assertNotIn(Path(path).suffix,{'.json','.py','.js','.cjs'})
@@ -711,7 +721,10 @@ class CopyRegressions(unittest.TestCase):
         records=json.loads((ROOT/'review/knowledge-outline-2026-09-28/stem-screenshots.json').read_text())
         used={Path(image.attrs['src']).stem for slide in self.decks['knowledge/index.html']
               for image in slide.all(lambda n:n.tag=='img' and n.has_class('screenshot-img'))}
-        self.assertEqual(used,{record['name'] for record in records})
+        self.assertTrue(used <= {record['name'] for record in records})
+        self.assertIn('upload-custom-sources',used)
+        self.assertIn('create-custom-collection',used)
+        self.assertNotIn('add-content',used)
         for record in records:
             raw=ROOT/record['raw']
             capture=ROOT/record['capture_file']

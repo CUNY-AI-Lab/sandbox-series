@@ -147,20 +147,20 @@ class ParticipantContinuity(unittest.TestCase):
         return self.decks[route].all(lambda n: n.has_class('slide') and n.attrs.get('data-title') == title)[0]
 
     def test_knowledge_clones_either_example_before_attaching_sources(self):
-        choices=self.slide('knowledge/index.html','Choose Models').text()
+        choices=self.slide('knowledge/index.html','Choose Your Model').text()
         for name in ['STEM Adventure Games','Compare Wikipedia Edits']:
             self.assertIn(name,choices)
-        review=self.slide('knowledge/index.html','Review Settings').text()
-        for term in ['unique name','model ID','Save & Create','Leave custom Skills and Tools unselected']:
+        review=self.slide('knowledge/index.html','Name Your Copy').text()
+        for term in ['unique name','model ID','Save & Create','settings carry over when you clone']:
             self.assertIn(term,review)
-        attach=self.slide('knowledge/index.html','Attach Knowledge').text()
+        attach=self.slide('knowledge/index.html','Attach Your Collection').text()
         self.assertIn('your own collection',attach)
-        self.assertIn('saved versions',self.slide('knowledge/index.html','Select Sources').text())
+        self.assertIn('saved versions',self.slide('knowledge/index.html','Choose Your Sources').text())
         comparison=self.slide('knowledge/index.html','Compare Responses').text()
         self.assertIn('choose one experiment for both',comparison)
 
     def test_original_wikipedia_sources_remain_distinct(self):
-        roles=self.slide('knowledge/index.html','Prepare Documents').text()
+        roles=self.slide('knowledge/index.html','Example Sources').text()
         for source in ['List of experiments','Scientific method','Women in science']:
             self.assertIn(source,roles)
         self.assertIn('historical context',roles)

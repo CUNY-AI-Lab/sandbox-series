@@ -443,7 +443,7 @@ Keep your draft and choose source documents for your next workshop.
 
 ### Curating knowledge collections
 
-Led by  Zach Muhlbauer
+Led by  Zach Muhlbauer  and  Meha Gupta
 
 New Media Lab · Room 7388.01
 CUNY Graduate Center
@@ -458,11 +458,11 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 - Choose and clone models · 15 minutes
 
-- Select source documents · 20 minutes
+- Select new sources · 25 minutes
 
-- Create knowledge collections · 20 minutes
+- Create and populate collections · 20 minutes
 
-- Configure retrieval · 15 minutes
+- Revise system prompts · 10 minutes
 
 - Test and revise · 20 minutes
 
@@ -474,7 +474,7 @@ Requires individual access, Sandbox sign-in, Workspace and Knowledge access.
 
 ## Curating knowledge collections — 3
 
-### Explain RAG
+### Retrieval-Augmented Generation
 
 A Knowledge collection contains documents your model can search.
 
@@ -488,7 +488,7 @@ A Knowledge collection contains documents your model can search.
 
 ## Curating knowledge collections — 4
 
-### Choose Models
+### Choose Your Model
 
 Follow **STEM Adventure Games**, or choose **Compare Wikipedia Edits**. Work with one model throughout.
 
@@ -508,7 +508,7 @@ Compare Wikipedia revisions and examine changes in wording, claims, and citation
 
 ## Curating knowledge collections — 5
 
-### Clone Models
+### Clone Your Model
 
 ![Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.](images/knowledge-stem-2026-09-28/clone-model.svg)
 
@@ -520,13 +520,13 @@ Select **Workspace** in left sidebar, then **Models**. Search for your chosen ex
 
 ## Curating knowledge collections — 6
 
-### Review Settings
+### Name Your Copy
 
 ![STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.](images/knowledge-stem-2026-09-28/review-clone.svg)
 
 **Alt text:** STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.
 
-Give your copy a unique name and model ID. Review **Base Model** and **System Prompt**. Keep base model unchanged. Leave custom Skills and Tools unselected.
+Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.
 
 Scroll to bottom and select **Save & Create**.
 
@@ -534,7 +534,7 @@ Scroll to bottom and select **Save & Create**.
 
 ## Curating knowledge collections — 7
 
-### Try Models
+### Try Your Model
 
 For **STEM Adventure Games**, select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
 
@@ -544,44 +544,39 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 ## Curating knowledge collections — 8
 
-### Prepare Documents
+### Example Sources
 
-STEM Adventure Games draws on three Wikipedia articles.
+![Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.](images/knowledge-stem-2026-09-28/collection-documents.svg)
 
-- [List of experiments](https://en.wikipedia.org/wiki/List_of_experiments) offers experiments to explore.
+**Alt text:** Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.
 
-- [Scientific method](https://en.wikipedia.org/wiki/Scientific_method) informs experimental choices.
+Original STEM Adventure Games uses [List of experiments](https://en.wikipedia.org/wiki/List_of_experiments) for options, [Scientific method](https://en.wikipedia.org/wiki/Scientific_method) for experimental choices, and [Women in science](https://en.wikipedia.org/wiki/Women_in_science) for historical context.
 
-- [Women in science](https://en.wikipedia.org/wiki/Women_in_science) provides historical context.
-
-For Compare Wikipedia Edits, begin with an article’s [revision history](https://en.wikipedia.org/wiki/Help:Page_history) and [comparison of revisions](https://en.wikipedia.org/wiki/Help:Diff).
+Your version will draw on sources you choose.
 
 ---
 
 ## Curating knowledge collections — 9
 
-### Select Sources
+### Choose Your Sources
 
-Choose material you can read and check. Include article text, source links, and dates in your documents.
+Choose a topic for your version of **STEM Adventure Games**. Select two or three documents about experiments, methods, or historical context you want it to use.
 
-| Model | Source material |
-| --- | --- |
-| STEM Adventure Games | Begin with its three articles; add an article about your chosen experiment. |
-| Compare Wikipedia Edits | Choose from live [Recent changes](https://en.wikipedia.org/wiki/Special:RecentChanges); save two revisions with IDs and links. |
+Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.
 
-Uploaded documents preserve saved versions. Check live pages when updating your collection.
+For **Compare Wikipedia Edits**, choose an article and save two revisions with their IDs and links.
 
 ---
 
 ## Curating knowledge collections — 10
 
-### Create Collections
+### Create Your Collection
 
-![Knowledge collection creation form with annotations identifying name, description, and Create Knowledge.](images/knowledge-stem-2026-09-28/create-collection.svg)
+![Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.](images/knowledge-stem-2026-09-28/create-custom-collection.svg)
 
-**Alt text:** Knowledge collection creation form with annotations identifying name, description, and Create Knowledge.
+**Alt text:** Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.
 
-Select **Workspace → Knowledge → Create**. Name your collection and describe its purpose.
+Select **Workspace → Knowledge → Create**. Name your collection and describe what your sources cover.
 
 Keep access **Private** and select **Create Knowledge**.
 
@@ -589,109 +584,55 @@ Keep access **Private** and select **Create Knowledge**.
 
 ## Curating knowledge collections — 11
 
-### Add Sources
+### Upload Your Sources
 
-![STEM Wikipedia Experiments with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/add-content.svg)
+![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg)
 
-**Alt text:** STEM Wikipedia Experiments with Add Content open and Upload files annotated.
+**Alt text:** New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.
 
-Select **Add Content → Upload files**. Upload your documents and wait for processing to finish.
+Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
 
-PDFs, Markdown, and plain text are supported.
+Wait for processing, then open each file to check text and source links.
 
 ---
 
 ## Curating knowledge collections — 12
 
-### Check Documents
-
-![STEM Wikipedia Experiments filtered to its three original Wikipedia files, with List of experiments, Women in science, and Scientific method annotated.](images/knowledge-stem-2026-09-28/collection-documents.svg)
-
-**Alt text:** STEM Wikipedia Experiments filtered to its three original Wikipedia files, with List of experiments, Women in science, and Scientific method annotated.
-
-Open each document. Check that selected text, source links, and headings are present.
-
-For STEM Adventure Games, check passages about your chosen experiment. For Compare Wikipedia Edits, check that revision IDs match each version.
-
----
-
-## Curating knowledge collections — 13
-
-### Attach Knowledge
+### Attach Your Collection
 
 ![Model editor with white annotations identifying Select Knowledge and an attached collection.](images/knowledge-stem-2026-09-28/attach-knowledge.svg)
 
 **Alt text:** Model editor with white annotations identifying Select Knowledge and an attached collection.
 
-Open your copy in **Workspace → Models**. Under **Knowledge**, select your collection.
+Open your cloned model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
 
-Keep only collections you want your copy to use. Cloning a model keeps links to shared documents, so edit documents in your own collection.
-
----
-
-## Curating knowledge collections — 14
-
-### Focus Retrieval
-
-![Attached STEM Wikipedia Experiments collection showing Using Focused Retrieval with its switch off, outlined and marked by an arrow.](images/knowledge-stem-2026-09-28/focused-retrieval.svg)
-
-**Alt text:** Attached STEM Wikipedia Experiments collection showing Using Focused Retrieval with its switch off, outlined and marked by an arrow.
-
-Click your attached collection. Leave its switch off so it reads **Using Focused Retrieval**.
-
-This mode retrieves relevant passages for your request.
+Continue to **System Prompt** in this editor.
 
 ---
 
-## Curating knowledge collections — 15
+## Curating knowledge collections — 13
 
-### Enable Retrieval
+### Revise System Prompt
 
-![Advanced Params with Function Calling set to Native, outlined and marked by an arrow.](images/knowledge-stem-2026-09-28/native-retrieval.svg)
+Replace original source list with filenames you uploaded. Explain how each document should guide your game.
 
-**Alt text:** Advanced Params with Function Calling set to Native, outlined and marked by an arrow.
+- **Purpose** · Name your chosen topic.
 
-Open **Advanced Params** and set **Function Calling** to **Native**.
+- **Procedure** · Use your sources to develop scenes and choices.
 
-This allows your model to use built-in Knowledge tools to search and read documents.
+- **Constraints** · Require source support for historical details.
 
----
+- **Format** · Preserve brief scenes and four numbered choices.
 
-## Curating knowledge collections — 16
-
-### Enable Knowledge
-
-![Model settings with Citations and Builtin Tools checked under Capabilities, and Knowledge Base checked under Builtin Tools. White outlines identify these settings.](images/knowledge-stem-2026-09-28/retrieval-capabilities.svg)
-
-**Alt text:** Model settings with Citations and Builtin Tools checked under Capabilities, and Knowledge Base checked under Builtin Tools. White outlines identify these settings.
-
-Under **Capabilities**, enable **Builtin Tools** and **Citations**. Under **Builtin Tools**, enable **Knowledge Base**.
-
-These tools are included in Open WebUI.
-
----
-
-## Curating knowledge collections — 17
-
-### Revise Instructions
-
-Review **System Prompt** in your copy. Name your documents and explain when to consult them. Revise one component.
-
-- **Purpose** · What should your model help you accomplish?
-
-- **Procedure** · When should it retrieve from your collection?
-
-- **Constraints** · What should it do when sources are insufficient?
-
-- **Format** · How should it present responses?
+For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.
 
 Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 14
 
-### Test Retrieval
+### Test Your Model
 
 ![STEM Adventure Games chat showing four experiment choices and an annotated model selector.](images/knowledge-stem-2026-09-28/test-retrieval.svg)
 
@@ -699,13 +640,13 @@ Select **Save & Update**.
 
 Start a new chat. Select model ID on bottom right of message box. Choose your copy.
 
-Ask STEM Adventure Games for four new adventures. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
+Ask for four experiments about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
 
-For Compare Wikipedia Edits, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
+For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 15
 
 ### Check Citations
 
@@ -721,33 +662,31 @@ Select a citation to inspect its source.
 
 ---
 
-## Curating knowledge collections — 20
+## Curating knowledge collections — 16
 
 ### Compare Responses
 
-Use your same request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
+Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
 
-- What changed after you added sources? For STEM, check scenes and experimental choices.
+- What changed with your sources and instructions? For STEM, check scenes and experimental choices.
 
 - What did your model miss or misinterpret?
 
 ---
 
-## Curating knowledge collections — 21
+## Curating knowledge collections — 17
 
 ### Revise and Retest
 
-Change one document or instruction based on what you observed, then repeat your request in a new chat.
+Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.
 
-If retrieval fails, check file processing, collection attachment, and Knowledge settings.
-
-Keep base model unchanged so you can examine effects of your revision.
+If your model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
 
 ---
 
-## Curating knowledge collections — 22
+## Curating knowledge collections — 18
 
-### Share Models
+### Share Your Model
 
 To share your work, grant intended users or groups **Read** access to both your model and its collection.
 
@@ -757,7 +696,7 @@ Ask someone to try your model and check its citations.
 
 ---
 
-## Curating knowledge collections — 23
+## Curating knowledge collections — 19
 
 ### Workshop Resources
 

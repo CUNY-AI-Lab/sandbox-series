@@ -192,9 +192,9 @@ How should it present responses?</pre></div></div></div></div>
 
 
 <div class="copy-content">
-<a class="cover-lab" href="https://ailab.gc.cuny.edu/" target="_blank" rel="noopener"><img class="cover-wordmark" src="images/cail-wordmark-white.png" alt="CUNY AI Lab" width="1154" height="259" loading="lazy" decoding="async"><p class="image-alt"><strong>Alt text:</strong> CUNY AI Lab</p></a>
+<a class="cover-lab" href="https://ailab.gc.cuny.edu/" rel="noopener" target="_blank"><img alt="CUNY AI Lab" class="cover-wordmark" height="259" src="images/cail-wordmark-white.png" width="1154" loading="lazy" decoding="async"><p class="image-alt"><strong>Alt text:</strong> CUNY AI Lab</p></a>
 <div class="cover-heading"></div>
-<div class="cover-details"><p class="cover-credit">Led by <span class="cover-name">Zach Muhlbauer</span></p><p class="cover-location">New Media Lab · Room 7388.01<br>CUNY Graduate Center</p><p class="cover-date"><time datetime="2026-10-01T14:30:00-04:00"><span class="cover-day">Thursday, October 1, 2026</span> <span class="cover-time">2:30–4:00 p.m.</span></time></p></div>
+<div class="cover-details"><p class="cover-credit">Led by <span class="cover-name">Zach Muhlbauer</span> and <span class="cover-name">Meha Gupta</span></p><p class="cover-location">New Media Lab · Room 7388.01<br>CUNY Graduate Center</p><p class="cover-date"><time datetime="2026-10-01T14:30:00-04:00"><span class="cover-day">Thursday, October 1, 2026</span> <span class="cover-time">2:30–4:00 p.m.</span></time></p></div>
 </div>
 
 </section>
@@ -202,20 +202,12 @@ How should it present responses?</pre></div></div></div></div>
 <section class="copy-section" id="workshop-2-slide-2" aria-labelledby="workshop-2-copy-heading-2">
 <p class="slide-link"><a href="knowledge/index.html#2">Slide 2</a></p>
 <h2 id="workshop-2-copy-heading-2">Workshop Agenda</h2>
-<div class="copy-content"><div class="slide-body slide-stack"><ul class="agenda">
-<li>Choose and clone models · 15 minutes</li>
-<li>Select source documents · 20 minutes</li>
-<li>Create knowledge collections · 20 minutes</li>
-<li>Configure retrieval · 15 minutes</li>
-<li>Test and revise · 20 minutes</li>
-</ul>
-<p>Requires individual access, Sandbox sign-in, Workspace and Knowledge access.</p>
-<p><a href="https://chat.ailab.gc.cuny.edu/" rel="noopener" target="_blank">Open Sandbox</a></p></div></div>
+<div class="copy-content"><div class="slide-body slide-stack"><ul class="agenda"><li>Choose and clone models · 15 minutes</li><li>Select new sources · 25 minutes</li><li>Create and populate collections · 20 minutes</li><li>Revise system prompts · 10 minutes</li><li>Test and revise · 20 minutes</li></ul><p>Requires individual access, Sandbox sign-in, Workspace and Knowledge access.</p><p><a href="https://chat.ailab.gc.cuny.edu/" rel="noopener" target="_blank">Open Sandbox</a></p></div></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-3" aria-labelledby="workshop-2-copy-heading-3">
 <p class="slide-link"><a href="knowledge/index.html#3">Slide 3</a></p>
-<h2 id="workshop-2-copy-heading-3">Explain RAG</h2>
+<h2 id="workshop-2-copy-heading-3">Retrieval-Augmented Generation</h2>
 <div class="copy-content"><div class="slide-body slide-stack"><p>A Knowledge collection contains documents your model can search.</p>
 <p><strong>Retrieval-augmented generation (RAG)</strong> combines information retrieval with text generation. Relevant passages are retrieved from external sources and added to a model’s context. Your model uses those passages with your request and system prompt instructions to generate a response.</p>
 <p><strong>Search sources → Retrieve passages → Generate response</strong></p>
@@ -224,140 +216,74 @@ How should it present responses?</pre></div></div></div></div>
 
 <section class="copy-section" id="workshop-2-slide-4" aria-labelledby="workshop-2-copy-heading-4">
 <p class="slide-link"><a href="knowledge/index.html#4">Slide 4</a></p>
-<h2 id="workshop-2-copy-heading-4">Choose Models</h2>
+<h2 id="workshop-2-copy-heading-4">Choose Your Model</h2>
 <div class="copy-content"><div class="slide-body slide-stack"><p>Follow <strong>STEM Adventure Games</strong>, or choose <strong>Compare Wikipedia Edits</strong>. Work with one model throughout.</p><div class="grid-2 model-options"><article class="card"><p class="model-kind">Teaching</p><h3><a href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games" rel="noopener" target="_blank">STEM Adventure Games</a></h3><p>Explore scientific experiments through a text adventure with numbered choices.</p></article><article class="card"><p class="model-kind">Research</p><h3><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions" rel="noopener" target="_blank">Compare Wikipedia Edits</a></h3><p>Compare Wikipedia revisions and examine changes in wording, claims, and citations.</p></article></div></div></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-5" aria-labelledby="workshop-2-copy-heading-5">
 <p class="slide-link"><a href="knowledge/index.html#5">Slide 5</a></p>
-<h2 id="workshop-2-copy-heading-5">Clone Models</h2>
+<h2 id="workshop-2-copy-heading-5">Clone Your Model</h2>
 <div class="copy-content"><figure><img alt="Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model." class="screenshot-img" src="images/knowledge-stem-2026-09-28/clone-model.svg" loading="lazy" decoding="async" width="1871" height="600"><p class="image-alt"><strong>Alt text:</strong> Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.</p><figcaption><p>Select <strong>Workspace</strong> in left sidebar, then <strong>Models</strong>. Search for your chosen example. Open <strong>⋯</strong> beside it and select <strong>Clone</strong>.</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-6" aria-labelledby="workshop-2-copy-heading-6">
 <p class="slide-link"><a href="knowledge/index.html#6">Slide 6</a></p>
-<h2 id="workshop-2-copy-heading-6">Review Settings</h2>
-<div class="copy-content"><figure><img alt="STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model." class="screenshot-img" src="images/knowledge-stem-2026-09-28/review-clone.svg" loading="lazy" decoding="async" width="1790" height="640"><p class="image-alt"><strong>Alt text:</strong> STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.</p><figcaption><p>Give your copy a unique name and model ID. Review <strong>Base Model</strong> and <strong>System Prompt</strong>. Keep base model unchanged. Leave custom Skills and Tools unselected.</p>
-<p>Scroll to bottom and select <strong>Save &amp; Create</strong>.</p></figcaption></figure></div>
+<h2 id="workshop-2-copy-heading-6">Name Your Copy</h2>
+<div class="copy-content"><figure><img alt="STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model." class="screenshot-img" src="images/knowledge-stem-2026-09-28/review-clone.svg" loading="lazy" decoding="async" width="1790" height="640"><p class="image-alt"><strong>Alt text:</strong> STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.</p><figcaption><p>Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.</p><p>Scroll to bottom and select <strong>Save &amp; Create</strong>.</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-7" aria-labelledby="workshop-2-copy-heading-7">
 <p class="slide-link"><a href="knowledge/index.html#7">Slide 7</a></p>
-<h2 id="workshop-2-copy-heading-7">Try Models</h2>
+<h2 id="workshop-2-copy-heading-7">Try Your Model</h2>
 <div class="copy-content"><div class="slide-body slide-stack"><p>For <strong>STEM Adventure Games</strong>, select <strong>Start an adventure</strong>. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.</p>
 <p>For <strong>Compare Wikipedia Edits</strong>, ask “Retrieve three recently edited Wikipedia articles with dates and links.” Choose an article to compare.</p></div></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-8" aria-labelledby="workshop-2-copy-heading-8">
 <p class="slide-link"><a href="knowledge/index.html#8">Slide 8</a></p>
-<h2 id="workshop-2-copy-heading-8">Prepare Documents</h2>
-<div class="copy-content"><div class="slide-body slide-stack"><p>STEM Adventure Games draws on three Wikipedia articles.</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/List_of_experiments" rel="noopener" target="_blank">List of experiments</a> offers experiments to explore.</li>
-<li><a href="https://en.wikipedia.org/wiki/Scientific_method" rel="noopener" target="_blank">Scientific method</a> informs experimental choices.</li>
-<li><a href="https://en.wikipedia.org/wiki/Women_in_science" rel="noopener" target="_blank">Women in science</a> provides historical context.</li>
-</ul>
-<p>For Compare Wikipedia Edits, begin with an article’s <a href="https://en.wikipedia.org/wiki/Help:Page_history" rel="noopener" target="_blank">revision history</a> and <a href="https://en.wikipedia.org/wiki/Help:Diff" rel="noopener" target="_blank">comparison of revisions</a>.</p></div></div>
+<h2 id="workshop-2-copy-heading-8">Example Sources</h2>
+<div class="copy-content"><figure><img alt="Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration." class="screenshot-img" src="images/knowledge-stem-2026-09-28/collection-documents.svg" loading="lazy" decoding="async" width="1786" height="505"><p class="image-alt"><strong>Alt text:</strong> Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.</p><figcaption><p>Original STEM Adventure Games uses <a href="https://en.wikipedia.org/wiki/List_of_experiments" rel="noopener" target="_blank">List of experiments</a> for options, <a href="https://en.wikipedia.org/wiki/Scientific_method" rel="noopener" target="_blank">Scientific method</a> for experimental choices, and <a href="https://en.wikipedia.org/wiki/Women_in_science" rel="noopener" target="_blank">Women in science</a> for historical context.</p><p>Your version will draw on sources you choose.</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-9" aria-labelledby="workshop-2-copy-heading-9">
 <p class="slide-link"><a href="knowledge/index.html#9">Slide 9</a></p>
-<h2 id="workshop-2-copy-heading-9">Select Sources</h2>
-<div class="copy-content"><div class="slide-body slide-stack"><p>Choose material you can read and check. Include article text, source links, and dates in your documents.</p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>Source material</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>STEM Adventure Games</td>
-<td>Begin with its three articles; add an article about your chosen experiment.</td>
-</tr>
-<tr>
-<td>Compare Wikipedia Edits</td>
-<td>Choose from live <a href="https://en.wikipedia.org/wiki/Special:RecentChanges" rel="noopener" target="_blank">Recent changes</a>; save two revisions with IDs and links.</td>
-</tr>
-</tbody>
-</table>
-<p>Uploaded documents preserve saved versions. Check live pages when updating your collection.</p></div></div>
+<h2 id="workshop-2-copy-heading-9">Choose Your Sources</h2>
+<div class="copy-content"><div class="slide-body slide-stack"><p>Choose a topic for your version of <strong>STEM Adventure Games</strong>. Select two or three documents about experiments, methods, or historical context you want it to use.</p><p>Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.</p><p>For <strong>Compare Wikipedia Edits</strong>, choose an article and save two revisions with their IDs and links.</p></div></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-10" aria-labelledby="workshop-2-copy-heading-10">
 <p class="slide-link"><a href="knowledge/index.html#10">Slide 10</a></p>
-<h2 id="workshop-2-copy-heading-10">Create Collections</h2>
-<div class="copy-content"><figure><img alt="Knowledge collection creation form with annotations identifying name, description, and Create Knowledge." class="screenshot-img" src="images/knowledge-stem-2026-09-28/create-collection.svg" loading="lazy" decoding="async" width="900" height="590"><p class="image-alt"><strong>Alt text:</strong> Knowledge collection creation form with annotations identifying name, description, and Create Knowledge.</p><figcaption><p>Select <strong>Workspace → Knowledge → Create</strong>. Name your collection and describe its purpose.</p>
-<p>Keep access <strong>Private</strong> and select <strong>Create Knowledge</strong>.</p></figcaption></figure></div>
+<h2 id="workshop-2-copy-heading-10">Create Your Collection</h2>
+<div class="copy-content"><figure><img alt="Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge." class="screenshot-img" src="images/knowledge-stem-2026-09-28/create-custom-collection.svg" loading="lazy" decoding="async" width="879" height="577"><p class="image-alt"><strong>Alt text:</strong> Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.</p><figcaption><p>Select <strong>Workspace → Knowledge → Create</strong>. Name your collection and describe what your sources cover.</p><p>Keep access <strong>Private</strong> and select <strong>Create Knowledge</strong>.</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-11" aria-labelledby="workshop-2-copy-heading-11">
 <p class="slide-link"><a href="knowledge/index.html#11">Slide 11</a></p>
-<h2 id="workshop-2-copy-heading-11">Add Sources</h2>
-<div class="copy-content"><figure><img alt="STEM Wikipedia Experiments with Add Content open and Upload files annotated." class="screenshot-img" src="images/knowledge-stem-2026-09-28/add-content.svg" loading="lazy" decoding="async" width="1786" height="510"><p class="image-alt"><strong>Alt text:</strong> STEM Wikipedia Experiments with Add Content open and Upload files annotated.</p><figcaption><p>Select <strong>Add Content → Upload files</strong>. Upload your documents and wait for processing to finish.</p>
-<p>PDFs, Markdown, and plain text are supported.</p></figcaption></figure></div>
+<h2 id="workshop-2-copy-heading-11">Upload Your Sources</h2>
+<div class="copy-content"><figure><img alt="New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated." class="screenshot-img" src="images/knowledge-stem-2026-09-28/upload-custom-sources.svg" loading="lazy" decoding="async" width="1786" height="510"><p class="image-alt"><strong>Alt text:</strong> New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.</p><figcaption><p>Your new collection starts empty. Select <strong>Add Content → Upload files</strong> and upload documents you prepared.</p><p>Wait for processing, then open each file to check text and source links.</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-12" aria-labelledby="workshop-2-copy-heading-12">
 <p class="slide-link"><a href="knowledge/index.html#12">Slide 12</a></p>
-<h2 id="workshop-2-copy-heading-12">Check Documents</h2>
-<div class="copy-content"><figure><img alt="STEM Wikipedia Experiments filtered to its three original Wikipedia files, with List of experiments, Women in science, and Scientific method annotated." class="screenshot-img" src="images/knowledge-stem-2026-09-28/collection-documents.svg" loading="lazy" decoding="async" width="1786" height="505"><p class="image-alt"><strong>Alt text:</strong> STEM Wikipedia Experiments filtered to its three original Wikipedia files, with List of experiments, Women in science, and Scientific method annotated.</p><figcaption><p>Open each document. Check that selected text, source links, and headings are present.</p>
-<p>For STEM Adventure Games, check passages about your chosen experiment. For Compare Wikipedia Edits, check that revision IDs match each version.</p></figcaption></figure></div>
+<h2 id="workshop-2-copy-heading-12">Attach Your Collection</h2>
+<div class="copy-content"><figure><img alt="Model editor with white annotations identifying Select Knowledge and an attached collection." class="screenshot-img" src="images/knowledge-stem-2026-09-28/attach-knowledge.svg" loading="lazy" decoding="async" width="1767" height="306"><p class="image-alt"><strong>Alt text:</strong> Model editor with white annotations identifying Select Knowledge and an attached collection.</p><figcaption><p>Open your cloned model in <strong>Workspace → Models</strong>. Under <strong>Knowledge</strong>, remove any inherited collection attachments, then select your own collection.</p><p>Continue to <strong>System Prompt</strong> in this editor.</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-13" aria-labelledby="workshop-2-copy-heading-13">
 <p class="slide-link"><a href="knowledge/index.html#13">Slide 13</a></p>
-<h2 id="workshop-2-copy-heading-13">Attach Knowledge</h2>
-<div class="copy-content"><figure><img alt="Model editor with white annotations identifying Select Knowledge and an attached collection." class="screenshot-img" src="images/knowledge-stem-2026-09-28/attach-knowledge.svg" loading="lazy" decoding="async" width="1767" height="306"><p class="image-alt"><strong>Alt text:</strong> Model editor with white annotations identifying Select Knowledge and an attached collection.</p><figcaption><p>Open your copy in <strong>Workspace → Models</strong>. Under <strong>Knowledge</strong>, select your collection.</p>
-<p>Keep only collections you want your copy to use. Cloning a model keeps links to shared documents, so edit documents in your own collection.</p></figcaption></figure></div>
+<h2 id="workshop-2-copy-heading-13">Revise System Prompt</h2>
+<div class="copy-content"><div class="slide-body slide-stack"><p>Replace original source list with filenames you uploaded. Explain how each document should guide your game.</p><ul><li><strong>Purpose</strong> · Name your chosen topic.</li><li><strong>Procedure</strong> · Use your sources to develop scenes and choices.</li><li><strong>Constraints</strong> · Require source support for historical details.</li><li><strong>Format</strong> · Preserve brief scenes and four numbered choices.</li></ul><p>For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.</p><p>Select <strong>Save &amp; Update</strong>.</p></div></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-14" aria-labelledby="workshop-2-copy-heading-14">
 <p class="slide-link"><a href="knowledge/index.html#14">Slide 14</a></p>
-<h2 id="workshop-2-copy-heading-14">Focus Retrieval</h2>
-<div class="copy-content"><figure><img alt="Attached STEM Wikipedia Experiments collection showing Using Focused Retrieval with its switch off, outlined and marked by an arrow." class="screenshot-img" src="images/knowledge-stem-2026-09-28/focused-retrieval.svg" loading="lazy" decoding="async" width="1220" height="346"><p class="image-alt"><strong>Alt text:</strong> Attached STEM Wikipedia Experiments collection showing Using Focused Retrieval with its switch off, outlined and marked by an arrow.</p><figcaption><p>Click your attached collection. Leave its switch off so it reads <strong>Using Focused Retrieval</strong>.</p>
-<p>This mode retrieves relevant passages for your request.</p></figcaption></figure></div>
+<h2 id="workshop-2-copy-heading-14">Test Your Model</h2>
+<div class="copy-content"><figure><img alt="STEM Adventure Games chat showing four experiment choices and an annotated model selector." class="screenshot-img" src="images/knowledge-stem-2026-09-28/test-retrieval.svg" loading="lazy" decoding="async" width="1871" height="950"><p class="image-alt"><strong>Alt text:</strong> STEM Adventure Games chat showing four experiment choices and an annotated model selector.</p><figcaption><p>Start a new chat. Select model ID on bottom right of message box. Choose your copy.</p><p>Ask for four experiments about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”</p><p>For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”</p></figcaption></figure></div>
 </section>
 
 <section class="copy-section" id="workshop-2-slide-15" aria-labelledby="workshop-2-copy-heading-15">
 <p class="slide-link"><a href="knowledge/index.html#15">Slide 15</a></p>
-<h2 id="workshop-2-copy-heading-15">Enable Retrieval</h2>
-<div class="copy-content"><figure><img alt="Advanced Params with Function Calling set to Native, outlined and marked by an arrow." class="screenshot-img" src="images/knowledge-stem-2026-09-28/native-retrieval.svg" loading="lazy" decoding="async" width="820" height="246"><p class="image-alt"><strong>Alt text:</strong> Advanced Params with Function Calling set to Native, outlined and marked by an arrow.</p><figcaption><p>Open <strong>Advanced Params</strong> and set <strong>Function Calling</strong> to <strong>Native</strong>.</p>
-<p>This allows your model to use built-in Knowledge tools to search and read documents.</p></figcaption></figure></div>
-</section>
-
-<section class="copy-section" id="workshop-2-slide-16" aria-labelledby="workshop-2-copy-heading-16">
-<p class="slide-link"><a href="knowledge/index.html#16">Slide 16</a></p>
-<h2 id="workshop-2-copy-heading-16">Enable Knowledge</h2>
-<div class="copy-content"><figure><img alt="Model settings with Citations and Builtin Tools checked under Capabilities, and Knowledge Base checked under Builtin Tools. White outlines identify these settings." class="screenshot-img" src="images/knowledge-stem-2026-09-28/retrieval-capabilities.svg" loading="lazy" decoding="async" width="1490" height="420"><p class="image-alt"><strong>Alt text:</strong> Model settings with Citations and Builtin Tools checked under Capabilities, and Knowledge Base checked under Builtin Tools. White outlines identify these settings.</p><figcaption><p>Under <strong>Capabilities</strong>, enable <strong>Builtin Tools</strong> and <strong>Citations</strong>. Under <strong>Builtin Tools</strong>, enable <strong>Knowledge Base</strong>.</p>
-<p>These tools are included in Open WebUI.</p></figcaption></figure></div>
-</section>
-
-<section class="copy-section" id="workshop-2-slide-17" aria-labelledby="workshop-2-copy-heading-17">
-<p class="slide-link"><a href="knowledge/index.html#17">Slide 17</a></p>
-<h2 id="workshop-2-copy-heading-17">Revise Instructions</h2>
-<div class="copy-content"><div class="slide-body slide-stack"><p>Review <strong>System Prompt</strong> in your copy. Name your documents and explain when to consult them. Revise one component.</p>
-<ul class="feature-list">
-<li><strong>Purpose</strong> · What should your model help you accomplish?</li>
-<li><strong>Procedure</strong> · When should it retrieve from your collection?</li>
-<li><strong>Constraints</strong> · What should it do when sources are insufficient?</li>
-<li><strong>Format</strong> · How should it present responses?</li>
-</ul>
-<p>Select <strong>Save &amp; Update</strong>.</p></div></div>
-</section>
-
-<section class="copy-section" id="workshop-2-slide-18" aria-labelledby="workshop-2-copy-heading-18">
-<p class="slide-link"><a href="knowledge/index.html#18">Slide 18</a></p>
-<h2 id="workshop-2-copy-heading-18">Test Retrieval</h2>
-<div class="copy-content"><figure><img alt="STEM Adventure Games chat showing four experiment choices and an annotated model selector." class="screenshot-img" src="images/knowledge-stem-2026-09-28/test-retrieval.svg" loading="lazy" decoding="async" width="1871" height="950"><p class="image-alt"><strong>Alt text:</strong> STEM Adventure Games chat showing four experiment choices and an annotated model selector.</p><figcaption><p>Start a new chat. Select model ID on bottom right of message box. Choose your copy.</p>
-<p>Ask STEM Adventure Games for four new adventures. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”</p>
-<p>For Compare Wikipedia Edits, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”</p></figcaption></figure></div>
-</section>
-
-<section class="copy-section" id="workshop-2-slide-19" aria-labelledby="workshop-2-copy-heading-19">
-<p class="slide-link"><a href="knowledge/index.html#19">Slide 19</a></p>
-<h2 id="workshop-2-copy-heading-19">Check Citations</h2>
+<h2 id="workshop-2-copy-heading-15">Check Citations</h2>
 <div class="copy-content"><figure><img alt="Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated." class="screenshot-img" src="images/knowledge-stem-2026-09-28/check-citations.svg" loading="lazy" decoding="async" width="1195" height="562"><p class="image-alt"><strong>Alt text:</strong> Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.</p><figcaption><p>Select a citation to inspect its source.</p>
 <ul>
 <li>Does quoted text match your document?</li>
@@ -365,35 +291,33 @@ How should it present responses?</pre></div></div></div></div>
 </ul></figcaption></figure></div>
 </section>
 
-<section class="copy-section" id="workshop-2-slide-20" aria-labelledby="workshop-2-copy-heading-20">
-<p class="slide-link"><a href="knowledge/index.html#20">Slide 20</a></p>
-<h2 id="workshop-2-copy-heading-20">Compare Responses</h2>
-<div class="copy-content"><div class="slide-body slide-stack"><p>Use your same request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.</p>
+<section class="copy-section" id="workshop-2-slide-16" aria-labelledby="workshop-2-copy-heading-16">
+<p class="slide-link"><a href="knowledge/index.html#16">Slide 16</a></p>
+<h2 id="workshop-2-copy-heading-16">Compare Responses</h2>
+<div class="copy-content"><div class="slide-body slide-stack"><p>Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.</p>
 <ul>
-<li>What changed after you added sources? For STEM, check scenes and experimental choices.</li>
+<li>What changed with your sources and instructions? For STEM, check scenes and experimental choices.</li>
 <li>What did your model miss or misinterpret?</li>
 </ul></div></div>
 </section>
 
-<section class="copy-section" id="workshop-2-slide-21" aria-labelledby="workshop-2-copy-heading-21">
-<p class="slide-link"><a href="knowledge/index.html#21">Slide 21</a></p>
-<h2 id="workshop-2-copy-heading-21">Revise and Retest</h2>
-<div class="copy-content"><div class="slide-body slide-stack"><p>Change one document or instruction based on what you observed, then repeat your request in a new chat.</p>
-<p>If retrieval fails, check file processing, collection attachment, and Knowledge settings.</p>
-<p>Keep base model unchanged so you can examine effects of your revision.</p></div></div>
+<section class="copy-section" id="workshop-2-slide-17" aria-labelledby="workshop-2-copy-heading-17">
+<p class="slide-link"><a href="knowledge/index.html#17">Slide 17</a></p>
+<h2 id="workshop-2-copy-heading-17">Revise and Retest</h2>
+<div class="copy-content"><div class="slide-body slide-stack"><p>Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.</p><p>If your model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.</p></div></div>
 </section>
 
-<section class="copy-section" id="workshop-2-slide-22" aria-labelledby="workshop-2-copy-heading-22">
-<p class="slide-link"><a href="knowledge/index.html#22">Slide 22</a></p>
-<h2 id="workshop-2-copy-heading-22">Share Models</h2>
+<section class="copy-section" id="workshop-2-slide-18" aria-labelledby="workshop-2-copy-heading-18">
+<p class="slide-link"><a href="knowledge/index.html#18">Slide 18</a></p>
+<h2 id="workshop-2-copy-heading-18">Share Your Model</h2>
 <div class="copy-content"><div class="slide-body slide-stack"><p>To share your work, grant intended users or groups <strong>Read</strong> access to both your model and its collection.</p>
 <p>Ask someone to try your model and check its citations.</p>
 </div><footer class="slide-footer"><a href="https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/" rel="noopener" target="_blank"><span class="link-label">Sandbox Roles &amp; Permissions</span><span class="link-url">https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/</span></a></footer></div>
 </section>
 
-<section class="copy-section" id="workshop-2-slide-23" aria-labelledby="workshop-2-copy-heading-23">
-<p class="slide-link"><a href="knowledge/index.html#23">Slide 23</a></p>
-<h2 id="workshop-2-copy-heading-23">Workshop Resources</h2>
+<section class="copy-section" id="workshop-2-slide-19" aria-labelledby="workshop-2-copy-heading-19">
+<p class="slide-link"><a href="knowledge/index.html#19">Slide 19</a></p>
+<h2 id="workshop-2-copy-heading-19">Workshop Resources</h2>
 <div class="copy-content"><p>Choose another experiment or article. Refresh source documents when needed and check responses against versions you saved.</p><footer class="slide-footer resource-directory"><div class="resource-group"><h3>Workshop Materials</h3><ul><li><a href="index.html" rel="noopener" target="_blank"><span class="resource-label">Review Composing system prompts</span><span class="link-url">https://cuny-ai-lab.github.io/sandbox-series/index.html</span></a></li><li><a href="https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/" rel="noopener" target="_blank"><span class="resource-label">Consult Sandbox Knowledge documentation</span><span class="link-url">https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/</span></a></li><li><a href="https://docs.openwebui.com/features/workspace/knowledge/" rel="noopener" target="_blank"><span class="resource-label">Consult Open WebUI Knowledge</span><span class="link-url">https://docs.openwebui.com/features/workspace/knowledge/</span></a></li><li><a href="https://tools.ailab.gc.cuny.edu/model-access" rel="noopener" target="_blank"><span class="resource-label">Check monthly usage</span><span class="link-url">https://tools.ailab.gc.cuny.edu/model-access</span></a></li></ul></div><div class="resource-group"><h3>Example Models</h3><ul><li><a href="https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games" rel="noopener" target="_blank"><span class="resource-label">Open STEM Adventure Games</span><span class="link-url">https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games</span></a></li><li><a href="https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions" rel="noopener" target="_blank"><span class="resource-label">Open Compare Wikipedia Edits</span><span class="link-url">https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions</span></a></li></ul></div></footer></div>
 </section></section>
 <section id="workshop-3"><h2>Configuring skills and tools</h2><section class="copy-section" id="workshop-3-slide-1" aria-labelledby="workshop-3-copy-heading-1">

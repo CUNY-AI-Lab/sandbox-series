@@ -207,5 +207,43 @@
     "annotation": "SVG overlay; PNG preserves decoded capture pixels",
     "capture_file": "images/knowledge-stem-2026-09-28/check-citations-capture.jpg",
     "capture_sha256": "7208c94a7df75ddcf66d497d8d2a2c5da5bfb37321046024f7a233ef30c6257d"
+  },
+  {
+    "name": "create-custom-collection",
+    "raw": "images/knowledge-stem-2026-09-28/create-custom-collection-raw.png",
+    "sha256": "db65a1a9d8a8c44de2403b965fbc68a059f05bed060fd66c82c5d465867b30a1",
+    "dimensions": [
+      1919,
+      1049
+    ],
+    "view_box": [
+      538,
+      280,
+      879,
+      577
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay; PNG preserves decoded capture pixels",
+    "capture_file": "images/knowledge-stem-2026-09-28/create-custom-collection-capture.jpg",
+    "capture_sha256": "b32b7c4634bb717acfe486a4cd482ef56058ade0da776b5c52f8333bca12a3cc"
+  },
+  {
+    "name": "upload-custom-sources",
+    "raw": "images/knowledge-stem-2026-09-28/upload-custom-sources-raw.png",
+    "sha256": "3277ffe3a79445694cb96ee622b2c56328c23ebc4bcd37da3a1eb7e5af6795f8",
+    "dimensions": [
+      1919,
+      1049
+    ],
+    "view_box": [
+      110,
+      170,
+      1786,
+      510
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay; PNG preserves decoded capture pixels",
+    "capture_file": "images/knowledge-stem-2026-09-28/upload-custom-sources-capture.jpg",
+    "capture_sha256": "712d19f08879d718ae833b70b84670928d06801c5ed5d95e34ecc9ade3ec5ffe"
   }
 ]

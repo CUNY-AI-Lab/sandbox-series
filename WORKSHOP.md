@@ -95,40 +95,43 @@ Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, San
 
 ## Curating knowledge collections
 
-Session two builds on system prompts by attaching source documents and checking how models use them. Participants can join without a configuration from session one. They clone STEM Adventure Games or Compare Wikipedia Edits, curate a small collection, and revise instructions through Purpose, Procedure, Constraints, and Format. STEM is the primary example. Its menu offers four options before retrieval; source checking begins after an experiment is selected.
+Led by Zach Muhlbauer and Meha Gupta.
+
+Participants clone STEM Adventure Games, choose sources for a topic they want to explore, build their own collection, and revise the cloned system prompt to use those documents. Compare Wikipedia Edits remains an alternative. Cloning retains the example's base model and settings; participants spend their time curating sources, revising instructions, and testing.
 
 ### Workshop Agenda
 
 - Choose and clone models · 15 minutes
-- Select source documents · 20 minutes
-- Create knowledge collections · 20 minutes
-- Configure retrieval · 15 minutes
+- Select new sources · 25 minutes
+- Create and populate collections · 20 minutes
+- Revise system prompts · 10 minutes
 - Test and revise · 20 minutes
 
 ### Lesson Plan
 
 | Minutes | Activity | Evidence to examine |
 | --- | --- | --- |
-| 0–15 | Explain RAG, choose an example, clone and rename it, review its prompt and base model, and try it in chat. | Saved copy and an initial interaction |
-| 15–35 | Review the three original STEM Wikipedia sources or choose a live Wikipedia article and two revisions. Select documents participants can independently check. | Source text, links, dates, and revision IDs when relevant |
-| 35–55 | Create a private collection, upload documents, inspect extracted text, and attach it to the cloned model. Remove unrelated attachments from the copy. | Readable files and saved attachment |
-| 55–70 | Select Focused Retrieval, Native Function Calling, Builtin Tools, Knowledge Base, and Citations. Revise one prompt component to explain when and how to consult the selected documents. | Retrieval settings and revised instructions |
-| 70–90 | Select an experiment, ask for evidence, open citations, and compare the same experiment in the original and the copy. For Wikipedia, compare saved revisions from the collection. Revise one document or instruction and retest. Review sharing and workshop resources. | Supported claims, missing evidence, and observed effects of one change |
+| 0–15 | Introduce RAG, choose an example, clone and rename it, and try an initial interaction. | Saved copy and an initial response |
+| 15–40 | Review how original STEM sources contribute to the game. Choose a topic and two or three documents that will guide a different version. Save readable source text with titles, links, and dates. For Wikipedia, choose an article and save two revisions. | Participant-selected sources and intended use for each document |
+| 40–60 | Create a private, empty collection. Upload selected documents, wait for processing, inspect text, and replace the inherited collection attachment on the cloned model. | Uploaded files and the clone's new collection attachment |
+| 60–70 | Replace original source references in the system prompt. Name the chosen topic and explain how each document should guide scenes, choices, and historical details. Retain the game's format and save. | Prompt instructions that match the new source material |
+| 70–90 | Start a new chat, choose an experiment, ask for evidence, and check citations. Compare the same request in the original and customized versions. Revise one source or instruction and retest. | Source-supported details, gaps, and effects of customization |
 
-Use List of experiments, Scientific method, and Women in science as the starting collection for STEM. Participants can add an article about any chosen experiment. Uploaded articles preserve saved versions. New experiment menus should vary; comparisons should name the same experiment to avoid confusing a different scenario with the effect of a source change.
+The original collection is shown before the customization activity. Newly created collections contain no files until participants upload them. Do not imply that cloning creates personal copies of shared source documents. Participants replace the inherited attachment in their own model and upload documents to their own collection.
 
-For Compare Wikipedia Edits, recent article discovery uses live Wikipedia. Collection exercises explicitly request saved revisions from attached documents. The model should preserve their revision IDs and dates instead of silently replacing them with newer edits.
+Settings are prepared on the example cards before participants clone them. The participant deck does not walk through Function Calling, Advanced Params, or capability switches. Keep custom Skills and Tools unselected; the third workshop introduces those separately.
 
-Keep custom Skills and Tools unselected. Native Knowledge tools are built into Open WebUI and require no custom tool installation. Workshop three introduces custom skills and tools separately.
+The STEM opening menu remains immediate. After a selection, the model consults attached documents. Participants should change the source list and any references to it throughout the prompt so instructions agree with their chosen material. They can retain, replace, or supplement source ideas from the original game without being assigned its original files.
 
-Successful tests in an administrator account do not establish participant clone or collection access. Participant account verification remains pending. Source checking in the STEM test identified one unsupported location, so historical details still need to be checked against cited passages.
+For Compare Wikipedia Edits, live Wikipedia helps participants choose articles. The collection exercise uses saved revisions and preserves their IDs and dates. Make sure Knowledge retrieval is enabled on the original card before cloning.
+
+Participant account verification remains pending. Earlier STEM source checking identified an unsupported location, so historical details still need to be checked against quoted passages.
 
 ### Next steps
 
-- Choose another experiment or article
-- Refresh source documents when needed
-- Check responses against saved versions
-- Review shared access with intended users
+- Choose another topic or experiment
+- Update source documents and instructions
+- Check responses against saved sources
 
 ## Configuring skills and tools
 

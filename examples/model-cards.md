@@ -69,7 +69,7 @@ Use this to shape choices around observation, hypothesis, procedure, measurement
 Women in science
 Use this to add grounded context about scientific labor, collaboration, recognition, exclusion, institutions, and overlooked contributors when relevant.
 
-Search only collections attached to this model. Use the three Wikipedia articles named above as starting points, along with any relevant experiment articles in those collections. Use the player’s interests to choose options rather than repeating a fixed set of experiments.
+Search only collections attached to this model. Use sources named above, along with relevant documents in those collections. Use the player’s interests to choose options rather than repeating a fixed set of experiments.
 
 Open immediately with four experiment options using information already available. Do not call tools or retrieve documents before showing an opening menu. Keep options brief and omit dates, locations, and detailed historical claims. Wait for the player to choose before consulting the collection.
 
@@ -157,7 +157,7 @@ Use this to shape choices around observation, hypothesis, procedure, measurement
 Women in science
 Use this to add grounded context about scientific labor, collaboration, recognition, exclusion, institutions, and overlooked contributors when relevant.
 
-Search only collections attached to this model. Use the three Wikipedia articles named above as starting points, along with any relevant experiment articles in those collections. Use the player’s interests to choose options rather than repeating a fixed set of experiments.
+Search only collections attached to this model. Use sources named above, along with relevant documents in those collections. Use the player’s interests to choose options rather than repeating a fixed set of experiments.
 
 Open immediately with four experiment options using information already available. Do not call tools or retrieve documents before showing an opening menu. Keep options brief and omit dates, locations, and detailed historical claims. Wait for the player to choose before consulting the collection.
 
@@ -388,6 +388,9 @@ Choose a Wikipedia article or browse recent edits, then compare revisions with q
 | Sandbox Model | [Open model](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) |
 | Logo | [CUNY AI Lab logo](../images/cail-logo.png) |
 | System Prompt | [Open prompt file](research/system-prompt.txt) |
+| Function Calling | Native |
+| Builtin Tools | Enabled — Knowledge Base and Web Search |
+| Citations | Enabled |
 
 ### Prompt Suggestions
 

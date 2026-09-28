@@ -1,0 +1,331 @@
+diff --git a/knowledge/OUTLINE.md b/knowledge/OUTLINE.md
+index 54449c4..d630dba 100644
+--- a/knowledge/OUTLINE.md
++++ b/knowledge/OUTLINE.md
+@@ -2,21 +2,25 @@
+ 
+ ## 1. Curating knowledge collections
+ 
+-Led by **Zach Muhlbauer**
++Led by  Zach Muhlbauer  and  Meha Gupta
+ 
+-New Media Lab · Room 7388.01<br/>
++New Media Lab · Room 7388.01
+ CUNY Graduate Center
+ 
+-Thursday, October 1, 2026 · 2:30–4:00 p.m.
++Thursday, October 1, 2026   2:30–4:00 p.m.
+ 
+ ---
+ 
+ ## 2. Workshop Agenda
+ 
+ - Choose and clone models · 15 minutes
+-- Select source documents · 20 minutes
+-- Create knowledge collections · 20 minutes
+-- Configure retrieval · 15 minutes
++
++- Select new sources · 25 minutes
++
++- Create and populate collections · 20 minutes
++
++- Revise system prompts · 10 minutes
++
+ - Test and revise · 20 minutes
+ 
+ Requires individual access, Sandbox sign-in, Workspace and Knowledge access.
+@@ -25,7 +29,7 @@ Requires individual access, Sandbox sign-in, Workspace and Knowledge access.
+ 
+ ---
+ 
+-## 3. Explain RAG
++## 3. Retrieval-Augmented Generation
+ 
+ A Knowledge collection contains documents your model can search.
+ 
+@@ -33,20 +37,29 @@ A Knowledge collection contains documents your model can search.
+ 
+ **Search sources → Retrieve passages → Generate response**
+ 
+-[Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
++[Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
+ 
+ ---
+ 
+-## 4. Choose Models
++## 4. Choose Your Model
+ 
+ Follow **STEM Adventure Games**, or choose **Compare Wikipedia Edits**. Work with one model throughout.
+ 
+-- [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games) — Explore scientific experiments through a text adventure with numbered choices.
+-- [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) — Compare Wikipedia revisions and examine changes in wording, claims, and citations.
++Teaching
++
++### [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
++
++Explore scientific experiments through a text adventure with numbered choices.
++
++Research
++
++### [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
++
++Compare Wikipedia revisions and examine changes in wording, claims, and citations.
+ 
+ ---
+ 
+-## 5. Clone Models
++## 5. Clone Your Model
+ 
+ ![Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.](../images/knowledge-stem-2026-09-28/clone-model.svg)
+ 
+@@ -54,17 +67,17 @@ Select **Workspace** in left sidebar, then **Models**. Search for your chosen ex
+ 
+ ---
+ 
+-## 6. Review Settings
++## 6. Name Your Copy
+ 
+ ![STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.](../images/knowledge-stem-2026-09-28/review-clone.svg)
+ 
+-Give your copy a unique name and model ID. Review **Base Model** and **System Prompt**. Keep base model unchanged. Leave custom Skills and Tools unselected.
++Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.
+ 
+ Scroll to bottom and select **Save & Create**.
+ 
+ ---
+ 
+-## 7. Try Models
++## 7. Try Your Model
+ 
+ For **STEM Adventure Games**, select **Start an adventure**. Choose from four experiments and try its numbered choices. Ask for another menu to explore new options.
+ 
+@@ -72,173 +85,142 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
+ 
+ ---
+ 
+-## 8. Prepare Documents
++## 8. Example Sources
+ 
+-STEM Adventure Games draws on three Wikipedia articles.
++![Original STEM Wikipedia Experiments collection filtered to three starting articles. These files belong to original configuration.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
+ 
+-- [List of experiments](https://en.wikipedia.org/wiki/List_of_experiments) offers experiments to explore.
+-- [Scientific method](https://en.wikipedia.org/wiki/Scientific_method) informs experimental choices.
+-- [Women in science](https://en.wikipedia.org/wiki/Women_in_science) provides historical context.
++Original STEM Adventure Games uses [List of experiments](https://en.wikipedia.org/wiki/List_of_experiments) for options, [Scientific method](https://en.wikipedia.org/wiki/Scientific_method) for experimental choices, and [Women in science](https://en.wikipedia.org/wiki/Women_in_science) for historical context.
+ 
+-For Compare Wikipedia Edits, begin with an article’s [revision history](https://en.wikipedia.org/wiki/Help:Page_history) and [comparison of revisions](https://en.wikipedia.org/wiki/Help:Diff).
++Your version will draw on sources you choose.
+ 
+ ---
+ 
+-## 9. Select Sources
++## 9. Choose Your Sources
+ 
+-Choose material you can read and check. Include article text, source links, and dates in your documents.
++Choose a topic for your version of **STEM Adventure Games**. Select two or three documents about experiments, methods, or historical context you want it to use.
+ 
+-| Model | Source material |
+-| --- | --- |
+-| STEM Adventure Games | Begin with its three articles; add an article about your chosen experiment. |
+-| Compare Wikipedia Edits | Choose from live [Recent changes](https://en.wikipedia.org/wiki/Special:RecentChanges); save two revisions with IDs and links. |
++Save source text as PDF, Markdown, or plain text. Include titles, links, and dates. Uploaded documents preserve saved versions.
+ 
+-Uploaded documents preserve saved versions. Check live pages when updating your collection.
++For **Compare Wikipedia Edits**, choose an article and save two revisions with their IDs and links.
+ 
+ ---
+ 
+-## 10. Create Collections
++## 10. Create Your Collection
+ 
+-![Knowledge collection creation form with annotations identifying name, description, and Create Knowledge.](../images/knowledge-stem-2026-09-28/create-collection.svg)
++![Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.](../images/knowledge-stem-2026-09-28/create-custom-collection.svg)
+ 
+-Select **Workspace → Knowledge → Create**. Name your collection and describe its purpose.
++Select **Workspace → Knowledge → Create**. Name your collection and describe what your sources cover.
+ 
+ Keep access **Private** and select **Create Knowledge**.
+ 
+ ---
+ 
+-## 11. Add Sources
++## 11. Upload Your Sources
+ 
+-![STEM Wikipedia Experiments with Add Content open and Upload files annotated.](../images/knowledge-stem-2026-09-28/add-content.svg)
++![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg)
+ 
+-Select **Add Content → Upload files**. Upload your documents and wait for processing to finish.
++Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
+ 
+-PDFs, Markdown, and plain text are supported.
++Wait for processing, then open each file to check text and source links.
+ 
+ ---
+ 
+-## 12. Check Documents
+-
+-![STEM Wikipedia Experiments filtered to its three original Wikipedia files, with List of experiments, Women in science, and Scientific method annotated.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
+-
+-Open each document. Check that selected text, source links, and headings are present.
+-
+-For STEM Adventure Games, check passages about your chosen experiment. For Compare Wikipedia Edits, check that revision IDs match each version.
+-
+----
+-
+-## 13. Attach Knowledge
++## 12. Attach Your Collection
+ 
+ ![Model editor with white annotations identifying Select Knowledge and an attached collection.](../images/knowledge-stem-2026-09-28/attach-knowledge.svg)
+ 
+-Open your copy in **Workspace → Models**. Under **Knowledge**, select your collection.
++Open your cloned model in **Workspace → Models**. Under **Knowledge**, remove any inherited collection attachments, then select your own collection.
+ 
+-Keep only collections you want your copy to use. Cloning a model keeps links to shared documents, so edit documents in your own collection.
++Continue to **System Prompt** in this editor.
+ 
+ ---
+ 
+-## 14. Focus Retrieval
+-
+-![Attached STEM Wikipedia Experiments collection showing Using Focused Retrieval with its switch off, outlined and marked by an arrow.](../images/knowledge-stem-2026-09-28/focused-retrieval.svg)
++## 13. Revise System Prompt
+ 
+-Click your attached collection. Leave its switch off so it reads **Using Focused Retrieval**.
++Replace original source list with filenames you uploaded. Explain how each document should guide your game.
+ 
+-This mode retrieves relevant passages for your request.
++- **Purpose** · Name your chosen topic.
+ 
+----
+-
+-## 15. Enable Retrieval
+-
+-![Advanced Params with Function Calling set to Native, outlined and marked by an arrow.](../images/knowledge-stem-2026-09-28/native-retrieval.svg)
++- **Procedure** · Use your sources to develop scenes and choices.
+ 
+-Open **Advanced Params** and set **Function Calling** to **Native**.
++- **Constraints** · Require source support for historical details.
+ 
+-This allows your model to use built-in Knowledge tools to search and read documents.
+-
+----
++- **Format** · Preserve brief scenes and four numbered choices.
+ 
+-## 16. Enable Knowledge
+-
+-![Model settings with Citations and Builtin Tools checked under Capabilities, and Knowledge Base checked under Builtin Tools. White outlines identify these settings.](../images/knowledge-stem-2026-09-28/retrieval-capabilities.svg)
+-
+-Under **Capabilities**, enable **Builtin Tools** and **Citations**. Under **Builtin Tools**, enable **Knowledge Base**.
+-
+-These tools are included in Open WebUI.
+-
+----
+-
+-## 17. Revise Instructions
+-
+-Review **System Prompt** in your copy. Name your documents and explain when to consult them. Revise one component.
+-
+-- **Purpose** · What should your model help you accomplish?
+-- **Procedure** · When should it retrieve from your collection?
+-- **Constraints** · What should it do when sources are insufficient?
+-- **Format** · How should it present responses?
++For Wikipedia, name saved revisions, specify changes to compare, and retain Before/After quotations.
+ 
+ Select **Save & Update**.
+ 
+ ---
+ 
+-## 18. Test Retrieval
++## 14. Test Your Model
+ 
+ ![STEM Adventure Games chat showing four experiment choices and an annotated model selector.](../images/knowledge-stem-2026-09-28/test-retrieval.svg)
+ 
+ Start a new chat. Select model ID on bottom right of message box. Choose your copy.
+ 
+-Ask STEM Adventure Games for four new adventures. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
++Ask for four experiments about your chosen topic. Choose one, then ask “Which passage supports this scene? Quote it and cite your source.”
+ 
+-For Compare Wikipedia Edits, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
++For Wikipedia, ask “Use saved revisions in my attached collection. Compare one change and quote both passages.”
+ 
+ ---
+ 
+-## 19. Check Citations
++## 15. Check Citations
+ 
+ ![Wikipedia source passage opened from a STEM Adventure Games citation, with its document name and supporting text annotated.](../images/knowledge-stem-2026-09-28/check-citations.svg)
+ 
+ Select a citation to inspect its source.
+ 
+ - Does quoted text match your document?
++
+ - Does it support your model’s interpretation?
+ 
+ ---
+ 
+-## 20. Compare Responses
++## 16. Compare Responses
++
++Use one request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
+ 
+-Use your same request with original model and your copy. For STEM, choose one experiment for both. Compare how each uses source documents.
++- What changed with your sources and instructions? For STEM, check scenes and experimental choices.
+ 
+-- What changed after you added sources? For STEM, check scenes and experimental choices.
+ - What did your model miss or misinterpret?
+ 
+ ---
+ 
+-## 21. Revise and Retest
++## 17. Revise and Retest
+ 
+-Change one document or instruction based on what you observed, then repeat your request in a new chat.
++Change one source document or system prompt instruction based on what you observed, then repeat your request in a new chat.
+ 
+-If retrieval fails, check file processing, collection attachment, and Knowledge settings.
+-
+-Keep base model unchanged so you can examine effects of your revision.
++If your model misses a source, check that its file finished processing, your collection is attached, and instructions name your new documents.
+ 
+ ---
+ 
+-## 22. Share Models
++## 18. Share Your Model
+ 
+ To share your work, grant intended users or groups **Read** access to both your model and its collection.
+ 
+ Ask someone to try your model and check its citations.
+ 
+-[Sandbox Roles & Permissions](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
++[Sandbox Roles & Permissions  https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/](https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/)
+ 
+ ---
+ 
+-## 23. Workshop Resources
+-
+-- [Review Composing system prompts](../index.html)
+-- [Open STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
+-- [Open Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
+-- [Consult Sandbox Knowledge documentation](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+-- [Consult Open WebUI Knowledge](https://docs.openwebui.com/features/workspace/knowledge/)
+-- [Check monthly usage](https://tools.ailab.gc.cuny.edu/model-access)
++## 19. Workshop Resources
+ 
+ Choose another experiment or article. Refresh source documents when needed and check responses against versions you saved.
++
++### Workshop Materials
++
++- [Review Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/index.html](../index.html)
++
++- [Consult Sandbox Knowledge documentation  https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
++
++- [Consult Open WebUI Knowledge  https://docs.openwebui.com/features/workspace/knowledge/](https://docs.openwebui.com/features/workspace/knowledge/)
++
++- [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
++
++### Example Models
++
++- [Open STEM Adventure Games  https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games)
++
++- [Open Compare Wikipedia Edits  https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions)
