@@ -398,8 +398,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual([n.attrs['data-fragment-step'] for n in stages],['0','1'])
         self.assertIn('Workspace',stages[0].text())
         self.assertIn('Knowledge',stages[0].text())
-        self.assertTrue(stages[0].all(lambda n:n.tag=='img')[0].attrs['src'].endswith('find-knowledge.svg'))
-        self.assertTrue(stages[1].all(lambda n:n.tag=='img')[0].attrs['src'].endswith('collection-documents.svg'))
+        self.assertTrue(stages[0].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('find-knowledge.svg'))
+        self.assertTrue(stages[1].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('collection-documents.svg'))
         links={n.attrs.get('href') for n in sources.all(lambda n:n.tag=='a')}
         for article in ['List_of_experiments','Scientific_method','Women_in_science']:
             self.assertIn('https://en.wikipedia.org/wiki/'+article,links)

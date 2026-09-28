@@ -109,11 +109,11 @@ For **Compare Wikipedia Edits**, ask “Retrieve three recently edited Wikipedia
 
 ### Example Sources
 
-![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg)
+![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](../images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-2)
 
 Select **Workspace** in left sidebar, then **Knowledge**. Search for **STEM Wikipedia Experiments** and open its collection.
 
-![STEM Wikipedia Experiments collection filtered to three Wikipedia files, with search and file list outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg)
+![STEM Wikipedia Experiments collection filtered to three Wikipedia files, with search and file list outlined.](../images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-2)
 
 Search **https** to show three Wikipedia documents. Open a file to inspect its text.
 

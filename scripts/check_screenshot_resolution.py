@@ -53,7 +53,7 @@ def main():
                 return tag
             count += 1
             source = re.search(r'\bsrc="([^"]+)"', tag).group(1)
-            limit = display_limit(path.parent / source)
+            limit = display_limit(path.parent / source.split('?', 1)[0])
             expected = f'--screenshot-max-width:{limit}px'
             if expected not in tag:
                 if not write:

@@ -52,7 +52,7 @@ def render(node, slide_heading, route='', destination='workshop-copy.html'):
     if tag == 'img':
         attrs['loading'] = 'lazy'
         attrs['decoding'] = 'async'
-        path = ROOT / route / attrs['src']
+        path = ROOT / route / attrs['src'].split('?', 1)[0]
         if path.suffix.lower() == '.png':
             attrs['width'], attrs['height'] = struct.unpack('>II', path.read_bytes()[16:24])
         elif path.suffix.lower() == '.svg':
