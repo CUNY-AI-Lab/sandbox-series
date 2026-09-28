@@ -4,7 +4,7 @@
 
 Led by **Zach Muhlbauer**
 
-New Media Lab · Room 7388.01  
+New Media Lab · Room 7388.01<br/>
 CUNY Graduate Center
 
 Thursday, October 1, 2026 · 2:30–4:00 p.m.
