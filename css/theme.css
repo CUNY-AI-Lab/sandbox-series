@@ -6,6 +6,7 @@ body[data-workshop] .theme-toggle{left:18px;right:auto}
 [data-theme="light"] .theme-toggle{background:#fff;border-color:#718096;color:#121a2b}
 [data-theme="light"] a{text-decoration-color:#375fa2}
 [data-theme="light"] a:hover{text-decoration-color:#142f68}
+[data-theme="light"] .roadmap-dated .workshop-date{color:#244681}
 [data-theme="light"] button:hover{background:#eaf0f8}
 [data-theme="light"] .prompt-block,[data-theme="light"] pre{border-color:#b8c5d5}
 [data-theme="light"] .screenshot-img{background:#e8edf4;border-color:#b8c5d5}

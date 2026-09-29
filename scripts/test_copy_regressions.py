@@ -342,7 +342,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),23)
+        self.assertEqual(len(self.decks['knowledge/index.html']),24)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
@@ -754,6 +754,18 @@ class CopyRegressions(unittest.TestCase):
             svg=ET.parse(raw.with_name(record['name']+'.svg')).getroot()
             embedded=svg.find('{http://www.w3.org/2000/svg}image').attrib['href']
             self.assertEqual(base64.b64decode(embedded.split(',',1)[1]),raw.read_bytes())
+
+    def test_36_knowledge_roadmap_and_screenshot_order(self):
+        slides=self.decks['knowledge/index.html']
+        self.assertEqual(slides[1].attrs['data-title'],'Workshop Roadmap')
+        roadmap=slides[1]
+        self.assertEqual(len(roadmap.all(lambda n:n.tag=='li')),3)
+        self.assertFalse(any('skills/' in link.attrs.get('href','') for link in roadmap.all(lambda n:n.tag=='a')))
+        for slide in slides:
+            if not slide.has_class('screenshot-slide'):continue
+            for figure in slide.all(lambda n:n.tag=='figure'):
+                children=[node.tag for node in figure.children if isinstance(node,Node)]
+                self.assertEqual(children,['figcaption','img'],slide.attrs['data-title'])
 
     def test_20_ninety_minute_plans(self):
         text=(ROOT/'WORKSHOP.md').read_text()

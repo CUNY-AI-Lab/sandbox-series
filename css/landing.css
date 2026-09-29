@@ -15,7 +15,7 @@ a.workshop-card:focus-visible{outline:3px solid #fff;outline-offset:5px}
 .name{max-width:14ch;font-size:clamp(26px,2.25vw,33px);line-height:1.18;letter-spacing:-.025em;font-weight:540}
 .arrow{position:absolute;right:25px;top:22px;font-size:28px;line-height:1}
 .unavailable{color:#929292;border-color:#3a3a3a;background:#1c1c1c}
-.unavailable .number{color:#777}
+.unavailable .number{color:#a6a6a6}
 @media(max-width:850px){.workshops{grid-template-columns:1fr;gap:12px}.workshop-card{min-height:128px;padding:20px 23px}.name{max-width:none;font-size:27px}.landing{justify-content:flex-start}.wordmark{margin-bottom:54px}}
 @media(max-width:480px){h1{font-size:44px}.name{max-width:12ch}.workshop-card{min-height:150px}.credit{font-size:18px}}
 [data-theme="light"] body{background:#f8fafc;color:#121a2b}
@@ -25,5 +25,5 @@ a.workshop-card:focus-visible{outline:3px solid #fff;outline-offset:5px}
 [data-theme="light"] a.workshop-card:hover{background:#edf3fa;border-color:#355eaa}
 [data-theme="light"] .workshop-card .number{color:#355e88}
 [data-theme="light"] .workshop-card.unavailable{background:#eef2f6;color:#657185;border-color:#d1d9e3}
-[data-theme="light"] .workshop-card.unavailable .number{color:#657185}
+[data-theme="light"] .workshop-card.unavailable .number{color:#4a5870}
 @media(prefers-reduced-motion:reduce){.workshop-card{transition:none}}

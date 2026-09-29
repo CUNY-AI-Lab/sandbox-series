@@ -454,6 +454,20 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 ## Curating knowledge collections — 2
 
+### Workshop Roadmap
+
+- **[Composing System Prompts](basics)** Configure model behavior with system prompts. Thursday, September 17
+
+- **Curating Knowledge Collections** Organize source documents in knowledge collections. Thursday, October 1
+
+- **Configuring Skills and Tools** Extend model capabilities with skills and tools. Thursday, October 15
+
+[https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
+
+---
+
+## Curating knowledge collections — 3
+
 ### Workshop Agenda
 
 - Explore and clone · 15 minutes
@@ -472,7 +486,7 @@ Open Sandbox <https://chat.ailab.gc.cuny.edu/>
 
 ---
 
-## Curating knowledge collections — 3
+## Curating knowledge collections — 4
 
 ### Retrieval-Augmented Generation
 
@@ -486,7 +500,7 @@ A Knowledge collection contains documents a custom model can search.
 
 ---
 
-## Curating knowledge collections — 4
+## Curating knowledge collections — 5
 
 ### Explore STEM Adventures
 
@@ -498,33 +512,33 @@ Clone this example, then adapt its sources and instructions for a topic and audi
 
 ---
 
-## Curating knowledge collections — 5
+## Curating knowledge collections — 6
 
 ### Clone Custom Model
+
+Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
 
 ![Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.](images/knowledge-stem-2026-09-28/clone-model.svg)
 
 **Alt text:** Workspace Models filtered to STEM Adventure Games, with white annotations identifying Workspace in left sidebar and Clone for original model.
 
-Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
-
 ---
 
-## Curating knowledge collections — 6
+## Curating knowledge collections — 7
 
 ### Name Your Copy
-
-![STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.](images/knowledge-stem-2026-09-28/review-clone.svg?v=20260928-review)
-
-**Alt text:** STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.
 
 Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.
 
 Scroll to bottom and select **Save & Create**.
 
+![STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.](images/knowledge-stem-2026-09-28/review-clone.svg?v=20260928-review)
+
+**Alt text:** STEM Adventure Games clone form with white annotations identifying its name, model ID, and base model.
+
 ---
 
-## Curating knowledge collections — 7
+## Curating knowledge collections — 8
 
 ### Try Custom Model
 
@@ -534,27 +548,27 @@ Select **Start an adventure**, choose an experiment, and try its numbered choice
 
 ---
 
-## Curating knowledge collections — 8
+## Curating knowledge collections — 9
 
 ### Example Sources
+
+Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
 
 ![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-review2)
 
 **Alt text:** Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.
 
-Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
+**List of experiments** guides adventure options; **Scientific method** guides decisions; **Women in science** adds historical context.
+
+Next, choose sources for your adapted version.
 
 ![STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.](images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-4)
 
 **Alt text:** STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.
 
-**List of experiments** guides adventure options; **Scientific method** guides decisions; **Women in science** adds historical context.
-
-Next, choose sources for your adapted version.
-
 ---
 
-## Curating knowledge collections — 9
+## Curating knowledge collections — 10
 
 ### Choose Purpose
 
@@ -564,7 +578,7 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ---
 
-## Curating knowledge collections — 10
+## Curating knowledge collections — 11
 
 ### Find Sources
 
@@ -574,7 +588,7 @@ Read relevant passages. Choose sources that explain what players could investiga
 
 ---
 
-## Curating knowledge collections — 11
+## Curating knowledge collections — 12
 
 ### Prepare Documents
 
@@ -584,49 +598,49 @@ Use descriptive filenames. These saved documents become your collection; links a
 
 ---
 
-## Curating knowledge collections — 12
+## Curating knowledge collections — 13
 
 ### Create Your Collection
-
-![Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.](images/knowledge-stem-2026-09-28/create-custom-collection.svg)
-
-**Alt text:** Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.
 
 Select **Workspace → Knowledge → Create**. Name your collection and describe what your sources cover.
 
 Keep access **Private** and select **Create Knowledge**.
 
----
+![Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.](images/knowledge-stem-2026-09-28/create-custom-collection.svg)
 
-## Curating knowledge collections — 13
-
-### Upload Your Sources
-
-![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260928-review2)
-
-**Alt text:** New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.
-
-Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
-
-Wait for processing, then open each file to check text and source links.
+**Alt text:** Create a knowledge base form with STEM Workshop Sources entered and white outlines identifying name, description, and Create Knowledge.
 
 ---
 
 ## Curating knowledge collections — 14
 
+### Upload Your Sources
+
+Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
+
+Wait for processing, then open each file to check text and source links.
+
+![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260928-review2)
+
+**Alt text:** New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.
+
+---
+
+## Curating knowledge collections — 15
+
 ### Attach Your Collection
-
-![Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.](images/knowledge-stem-2026-09-28/attach-knowledge.svg?v=20260928-review2)
-
-**Alt text:** Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.
 
 In **Workspace → Models**, find your saved copy. Open **⋯ → Edit**.
 
 Under **Knowledge**, remove **STEM Wikipedia Experiments** from your copy and select your own collection. Scroll up to **System Prompt**.
 
+![Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.](images/knowledge-stem-2026-09-28/attach-knowledge.svg?v=20260928-review2)
+
+**Alt text:** Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.
+
 ---
 
-## Curating knowledge collections — 15
+## Curating knowledge collections — 16
 
 ### Update Purpose
 
@@ -636,7 +650,7 @@ Create a text adventure about [topic] for [audience]. Let players investigate [q
 
 ---
 
-## Curating knowledge collections — 16
+## Curating knowledge collections — 17
 
 ### Update Sources
 
@@ -648,7 +662,7 @@ Remove instructions that refer to sources you replaced.
 
 ---
 
-## Curating knowledge collections — 17
+## Curating knowledge collections — 18
 
 ### Revise Instructions
 
@@ -664,7 +678,7 @@ Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 19
 
 ### Test Custom Model
 
@@ -676,21 +690,21 @@ Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 20
 
 ### Check Citations
-
-![STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.](images/knowledge-stem-2026-09-28/check-citations.svg?v=20260928-chat)
-
-**Alt text:** STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.
 
 In same chat, ask “Which passage supports this scene? Quote it and cite your source.”
 
 Select a citation beside a response. Does its source passage support that response?
 
+![STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.](images/knowledge-stem-2026-09-28/check-citations.svg?v=20260928-chat)
+
+**Alt text:** STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.
+
 ---
 
-## Curating knowledge collections — 20
+## Curating knowledge collections — 21
 
 ### Compare Responses
 
@@ -704,7 +718,7 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## Curating knowledge collections — 21
+## Curating knowledge collections — 22
 
 ### Revise and Retest
 
@@ -716,7 +730,7 @@ Open **New Chat**, select your saved copy, and repeat your request. Did this cha
 
 ---
 
-## Curating knowledge collections — 22
+## Curating knowledge collections — 23
 
 ### Share Custom Model
 
@@ -728,7 +742,7 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## Curating knowledge collections — 23
+## Curating knowledge collections — 24
 
 ### Workshop Resources
 
