@@ -179,7 +179,7 @@ class ParticipantContinuity(unittest.TestCase):
         self.assertLess(trial.index('New Chat'),trial.index('Start an adventure'))
         self.assertIn('Choose your saved copy',trial)
         prepare=self.slide('knowledge/index.html','Prepare Documents').text()
-        self.assertIn('source text',prepare)
+        self.assertIn('source material',prepare)
         self.assertIn('date saved',prepare)
         self.assertIn('links alone do not include article text',prepare)
         attach=self.slide('knowledge/index.html','Attach Your Collection').text()
