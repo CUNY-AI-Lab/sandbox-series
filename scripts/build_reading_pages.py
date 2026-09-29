@@ -70,7 +70,16 @@ def build(source):
     download_label = {'.md': 'Download Markdown', '.txt': 'Download text',
                       '.json': 'Download JSON', '.py': 'Download Python'}
     suffix = '.' + source.rsplit('.', 1)[-1]
-    nav = [link(relative('index.html', destination), 'Return to workshop'),
+    if source.startswith(('examples/knowledge/', 'knowledge/')):
+        workshop = 'knowledge/index.html'
+    elif source.startswith(('examples/adventure/', 'examples/tools/', 'examples/creators/',
+                             'examples/stem-game-skill', 'examples/stem-system-prompt', 'skills/')):
+        workshop = 'skills/index.html'
+    elif source == 'WORKSHOP.md':
+        workshop = 'index.html'
+    else:
+        workshop = 'basics/index.html'
+    nav = [link(relative(workshop, destination), 'Return to workshop'),
            link(relative(source, destination), download_label[suffix], source.rsplit('/', 1)[-1])]
     return page(title, content, destination, nav, outline)
 

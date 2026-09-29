@@ -22,6 +22,7 @@ jobs:
       - run: node --check js/deck-engine.js
       - run: node --check js/lightbox.js
       - run: node --check js/examples.js
+      - run: node --check js/theme.js
       - run: node examples/adventure/test-engine.cjs
       - run: python3 examples/adventure/test-validation.py
       - run: python3 examples/creators/test_record_validator.py

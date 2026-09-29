@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class TeachingResearchSequence(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.slides = Parser((ROOT / 'index.html').read_text()).root.all(lambda n: n.has_class('slide'))
+        cls.slides = Parser((ROOT / 'basics/index.html').read_text()).root.all(lambda n: n.has_class('slide'))
         cls.titles = [slide.attrs['data-title'] for slide in cls.slides]
 
     def slide(self, title):
@@ -141,7 +141,7 @@ class TeachingResearchSequence(unittest.TestCase):
 class ParticipantContinuity(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.decks = {route: Parser((ROOT / route).read_text()).root for route in ['index.html', 'knowledge/index.html', 'skills/index.html']}
+        cls.decks = {route: Parser((ROOT / route).read_text()).root for route in ['basics/index.html', 'knowledge/index.html', 'skills/index.html']}
 
     def slide(self, route, title):
         return self.decks[route].all(lambda n: n.has_class('slide') and n.attrs.get('data-title') == title)[0]
@@ -212,10 +212,10 @@ class ParticipantContinuity(unittest.TestCase):
 
     def test_lesson_agenda_matches_participant_slides(self):
         import re
-        plan = (ROOT / 'WORKSHOP.md').read_text().split('## Composing system prompts')[1].split('## Curating knowledge collections')[0]
+        plan = (ROOT / 'WORKSHOP.md').read_text().split('## Composing System Prompts')[1].split('## Curating knowledge collections')[0]
         agenda = plan.split('### Workshop Agenda')[1].split('### Lesson Plan')[0]
         plan_items = re.findall(r'^- (.+)$', agenda, re.M)
-        slide_items = [li.text() for li in self.slide('index.html', 'Workshop Agenda').all(lambda n: n.tag == 'li')]
+        slide_items = [li.text() for li in self.slide('basics/index.html', 'Workshop Agenda').all(lambda n: n.tag == 'li')]
         self.assertEqual(plan_items, slide_items)
 
 if __name__ == '__main__':

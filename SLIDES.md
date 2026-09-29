@@ -1,12 +1,12 @@
 # Sandbox Workshops
 
-## Composing system prompts — 1
+## Composing System Prompts — 1
 
 [![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
 
 **Alt text:** CUNY AI Lab
 
-### Getting Started with the CUNY AI Lab Sandbox
+### Composing System Prompts
 
 Led by  Zach Muhlbauer
 
@@ -17,13 +17,13 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ---
 
-## Composing system prompts — 2
+## Composing System Prompts — 2
 
 ### Workshop Roadmap
 
-- **Composing system prompts** Configure model behavior with system prompts.
+- **Composing System Prompts** Configure model behavior with system prompts.
 
-- **[Curating knowledge collections](knowledge/)** Organize source documents in knowledge collections. Thursday, October 1
+- **[Curating knowledge collections](knowledge)** Organize source documents in knowledge collections. Thursday, October 1
 
 - **Configuring skills and tools** Extend model capabilities with skills and tools. Thursday, October 15
 
@@ -31,7 +31,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ---
 
-## Composing system prompts — 3
+## Composing System Prompts — 3
 
 ### Workshop Agenda
 
@@ -51,7 +51,7 @@ Check monthly usage at Model Access.
 
 ---
 
-## Composing system prompts — 4
+## Composing System Prompts — 4
 
 ### Introductions
 
@@ -61,7 +61,7 @@ What brings you to this workshop today?
 
 ---
 
-## Composing system prompts — 5
+## Composing System Prompts — 5
 
 ### Sandbox Access
 
@@ -85,7 +85,7 @@ Already approved? Open [Sandbox](https://chat.ailab.gc.cuny.edu/).
 
 ---
 
-## Composing system prompts — 6
+## Composing System Prompts — 6
 
 ### System Prompts
 
@@ -103,7 +103,7 @@ You create a custom model by choosing a base model, such as Gemma, and adding in
 
 ---
 
-## Composing system prompts — 7
+## Composing System Prompts — 7
 
 ### Chat Features
 
@@ -123,7 +123,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ---
 
-## Composing system prompts — 8
+## Composing System Prompts — 8
 
 ### Select Models
 
@@ -137,7 +137,7 @@ Find model selector in bottom right of message box, then select Gemma 4 26B A4B 
 
 ---
 
-## Composing system prompts — 9
+## Composing System Prompts — 9
 
 ### Compare Models
 
@@ -151,7 +151,7 @@ Reopen model selector and select Compare beside search field. Choose Gemma and a
 
 ---
 
-## Composing system prompts — 10
+## Composing System Prompts — 10
 
 ### Who Was Late?
 
@@ -165,7 +165,7 @@ Send this question to both models.
 
 ---
 
-## Composing system prompts — 11
+## Composing System Prompts — 11
 
 ### Winograd Schema Challenge
 
@@ -181,7 +181,7 @@ In our question, either person could be late.
 
 ---
 
-## Composing system prompts — 12
+## Composing System Prompts — 12
 
 ### Compare Outputs
 
@@ -195,7 +195,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Composing system prompts — 13
+## Composing System Prompts — 13
 
 ### Gemma vs. Qwen
 
@@ -213,7 +213,7 @@ What do you think this person wants to accomplish?
 
 ---
 
-## Composing system prompts — 14
+## Composing System Prompts — 14
 
 ### Going to the Car Wash
 
@@ -225,7 +225,7 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 ---
 
-## Composing system prompts — 15
+## Composing System Prompts — 15
 
 ### Add System Prompt
 
@@ -243,7 +243,7 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ---
 
-## Composing system prompts — 16
+## Composing System Prompts — 16
 
 ### Regenerate Responses
 
@@ -261,7 +261,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Composing system prompts — 17
+## Composing System Prompts — 17
 
 ### Debrief Questions
 
@@ -271,7 +271,7 @@ Select Regenerate beneath each original response, then choose Try Again. Keep yo
 
 ---
 
-## Composing system prompts — 18
+## Composing System Prompts — 18
 
 ### Explore
 
@@ -305,7 +305,7 @@ Which instruction explains something you noticed in its response?
 
 ---
 
-## Composing system prompts — 19
+## Composing System Prompts — 19
 
 ### Clone Models
 
@@ -325,7 +325,7 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 ---
 
-## Composing system prompts — 20
+## Composing System Prompts — 20
 
 ### Compare Configurations
 
@@ -343,7 +343,7 @@ Start a new chat. Select model ID on bottom right of message box, then Compare. 
 
 ---
 
-## Composing system prompts — 21
+## Composing System Prompts — 21
 
 ### Draft System Prompts
 
@@ -365,7 +365,7 @@ How should it present responses?
 
 ---
 
-## Composing system prompts — 22
+## Composing System Prompts — 22
 
 ### Create Models
 
@@ -385,7 +385,7 @@ Select Workspace → Models → Create to configure your own model.
 
 ---
 
-## Composing system prompts — 23
+## Composing System Prompts — 23
 
 ### Next Workshops
 
@@ -410,7 +410,7 @@ CUNY Graduate Center
 
 ---
 
-## Composing system prompts — 24
+## Composing System Prompts — 24
 
 ### Workshop Resources
 
@@ -418,9 +418,9 @@ Keep your draft and choose source documents for your next workshop.
 
 ### Workshop Materials
 
-- [Open Knowledge Collections  https://cuny-ai-lab.github.io/sandbox-series/knowledge/](knowledge/)
+- [Open Knowledge Collections  https://cuny-ai-lab.github.io/sandbox-series/knowledge/](knowledge)
 
-- [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
+- [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/basics/workshop-copy.html](basics/workshop-copy.html)
 
 - [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
@@ -736,7 +736,7 @@ Choose another topic or experiment. Refresh source documents when needed and che
 
 ### Workshop Materials
 
-- Review Composing system prompts <https://cuny-ai-lab.github.io/sandbox-series/index.html>
+- Review Composing System Prompts <https://cuny-ai-lab.github.io/sandbox-series/basics/>
 
 - Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/>
 
@@ -1194,4 +1194,4 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 - Retest after model or tool updates
 
-[Return to Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/](.)
+[Return to Composing System Prompts  https://cuny-ai-lab.github.io/sandbox-series/basics/](basics)

@@ -52,8 +52,8 @@ class ReadingPages(unittest.TestCase):
 
     def test_every_reading_link_opens_formatted_html(self):
         pending = [ROOT / path for path in [
-            'index.html', 'knowledge/index.html', 'skills/index.html',
-            'workshop-copy.html', 'knowledge/workshop-copy.html',
+            'index.html', 'basics/index.html', 'knowledge/index.html', 'skills/index.html',
+            'basics/workshop-copy.html', 'knowledge/workshop-copy.html',
             'skills/workshop-copy.html', 'SLIDES.html', 'WORKSHOP.html',
             *DESTINATIONS.values(),
         ]]
@@ -123,12 +123,27 @@ class ReadingPages(unittest.TestCase):
                             self.assertNotIn('examples.html', item.attrs.get('href', ''), str(path))
 
     def test_first_workshop_stays_self_contained(self):
-        for name in ['index.html', 'workshop-copy.html']:
+        for name in ['basics/index.html', 'basics/workshop-copy.html']:
             tree = Parser((ROOT / name).read_text()).root
             for node in tree.all(lambda node: node.tag == 'a' and 'download' not in node.attrs):
                 href = node.attrs.get('href', '')
                 self.assertNotIn(href, ['SLIDES.html', 'WORKSHOP.html'])
                 self.assertFalse(href.startswith('skills/'), href)
+
+    def test_landing_page_routes_and_theme(self):
+        tree = Parser((ROOT / 'index.html').read_text()).root
+        self.assertIn('Sandbox Workshop Series 2026', tree.text())
+        self.assertIn('Developed by Zach Muhlbauer', tree.text())
+        cards = tree.all(lambda node: node.has_class('workshop-card'))
+        self.assertEqual(len(cards), 3)
+        self.assertEqual([card.attrs.get('href') for card in cards], ['basics/', 'knowledge/', None])
+        self.assertEqual(cards[2].attrs.get('aria-disabled'), 'true')
+        for route in ['index.html', 'basics/index.html', 'knowledge/index.html',
+                      'skills/index.html', 'basics/workshop-copy.html',
+                      'knowledge/workshop-copy.html', 'skills/workshop-copy.html']:
+            page = Parser((ROOT / route).read_text()).root
+            self.assertTrue(page.all(lambda node: node.tag == 'script' and
+                            node.attrs.get('src', '').endswith('js/theme.js')), route)
 
 
 if __name__ == '__main__':

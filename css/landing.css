@@ -1,0 +1,29 @@
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#171717;color:#f1f1f1}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh}
+.landing{width:min(1220px,100%);min-height:100dvh;margin:auto;padding:clamp(32px,4vw,54px) clamp(24px,6vw,76px);display:flex;flex-direction:column;justify-content:center}
+.wordmark{display:block;width:clamp(215px,24vw,315px);height:auto;margin-bottom:clamp(32px,5vh,58px)}
+h1{max-width:16ch;margin:0;font-size:clamp(44px,5.6vw,74px);font-weight:600;line-height:1.08;letter-spacing:-.045em;text-wrap:balance}
+h1 span{white-space:nowrap}
+.rule{height:1px;background:#626262;margin:clamp(24px,3.5vh,38px) 0 16px}
+.credit{margin:0;color:#d3d3d3;font-size:clamp(19px,1.8vw,24px)}
+.workshops{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:clamp(28px,4vh,42px)}
+.workshop-card{position:relative;min-height:190px;padding:23px 26px 26px;border:1px solid #5b5b5b;border-radius:10px;background:#242424;color:#f1f1f1;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;transition:background .2s,border-color .2s}
+a.workshop-card:hover{background:#303030;border-color:#aaa}
+a.workshop-card:focus-visible{outline:3px solid #fff;outline-offset:5px}
+.number{font-size:18px;color:#bdbdbd;font-variant-numeric:tabular-nums}
+.name{max-width:14ch;font-size:clamp(26px,2.25vw,33px);line-height:1.18;letter-spacing:-.025em;font-weight:540}
+.arrow{position:absolute;right:25px;top:22px;font-size:28px;line-height:1}
+.unavailable{color:#929292;border-color:#3a3a3a;background:#1c1c1c}
+.unavailable .number{color:#777}
+@media(max-width:850px){.workshops{grid-template-columns:1fr;gap:12px}.workshop-card{min-height:128px;padding:20px 23px}.name{max-width:none;font-size:27px}.landing{justify-content:flex-start}.wordmark{margin-bottom:54px}}
+@media(max-width:480px){h1{font-size:44px}.name{max-width:12ch}.workshop-card{min-height:150px}.credit{font-size:18px}}
+[data-theme="light"] body{background:#f8fafc;color:#121a2b}
+[data-theme="light"] .rule{background:#7b93b6}
+[data-theme="light"] .credit{color:#344054}
+[data-theme="light"] .workshop-card{background:#fff;color:#121a2b;border-color:#b8c5d5}
+[data-theme="light"] a.workshop-card:hover{background:#edf3fa;border-color:#355eaa}
+[data-theme="light"] .workshop-card .number{color:#355e88}
+[data-theme="light"] .workshop-card.unavailable{background:#eef2f6;color:#657185;border-color:#d1d9e3}
+[data-theme="light"] .workshop-card.unavailable .number{color:#657185}
+@media(prefers-reduced-motion:reduce){.workshop-card{transition:none}}

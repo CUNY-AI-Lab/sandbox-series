@@ -11,7 +11,7 @@ from check_workshop import Parser, VOID, render as render_markdown
 from reading_pages import relative, reading_href, page, link
 
 ROOT = Path(__file__).resolve().parents[1]
-DECKS = [('', 'Composing system prompts'),
+DECKS = [('basics', 'Composing System Prompts'),
          ('knowledge', 'Curating knowledge collections'),
          ('skills', 'Configuring skills and tools')]
 EXCLUDED_TAGS = {'canvas', 'script', 'style'}
@@ -43,7 +43,7 @@ def render(node, slide_heading, route='', destination='workshop-copy.html'):
     for name, value in node.attrs.items():
         if name in {'id', 'class', 'href', 'src', 'alt', 'title', 'target', 'rel',
                     'download', 'width', 'height', 'datetime', 'scope', 'colspan',
-                    'rowspan'}:
+                    'rowspan', 'data-theme-brand', 'data-logo-dark', 'data-logo-light'}:
             attrs[name] = value
     if node.has_class('slide-inner'):
         attrs['class'] = 'copy-content'
@@ -59,7 +59,7 @@ def render(node, slide_heading, route='', destination='workshop-copy.html'):
             viewbox = ET.parse(path).getroot().attrib.get('viewBox', '').split()
             if len(viewbox) == 4:
                 attrs['width'], attrs['height'] = (round(float(value)) for value in viewbox[2:])
-    for name in ('href', 'src'):
+    for name in ('href', 'src', 'data-logo-dark', 'data-logo-light'):
         if name not in attrs:
             continue
         if 'download' in attrs:
@@ -97,11 +97,11 @@ def deck_content(route, destination, prefix=''):
     return '\n\n'.join(sections), ''.join(contents)
 
 
-def build(route=''):
+def build(route='basics'):
     destination = str(Path(route) / 'workshop-copy.html')
     content, contents = deck_content(route, destination)
-    title = 'Full Workshop Copy' if not route else dict(DECKS)[route]
-    source_copy = 'SLIDES.md' if route else 'PROMPTS.md'
+    title = dict(DECKS)[route]
+    source_copy = '../PROMPTS.md' if route == 'basics' else 'SLIDES.md'
     nav = [link('./', 'Return to workshop'),
            link(source_copy, 'Download Markdown', source_copy)]
     outline = '<nav class="copy-outline" aria-label="Workshop outline"><ol>' + contents + '</ol></nav>'
@@ -118,7 +118,7 @@ def build_series():
                          rf'\1="workshop-{number}-\2"', content)
         sections.append(f'<section id="workshop-{number}"><h2>{escape(label)}</h2>{content}</section>')
         contents.append(f'<li>{link(f"#workshop-{number}", label)}</li>')
-    nav = [link('index.html', 'Return to workshop'),
+    nav = [link('basics/', 'Open first workshop'),
            link('SLIDES.md', 'Download Markdown', 'SLIDES.md')]
     outline = '<nav class="copy-outline" aria-label="Workshop outline"><ol>' + ''.join(contents) + '</ol></nav>'
     return page('Full Series Copy', '\n'.join(sections), destination, nav, outline)
@@ -147,8 +147,8 @@ def main():
     outputs = {str(Path(route) / 'workshop-copy.html'): build(route) for route, _ in DECKS}
     outputs['SLIDES.html'] = build_series()
     outputs['knowledge/OUTLINE.html'], outputs['knowledge/OUTLINE.md'] = build_knowledge_outline()
-    output = outputs['workshop-copy.html']
-    source = Parser((ROOT / 'index.html').read_text()).root
+    output = outputs['basics/workshop-copy.html']
+    source = Parser((ROOT / 'basics/index.html').read_text()).root
     copied = Parser(output).root
     source_prompts = [node.text() for node in source.all(lambda node: node.tag == 'pre')]
     copied_prompts = [node.text() for node in copied.all(lambda node: node.tag == 'pre')]
@@ -157,7 +157,8 @@ def main():
     # Shared navigation branding is outside slide content and its transcript.
     source_images = [node.attrs['src'] for slide in source.all(lambda node: node.has_class('slide'))
                      for node in slide.all(lambda node: node.tag == 'img' and node.attrs.get('src'))]
-    copied_images = [node.attrs['src'] for node in copied.all(lambda node: node.tag == 'img')]
+    copied_images = [node.attrs['src'] for section in copied.all(lambda node: node.has_class('copy-section'))
+                     for node in section.all(lambda node: node.tag == 'img')]
     if copied_images != source_images:
         raise ValueError('Workshop HTML copy changed image sources.')
     if copied.all(lambda node: 'hidden' in node.attrs or node.has_class('slide-notes')):

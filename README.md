@@ -2,9 +2,9 @@
 
 [Open the workshop series](https://cuny-ai-lab.github.io/sandbox-series/)
 
-Composing system prompts begins the series, followed by Curating knowledge collections. Use **Outline** to switch between these two sessions, review slides, and open formatted workshop copy. Both use the existing neutral dark design. Configuring skills and tools remains a later session.
+Composing System Prompts begins the series, followed by Curating Knowledge Collections. Open either workshop from the landing page. Light and dark modes are available across the workshop pages. Configuring Skills and Tools remains a later session.
 
-- [Composing system prompts](https://cuny-ai-lab.github.io/sandbox-series/) · [Full copy](https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html)
+- [Composing System Prompts](https://cuny-ai-lab.github.io/sandbox-series/basics/) · [Full copy](https://cuny-ai-lab.github.io/sandbox-series/basics/workshop-copy.html)
 - [Curating knowledge collections](https://cuny-ai-lab.github.io/sandbox-series/knowledge/) · [Full copy](https://cuny-ai-lab.github.io/sandbox-series/knowledge/workshop-copy.html)
 - [Presenter lesson plans and access requirements](https://cuny-ai-lab.github.io/sandbox-series/WORKSHOP.html)
 - [Latest copy refinements and before/after](review/streamline-review.md)

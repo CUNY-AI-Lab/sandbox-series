@@ -1,10 +1,10 @@
 # Composing system prompts
 
-## Slide 1: Getting Started with the CUNY AI Lab Sandbox
+## Slide 1: Composing System Prompts
 
-[![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
+[![CUNY AI Lab](../images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
 
-### Getting Started with the CUNY AI Lab Sandbox
+### Composing System Prompts
 
 Led by  Zach Muhlbauer
 
@@ -19,9 +19,9 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 ### Workshop Roadmap
 
-- **Composing system prompts** Configure model behavior with system prompts.
+- **Composing System Prompts** Configure model behavior with system prompts.
 
-- **[Curating knowledge collections](knowledge/)** Organize source documents in knowledge collections. Thursday, October 1
+- **[Curating knowledge collections](../knowledge/)** Organize source documents in knowledge collections. Thursday, October 1
 
 - **Configuring skills and tools** Extend model capabilities with skills and tools. Thursday, October 15
 
@@ -125,7 +125,7 @@ Find actions beneath each response to copy, edit, or regenerate it. Open More (�
 
 ### Select Models
 
-![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](images/current/gateway-selector-hidpi-2026-09-16.svg)
+![Sandbox logo, message box, and Gateway model selector; enlarged detail shows current model choices with model ID outlined and marked by an arrow.](../images/current/gateway-selector-hidpi-2026-09-16.svg)
 
 Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.
 
@@ -137,7 +137,7 @@ Find model selector in bottom right of message box, then select Gemma 4 26B A4B 
 
 ### Compare Models
 
-![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
+![Sandbox logo, message box, and Gateway model selector; enlarged detail shows Compare beside search field outlined and marked by an arrow.](../images/current/gateway-selector-compare-hidpi-2026-09-16.svg)
 
 Reopen model selector and select Compare beside search field. Choose Gemma and another model, such as Mistral Large 3.
 
@@ -195,11 +195,11 @@ What do you think this person wants to accomplish?
 
 ### Gemma’s Response
 
-![Gemma 3 27B response recommending walking, with model name and generation time.](images/showcase/car-wash-gemma-response.png)
+![Gemma 3 27B response recommending walking, with model name and generation time.](../images/showcase/car-wash-gemma-response.png)
 
 ### Qwen’s Response
 
-![Qwen3.5 27B response recommending driving, with model name and generation time.](images/showcase/car-wash-qwen-response.png)
+![Qwen3.5 27B response recommending driving, with model name and generation time.](../images/showcase/car-wash-qwen-response.png)
 
 ---
 
@@ -219,7 +219,7 @@ The car wash is 50 meters from me. Should I walk or take the car? Explain your r
 
 ### Add System Prompt
 
-![CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.](images/current/chat-controls-populated-annotated-2026-09-17.svg)
+![CUNY AI Lab logo, DeepSeek V4 Flash 0731, car wash question in message box, and short instructions in System Prompt; white annotations identify Controls button and populated System Prompt field.](../images/current/chat-controls-populated-annotated-2026-09-17.svg)
 
 Select **Controls** at top right of chat. Paste these instructions into **System Prompt**, then close Controls.
 
@@ -235,9 +235,9 @@ Identify purpose and separate facts from assumptions. Ask one clarifying questio
 
 ### Regenerate Responses
 
-![Mistral Large 3 response recommending walking, with original question and message box; white annotation marks response controls for Regenerate.](images/current/regenerate-mistral-context-2026-09-17.svg)
+![Mistral Large 3 response recommending walking, with original question and message box; white annotation marks response controls for Regenerate.](../images/current/regenerate-mistral-context-2026-09-17.svg)
 
-![Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.](images/current/regenerate-mistral-detail-2026-09-17.svg)
+![Enlarged Mistral Large 3 response controls with Regenerate outlined and marked by an arrow.](../images/current/regenerate-mistral-detail-2026-09-17.svg)
 
 Select Regenerate beneath each original response, then choose Try Again. Keep your original question, selected models, and other settings unchanged.
 
@@ -293,7 +293,7 @@ Which instruction explains something you noticed in its response?
 
 ### Clone Models
 
-![Workspace Models showing shared workshop examples; white annotation identifies Clone in More menu.](images/current/workshop-clone-2026-09-17.svg)
+![Workspace Models showing shared workshop examples; white annotation identifies Clone in More menu.](../images/current/workshop-clone-2026-09-17.svg)
 
 Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen example and select Clone.
 
@@ -311,7 +311,7 @@ Select Workspace in left sidebar, then Models. Open ⋯ beside your chosen examp
 
 ### Compare Configurations
 
-![Sandbox comparison with tabs for original Compare Wikipedia Edits and its clone; white annotations identify both model names above original response. Message box remains visible.](images/current/workshop-compare-2026-09-17.svg)
+![Sandbox comparison with tabs for original Compare Wikipedia Edits and its clone; white annotations identify both model names above original response. Message box remains visible.](../images/current/workshop-compare-2026-09-17.svg)
 
 Start a new chat. Select model ID on bottom right of message box, then Compare. Choose your original model and your copy.
 
@@ -349,7 +349,7 @@ How should it present responses?
 
 ### Create Models
 
-![Workspace Models filtered to shared workshop examples, with Create button outlined and marked by an arrow.](images/current/workshop-create-2026-09-17.svg)
+![Workspace Models filtered to shared workshop examples, with Create button outlined and marked by an arrow.](../images/current/workshop-create-2026-09-17.svg)
 
 Select Workspace → Models → Create to configure your own model.
 
@@ -396,9 +396,9 @@ Keep your draft and choose source documents for your next workshop.
 
 ### Workshop Materials
 
-- [Open Knowledge Collections  https://cuny-ai-lab.github.io/sandbox-series/knowledge/](knowledge/)
+- [Open Knowledge Collections  https://cuny-ai-lab.github.io/sandbox-series/knowledge/](../knowledge/)
 
-- [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/workshop-copy.html](workshop-copy.html)
+- [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/basics/workshop-copy.html](workshop-copy.html)
 
 - [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 

@@ -4,13 +4,13 @@ The CUNY AI Lab Sandbox supports teaching, research, and experimentation with op
 
 Participants first compare models, then try STEM Adventure Games for teaching or Compare Wikipedia Edits for research, review its system prompt and base model, and revise a clone. They compare the original with their clone using the same request, then use Purpose, Procedure, Constraints, and Format to draft instructions and create a configuration of their own. Workshop 2 adds source documents and checks how they inform scenes and explanations. Workshop 3 introduces a separate game tool, a skill for changing experiments, and a creator model for Python tools. Participants compare responses, check citations, and test whether models follow their instructions.
 
-[Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read workshop copy](workshop-copy.html) · [Review copy changes](review/README.md)
+[Present the series](https://cuny-ai-lab.github.io/sandbox-series/) · [Read workshop copy](basics/workshop-copy.html) · [Review copy changes](review/README.md)
 
 ## Workshop Roadmap
 
 | Workshop | Activity | Required access | Next steps |
 | --- | --- | --- | --- |
-| Composing system prompts | Configure model behavior with system prompts | Active Sandbox account and Workspace Models access | Draft original instructions; create a configuration; select source documents |
+| Composing System Prompts | Configure model behavior with system prompts | Active Sandbox account and Workspace Models access | Draft original instructions; create a configuration; select source documents |
 | Curating knowledge collections | Organize source documents in knowledge collections | Workshop 1 access, Workspace, Knowledge collection access | Save retrieval tests; request Skills and Tools access |
 | Configuring skills and tools | Extend model capabilities with skills and tools | Workshop 1 access, Skills and Tools access; Workspace authoring for creation and editing | Save configurations; verify shared access; retest after changes |
 
@@ -28,7 +28,7 @@ Choose two available models for the opening demonstration. Record their exact id
 
 Use documents you are permitted to upload and share for collection and skill exercises. Verify sharing through an ordinary participant account, including access to custom models, base models, and attached resources. Course enrollment has a separate invitation route in the documentation; it is not a prerequisite for Workshop 1.
 
-## Composing system prompts
+## Composing System Prompts
 
 Participants learn how user prompts and system prompts differ before comparing models. System prompts are setup instructions that describe how a model should behave. Begin comparisons with two models interpreting a sentence about a nurse and doctor, then ask whether to walk or drive to a car wash. Participants read sample system prompt instructions, locate System Prompt in Chat Controls, and regenerate responses to their original prompt after adding those instructions.
 
@@ -91,7 +91,7 @@ Participants clone their chosen model, revise one instruction, save it, and test
 
 Use remaining time to begin drafting instructions for a teaching or research task. Use Purpose, Procedure, Constraints, and Format in Draft System Prompts. Create Models shows where to select Create, then walks through naming a configuration, choosing a base model, adding the draft system prompt, saving, and trying one request. Participants finish with their own configuration to develop before the next workshop.
 
-Workshop 1 closes with its [HTML copy](workshop-copy.html), prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and resources link to Curating knowledge collections as the second session.
+Workshop 1 closes with its [HTML copy](basics/workshop-copy.html), prompt examples, Sandbox documentation, Open WebUI Models documentation, and monthly usage. Its outline and resources link to Curating knowledge collections as the second session.
 
 ## Curating knowledge collections
 

@@ -241,7 +241,7 @@ Choose another topic or experiment. Refresh source documents when needed and che
 
 ### Workshop Materials
 
-- Review Composing system prompts <https://cuny-ai-lab.github.io/sandbox-series/index.html>
+- Review Composing System Prompts <https://cuny-ai-lab.github.io/sandbox-series/basics/>
 
 - Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/>
 

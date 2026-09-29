@@ -435,4 +435,4 @@ Before sharing, confirm others can access your model, collections, skills, and t
 
 - Retest after model or tool updates
 
-[Return to Composing system prompts  https://cuny-ai-lab.github.io/sandbox-series/](..)
+[Return to Composing System Prompts  https://cuny-ai-lab.github.io/sandbox-series/basics/](../basics/)

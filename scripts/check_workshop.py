@@ -75,7 +75,7 @@ def render(node):
 
 def normalize(s):return ' '.join(s.split())
 def main():
-    tree=Parser((ROOT/'index.html').read_text()).root
+    tree=Parser((ROOT/'basics/index.html').read_text()).root
     slides=tree.all(lambda n:n.has_class('slide'))
     issues=[]
     ids=[n.attrs['id'] for n in tree.all(lambda n:'id' in n.attrs)]
@@ -125,7 +125,7 @@ def main():
         target=n.attrs.get('src') or n.attrs.get('href','')
         if target and not re.match(r'^(https?:|mailto:|#)',target):
             path=target.split('#')[0].split('?')[0]
-            if path and not (ROOT/path).exists():issues.append('Missing local resource: '+path)
+            if path and not (ROOT/'basics'/path).exists():issues.append('Missing local resource: '+path)
     header='# Composing system prompts\n\n'
     mirror=header+'\n\n---\n\n'.join(f'## Slide {i}: '+s.attrs['data-title']+'\n\n'+re.sub(r'\n{3,}','\n\n',render(s)).strip() for i,s in enumerate(slides,1))+'\n'
     mirror=re.sub(r'\n{3,}','\n\n','\n'.join(line.rstrip() for line in mirror.splitlines()))+'\n'

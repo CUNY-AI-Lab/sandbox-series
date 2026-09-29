@@ -42,7 +42,7 @@ SOURCES = {
 DESTINATIONS = {source: str(Path(source).with_suffix('.html')) for source in SOURCES}
 DESTINATIONS['examples/model-cards.json'] = 'examples/model-cards-data.html'
 DESTINATIONS.update({
-    'PROMPTS.md': 'workshop-copy.html',
+    'PROMPTS.md': 'basics/workshop-copy.html',
     'SLIDES.md': 'SLIDES.html',
     'knowledge/SLIDES.md': 'knowledge/workshop-copy.html',
     'skills/SLIDES.md': 'skills/workshop-copy.html',
@@ -70,6 +70,10 @@ def page(title, content, destination, links, outline=''):
     css = relative('css/workshop-copy.css', destination)
     favicon = relative('images/cail-favicon.svg', destination)
     script = relative('js/examples.js', destination)
+    theme_css = relative('css/theme.css', destination)
+    theme_script = relative('js/theme.js', destination)
+    logo_dark = relative('images/cail-wordmark-white.png', destination)
+    logo_light = relative('images/cail-wordmark-color.png', destination)
     navigation = ' · '.join(links)
     return f'''<!doctype html>
 <html lang="en">
@@ -79,10 +83,12 @@ def page(title, content, destination, links, outline=''):
 <title>{escape(title)} | CUNY AI Lab</title>
 <link rel="icon" type="image/svg+xml" href="{favicon}">
 <link rel="stylesheet" href="{css}?v={css_version}">
+<link rel="stylesheet" href="{theme_css}">
+<script src="{theme_script}" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#workshop-copy">Skip to content</a>
-<header class="page-header"><h1>{escape(title)}</h1>
+<header class="page-header"><img class="page-wordmark" src="{logo_dark}" data-theme-brand data-logo-dark="{logo_dark}" data-logo-light="{logo_light}" alt="CUNY AI Lab" width="1154" height="259"><h1>{escape(title)}</h1>
 <nav aria-label="Workshop links">{navigation}</nav>{outline}</header>
 <main id="workshop-copy" class="reading-content">
 {content}

@@ -5,13 +5,13 @@ import re,json,difflib,hashlib,sys,subprocess,posixpath
 from check_workshop import Parser,Node,render
 R=Path(__file__).resolve().parents[1];write='--write' in sys.argv;issues=[];sections=[]
 # Exact event title requested by Zach; general slide-title constraints still apply elsewhere.
-COVER_TITLE='Getting Started with the CUNY AI Lab Sandbox'
+COVER_TITLE='Composing System Prompts'
 # Preserve Zach's exact reflection question requested on September 17.
 REFLECTION_QUESTION='How could you imagine testing custom models like this in the future?'
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
 def check_title(title,location):
- if title in {'Composing system prompts','Curating knowledge collections','Configuring skills and tools','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE}:return
+ if title in {'Composing System Prompts','Curating knowledge collections','Configuring skills and tools','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE}:return
  words=re.findall(r"[\w]+(?:[’'-][\w]+)*",title)
  if not 2 <= len(words) <= 3:issues.append(location+' heading length: '+title)
  if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(location+' article in heading: '+title)
@@ -40,9 +40,9 @@ def check_participant_copy(tree,location):
  if tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')):issues.append(location+' presenter plan linked from participant material')
 
 retained=json.loads((R/'review/imported-copy.json').read_text()); found={};count=0
-for route,label in [('', 'Composing system prompts'),('knowledge','Curating knowledge collections'),('skills','Configuring skills and tools')]:
+for route,label in [('basics', 'Composing System Prompts'),('knowledge','Curating knowledge collections'),('skills','Configuring skills and tools')]:
  base=R/route;tree=Parser((base/'index.html').read_text()).root;slides=tree.all(lambda n:n.has_class('slide'));count+=len(slides)
- check_participant_copy(tree,route or 'prompts')
+ check_participant_copy(tree,route)
  if tree.all(lambda n:n.attrs.get('id') in {'notes-button','series-button'}):issues.append(route+' removed footer control returned')
  ids=[n.attrs['id'] for n in tree.all(lambda n:'id' in n.attrs)]
  if len(ids)!=len(set(ids)):issues.append(route+' duplicate ids')
@@ -65,7 +65,7 @@ for route,label in [('', 'Composing system prompts'),('knowledge','Curating know
  content='\n\n---\n\n'.join('## '+label+' — '+str(i)+'\n\n'+re.sub(r'\n{3,}','\n\n',render(s)).strip() for i,s in enumerate(slides,1))+'\n'
  content=clean(content)
  sections.append(re.sub(r'\]\((?!https?:|mailto:|#)([^)]+)\)',lambda m:']('+posixpath.normpath(route+'/'+m.group(1))+')',content) if route else content)
- if route:
+ if route in {'knowledge','skills'}:
   mirror='# '+label+'\n\n'+content
   dest=base/'SLIDES.md'
   if write:dest.write_text(mirror)

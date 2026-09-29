@@ -42,7 +42,7 @@ def main():
     write = '--write' in sys.argv
     problems = []
     count = 0
-    for relative in ['index.html', 'knowledge/index.html', 'skills/index.html']:
+    for relative in ['basics/index.html', 'knowledge/index.html', 'skills/index.html']:
         path = ROOT / relative
         html = path.read_text()
 

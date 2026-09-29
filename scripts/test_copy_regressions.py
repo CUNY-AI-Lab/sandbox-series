@@ -16,9 +16,9 @@ from pathlib import Path
 from check_workshop import Parser, Node
 
 ROOT = Path(__file__).resolve().parents[1]
-ROUTES = ('index.html', 'knowledge/index.html', 'skills/index.html')
-SECTION_NAMES = ('Composing system prompts', 'Curating knowledge collections', 'Configuring skills and tools')
-COVER_TITLE = 'Getting Started with the CUNY AI Lab Sandbox'
+ROUTES = ('basics/index.html', 'knowledge/index.html', 'skills/index.html')
+SECTION_NAMES = ('Composing System Prompts', 'Curating knowledge collections', 'Configuring skills and tools')
+COVER_TITLE = 'Composing System Prompts'
 # Exact user-authored wording takes precedence over the general article rule.
 REFLECTION_QUESTION = 'How could you imagine testing custom models like this in the future?'
 SELECTOR = 'Select model ID on bottom right of message box.'
@@ -94,7 +94,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(len(matches),1,(route,id))
         return matches[0]
     def by_id(self, id):
-        return self.trees['index.html'].all(lambda n:n.attrs.get('id')==id)[0]
+        return self.trees['basics/index.html'].all(lambda n:n.attrs.get('id')==id)[0]
     def assert_order(self, route, titles):
         sequence=[s.attrs['data-title'] for s in self.decks[route]]
         positions=[sequence.index(t) for t in titles]
@@ -102,7 +102,7 @@ class CopyRegressions(unittest.TestCase):
 
     def test_01_section_names_and_titles(self):
         for route,name in zip(ROUTES,SECTION_NAMES):
-            self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='index.html' else name)
+            self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='basics/index.html' else name)
             for s in self.decks[route]:
                 title=s.attrs['data-title']
                 if title in (*SECTION_NAMES,'Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE):continue
@@ -116,7 +116,7 @@ class CopyRegressions(unittest.TestCase):
                 self.assertEqual(heading.text(),title)
                 self.assertEqual(s.attrs['aria-label'],f'Slide {i}: {title}')
     def test_30_september_title_and_accessible_background(self):
-        cover=self.decks['index.html'][0]
+        cover=self.decks['basics/index.html'][0]
         self.assertTrue(cover.has_class('workshop-cover'))
         copy=cover.text()
         for text in [COVER_TITLE,'Led by Zach Muhlbauer','New Media Lab · Room 7388.01','CUNY Graduate Center','Thursday, September 17, 2026','2:30–4:00 p.m.']:
@@ -153,22 +153,22 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Explore','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
-        self.assertIn('Custom Models',self.slide('index.html','System Prompts').text())
-        question=self.slide_containing_id('index.html','car-wash-task')
+        self.assert_order('basics/index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Explore','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
+        self.assertIn('Custom Models',self.slide('basics/index.html','System Prompts').text())
+        question=self.slide_containing_id('basics/index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())
-        responses=self.slide_by_class('index.html','response-comparison-slide')
-        exercise=self.slide_containing_id('index.html','car-wash-exercise')
-        root=self.decks['index.html']
+        responses=self.slide_by_class('basics/index.html','response-comparison-slide')
+        exercise=self.slide_containing_id('basics/index.html','car-wash-exercise')
+        root=self.decks['basics/index.html']
         self.assertLess(root.index(question),root.index(responses))
         self.assertLess(root.index(responses),root.index(exercise))
-        self.assertLess(root.index(exercise),root.index(self.slide('index.html','Add System Prompt')))
+        self.assertLess(root.index(exercise),root.index(self.slide('basics/index.html','Add System Prompt')))
         handoff=self.by_id('car-wash-exercise')
         self.assertEqual(handoff.text(),CAR)
     def test_07_controls_and_regeneration_are_explicit(self):
-        root=self.decks['index.html']
-        add=self.slide('index.html','Add System Prompt')
-        regenerate=self.slide('index.html','Regenerate Responses')
+        root=self.decks['basics/index.html']
+        add=self.slide('basics/index.html','Add System Prompt')
+        regenerate=self.slide('basics/index.html','Regenerate Responses')
         self.assertEqual(root.index(regenerate),root.index(add)+1)
         copy=add.text()
         for term in ['Copy','Controls','top right','Paste','System Prompt','close Controls']:
@@ -183,19 +183,19 @@ class CopyRegressions(unittest.TestCase):
         for removed in ['Open Chat Controls','Test System Prompts']:
             self.assertNotIn(removed,[s.attrs['data-title'] for s in root])
         for slide in [add,regenerate]:self.assertFalse(slide.all(lambda n:n.has_class('slide-notes')))
-        self.assertNotIn('settings unchanged',self.slide('index.html','Debrief Questions').text())
-        reflection=self.slide('index.html','Debrief Questions')
+        self.assertNotIn('settings unchanged',self.slide('basics/index.html','Debrief Questions').text())
+        reflection=self.slide('basics/index.html','Debrief Questions')
         self.assertEqual([node.text() for node in reflection.all(lambda n:n.tag=='li')], [
             'What changed in each model’s answer to your car wash question after you added system prompt instructions?',
             'Did either model ask about your purpose or explain its assumptions before recommending walking or driving?',
         ])
         self.assertNotIn('Repeat our opening question',reflection.text())
     def test_08_exact_selector_instruction(self):
-        self.assertIn('Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.',self.slide('index.html','Select Models').text())
+        self.assertIn('Find model selector in bottom right of message box, then select Gemma 4 26B A4B IT.',self.slide('basics/index.html','Select Models').text())
         for route,title in [('knowledge/index.html','Try Custom Model'),('skills/index.html','Draft Skills')]:
             self.assertIn(SELECTOR,self.slide(route,title).text())
     def test_09_access_and_stable_links(self):
-        root=self.decks['index.html']
+        root=self.decks['basics/index.html']
         self.assertEqual(root[3].attrs['data-title'],'Introductions')
         self.assertEqual([p.text() for p in root[3].all(lambda n:n.tag=='p')],
                          ['What is your name, pronouns, and role at CUNY?',
@@ -210,7 +210,7 @@ class CopyRegressions(unittest.TestCase):
         for term in ['My own access','intended use','verification','Submit Application','verified CUNY email','approval','Already approved?','two-factor authentication']:
             self.assertIn(term,root[4].text())
         self.assertLess(root[4].text().index('Submit Application'),root[4].text().index('Continue with CUNY Login'))
-        agenda=self.slide('index.html','Workshop Agenda')
+        agenda=self.slide('basics/index.html','Workshop Agenda')
         self.assertIn('Request access and sign in',agenda.text())
         self.assertNotIn('individual access',agenda.text().lower())
         self.assertNotIn('Workspace access',agenda.text())
@@ -247,7 +247,7 @@ class CopyRegressions(unittest.TestCase):
     def test_10_agendas_and_next_steps_use_verbs(self):
         verbs={'Open','Test','Introduce','Sign','Draft','Consult','Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
         for route in ROUTES:
-            next_steps=[self.decks[route][-1]] if route=='index.html' else [s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
+            next_steps=[self.decks[route][-1]] if route=='basics/index.html' else [s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
             self.assertEqual(len(next_steps),1,route)
             for s in [self.slide(route,'Workshop Agenda'),*next_steps]:
                 for li in s.all(lambda n:n.tag=='li'):
@@ -315,7 +315,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('Attach saved play records',self.slide('skills/index.html','Compare Game Records').text())
     def test_18_screenshots_and_controls_preserve_requested_evidence(self):
         for title,term in [('Compare Models','Compare'),('Add System Prompt','System Prompt'),('Regenerate Responses','Regenerate')]:
-            matches=[s for s in self.decks['index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
+            matches=[s for s in self.decks['basics/index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
             im=matches[0].all(lambda n:n.tag=='img')[0]
             self.assertRegex(im.attrs['alt'],r'arrow|annotations?');self.assertIn(term,im.attrs['alt']);self.assertTrue(im.attrs['src'].split('?',1)[0].endswith('.svg'))
         for route in ['knowledge/index.html']:
@@ -419,7 +419,7 @@ class CopyRegressions(unittest.TestCase):
                     self.assertNotIn(Path(path).suffix,{'.json','.py','.js','.cjs'})
                     self.assertNotIn('adventure/preview.html',path)
                     self.assertNotIn('game-procedure-evaluation.md',path)
-        game=self.slide('index.html','Explore')
+        game=self.slide('basics/index.html','Explore')
         self.assertIn('text adventure with numbered choices',game.text())
         self.assertFalse(game.all(lambda n:n.tag=='iframe'))
         prompt_file=ROOT/'examples/stem-chat-system-prompt.txt'
@@ -485,12 +485,12 @@ class CopyRegressions(unittest.TestCase):
         ]:
             self.assertIn(instruction,prompt)
         # Prompts in the first workshop use ordinary instructions, not engine fields.
-        for slide in self.decks['index.html']:
+        for slide in self.decks['basics/index.html']:
             for prompt_block in slide.all(lambda n:n.has_class('prompt-block')):
                 self.assertNotRegex(prompt_block.text(),r'\b(?:Observed decision|Prerequisite|Source comparison|Scenario JSON):')
 
     def test_26_definitions_and_winograd_context(self):
-        definition=self.slide('index.html','System Prompts')
+        definition=self.slide('basics/index.html','System Prompts')
         for term in ['setup instructions','how a model should behave','Custom Models','choosing a base model','instructions and documents']:
             self.assertIn(term,definition.text())
         for old in ['A base model generates responses.','without training a new base model','role, behavior, and focus']:
@@ -498,13 +498,13 @@ class CopyRegressions(unittest.TestCase):
         links=[n.attrs.get('href') for n in definition.all(lambda n:n.tag=='a')]
         for source in ['https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/','https://ailab.gc.cuny.edu/sandbox-docs/models/']:
             self.assertIn(source,links)
-        context=self.slide('index.html','Winograd Schema Challenge')
+        context=self.slide('basics/index.html','Winograd Schema Challenge')
         for term in ['ambiguous pronouns','context','common-sense reasoning','either person could be late']:
             self.assertIn(term,context.text())
         self.assertTrue(context.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://www.cs.nyu.edu/faculty/davise/papers/WSKR2012.pdf'))
 
     def test_27_original_responses_are_embedded_together(self):
-        combined=self.slide_by_class('index.html','response-comparison-slide')
+        combined=self.slide_by_class('basics/index.html','response-comparison-slide')
         images=combined.all(lambda n:n.tag=='img')
         self.assertEqual(len(images),2)
         records=json.loads((ROOT/'review/showcase-sources.json').read_text())['images']
@@ -512,7 +512,7 @@ class CopyRegressions(unittest.TestCase):
                          'image7.png':'a37b01ed4fe6a5405390849de0cb46f153982ddee8034ad782d549881425142d'}
         origins=set()
         for image in images:
-            path=ROOT/image.attrs['src']
+            path=ROOT/'basics'/image.attrs['src']
             matches=[r for r in records if r['file']==path.name]
             self.assertEqual(len(matches),1)
             record=matches[0]
@@ -523,7 +523,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(origins,set(original_hashes))
         for label in ['Gemma’s Response','Qwen’s Response']:
             self.assertIn(label,combined.text())
-            self.assertNotIn(label,[s.attrs['data-title'] for s in self.decks['index.html']])
+            self.assertNotIn(label,[s.attrs['data-title'] for s in self.decks['basics/index.html']])
 
     def test_28_gateway_and_regeneration_capture_identity(self):
         records=json.loads((ROOT/'review/screenshot-sources.json').read_text())['images']
@@ -531,14 +531,14 @@ class CopyRegressions(unittest.TestCase):
                   ('Compare Models','gemma-4-26b-a4b-it','Gemma 4 26B A4B IT'),
                   ('Regenerate Responses','mistral-large-3-675b-instruct','Mistral Large 3')]
         for title,model_id,model_name in expected:
-            slides=[s for s in self.decks['index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
+            slides=[s for s in self.decks['basics/index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
             self.assertEqual(len(slides),1,title)
             images=slides[0].all(lambda n:n.tag=='img')
             self.assertEqual(len(images),2 if title=='Regenerate Responses' else 1,title)
             if title=='Regenerate Responses':
                 self.assertEqual([image.attrs.get('data-fragment-step') for image in images],['0','1'])
             for image in images:
-                path=ROOT/image.attrs['src']
+                path=ROOT/'basics'/image.attrs['src']
                 matches=[r for r in records if r['file']==path.name]
                 self.assertEqual(len(matches),1,title)
                 record=matches[0]
@@ -643,38 +643,40 @@ class CopyRegressions(unittest.TestCase):
             self.assertIn(starter['content'],card_copy)
 
     def test_31_prompt_framework_uses_four_components(self):
-        exercise=self.slide('index.html','Explore')
+        exercise=self.slide('basics/index.html','Explore')
         for label in ['Purpose','Procedure','Constraints','Format']:
             self.assertIn(label,exercise.text())
         cards=(ROOT/'examples/model-cards.md').read_text()
         for path in ['examples/stem-chat-system-prompt.txt','examples/research/system-prompt.txt']:
             self.assertIn((ROOT/path).read_text().strip(),cards)
-        titles={s.attrs['data-title'] for s in self.decks['index.html']}
+        titles={s.attrs['data-title'] for s in self.decks['basics/index.html']}
         self.assertNotIn('Define Context',titles)
         self.assertNotIn('Set Tone',titles)
-        self.assertFalse(self.trees['index.html'].all(lambda n:n.attrs.get('id')=='tpl-tone'))
+        self.assertFalse(self.trees['basics/index.html'].all(lambda n:n.attrs.get('id')=='tpl-tone'))
 
     def test_32_published_sessions_link_without_releasing_third(self):
         from urllib.parse import urlsplit
-        for scope in [self.trees['index.html']]:
+        import posixpath
+        for scope in [self.trees['basics/index.html']]:
             for link in scope.all(lambda n:n.tag=='a'):
                 href=link.attrs.get('href','')
                 url=urlsplit(href)
                 if url.netloc and url.netloc!='cuny-ai-lab.github.io':
                     continue
-                path=url.path.removeprefix('/sandbox-series/').lstrip('./')
+                path=(url.path.removeprefix('/sandbox-series/') if url.path.startswith('/')
+                      else posixpath.normpath(posixpath.join('basics',url.path)))
                 self.assertFalse(path=='skills' or path.startswith('skills/'),href)
-        outline=self.trees['index.html'].all(lambda n:n.attrs.get('id')=='outline-dialog')[0]
+        outline=self.trees['basics/index.html'].all(lambda n:n.attrs.get('id')=='outline-dialog')[0]
         links={link.attrs.get('href') for link in outline.all(lambda n:n.tag=='a')}
         self.assertIn('workshop-copy.html',links)
         self.assertNotIn('SLIDES.md',links)
-        self.assertIn('knowledge/',links)
+        self.assertIn('../knowledge/',links)
         second=self.trees['knowledge/index.html'].all(lambda n:n.attrs.get('id')=='outline-dialog')[0]
         second_links={n.attrs.get('href') for n in second.all(lambda n:n.tag=='a')}
-        self.assertIn('../',second_links)
+        self.assertIn('../basics/',second_links)
         self.assertIn('./',second_links)
         self.assertFalse(any('skills' in href for href in second_links))
-        resources=self.slide('index.html','Workshop Resources')
+        resources=self.slide('basics/index.html','Workshop Resources')
         links={link.attrs.get('href') for link in resources.all(lambda n:n.tag=='a')}
         for href in ['workshop-copy.html','https://ailab.gc.cuny.edu/sandbox-docs/',
                      'https://docs.openwebui.com/features/workspace/models/',
@@ -682,26 +684,26 @@ class CopyRegressions(unittest.TestCase):
             self.assertIn(href,links)
 
     def test_next_workshops_and_resource_groups(self):
-        upcoming=self.slide('index.html','Next Workshops')
+        upcoming=self.slide('basics/index.html','Next Workshops')
         for text in ['Thursday, October 1, 2026','Thursday, October 15, 2026','2:30–4:00 pm','Room 7388.01']:
             self.assertIn(text,upcoming.text())
         self.assertIn('https://cail-workshop-registration.ailab-452.workers.dev/',
                       {n.attrs.get('href') for n in upcoming.all(lambda n:n.tag=='a')})
-        groups=self.slide('index.html','Workshop Resources').all(lambda n:n.has_class('resource-group'))
+        groups=self.slide('basics/index.html','Workshop Resources').all(lambda n:n.has_class('resource-group'))
         self.assertIn('Consult Open WebUI Models',groups[0].text())
         self.assertNotIn('Consult Open WebUI Models',groups[1].text())
         self.assertIn('Consult AI Lab guides',groups[1].text())
 
     def test_33_full_workshop_copy_is_readable_and_complete(self):
         from build_workshop_copy import build
-        path=ROOT/'workshop-copy.html'
-        self.assertEqual(path.read_text(),build(),'Regenerate workshop-copy.html after slide changes')
+        path=ROOT/'basics/workshop-copy.html'
+        self.assertEqual(path.read_text(),build(),'Regenerate basics/workshop-copy.html after slide changes')
         copy=Parser(path.read_text()).root
         sections=copy.all(lambda n:n.has_class('copy-section'))
         self.assertEqual(len(sections),24)
         self.assertEqual([section.all(lambda n:n.tag=='h2')[0].text() for section in sections],
-                         [slide.attrs['data-title'] for slide in self.decks['index.html']])
-        for source,destination in zip(self.decks['index.html'],sections):
+                         [slide.attrs['data-title'] for slide in self.decks['basics/index.html']])
+        for source,destination in zip(self.decks['basics/index.html'],sections):
             self.assertEqual([n.text() for n in source.all(lambda n:n.tag=='pre')],
                              [n.text() for n in destination.all(lambda n:n.tag=='pre')])
             images=source.all(lambda n:n.tag=='img')
@@ -717,7 +719,7 @@ class CopyRegressions(unittest.TestCase):
     def test_34_workspace_actions_have_current_annotated_screenshots(self):
         records=json.loads((ROOT/'review/screenshot-sources.json').read_text())['images']
         for title,control in [('Clone Models','Clone'),('Compare Configurations','model'),('Create Models','Create')]:
-            slide=self.slide('index.html',title)
+            slide=self.slide('basics/index.html',title)
             stages=slide.all(lambda n:'data-fragment-step' in n.attrs)
             self.assertEqual([stage.attrs['data-fragment-step'] for stage in stages],['0','1'])
             images=stages[0].all(lambda n:n.tag=='img')
@@ -725,7 +727,7 @@ class CopyRegressions(unittest.TestCase):
             image=images[0]
             self.assertIn(control,image.attrs['alt'])
             self.assertRegex(image.attrs['alt'],r'arrow|annotation')
-            path=ROOT/image.attrs['src']
+            path=ROOT/'basics'/image.attrs['src']
             self.assertEqual(path.suffix,'.svg')
             self.assertTrue(path.is_file(),str(path))
             matches=[record for record in records if record['file']==path.name]
@@ -768,17 +770,17 @@ class CopyRegressions(unittest.TestCase):
         self.assertTrue(prose_colons('Expected: reject numeric commands.'))
         self.assertFalse(prose_colons('Read Newton: Light and Colour at https://example.org/'))
         mutations = [
-            ('index.html', '<figcaption>', '<figcaption hidden>', self.test_18_screenshots_and_controls_preserve_requested_evidence),
-            ('index.html', NURSE, NURSE.replace('she','he'), self.test_05_prompts_remain_exact),
-            ('index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
-            ('index.html', 'Led by ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
-            ('index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
+            ('basics/index.html', '<figcaption>', '<figcaption hidden>', self.test_18_screenshots_and_controls_preserve_requested_evidence),
+            ('basics/index.html', NURSE, NURSE.replace('she','he'), self.test_05_prompts_remain_exact),
+            ('basics/index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
+            ('basics/index.html', 'Led by ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
+            ('basics/index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
             ('skills/index.html', 'Remove your skill', 'Toggle this skill', self.test_14_skill_comparisons_remove_attached_skill),
-            ('index.html', '<h3>Try Examples</h3>', '<h3>Try Examples</h3><p>Edit scenario_json variables.</p>', self.test_25_introductory_workshops_use_chat_adventure),
-            ('index.html', 'setup instructions', 'role instructions', self.test_26_definitions_and_winograd_context),
-            ('index.html', 'Continue with CUNY Login', 'Request individual access', self.test_09_access_and_stable_links),
-            ('index.html', 'href="workshop-copy.html"', 'href="skills/"', self.test_32_published_sessions_link_without_releasing_third),
-            ('index.html', '<img alt="Gemma 3 27B', '<a alt="Gemma 3 27B', self.test_27_original_responses_are_embedded_together),
+            ('basics/index.html', '<h3>Try Examples</h3>', '<h3>Try Examples</h3><p>Edit scenario_json variables.</p>', self.test_25_introductory_workshops_use_chat_adventure),
+            ('basics/index.html', 'setup instructions', 'role instructions', self.test_26_definitions_and_winograd_context),
+            ('basics/index.html', 'Continue with CUNY Login', 'Request individual access', self.test_09_access_and_stable_links),
+            ('basics/index.html', 'href="workshop-copy.html"', 'href="../skills/"', self.test_32_published_sessions_link_without_releasing_third),
+            ('basics/index.html', '<img alt="Gemma 3 27B', '<a alt="Gemma 3 27B', self.test_27_original_responses_are_embedded_together),
         ]
         for route,before,after,test in mutations:
             with self.subTest(mutation=after):
@@ -786,7 +788,7 @@ class CopyRegressions(unittest.TestCase):
                 decks={r:t.all(lambda n:n.has_class('slide')) for r,t in trees.items()}
                 with patch.object(self,'trees',trees),patch.object(self,'decks',decks),self.assertRaises(AssertionError):test()
         decks={r:list(slides) for r,slides in self.decks.items()}
-        root=decks['index.html']
+        root=decks['basics/index.html']
         definition=next(s for s in root if s.attrs['data-title']=='System Prompts')
         root.remove(definition);root.append(definition)
         with patch.object(self,'decks',decks),self.assertRaises(AssertionError):self.test_06_comparison_scaffolding()
