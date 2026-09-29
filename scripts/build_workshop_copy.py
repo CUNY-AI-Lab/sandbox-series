@@ -7,7 +7,7 @@ import struct
 import re
 import xml.etree.ElementTree as ET
 
-from check_workshop import Parser, VOID
+from check_workshop import Parser, VOID, render as render_markdown
 from reading_pages import relative, reading_href, page, link
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -124,9 +124,29 @@ def build_series():
     return page('Full Series Copy', '\n'.join(sections), destination, nav, outline)
 
 
+def build_knowledge_outline():
+    """Keep the working outline aligned with the published workshop."""
+    destination = 'knowledge/OUTLINE.html'
+    content, contents = deck_content('knowledge', destination)
+    outline = '<nav class="copy-outline" aria-label="Workshop outline"><ol>' + contents + '</ol></nav>'
+    html = page('Curating knowledge collections', content, destination,
+                [link('OUTLINE.md', 'Download outline', 'OUTLINE.md')], outline)
+    source = Parser((ROOT / 'knowledge/index.html').read_text()).root
+    sections = []
+    for number, slide in enumerate(source.all(lambda node: node.has_class('slide')), 1):
+        title = slide.attrs['data-title']
+        body = render_markdown(slide).replace('### ' + title, '', 1)
+        body = re.sub(r'\n{3,}', '\n\n', body).strip()
+        sections.append(f'## {number}. {title}\n\n{body}')
+    markdown = '# Curating knowledge collections\n\n' + '\n\n---\n\n'.join(sections) + '\n'
+    markdown = '\n'.join(line.rstrip() for line in markdown.splitlines()) + '\n'
+    return html, markdown
+
+
 def main():
     outputs = {str(Path(route) / 'workshop-copy.html'): build(route) for route, _ in DECKS}
     outputs['SLIDES.html'] = build_series()
+    outputs['knowledge/OUTLINE.html'], outputs['knowledge/OUTLINE.md'] = build_knowledge_outline()
     output = outputs['workshop-copy.html']
     source = Parser((ROOT / 'index.html').read_text()).root
     copied = Parser(output).root
@@ -149,7 +169,7 @@ def main():
         elif not destination.exists() or destination.read_text() != output:
             print(f'{name} is out of sync; run scripts/check_series.py --write.')
             return 1
-    print('Four workshop HTML copies ' + ('synchronized.' if '--write' in sys.argv else 'checked.'))
+    print('Workshop copies and Knowledge outline ' + ('synchronized.' if '--write' in sys.argv else 'checked.'))
     return 0
 
 

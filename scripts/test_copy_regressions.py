@@ -351,8 +351,9 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('saved draft',self.slide('skills/index.html','Create Skills').text())
         self.assertIn('four adventure options',self.slide('knowledge/index.html','Test Custom Model').text())
         citation=self.slide('knowledge/index.html','Check Citations')
-        self.assertIn('In chat, select a citation beside a response',citation.text())
-        self.assertIn('Does this passage support that response?',citation.text())
+        self.assertIn('In same chat',citation.text())
+        self.assertIn('Select a citation beside a response',citation.text())
+        self.assertIn('Does its source passage support that response?',citation.text())
         self.assertNotIn('uploaded document',citation.text())
         self.assertIn('chat',citation.all(lambda n:n.tag=='img')[0].attrs['alt'])
         for route,titles in [('knowledge',['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']),('skills',['Write Instructions','Check Interpretations','Check Skill Drafts','Check Generated Code'])]:
@@ -391,8 +392,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('settings carry over when you clone',text)
         self.assertNotIn('Newton',text)
         check=self.slide('knowledge/index.html','Test Custom Model')
-        self.assertIn('scene',check.text())
-        self.assertIn('Which passage supports this scene?',check.text())
+        self.assertIn('New Chat',check.text())
+        self.assertIn('Which passage supports this scene?',self.slide('knowledge/index.html','Check Citations').text())
         self.assertFalse(check.all(lambda n:n.tag=='a' and n.attrs.get('download')=='prism-scenario.md'))
         im=self.slide('knowledge/index.html','Attach Your Collection').all(lambda n:n.tag=='img')[0]
         self.assertIn('collection picker',im.attrs['alt'])

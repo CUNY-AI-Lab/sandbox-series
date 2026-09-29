@@ -620,9 +620,9 @@ Wait for processing, then open each file to check text and source links.
 
 **Alt text:** Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.
 
-Open your copy in **Workspace → Models → Edit**. Under **Knowledge**, remove inherited collection attachments and select your own collection.
+In **Workspace → Models**, find your saved copy. Open **⋯ → Edit**.
 
-Scroll up to **System Prompt** to revise instructions.
+Under **Knowledge**, remove **STEM Wikipedia Experiments** from your copy and select your own collection. Scroll up to **System Prompt**.
 
 ---
 
@@ -668,13 +668,11 @@ Select **Save & Update**.
 
 ### Test Custom Model
 
-![STEM Adventure Games chat showing four adventure options, with model selector annotated and message box visible.](images/knowledge-stem-2026-09-28/test-retrieval.svg?v=20260928-menu)
+- Select **New Chat** in left sidebar.
 
-**Alt text:** STEM Adventure Games chat showing four adventure options, with model selector annotated and message box visible.
+- Select model ID on bottom right of message box. Choose your saved copy.
 
-Start a new chat with your saved copy. Ask for four adventure options about your chosen topic, then choose one.
-
-After a scene appears, ask “Which passage supports this scene? Quote it and cite your source.”
+- Ask for four adventure options about your topic. Choose one to begin.
 
 ---
 
@@ -686,9 +684,9 @@ After a scene appears, ask “Which passage supports this scene? Quote it and ci
 
 **Alt text:** STEM Adventure Games chat with citation beside a response outlined and labeled. Message box remains visible.
 
-In chat, select a citation beside a response to view its source passage.
+In same chat, ask “Which passage supports this scene? Quote it and cite your source.”
 
-Does this passage support that response?
+Select a citation beside a response. Does its source passage support that response?
 
 ---
 
@@ -696,13 +694,13 @@ Does this passage support that response?
 
 ### Compare Responses
 
-Send one request about your chosen topic in separate new chats with **STEM Adventure Games** and your copy.
+Keep your test chat open. Open **STEM Adventure Games** in another tab and send same opening request.
 
-- How do options or scenes differ?
+<https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
+
+- How do responses differ?
 
 - Does your copy use new sources as instructed?
-
-- What still needs to change for your chosen audience?
 
 ---
 
@@ -714,7 +712,7 @@ Choose one problem you observed and revise its source document or system prompt 
 
 For document changes, replace outdated files in your collection and wait for processing. For prompt changes, select **Save & Update**.
 
-Repeat your request in a new chat and check whether this change resolved that problem.
+Open **New Chat**, select your saved copy, and repeat your request. Did this change resolve that problem?
 
 ---
 

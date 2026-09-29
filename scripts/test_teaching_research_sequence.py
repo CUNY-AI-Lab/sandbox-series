@@ -157,8 +157,9 @@ class ParticipantContinuity(unittest.TestCase):
         self.assertIn('your own collection',attach)
         self.assertIn('source URL',self.slide('knowledge/index.html','Prepare Documents').text())
         comparison=self.slide('knowledge/index.html','Compare Responses').text()
-        self.assertIn('chosen topic',comparison)
-        self.assertIn('separate new chats',comparison)
+        self.assertIn('Keep your test chat open',comparison)
+        self.assertIn('another tab',comparison)
+        self.assertIn('same opening request',comparison)
         self.assertNotIn('Choose one experiment for both',comparison)
 
     def test_participants_find_sources_for_adapted_purpose(self):
@@ -184,11 +185,17 @@ class ParticipantContinuity(unittest.TestCase):
         attach=self.slide('knowledge/index.html','Attach Your Collection').text()
         self.assertIn('Scroll up',attach)
         test=self.slide('knowledge/index.html','Test Custom Model').text()
-        self.assertLess(test.index('choose one'),test.index('After a scene appears'))
+        self.assertLess(test.index('New Chat'),test.index('Select model ID'))
+        self.assertLess(test.index('Choose your saved copy'),test.index('Ask for four'))
+        test_slide=self.slide('knowledge/index.html','Test Custom Model')
+        self.assertEqual(len(test_slide.all(lambda n:n.tag=='li')),3)
+        self.assertFalse(test_slide.all(lambda n:n.tag=='img' and 'test-retrieval.svg' in n.attrs.get('src','')), 'Existing-chat screenshot contradicts blank-chat instructions.')
+        citation=self.slide('knowledge/index.html','Check Citations').text()
+        self.assertIn('In same chat',citation)
         retest=self.slide('knowledge/index.html','Revise and Retest').text()
         self.assertIn('replace outdated files',retest)
         self.assertIn('wait for processing',retest)
-        self.assertLess(retest.index('Save & Update'),retest.index('new chat'))
+        self.assertLess(retest.index('Save & Update'),retest.index('New Chat'))
 
     def test_knowledge_examples_have_no_fixed_experiment(self):
         for path in ['knowledge/index.html','knowledge/reference.html','examples/stem-chat-system-prompt.txt','examples/knowledge/source-register.md']:
