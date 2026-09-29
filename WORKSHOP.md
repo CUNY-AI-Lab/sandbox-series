@@ -112,12 +112,12 @@ Participants clone STEM Adventure Games, choose sources for a topic they want to
 | Minutes | Activity | Evidence to examine |
 | --- | --- | --- |
 | 0–15 | Introduce RAG, explore STEM Adventure Games, clone and rename it, and try an initial interaction. | Saved copy and an initial response |
-| 15–40 | View the example collection. Choose a purpose and audience, then locate two or three sources for an adapted version. Save readable source text with titles, links, and dates. | Participant-selected sources and intended use for each document |
-| 40–60 | Create a private, empty collection. Upload selected documents, wait for processing, inspect text, and replace the inherited collection attachment on the cloned model. | Uploaded files and the clone's new collection attachment |
-| 60–70 | Edit Purpose, replace the source list under Procedure, and explain how each uploaded document should be used. Review Constraints and Format for instructions that conflict with the adapted purpose, then save. | Prompt instructions that match the new source material |
-| 70–90 | Start a blank chat, select the saved copy before sending a request, and choose an adventure. Check citations in that chat. Open the original in another tab to compare the same opening request. Revise one source or instruction, upload or save the change, then test the saved copy in a new chat. | Source-supported details, gaps, and effects of customization |
+| 15–40 | View the example collection. Choose a purpose and audience, then locate two or three webpages for an adapted version. Read relevant passages and keep the URLs. | Participant-selected webpages and intended use for each |
+| 40–60 | Create a private, empty collection. Add selected webpages by URL, wait for processing, inspect imported text, and replace the inherited collection attachment on the cloned model. | Added webpages and the clone's new collection attachment |
+| 60–70 | Edit Purpose, replace the source list under Procedure with page titles, and explain how each webpage should be used. Review Constraints and Format for instructions that conflict with the adapted purpose, then save. | Prompt instructions that match the new source material |
+| 70–90 | Start a blank chat, select the saved copy before sending a request, and choose an adventure. Check citations in that chat. Open the original in another tab to compare the same opening request. Revise one webpage or instruction, save the change, then test the saved copy in a new chat. | Source-supported details, gaps, and effects of customization |
 
-The original collection is shown before the customization activity. Newly created collections contain no files until participants upload them. Do not imply that cloning creates personal copies of shared source documents. Participants replace the inherited attachment in their own model and upload documents to their own collection.
+The original collection is shown before the customization activity. Newly created collections contain no sources until participants add webpages. Do not imply that cloning creates personal copies of shared sources. Participants replace the inherited attachment in their own model and add webpages to their own collection.
 
 Settings are prepared on the example cards before participants clone them. The participant deck does not walk through Function Calling, Advanced Params, or capability switches. Keep custom Skills and Tools unselected; the third workshop introduces those separately.
 
@@ -129,7 +129,7 @@ Participant account verification remains pending. Earlier STEM source checking i
 ### Next steps
 
 - Choose another topic or experiment
-- Update source documents and instructions
+- Update source webpages and instructions
 - Check responses against saved sources
 
 ## Configuring skills and tools

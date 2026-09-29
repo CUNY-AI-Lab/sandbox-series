@@ -582,23 +582,13 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ### Find Sources
 
-Locate two or three Wikipedia articles or other documents about your chosen topic.
+Locate two or three Wikipedia articles or other webpages about your chosen topic.
 
 Read relevant passages. Choose sources that explain what players could investigate and which decisions they could make.
 
 ---
 
 ## Curating knowledge collections — 12
-
-### Prepare Documents
-
-Copy relevant source material into a PDF, Markdown, or text file. Put title, source URL, and date saved above copied text.
-
-For example, save a passage from Wikipedia’s *Volcano* article as volcano.md; links alone do not include article text.
-
----
-
-## Curating knowledge collections — 13
 
 ### Create Your Collection
 
@@ -612,21 +602,21 @@ Keep access **Private** and select **Create Knowledge**.
 
 ---
 
-## Curating knowledge collections — 14
+## Curating knowledge collections — 13
 
-### Upload Your Sources
+### Add Webpages
 
-Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
+Your new collection starts empty. Select **Add Content → Add webpage** and paste a URL, such as <https://en.wikipedia.org/wiki/Volcano>.
 
-Wait for processing, then open each file to check text and source links.
+Wait for processing, then open its entry to check imported text. Repeat for your other pages.
 
-![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260929-uncropped)
+![Empty STEM Workshop Sources collection with Add Content menu open and Add webpage annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260930-webpage)
 
-**Alt text:** New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.
+**Alt text:** Empty STEM Workshop Sources collection with Add Content menu open and Add webpage annotated.
 
 ---
 
-## Curating knowledge collections — 15
+## Curating knowledge collections — 14
 
 ### Attach Your Collection
 
@@ -640,7 +630,7 @@ Under **Knowledge**, remove **STEM Wikipedia Experiments** from your copy and se
 
 ---
 
-## Curating knowledge collections — 16
+## Curating knowledge collections — 15
 
 ### Update Purpose
 
@@ -650,19 +640,19 @@ Create a text adventure about [topic] for [audience]. Let players investigate [q
 
 ---
 
-## Curating knowledge collections — 17
+## Curating knowledge collections — 16
 
 ### Update Sources
 
-Under **Procedure → Source documents**, replace original source names with filenames you uploaded. Explain how each document should guide play.
+Under **Procedure → Source documents**, replace original source names with page titles you added. Explain how each webpage should guide play.
 
-Use [filename] to guide [adventure options, decisions, or background details].
+Use [page title] to guide [adventure options, decisions, or background details].
 
 Remove instructions that refer to sources you replaced.
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 17
 
 ### Revise Instructions
 
@@ -678,7 +668,7 @@ Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 18
 
 ### Test Custom Model
 
@@ -690,7 +680,7 @@ Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 20
+## Curating knowledge collections — 19
 
 ### Check Citations
 
@@ -704,7 +694,7 @@ Select a citation beside a response. Does its source passage support that respon
 
 ---
 
-## Curating knowledge collections — 21
+## Curating knowledge collections — 20
 
 ### Compare Responses
 
@@ -718,19 +708,19 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## Curating knowledge collections — 22
+## Curating knowledge collections — 21
 
 ### Revise and Retest
 
-Choose one problem you observed and revise its source document or system prompt instruction.
+Choose one problem you observed. Change a source or system prompt instruction.
 
-For document changes, replace outdated files in your collection and wait for processing. For prompt changes, select **Save & Update**.
+For source changes, add or remove a webpage and wait for processing. For prompt changes, select **Save & Update**.
 
 Open **New Chat**, select your saved copy, and repeat your request. Did this change resolve that problem?
 
 ---
 
-## Curating knowledge collections — 23
+## Curating knowledge collections — 22
 
 ### Share Custom Model
 
@@ -742,11 +732,11 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## Curating knowledge collections — 24
+## Curating knowledge collections — 23
 
 ### Workshop Resources
 
-Choose another topic or experiment. Refresh source documents when needed and check responses against versions you saved.
+Choose another topic or experiment. Review webpages when they change and check responses against sources in your collection.
 
 ### Workshop Materials
 

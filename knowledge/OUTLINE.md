@@ -119,21 +119,13 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ## 11. Find Sources
 
-Locate two or three Wikipedia articles or other documents about your chosen topic.
+Locate two or three Wikipedia articles or other webpages about your chosen topic.
 
 Read relevant passages. Choose sources that explain what players could investigate and which decisions they could make.
 
 ---
 
-## 12. Prepare Documents
-
-Copy relevant source material into a PDF, Markdown, or text file. Put title, source URL, and date saved above copied text.
-
-For example, save a passage from Wikipedia’s *Volcano* article as volcano.md; links alone do not include article text.
-
----
-
-## 13. Create Your Collection
+## 12. Create Your Collection
 
 Select **Workspace → Knowledge → Create**. Name your collection and describe what your sources cover.
 
@@ -143,17 +135,17 @@ Keep access **Private** and select **Create Knowledge**.
 
 ---
 
-## 14. Upload Your Sources
+## 13. Add Webpages
 
-Your new collection starts empty. Select **Add Content → Upload files** and upload documents you prepared.
+Your new collection starts empty. Select **Add Content → Add webpage** and paste a URL, such as <https://en.wikipedia.org/wiki/Volcano>.
 
-Wait for processing, then open each file to check text and source links.
+Wait for processing, then open its entry to check imported text. Repeat for your other pages.
 
-![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260929-uncropped)
+![Empty STEM Workshop Sources collection with Add Content menu open and Add webpage annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260930-webpage)
 
 ---
 
-## 15. Attach Your Collection
+## 14. Attach Your Collection
 
 In **Workspace → Models**, find your saved copy. Open **⋯ → Edit**.
 
@@ -163,7 +155,7 @@ Under **Knowledge**, remove **STEM Wikipedia Experiments** from your copy and se
 
 ---
 
-## 16. Update Purpose
+## 15. Update Purpose
 
 In **System Prompt**, revise **Purpose** and **Audience** for your chosen topic. Use this as a starting point.
 
@@ -171,17 +163,17 @@ Create a text adventure about [topic] for [audience]. Let players investigate [q
 
 ---
 
-## 17. Update Sources
+## 16. Update Sources
 
-Under **Procedure → Source documents**, replace original source names with filenames you uploaded. Explain how each document should guide play.
+Under **Procedure → Source documents**, replace original source names with page titles you added. Explain how each webpage should guide play.
 
-Use [filename] to guide [adventure options, decisions, or background details].
+Use [page title] to guide [adventure options, decisions, or background details].
 
 Remove instructions that refer to sources you replaced.
 
 ---
 
-## 18. Revise Instructions
+## 17. Revise Instructions
 
 Check remaining instructions against your chosen topic.
 
@@ -195,7 +187,7 @@ Select **Save & Update**.
 
 ---
 
-## 19. Test Custom Model
+## 18. Test Custom Model
 
 - Select **New Chat** in left sidebar.
 
@@ -205,7 +197,7 @@ Select **Save & Update**.
 
 ---
 
-## 20. Check Citations
+## 19. Check Citations
 
 In same chat, ask “Which passage supports this scene? Quote it and cite your source.”
 
@@ -215,7 +207,7 @@ Select a citation beside a response. Does its source passage support that respon
 
 ---
 
-## 21. Compare Responses
+## 20. Compare Responses
 
 Keep your test chat open. Open **STEM Adventure Games** in another tab and send same opening request.
 
@@ -227,17 +219,17 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## 22. Revise and Retest
+## 21. Revise and Retest
 
-Choose one problem you observed and revise its source document or system prompt instruction.
+Choose one problem you observed. Change a source or system prompt instruction.
 
-For document changes, replace outdated files in your collection and wait for processing. For prompt changes, select **Save & Update**.
+For source changes, add or remove a webpage and wait for processing. For prompt changes, select **Save & Update**.
 
 Open **New Chat**, select your saved copy, and repeat your request. Did this change resolve that problem?
 
 ---
 
-## 23. Share Custom Model
+## 22. Share Custom Model
 
 In your copy’s editor, open **Access** and grant intended users or groups **Read** access. Give those same users **Read** access to its Knowledge collection.
 
@@ -247,9 +239,9 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## 24. Workshop Resources
+## 23. Workshop Resources
 
-Choose another topic or experiment. Refresh source documents when needed and check responses against versions you saved.
+Choose another topic or experiment. Review webpages when they change and check responses against sources in your collection.
 
 ### Workshop Materials
 

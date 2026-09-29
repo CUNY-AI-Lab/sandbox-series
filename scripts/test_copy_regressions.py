@@ -253,16 +253,18 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Prepare Documents','Create Your Collection','Upload Your Sources','Attach Your Collection','Update Purpose','Update Sources','Revise Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
-        upload=self.slide('knowledge/index.html','Upload Your Sources')
-        self.assertIn('Your new collection starts empty.',upload.text())
-        self.assertIn('processing',upload.text())
-        image=upload.all(lambda n:n.tag=='img')[0]
-        self.assertIn('No content found',image.attrs['alt'])
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Webpages','Attach Your Collection','Update Purpose','Update Sources','Revise Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
+        webpages=self.slide('knowledge/index.html','Add Webpages')
+        self.assertIn('Your new collection starts empty.',webpages.text())
+        self.assertIn('Add Content → Add webpage',webpages.text())
+        self.assertIn('https://en.wikipedia.org/wiki/Volcano',webpages.text())
+        self.assertIn('processing',webpages.text())
+        image=webpages.all(lambda n:n.tag=='img')[0]
+        self.assertIn('Add webpage annotated',image.attrs['alt'])
         self.assertTrue(image.attrs['src'].split('?',1)[0].endswith('upload-custom-sources.svg'))
         self.assertIn('your own collection',self.slide('knowledge/index.html','Attach Your Collection').text())
         prompt=' '.join(self.slide('knowledge/index.html',title).text() for title in ['Update Purpose','Update Sources','Revise Instructions'])
-        for term in ['replace original source names','filenames you uploaded','how each document should guide play','Save & Update']:
+        for term in ['replace original source names','page titles you added','how each webpage should guide play','Save & Update']:
             self.assertIn(term,prompt)
         copy=' '.join(s.text() for s in self.decks['knowledge/index.html'])
         for term in ['Function Calling','Advanced Params','Enable Knowledge','Enable Retrieval','Explain RAG']:
@@ -342,7 +344,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),24)
+        self.assertEqual(len(self.decks['knowledge/index.html']),23)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
