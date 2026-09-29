@@ -143,7 +143,7 @@ class ReadingPages(unittest.TestCase):
                       'knowledge/workshop-copy.html', 'skills/workshop-copy.html']:
             page = Parser((ROOT / route).read_text()).root
             self.assertTrue(page.all(lambda node: node.tag == 'script' and
-                            node.attrs.get('src', '').endswith('js/theme.js')), route)
+                            node.attrs.get('src', '').split('?', 1)[0].endswith('js/theme.js')), route)
 
 
 if __name__ == '__main__':

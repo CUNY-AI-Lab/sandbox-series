@@ -117,10 +117,6 @@
   // Keep the labeled footer target and support quick touch swipes on slides.
   const swipeArea = document.querySelector('.nav-info');
   if (swipeArea) {
-    const hint = document.createElement('span');
-    hint.className = 'nav-swipe-hint';
-    hint.textContent = '← Swipe →';
-    swipeArea.append(hint);
     swipeArea.setAttribute('role', 'group');
     swipeArea.setAttribute('aria-label', 'Swipe left for next slide; swipe right for previous slide');
     enableSwipe(swipeArea, false);

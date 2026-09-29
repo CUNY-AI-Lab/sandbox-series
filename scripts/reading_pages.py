@@ -83,8 +83,8 @@ def page(title, content, destination, links, outline=''):
 <title>{escape(title)} | CUNY AI Lab</title>
 <link rel="icon" type="image/svg+xml" href="{favicon}">
 <link rel="stylesheet" href="{css}?v={css_version}">
-<link rel="stylesheet" href="{theme_css}?v=20260929-a11y">
-<script src="{theme_script}" defer></script>
+<link rel="stylesheet" href="{theme_css}?v=20260929-controls">
+<script src="{theme_script}?v=20260929-controls" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#workshop-copy">Skip to content</a>

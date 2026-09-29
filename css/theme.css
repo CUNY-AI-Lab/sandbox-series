@@ -1,9 +1,15 @@
-.theme-toggle{position:fixed;z-index:12;top:12px;right:18px;padding:7px 12px;min-height:42px;border:1px solid var(--border,#555);border-radius:7px;background:var(--surface,#242424);color:var(--text,#f1f1f1);font:600 15px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;cursor:pointer}
-.theme-toggle:hover{filter:brightness(1.12)}
-.theme-toggle:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.theme-toggle{position:fixed;z-index:12;top:10px;right:16px;width:44px;height:44px;padding:0;border:0;background:transparent;color:var(--text,#f1f1f1);display:grid;place-items:center;cursor:pointer}
+.theme-toggle::before{content:"";position:absolute;inset:4px;border:1px solid var(--border,#555);border-radius:50%;background:var(--surface,#242424)}
+.theme-toggle svg{position:relative;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.theme-toggle .theme-moon{display:none}
+[data-theme="light"] .theme-toggle .theme-sun{display:none}
+[data-theme="light"] .theme-toggle .theme-moon{display:block}
+.theme-toggle:hover::before{filter:brightness(1.16)}
+.theme-toggle:focus-visible{outline:3px solid currentColor;outline-offset:2px;border-radius:50%}
 body[data-workshop] .theme-toggle{left:18px;right:auto}
 :root[data-theme="light"]{color-scheme:light;--bg:#f8fafc;--surface:#fff;--text:#121a2b;--muted:#344054;--border:#b8c5d5;--accent-cyan:#164e91;--accent-blue:#164e91;--accent-red:#164e91;--accent-amber:#164e91;--accent-green:#164e91}
-[data-theme="light"] .theme-toggle{background:#fff;border-color:#718096;color:#121a2b}
+[data-theme="light"] .theme-toggle{color:#121a2b}
+[data-theme="light"] .theme-toggle::before{background:#fff;border-color:#718096}
 [data-theme="light"] a{text-decoration-color:#375fa2}
 [data-theme="light"] a:hover{text-decoration-color:#142f68}
 [data-theme="light"] .roadmap-dated .workshop-date{color:#244681}
@@ -21,5 +27,5 @@ body[data-workshop] .theme-toggle{left:18px;right:auto}
 [data-theme="light"] .cover-details{border-color:#8fa1bc}
 [data-theme="light"] .copy-prompt:hover{background:#eaf0f8}
 [data-theme="light"] .unavailable{color:#64748b}
-@media(max-width:600px){.theme-toggle{top:8px;right:10px;min-height:38px;padding:6px 9px;font-size:13px}body[data-workshop] .theme-toggle{left:10px;right:auto}.workshop-cover .slide-inner{padding-top:58px}}
+@media(max-width:600px){.theme-toggle{top:6px;right:8px}body[data-workshop] .theme-toggle{left:8px;right:auto}.workshop-cover .slide-inner{padding-top:58px}}
 @media print{.theme-toggle{display:none}}

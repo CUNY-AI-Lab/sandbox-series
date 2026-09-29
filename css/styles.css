@@ -454,7 +454,6 @@ color:var(--muted);
 touch-action:pan-y;
 user-select:none;
 -webkit-user-select:none}
-.nav-swipe-hint{display:none}
 #slide-progress{
 flex:1;
 min-width:120px;

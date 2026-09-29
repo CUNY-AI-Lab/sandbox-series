@@ -31,6 +31,7 @@ const engine=context.window.deckEngine;
 function key(name,extra={}){const e={key:name,target:new Element('div'),preventDefault(){this.prevented=true;},...extra};documentHandlers.keydown(e);return e;}
 let checks=0;function check(fn){fn();checks++;}
 (async()=>{
+ check(()=>{assert.equal(swipeArea.children.length,0,'slide counter stays compact');assert.match(swipeArea.getAttribute('aria-label'),/Swipe left/);});
  check(()=>assert.equal(engine.totalSlides(),3));
  await ids['fullscreen-button'].handlers.click();
  check(()=>{assert.equal(doc.fullscreenElement,doc.documentElement);assert.equal(ids['fullscreen-button'].getAttribute('aria-label'),'Exit fullscreen');});
