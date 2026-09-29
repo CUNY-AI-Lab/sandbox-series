@@ -754,6 +754,9 @@ class CopyRegressions(unittest.TestCase):
             svg=ET.parse(raw.with_name(record['name']+'.svg')).getroot()
             embedded=svg.find('{http://www.w3.org/2000/svg}image').attrib['href']
             self.assertEqual(base64.b64decode(embedded.split(',',1)[1]),raw.read_bytes())
+            if record['name']=='upload-custom-sources':
+                x,_,width,_=map(float,svg.attrib['viewBox'].split())
+                self.assertGreaterEqual(x+width,1919,'Add Content label must remain inside crop')
 
     def test_36_knowledge_roadmap_and_screenshot_order(self):
         slides=self.decks['knowledge/index.html']

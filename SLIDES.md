@@ -620,7 +620,7 @@ Your new collection starts empty. Select **Add Content → Upload files** and up
 
 Wait for processing, then open each file to check text and source links.
 
-![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260928-review2)
+![New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.](images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260929-uncropped)
 
 **Alt text:** New STEM Workshop Sources collection showing No content found, with Add Content open and Upload files annotated.
 

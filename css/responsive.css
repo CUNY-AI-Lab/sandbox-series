@@ -265,6 +265,7 @@ max-height:none}
 .response-comparison-slide .slide-inner { gap:32px; }
 .screenshot-slide h1 { font-size:var(--heading); line-height:1.13; flex:none; max-width:none; margin:0; }
 .screenshot-slide figure { flex:1; min-height:0; display:flex; flex-direction:column; gap:8px; }
+body[data-workshop="knowledge"] .screenshot-slide figure { gap:clamp(24px,3.2vh,32px); }
 .screenshot-slide figure .screenshot-img { width:100%; max-width:var(--screenshot-max-width,100%); align-self:center; flex:0 1 auto; height:auto; min-height:0; max-height:none; object-fit:contain; object-position:center top; border:0; border-radius:0; background:transparent; }
 .screenshot-slide figcaption { flex:none; margin:0; font-size:var(--support); line-height:1.35; max-width:none; }
 .slide [data-fragment-step][hidden] { display:none; }
@@ -281,7 +282,7 @@ max-height:none}
 .prompt-control-slide figcaption a { overflow-wrap:anywhere; }
 .agenda { display:grid; gap:10px; }
 .agenda li+li { margin:0; }
-@media(max-width:600px) { .screenshot-slide .slide-inner { padding:16px 10px 8px; gap:10px; } .screenshot-slide figcaption { font-size:20px; } }
+@media(max-width:600px) { .screenshot-slide .slide-inner { padding:16px 10px 8px; gap:10px; } .screenshot-slide figcaption { font-size:20px; } body[data-workshop="knowledge"] .screenshot-slide figure { gap:20px; } }
 @media print { .screenshot-slide .slide-inner { height:auto; } .screenshot-slide figure .screenshot-img { height:auto; max-height:70vh; } }
 
 @media(max-width:900px){
