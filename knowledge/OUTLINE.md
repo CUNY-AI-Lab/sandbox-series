@@ -127,9 +127,9 @@ Read relevant passages. Choose sources that explain what players could investiga
 
 ## 12. Prepare Documents
 
-Copy relevant source text into documents and save as PDF, Markdown, or plain text. Include a title, source URL, and date saved in each file.
+Copy relevant source text into a PDF, Markdown, or text file. Put title, source URL, and date saved above copied text.
 
-Use descriptive filenames. These saved documents become your collection; links alone do not include article text.
+For example, save a passage from Wikipedia’s *Volcano* article as volcano.md; links alone do not include article text.
 
 ---
 
