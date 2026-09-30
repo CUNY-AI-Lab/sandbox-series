@@ -139,7 +139,7 @@ Keep access **Private** and select **Create Knowledge**.
 
 Select **Add Content → New directory**. Name it **Wikipedia**, select **Create**, then open **Wikipedia**.
 
-![STEM Workshop Sources with Add Content, New directory, and Wikipedia directory outlined.](../images/knowledge-directories-2026-09-29/directory-workflow.svg)
+![New directory and Wikipedia directory outlined in Sandbox.](../images/knowledge-directories-2026-09-29/directory-workflow.svg)
 
 Select **Add Content → Add text content**. Use article title as filename.
 

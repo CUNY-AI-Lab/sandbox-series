@@ -129,3 +129,7 @@ td { color: var(--muted); }
 
 /* Keep source screenshots at native width and separate preceding instructions. */
 .copy-content figure > figcaption:first-child { margin:0 0 24px; }
+
+@media(max-width:600px) {
+ .directory-screenshot img { width:100%; padding:16px; background:#151515; box-sizing:border-box; }
+}

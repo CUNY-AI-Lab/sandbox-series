@@ -30,3 +30,17 @@ for name,(view,boxes,labels) in specs.items():
  crop.save(D/(name+'-doc.png'))
  manifest.append(dict(name=name,raw=str(raw.relative_to(ROOT)),sha256=hashlib.sha256(data).hexdigest(),dimensions=list(im.size),view_box=view,capture='Firefox native CUA screenshot',capture_file=str(cap.relative_to(ROOT)),capture_sha256=hashlib.sha256(cap.read_bytes()).hexdigest(),annotation='White SVG overlay and matching PNG for Google Docs; no reconstructed UI.'))
 (Path(__file__).parent/'screenshots.json').write_text(json.dumps(manifest,indent=2)+'\n')
+
+# Mobile presentation of the same captured controls: two separate close-ups.
+# Panels remain visibly separated; no interface pixels are reconstructed.
+name='directory-workflow-mobile'
+raw=D/'directory-workflow-raw.png'
+data=raw.read_bytes();im=Image.open(raw)
+view=(660,560)
+panels=[(0,52,660,211,[1750,545,500,160]),(0,366,660,154,[230,565,650,152])]
+parts=[]
+for px,py,pw,ph,crop in panels:
+ cx,cy,cw,ch=crop
+ parts.append(f'<svg x="{px}" y="{py}" width="{pw}" height="{ph}" viewBox="{cx} {cy} {cw} {ch}"><use href="#capture"/>'+''.join(f'<rect x="{a}" y="{b}" width="{c}" height="{d}" rx="12" fill="none" stroke="white" stroke-width="5"/>' for a,b,c,d in ([(1780,561,450,66)] if py==52 else [(241,628,425,70)]))+'</svg>')
+svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="660" height="560" viewBox="0 0 660 560" role="img" aria-labelledby="title desc"><title id="title">Create and open Wikipedia directory</title><desc id="desc">Two enlarged crops from one Firefox screenshot. New directory appears above Wikipedia directory.</desc><defs><image id="capture" width="{im.width}" height="{im.height}" href="data:image/png;base64,{base64.b64encode(data).decode()}"/></defs><g fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34"><text x="0" y="34">1. Create directory</text><text x="0" y="348">2. Open directory</text></g>{''.join(parts)}</svg>'''
+(D/(name+'.svg')).write_text(svg)

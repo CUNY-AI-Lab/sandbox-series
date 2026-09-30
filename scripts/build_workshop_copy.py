@@ -43,7 +43,7 @@ def render(node, slide_heading, route='', destination='workshop-copy.html'):
     for name, value in node.attrs.items():
         if name in {'id', 'class', 'href', 'src', 'alt', 'title', 'target', 'rel',
                     'download', 'width', 'height', 'datetime', 'scope', 'colspan',
-                    'rowspan', 'data-theme-brand', 'data-logo-dark', 'data-logo-light'}:
+                    'rowspan', 'media', 'srcset', 'data-theme-brand', 'data-logo-dark', 'data-logo-light'}:
             attrs[name] = value
     if node.has_class('slide-inner'):
         attrs['class'] = 'copy-content'
@@ -59,7 +59,7 @@ def render(node, slide_heading, route='', destination='workshop-copy.html'):
             viewbox = ET.parse(path).getroot().attrib.get('viewBox', '').split()
             if len(viewbox) == 4:
                 attrs['width'], attrs['height'] = (round(float(value)) for value in viewbox[2:])
-    for name in ('href', 'src', 'data-logo-dark', 'data-logo-light'):
+    for name in ('href', 'src', 'srcset', 'data-logo-dark', 'data-logo-light'):
         if name not in attrs:
             continue
         if 'download' in attrs:

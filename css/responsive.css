@@ -495,3 +495,12 @@ body[data-workshop="knowledge"] .resource-group ul { display:grid; grid-template
 @media screen and (min-width:1001px) {
  .layout-content:not(.resource-slide):not(.title-slide) .slide-body { flex:none; margin-block:auto; }
 }
+
+/* Retain full context on desktop; enlarge both directory controls on phones. */
+.directory-screenshot { display:contents; }
+@media screen and (max-width:600px) {
+ .screenshot-slide .directory-screenshot .screenshot-img {
+  width:100%; max-width:440px; height:auto; flex:none;
+  padding:16px; background:#151515; border-radius:8px; box-sizing:border-box;
+ }
+}

@@ -30,3 +30,7 @@ Source: https://en.wikipedia.org/wiki/List_of_experiments
 License: https://creativecommons.org/licenses/by-sa/4.0/
 
 Shared layout changes increase text/image clearance and align screenshot insets. Resource pages fit desktop height without reducing type; reading-page images retain native width.
+
+## Mobile directory close-ups
+
+The mobile picture source shows two separated crops from directory-workflow-capture.jpg: New directory at [1750,545,500,160], then Wikipedia directory at [230,565,650,152]. Both preserve original pixels and existing white annotations. Numbered captions identify the sequence. Desktop retains its overview; the lightbox opens whichever image is displayed.

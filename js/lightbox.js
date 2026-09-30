@@ -26,7 +26,7 @@
   function open(image) {
     trigger=image;
     fit(); zoom.disabled=true;
-    expanded.src=image.src;
+    expanded.src=image.currentSrc || image.src;
     expanded.alt=image.alt;
     expanded.style.setProperty('--screenshot-max-width',image.style.getPropertyValue('--screenshot-max-width'));
     dialog.querySelector('p').textContent=image.closest('figure')?.querySelector('figcaption')?.textContent || '';
@@ -34,7 +34,7 @@
   }
   expanded.addEventListener('load',()=>{
     updateZoom();
-    if(dialog.open && stage.clientWidth<=600 && !zoom.disabled) zoomIn();
+    if(dialog.open && stage.clientWidth<=600 && expanded.naturalWidth>900 && !zoom.disabled) zoomIn();
   });
   zoom.addEventListener('click',()=>{
     if(stage.classList.contains('is-zoomed')) fit();

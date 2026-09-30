@@ -777,7 +777,23 @@ class CopyRegressions(unittest.TestCase):
             if not slide.has_class('screenshot-slide'):continue
             for figure in slide.all(lambda n:n.tag=='figure'):
                 children=[node.tag for node in figure.children if isinstance(node,Node)]
-                self.assertEqual(children,['figcaption','img'],slide.attrs['data-title'])
+                self.assertIn(children,(['figcaption','img'],['figcaption','picture']),slide.attrs['data-title'])
+
+    def test_mobile_directory_image_preserves_captured_controls(self):
+        slide=self.slide('knowledge/index.html','Add Source Text')
+        picture=slide.all(lambda n:n.tag=='picture')[0]
+        source=picture.all(lambda n:n.tag=='source')[0]
+        self.assertEqual(source.attrs['media'],'(max-width:600px)')
+        path=(ROOT/'knowledge'/source.attrs['srcset']).resolve()
+        svg=ET.parse(path).getroot()
+        ns='{http://www.w3.org/2000/svg}'
+        embedded=svg.find(ns+'defs/'+ns+'image').attrib['href']
+        self.assertEqual(base64.b64decode(embedded.split(',',1)[1]),(ROOT/'images/knowledge-directories-2026-09-29/directory-workflow-raw.png').read_bytes())
+        panels=svg.findall(ns+'svg')
+        self.assertEqual(len(panels),2)
+        for panel in panels:
+            self.assertLessEqual(float(panel.attrib['viewBox'].split()[2]),650)
+        self.assertIn('image.currentSrc || image.src',(ROOT/'js/lightbox.js').read_text())
 
     def test_20_ninety_minute_plans(self):
         text=(ROOT/'WORKSHOP.md').read_text()
