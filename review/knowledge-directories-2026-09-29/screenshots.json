@@ -1,5 +1,62 @@
 [
   {
+    "name": "directory-workflow",
+    "raw": "images/knowledge-directories-2026-09-29/directory-workflow-raw.png",
+    "sha256": "99f83bfc9239b2d96ea4b7051ec7c1f1b2f5128824dd7b18099aa2bc01ab5e8d",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      210,
+      320,
+      2090,
+      410
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/directory-workflow-capture.jpg",
+    "capture_sha256": "3f0227f3e0b07170634734e93f63227306179625052d68e3562207604700abc0",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
+    "name": "paste-excerpt",
+    "raw": "images/knowledge-directories-2026-09-29/paste-excerpt-raw.png",
+    "sha256": "53cc707e5d699d59aed8d8849d99d7ab3e580cf85f70be5a1560806d78d02f99",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      230,
+      290,
+      1890,
+      1000
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/paste-excerpt-capture.jpg",
+    "capture_sha256": "9f73c14afc80014b1cde438dc5f96fa4b9effcb475d52398fd00a503a2fd17e3",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
+    "name": "save-excerpt",
+    "raw": "images/knowledge-directories-2026-09-29/save-excerpt-raw.png",
+    "sha256": "96ecd693a998fb6e61d9c9cba262ec0154b1b1e6a47da4092471aba8a5f6c6dc",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      230,
+      1710,
+      2040,
+      660
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/save-excerpt-capture.jpg",
+    "capture_sha256": "5d58997e329e3bb463c03ce35a5823825eecf1e63682c7706906863853225337",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
     "name": "create-directory",
     "raw": "images/knowledge-directories-2026-09-29/create-directory-raw.png",
     "sha256": "7a9b0e62eca3d9d444fcf3316469383225f473fd48c6234d0a3c09aa04a331c3",

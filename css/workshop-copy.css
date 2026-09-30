@@ -50,7 +50,7 @@ ul, ol { padding-left: 1.4em; }
 .roadmap li span { display: block; color: var(--muted); }
 .feature-list dt { font-weight: 600; }
 .feature-list dd { margin: 6px 0 22px; color: var(--muted); }
-img { display: block; max-width: 100%; width: 100%; height: auto; border-radius: 6px; }
+img { display: block; max-width: 100%; width: auto; height: auto; border-radius: 6px; }
 .cover-wordmark { max-width: 360px; margin-bottom: 16px; }
 .page-wordmark { width: min(280px, 50vw); height: auto; margin: 0 0 34px; }
 .reference-logo { max-width: 240px; width: auto; margin: 30px 0; }
@@ -126,3 +126,6 @@ td { color: var(--muted); }
 .raw-url { overflow-wrap:anywhere; }
 .source-urls { display:flex; flex-direction:column; gap:8px; }
 .slide-footer > .link-label, .resource-group li > .resource-label { display:block; }
+
+/* Keep source screenshots at native width and separate preceding instructions. */
+.copy-content figure > figcaption:first-child { margin:0 0 24px; }

@@ -467,3 +467,31 @@ height:auto}
 .source-urls { display:flex; flex-wrap:wrap; gap:4px 24px; font-size:24px; line-height:1.3; }
 .slide-footer > .link-label { display:block; }
 .resource-group li > .resource-label { display:block; }
+
+
+/* Spatial rhythm: group instructions, retain image clearance, and align edges. */
+.screenshot-slide .slide-inner { padding-inline:clamp(24px,5vw,72px); gap:20px; }
+.screenshot-slide figcaption { display:grid; gap:12px; line-height:1.4; }
+.screenshot-slide figcaption p + p { margin-top:0; }
+.screenshot-slide figcaption p { max-width:78ch; }
+.resource-slide .slide-inner { gap:12px; padding-block:20px; }
+.resource-directory { gap:16px 40px; padding-top:4px; }
+.resource-group { gap:10px; }
+.resource-group li { padding-top:8px; }
+body[data-workshop="knowledge"] .resource-directory { grid-template-columns:1fr; flex:none; gap:24px; }
+body[data-workshop="knowledge"] .resource-group { display:grid; grid-template-columns:190px minmax(0,1fr); gap:12px 32px; }
+body[data-workshop="knowledge"] .resource-group h3 { padding-top:10px; }
+body[data-workshop="knowledge"] .resource-group ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px 28px; padding:0; }
+@media(max-width:900px) {
+  body[data-workshop="knowledge"] .resource-group { grid-template-columns:1fr; }
+}
+@media(max-width:600px) {
+ .screenshot-slide .slide-inner { padding-inline:23px; gap:18px; }
+ .screenshot-slide figcaption { gap:14px; }
+ body[data-workshop="knowledge"] .resource-group ul { grid-template-columns:1fr; }
+ .resource-group ul { margin-top:8px; }
+}
+
+@media screen and (min-width:1001px) {
+ .layout-content:not(.resource-slide):not(.title-slide) .slide-body { flex:none; margin-block:auto; }
+}

@@ -5,6 +5,9 @@ import base64,html,hashlib,json
 ROOT=Path(__file__).resolve().parents[2]
 D=ROOT/'images/knowledge-directories-2026-09-29'
 specs={
+ 'directory-workflow':([210,320,2090,410],[(2178,477,70,72),(1780,561,450,66),(241,628,425,70)],[]),
+ 'paste-excerpt':([230,290,1890,1000],[(244,409,1350,65)],[]),
+ 'save-excerpt':([230,1710,2040,660],[(2080,2255,165,109)],[]),
  'create-directory':([210,320,2090,750],[(2178,477,70,72),(1780,561,450,66)],[]),
  'open-directory':([210,320,2070,490],[(241,628,425,70)],[(700,655,'Open directory')]),
  'add-text-content':([1740,535,510,520],[(1777,896,455,69)],[]),

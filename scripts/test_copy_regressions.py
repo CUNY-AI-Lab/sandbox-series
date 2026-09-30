@@ -258,9 +258,11 @@ class CopyRegressions(unittest.TestCase):
         steps=webpages.all(lambda n:'data-fragment-step' in n.attrs)
         self.assertEqual(len(steps),3)
         self.assertIn('New directory',steps[0].text())
-        self.assertIn('Open Wikipedia',steps[1].text())
-        self.assertIn('Add Content → Add text content',steps[2].text())
-        self.assertIn('Repeat for three Wikipedia pages',steps[2].text())
+        self.assertIn('then open Wikipedia',steps[0].text())
+        self.assertIn('several paragraphs or complete sections',steps[1].text())
+        self.assertIn('including its link',steps[1].text())
+        self.assertIn('Add Content → Add text content',steps[1].text())
+        self.assertIn('Repeat for three Wikipedia articles',steps[2].text())
         self.assertEqual(len(webpages.all(lambda n:n.tag=='img')),3)
         instructions=self.slide('knowledge/index.html','Add Instructions')
         steps=instructions.all(lambda n:'data-fragment-step' in n.attrs)
@@ -748,7 +750,7 @@ class CopyRegressions(unittest.TestCase):
         used={Path(image.attrs['src']).stem for slide in self.decks['knowledge/index.html']
               for image in slide.all(lambda n:n.tag=='img' and n.has_class('screenshot-img'))}
         self.assertTrue(used <= {record['name'] for record in records})
-        self.assertTrue({'create-directory','open-directory','add-text-content','create-instructions'} <= used)
+        self.assertTrue({'directory-workflow','paste-excerpt','save-excerpt','create-instructions'} <= used)
         self.assertIn('create-custom-collection',used)
         self.assertNotIn('add-content',used)
         for record in records:

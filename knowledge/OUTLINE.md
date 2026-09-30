@@ -137,21 +137,21 @@ Keep access **Private** and select **Create Knowledge**.
 
 ## 13. Add Source Text
 
-Select **Add Content → New directory**. Name it **Wikipedia** and select **Create**.
+Select **Add Content → New directory**. Name it **Wikipedia**, select **Create**, then open **Wikipedia**.
 
-![STEM Workshop Sources with Add Content and New directory outlined.](../images/knowledge-directories-2026-09-29/create-directory.svg)
-
-Open **Wikipedia**. Add sources inside this directory.
-
-![Wikipedia directory inside STEM Workshop Sources, outlined with an Open directory annotation.](../images/knowledge-directories-2026-09-29/open-directory.svg)
+![STEM Workshop Sources with Add Content, New directory, and Wikipedia directory outlined.](../images/knowledge-directories-2026-09-29/directory-workflow.svg)
 
 Select **Add Content → Add text content**. Use article title as filename.
 
-Paste article text and source URL. Select **Save**. Repeat for three Wikipedia pages.
+Copy and paste several paragraphs or complete sections from each Wikipedia article, including its link.
+
+![List of experiments editor filled with Wikipedia experiment entries, with source link outlined.](../images/knowledge-directories-2026-09-29/paste-excerpt.svg)
+
+Select **Save**. Repeat for three Wikipedia articles, keeping excerpts and links in separate files.
 
 Wait for processing, then open each file to check text.
 
-![Add Content menu with Add text content outlined.](../images/knowledge-directories-2026-09-29/add-text-content.svg)
+![Bottom of populated List of experiments editor with Save outlined.](../images/knowledge-directories-2026-09-29/save-excerpt.svg)
 
 ---
 
@@ -213,7 +213,7 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 Choose one problem you observed. Change a source or system prompt instruction.
 
-For source changes, update copied source text and **instructions.txt**. Wait for processing. For prompt changes, select **Save & Update**.
+For source changes, update copied excerpts and **instructions.txt**. Wait for processing. For prompt changes, select **Save & Update**.
 
 Open **New Chat**, select your saved copy, and repeat your request. Did this change resolve that problem?
 

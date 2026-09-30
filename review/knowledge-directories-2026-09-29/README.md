@@ -21,3 +21,12 @@ Existing copy, sequence, reading-page, screenshot-resolution, and interaction ch
 ## Copy-and-paste exercise revision
 
 Following the reported URL-processing failure, slide 13 uses Add text content for three Wikipedia articles, with source URLs included. Live retrieval tools move to the next workshop. The add-text-content annotation reuses the unchanged create-directory Firefox capture and highlights its existing Add text content menu item; it is not a new capture or a successful webpage-import claim.
+
+## Expanded excerpt example
+
+Add Source Text now combines directory creation and opening in one capture, followed by a populated editor and a separate Save view. Actual Firefox captures show 844 words from Wikipedia’s List of experiments (Astronomy and Biology), with source URL and CC BY-SA 4.0 attribution. The file was saved and reopened as List of experiments.txt (5.6 KB) in the private demo collection’s Wikipedia directory. The earlier unsaved Scientific method draft was replaced before saving. White annotations preserve underlying capture pixels; crop coordinates and hashes are recorded in screenshots.json.
+
+Source: https://en.wikipedia.org/wiki/List_of_experiments
+License: https://creativecommons.org/licenses/by-sa/4.0/
+
+Shared layout changes increase text/image clearance and align screenshot insets. Resource pages fit desktop height without reducing type; reading-page images retain native width.
