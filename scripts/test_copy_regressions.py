@@ -234,7 +234,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Workspace and Knowledge access',self.slide('knowledge/index.html','Workshop Agenda').text())
         for slide in self.decks['knowledge/index.html']:
             for link in slide.all(lambda n:n.tag=='a' and n.attrs.get('href','').startswith('http')):
-                self.assertEqual(link.text().strip(),link.attrs['href'])
+                if link.all(lambda n:n.tag=='img'):self.assertEqual(link.attrs['href'],'https://ailab.gc.cuny.edu/')
+                else:self.assertEqual(link.text().strip(),link.attrs['href'])
         self.assertIn('Skills and Tools access',self.slide('skills/index.html','Workshop Agenda').text())
         self.assertIn('Check monthly usage',agenda.text())
         self.assertTrue(agenda.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://tools.ailab.gc.cuny.edu/model-access'))
@@ -245,9 +246,6 @@ class CopyRegressions(unittest.TestCase):
             with self.subTest(route=route):
                 headers=tree.all(lambda n:n.tag=='header' and n.has_class('deck-header'))
                 self.assertEqual(len(headers),1)
-                if route=='knowledge/index.html':
-                    self.assertTrue(headers[0].all(lambda n:n.tag=='img' and n.attrs.get('alt')=='CUNY AI Lab'))
-                    continue
                 links=headers[0].all(lambda n:n.tag=='a')
                 self.assertEqual(len(links),1)
                 self.assertEqual(links[0].attrs['href'],'https://ailab.gc.cuny.edu/')

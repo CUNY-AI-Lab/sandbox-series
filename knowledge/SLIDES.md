@@ -2,7 +2,7 @@
 
 ## Curating knowledge collections — 1
 
-![CUNY AI Lab](../images/cail-wordmark-white.png)
+[![CUNY AI Lab](../images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
 
 ### Curating knowledge collections
 
