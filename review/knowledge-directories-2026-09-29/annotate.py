@@ -7,6 +7,7 @@ D=ROOT/'images/knowledge-directories-2026-09-29'
 specs={
  'create-directory':([210,320,2090,750],[(2178,477,70,72),(1780,561,450,66)],[]),
  'open-directory':([210,320,2070,490],[(241,628,425,70)],[(700,655,'Open directory')]),
+ 'add-text-content':([1740,535,510,520],[(1777,896,455,69)],[]),
  'add-webpages':([590,1030,1180,510],[(642,1180,1065,183),(1560,1390,149,95)],[]),
  'create-instructions':([230,280,1890,625],[(244,303,580,89)],[]),
  'instructions-root':([210,320,2070,545],[(240,624,640,152)],[(970,744,'Collection root')]),
@@ -14,7 +15,7 @@ specs={
 manifest=[]
 font=ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf',42)
 for name,(view,boxes,labels) in specs.items():
- cap=D/(name+'-capture.jpg'); im=Image.open(cap).convert('RGB'); raw=D/(name+'-raw.png');im.save(raw)
+ cap=D/(('create-directory' if name=='add-text-content' else name)+'-capture.jpg'); im=Image.open(cap).convert('RGB'); raw=D/(name+'-raw.png');im.save(raw)
  data=raw.read_bytes();x,y,w,h=view
  overlays=''.join(f'<rect x="{a}" y="{b}" width="{c}" height="{d}" rx="12"/>' for a,b,c,d in boxes)
  texts=''.join(f'<text x="{a}" y="{b}">{html.escape(t)}</text>' for a,b,t in labels)

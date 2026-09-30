@@ -253,14 +253,14 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Webpages','Add Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
-        webpages=self.slide('knowledge/index.html','Add Webpages')
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Source Text','Add Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
+        webpages=self.slide('knowledge/index.html','Add Source Text')
         steps=webpages.all(lambda n:'data-fragment-step' in n.attrs)
         self.assertEqual(len(steps),3)
         self.assertIn('New directory',steps[0].text())
         self.assertIn('Open Wikipedia',steps[1].text())
-        self.assertIn('Add Content → Add webpage',steps[2].text())
-        self.assertIn('saved snapshots',steps[2].text())
+        self.assertIn('Add Content → Add text content',steps[2].text())
+        self.assertIn('Repeat for three Wikipedia pages',steps[2].text())
         self.assertEqual(len(webpages.all(lambda n:n.tag=='img')),3)
         instructions=self.slide('knowledge/index.html','Add Instructions')
         steps=instructions.all(lambda n:'data-fragment-step' in n.attrs)
@@ -748,7 +748,7 @@ class CopyRegressions(unittest.TestCase):
         used={Path(image.attrs['src']).stem for slide in self.decks['knowledge/index.html']
               for image in slide.all(lambda n:n.tag=='img' and n.has_class('screenshot-img'))}
         self.assertTrue(used <= {record['name'] for record in records})
-        self.assertTrue({'create-directory','open-directory','add-webpages','create-instructions'} <= used)
+        self.assertTrue({'create-directory','open-directory','add-text-content','create-instructions'} <= used)
         self.assertIn('create-custom-collection',used)
         self.assertNotIn('add-content',used)
         for record in records:

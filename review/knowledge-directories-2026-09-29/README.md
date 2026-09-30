@@ -17,3 +17,7 @@ Wikipedia import failed with “Error processing URL” for List of experiments,
 ## Checks
 
 Existing copy, sequence, reading-page, screenshot-resolution, and interaction checks cover the revised flow. Desktop and 390px mobile browser checks confirmed one visible fragment, no horizontal overflow, and readable light/dark controls. Screenshot expansion remains available on mobile.
+
+## Copy-and-paste exercise revision
+
+Following the reported URL-processing failure, slide 13 uses Add text content for three Wikipedia articles, with source URLs included. Live retrieval tools move to the next workshop. The add-text-content annotation reuses the unchanged create-directory Firefox capture and highlights its existing Add text content menu item; it is not a new capture or a successful webpage-import claim.

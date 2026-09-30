@@ -38,6 +38,25 @@
     "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
   },
   {
+    "name": "add-text-content",
+    "raw": "images/knowledge-directories-2026-09-29/add-text-content-raw.png",
+    "sha256": "7a9b0e62eca3d9d444fcf3316469383225f473fd48c6234d0a3c09aa04a331c3",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      1740,
+      535,
+      510,
+      520
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/create-directory-capture.jpg",
+    "capture_sha256": "d68ba9236e55cb7b5d10da3cefdf52fe9ebfa4ae855a9a7b9a5f5898ba22787f",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
     "name": "add-webpages",
     "raw": "images/knowledge-directories-2026-09-29/add-webpages-raw.png",
     "sha256": "cf29ec5e26fc77ba00687c7c33cf2c317d17ed8f72f39969be20f3136cb0b155",

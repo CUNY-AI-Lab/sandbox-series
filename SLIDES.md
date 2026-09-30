@@ -604,7 +604,7 @@ Keep access **Private** and select **Create Knowledge**.
 
 ## Curating knowledge collections — 13
 
-### Add Webpages
+### Add Source Text
 
 Select **Add Content → New directory**. Name it **Wikipedia** and select **Create**.
 
@@ -618,13 +618,15 @@ Open **Wikipedia**. Add sources inside this directory.
 
 **Alt text:** Wikipedia directory inside STEM Workshop Sources, outlined with an Open directory annotation.
 
-Select **Add Content → Add webpage**. Paste Wikipedia URLs, one per line, and select **Add**.
+Select **Add Content → Add text content**. Use article title as filename.
 
-Use three pages for your chosen topic. Wait for processing, then open each entry to check imported text. These are saved snapshots.
+Paste article text and source URL. Select **Save**. Repeat for three Wikipedia pages.
 
-![Attach Webpage form showing List of experiments, Scientific method, and Women in science URLs. URL field and Add button outlined.](images/knowledge-directories-2026-09-29/add-webpages.svg)
+Wait for processing, then open each file to check text.
 
-**Alt text:** Attach Webpage form showing List of experiments, Scientific method, and Women in science URLs. URL field and Add button outlined.
+![Add Content menu with Add text content outlined.](images/knowledge-directories-2026-09-29/add-text-content.svg)
+
+**Alt text:** Add Content menu with Add text content outlined.
 
 ---
 
@@ -702,7 +704,7 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 Choose one problem you observed. Change a source or system prompt instruction.
 
-For source changes, update snapshots and **instructions.txt**. Wait for processing. For prompt changes, select **Save & Update**.
+For source changes, update copied source text and **instructions.txt**. Wait for processing. For prompt changes, select **Save & Update**.
 
 Open **New Chat**, select your saved copy, and repeat your request. Did this change resolve that problem?
 
@@ -724,7 +726,7 @@ Ask someone to try your copy and check its citations.
 
 ### Workshop Resources
 
-Choose another topic or experiment. Review webpages when they change and check responses against sources in your collection.
+Check responses against sources in your collection. Next workshop introduces tools that retrieve Wikipedia content live.
 
 ### Workshop Materials
 
