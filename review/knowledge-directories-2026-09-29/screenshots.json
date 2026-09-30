@@ -1,0 +1,97 @@
+[
+  {
+    "name": "create-directory",
+    "raw": "images/knowledge-directories-2026-09-29/create-directory-raw.png",
+    "sha256": "7a9b0e62eca3d9d444fcf3316469383225f473fd48c6234d0a3c09aa04a331c3",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      210,
+      320,
+      2090,
+      750
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/create-directory-capture.jpg",
+    "capture_sha256": "d68ba9236e55cb7b5d10da3cefdf52fe9ebfa4ae855a9a7b9a5f5898ba22787f",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
+    "name": "open-directory",
+    "raw": "images/knowledge-directories-2026-09-29/open-directory-raw.png",
+    "sha256": "a93328f36077a599fc6076c1c3185c63d8e6f2603caacc00aaee74a185d1f2cc",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      210,
+      320,
+      2070,
+      490
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/open-directory-capture.jpg",
+    "capture_sha256": "4c4096c45e0d74b37df4621dfab4646604b2ccac1c9e60e616e3d74335e51f9f",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
+    "name": "add-webpages",
+    "raw": "images/knowledge-directories-2026-09-29/add-webpages-raw.png",
+    "sha256": "cf29ec5e26fc77ba00687c7c33cf2c317d17ed8f72f39969be20f3136cb0b155",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      590,
+      1030,
+      1180,
+      510
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/add-webpages-capture.jpg",
+    "capture_sha256": "e379bca01098dd3c734691cf1574dd2b60974638633b2fcf2ee0782255c11731",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
+    "name": "create-instructions",
+    "raw": "images/knowledge-directories-2026-09-29/create-instructions-raw.png",
+    "sha256": "ce7521c985dfcb046c9fbd935d5cefe1142fc7a7d19c27eff3ebd24496a15d0c",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      230,
+      280,
+      1890,
+      625
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/create-instructions-capture.jpg",
+    "capture_sha256": "f5caad6eba374a9e67d860995304e6513e3fe98c851f0a0e6d82e5469d630afd",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  },
+  {
+    "name": "instructions-root",
+    "raw": "images/knowledge-directories-2026-09-29/instructions-root-raw.png",
+    "sha256": "38099d3ec42c058e99e3ecc792ee72d0fde4e64abe6cb94fd61b5a2eba009be1",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      210,
+      320,
+      2070,
+      545
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "capture_file": "images/knowledge-directories-2026-09-29/instructions-root-capture.jpg",
+    "capture_sha256": "16c6b33fa42ae7db0fc8975cfd4e063b7401b721968da94d95a9e2401fecc86d",
+    "annotation": "White SVG overlay and matching PNG for Google Docs; no reconstructed UI."
+  }
+]

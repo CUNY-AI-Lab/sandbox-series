@@ -253,19 +253,23 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Webpages','Attach Your Collection','Update Purpose','Update Sources','Revise Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Webpages','Add Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
         webpages=self.slide('knowledge/index.html','Add Webpages')
-        self.assertIn('Your new collection starts empty.',webpages.text())
-        self.assertIn('Add Content → Add webpage',webpages.text())
-        self.assertIn('https://en.wikipedia.org/wiki/Volcano',webpages.text())
-        self.assertIn('processing',webpages.text())
-        image=webpages.all(lambda n:n.tag=='img')[0]
-        self.assertIn('Add webpage annotated',image.attrs['alt'])
-        self.assertTrue(image.attrs['src'].split('?',1)[0].endswith('upload-custom-sources.svg'))
-        self.assertIn('your own collection',self.slide('knowledge/index.html','Attach Your Collection').text())
-        prompt=' '.join(self.slide('knowledge/index.html',title).text() for title in ['Update Purpose','Update Sources','Revise Instructions'])
-        for term in ['replace original source names','page titles you added','how each webpage should guide play','Save & Update']:
-            self.assertIn(term,prompt)
+        steps=webpages.all(lambda n:'data-fragment-step' in n.attrs)
+        self.assertEqual(len(steps),3)
+        self.assertIn('New directory',steps[0].text())
+        self.assertIn('Open Wikipedia',steps[1].text())
+        self.assertIn('Add Content → Add webpage',steps[2].text())
+        self.assertIn('saved snapshots',steps[2].text())
+        self.assertEqual(len(webpages.all(lambda n:n.tag=='img')),3)
+        instructions=self.slide('knowledge/index.html','Add Instructions')
+        steps=instructions.all(lambda n:'data-fragment-step' in n.attrs)
+        self.assertEqual(len(steps),3)
+        self.assertIn('return to its root',steps[0].text())
+        self.assertIn('Sandbox adds .txt',steps[0].text())
+        self.assertIn('your own collection',steps[1].text())
+        for term in ['System Prompt','Purpose','Audience','replace source and retrieval directions','retrieve instructions.txt','Save & Update']:
+            self.assertIn(term,steps[2].text())
         copy=' '.join(s.text() for s in self.decks['knowledge/index.html'])
         for term in ['Function Calling','Advanced Params','Enable Knowledge','Enable Retrieval','Explain RAG']:
             self.assertNotIn(term,copy)
@@ -344,7 +348,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),23)
+        self.assertEqual(len(self.decks['knowledge/index.html']),20)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
@@ -397,7 +401,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('New Chat',check.text())
         self.assertIn('Which passage supports this scene?',self.slide('knowledge/index.html','Check Citations').text())
         self.assertFalse(check.all(lambda n:n.tag=='a' and n.attrs.get('download')=='prism-scenario.md'))
-        im=self.slide('knowledge/index.html','Attach Your Collection').all(lambda n:n.tag=='img')[0]
+        im=self.slide('knowledge/index.html','Add Instructions').all(lambda n:n.tag=='img')[1]
         self.assertIn('collection picker',im.attrs['alt'])
         self.assertTrue(im.attrs['src'].split('?',1)[0].endswith('.svg'))
         sources=self.slide('knowledge/index.html','Example Sources')
@@ -740,10 +744,11 @@ class CopyRegressions(unittest.TestCase):
 
     def test_35_knowledge_captures_preserve_source_pixels(self):
         records=json.loads((ROOT/'review/knowledge-outline-2026-09-28/stem-screenshots.json').read_text())
+        records+=json.loads((ROOT/'review/knowledge-directories-2026-09-29/screenshots.json').read_text())
         used={Path(image.attrs['src']).stem for slide in self.decks['knowledge/index.html']
               for image in slide.all(lambda n:n.tag=='img' and n.has_class('screenshot-img'))}
         self.assertTrue(used <= {record['name'] for record in records})
-        self.assertIn('upload-custom-sources',used)
+        self.assertTrue({'create-directory','open-directory','add-webpages','create-instructions'} <= used)
         self.assertIn('create-custom-collection',used)
         self.assertNotIn('add-content',used)
         for record in records:

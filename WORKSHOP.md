@@ -112,19 +112,19 @@ Participants clone STEM Adventure Games, choose sources for a topic they want to
 | Minutes | Activity | Evidence to examine |
 | --- | --- | --- |
 | 0–15 | Introduce RAG, explore STEM Adventure Games, clone and rename it, and try an initial interaction. | Saved copy and an initial response |
-| 15–40 | View the example collection. Choose a purpose and audience, then locate two or three webpages for an adapted version. Read relevant passages and keep the URLs. | Participant-selected webpages and intended use for each |
-| 40–60 | Create a private, empty collection. Add selected webpages by URL, wait for processing, inspect imported text, and replace the inherited collection attachment on the cloned model. | Added webpages and the clone's new collection attachment |
-| 60–70 | Edit Purpose, replace the source list under Procedure with page titles, and explain how each webpage should be used. Review Constraints and Format for instructions that conflict with the adapted purpose, then save. | Prompt instructions that match the new source material |
+| 15–40 | View the example collection. Choose a purpose and audience, then locate three Wikipedia pages for an adapted version. Read relevant passages and keep the URLs. | Participant-selected webpages and intended use for each |
+| 40–60 | Create a private collection and a Wikipedia directory. Open the directory and add three webpage URLs as snapshots. Check imported text, then create instructions.txt at the collection root with directions for using each source. | Three source snapshots and instructions.txt |
+| 60–70 | Attach the new collection to the clone. Edit Purpose and Audience, then replace source and retrieval directions above the numbered game steps with directions to consult instructions.txt. Retain numbered steps, Constraints, and Format, and save. | Prompt instructions that match the new source material |
 | 70–90 | Start a blank chat, select the saved copy before sending a request, and choose an adventure. Check citations in that chat. Open the original in another tab to compare the same opening request. Revise one webpage or instruction, save the change, then test the saved copy in a new chat. | Source-supported details, gaps, and effects of customization |
 
 The original collection is shown before the customization activity. Newly created collections contain no sources until participants add webpages. Do not imply that cloning creates personal copies of shared sources. Participants replace the inherited attachment in their own model and add webpages to their own collection.
 
 Settings are prepared on the example cards before participants clone them. The participant deck does not walk through Function Calling, Advanced Params, or capability switches. Keep custom Skills and Tools unselected; the third workshop introduces those separately.
 
-The STEM opening menu remains immediate. After a selection, the model consults attached documents. Participants should change the source list and any references to it throughout the prompt so instructions agree with their chosen material. They can retain, replace, or supplement source ideas from the original game without being assigned its original files.
+The STEM opening menu remains immediate. After a selection, the model consults attached documents. Participants put source-specific directions in instructions.txt and replace the source and retrieval directions in their cloned prompt. Remove the inherited one-retrieval-call limit from that replaced block so reading instructions.txt can be followed by retrieving source passages. They can retain, replace, or supplement source ideas from the original game without being assigned its original files.
 
 
-Participant account verification remains pending. Earlier STEM source checking identified an unsupported location, so historical details still need to be checked against quoted passages.
+On September 29, directory creation and saving instructions.txt succeeded through a non-admin account. Add webpage returned “Error processing URL” for three Wikipedia URLs together and for Scientific method alone. Snapshot import and retrieval through the new instructions.txt workflow remain unverified; resolve this import failure before relying on the live exercise. Clone-access verification remains pending. Earlier STEM source checking identified an unsupported location, so historical details still need to be checked against quoted passages.
 
 ### Next steps
 

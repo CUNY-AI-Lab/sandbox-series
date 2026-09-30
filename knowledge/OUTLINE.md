@@ -119,7 +119,7 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ## 11. Find Sources
 
-Locate two or three Wikipedia articles or other webpages about your chosen topic.
+Locate three Wikipedia articles about your chosen topic.
 
 Read relevant passages. Choose sources that explain what players could investigate and which decisions they could make.
 
@@ -137,57 +137,45 @@ Keep access **Private** and select **Create Knowledge**.
 
 ## 13. Add Webpages
 
-Your new collection starts empty. Select **Add Content → Add webpage** and paste a URL, such as <https://en.wikipedia.org/wiki/Volcano>.
+Select **Add Content → New directory**. Name it **Wikipedia** and select **Create**.
 
-Wait for processing, then open its entry to check imported text. Repeat for your other pages.
+![STEM Workshop Sources with Add Content and New directory outlined.](../images/knowledge-directories-2026-09-29/create-directory.svg)
 
-![Empty STEM Workshop Sources collection with Add Content menu open and Add webpage annotated.](../images/knowledge-stem-2026-09-28/upload-custom-sources.svg?v=20260930-webpage)
+Open **Wikipedia**. Add sources inside this directory.
+
+![Wikipedia directory inside STEM Workshop Sources, outlined with an Open directory annotation.](../images/knowledge-directories-2026-09-29/open-directory.svg)
+
+Select **Add Content → Add webpage**. Paste Wikipedia URLs, one per line, and select **Add**.
+
+Use three pages for your chosen topic. Wait for processing, then open each entry to check imported text. These are saved snapshots.
+
+![Attach Webpage form showing List of experiments, Scientific method, and Women in science URLs. URL field and Add button outlined.](../images/knowledge-directories-2026-09-29/add-webpages.svg)
 
 ---
 
-## 14. Attach Your Collection
+## 14. Add Instructions
 
-In **Workspace → Models**, find your saved copy. Open **⋯ → Edit**.
+Select collection name above directory contents to return to its root. Select **Add Content → Add text content**.
 
-Under **Knowledge**, remove **STEM Wikipedia Experiments** from your copy and select your own collection. Scroll up to **System Prompt**.
+Enter **instructions** as title; Sandbox adds **.txt**. Describe how each source should guide play, substituting your page titles and directions. Select **Save**.
+
+![Add text content editor titled instructions, with directions for using three STEM Wikipedia sources. Title outlined; Sandbox adds .txt when saved.](../images/knowledge-directories-2026-09-29/create-instructions.svg)
+
+In **Workspace → Models**, open **⋯ → Edit** beside your saved copy.
+
+Under **Knowledge**, replace **STEM Wikipedia Experiments** with your own collection. Scroll up to **System Prompt**.
 
 ![Model editor with Select Knowledge and STEM Workshop Sources in its collection picker annotated.](../images/knowledge-stem-2026-09-28/attach-knowledge.svg?v=20260928-review2)
 
----
+In cloned **System Prompt**, revise **Purpose** and **Audience** for your topic. Under **Procedure**, replace source and retrieval directions above numbered steps.
 
-## 15. Update Purpose
+Offer four adventure options immediately. After a player chooses, retrieve instructions.txt from attached Knowledge collection and use its directions to find relevant source passages. Reuse those passages during play.
 
-In **System Prompt**, revise **Purpose** and **Audience** for your chosen topic. Use this as a starting point.
-
-Create a text adventure about [topic] for [audience]. Let players investigate [question] through their decisions.
+Remove instructions that refer to sources you replaced. Keep numbered game steps, **Constraints**, and **Format**. Select **Save & Update**.
 
 ---
 
-## 16. Update Sources
-
-Under **Procedure → Source documents**, replace original source names with page titles you added. Explain how each webpage should guide play.
-
-Use [page title] to guide [adventure options, decisions, or background details].
-
-Remove instructions that refer to sources you replaced.
-
----
-
-## 17. Revise Instructions
-
-Check remaining instructions against your chosen topic.
-
-- **Procedure** · Revise directions that conflict with your topic.
-
-- **Constraints** · Keep documented details distinct from invented scenes.
-
-- **Format** · Retain brief scenes and numbered choices.
-
-Select **Save & Update**.
-
----
-
-## 18. Test Custom Model
+## 15. Test Custom Model
 
 - Select **New Chat** in left sidebar.
 
@@ -197,7 +185,7 @@ Select **Save & Update**.
 
 ---
 
-## 19. Check Citations
+## 16. Check Citations
 
 In same chat, ask “Which passage supports this scene? Quote it and cite your source.”
 
@@ -207,7 +195,7 @@ Select a citation beside a response. Does its source passage support that respon
 
 ---
 
-## 20. Compare Responses
+## 17. Compare Responses
 
 Keep your test chat open. Open **STEM Adventure Games** in another tab and send same opening request.
 
@@ -219,17 +207,17 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## 21. Revise and Retest
+## 18. Revise and Retest
 
 Choose one problem you observed. Change a source or system prompt instruction.
 
-For source changes, add or remove a webpage and wait for processing. For prompt changes, select **Save & Update**.
+For source changes, update snapshots and **instructions.txt**. Wait for processing. For prompt changes, select **Save & Update**.
 
 Open **New Chat**, select your saved copy, and repeat your request. Did this change resolve that problem?
 
 ---
 
-## 22. Share Custom Model
+## 19. Share Custom Model
 
 In your copy’s editor, open **Access** and grant intended users or groups **Read** access. Give those same users **Read** access to its Knowledge collection.
 
@@ -239,7 +227,7 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## 23. Workshop Resources
+## 20. Workshop Resources
 
 Choose another topic or experiment. Review webpages when they change and check responses against sources in your collection.
 
