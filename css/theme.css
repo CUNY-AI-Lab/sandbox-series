@@ -21,7 +21,7 @@ body[data-workshop] .theme-toggle{left:18px;right:auto}
 [data-theme="light"] #image-stage{background:#e9eef5;scrollbar-color:#718096 #e9eef5}
 [data-theme="light"] #slide-progress::-webkit-slider-runnable-track,[data-theme="light"] #slide-progress::-moz-range-track{background:#7b8ca5}
 [data-theme="light"] .workshop-cover{background:#f8fafc}
-[data-theme="light"] .workshop-cover::before,[data-theme="light"] .workshop-cover::after,[data-theme="light"] .warp-canvas{display:none}
+[data-theme="light"] .workshop-cover::before,[data-theme="light"] .workshop-cover::after,[data-theme="light"] .warp-canvas{filter:invert(1)}
 [data-theme="light"] .workshop-cover .slide-inner{color:#121a2b;text-shadow:none}
 [data-theme="light"] .workshop-cover .cover-title,[data-theme="light"] .workshop-cover .cover-credit,[data-theme="light"] .workshop-cover .cover-location,[data-theme="light"] .workshop-cover .cover-date{color:#121a2b}
 [data-theme="light"] .cover-details{border-color:#8fa1bc}
