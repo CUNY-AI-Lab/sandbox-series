@@ -10,6 +10,8 @@ CUNY AI Lab Sandbox
 
 Developed by Zach Muhlbauer
 
+[https://cuny-ai-lab.github.io/sandbox-series/skills](https://cuny-ai-lab.github.io/sandbox-series/skills)
+
 ---
 
 ## Configuring skills and tools — 2

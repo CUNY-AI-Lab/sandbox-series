@@ -11,7 +11,7 @@ REFLECTION_QUESTION='How could you imagine testing custom models like this in th
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
 def check_title(title,location):
- if title in {'Composing System Prompts','Curating knowledge collections','Configuring skills and tools','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE}:return
+ if title in {'Composing System Prompts','Curating knowledge collections','Configuring skills and tools','Parting Questions','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE}:return
  words=re.findall(r"[\w]+(?:[’'-][\w]+)*",title)
  if not 2 <= len(words) <= 3:issues.append(location+' heading length: '+title)
  if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(location+' article in heading: '+title)
@@ -33,7 +33,7 @@ def check_participant_copy(tree,location):
   headings=slide.all(lambda n:n.tag in {'h1','h2'})
   if not headings or headings[0].text().strip()!=slide.attrs.get('data-title'):issues.append(location+' heading and outline disagree')
  text=participant_text(tree)
- if re.search(r'\bthe\b',text.replace(REFLECTION_QUESTION,''),re.I):issues.append(location+' definite article in participant copy outside quoted prompts or approved wording')
+ if re.search(r'\bthe\b',text.replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),re.I):issues.append(location+' definite article in participant copy outside quoted prompts or approved wording')
  if re.search(r'\b(facilitator|presenter)\b',text,re.I):issues.append(location+' presenter directions in participant copy')
  for phrase in ['preserve their original disciplinary purposes','instruction drafts, not measured outcomes','these excerpts are discussion material']:
   if phrase in text.lower():issues.append(location+' editorial commentary in participant copy: '+phrase)

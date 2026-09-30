@@ -13,6 +13,8 @@ CUNY Graduate Center
 
 Thursday, October 1, 2026   2:30–4:00 p.m.
 
+[https://cuny-ai-lab.github.io/sandbox-series/knowledge](https://cuny-ai-lab.github.io/sandbox-series/knowledge)
+
 ---
 
 ## Curating knowledge collections — 2
@@ -264,6 +266,16 @@ Ask someone to try your copy and check its citations.
 ---
 
 ## Curating knowledge collections — 20
+
+### Parting Questions
+
+How else could you see yourself using knowledge collections in the future?
+
+What are the limitations of this approach?
+
+---
+
+## Curating knowledge collections — 21
 
 ### Workshop Resources
 

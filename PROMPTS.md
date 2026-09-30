@@ -13,6 +13,8 @@ CUNY Graduate Center
 
 Thursday, September 17, 2026   2:30–4:00 p.m.
 
+[https://cuny-ai-lab.github.io/sandbox-series/basics](https://cuny-ai-lab.github.io/sandbox-series/basics)
+
 ---
 
 ## Slide 2: Workshop Roadmap

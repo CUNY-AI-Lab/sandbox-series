@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,413 @@
+@@ -1,487 +1,415 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -25,6 +25,8 @@
 +CUNY Graduate Center
 +
 +Thursday, September 17, 2026   2:30–4:00 p.m.
++
++[https://cuny-ai-lab.github.io/sandbox-series/basics](https://cuny-ai-lab.github.io/sandbox-series/basics)
  
  ---
  

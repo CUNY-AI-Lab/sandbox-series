@@ -15,6 +15,8 @@ CUNY Graduate Center
 
 Thursday, October 1, 2026   2:30–4:00 p.m.
 
+[https://cuny-ai-lab.github.io/sandbox-series/knowledge](https://cuny-ai-lab.github.io/sandbox-series/knowledge)
+
 ---
 
 ## 2. Workshop Roadmap
@@ -229,7 +231,15 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## 20. Workshop Resources
+## 20. Parting Questions
+
+How else could you see yourself using knowledge collections in the future?
+
+What are the limitations of this approach?
+
+---
+
+## 21. Workshop Resources
 
 Check responses against sources in your collection. Next workshop introduces tools that retrieve Wikipedia content live.
 
