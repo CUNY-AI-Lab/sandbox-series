@@ -570,7 +570,17 @@ Scroll to bottom and select **Save & Create**.
 
 Open **New Chat**. Select model ID on bottom right of message box. Choose your saved copy.
 
-Select **Start an adventure**, choose an experiment, and try its numbered choices. Ask for another menu to see new options.
+Ask for four adventure options, choose one, and try its numbered choices. Ask for another menu to see new options.
+
+![New chat with model selector open, outlined model ID control, and saved copy marked for selection.](images/knowledge-collection-2026-10-01/select-copy.svg)
+
+**Alt text:** New chat with model selector open, outlined model ID control, and saved copy marked for selection.
+
+Select **Workspace** in left sidebar, then **Knowledge**. Open **Sandbox Workshop Collection**.
+
+![Workspace in left sidebar, Knowledge tab, and Sandbox Workshop Collection outlined in Firefox.](images/knowledge-collection-2026-10-01/navigation.svg)
+
+**Alt text:** Workspace in left sidebar, Knowledge tab, and Sandbox Workshop Collection outlined in Firefox.
 
 ---
 
@@ -578,19 +588,19 @@ Select **Start an adventure**, choose an experiment, and try its numbered choice
 
 ### Example Sources
 
-Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
+At **Sandbox Workshop Collection** root, **instructions.txt** describes how sources guide play. Open **Wikipedia** to see source files.
 
-![Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.](images/knowledge-stem-2026-09-28/find-knowledge.svg?v=20260928-review2)
+![Sandbox Workshop Collection root with Wikipedia folder and instructions.txt outlined and labeled Source files and Source directions.](images/knowledge-collection-2026-10-01/root.svg)
 
-**Alt text:** Expanded Sandbox sidebar showing Workspace, Knowledge tab, and STEM Wikipedia Experiments collection, each outlined.
+**Alt text:** Sandbox Workshop Collection root with Wikipedia folder and instructions.txt outlined and labeled Source files and Source directions.
 
-**List of experiments** guides adventure options; **Scientific method** guides decisions; **Women in science** adds historical context.
+**Wikipedia** contains three article files. Open each to review its text and source link.
 
 Next, choose sources for your adapted version.
 
-![STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.](images/knowledge-stem-2026-09-28/collection-documents.svg?v=20260928-4)
+![Wikipedia directory inside Sandbox Workshop Collection with Women-in-science.txt, Scientific-method.txt, and List-of-experiments.txt outlined together.](images/knowledge-collection-2026-10-01/wikipedia.svg)
 
-**Alt text:** STEM Wikipedia Experiments containing three original Wikipedia source documents, outlined together.
+**Alt text:** Wikipedia directory inside Sandbox Workshop Collection with Women-in-science.txt, Scientific-method.txt, and List-of-experiments.txt outlined together.
 
 ---
 

@@ -419,10 +419,14 @@ class CopyRegressions(unittest.TestCase):
         sources=self.slide('knowledge/index.html','Example Sources')
         stages=sources.all(lambda n:'data-fragment-step' in n.attrs)
         self.assertEqual([n.attrs['data-fragment-step'] for n in stages],['0','1'])
-        self.assertIn('Workspace',stages[0].text())
-        self.assertIn('Knowledge',stages[0].text())
-        self.assertTrue(stages[0].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('find-knowledge.svg'))
-        self.assertTrue(stages[1].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('collection-documents.svg'))
+        navigation=self.slide('knowledge/index.html','Try Custom Model')
+        self.assertIn('Workspace',navigation.text())
+        self.assertIn('Knowledge',navigation.text())
+        self.assertIn('Sandbox Workshop Collection',navigation.text())
+        self.assertIn('instructions.txt',stages[0].text())
+        self.assertIn('Wikipedia',stages[0].text())
+        self.assertTrue(stages[0].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('root.svg'))
+        self.assertTrue(stages[1].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('wikipedia.svg'))
         links={n.attrs.get('href') for n in sources.all(lambda n:n.tag=='a')}
         self.assertFalse(links, 'Original source pages are examples, not assigned reading.')
         self.assertIn('choose sources for your adapted version',sources.text())
@@ -757,6 +761,7 @@ class CopyRegressions(unittest.TestCase):
     def test_35_knowledge_captures_preserve_source_pixels(self):
         records=json.loads((ROOT/'review/knowledge-outline-2026-09-28/stem-screenshots.json').read_text())
         records+=json.loads((ROOT/'review/knowledge-directories-2026-09-29/screenshots.json').read_text())
+        records+=json.loads((ROOT/'review/knowledge-collection-2026-10-01/screenshots.json').read_text())
         used={Path(image.attrs['src']).stem for slide in self.decks['knowledge/index.html']
               for image in slide.all(lambda n:n.tag=='img' and n.has_class('screenshot-img'))}
         self.assertTrue(used <= {record['name'] for record in records})

@@ -1,0 +1,135 @@
+[
+  {
+    "name": "navigation",
+    "raw": "images/knowledge-collection-2026-10-01/navigation-raw.png",
+    "sha256": "c37640b8c0f02eafc58e109846a2b309e1e545c177bb61db44aae808892f1b86",
+    "capture_file": "images/knowledge-collection-2026-10-01/navigation-capture.jpg",
+    "capture_sha256": "b77a35d18322b1c2ac9a7ff581b0be1b7286b7b92db8539ca0d5e9a483bceb56",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      90,
+      180,
+      1560,
+      500
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  },
+  {
+    "name": "root",
+    "raw": "images/knowledge-collection-2026-10-01/root-raw.png",
+    "sha256": "8e402f3a4831cba9efa1fbafd8b12cd703e87e6d32542dc53c4133ee76c98a02",
+    "capture_file": "images/knowledge-collection-2026-10-01/root-capture.jpg",
+    "capture_sha256": "3d756851d8e4eba709f3da739fe2c4faa9d1281c1a2d997c7336012ca344ba3c",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      215,
+      320,
+      1285,
+      555
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  },
+  {
+    "name": "wikipedia",
+    "raw": "images/knowledge-collection-2026-10-01/wikipedia-raw.png",
+    "sha256": "dac0c61751d13ba018f21bb8ad54d7248af9e52c64ed99d584bb395528787270",
+    "capture_file": "images/knowledge-collection-2026-10-01/wikipedia-capture.jpg",
+    "capture_sha256": "76708d948d75e9215b7203c1ebf44d059a4e3c85f56235c6a9ffc0e1c2b2ec28",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      215,
+      320,
+      1285,
+      680
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  },
+  {
+    "name": "root-mobile",
+    "raw": "images/knowledge-collection-2026-10-01/root-mobile-raw.png",
+    "sha256": "8e402f3a4831cba9efa1fbafd8b12cd703e87e6d32542dc53c4133ee76c98a02",
+    "capture_file": "images/knowledge-collection-2026-10-01/root-capture.jpg",
+    "capture_sha256": "3d756851d8e4eba709f3da739fe2c4faa9d1281c1a2d997c7336012ca344ba3c",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      225,
+      345,
+      750,
+      490
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  },
+  {
+    "name": "wikipedia-mobile",
+    "raw": "images/knowledge-collection-2026-10-01/wikipedia-mobile-raw.png",
+    "sha256": "dac0c61751d13ba018f21bb8ad54d7248af9e52c64ed99d584bb395528787270",
+    "capture_file": "images/knowledge-collection-2026-10-01/wikipedia-capture.jpg",
+    "capture_sha256": "76708d948d75e9215b7203c1ebf44d059a4e3c85f56235c6a9ffc0e1c2b2ec28",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      225,
+      345,
+      750,
+      640
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  },
+  {
+    "name": "select-copy-mobile",
+    "raw": "images/knowledge-collection-2026-10-01/select-copy-mobile-raw.png",
+    "sha256": "4315f2ab8cbcabdbf999afd196305c0afdc1c0cfaf360f34c65558904820a6bc",
+    "capture_file": "images/knowledge-collection-2026-10-01/select-copy-capture.jpg",
+    "capture_sha256": "3660ab50750762c3dc5582fc306c9db4e7677481ef50c83b41d5ddf5bc9d1855",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      1040,
+      1350,
+      850,
+      575
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  },
+  {
+    "name": "select-copy",
+    "raw": "images/knowledge-collection-2026-10-01/select-copy-raw.png",
+    "sha256": "4315f2ab8cbcabdbf999afd196305c0afdc1c0cfaf360f34c65558904820a6bc",
+    "capture_file": "images/knowledge-collection-2026-10-01/select-copy-capture.jpg",
+    "capture_sha256": "3660ab50750762c3dc5582fc306c9db4e7677481ef50c83b41d5ddf5bc9d1855",
+    "dimensions": [
+      2304,
+      2394
+    ],
+    "view_box": [
+      415,
+      1210,
+      1590,
+      730
+    ],
+    "capture": "Firefox native CUA screenshot",
+    "annotation": "SVG overlay on decoded capture pixels"
+  }
+]
