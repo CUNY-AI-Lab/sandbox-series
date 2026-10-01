@@ -97,18 +97,18 @@
   {
     "name": "select-copy-mobile",
     "raw": "images/knowledge-collection-2026-10-01/select-copy-mobile-raw.png",
-    "sha256": "4315f2ab8cbcabdbf999afd196305c0afdc1c0cfaf360f34c65558904820a6bc",
+    "sha256": "4782ba373effc6ec92f1d74c834e1fa409cffa77996ec75619cbbf5e71587a62",
     "capture_file": "images/knowledge-collection-2026-10-01/select-copy-capture.jpg",
-    "capture_sha256": "3660ab50750762c3dc5582fc306c9db4e7677481ef50c83b41d5ddf5bc9d1855",
+    "capture_sha256": "189225888ebe097dc7069a3fb4742f1f9fb110a55a627f9a0fbefa27de1fa499",
     "dimensions": [
       2304,
       2394
     ],
     "view_box": [
-      1040,
-      1350,
-      850,
-      575
+      1295,
+      1285,
+      810,
+      215
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay on decoded capture pixels"
@@ -116,18 +116,18 @@
   {
     "name": "select-copy",
     "raw": "images/knowledge-collection-2026-10-01/select-copy-raw.png",
-    "sha256": "4315f2ab8cbcabdbf999afd196305c0afdc1c0cfaf360f34c65558904820a6bc",
+    "sha256": "4782ba373effc6ec92f1d74c834e1fa409cffa77996ec75619cbbf5e71587a62",
     "capture_file": "images/knowledge-collection-2026-10-01/select-copy-capture.jpg",
-    "capture_sha256": "3660ab50750762c3dc5582fc306c9db4e7677481ef50c83b41d5ddf5bc9d1855",
+    "capture_sha256": "189225888ebe097dc7069a3fb4742f1f9fb110a55a627f9a0fbefa27de1fa499",
     "dimensions": [
       2304,
       2394
     ],
     "view_box": [
       415,
-      1210,
-      1590,
-      730
+      995,
+      1680,
+      510
     ],
     "capture": "Firefox native CUA screenshot",
     "annotation": "SVG overlay on decoded capture pixels"

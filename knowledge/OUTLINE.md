@@ -113,7 +113,7 @@ Open **New Chat**. Select model ID on bottom right of message box. Choose your s
 
 Ask for four adventure options, choose one, and try its numbered choices. Ask for another menu to see new options.
 
-![New chat with model selector open, outlined model ID control, and saved copy marked for selection.](../images/knowledge-collection-2026-10-01/select-copy.svg)
+![New chat with STEM Adventure Games (Clone) selected. Only this custom model appears; model selector at bottom right of message box is outlined.](../images/knowledge-collection-2026-10-01/select-copy.svg?v=20261001-single)
 
 Select **Workspace** in left sidebar, then **Knowledge**. Open **Sandbox Workshop Collection**.
 
