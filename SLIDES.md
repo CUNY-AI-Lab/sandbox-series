@@ -568,13 +568,13 @@ Scroll to bottom and select **Save & Create**.
 
 ### Try Custom Model
 
-Open **New Chat**. Select model ID on bottom right of message box. Choose your saved copy.
+Open **New Chat**. Select model ID on bottom right of message box. Choose **STEM Adventure Games**.
 
 Ask for four adventure options, choose one, and try its numbered choices. Ask for another menu to see new options.
 
-![New chat with STEM Adventure Games (Clone) selected. Only this custom model appears; model selector at bottom right of message box is outlined.](images/knowledge-collection-2026-10-01/select-copy.svg?v=20261001-single)
+![New chat with original STEM Adventure Games selected. Model selector at bottom right of message box is outlined.](images/knowledge-collection-2026-10-01/select-original.svg?v=20261001-original)
 
-**Alt text:** New chat with STEM Adventure Games (Clone) selected. Only this custom model appears; model selector at bottom right of message box is outlined.
+**Alt text:** New chat with original STEM Adventure Games selected. Model selector at bottom right of message box is outlined.
 
 Select **Workspace** in left sidebar, then **Knowledge**. Open **Sandbox Workshop Collection**.
 

@@ -177,7 +177,9 @@ class ParticipantContinuity(unittest.TestCase):
     def test_knowledge_actions_preserve_cause_and_effect(self):
         trial=self.slide('knowledge/index.html','Try Custom Model').text()
         self.assertLess(trial.index('New Chat'),trial.index('Ask for four adventure options'))
-        self.assertIn('Choose your saved copy',trial)
+        self.assertIn('Choose STEM Adventure Games',trial)
+        self.assertNotIn('Choose your saved copy',trial)
+        self.assertNotIn('(Clone)',trial)
         webpages=self.slide('knowledge/index.html','Add Source Text').text()
         self.assertIn('Add Content → Add text content',webpages)
         self.assertIn('open each file to check text',webpages)

@@ -95,11 +95,11 @@
     "annotation": "SVG overlay on decoded capture pixels"
   },
   {
-    "name": "select-copy-mobile",
-    "raw": "images/knowledge-collection-2026-10-01/select-copy-mobile-raw.png",
-    "sha256": "4782ba373effc6ec92f1d74c834e1fa409cffa77996ec75619cbbf5e71587a62",
-    "capture_file": "images/knowledge-collection-2026-10-01/select-copy-capture.jpg",
-    "capture_sha256": "189225888ebe097dc7069a3fb4742f1f9fb110a55a627f9a0fbefa27de1fa499",
+    "name": "select-original-mobile",
+    "raw": "images/knowledge-collection-2026-10-01/select-original-mobile-raw.png",
+    "sha256": "fdcae6e91df23a6a92bceb27a6b8a6cfc8faba2383da53b410bde39ef4ffc9b3",
+    "capture_file": "images/knowledge-collection-2026-10-01/select-original-capture.jpg",
+    "capture_sha256": "eb2f8ed1652db1389fa431b58803efc40f57cc872b79d2ed47d022fdd55513be",
     "dimensions": [
       2304,
       2394
@@ -114,11 +114,11 @@
     "annotation": "SVG overlay on decoded capture pixels"
   },
   {
-    "name": "select-copy",
-    "raw": "images/knowledge-collection-2026-10-01/select-copy-raw.png",
-    "sha256": "4782ba373effc6ec92f1d74c834e1fa409cffa77996ec75619cbbf5e71587a62",
-    "capture_file": "images/knowledge-collection-2026-10-01/select-copy-capture.jpg",
-    "capture_sha256": "189225888ebe097dc7069a3fb4742f1f9fb110a55a627f9a0fbefa27de1fa499",
+    "name": "select-original",
+    "raw": "images/knowledge-collection-2026-10-01/select-original-raw.png",
+    "sha256": "fdcae6e91df23a6a92bceb27a6b8a6cfc8faba2383da53b410bde39ef4ffc9b3",
+    "capture_file": "images/knowledge-collection-2026-10-01/select-original-capture.jpg",
+    "capture_sha256": "eb2f8ed1652db1389fa431b58803efc40f57cc872b79d2ed47d022fdd55513be",
     "dimensions": [
       2304,
       2394
