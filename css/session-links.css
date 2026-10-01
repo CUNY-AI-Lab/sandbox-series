@@ -2,3 +2,27 @@
 .session-url a { color:inherit; text-underline-offset:4px; }
 .workshop-cover .session-url { margin-bottom:0; }
 #outline-dialog .session-url { font-size:16px; margin:16px 0; }
+
+.series-home {
+  position:fixed;
+  z-index:12;
+  top:10px;
+  left:max(68px,calc(env(safe-area-inset-left,0px) + 54px));
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  min-height:44px;
+  padding:0 8px;
+  border-radius:4px;
+  background:var(--bg);
+  color:var(--text);
+  font-size:16px;
+  line-height:1.2;
+  white-space:nowrap;
+}
+.series-home:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
+@media(max-width:600px) {
+  .series-home { top:6px; left:max(54px,calc(env(safe-area-inset-left,0px) + 54px)); padding:0 6px; font-size:14px; }
+  .series-home-prefix { display:none; }
+}
+@media print { .series-home { display:none; } }

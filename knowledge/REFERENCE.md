@@ -2,7 +2,7 @@
 
 Choose an example to adapt for your teaching or research.
 
-[Return to workshop](.)[Compare Research Methods](#compare-research-methods) · [Describe Experimental Context](#describe-experimental-context) · [Describe Scientific Methods](#describe-scientific-methods) · [Identify Historical Sources](#identify-historical-sources) · [Select Research Materials](#select-research-materials) ·
+[Sandbox Series](../) · [Return to workshop](.)[Compare Research Methods](#compare-research-methods) · [Describe Experimental Context](#describe-experimental-context) · [Describe Scientific Methods](#describe-scientific-methods) · [Identify Historical Sources](#identify-historical-sources) · [Select Research Materials](#select-research-materials) ·
 
 ### Compare Research Methods
 

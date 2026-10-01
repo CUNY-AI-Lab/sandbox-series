@@ -74,7 +74,8 @@ def page(title, content, destination, links, outline=''):
     theme_script = relative('js/theme.js', destination)
     logo_dark = relative('images/cail-wordmark-white.png', destination)
     logo_light = relative('images/cail-wordmark-color.png', destination)
-    navigation = ' · '.join(links)
+    home_href = relative('index.html', destination).removesuffix('index.html') or './'
+    navigation = ' · '.join([link(home_href, 'Sandbox Series'), *links])
     return f'''<!doctype html>
 <html lang="en">
 <head>
