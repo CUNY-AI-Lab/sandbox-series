@@ -21,11 +21,11 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 ### Workshop Roadmap
 
-- **[Composing System Prompts](../basics/)** Configure model behavior with system prompts. Thursday, September 17
+- **[Composing System Prompts](../basics/)**  Configure model behavior with system prompts. Thursday, September 17
 
-- **Curating Knowledge Collections** Organize source documents in knowledge collections. Thursday, October 1
+- **Curating Knowledge Collections**  Organize source documents in knowledge collections. Thursday, October 1
 
-- **Configuring Skills and Tools** Extend model capabilities with skills and tools. Thursday, October 15
+- **Configuring Skills and Tools**  Extend model capabilities with skills and tools. Thursday, October 15
 
 [https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
@@ -67,6 +67,28 @@ A Knowledge collection contains documents a custom model can search.
 
 ## Curating knowledge collections — 5
 
+### RAG Under the Hood
+
+### Processing documents
+
+- **Parse**  Extract usable text from files
+
+- **Chunk**  Divide text into smaller passages
+
+- **Embed**  Represent passages numerically so they can be searched by similarity
+
+### Responding to requests
+
+- **Retrieve**  Search for passages relevant to a request
+
+- **Add context**  Append passages to prompt instructions
+
+- **Generate**  Produce a response using that context
+
+---
+
+## Curating knowledge collections — 6
+
 ### Explore STEM Adventures
 
 **STEM Adventure Games** uses source documents to guide a text adventure with numbered choices.
@@ -77,7 +99,7 @@ Clone this example, then adapt its sources and instructions for a topic and audi
 
 ---
 
-## Curating knowledge collections — 6
+## Curating knowledge collections — 7
 
 ### Clone Custom Model
 
@@ -87,7 +109,7 @@ Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventu
 
 ---
 
-## Curating knowledge collections — 7
+## Curating knowledge collections — 8
 
 ### Name Your Copy
 
@@ -99,7 +121,7 @@ Scroll to bottom and select **Save & Create**.
 
 ---
 
-## Curating knowledge collections — 8
+## Curating knowledge collections — 9
 
 ### Try Custom Model
 
@@ -109,7 +131,7 @@ Select **Start an adventure**, choose an experiment, and try its numbered choice
 
 ---
 
-## Curating knowledge collections — 9
+## Curating knowledge collections — 10
 
 ### Example Sources
 
@@ -125,7 +147,7 @@ Next, choose sources for your adapted version.
 
 ---
 
-## Curating knowledge collections — 10
+## Curating knowledge collections — 11
 
 ### Choose Purpose
 
@@ -135,7 +157,7 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ---
 
-## Curating knowledge collections — 11
+## Curating knowledge collections — 12
 
 ### Find Sources
 
@@ -145,7 +167,7 @@ Read relevant passages. Choose sources that explain what players could investiga
 
 ---
 
-## Curating knowledge collections — 12
+## Curating knowledge collections — 13
 
 ### Create Your Collection
 
@@ -157,7 +179,7 @@ Keep access **Private** and select **Create Knowledge**.
 
 ---
 
-## Curating knowledge collections — 13
+## Curating knowledge collections — 14
 
 ### Add Source Text
 
@@ -179,7 +201,7 @@ Wait for processing, then open each file to check text.
 
 ---
 
-## Curating knowledge collections — 14
+## Curating knowledge collections — 15
 
 ### Add Instructions
 
@@ -203,7 +225,7 @@ Remove instructions that refer to sources you replaced. Keep numbered game steps
 
 ---
 
-## Curating knowledge collections — 15
+## Curating knowledge collections — 16
 
 ### Test Custom Model
 
@@ -215,7 +237,7 @@ Remove instructions that refer to sources you replaced. Keep numbered game steps
 
 ---
 
-## Curating knowledge collections — 16
+## Curating knowledge collections — 17
 
 ### Check Citations
 
@@ -227,7 +249,7 @@ Select a citation beside a response. Does its source passage support that respon
 
 ---
 
-## Curating knowledge collections — 17
+## Curating knowledge collections — 18
 
 ### Compare Responses
 
@@ -241,7 +263,7 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 19
 
 ### Revise and Retest
 
@@ -253,7 +275,7 @@ Open **New Chat**, select your saved copy, and repeat your request. Did this cha
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 20
 
 ### Share Custom Model
 
@@ -265,7 +287,7 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## Curating knowledge collections — 20
+## Curating knowledge collections — 21
 
 ### Parting Questions
 
@@ -275,7 +297,7 @@ What are the limitations of this approach?
 
 ---
 
-## Curating knowledge collections — 21
+## Curating knowledge collections — 22
 
 ### Workshop Resources
 

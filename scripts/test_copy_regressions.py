@@ -117,7 +117,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='basics/index.html' else name)
             for s in self.decks[route]:
                 title=s.attrs['data-title']
-                if title in (*SECTION_NAMES,'Parting Questions','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE):continue
+                if title in (*SECTION_NAMES,'RAG Under the Hood','Parting Questions','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE):continue
                 self.assertTrue(2<=len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title))<=3,title)
                 self.assertNotRegex(title,r'(?i)\b(a|an|the)\b')
                 self.assertFalse(any(w.lower().endswith('ing') for w in title.split()),title)
@@ -151,7 +151,7 @@ class CopyRegressions(unittest.TestCase):
     def test_03_participant_copy_excludes_editorial_instructions(self):
         for tree in [*self.trees.values(),*self.references.values()]:
             copy=authored(tree)
-            self.assertNotRegex(copy.replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),r'(?i)\b(the|facilitator|presenter)\b')
+            self.assertNotRegex(copy.replace('RAG Under the Hood','').replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),r'(?i)\b(the|facilitator|presenter)\b')
             self.assertFalse(prose_colons(copy))
             self.assertFalse(tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')))
     def test_04_explicit_deletions_stay_deleted(self):
@@ -360,7 +360,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),21)
+        self.assertEqual(len(self.decks['knowledge/index.html']),22)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())

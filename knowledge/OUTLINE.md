@@ -19,11 +19,11 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 ## 2. Workshop Roadmap
 
-- **[Composing System Prompts](../basics/)** Configure model behavior with system prompts. Thursday, September 17
+- **[Composing System Prompts](../basics/)**  Configure model behavior with system prompts. Thursday, September 17
 
-- **Curating Knowledge Collections** Organize source documents in knowledge collections. Thursday, October 1
+- **Curating Knowledge Collections**  Organize source documents in knowledge collections. Thursday, October 1
 
-- **Configuring Skills and Tools** Extend model capabilities with skills and tools. Thursday, October 15
+- **Configuring Skills and Tools**  Extend model capabilities with skills and tools. Thursday, October 15
 
 [https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 
@@ -59,7 +59,27 @@ A Knowledge collection contains documents a custom model can search.
 
 ---
 
-## 5. Explore STEM Adventures
+## 5. RAG Under the Hood
+
+### Processing documents
+
+- **Parse**  Extract usable text from files
+
+- **Chunk**  Divide text into smaller passages
+
+- **Embed**  Represent passages numerically so they can be searched by similarity
+
+### Responding to requests
+
+- **Retrieve**  Search for passages relevant to a request
+
+- **Add context**  Append passages to prompt instructions
+
+- **Generate**  Produce a response using that context
+
+---
+
+## 6. Explore STEM Adventures
 
 **STEM Adventure Games** uses source documents to guide a text adventure with numbered choices.
 
@@ -69,7 +89,7 @@ Clone this example, then adapt its sources and instructions for a topic and audi
 
 ---
 
-## 6. Clone Custom Model
+## 7. Clone Custom Model
 
 Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
 
@@ -77,7 +97,7 @@ Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventu
 
 ---
 
-## 7. Name Your Copy
+## 8. Name Your Copy
 
 Give your copy a unique name and model ID. Base model, system prompt, and settings carry over when you clone.
 
@@ -87,7 +107,7 @@ Scroll to bottom and select **Save & Create**.
 
 ---
 
-## 8. Try Custom Model
+## 9. Try Custom Model
 
 Open **New Chat**. Select model ID on bottom right of message box. Choose your saved copy.
 
@@ -95,7 +115,7 @@ Select **Start an adventure**, choose an experiment, and try its numbered choice
 
 ---
 
-## 9. Example Sources
+## 10. Example Sources
 
 Select **Workspace → Knowledge** and open **STEM Wikipedia Experiments** to see how an example collection is organized.
 
@@ -109,7 +129,7 @@ Next, choose sources for your adapted version.
 
 ---
 
-## 10. Choose Purpose
+## 11. Choose Purpose
 
 What should players learn or explore?
 
@@ -117,7 +137,7 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ---
 
-## 11. Find Sources
+## 12. Find Sources
 
 Locate three Wikipedia articles about your chosen topic.
 
@@ -125,7 +145,7 @@ Read relevant passages. Choose sources that explain what players could investiga
 
 ---
 
-## 12. Create Your Collection
+## 13. Create Your Collection
 
 Select **Workspace → Knowledge → Create**. Name your collection and describe what your sources cover.
 
@@ -135,7 +155,7 @@ Keep access **Private** and select **Create Knowledge**.
 
 ---
 
-## 13. Add Source Text
+## 14. Add Source Text
 
 Select **Add Content → New directory**. Name it **Wikipedia**, select **Create**, then open **Wikipedia**.
 
@@ -155,7 +175,7 @@ Wait for processing, then open each file to check text.
 
 ---
 
-## 14. Add Instructions
+## 15. Add Instructions
 
 Select collection name above directory contents to return to its root. Select **Add Content → Add text content**.
 
@@ -177,7 +197,7 @@ Remove instructions that refer to sources you replaced. Keep numbered game steps
 
 ---
 
-## 15. Test Custom Model
+## 16. Test Custom Model
 
 - Select **New Chat** in left sidebar.
 
@@ -187,7 +207,7 @@ Remove instructions that refer to sources you replaced. Keep numbered game steps
 
 ---
 
-## 16. Check Citations
+## 17. Check Citations
 
 In same chat, ask “Which passage supports this scene? Quote it and cite your source.”
 
@@ -197,7 +217,7 @@ Select a citation beside a response. Does its source passage support that respon
 
 ---
 
-## 17. Compare Responses
+## 18. Compare Responses
 
 Keep your test chat open. Open **STEM Adventure Games** in another tab and send same opening request.
 
@@ -209,7 +229,7 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## 18. Revise and Retest
+## 19. Revise and Retest
 
 Choose one problem you observed. Change a source or system prompt instruction.
 
@@ -219,7 +239,7 @@ Open **New Chat**, select your saved copy, and repeat your request. Did this cha
 
 ---
 
-## 19. Share Custom Model
+## 20. Share Custom Model
 
 In your copy’s editor, open **Access** and grant intended users or groups **Read** access. Give those same users **Read** access to its Knowledge collection.
 
@@ -229,7 +249,7 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## 20. Parting Questions
+## 21. Parting Questions
 
 How else could you see yourself using knowledge collections in the future?
 
@@ -237,7 +257,7 @@ What are the limitations of this approach?
 
 ---
 
-## 21. Workshop Resources
+## 22. Workshop Resources
 
 Check responses against sources in your collection. Next workshop introduces tools that retrieve Wikipedia content live.
 

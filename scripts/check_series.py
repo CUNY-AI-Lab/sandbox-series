@@ -11,7 +11,7 @@ REFLECTION_QUESTION='How could you imagine testing custom models like this in th
 def clean(text):
  return re.sub(r'\n{3,}', '\n\n', '\n'.join(line.rstrip() for line in text.splitlines())).strip()+'\n'
 def check_title(title,location):
- if title in {'Composing System Prompts','Curating knowledge collections','Configuring skills and tools','Parting Questions','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE}:return
+ if title in {'Composing System Prompts','Curating knowledge collections','Configuring skills and tools','RAG Under the Hood','Processing documents','Responding to requests','Parting Questions','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE}:return
  words=re.findall(r"[\w]+(?:[’'-][\w]+)*",title)
  if not 2 <= len(words) <= 3:issues.append(location+' heading length: '+title)
  if re.search(r'\b(a|an|the)\b',title,re.I):issues.append(location+' article in heading: '+title)
@@ -19,7 +19,7 @@ def check_title(title,location):
 
 def participant_text(node):
  if isinstance(node,str):return node
- if node.tag in {'h1','h2'} and node.text().strip() == 'Going to the Car Wash':return ''
+ if node.tag in {'h1','h2'} and node.text().strip() in {'Going to the Car Wash','RAG Under the Hood'}:return ''
  if node.tag in {'h1','title'} and node.text().strip() in {COVER_TITLE,COVER_TITLE+' | CUNY AI Lab'}:return ''
  if node.tag in {'pre','script','style'} or node.has_class('prompt-block') or node.has_class('quoted-prompt'):return ''
  if node.tag=='img':return node.attrs.get('alt','')

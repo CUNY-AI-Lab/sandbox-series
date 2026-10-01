@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,828 +1,296 @@
+@@ -1,828 +1,318 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Curating Knowledge Collections
@@ -768,11 +768,11 @@
 +
 +### Workshop Roadmap
 +
-+- **[Composing System Prompts](../basics/)** Configure model behavior with system prompts. Thursday, September 17
++- **[Composing System Prompts](../basics/)**  Configure model behavior with system prompts. Thursday, September 17
 +
-+- **Curating Knowledge Collections** Organize source documents in knowledge collections. Thursday, October 1
++- **Curating Knowledge Collections**  Organize source documents in knowledge collections. Thursday, October 1
 +
-+- **Configuring Skills and Tools** Extend model capabilities with skills and tools. Thursday, October 15
++- **Configuring Skills and Tools**  Extend model capabilities with skills and tools. Thursday, October 15
 +
 +[https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
 +
@@ -814,6 +814,28 @@
 +
 +## Curating knowledge collections — 5
 +
++### RAG Under the Hood
++
++### Processing documents
++
++- **Parse**  Extract usable text from files
++
++- **Chunk**  Divide text into smaller passages
++
++- **Embed**  Represent passages numerically so they can be searched by similarity
++
++### Responding to requests
++
++- **Retrieve**  Search for passages relevant to a request
++
++- **Add context**  Append passages to prompt instructions
++
++- **Generate**  Produce a response using that context
++
++---
++
++## Curating knowledge collections — 6
++
 +### Explore STEM Adventures
 +
 +**STEM Adventure Games** uses source documents to guide a text adventure with numbered choices.
@@ -824,7 +846,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 6
++## Curating knowledge collections — 7
 +
 +### Clone Custom Model
 +
@@ -834,7 +856,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 7
++## Curating knowledge collections — 8
 +
 +### Name Your Copy
 +
@@ -846,7 +868,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 8
++## Curating knowledge collections — 9
 +
 +### Try Custom Model
 +
@@ -856,7 +878,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 9
++## Curating knowledge collections — 10
 +
 +### Example Sources
 +
@@ -872,7 +894,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 10
++## Curating knowledge collections — 11
 +
 +### Choose Purpose
 +
@@ -882,7 +904,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 11
++## Curating knowledge collections — 12
 +
 +### Find Sources
 +
@@ -892,7 +914,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 12
++## Curating knowledge collections — 13
  
  ### Create Your Collection
  
@@ -985,7 +1007,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 13
++## Curating knowledge collections — 14
 +
 +### Add Source Text
 +
@@ -1007,7 +1029,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 14
++## Curating knowledge collections — 15
 +
 +### Add Instructions
 +
@@ -1031,7 +1053,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 15
++## Curating knowledge collections — 16
 +
 +### Test Custom Model
 +
@@ -1043,7 +1065,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 16
++## Curating knowledge collections — 17
 +
 +### Check Citations
 +
@@ -1055,7 +1077,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 17
++## Curating knowledge collections — 18
 +
 +### Compare Responses
 +
@@ -1069,7 +1091,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 18
++## Curating knowledge collections — 19
 +
 +### Revise and Retest
 +
@@ -1081,7 +1103,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 19
++## Curating knowledge collections — 20
 +
 +### Share Custom Model
 +
@@ -1093,7 +1115,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 20
++## Curating knowledge collections — 21
 +
 +### Parting Questions
 +
@@ -1103,7 +1125,7 @@
 +
 +---
 +
-+## Curating knowledge collections — 21
++## Curating knowledge collections — 22
 +
 +### Workshop Resources
 +
