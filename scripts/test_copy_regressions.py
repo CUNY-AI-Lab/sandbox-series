@@ -263,7 +263,7 @@ class CopyRegressions(unittest.TestCase):
                 for li in s.all(lambda n:n.tag=='li'):
                     self.assertIn(li.text().split()[0],verbs);self.assertNotRegex(li.text(),r'(?i)\b(a|an|the)\b')
     def test_11_knowledge_prerequisites(self):
-        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Source Text','Add Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
+        self.assert_order('knowledge/index.html',['Retrieval-Augmented Generation','Explore STEM Adventures','Clone Custom Model','Name Your Copy','Try Custom Model','Example Sources','Choose Purpose','Find Sources','Create Your Collection','Add Source Text','Add Source Guidance','Add Instructions','Test Custom Model','Check Citations','Compare Responses','Revise and Retest'])
         webpages=self.slide('knowledge/index.html','Add Source Text')
         steps=webpages.all(lambda n:'data-fragment-step' in n.attrs)
         self.assertEqual(len(steps),3)
@@ -272,7 +272,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('several paragraphs or complete sections',steps[1].text())
         self.assertIn('including its link',steps[1].text())
         self.assertIn('Add Content → Add text content',steps[1].text())
-        self.assertIn('Repeat for three Wikipedia articles',steps[2].text())
+        self.assertIn('One Wikipedia article is enough to begin',steps[2].text())
         self.assertEqual(len(webpages.all(lambda n:n.tag=='img')),3)
         instructions=self.slide('knowledge/index.html','Add Instructions')
         steps=instructions.all(lambda n:'data-fragment-step' in n.attrs)
@@ -360,7 +360,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),22)
+        self.assertEqual(len(self.decks['knowledge/index.html']),23)
         self.assert_order('skills/index.html',['Specify Format','Clone Custom Models','Save Private Copy','Draft Skills','Create Skills','Attach Skills','Extend Procedures','Test Skills','Create Adventure Tools','Install Tool Code','Inspect Tool Results'])
         for term in ['Private','remove copied users or groups','Access List','Save & Create']:
             self.assertIn(term,self.slide('skills/index.html','Save Private Copy').text())
@@ -429,7 +429,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertTrue(stages[1].all(lambda n:n.tag=='img')[0].attrs['src'].split('?', 1)[0].endswith('wikipedia.svg'))
         links={n.attrs.get('href') for n in sources.all(lambda n:n.tag=='a')}
         self.assertFalse(links, 'Original source pages are examples, not assigned reading.')
-        self.assertIn('choose sources for your adapted version',sources.text())
+        self.assertIn('For your adapted version, start with one article',sources.text())
     def test_25_introductory_workshops_use_chat_adventure(self):
         # Guard the participant's actual task, not just the workshop labels.
         technical = r'(?i)\bJSON\b|\bscenario_json\b|\brender_stem_adventure\b|\bview_skill\b|\b(?:saved|submitted) (?:play )?records?\b|\bFunction Calling\b'

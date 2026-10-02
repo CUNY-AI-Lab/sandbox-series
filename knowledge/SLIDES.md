@@ -147,7 +147,7 @@ At **Sandbox Workshop Collection** root, **instructions.txt** describes how sour
 
 **Wikipedia** contains three article files. Open each to review its text and source link.
 
-Next, choose sources for your adapted version.
+For your adapted version, start with one article. Add more as needed.
 
 ![Wikipedia directory inside Sandbox Workshop Collection with Women-in-science.txt, Scientific-method.txt, and List-of-experiments.txt outlined together.](../images/knowledge-collection-2026-10-01/wikipedia.svg)
 
@@ -167,9 +167,9 @@ Choose a topic and audience for your adaptation of **STEM Adventure Games**. Ide
 
 ### Find Sources
 
-Locate three Wikipedia articles about your chosen topic.
+Start with one Wikipedia article about your chosen topic. Add more only as needed.
 
-Read relevant passages. Choose sources that explain what players could investigate and which decisions they could make.
+Choose substantial passages that give players something to investigate through their choices.
 
 ---
 
@@ -195,11 +195,11 @@ Select **Add Content → New directory**. Name it **Wikipedia**, select **Create
 
 Select **Add Content → Add text content**. Use article title as filename.
 
-Copy and paste several paragraphs or complete sections from each Wikipedia article, including its link.
+Copy and paste several paragraphs or complete sections from your chosen Wikipedia article, including its link.
 
 ![List of experiments editor filled with Wikipedia experiment entries, with source link outlined.](../images/knowledge-directories-2026-09-29/paste-excerpt.svg)
 
-Select **Save**. Repeat for three Wikipedia articles, keeping excerpts and links in separate files.
+Select **Save**. One Wikipedia article is enough to begin. Keep any additional articles in separate files with their links.
 
 Wait for processing, then open each file to check text.
 
@@ -209,11 +209,25 @@ Wait for processing, then open each file to check text.
 
 ## Curating knowledge collections — 15
 
+### Add Source Guidance
+
+Before testing, add two short sources alongside your Wikipedia material.
+
+- **Secondary source** — An explanation or analysis that helps interpret your topic.
+
+- **Heuristic source** — Questions or rules of thumb that guide player decisions.
+
+Return to collection root. Use **Add Content → Add text content** to save relevant passages and source links in separate, clearly named files.
+
+---
+
+## Curating knowledge collections — 16
+
 ### Add Instructions
 
 Select collection name above directory contents to return to its root. Select **Add Content → Add text content**.
 
-Enter **instructions** as title; Sandbox adds **.txt**. Describe how each source should guide play, substituting your page titles and directions. Select **Save**.
+Enter **instructions** as title; Sandbox adds **.txt**. Use your page titles and filenames to explain which material grounds scenes, which helps interpret them, and which guides player choices. Select **Save**.
 
 ![Add text content editor titled instructions, with directions for using three STEM Wikipedia sources. Title outlined; Sandbox adds .txt when saved.](../images/knowledge-directories-2026-09-29/create-instructions.svg)
 
@@ -225,13 +239,13 @@ Under **Knowledge**, replace **STEM Wikipedia Experiments** with your own collec
 
 In cloned **System Prompt**, revise **Purpose** and **Audience** for your topic. Under **Procedure**, replace source and retrieval directions above numbered steps.
 
-Offer four adventure options immediately. After a player chooses, retrieve instructions.txt from attached Knowledge collection and use its directions to find relevant source passages. Reuse those passages during play.
+Offer four adventure options immediately. After a player chooses, retrieve instructions.txt from attached Knowledge collection and use its directions to find relevant source passages. Use article passages for details, secondary sources for interpretation, and heuristic sources for questions or decision rules during play.
 
 Remove instructions that refer to sources you replaced. Keep numbered game steps, **Constraints**, and **Format**. Select **Save & Update**.
 
 ---
 
-## Curating knowledge collections — 16
+## Curating knowledge collections — 17
 
 ### Test Custom Model
 
@@ -243,7 +257,7 @@ Remove instructions that refer to sources you replaced. Keep numbered game steps
 
 ---
 
-## Curating knowledge collections — 17
+## Curating knowledge collections — 18
 
 ### Check Citations
 
@@ -255,7 +269,7 @@ Select a citation beside a response. Does its source passage support that respon
 
 ---
 
-## Curating knowledge collections — 18
+## Curating knowledge collections — 19
 
 ### Compare Responses
 
@@ -269,11 +283,11 @@ Keep your test chat open. Open **STEM Adventure Games** in another tab and send 
 
 ---
 
-## Curating knowledge collections — 19
+## Curating knowledge collections — 20
 
 ### Revise and Retest
 
-Choose one problem you observed. Change a source or system prompt instruction.
+Choose one problem you observed. Revise source guidance or system prompt instructions. Add another Wikipedia article only if needed.
 
 For source changes, update copied excerpts and **instructions.txt**. Wait for processing. For prompt changes, select **Save & Update**.
 
@@ -281,7 +295,7 @@ Open **New Chat**, select your saved copy, and repeat your request. Did this cha
 
 ---
 
-## Curating knowledge collections — 20
+## Curating knowledge collections — 21
 
 ### Share Custom Model
 
@@ -293,7 +307,7 @@ Ask someone to try your copy and check its citations.
 
 ---
 
-## Curating knowledge collections — 21
+## Curating knowledge collections — 22
 
 ### Parting Questions
 
@@ -303,7 +317,7 @@ What are the limitations of this approach?
 
 ---
 
-## Curating knowledge collections — 22
+## Curating knowledge collections — 23
 
 ### Workshop Resources
 
