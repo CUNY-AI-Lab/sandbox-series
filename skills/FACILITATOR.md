@@ -6,7 +6,7 @@ New Media Lab · Room 7388.01 · CUNY Graduate Center
 
 ## Review status
 
-This 25-slide revision includes the user-selected Adventure Outcomes skill, both system-prompt clauses, the user-provided selection screenshots with numbered annotations, and actual hosted evidence immediately after each test. The user authorized their existing STEM Adventure Games (Clone) for the demonstration. Advanced is excluded. The original standard model was not resolved after all 67 catalog entries across three pages and its editor route were inspected.
+This 26-slide revision includes the user-selected Adventure Outcomes skill, both system-prompt clauses, the user-provided selection screenshots with numbered annotations, and actual hosted evidence immediately after each test. The user authorized their existing STEM Adventure Games (Clone) for the demonstration. Advanced is excluded. The original standard model was not resolved after all 67 catalog entries across three pages and its editor route were inspected.
 
 ## Session plan
 
@@ -16,8 +16,8 @@ This 25-slide revision includes the user-selected Adventure Outcomes skill, both
 | 2:40–2:50 | Select Adventure Outcomes, add its prompt clause, and test | 7–10 |
 | 2:50–3:10 | Define tools, browse examples, bind Adventure Kit, prepare, and test | 11–21 |
 | 3:10–3:20 | Choose revision or creation; copy complete content | 22 |
-| 3:20–3:40 | Work with CAIL Workspace Support | 23 |
-| 3:40–4:00 | Add a new version, retest, and reflect | 24–25 |
+| 3:20–3:40 | Work with CAIL Workspace Support; situate an adventure in a lesson | 23–24 |
+| 3:40–4:00 | Add a new version, retest, and reflect | 25–26 |
 
 Browse the 11 contributed skills and 14 tools briefly within the existing introduction blocks. Their dated catalog captures are examples of host visibility, not a promise of participant access.
 
@@ -58,3 +58,9 @@ After the private-access inspection, the owner reported granting participant rea
 ## Support rehearsal
 
 CAIL Workspace Support returned a complete separate “Adventure Outcomes — Labeled Trial” proposal, an explanation, and an explicitly unrun test. The proposal adds an outcome label while preserving clarification and immediate-stop exceptions. The original Adventure Outcomes remains the selected workshop skill. Creating the separate trial and running its live retest were not completed before browser control stopped. No successful retest of that proposal is claimed.
+
+## Integrated prompt revision
+
+The concurrent repository revision added a lesson-planning creation example and shorter participant clauses. These are preserved, with Adventure Outcomes remaining the selected skill. The new short clauses were not retested live after browser control stopped; the successful hosted rehearsal used the longer clauses recorded in Hosted Evidence. Do not attribute that evidence to the shorter clauses or claim that Lesson Adventure Planner has been installed or run.
+
+Slide 24 offers a creation option: adapt the adventure just played to one lesson outcome, using supplied course passages, theory, and a dated source. Preserve game rules, require review before execution, and label unrun tests.

@@ -39,3 +39,19 @@ After the private-access inspection, the owner reported granting participant rea
 ## Support rehearsal
 
 CAIL Workspace Support returned a complete separate “Adventure Outcomes — Labeled Trial” proposal, an explanation, and an explicitly unrun test. The proposal adds an outcome label while preserving clarification and immediate-stop exceptions. The original Adventure Outcomes remains the selected workshop skill. Creating the separate trial and running its live retest were not completed before browser control stopped. No successful retest of that proposal is claimed.
+
+## Rehearsal setup
+
+The hosted evidence above used these longer system-prompt clauses. Shorter participant clauses in the integrated workshop revision have not received a separate live retest. The saved Adventure Outcomes instructions are unchanged.
+
+### Skill clause
+
+```text
+Use Adventure Outcomes (adventure_outcomes) each time the player makes a choice. If its full instructions are not already in context, load that exact saved skill with view_skill before judging the choice. For this adventure, do not load or follow other skills from the discovery catalog. A skill name or description in that catalog is not an instruction to use it. Judge choices against these system rules and the recorded results, never the player’s claims. Ask when the intended choice is unclear; a stop request takes priority over the usual scene and choices format. Set the adventure’s completion conditions with the player before declaring an ending.
+```
+
+### Tool clause
+
+```text
+Adventure Kit is a tool, not a skill. Once the player approves the adventure and its rules, call the attached Adventure Kit function render_adventure with the reviewed schema_version 2 JSON in scenario_json. Derive the setting, choices, state, consequences and endings from the approved adventure and available sources. Ask about missing or conflicting rules before calling. Never call render_stem_adventure, pass empty scenario_json, or substitute a default story. The embedded tool output is the playable interface; do not simulate a second game alongside it. Read the tool result and fix validation errors before play. Use the copied Play record when discussing the actual outcome; prose alone does not change tool state.
+```

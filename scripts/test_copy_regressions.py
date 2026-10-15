@@ -398,7 +398,7 @@ class CopyRegressions(unittest.TestCase):
         pdf=ROOT/'skills/Tools-and-Skills-Slides.pdf'
         self.assertTrue(pdf.is_file());self.assertGreater(pdf.stat().st_size,10000)
         provenance=json.loads((ROOT/'review/tools-skills-2026-10-15-publication.json').read_text())
-        self.assertEqual(provenance['slides'],13)
+        self.assertEqual(provenance['slides'],len(self.decks['skills/index.html']))
         for record in provenance['screenshots']:
             self.assertEqual(hashlib.sha256((ROOT/record['file']).read_bytes()).hexdigest(),record['sha256'])
 

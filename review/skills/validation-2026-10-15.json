@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "slides": 25,
+  "slides": 26,
   "required_checks": [
     {
       "command": "scripts/check_series.py",
@@ -103,10 +103,11 @@
       "note": "Passed"
     }
   ],
-  "desktop": "25 slides; no overflow at 1600x900",
-  "mobile": "25 slides; no horizontal clipping at 390x844; long prompt content scrolls",
+  "desktop": "26 slides; no overflow at 1600x900",
+  "mobile": "26 slides; no horizontal clipping at 390x844; long prompt content scrolls",
   "screenshot_resolution": "37 images checked",
-  "pdf": "25 rendered pages visually inspected; exact reflection preserved",
+  "pdf": "26 rendered pages visually inspected; exact reflection preserved",
   "support_live_retest": "blocked by stopped browser control",
-  "access": "Owner reported completing participant read grants; live readback not performed"
+  "access": "Owner reported completing participant read grants; live readback not performed",
+  "concurrent_revision": "Integrated e63c755 lesson activity and shorter clauses; retained user-selected Adventure Outcomes and actual hosted evidence. Short clauses not separately live-tested."
 }

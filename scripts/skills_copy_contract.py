@@ -20,5 +20,6 @@ SKILLS_CORE_SEQUENCE = (
     'Test Your Skill', 'What Is a Tool?', 'Check Tool Binding',
     'Add the ‘Adventure Kit’ tool', 'Prepare Your Adventure',
     'Add Tool Instructions', 'Test Your Tool', 'Choose Your Task',
-    'Work With Support', 'Add Tools or Skills', 'Series Reflections',
+    'Work With Support', 'Situate Your Adventure',
+    'Add Tools or Skills', 'Series Reflections',
 )
