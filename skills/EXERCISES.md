@@ -6,19 +6,19 @@ GC New Media Lab · Room 7388.01
 
 ## Open Your Model
 
-2:30–2:40 · Slides 1–6
+2:30–2:40 · Slides 1–5
 
 Continue your saved model or clone it first. Open **Workspace → Models → Edit** and read your actual system prompt. Identify its setting, goals, and rules. Use instructions.txt and source passages when your prompt requires them. Keep this model card open while you add both a skill and a tool. To clone the earlier example, select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
 
 ## Add Your Skill
 
-2:40–2:50 · Slide 7
+2:40–2:50 · Slide 6
 
 Under **Skills → Select Skill**, choose existing **Extend Adventure Games**. Read its saved instructions. This orchestration skill coordinates Adventure Kit according to your model's system prompt. Select this existing saved skill.
 
 ## Add Adventure Kit
 
-2:50–3:00 · Slides 8–16
+2:50–3:00 · Slides 7–13
 
 Stay in the model card during the tool explanation and examples. A tool call sends a function name and arguments for execution; the returned result and rendered output show what actually happened.
 
@@ -28,7 +28,7 @@ Under **Tools → Select Tool**, choose existing **Adventure Kit**. Confirm **Ex
 
 ### Add Skill Instructions
 
-Add this clause to your model's system prompt:
+Add this clause to the bottom of your model's system prompt:
 
 ```text
 Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
@@ -38,7 +38,7 @@ Confirm both Extend Adventure Games and Adventure Kit are selected, then click *
 
 ## Test Your Adventure
 
-3:00–3:15 · Slides 17–18
+3:00–3:15 · Slides 14–15
 
 Run your updated adventure game. Verify that the configured skill and tool are called appropriately, then play the rest of the game. The example run begins with:
 
@@ -66,7 +66,7 @@ The user-provided live screenshot shows view_skill in a collapsed activity summa
 
 ## Explore Other Skills
 
-3:15–3:25 · Slide 19
+3:15–3:25 · Slide 16
 
 After your first adventure works, experiment with **Adventure Outcomes** or **Conclude Adventures**, if your account can select them. Read complete saved instructions and check compatibility with your current tool. [Adventure Outcomes instructions](../examples/adventure-kit/adventure-outcomes.html) are available for comparison.
 
@@ -74,13 +74,13 @@ Change one item at a time. Return to your model card, select the intended skill,
 
 ## Copy Your Content
 
-3:25–3:30 · Slide 20
+3:25–3:30 · Slide 17
 
 Choose one task: revise a tool or skill, or create your own. Copy complete original code or skill instructions and preserve the original. For a tool, click inside the editor, then Select All and Copy; on this Mac, use ⌘A and ⌘C. For a new item, describe purpose, input, expected result, and constraints.
 
 ## Work With Support
 
-3:30–3:45 · Slides 21–22
+3:30–3:45 · Slides 18–19
 
 Open the **CAIL Workspace Support** model card and start a chat. Confirm its name below the message box. [Open CAIL Workspace Support](https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support)
 
@@ -102,7 +102,7 @@ If live retrieval is unavailable, supply a dated source. Do not accept an invent
 
 ## Add New Version
 
-3:45–4:00 · Slides 23–24
+3:45–4:00 · Slides 20–21
 
 Use **Workspace → Tools → Create** or **Skills → Create**. Enter a new Name and ID; preserve the original. Paste complete reviewed code or instructions. Review Access, then **Save & Create**. Use only permissions you are authorized to grant.
 

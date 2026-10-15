@@ -53,32 +53,17 @@ Required response content and form
 
 ## 4. Skill Examples
 
-Workspace → Skills · 1 of 3
-Examples from the host’s catalog. Your list depends on access
+### Extend Adventure Games
 
-![Current skills catalog entries including History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-1.png)
+Follow a saved adventure procedure
 
----
+Call Adventure Kit as directed by the skill
 
-## 5. Skill Examples
-
-Workspace → Skills · 2 of 3
-Examples from the host’s catalog. Your list depends on access
-
-![Current skills catalog entries including Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-2.png)
+Read the saved instructions in **Workspace → Skills**
 
 ---
 
-## 6. Skill Examples
-
-Workspace → Skills · 3 of 3
-Examples from the host’s catalog. Your list depends on access
-
-![Current skills catalog entries including Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-3.png)
-
----
-
-## 7. Add Your Skill
+## 5. Add Your Skill
 
 In **Workspace → Models → Edit**, find **Skills → Select Skill**
 
@@ -87,9 +72,11 @@ Choose existing **Extend Adventure Games**
 Read its saved instructions
 Keep this model card open for Adventure Kit
 
+![User-supplied model card with step 1 outlining Skills → Select Skill and step 2 outlining checked Extend Adventure Games](../images/current/workshop3-add-skill-current.svg)
+
 ---
 
-## 8. What Is a Tool?
+## 6. What Is a Tool?
 
 When a model calls a **tool**, Sandbox executes a function and returns its result
 
@@ -109,43 +96,16 @@ Returned output for a model to inspect
 
 ---
 
-## 9. Tool Examples
+## 7. Tool Examples
 
-Workspace → Tools · 1 of 4
+Workspace → Tools
 Examples from the host’s catalog. Your list depends on access
 
-![Current tools catalog entries including Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-1.png)
+![Selected tools — Adventure Kit, Chat Export, Instructional Toolset, Pronunciation and Translation Tool, and ChartJS once](../images/current/workshop3-selected-tools.svg)
 
 ---
 
-## 10. Tool Examples
-
-Workspace → Tools · 2 of 4
-Examples from the host’s catalog. Your list depends on access
-
-![Current tools catalog entries including OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-2.png)
-
----
-
-## 11. Tool Examples
-
-Workspace → Tools · 3 of 4
-Examples from the host’s catalog. Your list depends on access
-
-![Current tools catalog entries including Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-3.png)
-
----
-
-## 12. Tool Examples
-
-Workspace → Tools · 4 of 4
-Examples from the host’s catalog. Your list depends on access
-
-![Current tools catalog entries including Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-4.png)
-
----
-
-## 13. Enable Filter
+## 8. Enable Filter
 
 Enable **Model Bound Tool Enabler** on your model card.
 Why: It restores attached tools when a chat omits them.
@@ -154,7 +114,7 @@ Why: It restores attached tools when a chat omits them.
 
 ---
 
-## 14. Add the ‘Adventure Kit’ tool
+## 9. Add the ‘Adventure Kit’ tool
 
 In this same model card, open **Tools → Select Tool**
 Choose **Adventure Kit** · Confirm **Extend Adventure Games** remains selected
@@ -164,7 +124,7 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## 15. Model Card Check
+## 10. Model Card Check
 
 Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
 
@@ -172,7 +132,7 @@ Ensure that your model card has a knowledge collection, tool, skill, and filter 
 
 ---
 
-## 16. Add Skill Instructions
+## 11. Add Skill Instructions to the Bottom of Your System Prompt
 
 ```text
 Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
@@ -180,7 +140,7 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## 17. Test Your Adventure
+## 12. Test Your Adventure
 
 Run your updated adventure game
 Verify configured skill and tool are called appropriately
@@ -188,25 +148,28 @@ Then play the rest of your game
 
 ---
 
-## 18. Observe Game Results
+## 13. Observe Game Results
 
-① Check skill call · ② Check tool call
+① Check skill call
+② Check tool call
+
 Open details to confirm selected skill
 
 ![User-provided live Clone response with numbered callouts for view_skill and show_scene above rendered ADVENTURES panel](../images/current/workshop3-skill-tool-run.svg)
 
 ---
 
-## 19. Explore Other Skills
+## 14. Explore Other Skills
 
-After your first adventure works, try **Adventure Outcomes** or **Conclude Adventures** if available
+After your first adventure works, try **Adventure Outcomes** or **Conclude Adventure Game** if available
+
 Read saved instructions · Change one item · Save your model card and compare results
 
-![Later optional experiment in model editor with numbered callouts for Select Skill and Adventure Outcomes](../images/skills-2026-10-15/adventure-outcomes-select.svg)
+![Fresh model-card skill picker — 1 identifies Select Skill; 2 identifies Conclude Adventure Game. Captured October 15, 2026.](../images/current/workshop3-conclude-skill-current.svg)
 
 ---
 
-## 20. Choose Your Task
+## 15. Choose Your Task
 
 ### Revise One Item
 
@@ -224,7 +187,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## 21. Work With Support
+## 16. Work With Support
 
 Open **CAIL Workspace Support**
 Paste original content or your new task, system prompt, and required sources
@@ -234,7 +197,7 @@ Request complete content, an explanation, and one test · [Copy request](exercis
 
 ---
 
-## 22. Adapt Your Adventure
+## 17. Adapt Your Adventure
 
 Bring a lesson outcome, weekly concept, and current adventure to **CAIL Workspace Support**
 
@@ -245,7 +208,7 @@ Review proposed changes before running them · [Copy Support request](exercises.
 
 ---
 
-## 23. Add Tools or Skills
+## 18. Add Tools or Skills
 
 Create a new **tool** or **skill**, or save a revised copy
 Use **Workspace → Tools → Create** or [**Skills → Create**](navigation.html#create-skill)
@@ -257,7 +220,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](exercis
 
 ---
 
-## 24. Series Reflections
+## 19. Series Reflections
 
 What task in your teaching or research could benefit from a skill or tool?
 

@@ -1,8 +1,8 @@
 {
-  "slides": 24,
+  "slides": 19,
   "date": "2026-10-15",
   "approval": "User authorized publication to the existing workshop repository and phone review; continued file-based publication explicitly requested after browser control stopped.",
-  "scope": "24-slide workshop, synchronized outline/reading pages/PDF, same-model-card skill/tool/filter configuration, later optional skills, versioned generic 2.1.0 source and accurately labeled hosted evidence.",
+  "scope": "19-slide workshop with one example slide per category, updated model-card screenshots, synchronized outline and PDF",
   "screenshots": [
     {
       "source": "select-copy-raw.png",
@@ -80,21 +80,33 @@
       "file": "images/current/workshop3-model-card-status.png",
       "annotation": "None; original PNG unchanged.",
       "sha256": "c734f31dcb8805ea2ae17fd48c8a0a5f5a280973430deae43532a7ca52d5abad"
+    },
+    {
+      "source": "Live Firefox model-card skill picker captured October 15, 2026",
+      "file": "images/current/workshop3-conclude-skill-current.svg",
+      "annotation": "Unchanged cropped pixels; blue callouts identify Select Skill and Conclude Adventure Game",
+      "crop": [
+        650,
+        1340,
+        1400,
+        900
+      ],
+      "sha256": "d41400108793f509bbb0a0099e1d7901bf5a6ed7a29650f2c4aadb5f40e1b3a4"
     }
   ],
   "export": "PDF uses exact browser-rendered page images and searchable text; no print stylesheet layout",
   "reviewed_reflections": [
     "What task in your teaching or research could benefit from a skill or tool?",
-    "Would you be interested in joining our coworking session on October 29, 2–4pm, to build your adventure into a collection so that we can showcase our work over the course of the series?",
+    "Would you be interested in joining our coworking session on October 29, 2\u20134pm, to build your adventure into a collection so that we can showcase our work over the course of the series?",
     "What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?"
   ],
   "hosted_evidence": [
     "review/skills/hosted-skill-evidence-2026-10-15.json",
     "review/skills/hosted-tool-evidence-2026-10-15.json"
   ],
-  "pdf_sha256": "05a3b257edfdb508a817c8d16dd2355a33c0d71b5f95f26d0d36a49e477fed40",
-  "pdf_pages": 24,
-  "visual_review": "All 24 PDF pages rendered with Poppler and visually reviewed; detailed review of title, filter, status, exact prompt and result pages; desktop/mobile layout checks passed.",
+  "pdf_sha256": "d50fc2c6db9eedaac4f217e366b403bc8eff4e643e36a767d2c4366da55d4abd",
+  "pdf_pages": 19,
+  "visual_review": "Rendered all 19 slides. Desktop overflow and mobile horizontal overflow checks passed. Visually reviewed curated tools, fresh skill selector and enlarged results slide.",
   "access": "Private/no grants at inspection for Adventure Kit and Adventure Outcomes; owner subsequently reported granting participant read access; post-change participant visibility unverified.",
   "remaining_live_check": "Save and retest the separate Workspace Support revision; browser control stopped.",
   "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
@@ -109,7 +121,19 @@
     "Why: It restores attached tools when a chat omits them."
   ],
   "status_slide": "Only exact supplied sentence and original screenshot are visible; heading retained for assistive technology.",
-  "deployed_content_commit": "eb29f6d",
-  "deployed_readback": "Confirmed by publishing task: Pages and workshop checks succeeded, live HTML has24slides and latest exact copy; screenshot and24pagePDF URLs return200.",
-  "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked."
+  "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked.",
+  "curated_examples": {
+    "skill_slides": 1,
+    "skill": "Extend Adventure Games",
+    "tool_slides": 1,
+    "tools": [
+      "Adventure Kit",
+      "Chat Export",
+      "Instructional Toolset",
+      "Pronunciation and Translation Tool",
+      "ChartJS"
+    ]
+  },
+  "previous_deployed_content_commit": "eb29f6d",
+  "previous_deployed_readback": "Confirmed by publishing task: Pages and workshop checks succeeded, live HTML has24slides and latest exact copy; screenshot and24pagePDF URLs return200."
 }

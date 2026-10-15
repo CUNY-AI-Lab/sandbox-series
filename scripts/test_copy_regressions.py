@@ -304,7 +304,7 @@ class CopyRegressions(unittest.TestCase):
         core=[s.attrs['data-title'] for s in slides if not s.has_class('catalog-slide') and not s.has_class('demonstration-slide')]
         self.assertEqual(core,list(SKILLS_CORE_SEQUENCE))
         self.assertIn('system prompt',self.slide('skills/index.html','Choose Your Own Adventure').text())
-        for definition,title,count in [('What Is a Skill?','Skill Examples',3),('What Is a Tool?','Tool Examples',4)]:
+        for definition,title,count in [('What Is a Skill?','Skill Examples',1),('What Is a Tool?','Tool Examples',1)]:
             position=slides.index(self.slide('skills/index.html',definition))
             examples=slides[position+1:position+count+1]
             self.assertEqual(len(examples),count)
@@ -326,11 +326,12 @@ class CopyRegressions(unittest.TestCase):
         skill=self.slide('skills/index.html','Add Your Skill').text()
         for term in ['Workspace → Models','Extend Adventure Games','Select Skill']:
             self.assertIn(term,skill)
-        clause=self.slide('skills/index.html','Add Skill Instructions')
+        clause=self.slide('skills/index.html','Add Skill Instructions to the Bottom of Your System Prompt')
         self.assertEqual(clause.all(lambda n:n.tag=='pre')[0].text(), 'Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.')
         self.assertFalse(clause.all(lambda n:n.tag=='img'))
         self.assertFalse(clause.all(lambda n:n.tag=='p'))
-        setup=' '.join(s.text() for s in self.decks['skills/index.html'][:15])
+        deck=self.decks['skills/index.html']
+        setup=' '.join(s.text() for s in deck[:deck.index(self.slide('skills/index.html','Explore Other Skills'))])
         self.assertNotIn('Adventure Outcomes',setup)
         self.assertNotIn('Conclude Adventures',setup)
         self.assertIn('Adventure Outcomes',self.slide('skills/index.html','Explore Other Skills').text())
@@ -353,7 +354,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertIn(term,skill.text())
         self.assertIn('Save & Update',self.slide('skills/index.html','Add the ‘Adventure Kit’ tool').text())
         experiment=self.slide('skills/index.html','Explore Other Skills')
-        self.assertTrue(experiment.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/skills-2026-10-15/adventure-outcomes-select.svg'))
+        self.assertTrue(experiment.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/current/workshop3-conclude-skill-current.svg'))
         self.assertFalse(skill.all(lambda n:n.tag=='a' and 'conclude-adventure' in n.attrs.get('href','')))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())

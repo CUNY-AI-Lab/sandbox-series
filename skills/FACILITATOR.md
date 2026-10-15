@@ -10,16 +10,18 @@ Adventure Outcomes and Conclude Adventures are later optional experiments. CAIL 
 
 | Time Eastern | Activity | Slides |
 | --- | --- | --- |
-| 2:30–2:40 | Continue or clone; define skills and browse examples | 1–6 |
-| 2:40–2:50 | Select Extend Adventure Games | 7 |
-| 2:50–3:00 | Explain tools; enable filter; select Adventure Kit; check the model card; add prompt clause and save | 8–16 |
-| 3:00–3:15 | Run the adventure, inspect calls, and play | 17–18 |
-| 3:15–3:25 | Experiment with other available skills | 19 |
-| 3:25–3:30 | Choose a revision or creation task | 20 |
-| 3:30–3:45 | Work with CAIL Workspace Support | 21–22 |
-| 3:45–4:00 | Add a new version, retest, and reflect | 23–24 |
+| 2:30–2:40 | Continue or clone; define skills and browse examples | 1–5 |
+| 2:40–2:50 | Select Extend Adventure Games | 6 |
+| 2:50–3:00 | Explain tools; enable filter; select Adventure Kit; check the model card; add prompt clause and save | 7–13 |
+| 3:00–3:15 | Run the adventure, inspect calls, and play | 14–15 |
+| 3:15–3:25 | Experiment with other available skills | 16 |
+| 3:25–3:30 | Choose a revision or creation task | 17 |
+| 3:30–3:45 | Work with CAIL Workspace Support | 18–19 |
+| 3:45–4:00 | Add a new version, retest, and reflect | 20–21 |
 
 ## Evidence limits
+
+The refreshed optional-skill picker capture is pending because user activity interrupted Firefox. The outdated selector screenshot is omitted from Explore Other Skills until the current saved concluding-skill label is verified.
 
 The newly requested Extend Adventure Games orchestration sequence has not been live-tested by this task. The owner confirmed its current saved name; its current ID, full instructions, and participant visibility have not been read back. Browser control stopped on a prohibited current URL, and it was not retried or bypassed. Do not label earlier Adventure Outcomes or direct Adventure Kit tests as proof of this new orchestration sequence.
 

@@ -866,42 +866,17 @@ Required response content and form
 
 ### Skill Examples
 
-Workspace → Skills · 1 of 3
-Examples from the host’s catalog. Your list depends on access
+### Extend Adventure Games
 
-![Current skills catalog entries including History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-skills-1.png)
+Follow a saved adventure procedure
 
-**Alt text:** Current skills catalog entries including History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.
+Call Adventure Kit as directed by the skill
+
+Read the saved instructions in **Workspace → Skills**
 
 ---
 
 ## Configuring skills and tools — 5
-
-### Skill Examples
-
-Workspace → Skills · 2 of 3
-Examples from the host’s catalog. Your list depends on access
-
-![Current skills catalog entries including Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-skills-2.png)
-
-**Alt text:** Current skills catalog entries including Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.
-
----
-
-## Configuring skills and tools — 6
-
-### Skill Examples
-
-Workspace → Skills · 3 of 3
-Examples from the host’s catalog. Your list depends on access
-
-![Current skills catalog entries including Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-skills-3.png)
-
-**Alt text:** Current skills catalog entries including Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.
-
----
-
-## Configuring skills and tools — 7
 
 ### Add Your Skill
 
@@ -912,9 +887,13 @@ Choose existing **Extend Adventure Games**
 Read its saved instructions
 Keep this model card open for Adventure Kit
 
+![User-supplied model card with step 1 outlining Skills → Select Skill and step 2 outlining checked Extend Adventure Games](images/current/workshop3-add-skill-current.svg)
+
+**Alt text:** User-supplied model card with step 1 outlining Skills → Select Skill and step 2 outlining checked Extend Adventure Games
+
 ---
 
-## Configuring skills and tools — 8
+## Configuring skills and tools — 6
 
 ### What Is a Tool?
 
@@ -936,59 +915,20 @@ Returned output for a model to inspect
 
 ---
 
-## Configuring skills and tools — 9
+## Configuring skills and tools — 7
 
 ### Tool Examples
 
-Workspace → Tools · 1 of 4
+Workspace → Tools
 Examples from the host’s catalog. Your list depends on access
 
-![Current tools catalog entries including Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-1.png)
+![Selected tools — Adventure Kit, Chat Export, Instructional Toolset, Pronunciation and Translation Tool, and ChartJS once](images/current/workshop3-selected-tools.svg)
 
-**Alt text:** Current tools catalog entries including Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.
+**Alt text:** Selected tools — Adventure Kit, Chat Export, Instructional Toolset, Pronunciation and Translation Tool, and ChartJS once
 
 ---
 
-## Configuring skills and tools — 10
-
-### Tool Examples
-
-Workspace → Tools · 2 of 4
-Examples from the host’s catalog. Your list depends on access
-
-![Current tools catalog entries including OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-2.png)
-
-**Alt text:** Current tools catalog entries including OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.
-
----
-
-## Configuring skills and tools — 11
-
-### Tool Examples
-
-Workspace → Tools · 3 of 4
-Examples from the host’s catalog. Your list depends on access
-
-![Current tools catalog entries including Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-3.png)
-
-**Alt text:** Current tools catalog entries including Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.
-
----
-
-## Configuring skills and tools — 12
-
-### Tool Examples
-
-Workspace → Tools · 4 of 4
-Examples from the host’s catalog. Your list depends on access
-
-![Current tools catalog entries including Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-4.png)
-
-**Alt text:** Current tools catalog entries including Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.
-
----
-
-## Configuring skills and tools — 13
+## Configuring skills and tools — 8
 
 ### Enable Filter
 
@@ -1001,7 +941,7 @@ Why: It restores attached tools when a chat omits them.
 
 ---
 
-## Configuring skills and tools — 14
+## Configuring skills and tools — 9
 
 ### Add the ‘Adventure Kit’ tool
 
@@ -1015,7 +955,7 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## Configuring skills and tools — 15
+## Configuring skills and tools — 10
 
 ### Model Card Check
 
@@ -1027,9 +967,9 @@ Ensure that your model card has a knowledge collection, tool, skill, and filter 
 
 ---
 
-## Configuring skills and tools — 16
+## Configuring skills and tools — 11
 
-### Add Skill Instructions
+### Add Skill Instructions to the Bottom of Your System Prompt
 
 ```text
 Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
@@ -1037,7 +977,7 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## Configuring skills and tools — 17
+## Configuring skills and tools — 12
 
 ### Test Your Adventure
 
@@ -1047,11 +987,13 @@ Then play the rest of your game
 
 ---
 
-## Configuring skills and tools — 18
+## Configuring skills and tools — 13
 
 ### Observe Game Results
 
-① Check skill call · ② Check tool call
+① Check skill call
+② Check tool call
+
 Open details to confirm selected skill
 
 ![User-provided live Clone response with numbered callouts for view_skill and show_scene above rendered ADVENTURES panel](images/current/workshop3-skill-tool-run.svg)
@@ -1060,20 +1002,21 @@ Open details to confirm selected skill
 
 ---
 
-## Configuring skills and tools — 19
+## Configuring skills and tools — 14
 
 ### Explore Other Skills
 
-After your first adventure works, try **Adventure Outcomes** or **Conclude Adventures** if available
+After your first adventure works, try **Adventure Outcomes** or **Conclude Adventure Game** if available
+
 Read saved instructions · Change one item · Save your model card and compare results
 
-![Later optional experiment in model editor with numbered callouts for Select Skill and Adventure Outcomes](images/skills-2026-10-15/adventure-outcomes-select.svg)
+![Fresh model-card skill picker — 1 identifies Select Skill; 2 identifies Conclude Adventure Game. Captured October 15, 2026.](images/current/workshop3-conclude-skill-current.svg)
 
-**Alt text:** Later optional experiment in model editor with numbered callouts for Select Skill and Adventure Outcomes
+**Alt text:** Fresh model-card skill picker — 1 identifies Select Skill; 2 identifies Conclude Adventure Game. Captured October 15, 2026.
 
 ---
 
-## Configuring skills and tools — 20
+## Configuring skills and tools — 15
 
 ### Choose Your Task
 
@@ -1093,7 +1036,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## Configuring skills and tools — 21
+## Configuring skills and tools — 16
 
 ### Work With Support
 
@@ -1107,7 +1050,7 @@ Request complete content, an explanation, and one test · [Copy request](skills/
 
 ---
 
-## Configuring skills and tools — 22
+## Configuring skills and tools — 17
 
 ### Adapt Your Adventure
 
@@ -1120,7 +1063,7 @@ Review proposed changes before running them · [Copy Support request](skills/exe
 
 ---
 
-## Configuring skills and tools — 23
+## Configuring skills and tools — 18
 
 ### Add Tools or Skills
 
@@ -1136,7 +1079,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](skills/
 
 ---
 
-## Configuring skills and tools — 24
+## Configuring skills and tools — 19
 
 ### Series Reflections
 

@@ -1,0 +1,67 @@
+{
+  "selection": [
+    "Adventure Kit",
+    "Chat Export",
+    "Instructional Toolset",
+    "Pronunciation and Translation Tool",
+    "ChartJS"
+  ],
+  "images": [
+    {
+      "file": "images/current/workshop3-selected-tools-1.svg",
+      "sha256": "350a27855dbc1c669e245bfeedffbcfa6ee24621f6b146cbaeb9058bd2554411",
+      "source_crops": [
+        {
+          "file": "images/current/workshop3-catalog-tools-1.png",
+          "sha256": "f6d3f98a28e868da340ecda6efe4f2c7a95fa375578ee723d2fc19f02f78307d",
+          "crop": [
+            0,
+            0,
+            1660,
+            250
+          ],
+          "destination": [
+            0,
+            0
+          ]
+        }
+      ],
+      "changes": "Original PNG bytes embedded unchanged; SVG viewports show only the specified rows. Separate source crops are arranged with a24pixel gap; no UI or text was reconstructed."
+    },
+    {
+      "file": "images/current/workshop3-selected-tools-2.svg",
+      "sha256": "55c645ea70a99e7edeab7701dc9a8bd9b504dbd289f923fb6a74e5745655ff9f",
+      "source_crops": [
+        {
+          "file": "images/current/workshop3-catalog-tools-2.png",
+          "sha256": "4aa2b2d1172b400f328d568d39a2d02aaab09e956faf2e23d6d7ec8ca3320512",
+          "crop": [
+            0,
+            125,
+            1660,
+            240
+          ],
+          "destination": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "images/current/workshop3-catalog-tools-3.png",
+          "sha256": "a75f020eb3485f7196f128fcacd7f1ebcb52743acaef77f5461b368e68c906c2",
+          "crop": [
+            0,
+            265,
+            1610,
+            120
+          ],
+          "destination": [
+            0,
+            264
+          ]
+        }
+      ],
+      "changes": "Original PNG bytes embedded unchanged; SVG viewports show only the specified rows. Separate source crops are arranged with a24pixel gap; no UI or text was reconstructed."
+    }
+  ]
+}

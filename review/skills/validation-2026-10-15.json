@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "slides": 24,
+  "slides": 19,
   "required_checks": [
     {
       "command": "scripts/check_series.py",
@@ -103,10 +103,10 @@
       "note": "Passed"
     }
   ],
-  "desktop": "24 slides; no overflow at 1600x900",
-  "mobile": "24 slides; no horizontal clipping at 390x844; all content starts within its scroll container",
-  "screenshot_resolution": "38 images checked",
-  "pdf": "24 pages rendered with Poppler and visually reviewed; exact credit, prompt, and reflection preserved",
+  "desktop": "19 slides; no overflow at 1600x900",
+  "mobile": "19 slides; no horizontal clipping at 390x844",
+  "screenshot_resolution": "33 images checked",
+  "pdf": "19 pages rendered from browser screenshots and reopened; exact prompt and reflection checked",
   "support_live_retest": "blocked by stopped browser control",
   "access": "Owner reported completing participant read grants; live readback not performed",
   "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
@@ -121,5 +121,17 @@
     "Why: It restores attached tools when a chat omits them."
   ],
   "status_slide": "Only exact supplied sentence and original screenshot are visible; heading retained for assistive technology.",
-  "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked."
+  "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked.",
+  "curated_examples": {
+    "skill_slides": 1,
+    "skill": "Extend Adventure Games",
+    "tool_slides": 1,
+    "tools": [
+      "Adventure Kit",
+      "Chat Export",
+      "Instructional Toolset",
+      "Pronunciation and Translation Tool",
+      "ChartJS"
+    ]
+  }
 }
