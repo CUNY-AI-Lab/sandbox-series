@@ -17,10 +17,46 @@ def png_size(data):
     return struct.unpack('>II', data[16:24])
 
 
+def jpeg_size(data):
+    """Read dimensions from the original JPEG frame without recompressing it."""
+    if data[:2] != b'\xff\xd8':
+        raise ValueError('Screenshot must contain JPEG pixels')
+    offset = 2
+    frame_markers = {0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7,
+                     0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf}
+    while offset < len(data):
+        if data[offset] != 0xff:
+            break
+        while offset < len(data) and data[offset] == 0xff:
+            offset += 1
+        if offset >= len(data):
+            break
+        marker = data[offset]
+        offset += 1
+        if marker in {0xd9, 0xda}:
+            break
+        if marker == 0x01 or 0xd0 <= marker <= 0xd7:
+            continue
+        if offset + 2 > len(data):
+            break
+        length = int.from_bytes(data[offset:offset + 2], 'big')
+        if length < 2 or offset + length > len(data):
+            break
+        if marker in frame_markers and length >= 8:
+            height, width = struct.unpack('>HH', data[offset + 3:offset + 7])
+            if width and height:
+                return width, height
+            break
+        offset += length
+    raise ValueError('JPEG screenshot has no valid frame dimensions')
+
+
 def display_limit(path):
     """Return CSS width at which no embedded raster is enlarged beyond 1:1."""
     if path.suffix.lower() == '.png':
         return png_size(path.read_bytes())[0]
+    if path.suffix.lower() in {'.jpg', '.jpeg'}:
+        return jpeg_size(path.read_bytes())[0]
     root = ET.parse(path).getroot()
     _, _, width, _ = map(float, root.attrib['viewBox'].split())
     scales = []
@@ -28,9 +64,10 @@ def display_limit(path):
         if element.tag.rsplit('}', 1)[-1] != 'image':
             continue
         source = element.get('href') or element.get('{http://www.w3.org/1999/xlink}href')
-        if not source or not source.startswith('data:image/png;base64,'):
-            raise ValueError('SVG screenshot must embed its original PNG')
-        pixels_w, pixels_h = png_size(base64.b64decode(source.split(',', 1)[1]))
+        if not source or not source.startswith(('data:image/png;base64,', 'data:image/jpeg;base64,')):
+            raise ValueError('SVG screenshot must embed its original PNG or JPEG')
+        read_size = png_size if source.startswith('data:image/png;') else jpeg_size
+        pixels_w, pixels_h = read_size(base64.b64decode(source.split(',', 1)[1], validate=True))
         scales.append(min(pixels_w / float(element.attrib['width']),
                           pixels_h / float(element.attrib['height'])))
     if not scales:
