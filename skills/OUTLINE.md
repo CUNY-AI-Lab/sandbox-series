@@ -105,7 +105,13 @@ Examples from the host’s catalog. Your list depends on access
 
 ---
 
-## 8. Enable Filter
+## 8. Update Model for Tool Calling
+
+![Model card base-model picker — 1 identifies Base Model; 2 identifies DeepSeek V4 Flash 0731](../images/current/workshop3-deepseek-base-model.svg)
+
+---
+
+## 9. Enable Filter
 
 Enable **Model Bound Tool Enabler** on your model card.
 Why: It restores attached tools when a chat omits them.
@@ -114,7 +120,7 @@ Why: It restores attached tools when a chat omits them.
 
 ---
 
-## 9. Add the ‘Adventure Kit’ tool
+## 10. Add the ‘Adventure Kit’ tool
 
 In this same model card, open **Tools → Select Tool**
 Choose **Adventure Kit** · Confirm **Extend Adventure Games** remains selected
@@ -124,7 +130,7 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## 10. Model Card Check-In
+## 11. Model Card Check-In
 
 Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
 
@@ -132,7 +138,7 @@ Ensure that your model card has a knowledge collection, tool, skill, and filter 
 
 ---
 
-## 11. Add Skill Instructions to the Bottom of Your System Prompt
+## 12. Add Skill Instructions to the Bottom of Your System Prompt
 
 ```text
 Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
@@ -140,7 +146,7 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## 12. Test Your Adventure
+## 13. Test Your Adventure
 
 Run your updated adventure game
 Verify configured skill and tool are called appropriately
@@ -148,7 +154,7 @@ Then play the rest of your game
 
 ---
 
-## 13. Observe Game Results
+## 14. Observe Game Results
 
 ① Check skill call
 ② Check tool call
@@ -159,7 +165,7 @@ Open details to confirm selected skill
 
 ---
 
-## 14. Explore Other Skills
+## 15. Explore Other Skills
 
 After your first adventure works, try **Adventure Outcomes** or **Conclude Adventure Game** if available
 
@@ -169,7 +175,7 @@ Read saved instructions · Change one item · Save your model card and compare r
 
 ---
 
-## 15. Choose Your Task
+## 16. Choose Your Task
 
 ### Revise One Item
 
@@ -187,7 +193,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## 16. Work With Support
+## 17. Work With Support
 
 Open **CAIL Workspace Support**
 Paste original content or your new task, system prompt, and required sources
@@ -197,7 +203,7 @@ Request complete content, an explanation, and one test · [Copy request](exercis
 
 ---
 
-## 17. Adapt Your Adventure
+## 18. Adapt Your Adventure
 
 Introduce a lesson plan, learning outcome, or disciplinary focus to your use of **CAIL Workspace Support** card
 
@@ -205,7 +211,7 @@ Prompted to generate a skill and/or tool that continues to support or further ex
 
 ---
 
-## 18. Add Tools or Skills
+## 19. Add Tools or Skills
 
 Create a new **tool** or **skill**, or save a revised copy
 Use **Workspace → Tools → Create** or [**Skills → Create**](navigation.html#create-skill)
@@ -217,7 +223,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](exercis
 
 ---
 
-## 19. Series Reflections
+## 20. Series Reflections
 
 What task in your teaching or research could benefit from a skill or tool?
 

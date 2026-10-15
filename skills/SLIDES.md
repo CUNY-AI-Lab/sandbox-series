@@ -119,6 +119,14 @@ Examples from the host’s catalog. Your list depends on access
 
 ## Configuring skills and tools — 8
 
+### Update Model for Tool Calling
+
+![Model card base-model picker — 1 identifies Base Model; 2 identifies DeepSeek V4 Flash 0731](../images/current/workshop3-deepseek-base-model.svg)
+
+---
+
+## Configuring skills and tools — 9
+
 ### Enable Filter
 
 Enable **Model Bound Tool Enabler** on your model card.
@@ -128,7 +136,7 @@ Why: It restores attached tools when a chat omits them.
 
 ---
 
-## Configuring skills and tools — 9
+## Configuring skills and tools — 10
 
 ### Add the ‘Adventure Kit’ tool
 
@@ -140,7 +148,7 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## Configuring skills and tools — 10
+## Configuring skills and tools — 11
 
 ### Model Card Check-In
 
@@ -150,7 +158,7 @@ Ensure that your model card has a knowledge collection, tool, skill, and filter 
 
 ---
 
-## Configuring skills and tools — 11
+## Configuring skills and tools — 12
 
 ### Add Skill Instructions to the Bottom of Your System Prompt
 
@@ -160,7 +168,7 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## Configuring skills and tools — 12
+## Configuring skills and tools — 13
 
 ### Test Your Adventure
 
@@ -170,7 +178,7 @@ Then play the rest of your game
 
 ---
 
-## Configuring skills and tools — 13
+## Configuring skills and tools — 14
 
 ### Observe Game Results
 
@@ -183,7 +191,7 @@ Open details to confirm selected skill
 
 ---
 
-## Configuring skills and tools — 14
+## Configuring skills and tools — 15
 
 ### Explore Other Skills
 
@@ -195,7 +203,7 @@ Read saved instructions · Change one item · Save your model card and compare r
 
 ---
 
-## Configuring skills and tools — 15
+## Configuring skills and tools — 16
 
 ### Choose Your Task
 
@@ -215,7 +223,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## Configuring skills and tools — 16
+## Configuring skills and tools — 17
 
 ### Work With Support
 
@@ -227,7 +235,7 @@ Request complete content, an explanation, and one test · [Copy request](exercis
 
 ---
 
-## Configuring skills and tools — 17
+## Configuring skills and tools — 18
 
 ### Adapt Your Adventure
 
@@ -237,7 +245,7 @@ Prompted to generate a skill and/or tool that continues to support or further ex
 
 ---
 
-## Configuring skills and tools — 18
+## Configuring skills and tools — 19
 
 ### Add Tools or Skills
 
@@ -251,7 +259,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](exercis
 
 ---
 
-## Configuring skills and tools — 19
+## Configuring skills and tools — 20
 
 ### Series Reflections
 

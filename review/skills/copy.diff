@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,677 +1,262 @@
+@@ -1,677 +1,270 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Customizing Skills & Tools
@@ -411,6 +411,14 @@
 +
 +## Configuring skills and tools — 8
 +
++### Update Model for Tool Calling
++
++![Model card base-model picker — 1 identifies Base Model; 2 identifies DeepSeek V4 Flash 0731](../images/current/workshop3-deepseek-base-model.svg)
++
++---
++
++## Configuring skills and tools — 9
++
 +### Enable Filter
 +
 +Enable **Model Bound Tool Enabler** on your model card.
@@ -420,7 +428,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 9
++## Configuring skills and tools — 10
 +
 +### Add the ‘Adventure Kit’ tool
 +
@@ -432,7 +440,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 10
++## Configuring skills and tools — 11
 +
 +### Model Card Check-In
 +
@@ -442,7 +450,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 11
++## Configuring skills and tools — 12
 +
 +### Add Skill Instructions to the Bottom of Your System Prompt
  
@@ -830,7 +838,7 @@
 -[ailab.gc.cuny.edu](https://ailab.gc.cuny.edu)
 +---
 +
-+## Configuring skills and tools — 12
++## Configuring skills and tools — 13
 +
 +### Test Your Adventure
 +
@@ -840,7 +848,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 13
++## Configuring skills and tools — 14
 +
 +### Observe Game Results
 +
@@ -853,7 +861,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 14
++## Configuring skills and tools — 15
 +
 +### Explore Other Skills
 +
@@ -865,7 +873,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 15
++## Configuring skills and tools — 16
 +
 +### Choose Your Task
 +
@@ -885,7 +893,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 16
++## Configuring skills and tools — 17
 +
 +### Work With Support
 +
@@ -897,7 +905,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 17
++## Configuring skills and tools — 18
 +
 +### Adapt Your Adventure
 +
@@ -907,7 +915,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 18
++## Configuring skills and tools — 19
 +
 +### Add Tools or Skills
 +
@@ -921,7 +929,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 19
++## Configuring skills and tools — 20
 +
 +### Series Reflections
 +

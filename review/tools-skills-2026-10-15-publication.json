@@ -1,8 +1,8 @@
 {
-  "slides": 19,
+  "slides": 20,
   "date": "2026-10-15",
   "approval": "User authorized publication to the existing workshop repository and phone review; continued file-based publication explicitly requested after browser control stopped.",
-  "scope": "19-slide workshop with one example slide per category, updated model-card screenshots, synchronized outline and PDF",
+  "scope": "20-slide workshop with one example slide per category, updated model-card screenshots, synchronized outline and PDF",
   "screenshots": [
     {
       "source": "select-copy-raw.png",
@@ -104,9 +104,9 @@
     "review/skills/hosted-skill-evidence-2026-10-15.json",
     "review/skills/hosted-tool-evidence-2026-10-15.json"
   ],
-  "pdf_sha256": "6c3671e2adbbebb457ebed01f813381fe03ab15a755c8e4bebd074ef9f401888",
-  "pdf_pages": 19,
-  "visual_review": "Rendered all 19 slides. Desktop overflow and mobile horizontal overflow checks passed. Visually reviewed curated tools, fresh skill selector and enlarged results slide.",
+  "pdf_sha256": "c1688aecc21a3ef9a146547bb3a2412ac8ff88e626b2eb9eddfd8c9ab9024d1f",
+  "pdf_pages": 20,
+  "visual_review": "Rendered all 20 slides. Desktop overflow and mobile horizontal overflow checks passed. Visually reviewed curated tools, fresh skill selector and enlarged results slide.",
   "access": "Private/no grants at inspection for Adventure Kit and Adventure Outcomes; owner subsequently reported granting participant read access; post-change participant visibility unverified.",
   "remaining_live_check": "Save and retest the separate Workspace Support revision; browser control stopped.",
   "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
@@ -135,5 +135,6 @@
     ]
   },
   "previous_deployed_content_commit": "eb29f6d",
-  "previous_deployed_readback": "Confirmed by publishing task: Pages and workshop checks succeeded, live HTML has24slides and latest exact copy; screenshot and24pagePDF URLs return200."
+  "previous_deployed_readback": "Confirmed by publishing task: Pages and workshop checks succeeded, live HTML has24slides and latest exact copy; screenshot and24pagePDF URLs return200.",
+  "base_model_slide": "Update Model for Tool Calling; heading and annotated live DeepSeek V4 Flash 0731 picker only; immediately before Enable Filter."
 }

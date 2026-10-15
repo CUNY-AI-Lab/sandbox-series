@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "slides": 19,
+  "slides": 20,
   "required_checks": [
     {
       "command": "scripts/check_series.py",
@@ -103,10 +103,10 @@
       "note": "Passed"
     }
   ],
-  "desktop": "19 slides; no overflow at 1600x900",
-  "mobile": "19 slides; no horizontal clipping at 390x844",
+  "desktop": "20 slides; no overflow at 1600x900",
+  "mobile": "20 slides; no horizontal clipping at 390x844",
   "screenshot_resolution": "33 images checked",
-  "pdf": "19 pages rendered from browser screenshots and reopened; exact prompt and reflection checked",
+  "pdf": "20 pages rendered from browser screenshots and reopened; exact prompt and reflection checked",
   "support_live_retest": "blocked by stopped browser control",
   "access": "Owner reported completing participant read grants; live readback not performed",
   "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
@@ -133,5 +133,6 @@
       "Pronunciation and Translation Tool",
       "ChartJS"
     ]
-  }
+  },
+  "base_model_slide": "Update Model for Tool Calling; heading and annotated live DeepSeek V4 Flash 0731 picker only; immediately before Enable Filter."
 }
