@@ -340,7 +340,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertFalse(skill.all(lambda n:n.tag=='a'))
         for term in ['Select Skill', 'Save & Update']:
             self.assertIn(term,skill.text())
-        self.assertTrue(skill.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/current/workshop3-model-skill-select.svg'))
+        self.assertTrue(skill.all(lambda n:n.tag=='img' and n.attrs.get('src', '').split('?')[0]=='../images/current/workshop3-model-skill-select.svg'))
         self.assertFalse(skill.all(lambda n:n.tag=='a' and 'conclude-adventure' in n.attrs.get('href','')))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())

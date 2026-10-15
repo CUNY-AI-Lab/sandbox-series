@@ -898,12 +898,12 @@ Examples from the host’s catalog. Your list depends on access
 ### Add Your Skill
 
 Open **Workspace → Models**, then choose **Edit** from your model card’s menu
-① Under **Skills**, click **Select Skill** · ② Choose your skill
+① Under **Skills**, click **Select Skill** · ② Choose **Extend STEM Adventures** if available
 Click **Save & Update** to save your model
 
-![Model card Skills menu with blue numbered callouts for 1 Select Skill, 2 choose a saved skill. Adventure Outcomes is shown selected.](images/current/workshop3-model-skill-select.svg)
+![Model card Skills menu with blue numbered callouts for 1 Select Skill, 2 Extend STEM Adventures. Adventure Outcomes was selected in the captured interface.](images/current/workshop3-model-skill-select.svg?v=20261015-extend)
 
-**Alt text:** Model card Skills menu with blue numbered callouts for 1 Select Skill, 2 choose a saved skill. Adventure Outcomes is shown selected.
+**Alt text:** Model card Skills menu with blue numbered callouts for 1 Select Skill, 2 Extend STEM Adventures. Adventure Outcomes was selected in the captured interface.
 
 ---
 
@@ -911,9 +911,9 @@ Click **Save & Update** to save your model
 
 ### Add Skill Instructions
 
-Add this clause with the saved skill’s task, name, and ID · [Copy clause](skills/exercises.html#add-skill-instructions)
+Add this short clause to your model’s system prompt · [Copy clause](skills/exercises.html#add-skill-instructions)
 
-When I ask for [TASK], load [SKILL_NAME] (ID: [SKILL_ID]). Follow its saved instructions using this system prompt’s goals and rules and the latest information I have supplied. Ask about missing or conflicting details before deciding. Acknowledge a request to stop immediately, without requiring another action or reflection.
+When I ask to extend our adventure or review a Play record, check the attached Extend STEM Adventures skill. Follow the setting and rules in this system prompt.
 
 Save your model, then check that the saved skill loads and follows its instructions
 
@@ -1056,7 +1056,7 @@ Review proposed input for **Adventure Kit**
 
 Add this clause to your model’s system prompt · [Copy clause](skills/exercises.html#add-tool-instructions)
 
-After the player approves an adventure, call the attached Adventure Kit tool’s **render_adventure** function with the reviewed schema-version-2 JSON in **scenario_json**. Derive content and rules from this system prompt; resolve missing or conflicting instructions first. Read the returned result, resolve errors before play, and use the player’s copied Play record when discussing progress or completion.
+When I approve an adventure, call the attached Adventure Kit tool to run it. Use the setting, goals, and rules in this system prompt.
 
 Save your model, then verify tool attachment, provider support, and the actual result
 
@@ -1112,6 +1112,28 @@ Request complete content, an explanation, and one test · [Copy request](skills/
 
 ## Configuring skills and tools — 22
 
+### Situate Your Adventure
+
+At **CAIL Workspace Support**, design a skill for the adventure you just played
+
+Trigger
+
+Adapt this adventure to one lesson outcome
+
+Inputs
+
+Model prompt, lesson plan, weekly concept, current scene, and a dated news example or statistic
+
+Output
+
+Revised choices that ask students to apply theory and question the evidence
+
+Preserve game rules and Stop · [Copy the Support request](skills/exercises.html#situate-your-adventure)
+
+---
+
+## Configuring skills and tools — 23
+
 ### Add Tools or Skills
 
 Create a new **tool** or **skill**, or save a revised copy
@@ -1126,7 +1148,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](skills/
 
 ---
 
-## Configuring skills and tools — 23
+## Configuring skills and tools — 24
 
 ### Series Reflections
 

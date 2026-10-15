@@ -6,7 +6,7 @@ New Media Lab · Room 7388.01 · CUNY Graduate Center
 
 ## Review status
 
-This intermediate 23-slide revision is published for Zach’s phone review. The two system-prompt exercises are included. The actual saved-skill-use demonstration and the standard STEM Adventure Games tool-call/game demonstration remain pending. No screenshot of Advanced appears in this revision. The new generic workshop skill has not been selected or installed. The bracketed skill clause is an exercise template, to be completed with a saved resource’s real task, name, and ID.
+This 24-slide revision includes two short system-prompt clauses: check Extend STEM Adventures for adventure extensions or Play records, and call Adventure Kit after approval. The actual saved-skill-use demonstration and the standard STEM Adventure Games tool-call/game demonstration remain pending. No screenshot of Advanced appears in this revision.
 
 ## Session plan
 
@@ -16,16 +16,16 @@ This intermediate 23-slide revision is published for Zach’s phone review. The 
 | 2:40–2:50 | Select a saved skill, add its prompt clause, and test | 7–9 |
 | 2:50–3:10 | Define tools, browse examples, bind Adventure Kit, prepare, and test | 10–19 |
 | 3:10–3:20 | Choose revision or creation; copy complete content | 20 |
-| 3:20–3:40 | Work with CAIL Workspace Support | 21 |
-| 3:40–4:00 | Add a new version, retest, and reflect | 22–23 |
+| 3:20–3:40 | Work with CAIL Workspace Support; draft a lesson-based adventure skill | 21–22 |
+| 3:40–4:00 | Add a new version, retest, and reflect | 23–24 |
 
 Browse the catalog slides briefly within the existing introduction blocks. They add examples without changing the outline’s 90-minute allocation. Preserve the six actions: clone or continue, add Adventure Kit, experiment, copy editable content, revise with Support, and add a new version.
 
 ## Skill module
 
-Define a skill as instructions the model loads and follows for a repeatable task. Select it through Integrations → Skills before adding the task/name/ID clause to the participant’s own model. This initial step does not use a blank skill editor. Creation is an option later in the Support activity.
+Define a skill as instructions the model loads and follows for a repeatable task. Select Extend STEM Adventures in Workspace → Models → Edit → Skills, if the participant account has access, before adding the short clause to the model's prompt. Creation is an option later in the Support activity.
 
-The generic replacement skill is still being chosen. Do not silently adopt Check the outcome or Conclude Adventures. Existing Extend STEM Adventures uses the obsolete render_stem_adventure and rooms/actions/goal_flags contract, so it cannot be presented as compatible with Adventure Kit v2 without revision. Check actual saved-resource loading and use, then missing evidence and an immediate request to stop. Model guidance cannot enforce executable game state.
+Existing Extend STEM Adventures uses the obsolete render_stem_adventure and rooms/actions/goal_flags contract. The short prompt clause tells the model to check that skill, but it does not make the skill compatible with Adventure Kit v2. Before attempting an extension, review or revise its saved instructions for the current tool. Check actual saved-resource loading and use, then missing evidence and an immediate request to stop. Model guidance cannot enforce executable game state.
 
 ## Tool module
 
@@ -48,5 +48,7 @@ Earlier October 14 QA verified the tool with a supplied archive fixture on a sep
 ## Support and new versions
 
 Participants choose to revise either the tool or a skill, or create their own. Copy the complete original code/instructions, active system prompt, required source passages, and observed problem into a chat with CAIL Workspace Support. Ask for complete revised content, an explanation, and a test. Support does not inherit the participant’s previous chat or collection automatically.
+
+Slide 22 gives a creation option within this same activity: adapt the adventure just played to one lesson outcome. Participants give Support the prompt, lesson passages, weekly concepts, and current scene and Play record. The proposed skill preserves game rules, grounds a decision in course theory and a dated source, asks students to critique the evidence, and stops for review before any Adventure Kit call. If web retrieval is unavailable, participants supply a dated source. Treat the output as a draft until the saved skill and actual game behavior are checked.
 
 Preserve the original. In Workspace → Tools or Skills → Create, give the new version its own Name and ID, replace sample content completely, review Access, and Save & Create. Select the new item and repeat the same request under the same model and settings. Report expected and observed behavior and leave unrun checks explicit.
