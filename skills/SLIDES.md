@@ -84,12 +84,11 @@ Examples from the host’s catalog. Your list depends on access
 
 ### Add Your Skill
 
-Open **Integrations → Skills** in your model’s chat
+Open **Workspace → Models**, then choose **Edit** from your model card’s menu
+① Under **Skills**, click **Select Skill** · ② Choose your skill
+Click **Save & Update** to save your model
 
-Find a saved skill for your task and turn on its toggle
-Read its trigger, procedure, and expected response
-
-[Selection guide](navigation.html#add-skill) · [Current workspace examples](catalog.html)
+![Model card Skills menu with blue numbered callouts for 1 Select Skill, 2 choose a saved skill. Adventure Outcomes is shown selected.](../images/current/workshop3-model-skill-select.svg)
 
 ---
 

@@ -321,7 +321,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Prism Laboratory',' '.join(s.text() for s in self.decks['skills/index.html']))
     def test_14_skill_comparisons_remove_attached_skill(self):
         skill=self.slide('skills/index.html','Test Your Skill').text()
-        self.assertIn('Integrations → Skills',self.slide('skills/index.html','Add Your Skill').text())
+        self.assertIn('Workspace → Models',self.slide('skills/index.html','Add Your Skill').text())
         for term in ['actual record of choices and results','Leave out required information and check for a question','Ask to stop before the goal is met']:self.assertIn(term,skill)
         create=self.slide('skills/index.html','Add Tools or Skills')
         self.assertTrue(create.all(lambda n:n.tag=='a' and n.attrs.get('href')=='exercises.html#add-new-version'))
@@ -337,8 +337,10 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(len(blocks), 1, file)
             self.assertEqual(blocks[0].text(), source.read_text())
         skill=self.slide('skills/index.html','Add Your Skill')
-        self.assertTrue(skill.all(lambda n:n.tag=='a' and n.attrs.get('href')=='navigation.html#add-skill'))
-        self.assertIn('saved skill for your task',skill.text())
+        self.assertFalse(skill.all(lambda n:n.tag=='a'))
+        for term in ['Select Skill', 'Save & Update']:
+            self.assertIn(term,skill.text())
+        self.assertTrue(skill.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/current/workshop3-model-skill-select.svg'))
         self.assertFalse(skill.all(lambda n:n.tag=='a' and 'conclude-adventure' in n.attrs.get('href','')))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
