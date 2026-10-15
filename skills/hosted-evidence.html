@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hosted Evidence | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../images/cail-favicon.svg">
+<link rel="stylesheet" href="../css/workshop-copy.css?v=8b578b460376">
+<link rel="stylesheet" href="../css/theme.css?v=20260929-controls">
+<script src="../js/theme.js?v=20260929-controls" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><img class="page-wordmark" src="../images/cail-wordmark-white.png" data-theme-brand data-logo-dark="../images/cail-wordmark-white.png" data-logo-light="../images/cail-wordmark-color.png" alt="CUNY AI Lab" width="1154" height="259"><h1>Hosted Evidence</h1>
+<nav aria-label="Workshop links"><a href="../">Sandbox Series</a> · <a href="index.html">Return to workshop</a> · <a href="hosted-evidence.md" download="hosted-evidence.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#adventure-outcomes">Adventure Outcomes</a></li><li><a href="#adventure-kit-210">Adventure Kit 2.1.0</a></li><li><a href="#limits-and-access">Limits and access</a></li><li><a href="#access-follow-up">Access follow-up</a></li><li><a href="#support-rehearsal">Support rehearsal</a></li></ul></nav></header>
+<main id="workshop-copy" class="reading-content">
+
+<p>October 15, 2026 · STEM Adventure Games (Clone) · DeepSeek V4 Flash 0731</p>
+<h2 id="adventure-outcomes">Adventure Outcomes</h2>
+<p>The saved resource was explicitly loaded through native <code>view_skill</code> with <code>{"id":"adventure_outcomes"}</code>. Its returned name and instructions matched the selected skill. This was not a direct <code>$</code> mention or an autonomous discovery benchmark.</p>
+<p>With a supplied record showing no measured growth and a choice that changed both light and water, the response rejected the player's unsupported success claim and did not declare completion. It asked for a numbered choice when the follow-up was ambiguous. The stop request produced one sentence and no further choices.</p>
+<p><img alt="Actual saved-skill call and response" src="../images/skills-2026-10-15/adventure-outcomes-hosted.svg"></p>
+<h2 id="adventure-kit-210">Adventure Kit 2.1.0</h2>
+<p>The revised tool was exported and tested in a fresh Clone chat. The actual function was <code>render_adventure</code>, with reviewed schema-version-2 JSON text in <code>scenario_json</code>, theme <code>cuny-blue</code>, and text_speed <code>0</code>. The returned result reported <code>render_requested</code>, title Seedling Comparison, and sizes of one node, four choices, two endings, and three state keys. The embedded interactive player appeared in the same chat.</p>
+<p><img alt="Actual tool call and embedded player" src="../images/skills-2026-10-15/adventure-kit-hosted.svg"></p>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Action</th>
+<th>Observed result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vary light before baseline</td>
+<td>Blocked; state unchanged</td>
+</tr>
+<tr>
+<td>Record baseline, vary light, compare simulated growth</td>
+<td>Supplied completion rule matched; status complete</td>
+</tr>
+<tr>
+<td>Undo</td>
+<td>Returned to active; observed false; ending null</td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>Status stopped; no false completion; choices removed</td>
+</tr>
+<tr>
+<td>Copy Play Record</td>
+<td>Play record copied confirmation</td>
+</tr>
+</tbody>
+</table>
+<p>The fictional classroom fixture was supplied to the tool; it is not embedded in the reusable code. This test does not establish automatic conversion of every model prompt or historical source. Initial screenshot displayed Bauhaus despite a cuny-blue argument; CUNY Blue appeared after reload, and the mismatch did not reproduce.</p>
+<h2 id="limits-and-access">Limits and access</h2>
+<p>The existing Model Bound Tool Enabler was selected during testing; a with/without comparison was not run. Both saved resources showed Private with no access grants at inspection. No participant account access or permission expansion is claimed. Screenshots record actual UI; annotations identify observed controls and results.</p>
+<p><a href="exercises.html">Exercises</a> · <a href="../examples/adventure-kit/adventure-outcomes.html">Adventure Outcomes</a> · <a href="../examples/adventure-kit/source.html">Tool source</a></p>
+<h2 id="access-follow-up">Access follow-up</h2>
+<p>After the private-access inspection, the owner reported granting participant read access to both Adventure Kit and Adventure Outcomes. The post-change participant visibility check remains unverified because browser control was stopped. No access change was made by this task.</p>
+<h2 id="support-rehearsal">Support rehearsal</h2>
+<p>CAIL Workspace Support returned a complete separate “Adventure Outcomes — Labeled Trial” proposal, an explanation, and an explicitly unrun test. The proposal adds an outcome label while preserving clarification and immediate-stop exceptions. The original Adventure Outcomes remains the selected workshop skill. Creating the separate trial and running its live retest were not completed before browser control stopped. No successful retest of that proposal is claimed.</p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../js/examples.js" defer></script>
+</body>
+</html>

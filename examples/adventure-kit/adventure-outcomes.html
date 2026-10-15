@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adventure Outcomes | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=8b578b460376">
+<link rel="stylesheet" href="../../css/theme.css?v=20260929-controls">
+<script src="../../js/theme.js?v=20260929-controls" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><img class="page-wordmark" src="../../images/cail-wordmark-white.png" data-theme-brand data-logo-dark="../../images/cail-wordmark-white.png" data-logo-light="../../images/cail-wordmark-color.png" alt="CUNY AI Lab" width="1154" height="259"><h1>Adventure Outcomes</h1>
+<nav aria-label="Workshop links"><a href="../../">Sandbox Series</a> · <a href="../../skills/index.html">Return to workshop</a> · <a href="adventure-outcomes.md" download="adventure-outcomes.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#skill-instructions">Skill Instructions</a></li><li><a href="#select-saved-skill">Select Saved Skill</a></li><li><a href="#verify-actual-use">Verify Actual Use</a></li></ul></nav></header>
+<main id="workshop-copy" class="reading-content">
+
+<p>Saved skill ID: <code>adventure_outcomes</code></p>
+<p>Description: Use this skill to orchestrate adventure game turns</p>
+<h2 id="skill-instructions">Skill Instructions</h2>
+<p>Use this skill each time the player makes a choice. Judge the choice by the system prompt’s rules and the earlier results in the record, never by the player’s claims, and decide whether it succeeds, succeeds at a cost, or fails. If you cannot tell which choice the player means, ask before you narrate; if the player asks to stop, confirm the stop in one sentence and add nothing else. Narrate the outcome and its cause in a short scene, shape the next choices around any cost or setback, and declare the end only when the system prompt’s rules call for it.</p>
+<h2 id="select-saved-skill">Select Saved Skill</h2>
+<p>In Workspace → Models, edit your own model. Under Skills → Select Skill, choose Adventure Outcomes and save. This first exercise uses the existing saved skill. Creating or revising an item comes later in the Support exercise.</p>
+<h2 id="verify-actual-use">Verify Actual Use</h2>
+<p>The October 15 Clone test explicitly requested native loading: <code>view_skill({"id":"adventure_outcomes"})</code>. It returned the saved instructions, rejected a false completion claim, asked which choice an ambiguous request meant, and stopped in one sentence. A direct <code>$</code> mention uses a different path: OpenWebUI injects the selected skill content, so absence of a subsequent view_skill call does not establish failure.</p>
+<p><a href="https://docs.openwebui.com/features/workspace/skills/">Skill documentation</a> · <a href="../../skills/exercises.html">Participant exercises</a></p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

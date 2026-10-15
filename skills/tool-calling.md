@@ -17,7 +17,7 @@ Use your private model copy. Record its ID, base model, system prompt, calling m
 
 ## Add Instructions Before Testing
 
-Every participant adds the [tool-calling clause](exercises.html#add-tool-instructions) to their model’s system prompt, saves it, and preserves the existing adventure instructions. The clause calls `render_adventure` with reviewed schema-version-2 JSON text in `scenario_json` after the player approves the adventure. This function and argument are verified in the October 14 hosted 2.0.0 export. Current model binding and outgoing schema remain live checks
+Every participant adds the [tool-calling clause](exercises.html#add-tool-instructions) to their model’s system prompt, saves it, and preserves the existing adventure instructions. The clause calls `render_adventure` with reviewed schema-version-2 JSON text in `scenario_json` after the player approves the adventure. This function and argument are verified in the October 15 hosted 2.1.0 export and actual Clone invocation
 
 Read the actual result. `needs_context` and `invalid_input` require correction before play. `render_requested` requests a player display; inspect the rendered player before calling it successful. The model needs the player’s copied Play record to discuss button choices, progress, or completion
 
@@ -31,7 +31,7 @@ The filter cannot fix unsupported function calling, malformed arguments, executi
 
 ## Evidence Status
 
-Earlier agent preparation verified Adventure Kit execution in a separate DeepSeek V4 Flash 0731 QA configuration with Native calling and supplied fictional material. Current STEM model invocation and a live enabler comparison remain unverified. Eleven local checks verified the preserved enabler's ID-merging behavior. Those checks used no hosted model
+The October 15 test used the user-authorized STEM Adventure Games (Clone), based on DeepSeek V4 Flash 0731. Adventure Kit 2.1.0 was actually called and rendered an interactive player. Prerequisite, completion, Undo, Stop, and Copy Play Record checks passed. The existing Model Bound Tool Enabler was selected. Its necessity remains unverified because no with/without hosted comparison was run. Local checks of ID merging do not establish necessity
 
 Generic tool and skill content contain no built-in adventure. Design your scene from your active model's system prompt. Resolve missing or contradictory goals before execution and copy actual Play record before discussing an executable run in chat
 

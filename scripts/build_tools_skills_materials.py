@@ -7,8 +7,12 @@ from reading_pages import ROOT, SOURCES, DESTINATIONS, relative
 
 
 MATERIALS = {
+    'examples/adventure-kit/adventure-kit.py': ('Adventure Kit Source', 'examples/adventure-kit/adventure-kit.html'),
     'skills/REFERENCE.md': ('Workshop References', 'skills/reference.html'),
     'skills/FACILITATOR.md': ('Facilitator Notes', 'skills/facilitator.html'),
+    'skills/hosted-evidence.md': ('Hosted Evidence', 'skills/hosted-evidence.html'),
+    'skills/tool-calling.md': ('Check Tool Calling', 'skills/tool-calling.html'),
+    'examples/adventure-kit/adventure-outcomes.md': ('Adventure Outcomes', 'examples/adventure-kit/adventure-outcomes.html'),
     'skills/EXERCISES.md': ('Participant Exercises', 'skills/exercises.html'),
     'examples/adventure-kit/prepare-source-adventure.md': (
         'Prepare Source Adventures', 'examples/adventure-kit/prepare-source-adventure.html'

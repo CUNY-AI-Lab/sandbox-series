@@ -1,0 +1,28 @@
+{
+  "captured_at": "2026-10-15, 11:08 a.m. Eastern",
+  "chat_url": "https://chat.ailab.gc.cuny.edu/c/ddd1581b-5355-4009-9fd7-f01ad8aa0d73",
+  "model": "STEM Adventure Games (Clone)",
+  "base_model": "DeepSeek V4 Flash 0731",
+  "skill_call": {
+    "name": "view_skill",
+    "arguments": {
+      "id": "adventure_outcomes"
+    }
+  },
+  "source_file": "private audit/adventure-outcomes-hosted-initial.png (JPEG capture)",
+  "source_sha256": "030ee298e4f0edd90ab6b61cb67bd716b31c6fd087e2176991d1dabb0679ca8a",
+  "source_dimensions": [
+    4608,
+    2414
+  ],
+  "presentation_frame": [
+    80,
+    160,
+    4480,
+    1810
+  ],
+  "changes": "Documented crop excludes browser tabs and account strip; decoded source pixels verified identical at 1:1; SVG outline annotations only.",
+  "evidence_path": "explicit native view_skill loading; no dollar mention",
+  "published_screenshot": "images/skills-2026-10-15/adventure-outcomes-hosted-crop.png",
+  "published_screenshot_sha256": "f275a3629633476880df080fddda1d43534226aef8f1011caca35a68e63a3756"
+}

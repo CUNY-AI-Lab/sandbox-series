@@ -1,0 +1,26 @@
+[
+  {
+    "file": "images/skills-2026-10-15/adventure-kit-select.svg",
+    "source": "images/skills-2026-10-15/adventure-kit-select-raw.png",
+    "source_sha256": "06daf084457ef9dba8f06431088b8d3f5ce43ebdf7cd03a9a8dda362a624d736",
+    "source_dimensions": [
+      1714,
+      1164
+    ],
+    "crop": "none; user-supplied crop preserved exactly",
+    "annotation": "SVG outlines and numbered badges; original PNG embedded without pixel edits",
+    "observed": "Saved resource shown in model editor selection menu; not invocation or runtime proof"
+  },
+  {
+    "file": "images/skills-2026-10-15/adventure-outcomes-select.svg",
+    "source": "images/skills-2026-10-15/adventure-outcomes-select-raw.png",
+    "source_sha256": "c5432200bf50fbf56c77148d369a61c8cb97d56f370d0569f49057e2b4cbe15c",
+    "source_dimensions": [
+      1828,
+      1010
+    ],
+    "crop": "none; user-supplied crop preserved exactly",
+    "annotation": "SVG outlines and numbered badges; original PNG embedded without pixel edits",
+    "observed": "Saved resource shown in model editor selection menu; not invocation or runtime proof"
+  }
+]

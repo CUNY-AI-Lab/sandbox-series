@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adventure Kit Source | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=8b578b460376">
+<link rel="stylesheet" href="../../css/theme.css?v=20260929-controls">
+<script src="../../js/theme.js?v=20260929-controls" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><img class="page-wordmark" src="../../images/cail-wordmark-white.png" data-theme-brand data-logo-dark="../../images/cail-wordmark-white.png" data-logo-light="../../images/cail-wordmark-color.png" alt="CUNY AI Lab" width="1154" height="259"><h1>Adventure Kit Source</h1>
+<nav aria-label="Workshop links"><a href="../../">Sandbox Series</a> · <a href="../../skills/index.html">Return to workshop</a> · <a href="adventure-kit.py" download="adventure-kit.py">Download Python</a></nav></header>
+<main id="workshop-copy" class="reading-content">
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="source-copy">Copy text</button><pre class="reference-code" id="source-copy">&quot;&quot;&quot;
+title: Adventure Kit
+description: Render participant-defined choice adventures with declared state, conditions, effects and endings. No built-in adventure.
+version: 2.1.0
+&quot;&quot;&quot;
+
+import json
+import math
+import re
+
+from fastapi.responses import HTMLResponse
+
+THEMES = (&quot;cuny-blue&quot;, &quot;linux-terminal&quot;, &quot;classic-arcade&quot;, &quot;bauhaus&quot;)
+SPEEDS = {&quot;instant&quot;: 0, &quot;slow&quot;: 35, &quot;medium&quot;: 75, &quot;fast&quot;: 140}
+MAX_BYTES = 500_000
+MAX_ERRORS = 12
+ID_PATTERN = re.compile(r&quot;[A-Za-z][A-Za-z0-9_-]{0,79}&quot;)
+RESERVED_IDS = {&quot;constructor&quot;, &quot;prototype&quot;, &quot;__proto__&quot;}
+ID_RULE = &quot;start with a letter, then use letters, digits, _ or -, 80 characters at most&quot;
+KINDS = {
+    &quot;boolean&quot;: &quot;true or false&quot;,
+    &quot;number&quot;: &quot;a number&quot;,
+    &quot;text&quot;: &quot;text&quot;,
+    &quot;list&quot;: &quot;a list of text&quot;,
+}
+NO_ADVENTURE = (
+    &quot;No adventure was supplied. Ask the participant for their adventure topic or setting, &quot;
+    &quot;available choices, and goals or open-ended preference. Use their material to propose &quot;
+    &quot;rules for confirmation. Do not launch or substitute a default adventure.&quot;
+)
+CONVERT = (
+    &quot;Use adventure schema_version 2. Convert existing scenario content with participant &quot;
+    &quot;approval; do not silently replace it.&quot;
+)
+
+
+# ---------- small checks shared by the validator ----------
+
+
+def _kind(value):
+    if isinstance(value, bool):
+        return &quot;boolean&quot;
+    if isinstance(value, (int, float)):
+        return &quot;number&quot;
+    if isinstance(value, str):
+        return &quot;text&quot;
+    if isinstance(value, list):
+        return &quot;list&quot;
+    return &quot;unsupported&quot;
+
+
+def _valid_value(value):
+    kind = _kind(value)
+    if kind == &quot;number&quot;:
+        return math.isfinite(value)
+    if kind == &quot;text&quot;:
+        return len(value) &lt;= 6000
+    if kind == &quot;list&quot;:
+        return len(value) &lt;= 200 and all(
+            isinstance(x, str) and len(x) &lt;= 1000 for x in value
+        )
+    return kind == &quot;boolean&quot;
+
+
+def _text(value, limit=12000):
+    return isinstance(value, str) and value.strip() != &quot;&quot; and len(value) &lt;= limit
+
+
+def _valid_id(value):
+    return (
+        isinstance(value, str)
+        and value not in RESERVED_IDS
+        and ID_PATTERN.fullmatch(value) is not None
+    )
+
+
+def _describe(value):
+    return KINDS.get(_kind(value), &quot;an unsupported value&quot;)
+
+
+# ---------- reading the model&#x27;s input ----------
+
+
+def _reject_constant(name):
+    raise ValueError(f&quot;{name} is not allowed&quot;)
+
+
+def _load(text):
+    return json.loads(text, parse_constant=_reject_constant)
+
+
+def _parse(raw):
+    &quot;&quot;&quot;Accept an object, JSON text, fenced JSON, JSON inside other text, or JSON encoded twice.&quot;&quot;&quot;
+    if raw is None:
+        return None, {
+            &quot;status&quot;: &quot;needs_context&quot;,
+            &quot;message&quot;: NO_ADVENTURE,
+            &quot;schema_version&quot;: 2,
+        }
+    if isinstance(raw, dict):
+        try:
+            raw = json.dumps(raw, allow_nan=False)
+        except ValueError:
+            return None, {
+                &quot;status&quot;: &quot;invalid_input&quot;,
+                &quot;message&quot;: &quot;Use finite numbers only. Resend corrected JSON without replacing its content.&quot;,
+            }
+    if not isinstance(raw, str):
+        return None, {
+            &quot;status&quot;: &quot;invalid_input&quot;,
+            &quot;message&quot;: &quot;Send the adventure as JSON in scenario_json.&quot;,
+        }
+    text = raw.strip()
+    if not text:
+        return None, {
+            &quot;status&quot;: &quot;needs_context&quot;,
+            &quot;message&quot;: NO_ADVENTURE,
+            &quot;schema_version&quot;: 2,
+        }
+    if len(text.encode(&quot;utf-8&quot;)) &gt; MAX_BYTES:
+        return None, {
+            &quot;status&quot;: &quot;invalid_input&quot;,
+            &quot;message&quot;: &quot;Adventure JSON must be at most 500 KB.&quot;,
+        }
+    fence = re.fullmatch(r&quot;```[A-Za-z]*\s*(.*?)\s*```&quot;, text, re.S)
+    if fence:
+        text = fence.group(1)
+    data = None
+    for attempt in (text, text[text.find(&quot;{&quot;) : text.rfind(&quot;}&quot;) + 1]):
+        try:
+            data = _load(attempt)
+            if isinstance(data, str):
+                data = _load(data)
+            break
+        except (ValueError, RecursionError):
+            data = None
+    if isinstance(data, dict) and &quot;nodes&quot; not in data:
+        for key in (&quot;scenario&quot;, &quot;scenario_json&quot;, &quot;adventure&quot;):
+            if isinstance(data.get(key), dict):
+                data = data[key]
+                break
+    if not isinstance(data, dict):
+        return None, {
+            &quot;status&quot;: &quot;invalid_input&quot;,
+            &quot;message&quot;: &quot;Adventure JSON could not be parsed. Resend corrected JSON without replacing its content.&quot;,
+        }
+    return data, None
+
+
+def _normalize(s):
+    &quot;&quot;&quot;Fill harmless gaps so a small omission never blocks play. Returns a problem or None.&quot;&quot;&quot;
+    version = s.get(&quot;schema_version&quot;)
+    if (
+        version == 2
+        or version == &quot;2&quot;
+        or (version is None and &quot;nodes&quot; in s and &quot;rooms&quot; not in s)
+    ):
+        s[&quot;schema_version&quot;] = 2
+    else:
+        return {&quot;status&quot;: &quot;invalid_input&quot;, &quot;message&quot;: CONVERT}
+    for key in (&quot;objective&quot;, &quot;global_choices&quot;, &quot;sources&quot;):
+        if s.get(key) is None:
+            s.pop(key, None)
+    if s.get(&quot;state&quot;) is None:
+        s[&quot;state&quot;] = {}
+    nodes = s.get(&quot;nodes&quot;)
+    if (
+        isinstance(nodes, list)
+        and nodes
+        and all(isinstance(n, dict) and isinstance(n.get(&quot;id&quot;), str) for n in nodes)
+    ):
+        if len({n[&quot;id&quot;] for n in nodes}) == len(nodes):
+            s[&quot;nodes&quot;] = {n[&quot;id&quot;]: n for n in nodes}
+    missing = [
+        k
+        for k in (&quot;title&quot;, &quot;introduction&quot;, &quot;start&quot;, &quot;nodes&quot;, &quot;endings&quot;)
+        if s.get(k) is None
+    ]
+    if missing:
+        return {
+            &quot;status&quot;: &quot;needs_context&quot;,
+            &quot;message&quot;: &quot;Adventure is incomplete. Request or confirm missing fields.&quot;,
+            &quot;missing_fields&quot;: missing,
+        }
+    choice_lists = (
+        list(s.get(&quot;nodes&quot;).values()) if isinstance(s.get(&quot;nodes&quot;), dict) else []
+    )
+    for node in choice_lists:
+        if isinstance(node, dict) and node.get(&quot;choices&quot;) is None:
+            node[&quot;choices&quot;] = []
+    every_choice = [
+        c
+        for n in choice_lists
+        if isinstance(n, dict) and isinstance(n[&quot;choices&quot;], list)
+        for c in n[&quot;choices&quot;]
+    ]
+    if isinstance(s.get(&quot;global_choices&quot;), list):
+        every_choice += s[&quot;global_choices&quot;]
+    for choice in every_choice:
+        if isinstance(choice, dict):
+            for key in (&quot;to&quot;, &quot;when&quot;, &quot;effects&quot;, &quot;blocked_text&quot;, &quot;hidden&quot;):
+                if key in choice and choice[key] is None:
+                    del choice[key]
+    return None
+
+
+# ---------- validation with exact paths ----------
+
+
+class _Checker:
+    def __init__(self, scenario):
+        self.s = scenario
+        self.errors = []
+        self.state = None
+        self.nodes = {}
+        self.choice_ids = set()
+        self.choice_count = 0
+
+    def flag(self, path, problem):
+        if len(self.errors) &lt; MAX_ERRORS:
+            self.errors.append(f&quot;{path}: {problem}&quot;)
+
+    def run(self):
+        s = self.s
+        if not _text(s[&quot;title&quot;], 160):
+            self.flag(&quot;title&quot;, &quot;write a title of 1 to 160 characters&quot;)
+        if not _text(s[&quot;introduction&quot;]):
+            self.flag(&quot;introduction&quot;, &quot;write an introduction of 1 to 12,000 characters&quot;)
+        state = s[&quot;state&quot;]
+        if isinstance(state, dict) and len(state) &lt;= 200:
+            self.state = state
+            for key, value in state.items():
+                if not _valid_id(key):
+                    self.flag(f&quot;state.{key}&quot;, ID_RULE)
+                if not _valid_value(value):
+                    self.flag(
+                        f&quot;state.{key}&quot;,
+                        &quot;use true or false, a number, text, or a list of text&quot;,
+                    )
+        else:
+            self.flag(
+                &quot;state&quot;,
+                &quot;declare state as an object of at most 200 keys, or {} for none&quot;,
+            )
+        nodes = s[&quot;nodes&quot;]
+        if isinstance(nodes, dict) and 1 &lt;= len(nodes) &lt;= 200:
+            self.nodes = nodes
+        else:
+            self.flag(
+                &quot;nodes&quot;, &quot;declare nodes as an object of 1 to 200 nodes keyed by node id&quot;
+            )
+        if not isinstance(s[&quot;start&quot;], str) or s[&quot;start&quot;] not in self.nodes:
+            self.flag(&quot;start&quot;, &quot;name the id of the first node&quot;)
+        for node_id, node in self.nodes.items():
+            path = f&quot;nodes.{node_id}&quot;
+            if not _valid_id(node_id):
+                self.flag(path, ID_RULE)
+            if not isinstance(node, dict):
+                self.flag(
+                    path, &quot;write each node as an object with name, text and choices&quot;
+                )
+                continue
+            if not _text(node.get(&quot;name&quot;), 160):
+                self.flag(f&quot;{path}.name&quot;, &quot;write a name of 1 to 160 characters&quot;)
+            if not _text(node.get(&quot;text&quot;)):
+                self.flag(f&quot;{path}.text&quot;, &quot;write the scene text&quot;)
+            self.choices(node[&quot;choices&quot;], f&quot;{path}.choices&quot;)
+        if &quot;global_choices&quot; in s:
+            self.choices(s[&quot;global_choices&quot;], &quot;global_choices&quot;)
+        if self.choice_count &gt; 1000:
+            self.flag(&quot;nodes&quot;, &quot;use at most 1,000 choices in all&quot;)
+        self.endings(s[&quot;endings&quot;])
+        if &quot;objective&quot; in s and not _text(s[&quot;objective&quot;], 2000):
+            self.flag(
+                &quot;objective&quot;,
+                &quot;write an objective of 1 to 2,000 characters or leave it out&quot;,
+            )
+        if &quot;sources&quot; in s:
+            self.sources(s[&quot;sources&quot;])
+        return self.errors
+
+    def choices(self, items, path):
+        if not isinstance(items, list) or len(items) &gt; 80:
+            self.flag(path, &quot;use a list of at most 80 choices, or [] for none&quot;)
+            return
+        self.choice_count += len(items)
+        for index, choice in enumerate(items):
+            here = f&quot;{path}[{index}]&quot;
+            if not isinstance(choice, dict):
+                self.flag(
+                    here, &quot;write each choice as an object with id, label and text&quot;
+                )
+                continue
+            choice_id = choice.get(&quot;id&quot;)
+            if not _valid_id(choice_id):
+                self.flag(f&quot;{here}.id&quot;, ID_RULE)
+            elif choice_id in self.choice_ids:
+                self.flag(
+                    f&quot;{here}.id&quot;,
+                    f&quot;&#x27;{choice_id}&#x27; repeats, and choice ids must be unique across the adventure&quot;,
+                )
+            else:
+                self.choice_ids.add(choice_id)
+            if not _text(choice.get(&quot;label&quot;), 240):
+                self.flag(f&quot;{here}.label&quot;, &quot;write a label of 1 to 240 characters&quot;)
+            if not _text(choice.get(&quot;text&quot;)):
+                self.flag(
+                    f&quot;{here}.text&quot;, &quot;write the result text shown after this choice&quot;
+                )
+            if &quot;to&quot; in choice and (
+                not isinstance(choice[&quot;to&quot;], str) or choice[&quot;to&quot;] not in self.nodes
+            ):
+                self.flag(f&quot;{here}.to&quot;, &quot;name an existing node id&quot;)
+            if &quot;when&quot; in choice:
+                self.condition(choice[&quot;when&quot;], f&quot;{here}.when&quot;)
+            if &quot;blocked_text&quot; in choice and not _text(choice[&quot;blocked_text&quot;]):
+                self.flag(
+                    f&quot;{here}.blocked_text&quot;,
+                    &quot;write the text shown when the condition fails&quot;,
+                )
+            if &quot;hidden&quot; in choice and not isinstance(choice[&quot;hidden&quot;], bool):
+                self.flag(f&quot;{here}.hidden&quot;, &quot;use true or false&quot;)
+            if &quot;effects&quot; in choice:
+                self.effects(choice[&quot;effects&quot;], f&quot;{here}.effects&quot;)
+
+    def condition(self, cond, path, depth=0):
+        if depth &gt;= 20:
+            self.flag(path, &quot;nest conditions at most 20 levels deep&quot;)
+            return
+        if not isinstance(cond, dict) or len(cond) != 1:
+            self.flag(
+                path, &#x27;write one operator per condition, such as {&quot;eq&quot;: [&quot;key&quot;, value]}&#x27;
+            )
+            return
+        op, arg = next(iter(cond.items()))
+        if op in (&quot;all&quot;, &quot;any&quot;):
+            if not isinstance(arg, list) or not 1 &lt;= len(arg) &lt;= 50:
+                self.flag(f&quot;{path}.{op}&quot;, &quot;list 1 to 50 conditions&quot;)
+                return
+            for index, item in enumerate(arg):
+                self.condition(item, f&quot;{path}.{op}[{index}]&quot;, depth + 1)
+            return
+        if op == &quot;not&quot;:
+            self.condition(arg, f&quot;{path}.not&quot;, depth + 1)
+            return
+        if op not in (&quot;eq&quot;, &quot;ne&quot;, &quot;gt&quot;, &quot;gte&quot;, &quot;lt&quot;, &quot;lte&quot;, &quot;includes&quot;):
+            self.flag(
+                path,
+                f&quot;&#x27;{op}&#x27; is not an operator, so use all, any, not, eq, ne, gt, gte, lt, lte or includes&quot;,
+            )
+            return
+        here = f&quot;{path}.{op}&quot;
+        if not isinstance(arg, list) or len(arg) != 2 or not isinstance(arg[0], str):
+            self.flag(here, &#x27;write [&quot;state_key&quot;, value]&#x27;)
+            return
+        if self.state is None:
+            return
+        key, want = arg
+        if key not in self.state:
+            self.flag(here, f&quot;&#x27;{key}&#x27; is not declared in state&quot;)
+            return
+        have = self.state[key]
+        if not _valid_value(want):
+            self.flag(
+                here, &quot;compare with true or false, a number, text, or a list of text&quot;
+            )
+        elif op in (&quot;gt&quot;, &quot;gte&quot;, &quot;lt&quot;, &quot;lte&quot;) and (
+            _kind(have) != &quot;number&quot; or _kind(want) != &quot;number&quot;
+        ):
+            self.flag(
+                here, f&quot;{op} compares numbers, and &#x27;{key}&#x27; holds {_describe(have)}&quot;
+            )
+        elif op == &quot;includes&quot; and (_kind(have) != &quot;list&quot; or not isinstance(want, str)):
+            self.flag(
+                here,
+                f&quot;includes needs a list key and a text value, and &#x27;{key}&#x27; holds {_describe(have)}&quot;,
+            )
+        elif op in (&quot;eq&quot;, &quot;ne&quot;) and _kind(want) != _kind(have):
+            self.flag(
+                here,
+                f&quot;&#x27;{key}&#x27; holds {_describe(have)}, so compare it with {_describe(have)}&quot;,
+            )
+
+    def effects(self, items, path):
+        if not isinstance(items, list) or len(items) &gt; 50:
+            self.flag(path, &quot;use a list of at most 50 effects&quot;)
+            return
+        for index, effect in enumerate(items):
+            here = f&quot;{path}[{index}]&quot;
+            if not isinstance(effect, dict) or effect.get(&quot;op&quot;) not in (
+                &quot;set&quot;,
+                &quot;add&quot;,
+                &quot;append&quot;,
+                &quot;remove&quot;,
+            ):
+                self.flag(
+                    here,
+                    &#x27;write {&quot;op&quot;: &quot;set&quot;, &quot;add&quot;, &quot;append&quot; or &quot;remove&quot;, &quot;key&quot;: state_key, &quot;value&quot;: value}&#x27;,
+                )
+                continue
+            if self.state is None:
+                continue
+            key, op, value = effect.get(&quot;key&quot;), effect[&quot;op&quot;], effect.get(&quot;value&quot;)
+            if not isinstance(key, str) or key not in self.state:
+                self.flag(f&quot;{here}.key&quot;, &quot;name a key declared in state&quot;)
+                continue
+            have = self.state[key]
+            if op == &quot;set&quot; and (not _valid_value(value) or _kind(value) != _kind(have)):
+                self.flag(
+                    here,
+                    f&quot;set must match the type of &#x27;{key}&#x27;, which holds {_describe(have)}&quot;,
+                )
+            elif op == &quot;add&quot; and (
+                _kind(have) != &quot;number&quot;
+                or _kind(value) != &quot;number&quot;
+                or not math.isfinite(value)
+            ):
+                self.flag(
+                    here,
+                    f&quot;add needs a number key and a number value, and &#x27;{key}&#x27; holds {_describe(have)}&quot;,
+                )
+            elif op in (&quot;append&quot;, &quot;remove&quot;) and (
+                _kind(have) != &quot;list&quot; or not isinstance(value, str) or len(value) &gt; 1000
+            ):
+                self.flag(
+                    here,
+                    f&quot;{op} needs a list key and a text value, and &#x27;{key}&#x27; holds {_describe(have)}&quot;,
+                )
+
+    def endings(self, items):
+        if not isinstance(items, list) or len(items) &gt; 50:
+            self.flag(
+                &quot;endings&quot;,
+                &quot;declare a list of at most 50 endings, or [] for open-ended play&quot;,
+            )
+            return
+        seen = set()
+        for index, ending in enumerate(items):
+            here = f&quot;endings[{index}]&quot;
+            if not isinstance(ending, dict):
+                self.flag(
+                    here,
+                    &quot;write each ending as an object with id, label, text, status, terminal and when&quot;,
+                )
+                continue
+            ending_id = ending.get(&quot;id&quot;)
+            if not _valid_id(ending_id):
+                self.flag(f&quot;{here}.id&quot;, ID_RULE)
+            elif ending_id in seen:
+                self.flag(f&quot;{here}.id&quot;, f&quot;&#x27;{ending_id}&#x27; repeats&quot;)
+            else:
+                seen.add(ending_id)
+            if not _text(ending.get(&quot;label&quot;), 160):
+                self.flag(f&quot;{here}.label&quot;, &quot;write a label of 1 to 160 characters&quot;)
+            if not _text(ending.get(&quot;text&quot;)):
+                self.flag(f&quot;{here}.text&quot;, &quot;write the ending text&quot;)
+            if ending.get(&quot;status&quot;) not in (&quot;complete&quot;, &quot;failed&quot;):
+                self.flag(f&quot;{here}.status&quot;, &#x27;use &quot;complete&quot; or &quot;failed&quot;&#x27;)
+            if not isinstance(ending.get(&quot;terminal&quot;), bool):
+                self.flag(
+                    f&quot;{here}.terminal&quot;,
+                    &quot;use true to end play here or false to continue after it&quot;,
+                )
+            if &quot;when&quot; not in ending:
+                self.flag(
+                    f&quot;{here}.when&quot;, &quot;write the condition that triggers this ending&quot;
+                )
+            else:
+                self.condition(ending[&quot;when&quot;], f&quot;{here}.when&quot;)
+
+    def sources(self, items):
+        if not isinstance(items, list) or len(items) &gt; 50:
+            self.flag(&quot;sources&quot;, &quot;list at most 50 sources&quot;)
+            return
+        for index, source in enumerate(items):
+            here = f&quot;sources[{index}]&quot;
+            if (
+                not isinstance(source, dict)
+                or not _text(source.get(&quot;id&quot;), 160)
+                or not _text(source.get(&quot;text&quot;), 30000)
+            ):
+                self.flag(
+                    here,
+                    &quot;write each source with an id of 1 to 160 characters and its text&quot;,
+                )
+            elif source.get(&quot;url&quot;) and not re.match(r&quot;https?://&quot;, str(source[&quot;url&quot;])):
+                self.flag(f&quot;{here}.url&quot;, &quot;use an http or https address&quot;)
+
+
+# ---------- non-blocking notes for the participant ----------
+
+
+def _holds(cond, state):
+    op, arg = next(iter(cond.items()))
+    if op == &quot;all&quot;:
+        return all(_holds(c, state) for c in arg)
+    if op == &quot;any&quot;:
+        return any(_holds(c, state) for c in arg)
+    if op == &quot;not&quot;:
+        return not _holds(arg, state)
+    have, want = state[arg[0]], arg[1]
+    return {
+        &quot;eq&quot;: lambda: have == want,
+        &quot;ne&quot;: lambda: have != want,
+        &quot;gt&quot;: lambda: have &gt; want,
+        &quot;gte&quot;: lambda: have &gt;= want,
+        &quot;lt&quot;: lambda: have &lt; want,
+        &quot;lte&quot;: lambda: have &lt;= want,
+        &quot;includes&quot;: lambda: want in have,
+    }[op]()
+
+
+def _warnings(s):
+    notes = []
+    pending = [s[&quot;start&quot;]] + [
+        c[&quot;to&quot;] for c in s.get(&quot;global_choices&quot;, []) if c.get(&quot;to&quot;)
+    ]
+    reached = set()
+    while pending:
+        node_id = pending.pop()
+        if node_id not in reached:
+            reached.add(node_id)
+            pending += [c[&quot;to&quot;] for c in s[&quot;nodes&quot;][node_id][&quot;choices&quot;] if c.get(&quot;to&quot;)]
+    unreached = [n for n in s[&quot;nodes&quot;] if n not in reached]
+    if unreached:
+        notes.append(&quot;No choice leads to node &quot; + &quot;, &quot;.join(unreached[:10]) + &quot;.&quot;)
+    for ending in s[&quot;endings&quot;]:
+        if _holds(ending[&quot;when&quot;], s[&quot;state&quot;]):
+            notes.append(
+                f&quot;Ending &#x27;{ending[&#x27;id&#x27;]}&#x27; already holds at the start, so play opens on it.&quot;
+            )
+            break
+    return notes
+
+
+def _theme(value):
+    name = str(value or &quot;&quot;).strip().lower().replace(&quot; &quot;, &quot;-&quot;).replace(&quot;_&quot;, &quot;-&quot;)
+    return name if name in THEMES else THEMES[0]
+
+
+def _speed(value):
+    if isinstance(value, str):
+        word = value.strip().lower()
+        if word in SPEEDS:
+            return SPEEDS[word]
+        try:
+            value = float(word)
+        except ValueError:
+            return 75
+    if (
+        isinstance(value, bool)
+        or not isinstance(value, (int, float))
+        or not math.isfinite(value)
+    ):
+        return 75
+    return min(SPEEDS.values(), key=lambda option: abs(option - value))
+
+
+class Tools:
+    def render_adventure(
+        self, scenario_json: str = &quot;&quot;, theme: str = &quot;cuny-blue&quot;, text_speed: int = 75
+    ):
+        &quot;&quot;&quot;
+        Render the participant&#x27;s own choice adventure in an embedded player, never a default story.
+        Draft the scenario from the participant&#x27;s material. Before the call, ask for any missing topic, choices, and intended ending or open-ended preference, and confirm inferred rules with the participant. Do not invent source claims.
+        If the result lists errors, fix only those paths and call again with the same content. Model prose never changes game state, so judge progress or completion only from the Play record the participant copies.
+        :param scenario_json: Adventure JSON with schema_version 2. Required keys are title, introduction, start (first node id), nodes (object keyed by node id) and endings ([] for open-ended play). Optional keys are state (object of true/false, number, text or list-of-text values), objective, global_choices and sources [{id, text, url}]. Node = {name, text, choices}. Choice = {id (unique), label, text (result), to (node id), when (condition), effects, blocked_text, hidden}. A visible choice whose condition fails shows blocked_text and changes nothing; a hidden choice appears only while its condition holds. Condition = {&quot;all&quot;: [...]}, {&quot;any&quot;: [...]}, {&quot;not&quot;: {...}} or {&quot;eq&quot;|&quot;ne&quot;|&quot;gt&quot;|&quot;gte&quot;|&quot;lt&quot;|&quot;lte&quot;|&quot;includes&quot;: [state_key, value]}. Effect = {&quot;op&quot;: &quot;set&quot;|&quot;add&quot;|&quot;append&quot;|&quot;remove&quot;, &quot;key&quot;: state_key, &quot;value&quot;: value}. Ending = {id, label, text, status &quot;complete&quot; or &quot;failed&quot;, terminal true or false, when}. Ids start with a letter and use letters, digits, _ or -.
+        :param theme: Optional look, one of cuny-blue, linux-terminal, classic-arcade or bauhaus. Other values fall back to cuny-blue.
+        :param text_speed: Optional characters per second, 0 (instant), 35, 75 or 140. Other values snap to the nearest option.
+        &quot;&quot;&quot;
+        scenario, problem = _parse(scenario_json)
+        if problem is None:
+            problem = _normalize(scenario)
+        if problem is not None:
+            return problem
+        errors = _Checker(scenario).run()
+        if errors:
+            return {
+                &quot;status&quot;: &quot;invalid_input&quot;,
+                &quot;message&quot;: &quot;The player did not render. Fix these paths and call render_adventure again with the same content. Ask the participant before changing story facts or rules.&quot;,
+                &quot;errors&quot;: errors,
+            }
+        payload = json.dumps(
+            {
+                &quot;scenario&quot;: scenario,
+                &quot;theme&quot;: _theme(theme),
+                &quot;text_speed&quot;: _speed(text_speed),
+            },
+            ensure_ascii=True,
+            allow_nan=False,
+        )
+        payload = (
+            payload.replace(&quot;&lt;&quot;, &quot;\\u003c&quot;)
+            .replace(&quot;&gt;&quot;, &quot;\\u003e&quot;)
+            .replace(&quot;&amp;&quot;, &quot;\\u0026&quot;)
+        )
+        context = {
+            &quot;status&quot;: &quot;render_requested&quot;,
+            &quot;title&quot;: scenario[&quot;title&quot;],
+            &quot;schema_version&quot;: 2,
+            &quot;size&quot;: {
+                &quot;nodes&quot;: len(scenario[&quot;nodes&quot;]),
+                &quot;choices&quot;: sum(len(n[&quot;choices&quot;]) for n in scenario[&quot;nodes&quot;].values())
+                + len(scenario.get(&quot;global_choices&quot;, [])),
+                &quot;endings&quot;: len(scenario[&quot;endings&quot;]),
+                &quot;state_keys&quot;: len(scenario[&quot;state&quot;]),
+            },
+            &quot;validation&quot;: &quot;Every rule and reference passed before rendering. Confirm with the participant that the player appears.&quot;,
+            &quot;evidence&quot;: &quot;Choices happen inside the embedded player. Ask the participant to copy the Play record before judging progress or completion. Sources are supplied material, not independently verified.&quot;,
+            &quot;persistence&quot;: &quot;Session-only. Undo replays earlier choices, Restart begins a new run, and Stop halts without claiming completion.&quot;,
+        }
+        warnings = _warnings(scenario)
+        if warnings:
+            context[&quot;warnings&quot;] = warnings
+        page = HTML_TEMPLATE.replace(&quot;/*PAYLOAD*/&quot;, payload, 1)
+        return (
+            HTMLResponse(content=page, headers={&quot;Content-Disposition&quot;: &quot;inline&quot;}),
+            context,
+        )
+
+
+HTML_TEMPLATE = r&quot;&quot;&quot;&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+&lt;title&gt;Adventure&lt;/title&gt;
+&lt;style&gt;
+:root{color-scheme:light;--bg:#fff;--text:#011d49;--muted:#536582;--accent:#0033a1;--rule:#dce3ef;--band:#0033a1;--band-text:#fff;--band-rule:#ffb71b;--hover:#eff4fc;--danger:#a80400;--font:Arial,Helvetica,sans-serif}
+html[data-theme=&quot;linux-terminal&quot;]{color-scheme:dark;--bg:#0b100d;--text:#c3efd1;--muted:#91ae99;--accent:#83edac;--rule:#2b4032;--band:#0b100d;--band-text:#83edac;--band-rule:#3d6349;--hover:#172b1e;--danger:#ffa49a;--font:ui-monospace,SFMono-Regular,Consolas,monospace}
+html[data-theme=&quot;classic-arcade&quot;]{color-scheme:dark;--bg:#050c27;--text:#e8edff;--muted:#acbee8;--accent:#ffe45b;--rule:#1e4262;--band:#050c27;--band-text:#ffe45b;--band-rule:#15cbea;--hover:#14264e;--danger:#ffa0cf;--font:ui-monospace,SFMono-Regular,Consolas,monospace}
+html[data-theme=&quot;bauhaus&quot;]{--bg:#f5f0e6;--text:#171717;--muted:#59544c;--accent:#0045ad;--rule:#c9c2b8;--band:#f5f0e6;--band-text:#171717;--band-rule:#39342d;--hover:#eae3d6;--danger:#b8221c}
+html{scrollbar-gutter:stable}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 var(--font)}
+main{max-width:960px;margin:0 auto;padding:16px 24px 24px}
+p{margin:0}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:16px 28px;padding:24px;background:var(--band);color:var(--band-text);border-bottom:2px dotted var(--band-rule)}
+.heading{flex:1 1 320px;min-width:0}
+h1{margin:0;font-size:clamp(28px,4.5vw,44px);line-height:1.1;overflow-wrap:anywhere}
+#intro{margin-top:12px;max-width:600px;font-size:14px}
+.scene{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin:28px 0 14px;padding-bottom:10px;border-bottom:1px dotted var(--rule)}
+h2{margin:0;font-size:23px;line-height:1.3;color:var(--accent)}
+#moves,#status{font-size:12px;color:var(--muted)}
+#status{color:var(--accent);font-weight:700}
+#objective{margin-bottom:12px;font-size:13px;color:var(--muted)}
+#log{max-width:740px;min-height:3.2em;white-space:pre-wrap;overflow-wrap:anywhere}
+button,select{min-height:44px;font:inherit;color:inherit;background:transparent;border:0;border-radius:0;cursor:pointer}
+button:disabled{opacity:.4;cursor:default}
+select{padding:8px 10px;font-size:13px;color:var(--text);background:var(--bg)}
+#choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;margin-top:18px}
+#choices button{padding:12px 10px;text-align:left;font-size:16px;line-height:1.5;color:var(--accent);border-bottom:1px dotted var(--rule);overflow-wrap:anywhere}
+#choices button:hover{background:var(--hover)}
+#skip,.tools button,#copy{padding:0 6px;font-size:13px;color:var(--accent)}
+#notice{margin-top:12px;font-size:13px;color:var(--danger);white-space:pre-wrap}
+#notice.ok{color:var(--muted)}
+#notice:empty{display:none}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;padding-top:10px;font-size:12px;color:var(--muted);border-top:1px dotted var(--rule)}
+.tools{display:flex;gap:12px}
+.pick{display:flex;align-items:center;gap:8px;font-size:12px}
+details{margin-top:18px}
+summary{min-height:44px;line-height:44px;cursor:pointer}
+label[for=&quot;record&quot;]{display:block;margin-bottom:6px;font-size:13px;color:var(--muted)}
+pre,textarea{width:100%;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}
+textarea{min-height:180px;padding:12px;color:var(--text);background:var(--bg);border:1px solid var(--rule)}
+button:focus-visible,select:focus-visible,summary:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#location:focus{outline:none}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media (max-width:640px){main{padding:12px 14px 20px}header{padding:18px}#choices{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;main aria-label=&quot;Text adventure&quot;&gt;
+&lt;header&gt;
+&lt;div class=&quot;heading&quot;&gt;&lt;h1 id=&quot;title&quot;&gt;&lt;/h1&gt;&lt;p id=&quot;intro&quot;&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;label class=&quot;pick&quot;&gt;Theme
+&lt;select id=&quot;theme&quot;&gt;
+&lt;option value=&quot;cuny-blue&quot;&gt;CUNY Blue&lt;/option&gt;
+&lt;option value=&quot;linux-terminal&quot;&gt;Linux terminal&lt;/option&gt;
+&lt;option value=&quot;classic-arcade&quot;&gt;Classic arcade&lt;/option&gt;
+&lt;option value=&quot;bauhaus&quot;&gt;Bauhaus&lt;/option&gt;
+&lt;/select&gt;
+&lt;/label&gt;
+&lt;/header&gt;
+&lt;section aria-label=&quot;Play area&quot;&gt;
+&lt;div class=&quot;scene&quot;&gt;&lt;h2 id=&quot;location&quot; tabindex=&quot;-1&quot;&gt;&lt;/h2&gt;&lt;span id=&quot;moves&quot;&gt;&lt;/span&gt;&lt;span id=&quot;status&quot; hidden&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;p id=&quot;objective&quot; hidden&gt;&lt;/p&gt;
+&lt;div id=&quot;log&quot;&gt;&lt;/div&gt;
+&lt;button id=&quot;skip&quot; type=&quot;button&quot; hidden&gt;Show all&lt;/button&gt;
+&lt;div id=&quot;choices&quot; role=&quot;group&quot; aria-label=&quot;Choices&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;p id=&quot;notice&quot; role=&quot;status&quot;&gt;&lt;/p&gt;
+&lt;div id=&quot;announce&quot; class=&quot;sr-only&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;footer&gt;
+&lt;div class=&quot;tools&quot;&gt;&lt;button id=&quot;undo&quot; type=&quot;button&quot;&gt;Undo&lt;/button&gt;&lt;button id=&quot;restart&quot; type=&quot;button&quot;&gt;Restart&lt;/button&gt;&lt;button id=&quot;stop&quot; type=&quot;button&quot;&gt;Stop&lt;/button&gt;&lt;/div&gt;
+&lt;label class=&quot;pick&quot;&gt;Text speed
+&lt;select id=&quot;speed&quot;&gt;&lt;option value=&quot;35&quot;&gt;Slow&lt;/option&gt;&lt;option value=&quot;75&quot;&gt;Medium&lt;/option&gt;&lt;option value=&quot;140&quot;&gt;Fast&lt;/option&gt;&lt;option value=&quot;0&quot;&gt;Instant&lt;/option&gt;&lt;/select&gt;
+&lt;/label&gt;
+&lt;/footer&gt;
+&lt;details&gt;&lt;summary&gt;Adventure state&lt;/summary&gt;&lt;pre id=&quot;state&quot;&gt;&lt;/pre&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Play record&lt;/summary&gt;
+&lt;label for=&quot;record&quot;&gt;Actual choices and rule results for this run&lt;/label&gt;
+&lt;textarea id=&quot;record&quot; readonly spellcheck=&quot;false&quot;&gt;&lt;/textarea&gt;
+&lt;button id=&quot;copy&quot; type=&quot;button&quot;&gt;Copy play record&lt;/button&gt;
+&lt;/details&gt;
+&lt;/main&gt;
+&lt;script id=&quot;adventure-data&quot; type=&quot;application/json&quot;&gt;/*PAYLOAD*/&lt;/script&gt;
+&lt;script&gt;
+(function () {
+  &#x27;use strict&#x27;;
+  var $ = function (id) { return document.getElementById(id); };
+  try {
+    var data = JSON.parse($(&#x27;adventure-data&#x27;).textContent);
+    var s = data.scenario;
+    var copy = function (x) { return JSON.parse(JSON.stringify(x)); };
+    var state, timer = null, lastHeight = 0;
+    var reduced = !!(window.matchMedia &amp;&amp; window.matchMedia(&#x27;(prefers-reduced-motion: reduce)&#x27;).matches);
+    var speed = reduced ? 0 : data.text_speed;
+
+    /* Rules. The server already checked every condition and effect, so these only evaluate. */
+    function holds(c, vars) {
+      if (c === undefined) return true;
+      var op = Object.keys(c)[0], arg = c[op];
+      if (op === &#x27;all&#x27;) return arg.every(function (x) { return holds(x, vars); });
+      if (op === &#x27;any&#x27;) return arg.some(function (x) { return holds(x, vars); });
+      if (op === &#x27;not&#x27;) return !holds(arg, vars);
+      var have = vars[arg[0]], want = arg[1];
+      if (op === &#x27;eq&#x27;) return JSON.stringify(have) === JSON.stringify(want);
+      if (op === &#x27;ne&#x27;) return JSON.stringify(have) !== JSON.stringify(want);
+      if (op === &#x27;gt&#x27;) return have &gt; want;
+      if (op === &#x27;gte&#x27;) return have &gt;= want;
+      if (op === &#x27;lt&#x27;) return have &lt; want;
+      if (op === &#x27;lte&#x27;) return have &lt;= want;
+      return have.indexOf(want) !== -1;
+    }
+    function endingFor(vars) {
+      for (var i = 0; i &lt; s.endings.length; i++) if (holds(s.endings[i].when, vars)) return s.endings[i];
+      return null;
+    }
+    function begin() {
+      var e = endingFor(s.state);
+      return { node: s.start, vars: copy(s.state), events: [], status: e ? e.status : &#x27;active&#x27;, ending: e ? copy(e) : null, stopped: false };
+    }
+    function available(st) {
+      if (st.stopped || (st.ending &amp;&amp; st.ending.terminal)) return [];
+      return s.nodes[st.node].choices.concat(s.global_choices || []).filter(function (c) { return !c.hidden || holds(c.when, st.vars); });
+    }
+    function act(old, id) {
+      var c = available(old).filter(function (x) { return x.id === id; })[0];
+      if (!c) throw new Error(&#x27;That choice is not available now.&#x27;);
+      if (old.events.length &gt;= 2000) throw new Error(&#x27;Play record limit reached.&#x27;);
+      var st = copy(old), ok = holds(c.when, st.vars);
+      if (ok) {
+        (c.effects || []).forEach(function (fx) {
+          var v = st.vars[fx.key];
+          if (fx.op === &#x27;set&#x27;) st.vars[fx.key] = copy(fx.value);
+          if (fx.op === &#x27;add&#x27;) {
+            st.vars[fx.key] = v + fx.value;
+            if (!isFinite(st.vars[fx.key])) throw new Error(&#x27;Numeric state exceeded its range.&#x27;);
+          }
+          if (fx.op === &#x27;append&#x27; &amp;&amp; v.indexOf(fx.value) === -1) {
+            if (v.length &gt;= 200) throw new Error(&#x27;State list exceeded 200 entries.&#x27;);
+            v.push(fx.value);
+          }
+          if (fx.op === &#x27;remove&#x27;) st.vars[fx.key] = v.filter(function (x) { return x !== fx.value; });
+        });
+        if (c.to) st.node = c.to;
+      }
+      var e = endingFor(st.vars);
+      st.ending = e ? copy(e) : null;
+      st.status = e ? e.status : &#x27;active&#x27;;
+      st.events.push({ turn: st.events.length + 1, choice: id, label: c.label, valid: ok, from_node: old.node,
+        text: ok ? c.text : (c.blocked_text || &#x27;This choice does not meet its declared conditions.&#x27;),
+        node: st.node, state: copy(st.vars), status: st.status, ending: e ? e.id : null });
+      return st;
+    }
+    function halt(old) {
+      if (old.stopped) return old;
+      var st = copy(old);
+      st.stopped = true;
+      st.status = &#x27;stopped&#x27;;
+      st.events.push({ turn: st.events.length + 1, choice: null, label: &#x27;Stop&#x27;, valid: true, from_node: old.node,
+        text: &#x27;Adventure stopped.&#x27;, node: st.node, state: copy(st.vars), status: &#x27;stopped&#x27;, ending: st.ending ? st.ending.id : null });
+      return st;
+    }
+    function replay(ids) {
+      var st = begin();
+      ids.forEach(function (id) { st = id === null ? halt(st) : act(st, id); });
+      return st;
+    }
+
+    /* Display. */
+    function note(message, ok) {
+      $(&#x27;notice&#x27;).textContent = message;
+      $(&#x27;notice&#x27;).className = ok ? &#x27;ok&#x27; : &#x27;&#x27;;
+    }
+    function finish() {
+      if (timer !== null) { clearInterval(timer); timer = null; }
+      $(&#x27;log&#x27;).textContent = $(&#x27;log&#x27;).getAttribute(&#x27;data-full&#x27;) || &#x27;&#x27;;
+      $(&#x27;log&#x27;).style.minHeight = &#x27;&#x27;;
+      $(&#x27;skip&#x27;).hidden = true;
+      $(&#x27;announce&#x27;).textContent = $(&#x27;log&#x27;).textContent;
+    }
+    function show(message) {
+      if (timer !== null) { clearInterval(timer); timer = null; }
+      $(&#x27;log&#x27;).setAttribute(&#x27;data-full&#x27;, message);
+      if (!speed) { finish(); return; }
+      var chars = Array.from(message), shown = 0, step = Math.max(1, Math.round(speed / 20));
+      $(&#x27;log&#x27;).textContent = message;
+      $(&#x27;log&#x27;).style.minHeight = $(&#x27;log&#x27;).offsetHeight + &#x27;px&#x27;;
+      $(&#x27;log&#x27;).textContent = &#x27;&#x27;;
+      $(&#x27;skip&#x27;).hidden = false;
+      timer = setInterval(function () {
+        shown = Math.min(chars.length, shown + step);
+        $(&#x27;log&#x27;).textContent = chars.slice(0, shown).join(&#x27;&#x27;);
+        if (shown === chars.length) finish();
+      }, 50);
+    }
+    function render() {
+      var node = s.nodes[state.node];
+      var last = state.events.length ? state.events[state.events.length - 1] : null;
+      $(&#x27;location&#x27;).textContent = node.name;
+      $(&#x27;moves&#x27;).textContent = state.events.length + (state.events.length === 1 ? &#x27; choice&#x27; : &#x27; choices&#x27;);
+      $(&#x27;status&#x27;).hidden = state.status === &#x27;active&#x27;;
+      $(&#x27;status&#x27;).textContent = state.stopped ? &#x27;Stopped&#x27; : (state.ending ? state.ending.label : state.status);
+      var box = $(&#x27;choices&#x27;);
+      while (box.firstChild) box.removeChild(box.firstChild);
+      available(state).forEach(function (c) {
+        var b = document.createElement(&#x27;button&#x27;);
+        b.type = &#x27;button&#x27;;
+        b.textContent = c.label;
+        b.addEventListener(&#x27;click&#x27;, function () { choose(c.id); });
+        box.appendChild(b);
+      });
+      $(&#x27;undo&#x27;).disabled = state.events.length === 0;
+      $(&#x27;stop&#x27;).disabled = state.stopped;
+      var message = last ? last.text : node.text;
+      if (last &amp;&amp; last.valid &amp;&amp; last.choice !== null &amp;&amp; last.node !== last.from_node) message += &#x27;\n\n&#x27; + node.text;
+      if (state.ending &amp;&amp; !state.stopped) message += &#x27;\n\n&#x27; + state.ending.text;
+      show(message);
+      $(&#x27;state&#x27;).textContent = JSON.stringify(state.vars, null, 2);
+      $(&#x27;record&#x27;).value = JSON.stringify({ schema_version: 2, title: s.title, sources: s.sources || [], node: state.node,
+        state: state.vars, status: state.status, ending: state.ending, events: state.events }, null, 2);
+      note(&#x27;&#x27;);
+    }
+    function choose(id) {
+      try { state = act(state, id); render(); $(&#x27;location&#x27;).focus({ preventScroll: true }); }
+      catch (err) { note(err.message); }
+    }
+
+    /* Open WebUI sizes the embed from these messages, including when text or details expand. */
+    function report() {
+      var h = Math.ceil(document.body.getBoundingClientRect().height);
+      if (window.parent === window || Math.abs(h - lastHeight) &lt; 2) return;
+      lastHeight = h;
+      window.parent.postMessage({ type: &#x27;iframe:height&#x27;, height: h }, &#x27;*&#x27;);
+    }
+
+    $(&#x27;undo&#x27;).addEventListener(&#x27;click&#x27;, function () {
+      state = replay(state.events.slice(0, -1).map(function (e) { return e.choice; }));
+      render();
+    });
+    $(&#x27;restart&#x27;).addEventListener(&#x27;click&#x27;, function () { state = begin(); render(); });
+    $(&#x27;stop&#x27;).addEventListener(&#x27;click&#x27;, function () { state = halt(state); render(); finish(); });
+    $(&#x27;skip&#x27;).addEventListener(&#x27;click&#x27;, finish);
+    document.addEventListener(&#x27;keydown&#x27;, function (e) { if (e.key === &#x27;Escape&#x27;) finish(); });
+    $(&#x27;theme&#x27;).addEventListener(&#x27;change&#x27;, function () { document.documentElement.setAttribute(&#x27;data-theme&#x27;, $(&#x27;theme&#x27;).value); });
+    $(&#x27;speed&#x27;).addEventListener(&#x27;change&#x27;, function () { speed = Number($(&#x27;speed&#x27;).value); finish(); });
+    $(&#x27;copy&#x27;).addEventListener(&#x27;click&#x27;, function () {
+      var box = $(&#x27;record&#x27;), done = false;
+      var manual = function () { note(&#x27;Press Ctrl+C or Command+C to copy the selected record.&#x27;); };
+      box.focus();
+      box.select();
+      try { done = document.execCommand(&#x27;copy&#x27;); } catch (err) { done = false; }
+      if (done) { note(&#x27;Play record copied.&#x27;, true); return; }
+      if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(box.value).then(function () { note(&#x27;Play record copied.&#x27;, true); }, manual);
+      } else {
+        manual();
+      }
+    });
+    if (window.ResizeObserver) new ResizeObserver(report).observe(document.body);
+    window.addEventListener(&#x27;resize&#x27;, report);
+    Array.prototype.forEach.call(document.querySelectorAll(&#x27;details&#x27;), function (d) { d.addEventListener(&#x27;toggle&#x27;, report); });
+
+    $(&#x27;title&#x27;).textContent = s.title;
+    document.title = s.title;
+    $(&#x27;intro&#x27;).textContent = s.introduction;
+    if (s.objective) { $(&#x27;objective&#x27;).textContent = s.objective; $(&#x27;objective&#x27;).hidden = false; }
+    $(&#x27;theme&#x27;).value = data.theme;
+    document.documentElement.setAttribute(&#x27;data-theme&#x27;, data.theme);
+    $(&#x27;speed&#x27;).value = String(speed);
+    window.adventure = {
+      snapshot: function () { return JSON.parse($(&#x27;record&#x27;).value); },
+      run: function (id) { state = act(state, id); render(); },
+      stop: function () { state = halt(state); render(); finish(); }
+    };
+    window.render_game_to_text = function () { return $(&#x27;record&#x27;).value; };
+    state = begin();
+    render();
+    report();
+  } catch (error) {
+    $(&#x27;title&#x27;).textContent = &#x27;Adventure could not start&#x27;;
+    $(&#x27;notice&#x27;).textContent = String((error &amp;&amp; error.message) || error);
+  }
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;&quot;&quot;
+</pre></div>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

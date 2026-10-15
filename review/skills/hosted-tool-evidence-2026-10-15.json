@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-15",
+  "version": "2.1.0",
+  "model": "STEM Adventure Games (Clone)",
+  "base_model": "DeepSeek V4 Flash 0731",
+  "chat_url": "https://chat.ailab.gc.cuny.edu/c/b023c210-ac0d-4e7d-9957-81ea703bb17d",
+  "function": "render_adventure",
+  "input_type": "reviewed supplied schema_version 2 JSON text",
+  "theme": "cuny-blue",
+  "text_speed": 0,
+  "result": "render_requested",
+  "size": {
+    "nodes": 1,
+    "choices": 4,
+    "endings": 2,
+    "state_keys": 3
+  },
+  "hosted_checks": [
+    "prerequisite blocked",
+    "rule-based completion",
+    "Undo",
+    "Stop without completion",
+    "Copy Play Record confirmation"
+  ],
+  "source_sha256": "e7637bcb621a7149cd3ad2af812ae9b3e6fff2b923d644f91bf1b5bd9e28ac65",
+  "screenshot_sha256": "29287865330854785f95ba6181e894500595389b15aab0acc1363ee1fa8e674d",
+  "presentation_frame": [
+    80,
+    160,
+    4480,
+    2050
+  ],
+  "limits": [
+    "host account only",
+    "supplied fixture, not automatic historical source conversion",
+    "enabler necessity not compared"
+  ],
+  "theme_observation": "Initial capture Bauhaus; CUNY Blue after reload; mismatch not reproduced",
+  "published_screenshot": "images/skills-2026-10-15/adventure-kit-hosted-crop.png",
+  "published_screenshot_sha256": "4f849fca4d84d675ca2311ebaf4c155ee45b660d2ab5530854b9836291bf7a83",
+  "changes": "Documented crop excludes browser tabs and account strip; decoded source pixels verified identical at 1:1; SVG outline annotations only.",
+  "published_source_sha256": "3d4af23b1e34334596cc5256a251393654bdfe858aafc0180ecc402b9f23f888",
+  "published_source_formatting": "Removed trailing spaces from five blank lines (721, 793, 852, 860, 887); executable statements and game logic unchanged."
+}

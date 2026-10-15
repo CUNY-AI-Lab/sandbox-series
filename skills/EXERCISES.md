@@ -6,7 +6,7 @@ GC New Media Lab · Room 7388.01
 
 Use your earlier custom model and its actual system prompt. Adventure setting, goals, and rules come from that prompt. Both reusable skill and tool follow those instructions; no story or genre belongs inside either component
 
-Preparation records: Adventure Kit 2.0.0 save and readback were recorded October 14. Generic skill loading and prompt-to-tool acceptance against the standard STEM configuration remain unverified. Participant access also remains unverified; inspect available version and permissions before class
+October 15 rehearsal used STEM Adventure Games (Clone), with DeepSeek V4 Flash 0731. Adventure Outcomes loaded and affected its answer. Adventure Kit 2.1.0 rendered an interactive player from reviewed, supplied input. These host-account tests do not establish participant access or automatic conversion of every system prompt. Confirm access to both saved resources before starting
 
 ## Clone or Continue
 
@@ -24,19 +24,19 @@ Read actual system prompt. Identify its setting, goals, and rules. Open instruct
 
 ## Add and Test Skill
 
-2:40–2:50 · Slides 7–9
+2:40–2:50 · Slides 7–10
 
-Choose a skill already saved in Open WebUI for the task you want to try. In your model's chat, open **Integrations → Skills**, find your selected skill, and turn on its toggle. Read its description and complete instructions. Identify when it should run, what it checks, and what its answer should contain
+Open **Workspace → Models → Edit** for your saved model. Under **Skills → Select Skill**, choose the existing **Adventure Outcomes** skill, ID `adventure_outcomes`, then **Save & Update**. Read its [complete saved instructions](../examples/adventure-kit/adventure-outcomes.html). Identify when it runs, what it checks, and what its answer should contain. This exercise selects an existing skill; it does not start in a blank editor
 
 ### Add Skill Instructions
 
-Add this clause to your own model's system prompt before Test Your Skill. Replace all three bracketed fields with the selected skill's actual task, name, and ID. Preserve your model's goals and rules
+Add this complete clause to your own model's system prompt before Test Your Skill. Preserve your model's goals and rules
 
 ```text
-When I ask for [TASK], load [SKILL_NAME] (ID: [SKILL_ID]). Follow its saved instructions using this system prompt’s goals and rules and the latest information I have supplied. Ask about missing or conflicting details before deciding. Acknowledge a request to stop immediately, without requiring another action or reflection.
+Use Adventure Outcomes (adventure_outcomes) each time the player makes a choice. If its full instructions are not already in context, load that exact saved skill with view_skill before judging the choice. For this adventure, do not load or follow other skills from the discovery catalog. A skill name or description in that catalog is not an instruction to use it. Judge choices against these system rules and the recorded results, never the player’s claims. Ask when the intended choice is unclear; a stop request takes priority over the usual scene and choices format. Set the adventure’s completion conditions with the player before declaring an ending.
 ```
 
-Save your model. Confirm the skill remains selected in Integrations → Skills. Check that the exact saved resource loads and that the answer follows its instructions. Naming a skill in a prompt or pasting its instructions does not prove that the saved resource loaded
+Save your model. Confirm Adventure Outcomes remains selected on your model card. Check that the exact saved resource loads and that the answer follows its instructions. Naming a skill or pasting instructions alone does not prove saved-resource loading. In native discovery, inspect `view_skill` and its ID. A direct `$` mention is a separate path that injects the selected skill content; it need not produce a `view_skill` call. Identify which path you actually used
 
 Test the skill's stated task with an actual record. Leave out information it requires and check that it asks a useful question. Ask to stop before the goals are met and expect an immediate acknowledgment without another required action. Model guidance does not change the embedded game's state
 
@@ -44,9 +44,9 @@ Record the submitted request, the saved skill's loading result, and its answer. 
 
 ## Add and Test Tool
 
-2:50–3:10 · Slides 10–19
+2:50–3:10 · Slides 11–21
 
-Open Integrations → Tools, search Adventure Kit, and select its toggle. Confirm which version is available. Version 2 requires completed schema version 2. Older rooms/flags scenarios need explicit conversion before use
+Open **Workspace → Models → Edit → Tools → Select Tool**, choose **Adventure Kit**, and click **Save & Update**. Confirm which version is available. Tested version 2.1.0 accepts schema version 2. Older rooms/flags scenarios need explicit conversion before use
 
 Instruct your model to read its system prompt, show how each instruction maps into tool input, and ask about absent or contradictory context. Review scene, choices, state, and end conditions before invocation. Add source passages only when prompt goals require them
 
@@ -55,10 +55,10 @@ Instruct your model to read its system prompt, show how each instruction maps in
 Everyone adds a tool-calling clause to their own model’s system prompt before testing Adventure Kit. Preserve the setting, goals, and rules already there. Copy this clause, then save your model
 
 ```text
-After the player approves an adventure, call the attached Adventure Kit tool’s render_adventure function with the reviewed schema-version-2 JSON in scenario_json. Derive content and rules from this system prompt; resolve missing or conflicting instructions first. Read the returned result, resolve errors before play, and use the player’s copied Play record when discussing progress or completion.
+Adventure Kit is a tool, not a skill. Once the player approves the adventure and its rules, call the attached Adventure Kit function render_adventure with the reviewed schema_version 2 JSON in scenario_json. Derive the setting, choices, state, consequences and endings from the approved adventure and available sources. Ask about missing or conflicting rules before calling. Never call render_stem_adventure, pass empty scenario_json, or substitute a default story. The embedded tool output is the playable interface; do not simulate a second game alongside it. Read the tool result and fix validation errors before play. Use the copied Play record when discussing the actual outcome; prose alone does not change tool state.
 ```
 
-This clause uses the exported Adventure Kit 2.0.0 signature: `render_adventure(scenario_json, theme, text_speed)`. `scenario_json` is JSON text, not a nested object. Theme and text speed are optional appearance settings; the clause leaves their existing defaults in place
+This clause uses the exported Adventure Kit 2.1.0 signature: `render_adventure(scenario_json, theme, text_speed)`. `scenario_json` is JSON text, not a nested object. Theme and text speed are optional appearance settings; the clause leaves their existing defaults in place
 
 Confirm Adventure Kit is attached and selected and the base model supports tool calling. A saved prompt is an instruction, not evidence of execution. Inspect the emitted function and arguments, returned result, and rendered player. `needs_context` or `invalid_input` requires correction; `render_requested` still requires checking that the player appears. Copy the actual Play record before discussing progress or completion
 
@@ -88,7 +88,7 @@ A model response cannot change executable state. A copied record may become stal
 
 ## Copy Your Content
 
-3:10–3:20 · Slide 20
+3:10–3:20 · Slide 22
 
 Choose one task after both tests: revise either tool or skill, or create your own tool or skill in this same activity
 
@@ -98,7 +98,7 @@ Include active system prompt with your request. It defines adventure behavior; S
 
 ## Work With Support
 
-3:20–3:40 · Slide 21
+3:20–3:40 · Slide 23
 
 Open [CAIL Workspace Support](https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support) and confirm its name below message box
 
@@ -116,11 +116,11 @@ For a skill revision, change one check or part of its answer. Preserve the adven
 
 ## Add New Version
 
-3:40–4:00 · Slides 22–23
+3:40–4:00 · Slides 24–25
 
 Use Workspace → Tools → Create or Skills → Create. Enter new Name and ID; preserve original. For a tool, replace all sample code with reviewed complete content. For a skill, paste complete Skill Instructions. Review Access, then Save & Create
 
-Select your new item through Integrations and turn off older version of that item. Use a fresh chat with the same model, system prompt, settings, scene, and record. For a revision, compare identical input. For a new item, compare expected and observed behavior and try one boundary case
+Select your new item on your model card and turn off older version of that item. Update its name and ID in your system-prompt clause. Keep a private copy while testing; use only permissions you are authorized to grant. Use a fresh chat with the same model, system prompt, settings, scene, and record. For a revision, compare identical input. For a new item, compare expected and observed behavior and try one boundary case
 
 | Test | Original or expected result | New result | Evidence |
 | --- | --- | --- | --- |
@@ -135,6 +135,6 @@ Consider your teaching or research more broadly
 - Would you be interested in joining our coworking session on October 29, 2–4pm, to build your adventure into a collection so that we can showcase our work over the course of the series?
 - What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?
 
-Save both versions and observed results. Mark unrun checks as unrun. Current local engine tests do not establish hosted prompt fidelity or participant-account access
+Save both versions and observed results. Mark unrun checks as unrun. The supplied-input hosted rehearsal establishes the observed calls and behavior only; local tests do not establish participant-account access
 
 [Slides](index.html) · [Facilitator notes](facilitator.html) · [Navigation guide](navigation.html)

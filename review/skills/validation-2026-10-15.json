@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-15",
+  "slides": 25,
+  "required_checks": [
+    {
+      "command": "scripts/check_series.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "scripts/test_reading_pages.py",
+      "passed": true,
+      "note": "Passed after adding formatted source page"
+    },
+    {
+      "command": "scripts/check_screenshot_resolution.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "scripts/test_copy_regressions.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "scripts/test_teaching_research_sequence.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "scripts/build_tools_skills_materials.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "scripts/test_deck_interactions.cjs",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "scripts/test_domain_warp.cjs",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "--check js/domain-warp.js",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "--check js/deck-engine.js",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "--check js/lightbox.js",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "--check js/examples.js",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "--check js/theme.js",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "examples/adventure/test-engine.cjs",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "examples/adventure/test-validation.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "examples/creators/test_record_validator.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "-m py_compile examples/tools/stem_adventure.py examples/adventure-kit/adventure-kit.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "examples/adventure/build_tool.py",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "diff --exit-code -- examples/tools/stem_adventure.py examples/adventure/preview.html",
+      "passed": true,
+      "note": "Passed"
+    },
+    {
+      "command": "diff --check",
+      "passed": true,
+      "note": "Passed"
+    }
+  ],
+  "desktop": "25 slides; no overflow at 1600x900",
+  "mobile": "25 slides; no horizontal clipping at 390x844; long prompt content scrolls",
+  "screenshot_resolution": "37 images checked",
+  "pdf": "25 rendered pages visually inspected; exact reflection preserved",
+  "support_live_retest": "blocked by stopped browser control",
+  "access": "Owner reported completing participant read grants; live readback not performed"
+}

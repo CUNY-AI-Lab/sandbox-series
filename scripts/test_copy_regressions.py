@@ -340,7 +340,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertFalse(skill.all(lambda n:n.tag=='a'))
         for term in ['Select Skill', 'Save & Update']:
             self.assertIn(term,skill.text())
-        self.assertTrue(skill.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/current/workshop3-model-skill-select.svg'))
+        self.assertTrue(skill.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/skills-2026-10-15/adventure-outcomes-select.svg'))
         self.assertFalse(skill.all(lambda n:n.tag=='a' and 'conclude-adventure' in n.attrs.get('href','')))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
@@ -391,7 +391,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('chat',citation.all(lambda n:n.tag=='img')[0].attrs['alt'])
         for title in ['Compare Research Methods','Describe Experimental Context','Describe Scientific Methods','Identify Historical Sources','Select Research Materials']:
             self.assertNotIn(title,[s.attrs['data-title'] for s in self.decks['knowledge/index.html']]);self.assertIn(title,self.references['knowledge'].text())
-        self.assertIn('Conclude Adventures',self.references['skills'].text())
+        self.assertIn('Adventure Outcomes',self.references['skills'].text())
         self.assertIn('source passages',(ROOT/'skills/EXERCISES.md').read_text())
 
     def test_23_downloads_and_fresh_screenshots(self):
