@@ -8,7 +8,7 @@ GC New Media Lab · Room 7388.01
 
 2:30–2:40 · Slides 1–6
 
-Continue your saved model or clone it first. Open **Workspace → Models → Edit** and read your actual system prompt. Identify its setting, goals, and rules. Use instructions.txt and source passages when your prompt requires them. Keep this model card open while you add both a skill and a tool.
+Continue your saved model or clone it first. Open **Workspace → Models → Edit** and read your actual system prompt. Identify its setting, goals, and rules. Use instructions.txt and source passages when your prompt requires them. Keep this model card open while you add both a skill and a tool. To clone the earlier example, select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
 
 ## Add Your Skill
 

@@ -65,3 +65,12 @@ body[data-workshop="skills"] .tool-prompt-check{font-size:var(--support);line-he
 @media print{
  body[data-workshop="skills"] .slide:last-child{break-after:auto;page-break-after:auto;}
 }
+
+/* Keep the existing introduction and earlier Clone walkthrough on one slide. */
+body[data-workshop="skills"] .clone-setup-slide .slide-body{gap:12px;}
+body[data-workshop="skills"] .clone-setup-slide .slide-body>p{font-size:clamp(22px,1.65vw,26px);line-height:1.3;}
+body[data-workshop="skills"] .clone-setup-slide .clone-model-image{align-self:center;width:auto;height:auto;max-width:100%;max-height:min(320px,calc(100dvh - 520px));object-fit:contain;}
+@media(max-width:600px){
+ body[data-workshop="skills"] .clone-setup-slide .slide-inner{justify-content:flex-start;}
+ body[data-workshop="skills"] .clone-setup-slide .clone-model-image{width:100%;max-height:none;}
+}

@@ -2,7 +2,7 @@
   "slides": 24,
   "date": "2026-10-15",
   "approval": "User authorized publication to the existing workshop repository and phone review; continued file-based publication explicitly requested after browser control stopped.",
-  "scope": "24-slide workshop, synchronized outline/reading pages/PDF, same-model-card orchestration setup, later optional skills, generic 2.1.0 source and honestly labeled earlier hosted evidence.",
+  "scope": "24-slide workshop, synchronized outline/reading pages/PDF, same-model-card skill/tool/filter configuration, later optional skills, versioned generic 2.1.0 source and accurately labeled hosted evidence.",
   "screenshots": [
     {
       "source": "select-copy-raw.png",
@@ -85,22 +85,31 @@
   "export": "PDF uses exact browser-rendered page images and searchable text; no print stylesheet layout",
   "reviewed_reflections": [
     "What task in your teaching or research could benefit from a skill or tool?",
-    "Would you be interested in joining our coworking session on October 29, 2\u20134pm, to build your adventure into a collection so that we can showcase our work over the course of the series?",
+    "Would you be interested in joining our coworking session on October 29, 2–4pm, to build your adventure into a collection so that we can showcase our work over the course of the series?",
     "What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?"
   ],
   "hosted_evidence": [
     "review/skills/hosted-skill-evidence-2026-10-15.json",
     "review/skills/hosted-tool-evidence-2026-10-15.json"
   ],
-  "pdf_sha256": "bc147a6d7c7456f80cc0107a07443c049ea414458e5419c65e1beb07a029b5fb",
-  "pdf_pages": 23,
-  "visual_review": "All pages rendered with Poppler; detailed review of skill and tool evidence pages; desktop and mobile layout checks passed.",
+  "pdf_sha256": "05a3b257edfdb508a817c8d16dd2355a33c0d71b5f95f26d0d36a49e477fed40",
+  "pdf_pages": 24,
+  "visual_review": "All 24 PDF pages rendered with Poppler and visually reviewed; detailed review of title, filter, status, exact prompt and result pages; desktop/mobile layout checks passed.",
   "access": "Private/no grants at inspection for Adventure Kit and Adventure Outcomes; owner subsequently reported granting participant read access; post-change participant visibility unverified.",
   "remaining_live_check": "Save and retest the separate Workspace Support revision; browser control stopped.",
   "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
-  "latest_user_revision": "Select Extend Adventure Games; explain tools/examples; select Adventure Kit in same card; Add Skill Instructions immediately afterward; Save & Update; one concise run/test slide; actual user-run screenshot; optional skills and Support afterward.",
+  "latest_user_revision": "Select Extend Adventure Games; explain tools/examples; enable Model Bound Tool Enabler; select Adventure Kit in the same model card; check all four attachments; add exact orchestration prompt; Save & Update; test and inspect actual user-run screenshot; experiment with later skills and Support.",
   "opening_orchestration_live_test": "Not run after browser control stopped. Owner confirmed saved name Extend Adventure Games; current ID/instructions/participant visibility not read back.",
   "user_run_screenshot": "review/skills/user-orchestration-screenshot-2026-10-15.json",
   "exact_orchestration_clause": "Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.",
-  "prompt_slide": "Only exact copyable code block; separate editor screenshot intentionally omitted per latest user instruction."
+  "prompt_slide": "Only exact copyable code block; separate editor screenshot intentionally omitted per latest user instruction.",
+  "title_credit": "Developed by Zach Muhlbauer",
+  "filter_copy": [
+    "Enable Model Bound Tool Enabler on your model card.",
+    "Why: It restores attached tools when a chat omits them."
+  ],
+  "status_slide": "Only exact supplied sentence and original screenshot are visible; heading retained for assistive technology.",
+  "deployed_content_commit": "eb29f6d",
+  "deployed_readback": "Confirmed by publishing task: Pages and workshop checks succeeded, live HTML has24slides and latest exact copy; screenshot and24pagePDF URLs return200.",
+  "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked."
 }

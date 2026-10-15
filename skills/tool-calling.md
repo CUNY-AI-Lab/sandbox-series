@@ -25,7 +25,7 @@ Read the actual result. `needs_context` and `invalid_input` require correction b
 
 Filters run before tool execution and can change a request. The existing CAIL Model Bound Tool Enabler filter restores tool IDs already attached to a model when chat composer state omits them. It does not make a model call a function or invent a missing tool binding
 
-Use this conditional check before implementing your adventure. If call details show a model-attached tool is missing, inspect the existing filter on your private model card, select it if available, save your copy and repeat the identical test in a fresh chat. Confirm the current filter before use. Do not install a replacement or enable it globally for this exercise
+Enable **Model Bound Tool Enabler** on your model card before adding Adventure Kit. It restores attached tools when a chat omits them. Keep the card open, check the knowledge collection, tool, skill, and filter, add the orchestration prompt, then Save & Update before testing. This exercise uses the existing filter on your model card.
 
 The filter cannot fix unsupported function calling, malformed arguments, execution errors or a failed display. If the tool is absent from your model's attachments, attach it first. If it is present in the request schema but never called, inspect model support and call mode
 

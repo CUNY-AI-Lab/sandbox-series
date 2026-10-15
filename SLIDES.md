@@ -834,6 +834,12 @@ Identify setting, goals, and rules
 
 Keep this model card open while you add a skill and a tool
 
+Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
+
+![Workspace Models filtered to STEM Adventure Games, with annotations identifying Workspace in left sidebar and Clone for original model](images/knowledge-stem-2026-09-28/clone-model.svg)
+
+**Alt text:** Workspace Models filtered to STEM Adventure Games, with annotations identifying Workspace in left sidebar and Clone for original model
+
 ---
 
 ## Configuring skills and tools — 3

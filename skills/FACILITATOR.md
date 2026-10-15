@@ -41,7 +41,7 @@ The supplied Seedling Comparison fixture is a fictional classroom simulation. It
 
 Hosted actions passed: a prerequisite blocked an early choice; the valid sequence reached the supplied completion rule; Undo returned to active play; Stop halted without completion; Copy Play Record displayed its success message. Initial capture displayed Bauhaus despite a cuny-blue request; a reload displayed CUNY Blue, so the mismatch did not reproduce. Keep this observation in the evidence record rather than claiming an established theme defect.
 
-The existing Model Bound Tool Enabler was selected during the successful tests. It restores model-attached tool IDs when chat state omits them. A with/without comparison was not run, so necessity is not established. Explain its conditional purpose before Adventure Kit and do not enable it globally.
+The existing Model Bound Tool Enabler was selected during the successful tests. It restores model-attached tool IDs when chat state omits them. The current workshop explicitly enables it on the model card before adding Adventure Kit. A with/without comparison was not run, so necessity is not established. The exercise does not change global filter settings.
 
 
 ## Access and Support
