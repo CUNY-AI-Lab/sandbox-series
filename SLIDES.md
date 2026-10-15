@@ -1054,12 +1054,9 @@ Request complete content, an explanation, and one test · [Copy request](skills/
 
 ### Adapt Your Adventure
 
-Bring a lesson outcome, weekly concept, and current adventure to **CAIL Workspace Support**
+Introduce a lesson plan, learning outcome, or disciplinary focus to your use of **CAIL Workspace Support** card
 
-Ask it to revise your orchestration skill or tool, or design a new one
-Supply complete content, system prompt, scenario, and play record
-
-Review proposed changes before running them · [Copy Support request](skills/exercises.html#adapt-your-adventure)
+Prompted to generate a skill and/or tool that continues to support or further extends your adventure game, either adapting an existing skill or tool, or making your own.
 
 ---
 
