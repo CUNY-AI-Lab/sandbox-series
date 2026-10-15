@@ -48,7 +48,7 @@ Required response content and form
 Workspace → Skills · 1 of 3
 Examples from the host’s catalog. Your list depends on access
 
-![Current skills catalog entries: History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-1.png)
+![Current skills catalog entries including History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-1.png)
 
 ---
 
@@ -57,7 +57,7 @@ Examples from the host’s catalog. Your list depends on access
 Workspace → Skills · 2 of 3
 Examples from the host’s catalog. Your list depends on access
 
-![Current skills catalog entries: Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-2.png)
+![Current skills catalog entries including Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-2.png)
 
 ---
 
@@ -66,7 +66,7 @@ Examples from the host’s catalog. Your list depends on access
 Workspace → Skills · 3 of 3
 Examples from the host’s catalog. Your list depends on access
 
-![Current skills catalog entries: Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-3.png)
+![Current skills catalog entries including Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-skills-3.png)
 
 ---
 
@@ -128,7 +128,7 @@ Returned output for a model to inspect
 Workspace → Tools · 1 of 4
 Examples from the host’s catalog. Your list depends on access
 
-![Current tools catalog entries: Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-1.png)
+![Current tools catalog entries including Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-1.png)
 
 ---
 
@@ -137,7 +137,7 @@ Examples from the host’s catalog. Your list depends on access
 Workspace → Tools · 2 of 4
 Examples from the host’s catalog. Your list depends on access
 
-![Current tools catalog entries: OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-2.png)
+![Current tools catalog entries including OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-2.png)
 
 ---
 
@@ -146,7 +146,7 @@ Examples from the host’s catalog. Your list depends on access
 Workspace → Tools · 3 of 4
 Examples from the host’s catalog. Your list depends on access
 
-![Current tools catalog entries: Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-3.png)
+![Current tools catalog entries including Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-3.png)
 
 ---
 
@@ -155,7 +155,7 @@ Examples from the host’s catalog. Your list depends on access
 Workspace → Tools · 4 of 4
 Examples from the host’s catalog. Your list depends on access
 
-![Current tools catalog entries: Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-4.png)
+![Current tools catalog entries including Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.](../images/current/workshop3-catalog-tools-4.png)
 
 ---
 

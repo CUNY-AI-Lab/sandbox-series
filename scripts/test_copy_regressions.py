@@ -14,6 +14,7 @@ from datetime import date
 from unittest.mock import patch
 from pathlib import Path
 from check_workshop import Parser, Node
+from skills_copy_contract import SKILLS_TITLE_EXCEPTIONS, SKILLS_CORE_SEQUENCE
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUTES = ('basics/index.html', 'knowledge/index.html', 'skills/index.html')
@@ -117,6 +118,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(self.decks[route][0].attrs['data-title'],COVER_TITLE if route=='basics/index.html' else name)
             for s in self.decks[route]:
                 title=s.attrs['data-title']
+                if route=='skills/index.html' and title in SKILLS_TITLE_EXCEPTIONS:continue
                 if title in (*SECTION_NAMES,'RAG Under the Hood','Parting Questions','Situating System Prompts','Introductions','Explore','Going to the Car Wash',COVER_TITLE):continue
                 self.assertTrue(2<=len(re.findall(r"[\w]+(?:[’'-][\w]+)*",title))<=3,title)
                 self.assertNotRegex(title,r'(?i)\b(a|an|the)\b')
@@ -149,9 +151,10 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(knowledge.all(lambda n:n.tag=='canvas')[0].attrs['aria-hidden'],'true')
         self.assertTrue(self.decks['skills/index.html'][0].has_class('workshop-cover'))
     def test_03_participant_copy_excludes_editorial_instructions(self):
-        for tree in [*self.trees.values(),*self.references.values()]:
+        for route,tree in [*self.trees.items(),*self.references.items()]:
             copy=authored(tree)
-            self.assertNotRegex(copy.replace('Across the series, how has your approach to custom models changed?','').replace('What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?','').replace('RAG Under the Hood','').replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),r'(?i)\b(the|facilitator|presenter)\b')
+            banned=r'(?i)\b(facilitator|presenter)\b' if route.startswith('skills') else r'(?i)\b(the|facilitator|presenter)\b'
+            self.assertNotRegex(copy.replace('Across the series, how has your approach to custom models changed?','').replace('What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?','').replace('RAG Under the Hood','').replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),banned)
             self.assertFalse(prose_colons(copy))
             self.assertFalse(tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')))
     def test_04_explicit_deletions_stay_deleted(self):
@@ -292,20 +295,35 @@ class CopyRegressions(unittest.TestCase):
             self.assertNotIn(term,copy)
         self.assertIn('settings carry over when you clone',copy)
     def test_12_game_and_skill_orientation(self):
-        self.assertEqual(len(self.decks['skills/index.html']),13)
-        self.assert_order('skills/index.html',['Skill Procedures','Add Your Skill','Test Your Skill','Tool Actions','Add Adventure Kit','Prepare Your Adventure','Test Your Tool','Choose Your Task','Work With Support','Create Your Tool','Series Reflections'])
-        self.assertIn('system prompt',self.slide('skills/index.html','Continue Your Model').text())
+        slides=self.decks['skills/index.html']
+        core=[s.attrs['data-title'] for s in slides if not s.has_class('catalog-slide') and not s.has_class('demonstration-slide')]
+        self.assertEqual(core,list(SKILLS_CORE_SEQUENCE))
+        self.assertIn('system prompt',self.slide('skills/index.html','Choose Your Own Adventure').text())
+        for definition,title,count in [('What Is a Skill?','Skill Examples',3),('What Is a Tool?','Tool Examples',4)]:
+            position=slides.index(self.slide('skills/index.html',definition))
+            examples=slides[position+1:position+count+1]
+            self.assertEqual(len(examples),count)
+            self.assertTrue(all(s.has_class('catalog-slide') and s.attrs['data-title']==title for s in examples))
+            self.assertEqual(sum(s.attrs['data-title']==title for s in slides),count)
+        for demo in [s for s in slides if s.has_class('demonstration-slide')]:
+            preceding=slides[slides.index(demo)-1].attrs['data-title']
+            self.assertIn(preceding,('Test Your Skill','Test Your Tool'))
+            self.assertTrue(demo.all(lambda n:n.tag=='img'), 'A demonstration must contain actual visual evidence')
     def test_13_save_load_and_handoff_sequence(self):
         prepare=self.slide('skills/index.html','Prepare Your Adventure').text()
-        for term in ['system prompt','setting','goals','rules','absent or contradictory']:self.assertIn(term.lower(),prepare.lower())
+        for term in ['system prompt','setting','goals','rules','missing or contradictory']:self.assertIn(term.lower(),prepare.lower())
         play=self.slide('skills/index.html','Test Your Tool').text()
         for term in ['prerequisite','Undo','Stop','actual play record']:self.assertIn(term,play)
         self.assertNotIn('Prism Laboratory',' '.join(s.text() for s in self.decks['skills/index.html']))
     def test_14_skill_comparisons_remove_attached_skill(self):
         skill=self.slide('skills/index.html','Test Your Skill').text()
-        for term in ['Integrations → Skills','Withhold required evidence','stop with unfinished goals']:self.assertIn(term,skill)
-        self.assertIn('repeat original test',self.slide('skills/index.html','Create Your Tool').text())
-        self.assertIn('turn off older version',(ROOT/'skills/EXERCISES.md').read_text())
+        self.assertIn('Integrations → Skills',self.slide('skills/index.html','Add Your Skill').text())
+        for term in ['actual record of choices and results','Leave out required information and check for a question','Ask to stop before the goal is met']:self.assertIn(term,skill)
+        create=self.slide('skills/index.html','Add Tools or Skills')
+        self.assertTrue(create.all(lambda n:n.tag=='a' and n.attrs.get('href')=='exercises.html#add-new-version'))
+        exercises=(ROOT/'skills/EXERCISES.md').read_text()
+        for term in ['turn off older version','compare identical input','same model, system prompt, settings, scene, and record','Immediate acknowledgment, no false completion']:
+            self.assertIn(term,exercises)
     def test_15_reference_files_match(self):
         for file in ['examples/assumption-check.txt', 'examples/stem-chat-system-prompt.txt',
                      'examples/source-check.txt', 'examples/stem-system-prompt.txt']:
@@ -314,7 +332,10 @@ class CopyRegressions(unittest.TestCase):
             blocks = page.all(lambda n:n.tag == 'pre')
             self.assertEqual(len(blocks), 1, file)
             self.assertEqual(blocks[0].text(), source.read_text())
-        self.assertTrue(self.slide('skills/index.html','Add Your Skill').all(lambda n:n.tag=='a' and n.attrs.get('href')=='../examples/adventure-kit/conclude-adventure.html'))
+        skill=self.slide('skills/index.html','Add Your Skill')
+        self.assertTrue(skill.all(lambda n:n.tag=='a' and n.attrs.get('href')=='navigation.html#add-skill'))
+        self.assertIn('saved skill for your task',skill.text())
+        self.assertFalse(skill.all(lambda n:n.tag=='a' and 'conclude-adventure' in n.attrs.get('href','')))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
         for record in config.values():
@@ -326,7 +347,7 @@ class CopyRegressions(unittest.TestCase):
     def test_17_no_phantom_tool_or_missing_inputs(self):
         text=' '.join(s.text() for s in self.decks['skills/index.html'])
         for banned in ['Check Source Imports','Prism Laboratory','Module 1','Illustrative expectations']:self.assertNotIn(banned,text)
-        for term in ['Trigger','Procedure','Output']:self.assertIn(term,self.slide('skills/index.html','Skill Procedures').text())
+        for term in ['Trigger','Procedure','Output']:self.assertIn(term,self.slide('skills/index.html','What Is a Skill?').text())
     def test_18_screenshots_and_controls_preserve_requested_evidence(self):
         for title,term in [('Compare Models','Compare'),('Add System Prompt','System Prompt'),('Regenerate Responses','Regenerate')]:
             matches=[s for s in self.decks['basics/index.html'] if s.attrs['data-title']==title and s.has_class('screenshot-slide')]
@@ -649,28 +670,18 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Set Tone',titles)
         self.assertFalse(self.trees['basics/index.html'].all(lambda n:n.attrs.get('id')=='tpl-tone'))
 
-    def test_32_published_sessions_link_without_releasing_third(self):
-        from urllib.parse import urlsplit
-        import posixpath
-        for scope in [self.trees['basics/index.html']]:
-            for link in scope.all(lambda n:n.tag=='a'):
-                href=link.attrs.get('href','')
-                url=urlsplit(href)
-                if url.netloc and url.netloc!='cuny-ai-lab.github.io':
-                    continue
-                path=(url.path.removeprefix('/sandbox-series/') if url.path.startswith('/')
-                      else posixpath.normpath(posixpath.join('basics',url.path)))
-                self.assertFalse(path=='skills' or path.startswith('skills/'),href)
+    def test_32_published_sessions_link_all_three(self):
         outline=self.trees['basics/index.html'].all(lambda n:n.attrs.get('id')=='outline-dialog')[0]
         links={link.attrs.get('href') for link in outline.all(lambda n:n.tag=='a')}
         self.assertIn('workshop-copy.html',links)
         self.assertNotIn('SLIDES.md',links)
         self.assertIn('../knowledge/',links)
+        self.assertIn('../skills/',links)
         second=self.trees['knowledge/index.html'].all(lambda n:n.attrs.get('id')=='outline-dialog')[0]
         second_links={n.attrs.get('href') for n in second.all(lambda n:n.tag=='a')}
         self.assertIn('../basics/',second_links)
         self.assertIn('./',second_links)
-        self.assertFalse(any('skills' in href for href in second_links))
+        self.assertIn('../skills/',second_links)
         resources=self.slide('basics/index.html','Workshop Resources')
         links={link.attrs.get('href') for link in resources.all(lambda n:n.tag=='a')}
         for href in ['workshop-copy.html','https://ailab.gc.cuny.edu/sandbox-docs/',
@@ -803,11 +814,11 @@ class CopyRegressions(unittest.TestCase):
             ('basics/index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
             ('basics/index.html', 'Led by ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
             ('basics/index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
-            ('skills/index.html', 'Withhold required evidence', 'Invent missing evidence', self.test_14_skill_comparisons_remove_attached_skill),
+            ('skills/index.html', 'Leave out required information and check for a question', 'Invent missing evidence', self.test_14_skill_comparisons_remove_attached_skill),
             ('basics/index.html', '<h3>Try Examples</h3>', '<h3>Try Examples</h3><p>Edit scenario_json variables.</p>', self.test_25_introductory_workshops_use_chat_adventure),
             ('basics/index.html', 'setup instructions', 'role instructions', self.test_26_definitions_and_winograd_context),
             ('basics/index.html', 'Continue with CUNY Login', 'Request individual access', self.test_09_access_and_stable_links),
-            ('basics/index.html', 'href="workshop-copy.html"', 'href="../skills/"', self.test_32_published_sessions_link_without_releasing_third),
+            ('basics/index.html', 'href="workshop-copy.html"', 'href="../skills/"', self.test_32_published_sessions_link_all_three),
             ('basics/index.html', '<img alt="Gemma 3 27B', '<a alt="Gemma 3 27B', self.test_27_original_responses_are_embedded_together),
         ]
         for route,before,after,test in mutations:

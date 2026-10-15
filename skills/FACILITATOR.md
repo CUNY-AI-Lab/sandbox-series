@@ -41,7 +41,7 @@ Host visibility does not establish participant access. The Shared with you filte
 
 ## Current hosted evidence
 
-The standard STEM Adventure Games entry is absent from the current exact-title search. Eight results include Advanced and participant clones. Its current identity/link is requested. Advanced was briefly corrected and enabled under explicit hosted-test approval. One diagnostic request retrieved scientific-method sources and proposed a scene. No render_adventure was submitted in that diagnostic. Original prompt and inactive flag were restored, with access and integrations preserved. This diagnostic is excluded from demonstration slides.
+The title search returned eight entries, including Advanced and participant clones, but did not resolve the exact standard STEM Adventure Games configuration. All 68 model entries across three catalog pages have not yet been inspected. The standard model may have been renamed or may appear through another entry; its absence is not established. Advanced was briefly corrected and enabled under explicit hosted-test approval. One diagnostic request retrieved scientific-method sources and proposed a scene. The request expressly required review before calling Adventure Kit, so stopping after the proposed scene was expected. No render_adventure was submitted in that diagnostic; this does not diagnose an invocation failure. Original prompt and inactive flag were restored, with access and integrations preserved. This diagnostic is excluded from demonstration slides.
 
 Earlier October 14 QA verified the tool with a supplied archive fixture on a separate DeepSeek model. That confirms that configuration only; it does not substitute for the requested standard-model demonstration. No live participant test is claimed.
 

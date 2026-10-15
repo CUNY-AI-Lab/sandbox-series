@@ -211,8 +211,10 @@ class ParticipantContinuity(unittest.TestCase):
     def test_skill_tool_and_support_sequence(self):
         titles=[s.attrs['data-title'] for s in self.decks['skills/index.html'].all(lambda n:n.has_class('slide'))]
         self.assertLess(titles.index('Add Your Skill'),titles.index('Test Your Skill'))
-        self.assertLess(titles.index('Add Adventure Kit'),titles.index('Test Your Tool'))
-        self.assertLess(titles.index('Test Your Skill'),titles.index('Add Adventure Kit'))
+        self.assertLess(titles.index('Add the ‘Adventure Kit’ tool'),titles.index('Test Your Tool'))
+        self.assertLess(titles.index('Test Your Skill'),titles.index('Add the ‘Adventure Kit’ tool'))
+        self.assertEqual(titles.index('Add Skill Instructions')+1,titles.index('Test Your Skill'))
+        self.assertEqual(titles.index('Add Tool Instructions')+1,titles.index('Test Your Tool'))
         self.assertLess(titles.index('Test Your Tool'),titles.index('Work With Support'))
 
     def test_lesson_agenda_matches_participant_slides(self):

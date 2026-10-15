@@ -10,7 +10,7 @@ Preparation records: Adventure Kit 2.0.0 save and readback were recorded October
 
 ## Clone or Continue
 
-2:30–2:40 · Slides 1–3
+2:30–2:40 · Slides 1–6
 
 Open New Chat, choose your saved model, and confirm its name below message box. If needed, use Workspace → Models → model menu → Clone and preserve original
 
@@ -88,7 +88,7 @@ A model response cannot change executable state. A copied record may become stal
 
 ## Copy Your Content
 
-3:10–3:20 · Slide 13
+3:10–3:20 · Slide 20
 
 Choose one task after both tests: revise either tool or skill, or create your own tool or skill in this same activity
 
@@ -98,7 +98,7 @@ Include active system prompt with your request. It defines adventure behavior; S
 
 ## Work With Support
 
-3:20–3:40 · Slide 14
+3:20–3:40 · Slide 21
 
 Open [CAIL Workspace Support](https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support) and confirm its name below message box
 
@@ -116,7 +116,7 @@ For a skill revision, change one check or part of its answer. Preserve the adven
 
 ## Add New Version
 
-3:40–4:00 · Slides 15–16
+3:40–4:00 · Slides 22–23
 
 Use Workspace → Tools → Create or Skills → Create. Enter new Name and ID; preserve original. For a tool, replace all sample code with reviewed complete content. For a skill, paste complete Skill Instructions. Review Access, then Save & Create
 
