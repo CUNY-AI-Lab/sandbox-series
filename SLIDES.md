@@ -974,8 +974,9 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ### Observe Game Results
 
-① Check skill call
-② Check tool call
+- Check skill call
+
+- Check tool call
 
 Open details to confirm selected skill
 

@@ -81,6 +81,8 @@ body[data-workshop="skills"] .slide.result-layout:not(.workshop-cover) .slide-in
 }
 body[data-workshop="skills"] .result-layout .result-copy{text-align:left;}
 body[data-workshop="skills"] .result-layout .result-copy h1{font-size:var(--heading);line-height:1.13;margin:0 0 24px;}
+body[data-workshop="skills"] .result-layout .result-copy ol{margin:0 0 18px;}
+body[data-workshop="skills"] .result-layout .result-copy li{font-size:var(--support);line-height:1.35;}
 body[data-workshop="skills"] .result-layout .result-copy p{font-size:var(--support);line-height:1.35;margin:0 0 18px;}
 body[data-workshop="skills"] .screenshot-slide.result-layout .screenshot-img{width:100%;max-height:min(720px,calc(100dvh - 140px));}
 @media(max-width:760px){

@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,677 +1,239 @@
+@@ -1,677 +1,240 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Customizing Skills & Tools
@@ -827,8 +827,9 @@
 +
 +### Observe Game Results
 +
-+① Check skill call
-+② Check tool call
++- Check skill call
++
++- Check tool call
 +
 +Open details to confirm selected skill
 +
