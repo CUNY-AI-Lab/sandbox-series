@@ -4,7 +4,7 @@ Tools and Skills · October 15, 2026 · 2:30–4:00 p.m. Eastern
 
 ## Current flow
 
-The user confirmed the saved orchestration skill's menu label is Extend Adventure Games. Opening setup selects that skill, explains tools and examples while the model card remains open, selects Adventure Kit, adds one minimal system-prompt clause, and saves the model card once both attachments are selected. Only then do participants open a fresh chat to test orchestration and play. No tester skill belongs in the opening.
+The user confirmed the saved orchestration skill's menu label is Extend Adventure Games. Opening setup selects that skill, explains tools and examples while the model card remains open, enables Model Bound Tool Enabler, selects Adventure Kit, checks all four attachments, adds one minimal system-prompt clause, and saves the model card once both attachments are selected. Only then do participants open a fresh chat to test orchestration and play. No tester skill belongs in the opening.
 
 Adventure Outcomes and Conclude Adventures are later optional experiments. CAIL Workspace Support follows those experiments; participants can revise either component or create their own. The exact user-provided Adventure Outcomes instructions are preserved as a later reference, not an opening default.
 
@@ -12,12 +12,12 @@ Adventure Outcomes and Conclude Adventures are later optional experiments. CAIL 
 | --- | --- | --- |
 | 2:30–2:40 | Continue or clone; define skills and browse examples | 1–6 |
 | 2:40–2:50 | Select Extend Adventure Games | 7 |
-| 2:50–3:00 | Explain tools; select Adventure Kit; add prompt clause and save | 8–15 |
-| 3:00–3:15 | Run the adventure, inspect calls, and play | 16–17 |
-| 3:15–3:25 | Experiment with other available skills | 18 |
-| 3:25–3:30 | Choose a revision or creation task | 19 |
-| 3:30–3:45 | Work with CAIL Workspace Support | 20–21 |
-| 3:45–4:00 | Add a new version, retest, and reflect | 22–23 |
+| 2:50–3:00 | Explain tools; enable filter; select Adventure Kit; check the model card; add prompt clause and save | 8–16 |
+| 3:00–3:15 | Run the adventure, inspect calls, and play | 17–18 |
+| 3:15–3:25 | Experiment with other available skills | 19 |
+| 3:25–3:30 | Choose a revision or creation task | 20 |
+| 3:30–3:45 | Work with CAIL Workspace Support | 21–22 |
+| 3:45–4:00 | Add a new version, retest, and reflect | 23–24 |
 
 ## Evidence limits
 

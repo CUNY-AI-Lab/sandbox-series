@@ -984,14 +984,14 @@ Examples from the host’s catalog. Your list depends on access
 
 ## Configuring skills and tools — 13
 
-### Check Tool Binding
+### Enable Filter
 
-**Model Bound Tool Enabler** is an existing filter that restores tools already attached to your model when a chat omits them
+Enable **Model Bound Tool Enabler** on your model card.
+Why: It restores attached tools when a chat omits them.
 
-The demonstrated Clone already uses this filter
-Use it only if your attached tool is missing from a request
+![Model card filter picker with Model Bound Tool Enabler outlined](images/current/workshop3-model-bound-filter.svg)
 
-Availability still requires a valid call and a visible result · [Check tool calling](skills/tool-calling.html)
+**Alt text:** Model card filter picker with Model Bound Tool Enabler outlined
 
 ---
 
@@ -1011,6 +1011,18 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ## Configuring skills and tools — 15
 
+### Model Card Check
+
+Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
+
+![Model card showing a knowledge collection, Adventure Kit tool, Extend Adventure Games skill, and Model Bound Tool Enabler filter selected](images/current/workshop3-model-card-status.png)
+
+**Alt text:** Model card showing a knowledge collection, Adventure Kit tool, Extend Adventure Games skill, and Model Bound Tool Enabler filter selected
+
+---
+
+## Configuring skills and tools — 16
+
 ### Add Skill Instructions
 
 ```text
@@ -1019,7 +1031,7 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## Configuring skills and tools — 16
+## Configuring skills and tools — 17
 
 ### Test Your Adventure
 
@@ -1029,7 +1041,7 @@ Then play the rest of your game
 
 ---
 
-## Configuring skills and tools — 17
+## Configuring skills and tools — 18
 
 ### Observe Game Results
 
@@ -1042,7 +1054,7 @@ Open details to confirm selected skill
 
 ---
 
-## Configuring skills and tools — 18
+## Configuring skills and tools — 19
 
 ### Explore Other Skills
 
@@ -1055,7 +1067,7 @@ Read saved instructions · Change one item · Save your model card and compare r
 
 ---
 
-## Configuring skills and tools — 19
+## Configuring skills and tools — 20
 
 ### Choose Your Task
 
@@ -1075,7 +1087,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## Configuring skills and tools — 20
+## Configuring skills and tools — 21
 
 ### Work With Support
 
@@ -1089,7 +1101,7 @@ Request complete content, an explanation, and one test · [Copy request](skills/
 
 ---
 
-## Configuring skills and tools — 21
+## Configuring skills and tools — 22
 
 ### Adapt Your Adventure
 
@@ -1102,7 +1114,7 @@ Review proposed changes before running them · [Copy Support request](skills/exe
 
 ---
 
-## Configuring skills and tools — 22
+## Configuring skills and tools — 23
 
 ### Add Tools or Skills
 
@@ -1118,7 +1130,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](skills/
 
 ---
 
-## Configuring skills and tools — 23
+## Configuring skills and tools — 24
 
 ### Series Reflections
 

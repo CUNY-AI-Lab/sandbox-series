@@ -141,14 +141,12 @@ Examples from the host’s catalog. Your list depends on access
 
 ---
 
-## 13. Check Tool Binding
+## 13. Enable Filter
 
-**Model Bound Tool Enabler** is an existing filter that restores tools already attached to your model when a chat omits them
+Enable **Model Bound Tool Enabler** on your model card.
+Why: It restores attached tools when a chat omits them.
 
-The demonstrated Clone already uses this filter
-Use it only if your attached tool is missing from a request
-
-Availability still requires a valid call and a visible result · [Check tool calling](tool-calling.html)
+![Model card filter picker with Model Bound Tool Enabler outlined](../images/current/workshop3-model-bound-filter.svg)
 
 ---
 
@@ -162,7 +160,15 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## 15. Add Skill Instructions
+## 15. Model Card Check
+
+Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
+
+![Model card showing a knowledge collection, Adventure Kit tool, Extend Adventure Games skill, and Model Bound Tool Enabler filter selected](../images/current/workshop3-model-card-status.png)
+
+---
+
+## 16. Add Skill Instructions
 
 ```text
 Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
@@ -170,7 +176,7 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## 16. Test Your Adventure
+## 17. Test Your Adventure
 
 Run your updated adventure game
 Verify configured skill and tool are called appropriately
@@ -178,7 +184,7 @@ Then play the rest of your game
 
 ---
 
-## 17. Observe Game Results
+## 18. Observe Game Results
 
 ① Check skill call · ② Check tool call
 Open details to confirm selected skill
@@ -187,7 +193,7 @@ Open details to confirm selected skill
 
 ---
 
-## 18. Explore Other Skills
+## 19. Explore Other Skills
 
 After your first adventure works, try **Adventure Outcomes** or **Conclude Adventures** if available
 Read saved instructions · Change one item · Save your model card and compare results
@@ -196,7 +202,7 @@ Read saved instructions · Change one item · Save your model card and compare r
 
 ---
 
-## 19. Choose Your Task
+## 20. Choose Your Task
 
 ### Revise One Item
 
@@ -214,7 +220,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## 20. Work With Support
+## 21. Work With Support
 
 Open **CAIL Workspace Support**
 Paste original content or your new task, system prompt, and required sources
@@ -224,7 +230,7 @@ Request complete content, an explanation, and one test · [Copy request](exercis
 
 ---
 
-## 21. Adapt Your Adventure
+## 22. Adapt Your Adventure
 
 Bring a lesson outcome, weekly concept, and current adventure to **CAIL Workspace Support**
 
@@ -235,7 +241,7 @@ Review proposed changes before running them · [Copy Support request](exercises.
 
 ---
 
-## 22. Add Tools or Skills
+## 23. Add Tools or Skills
 
 Create a new **tool** or **skill**, or save a revised copy
 Use **Workspace → Tools → Create** or [**Skills → Create**](navigation.html#create-skill)
@@ -247,7 +253,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](exercis
 
 ---
 
-## 23. Series Reflections
+## 24. Series Reflections
 
 What task in your teaching or research could benefit from a skill or tool?
 

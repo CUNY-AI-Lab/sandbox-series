@@ -18,13 +18,13 @@ Under **Skills → Select Skill**, choose existing **Extend Adventure Games**. R
 
 ## Add Adventure Kit
 
-2:50–3:00 · Slides 8–15
+2:50–3:00 · Slides 8–16
 
 Stay in the model card during the tool explanation and examples. A tool call sends a function name and arguments for execution; the returned result and rendered output show what actually happened.
 
-Under **Tools → Select Tool**, choose existing **Adventure Kit**. Confirm **Extend Adventure Games** remains selected under Skills. Keep the model card open. Add the system-prompt clause below, then save both attachments and the prompt with **Save & Update** before opening a fresh chat.
+Under **Filters → Select Filter**, enable **Model Bound Tool Enabler**. It restores attached tools when a chat omits them.
 
-If an attached tool is missing from call details, inspect existing **Model Bound Tool Enabler** on your private model and repeat the test. This filter restores omitted model-attached tool IDs; it does not guarantee execution. Its necessity was not established by a hosted comparison. [Configuration checks](tool-calling.html)
+Under **Tools → Select Tool**, choose existing **Adventure Kit**. Confirm **Extend Adventure Games** remains selected under Skills. Check that your model card shows a knowledge collection, tool, skill, and filter. Keep the card open. Add the system-prompt clause below, then save with **Save & Update** before opening a fresh chat.
 
 ### Add Skill Instructions
 
@@ -38,7 +38,7 @@ Confirm both Extend Adventure Games and Adventure Kit are selected, then click *
 
 ## Test Your Adventure
 
-3:00–3:15 · Slides 16–17
+3:00–3:15 · Slides 17–18
 
 Run your updated adventure game. Verify that the configured skill and tool are called appropriately, then play the rest of the game. The example run begins with:
 
@@ -66,7 +66,7 @@ The user-provided live screenshot shows view_skill in a collapsed activity summa
 
 ## Explore Other Skills
 
-3:15–3:25 · Slide 18
+3:15–3:25 · Slide 19
 
 After your first adventure works, experiment with **Adventure Outcomes** or **Conclude Adventures**, if your account can select them. Read complete saved instructions and check compatibility with your current tool. [Adventure Outcomes instructions](../examples/adventure-kit/adventure-outcomes.html) are available for comparison.
 
@@ -74,13 +74,13 @@ Change one item at a time. Return to your model card, select the intended skill,
 
 ## Copy Your Content
 
-3:25–3:30 · Slide 19
+3:25–3:30 · Slide 20
 
 Choose one task: revise a tool or skill, or create your own. Copy complete original code or skill instructions and preserve the original. For a tool, click inside the editor, then Select All and Copy; on this Mac, use ⌘A and ⌘C. For a new item, describe purpose, input, expected result, and constraints.
 
 ## Work With Support
 
-3:30–3:45 · Slides 20–21
+3:30–3:45 · Slides 21–22
 
 Open the **CAIL Workspace Support** model card and start a chat. Confirm its name below the message box. [Open CAIL Workspace Support](https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support)
 
@@ -102,7 +102,7 @@ If live retrieval is unavailable, supply a dated source. Do not accept an invent
 
 ## Add New Version
 
-3:45–4:00 · Slides 22–23
+3:45–4:00 · Slides 23–24
 
 Use **Workspace → Tools → Create** or **Skills → Create**. Enter a new Name and ID; preserve the original. Paste complete reviewed code or instructions. Review Access, then **Save & Create**. Use only permissions you are authorized to grant.
 

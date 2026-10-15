@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,677 +1,300 @@
+@@ -1,677 +1,308 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Customizing Skills & Tools
@@ -457,14 +457,12 @@
 +
 +## Configuring skills and tools — 13
 +
-+### Check Tool Binding
++### Enable Filter
 +
-+**Model Bound Tool Enabler** is an existing filter that restores tools already attached to your model when a chat omits them
++Enable **Model Bound Tool Enabler** on your model card.
++Why: It restores attached tools when a chat omits them.
 +
-+The demonstrated Clone already uses this filter
-+Use it only if your attached tool is missing from a request
-+
-+Availability still requires a valid call and a visible result · [Check tool calling](tool-calling.html)
++![Model card filter picker with Model Bound Tool Enabler outlined](../images/current/workshop3-model-bound-filter.svg)
 +
 +---
 +
@@ -481,6 +479,16 @@
 +---
 +
 +## Configuring skills and tools — 15
++
++### Model Card Check
++
++Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
++
++![Model card showing a knowledge collection, Adventure Kit tool, Extend Adventure Games skill, and Model Bound Tool Enabler filter selected](../images/current/workshop3-model-card-status.png)
++
++---
++
++## Configuring skills and tools — 16
 +
 +### Add Skill Instructions
  
@@ -868,7 +876,7 @@
 -[ailab.gc.cuny.edu](https://ailab.gc.cuny.edu)
 +---
 +
-+## Configuring skills and tools — 16
++## Configuring skills and tools — 17
 +
 +### Test Your Adventure
 +
@@ -878,7 +886,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 17
++## Configuring skills and tools — 18
 +
 +### Observe Game Results
 +
@@ -889,7 +897,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 18
++## Configuring skills and tools — 19
 +
 +### Explore Other Skills
 +
@@ -900,7 +908,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 19
++## Configuring skills and tools — 20
 +
 +### Choose Your Task
 +
@@ -920,7 +928,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 20
++## Configuring skills and tools — 21
 +
 +### Work With Support
 +
@@ -932,7 +940,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 21
++## Configuring skills and tools — 22
 +
 +### Adapt Your Adventure
 +
@@ -945,7 +953,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 22
++## Configuring skills and tools — 23
 +
 +### Add Tools or Skills
 +
@@ -959,7 +967,7 @@
 +
 +---
 +
-+## Configuring skills and tools — 23
++## Configuring skills and tools — 24
 +
 +### Series Reflections
 +

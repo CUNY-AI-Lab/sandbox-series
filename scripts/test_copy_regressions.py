@@ -71,6 +71,7 @@ def prose_colons(s):
     s = re.sub(r'\b\d{1,2}:\d{2}\b', '', s)  # Published event times.
     s = re.sub(r'Newton: (?:Light and Colour|Experimental Variants)', '', s)
     s = re.sub(r'`[^`]+`', '', s)
+    s = s.replace('Why: It restores attached tools when a chat omits them.', '')
     return ':' in s
 
 def general_builder(text):

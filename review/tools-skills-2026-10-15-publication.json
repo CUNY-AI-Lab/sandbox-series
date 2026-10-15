@@ -1,8 +1,8 @@
 {
-  "slides": 23,
+  "slides": 24,
   "date": "2026-10-15",
   "approval": "User authorized publication to the existing workshop repository and phone review; continued file-based publication explicitly requested after browser control stopped.",
-  "scope": "23-slide workshop, synchronized outline/reading pages/PDF, same-model-card orchestration setup, later optional skills, generic 2.1.0 source and honestly labeled earlier hosted evidence.",
+  "scope": "24-slide workshop, synchronized outline/reading pages/PDF, same-model-card orchestration setup, later optional skills, generic 2.1.0 source and honestly labeled earlier hosted evidence.",
   "screenshots": [
     {
       "source": "select-copy-raw.png",
@@ -68,6 +68,18 @@
         1570
       ],
       "annotation": "none; original screenshot pixels"
+    },
+    {
+      "source": "User-provided filter picker screenshot",
+      "file": "images/current/workshop3-model-bound-filter.svg",
+      "annotation": "Blue outline around Model Bound Tool Enabler; original PNG embedded unchanged.",
+      "sha256": "edde0774e64c9665d24b69cd6ecf258ddd5cdc144e5f5cee5962812b8ac0fe38"
+    },
+    {
+      "source": "User-provided model-card status screenshot",
+      "file": "images/current/workshop3-model-card-status.png",
+      "annotation": "None; original PNG unchanged.",
+      "sha256": "c734f31dcb8805ea2ae17fd48c8a0a5f5a280973430deae43532a7ca52d5abad"
     }
   ],
   "export": "PDF uses exact browser-rendered page images and searchable text; no print stylesheet layout",
