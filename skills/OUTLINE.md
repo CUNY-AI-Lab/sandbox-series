@@ -11,17 +11,21 @@ CUNY Graduate Center
 
 Thursday, October 15, 2026   2:30–4:00 p.m. Eastern
 
+Developed by Zach Muhlbauer
+
 [https://cuny-ai-lab.github.io/sandbox-series/skills](https://cuny-ai-lab.github.io/sandbox-series/skills)
 
 ---
 
 ## 2. Choose Your Own Adventure
 
-Continue your saved model, or clone **STEM Adventure Games**
-Read its system prompt for setting, goals, and rules
-[Clone instructions](navigation.html#clone) · [Adventure example](../examples/stem-chat-system-prompt.html)
+Continue your saved model or clone it first
 
-![Saved model in chat with model selector below message box](../images/current/workshop3-clean-continue.png)
+Open **Workspace → Models → Edit**
+Read your actual system prompt
+Identify setting, goals, and rules
+
+Keep this model card open while you add a skill and a tool
 
 ---
 
@@ -72,45 +76,16 @@ Examples from the host’s catalog. Your list depends on access
 
 ## 7. Add Your Skill
 
-Workspace → Models → Edit → **Skills → Select Skill**
-Choose **Adventure Outcomes**, then **Save & Update**
+In **Workspace → Models → Edit**, find **Skills → Select Skill**
 
-![Model editor — 1 identifies Select Skill; 2 identifies saved Adventure Outcomes entry](../images/skills-2026-10-15/adventure-outcomes-select.svg)
+Choose existing **Extend Adventure Games**
 
----
-
-## 8. Add Skill Instructions
-
-Add this clause to your model’s system prompt · [Copy clause](exercises.html#add-skill-instructions)
-
-Each time I make a choice, use the attached Adventure Outcomes skill (adventure_outcomes). Load only that skill for this adventure. Judge my choice using this system prompt’s rules and recorded results.
-
-Save your model before testing the selected skill
+Read its saved instructions
+Keep this model card open for Adventure Kit
 
 ---
 
-## 9. Test Your Skill
-
-Use **Adventure Outcomes** with an actual record of choices and results
-
-Claim success before rules allow it
-Leave out required information and check for a question
-Ask to stop before the goal is met
-
-Inspect loaded instructions and compare observed behavior
-
----
-
-## 10. Observe Skill Results
-
-**Adventure Outcomes** loaded through view_skill
-An unsupported success claim was rejected with an explanation
-
-![Actual hosted Clone chat showing view_skill with adventure_outcomes and a response that rejects false completion](../images/skills-2026-10-15/adventure-outcomes-hosted.svg)
-
----
-
-## 11. What Is a Tool?
+## 8. What Is a Tool?
 
 When a model calls a **tool**, Sandbox executes a function and returns its result
 
@@ -130,7 +105,7 @@ Returned output for a model to inspect
 
 ---
 
-## 12. Tool Examples
+## 9. Tool Examples
 
 Workspace → Tools · 1 of 4
 Examples from the host’s catalog. Your list depends on access
@@ -139,7 +114,7 @@ Examples from the host’s catalog. Your list depends on access
 
 ---
 
-## 13. Tool Examples
+## 10. Tool Examples
 
 Workspace → Tools · 2 of 4
 Examples from the host’s catalog. Your list depends on access
@@ -148,7 +123,7 @@ Examples from the host’s catalog. Your list depends on access
 
 ---
 
-## 14. Tool Examples
+## 11. Tool Examples
 
 Workspace → Tools · 3 of 4
 Examples from the host’s catalog. Your list depends on access
@@ -157,7 +132,7 @@ Examples from the host’s catalog. Your list depends on access
 
 ---
 
-## 15. Tool Examples
+## 12. Tool Examples
 
 Workspace → Tools · 4 of 4
 Examples from the host’s catalog. Your list depends on access
@@ -166,7 +141,7 @@ Examples from the host’s catalog. Your list depends on access
 
 ---
 
-## 16. Check Tool Binding
+## 13. Check Tool Binding
 
 **Model Bound Tool Enabler** is an existing filter that restores tools already attached to your model when a chat omits them
 
@@ -177,60 +152,51 @@ Availability still requires a valid call and a visible result · [Check tool cal
 
 ---
 
-## 17. Add the ‘Adventure Kit’ tool
+## 14. Add the ‘Adventure Kit’ tool
 
-Workspace → Models → Edit → **Tools → Select Tool**
-Choose **Adventure Kit**, then **Save & Update**
+In this same model card, open **Tools → Select Tool**
+Choose **Adventure Kit** · Confirm **Extend Adventure Games** remains selected
+Add next prompt instruction, then click **Save & Update** before testing
 
 ![Model editor — 1 identifies Select Tool; 2 identifies saved Adventure Kit entry](../images/skills-2026-10-15/adventure-kit-select.svg)
 
 ---
 
-## 18. Prepare Your Adventure
+## 15. Add Skill Instructions
 
-Design your adventure from your system prompt
-
-Instruct your model to map its setting, goals, and rules into scenes, choices, and end conditions
-
-Resolve missing or contradictory instructions
-Review proposed input for **Adventure Kit**
-
-[Copy preparation and run requests](exercises.html#add-and-test-tool)
+```text
+Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
+```
 
 ---
 
-## 19. Add Tool Instructions
+## 16. Test Your Adventure
 
-Add this clause to your model’s system prompt · [Copy clause](exercises.html#add-tool-instructions)
-
-When I approve an adventure, call the attached Adventure Kit tool to run it. Use the setting, goals, and rules in this system prompt.
-
-Save your model, then verify tool attachment, provider support, and the actual result
+Run your updated adventure game
+Verify configured skill and tool are called appropriately
+Then play the rest of your game
 
 ---
 
-## 20. Test Your Tool
+## 17. Observe Game Results
 
-Run your reviewed adventure, then compare its scene and choices with your prompt
+① Check skill call · ② Check tool call
+Open details to confirm selected skill
 
-Try a choice before and after its prerequisite
-Inspect Undo and Stop
-Copy actual play record into chat
-
-Which step in your teaching or research needs an executable operation?
+![User-provided live Clone response with numbered callouts for view_skill and show_scene above rendered ADVENTURES panel](../images/current/workshop3-skill-tool-run.svg)
 
 ---
 
-## 21. Observe Tool Results
+## 18. Explore Other Skills
 
-**Adventure Kit 2.1.0** called render_adventure
-Supplied rules and choices appeared in an interactive player inside chat
+After your first adventure works, try **Adventure Outcomes** or **Conclude Adventures** if available
+Read saved instructions · Change one item · Save your model card and compare results
 
-![Actual Clone chat with render_adventure and an embedded interactive Seedling Comparison player](../images/skills-2026-10-15/adventure-kit-hosted.svg)
+![Later optional experiment in model editor with numbered callouts for Select Skill and Adventure Outcomes](../images/skills-2026-10-15/adventure-outcomes-select.svg)
 
 ---
 
-## 22. Choose Your Task
+## 19. Choose Your Task
 
 ### Revise One Item
 
@@ -248,7 +214,7 @@ Specify purpose, required input, and expected result
 
 ---
 
-## 23. Work With Support
+## 20. Work With Support
 
 Open **CAIL Workspace Support**
 Paste original content or your new task, system prompt, and required sources
@@ -258,27 +224,18 @@ Request complete content, an explanation, and one test · [Copy request](exercis
 
 ---
 
-## 24. Situate Your Adventure
+## 21. Adapt Your Adventure
 
-At **CAIL Workspace Support**, design a skill for the adventure you just played
+Bring a lesson outcome, weekly concept, and current adventure to **CAIL Workspace Support**
 
-Trigger
+Ask it to revise your orchestration skill or tool, or design a new one
+Supply complete content, system prompt, scenario, and play record
 
-Adapt this adventure to one lesson outcome
-
-Inputs
-
-Model prompt, lesson plan, weekly concept, current scene, and a dated news example or statistic
-
-Output
-
-Revised choices that ask students to apply theory and question the evidence
-
-Preserve game rules and Stop · [Copy the Support request](exercises.html#situate-your-adventure)
+Review proposed changes before running them · [Copy Support request](exercises.html#adapt-your-adventure)
 
 ---
 
-## 25. Add Tools or Skills
+## 22. Add Tools or Skills
 
 Create a new **tool** or **skill**, or save a revised copy
 Use **Workspace → Tools → Create** or [**Skills → Create**](navigation.html#create-skill)
@@ -290,7 +247,7 @@ Review **Access**, then **Save & Create** · [Select and test your item](exercis
 
 ---
 
-## 26. Series Reflections
+## 23. Series Reflections
 
 What task in your teaching or research could benefit from a skill or tool?
 

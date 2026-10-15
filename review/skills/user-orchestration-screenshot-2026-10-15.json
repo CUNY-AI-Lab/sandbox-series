@@ -1,0 +1,23 @@
+{
+  "source": "User-provided wide live run screenshot, supplied through coordinated deck task",
+  "source_sha256": "82dd3bb61dec94641e813ad31ae197a28c5a0caa0e2f8da483fa5cb1283affd7",
+  "file": "images/current/workshop3-skill-tool-run.svg",
+  "sha256": "bd020c00ef7eedb8ee5cda93182fed302075caacae6380456237f59ac353afbc",
+  "source_dimensions": [
+    2090,
+    1618
+  ],
+  "annotation_commit": "adb9344",
+  "changes": "Original user PNG embedded unchanged beneath blue numbered SVG callouts; source-byte preservation verified by preparing task.",
+  "visible_evidence": [
+    "STEM Adventure Games (Clone)",
+    "initiate adventure",
+    "view_skill in collapsed activity summary",
+    "show_scene call",
+    "rendered ADVENTURES panel"
+  ],
+  "limits": [
+    "Collapsed summary does not expose exact skill ID, full instructions, or call arguments.",
+    "Saved minimal system prompt and completed playthrough are not shown."
+  ]
+}

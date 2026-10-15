@@ -2,6 +2,12 @@
 
 October 15, 2026 · STEM Adventure Games (Clone) · DeepSeek V4 Flash 0731
 
+## User-provided run
+
+The supplied live Clone screenshot shows an `initiate adventure` request, `view_skill` in a collapsed activity summary, a completed `show_scene` call, and a rendered ADVENTURES panel. The original PNG is embedded unchanged beneath numbered SVG callouts. This is an observed run image, not a prompt-editor screenshot. It does not expose the skill ID or arguments, the saved prompt, or a completed playthrough. Open call details to verify those separately.
+
+![User-provided skill and tool run](../images/current/workshop3-skill-tool-run.svg)
+
 ## Adventure Outcomes
 
 The saved resource was explicitly loaded through native `view_skill` with `{"id":"adventure_outcomes"}`. Its returned name and instructions matched the selected skill. This was not a direct `$` mention or an autonomous discovery benchmark.
@@ -38,11 +44,11 @@ After the private-access inspection, the owner reported granting participant rea
 
 ## Support rehearsal
 
-CAIL Workspace Support returned a complete separate “Adventure Outcomes — Labeled Trial” proposal, an explanation, and an explicitly unrun test. The proposal adds an outcome label while preserving clarification and immediate-stop exceptions. The original Adventure Outcomes remains the selected workshop skill. Creating the separate trial and running its live retest were not completed before browser control stopped. No successful retest of that proposal is claimed.
+CAIL Workspace Support returned a complete separate “Adventure Outcomes — Labeled Trial” proposal, an explanation, and an explicitly unrun test. The proposal adds an outcome label while preserving clarification and immediate-stop exceptions. The original Adventure Outcomes instructions remain unchanged for later optional experiments. Creating the separate trial and running its live retest were not completed before browser control stopped. No successful retest of that proposal is claimed.
 
-## Rehearsal setup
+## Earlier rehearsal setup
 
-The hosted evidence above used these longer system-prompt clauses. Shorter participant clauses in the integrated workshop revision have not received a separate live retest. The saved Adventure Outcomes instructions are unchanged.
+The hosted evidence above used these longer system-prompt clauses. The current workshop opening instead uses Extend Adventure Games to orchestrate Adventure Kit. That sequence has not received a live retest; these earlier calls do not prove it. Adventure Outcomes remains an optional later experiment with unchanged saved instructions.
 
 ### Skill clause
 

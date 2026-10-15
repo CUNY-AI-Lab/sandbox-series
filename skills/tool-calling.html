@@ -53,7 +53,7 @@
 </tbody>
 </table>
 <h2 id="add-instructions-before-testing">Add Instructions Before Testing</h2>
-<p>Every participant adds the <a href="exercises.html#add-tool-instructions">tool-calling clause</a> to their model’s system prompt, saves it, and preserves the existing adventure instructions. The clause calls <code>render_adventure</code> with reviewed schema-version-2 JSON text in <code>scenario_json</code> after the player approves the adventure. This function and argument are verified in the October 15 hosted 2.1.0 export and actual Clone invocation</p>
+<p>Add the <a href="exercises.html#add-skill-instructions">orchestration clause</a> to your model’s system prompt. It calls Extend Adventure Games to coordinate Adventure Kit. Select both in the same model card and Save &amp; Update before testing. Adventure Kit 2.1.0 exposes <code>render_adventure</code> with reviewed schema-version-2 JSON text in <code>scenario_json</code>; that function and argument were verified in the earlier hosted Clone invocation. The new orchestration sequence remains a separate live check.</p>
 <p>Read the actual result. <code>needs_context</code> and <code>invalid_input</code> require correction before play. <code>render_requested</code> requests a player display; inspect the rendered player before calling it successful. The model needs the player’s copied Play record to discuss button choices, progress, or completion</p>
 <h2 id="model-bound-tool-enabler">Model Bound Tool Enabler</h2>
 <p>Filters run before tool execution and can change a request. The existing CAIL Model Bound Tool Enabler filter restores tool IDs already attached to a model when chat composer state omits them. It does not make a model call a function or invent a missing tool binding</p>

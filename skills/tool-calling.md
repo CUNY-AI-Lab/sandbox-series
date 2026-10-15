@@ -17,7 +17,7 @@ Use your private model copy. Record its ID, base model, system prompt, calling m
 
 ## Add Instructions Before Testing
 
-Every participant adds the [tool-calling clause](exercises.html#add-tool-instructions) to their model’s system prompt, saves it, and preserves the existing adventure instructions. The clause calls `render_adventure` with reviewed schema-version-2 JSON text in `scenario_json` after the player approves the adventure. This function and argument are verified in the October 15 hosted 2.1.0 export and actual Clone invocation
+Add the [orchestration clause](exercises.html#add-skill-instructions) to your model’s system prompt. It calls Extend Adventure Games to coordinate Adventure Kit. Select both in the same model card and Save & Update before testing. Adventure Kit 2.1.0 exposes `render_adventure` with reviewed schema-version-2 JSON text in `scenario_json`; that function and argument were verified in the earlier hosted Clone invocation. The new orchestration sequence remains a separate live check.
 
 Read the actual result. `needs_context` and `invalid_input` require correction before play. `render_requested` requests a player display; inspect the rendered player before calling it successful. The model needs the player’s copied Play record to discuss button choices, progress, or completion
 

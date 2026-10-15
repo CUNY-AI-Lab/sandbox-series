@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "slides": 26,
+  "slides": 23,
   "required_checks": [
     {
       "command": "scripts/check_series.py",
@@ -103,11 +103,16 @@
       "note": "Passed"
     }
   ],
-  "desktop": "26 slides; no overflow at 1600x900",
-  "mobile": "26 slides; no horizontal clipping at 390x844; long prompt content scrolls",
+  "desktop": "23 slides; no overflow at 1600x900",
+  "mobile": "23 slides; no horizontal clipping at 390x844; all content starts within its scroll container",
   "screenshot_resolution": "37 images checked",
-  "pdf": "26 rendered pages visually inspected; exact reflection preserved",
+  "pdf": "23 rendered pages visually inspected; exact reflection preserved",
   "support_live_retest": "blocked by stopped browser control",
   "access": "Owner reported completing participant read grants; live readback not performed",
-  "concurrent_revision": "Integrated e63c755 lesson activity and shorter clauses; retained user-selected Adventure Outcomes and actual hosted evidence. Short clauses not separately live-tested."
+  "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
+  "latest_user_revision": "Select Extend Adventure Games; explain tools/examples; select Adventure Kit in same card; Add Skill Instructions immediately afterward; Save & Update; one concise run/test slide; actual user-run screenshot; optional skills and Support afterward.",
+  "opening_orchestration_live_test": "Not run after browser control stopped. Owner confirmed saved name Extend Adventure Games; current ID/instructions/participant visibility not read back.",
+  "user_run_screenshot": "review/skills/user-orchestration-screenshot-2026-10-15.json",
+  "exact_orchestration_clause": "Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.",
+  "prompt_slide": "Only exact copyable code block; separate editor screenshot intentionally omitted per latest user instruction."
 }

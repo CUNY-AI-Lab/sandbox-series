@@ -1,29 +1,33 @@
 # Facilitator Notes
 
-Tools and Skills · Thursday, October 15, 2026 · 2:30–4:00 p.m. Eastern
+Tools and Skills · October 15, 2026 · 2:30–4:00 p.m. Eastern
 
-New Media Lab · Room 7388.01 · CUNY Graduate Center
+## Current flow
 
-## Review status
+The user confirmed the saved orchestration skill's menu label is Extend Adventure Games. Opening setup selects that skill, explains tools and examples while the model card remains open, selects Adventure Kit, adds one minimal system-prompt clause, and saves the model card once both attachments are selected. Only then do participants open a fresh chat to test orchestration and play. No tester skill belongs in the opening.
 
-This 26-slide revision includes the user-selected Adventure Outcomes skill, both system-prompt clauses, the user-provided selection screenshots with numbered annotations, and actual hosted evidence immediately after each test. The user authorized their existing STEM Adventure Games (Clone) for the demonstration. Advanced is excluded. The original standard model was not resolved after all 67 catalog entries across three pages and its editor route were inspected.
-
-## Session plan
+Adventure Outcomes and Conclude Adventures are later optional experiments. CAIL Workspace Support follows those experiments; participants can revise either component or create their own. The exact user-provided Adventure Outcomes instructions are preserved as a later reference, not an opening default.
 
 | Time Eastern | Activity | Slides |
 | --- | --- | --- |
 | 2:30–2:40 | Continue or clone; define skills and browse examples | 1–6 |
-| 2:40–2:50 | Select Adventure Outcomes, add its prompt clause, and test | 7–10 |
-| 2:50–3:10 | Define tools, browse examples, bind Adventure Kit, prepare, and test | 11–21 |
-| 3:10–3:20 | Choose revision or creation; copy complete content | 22 |
-| 3:20–3:40 | Work with CAIL Workspace Support; situate an adventure in a lesson | 23–24 |
-| 3:40–4:00 | Add a new version, retest, and reflect | 25–26 |
+| 2:40–2:50 | Select Extend Adventure Games | 7 |
+| 2:50–3:00 | Explain tools; select Adventure Kit; add prompt clause and save | 8–15 |
+| 3:00–3:15 | Run the adventure, inspect calls, and play | 16–17 |
+| 3:15–3:25 | Experiment with other available skills | 18 |
+| 3:25–3:30 | Choose a revision or creation task | 19 |
+| 3:30–3:45 | Work with CAIL Workspace Support | 20–21 |
+| 3:45–4:00 | Add a new version, retest, and reflect | 22–23 |
 
-Browse the 11 contributed skills and 14 tools briefly within the existing introduction blocks. Their dated catalog captures are examples of host visibility, not a promise of participant access.
+## Evidence limits
+
+The newly requested Extend Adventure Games orchestration sequence has not been live-tested by this task. The owner confirmed its current saved name; its current ID, full instructions, and participant visibility have not been read back. Browser control stopped on a prohibited current URL, and it was not retried or bypassed. Do not label earlier Adventure Outcomes or direct Adventure Kit tests as proof of this new orchestration sequence.
+
+The main deck now shows the user-provided live run with view_skill, show_scene, and the ADVENTURES panel. Collapsed call details do not identify the exact skill ID or prove the new minimal prompt was saved. The earlier Adventure Outcomes loading screenshot is kept in the evidence record, outside the opening deck. The original standard model was not resolved across all 67 catalog entries; the user authorized STEM Adventure Games (Clone), DeepSeek V4 Flash 0731, for the successful rehearsals. Advanced was not used for screenshots.
 
 ## Skill and discovery
 
-Select the saved Adventure Outcomes resource through Workspace → Models → Edit → Skills → Select Skill. Preserve its exact instructions. This initial exercise does not require transcription into a blank editor; creation or revision comes later.
+The earlier rehearsal selected saved Adventure Outcomes. Its exact instructions remain available for later optional experimentation.
 
 The October 15 Clone test explicitly requested native `view_skill({"id":"adventure_outcomes"})`. It returned the saved instructions. The answer rejected a false completion claim about a confounded experiment, asked which numbered choice an ambiguous request meant, and acknowledged Stop in exactly one sentence. This is evidence of explicit native loading and observed use, not a benchmark of autonomous discovery. A direct `$` mention injects skill content and may not call view_skill.
 
@@ -39,28 +43,11 @@ Hosted actions passed: a prerequisite blocked an early choice; the valid sequenc
 
 The existing Model Bound Tool Enabler was selected during the successful tests. It restores model-attached tool IDs when chat state omits them. A with/without comparison was not run, so necessity is not established. Explain its conditional purpose before Adventure Kit and do not enable it globally.
 
-## Participant access
 
-At inspection, both Adventure Kit and Adventure Outcomes displayed Private with no access grants. Host visibility does not prove that participants can select them. No permissions were expanded. Confirm the intended existing participant group's read access, then verify with an authorized participant context before class. Do not expose student identifiers in screenshots or review records.
+## Access and Support
 
-## Support and new versions
+Adventure Kit and Adventure Outcomes showed Private/no grants at inspection. The owner then reported granting participant read access to both; post-change visibility remains unverified. Extend Adventure Games is now the opening skill, so verify participant visibility of that saved resource too without expanding permissions or exposing student identifiers.
 
-Participants may revise either tool or skill, or create their own. Copy complete original content, active system prompt, required source passages, and the observed problem into CAIL Workspace Support. Ask for complete content, an explanation, and one test. Support does not inherit previous chats or collections automatically.
-
-Preserve the original. Give a revised copy its own Name and ID, review all content, select it, update its prompt clause, and retest identical input with the same model and settings. For a new item, compare expected and observed behavior and try a boundary case. Keep unrun checks explicit.
+Earlier CAIL Workspace Support returned a separate labeled Adventure Outcomes proposal with an explicitly unrun test. It was not installed or retested. That proposal is not an opening skill or proof of the new orchestration workflow. The current Support activity is general: revise or create a skill or tool, preserve the original, and test the actual saved result.
 
 [Participant exercises](exercises.html) · [Hosted evidence](hosted-evidence.html)
-
-## Access follow-up
-
-After the private-access inspection, the owner reported granting participant read access to both Adventure Kit and Adventure Outcomes. The post-change participant visibility check remains unverified because browser control was stopped. No access change was made by this task.
-
-## Support rehearsal
-
-CAIL Workspace Support returned a complete separate “Adventure Outcomes — Labeled Trial” proposal, an explanation, and an explicitly unrun test. The proposal adds an outcome label while preserving clarification and immediate-stop exceptions. The original Adventure Outcomes remains the selected workshop skill. Creating the separate trial and running its live retest were not completed before browser control stopped. No successful retest of that proposal is claimed.
-
-## Integrated prompt revision
-
-The concurrent repository revision added a lesson-planning creation example and shorter participant clauses. These are preserved, with Adventure Outcomes remaining the selected skill. The new short clauses were not retested live after browser control stopped; the successful hosted rehearsal used the longer clauses recorded in Hosted Evidence. Do not attribute that evidence to the shorter clauses or claim that Lesson Adventure Planner has been installed or run.
-
-Slide 24 offers a creation option: adapt the adventure just played to one lesson outcome, using supplied course passages, theory, and a dated source. Preserve game rules, require review before execution, and label unrun tests.

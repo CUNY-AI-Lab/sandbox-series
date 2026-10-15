@@ -1,8 +1,8 @@
 {
-  "slides": 26,
+  "slides": 23,
   "date": "2026-10-15",
   "approval": "User authorized publication to the existing workshop repository and phone review; continued file-based publication explicitly requested after browser control stopped.",
-  "scope": "26-slide deck, synchronized outline and reading pages, 2.1.0 code-only export, exact selected skill, actual hosted evidence and PDF; no access expansion or browser retry",
+  "scope": "23-slide workshop, synchronized outline/reading pages/PDF, same-model-card orchestration setup, later optional skills, generic 2.1.0 source and honestly labeled earlier hosted evidence.",
   "screenshots": [
     {
       "source": "select-copy-raw.png",
@@ -81,9 +81,14 @@
     "review/skills/hosted-tool-evidence-2026-10-15.json"
   ],
   "pdf_sha256": "bc147a6d7c7456f80cc0107a07443c049ea414458e5419c65e1beb07a029b5fb",
-  "pdf_pages": 26,
+  "pdf_pages": 23,
   "visual_review": "All pages rendered with Poppler; detailed review of skill and tool evidence pages; desktop and mobile layout checks passed.",
   "access": "Private/no grants at inspection for Adventure Kit and Adventure Outcomes; owner subsequently reported granting participant read access; post-change participant visibility unverified.",
   "remaining_live_check": "Save and retest the separate Workspace Support revision; browser control stopped.",
-  "concurrent_revision": "Integrated e63c755 lesson activity and shorter clauses; retained user-selected Adventure Outcomes and actual hosted evidence. Short clauses not separately live-tested."
+  "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
+  "latest_user_revision": "Select Extend Adventure Games; explain tools/examples; select Adventure Kit in same card; Add Skill Instructions immediately afterward; Save & Update; one concise run/test slide; actual user-run screenshot; optional skills and Support afterward.",
+  "opening_orchestration_live_test": "Not run after browser control stopped. Owner confirmed saved name Extend Adventure Games; current ID/instructions/participant visibility not read back.",
+  "user_run_screenshot": "review/skills/user-orchestration-screenshot-2026-10-15.json",
+  "exact_orchestration_clause": "Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.",
+  "prompt_slide": "Only exact copyable code block; separate editor screenshot intentionally omitted per latest user instruction."
 }

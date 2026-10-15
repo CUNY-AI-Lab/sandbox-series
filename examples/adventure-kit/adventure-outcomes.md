@@ -10,7 +10,7 @@ Use this skill each time the player makes a choice. Judge the choice by the syst
 
 ## Select Saved Skill
 
-In Workspace → Models, edit your own model. Under Skills → Select Skill, choose Adventure Outcomes and save. This first exercise uses the existing saved skill. Creating or revising an item comes later in the Support exercise.
+In Workspace → Models, edit your own model. Under Skills → Select Skill, choose Adventure Outcomes and save. Use this saved skill for a later optional experiment after Extend Adventure Games and Adventure Kit are working.
 
 ## Verify Actual Use
 
