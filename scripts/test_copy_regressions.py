@@ -336,7 +336,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Conclude Adventures',setup)
         self.assertIn('Adventure Outcomes',self.slide('skills/index.html','Explore Other Skills').text())
         create=self.slide('skills/index.html','Add Tools or Skills')
-        self.assertTrue(create.all(lambda n:n.tag=='a' and n.attrs.get('href')=='exercises.html#add-new-version'))
+        self.assertIn('Copy and paste all code, then save your item.',create.text())
+        self.assertIn('Update the system prompt to tell the model which tool to use and when.',create.text())
         exercises=(ROOT/'skills/EXERCISES.md').read_text()
         for term in ['turn off older version','compare identical input','same model, system prompt, settings, scene, and record','Immediate acknowledgment, no false completion']:
             self.assertIn(term,exercises)

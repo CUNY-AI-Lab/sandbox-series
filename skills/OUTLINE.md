@@ -213,11 +213,11 @@ Prompted to generate a skill and/or tool that continues to support or further ex
 
 ## 19. Add Tools or Skills
 
-Create a new **tool** or **skill**, or save a revised copy
-Use **Workspace → Tools → Create** or [**Skills → Create**](navigation.html#create-skill)
-Enter new Name and ID; paste complete reviewed content
+Copy and paste all code, then save your item.
 
-Review **Access**, then **Save & Create** · [Select and test your item](exercises.html#add-new-version)
+On your model card, select your new tool or skill.
+
+Update the system prompt to tell the model which tool to use and when. Save the model card.
 
 ![Tools Create form with code editor, Access and Save & Create visible; arrows identify relevant steps without changing interface pixels](../images/current/workshop3-arrow-create-tool.svg)
 
