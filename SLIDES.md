@@ -1112,23 +1112,23 @@ Request complete content, an explanation, and one test · [Copy request](skills/
 
 ## Configuring skills and tools — 22
 
-### Situate Your Adventure
+### Extend Adventure Games
 
-At **CAIL Workspace Support**, design a skill for the adventure you just played
+At **CAIL Workspace Support**, design a tool for the adventure you just played
 
-Trigger
+Task
 
 Adapt this adventure to one lesson outcome
 
 Inputs
 
-Model prompt, lesson plan, weekly concept, current scene, and a dated news example or statistic
+Model prompt, lesson plan, weekly concept, current scenario, and a dated news example or statistic
 
 Output
 
-Revised choices that ask students to apply theory and question the evidence
+Revised Adventure Kit scenario with choices that apply theory and question evidence
 
-Preserve game rules and Stop · [Copy the Support request](skills/exercises.html#situate-your-adventure)
+Preserve game rules and Stop · [Copy the Support request](skills/exercises.html#extend-adventure-games)
 
 ---
 

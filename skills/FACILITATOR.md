@@ -16,7 +16,7 @@ This 24-slide revision includes two short system-prompt clauses: check Extend ST
 | 2:40–2:50 | Select a saved skill, add its prompt clause, and test | 7–9 |
 | 2:50–3:10 | Define tools, browse examples, bind Adventure Kit, prepare, and test | 10–19 |
 | 3:10–3:20 | Choose revision or creation; copy complete content | 20 |
-| 3:20–3:40 | Work with CAIL Workspace Support; draft a lesson-based adventure skill | 21–22 |
+| 3:20–3:40 | Work with CAIL Workspace Support; draft Extend Adventure Games | 21–22 |
 | 3:40–4:00 | Add a new version, retest, and reflect | 23–24 |
 
 Browse the catalog slides briefly within the existing introduction blocks. They add examples without changing the outline’s 90-minute allocation. Preserve the six actions: clone or continue, add Adventure Kit, experiment, copy editable content, revise with Support, and add a new version.
@@ -49,6 +49,8 @@ Earlier October 14 QA verified the tool with a supplied archive fixture on a sep
 
 Participants choose to revise either the tool or a skill, or create their own. Copy the complete original code/instructions, active system prompt, required source passages, and observed problem into a chat with CAIL Workspace Support. Ask for complete revised content, an explanation, and a test. Support does not inherit the participant’s previous chat or collection automatically.
 
-Slide 22 gives a creation option within this same activity: adapt the adventure just played to one lesson outcome. Participants give Support the prompt, lesson passages, weekly concepts, and current scene and Play record. The proposed skill preserves game rules, grounds a decision in course theory and a dated source, asks students to critique the evidence, and stops for review before any Adventure Kit call. If web retrieval is unavailable, participants supply a dated source. Treat the output as a draft until the saved skill and actual game behavior are checked.
+Slide 22 gives a tool creation option within this same activity: Extend Adventure Games adapts the adventure just played to one lesson outcome. Participants give Support the prompt, lesson passages, weekly concepts, current Adventure Kit scenario, and Play record. The proposed tool preserves game rules, grounds a decision in course theory and a dated source, asks students to critique the evidence, and returns a revised schema-version-2 scenario for review before any Adventure Kit call. If web retrieval is unavailable, participants supply a dated source. Treat the output as a draft until its code, output, and actual game behavior are checked.
+
+The captured catalog does not show a saved tool named Extend Adventure Games. Do not tell participants to select it until they have created and saved it. The short follow-on clause in the handout names that new tool, requires review of its proposal, and then calls Adventure Kit to render the approved scenario.
 
 Preserve the original. In Workspace → Tools or Skills → Create, give the new version its own Name and ID, replace sample content completely, review Access, and Save & Create. Select the new item and repeat the same request under the same model and settings. Report expected and observed behavior and leave unrun checks explicit.
