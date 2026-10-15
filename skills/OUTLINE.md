@@ -172,10 +172,11 @@ It restores availability; execution still requires a valid tool call
 
 ## 16. Add the ‘Adventure Kit’ tool
 
-Open **Integrations → Tools**
-Search **Adventure Kit** and select its toggle
+Open **Workspace → Models**, then choose **Edit** from your model card’s menu
+① Under **Tools**, click **Select Tool** · ② Choose **Adventure Kit**
+Click **Save & Update** to save your model
 
-![Chat Integrations Tools menu with Adventure Kit toggle; arrows identify relevant steps without changing interface pixels](../images/current/workshop3-arrow-kit-select.svg)
+![Model card Tools menu with blue numbered callouts for 1 Select Tool, 2 Adventure Kit. User-provided annotated interface screenshot.](../images/current/workshop3-model-tool-select.png)
 
 ---
 
