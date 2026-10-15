@@ -208,14 +208,12 @@ class ParticipantContinuity(unittest.TestCase):
         for path in ['knowledge/index.html','knowledge/reference.html','examples/stem-chat-system-prompt.txt','examples/knowledge/source-register.md']:
             self.assertNotRegex((ROOT/path).read_text(),r'(?i)newton|prism laboratory',path)
 
-    def test_installed_tool_is_attached_before_testing(self):
-        installation = self.slide('skills/index.html', 'Install Tool Code').text()
-        self.assertLess(installation.index('unique Name and ID'), installation.index('Save & Create'))
-        self.assertIn('private model', installation)
-        self.assertIn('installed copy', installation)
-        self.assertIn('Update System Prompt to name it', installation)
-        self.assertIn('Save & Update', installation)
-        self.assertIn('CAIL Tool Creator', self.slide('skills/index.html', 'Create Adventure Tools').text())
+    def test_skill_tool_and_support_sequence(self):
+        titles=[s.attrs['data-title'] for s in self.decks['skills/index.html'].all(lambda n:n.has_class('slide'))]
+        self.assertLess(titles.index('Add Your Skill'),titles.index('Test Your Skill'))
+        self.assertLess(titles.index('Add Adventure Kit'),titles.index('Test Your Tool'))
+        self.assertLess(titles.index('Test Your Skill'),titles.index('Add Adventure Kit'))
+        self.assertLess(titles.index('Test Your Tool'),titles.index('Work With Support'))
 
     def test_lesson_agenda_matches_participant_slides(self):
         import re

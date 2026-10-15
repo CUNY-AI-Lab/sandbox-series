@@ -1,0 +1,79 @@
+{
+  "slides": 13,
+  "date": "2026-10-15",
+  "approval": "Explicit deploy instruction after review of centered 13-slide deck",
+  "scope": "Skills deck, linked reading pages, PDF, landing-page link; no live tool/model/access changes",
+  "screenshots": [
+    {
+      "source": "select-copy-raw.png",
+      "source_sha256": "4782ba373effc6ec92f1d74c834e1fa409cffa77996ec75619cbbf5e71587a62",
+      "file": "images/current/workshop3-clean-continue.png",
+      "sha256": "e6081b8c1f76d984894708077e7726fac843a52ea1f7bf364faddd7ac8bcbb21",
+      "crop": [
+        85,
+        165,
+        2304,
+        1650
+      ],
+      "annotation": "none; original screenshot pixels"
+    },
+    {
+      "source": "create-skill.png",
+      "source_sha256": "4cb57ee0f8a9233b5179f735959be3b4ef3a6b9d69def14daf9020fa540d974b",
+      "file": "images/current/workshop3-clean-skill-create.png",
+      "sha256": "a84989b0c1f91f297c7f8ef0c4ddaecaf60181ec7cae82f92931de0dfda4f3a9",
+      "crop": [
+        0,
+        238,
+        2560,
+        1442
+      ],
+      "annotation": "none; original screenshot pixels"
+    },
+    {
+      "source": "integrations-adventure.png",
+      "source_sha256": "3928fe530170aa56fb2528290d262d60f04158248ac3921a4dc150a165c75268",
+      "file": "images/current/workshop3-clean-kit-select.png",
+      "sha256": "f17a36eb656c97e95504e58c98ee6bc03719e59358b5b3f45f1c6ecea66bb470",
+      "crop": [
+        0,
+        238,
+        2560,
+        1442
+      ],
+      "annotation": "none; original screenshot pixels"
+    },
+    {
+      "source": "support-chat-raw.png",
+      "source_sha256": "b0902a255eb5368ebb877115ddf97160dff07532fb32c813522bc71bb9cb5537",
+      "file": "images/current/workshop3-clean-support.png",
+      "sha256": "04ec0aa0b2ebc7315c120ebdc7c6e9c71c768783bea3ff66af98eff18684baed",
+      "crop": [
+        0,
+        238,
+        2560,
+        1110
+      ],
+      "annotation": "none; original screenshot pixels"
+    },
+    {
+      "source": "create-tool-raw.png",
+      "source_sha256": "518defae452add652cfc3c9a9d00c336c2ea6c05b25ff6b3ca62085bc5a7ac73",
+      "file": "images/current/workshop3-clean-create-tool.png",
+      "sha256": "fb0ec3839fab0871c3030c2b0e69e8c0bcd52d0b92a12cb7cbb677bf5ee1d003",
+      "crop": [
+        0,
+        238,
+        2560,
+        1570
+      ],
+      "annotation": "none; original screenshot pixels"
+    }
+  ],
+  "export": "PDF uses exact browser-rendered page images and searchable text; no print stylesheet layout",
+  "reviewed_reflections": [
+    "What task in your teaching or research could benefit from a skill or tool?",
+    "Across the series, how has your approach to custom models changed?",
+    "What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?"
+  ]
+}

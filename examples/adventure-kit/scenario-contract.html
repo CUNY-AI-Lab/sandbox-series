@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adventure Input | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../../images/cail-favicon.svg">
+<link rel="stylesheet" href="../../css/workshop-copy.css?v=8b578b460376">
+<link rel="stylesheet" href="../../css/theme.css?v=20260929-controls">
+<script src="../../js/theme.js?v=20260929-controls" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><img class="page-wordmark" src="../../images/cail-wordmark-white.png" data-theme-brand data-logo-dark="../../images/cail-wordmark-white.png" data-logo-light="../../images/cail-wordmark-color.png" alt="CUNY AI Lab" width="1154" height="259"><h1>Adventure Input</h1>
+<nav aria-label="Workshop links"><a href="../../">Sandbox Series</a> · <a href="../../skills/index.html">Return to workshop</a> · <a href="scenario-contract.md" download="scenario-contract.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#data-fields">Data Fields</a></li><li><a href="#evidence">Evidence</a></li><li><a href="#current-hosted-version">Current Hosted Version</a></li></ul></nav></header>
+<main id="workshop-copy" class="reading-content">
+
+<p>Adventure Kit 2.0.0 · Hosted save and readback recorded October 14</p>
+<p>Active custom model system prompt defines setting, goals, and rules. The model translates those instructions into Adventure Kit data. Ask about absent or contradictory context before play. Review that translation with the participant; generic JSON support alone does not prove prompt fidelity</p>
+<p>The tool has no built-in adventure. Test fixtures remain separate from reusable code and skill. Blank input requests context rather than substituting a story</p>
+<h2 id="data-fields">Data Fields</h2>
+<p>Required fields are schema_version (2), title, introduction, start, state, nodes, and endings. Each node has name, text, and choices. Each choice has a unique id, visible label, and result text. Optional to changes node; when controls validity; effects alter declared state</p>
+<p>State values may be numbers, strings, booleans, or lists of strings. Conditions compare declared variables through eq, ne, gt, gte, lt, lte, or includes. all, any, and not combine conditions. Effects use set, add, append, or remove with key and value</p>
+<p>Each ending declares id, label, text, status (complete or failed), terminal (true or false), and when. Empty endings permits open-ended play. First matching ending has priority. A nonterminal ending permits continued choices. Undo replays earlier choices and recalculates outcomes; Stop halts immediately without claiming completion</p>
+<p>Optional objective displays a participant-defined goal. global_choices applies choices across nodes. sources records supplied id, text, and optional URL when a prompt requires source evidence. The tool does not retrieve or verify sources</p>
+<h2 id="evidence">Evidence</h2>
+<p>Open Play record in the v2 player and copy actual choices, rule results, and state into chat. Narrative skill guidance cannot alter that state. A copied record may become stale after Undo, Restart, or another action</p>
+<h2 id="current-hosted-version">Current Hosted Version</h2>
+<p>Dated preparation records confirm stem_adventure v2.0.0 after an authorized save. Exact exports preserve v1.1.0 and v2.0.0, with ID, owner and Private access unchanged. V2 has no built-in adventure or old blank-input fallback. Older rooms/actions/goal_flags content needs explicit conversion to schema version 2. Participant access and full prompt-to-tool acceptance remain unverified</p>
+<p><a href="source.html">Copy current source</a> · <a href="../../skills/exercises.html">Participant exercises</a></p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../../js/examples.js" defer></script>
+</body>
+</html>

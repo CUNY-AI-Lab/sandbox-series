@@ -136,8 +136,8 @@ class ReadingPages(unittest.TestCase):
         self.assertIn('Developed by Zach Muhlbauer', tree.text())
         cards = tree.all(lambda node: node.has_class('workshop-card'))
         self.assertEqual(len(cards), 3)
-        self.assertEqual([card.attrs.get('href') for card in cards], ['basics/', 'knowledge/', None])
-        self.assertEqual(cards[2].attrs.get('aria-disabled'), 'true')
+        self.assertEqual([card.attrs.get('href') for card in cards], ['basics/', 'knowledge/', 'skills/'])
+        self.assertIsNone(cards[2].attrs.get('aria-disabled'))
         for route in ['index.html', 'basics/index.html', 'knowledge/index.html',
                       'skills/index.html', 'basics/workshop-copy.html',
                       'knowledge/workshop-copy.html', 'skills/workshop-copy.html']:

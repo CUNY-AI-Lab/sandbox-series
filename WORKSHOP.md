@@ -134,40 +134,26 @@ On September 29, directory creation and saving instructions.txt succeeded throug
 
 ## Configuring skills and tools
 
-Participants use STEM Adventure to play a deterministic text adventure, inspect commands and prerequisites, and export a play record. They draft a skill, attach it to a private copy of STEM Adventure Games — Advanced, test one procedural change, and examine how a model interprets the run. Kale Skill Builder and CAIL Tool Creator accept participants’ own requirements. Their system prompts and starter suggestions are general-purpose. STEM Adventure is a submitted workshop example. CAIL Tool Creator produces a reviewable Python draft with explicit tests. Each participant retains a skill draft, creator output, an installed copy of the tested tool, a scenario, and a play record. Creator output remains a draft until reviewed and tested.
+Thursday, October 15, 2026 · 2:30–4:00 p.m. Eastern · GC New Media Lab 7388.01
 
-### Workshop Agenda
-
-- Confirm Skills and Tools access
-- Play STEM Adventure
-- Inspect commands and results
-- Configure reusable skills
-- Create and test tools
-- Compare procedural changes
+Use [13 slides](skills/index.html), [participant exercises](skills/exercises.html), and [complete session notes](skills/facilitator.html). Continue participants' existing models and their actual system prompts. Those prompts define adventure setting, goals, and rules. Reusable tools and skills contain no fixed story or genre
 
 ### Lesson Plan
 
-| Minutes | Activity | Evidence to retain |
-| --- | --- | --- |
-| 0–25 | Open STEM Adventure Games — Advanced, test commands, save and reload a play record, and submit it with discuss. | Commands, failed prerequisite, and play record |
-| 25–45 | Clone STEM Adventure Games — Advanced, remove inherited access grants, and save a private copy. Use Kale Skill Builder to draft one skill, save it, replace the existing attached skill, and update the private system prompt to name the draft. | Private model and saved skill |
-| 45–65 | Attach Prism Laboratory JSON and request one aperture comparison. Run the resulting scenario. Compare the same request with and without the saved skill, keeping other settings and inputs fixed. | Generated scenarios, test results, and records |
-| 65–83 | Request a Python draft from CAIL Tool Creator and save it for review. Install provided tested code separately, attach that copy to the private model, update its system prompt to name it, and inspect an actual call and result. | Creator draft, installed tested code, and tool result |
-| 83–90 | Save artifacts, compare game records with source evidence, and identify a next test. | Artifacts, observed result, and next question |
+| Minutes | Time Eastern | Action | Slides |
+| --- | --- | --- | --- |
+| 0–10 | 2:30–2:40 | Continue saved model and explain skill procedures | 1–3 |
+| 10–20 | 2:40–2:50 | Add and test skill | 4–5 |
+| 20–40 | 2:50–3:10 | Explain, add, and test Adventure Kit | 6–9 |
+| 40–50 | 3:10–3:20 | Choose revision or new item and copy content | 10 |
+| 50–70 | 3:20–3:40 | Work with CAIL Workspace Support | 11 |
+| 70–90 | 3:40–4:00 | Add chosen item, compare results, and reflect across series | 12–13 |
 
-The primary artifacts are [STEM Adventure](examples/tools/stem_adventure.py), [Extend STEM Adventures](examples/stem-game-skill.md), [Prism Laboratory](examples/adventure/prism.json), [Aperture Test](examples/adventure/aperture.json), and [winning commands](examples/adventure/winning-commands.json). The [local preview](examples/adventure/preview.html) allows practice before Sandbox access is ready. It does not establish that a participant has permission to call the installed tool.
+Skill explanation, addition and testing precede tool explanation, addition and testing. After both, participants revise either resource or create their own tool or skill in the same Support activity. Preserve originals and compare matching prompts, models, sources and settings
 
-The tool returns an interactive HTMLResponse with explicit model context. Its engine owns game state. The skill guides a procedural change and interpretation of a record; it cannot change state through prose. The discuss command fills the chat message box for review and sending. The save and load commands preserve progress after reloads; clicks inside the iframe do not automatically reach the model.
+Conclude with participants' next teaching or research task, changes in their approach across the series, and what they would develop next with prompts, knowledge collections, skills and tools
 
-Evaluate source use separately from game correctness. A deterministic winning sequence establishes software behavior. It does not validate a historical interpretation or establish a learning effect. The aperture extension is a scripted comparison based on a particular account, not a general optical simulation.
-
-### Next steps
-
-- Save prompts, sources, skills, and tool settings
-- Compare expected and observed behavior
-- Revise instructions from recorded failures
-- Verify shared access with intended users
-- Retest after model or tool updates
+Preparation records document an authorized Adventure Kit 2.0.0 save on October 14 with ID, ownership and Private access unchanged. An archive fixture was checked in a hosted QA chat. These records do not establish participant access or full acceptance against the standard STEM Adventure Games system prompt. Generic skill comparison and Support roundtrip remain unverified. This website publication installs no live tool and changes no permissions
 
 ## Source Documentation
 

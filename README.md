@@ -2,17 +2,18 @@
 
 [Open the workshop series](https://cuny-ai-lab.github.io/sandbox-series/)
 
-Composing System Prompts begins the series, followed by Curating Knowledge Collections. Open either workshop from the landing page. Light and dark modes are available across the workshop pages. Configuring Skills and Tools remains a later session.
+Composing System Prompts begins the series, followed by Curating Knowledge Collections. Open either workshop from the landing page. Light and dark modes are available across the workshop pages. Configuring Skills and Tools completes the series with a 13-slide workshop.
 
 - [Composing System Prompts](https://cuny-ai-lab.github.io/sandbox-series/basics/) · [Full copy](https://cuny-ai-lab.github.io/sandbox-series/basics/workshop-copy.html)
 - [Curating knowledge collections](https://cuny-ai-lab.github.io/sandbox-series/knowledge/) · [Full copy](https://cuny-ai-lab.github.io/sandbox-series/knowledge/workshop-copy.html)
+- [Configuring skills and tools](https://cuny-ai-lab.github.io/sandbox-series/skills/) · [Slides PDF](https://cuny-ai-lab.github.io/sandbox-series/skills/Tools-and-Skills-Slides.pdf) · [Participant exercises](https://cuny-ai-lab.github.io/sandbox-series/skills/exercises.html)
 - [Presenter lesson plans and access requirements](https://cuny-ai-lab.github.io/sandbox-series/WORKSHOP.html)
 - [Latest copy refinements and before/after](review/streamline-review.md)
 - [Source history](review/README.md)
 
 Workshop 1 requires individual access and Sandbox sign-in. Workshop 2 adds Workspace and Knowledge collection access. Workshop 3 adds Skills and Tools access, with Workspace authoring permissions for creation and editing. Knowledge access is needed in Workshop 3 when a chosen procedure retrieves from a collection.
 
-Participants learn how user prompts and system prompts differ, then compare how two models interpret a sentence about a nurse and doctor. They ask whether to walk or drive to a car wash. After reading sample system prompt instructions, participants locate System Prompt in Chat Controls, add those instructions, and regenerate responses to their original prompt. Participants compare responses, check citations, and test tools in teaching and research tasks. After reviewing Workspace model cards, participants choose [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games) for teaching or [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) for research, clone it, and revise its instructions. Workshop 2 can also be taken independently. Participants clone either example, choose their own source documents, create a collection, revise system prompt references, and test responses against source passages. Workshop 3 uses a separate advanced game to examine tools and skills.
+Participants learn how user prompts and system prompts differ, then compare how two models interpret a sentence about a nurse and doctor. They ask whether to walk or drive to a car wash. After reading sample system prompt instructions, participants locate System Prompt in Chat Controls, add those instructions, and regenerate responses to their original prompt. Participants compare responses, check citations, and test tools in teaching and research tasks. After reviewing Workspace model cards, participants choose [STEM Adventure Games](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games) for teaching or [Compare Wikipedia Edits](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) for research, clone it, and revise its instructions. Workshop 2 can also be taken independently. Participants clone either example, choose their own source documents, create a collection, revise system prompt references, and test responses against source passages. Workshop 3 continues participants’ saved custom models. Skills guide repeatable procedures; tools execute operations. Participants add and test each, then revise either resource or create their own with CAIL Workspace Support. Adventure setting, goals, and rules come from each model’s system prompt.
 
 ## Workshop Artifacts
 

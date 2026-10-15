@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "title": "Replace with title derived from your system prompt",
+  "introduction": "Replace with confirmed prompt-defined context",
+  "start": "scene",
+  "state": {},
+  "nodes": {
+    "scene": {
+      "name": "Replace with your scene label",
+      "text": "Replace with reviewed scene text",
+      "choices": []
+    }
+  },
+  "endings": []
+}

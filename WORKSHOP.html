@@ -236,64 +236,60 @@
 <li>Check responses against saved sources</li>
 </ul>
 <h2 id="configuring-skills-and-tools">Configuring skills and tools</h2>
-<p>Participants use STEM Adventure to play a deterministic text adventure, inspect commands and prerequisites, and export a play record. They draft a skill, attach it to a private copy of STEM Adventure Games — Advanced, test one procedural change, and examine how a model interprets the run. Kale Skill Builder and CAIL Tool Creator accept participants’ own requirements. Their system prompts and starter suggestions are general-purpose. STEM Adventure is a submitted workshop example. CAIL Tool Creator produces a reviewable Python draft with explicit tests. Each participant retains a skill draft, creator output, an installed copy of the tested tool, a scenario, and a play record. Creator output remains a draft until reviewed and tested.</p>
-<h3 id="workshop-agenda_2">Workshop Agenda</h3>
-<ul>
-<li>Confirm Skills and Tools access</li>
-<li>Play STEM Adventure</li>
-<li>Inspect commands and results</li>
-<li>Configure reusable skills</li>
-<li>Create and test tools</li>
-<li>Compare procedural changes</li>
-</ul>
+<p>Thursday, October 15, 2026 · 2:30–4:00 p.m. Eastern · GC New Media Lab 7388.01</p>
+<p>Use <a href="skills/index.html">13 slides</a>, <a href="skills/exercises.html">participant exercises</a>, and <a href="skills/facilitator.html">complete session notes</a>. Continue participants' existing models and their actual system prompts. Those prompts define adventure setting, goals, and rules. Reusable tools and skills contain no fixed story or genre</p>
 <h3 id="lesson-plan_2">Lesson Plan</h3>
 <table class="reference-table">
 <thead>
 <tr>
 <th>Minutes</th>
-<th>Activity</th>
-<th>Evidence to retain</th>
+<th>Time Eastern</th>
+<th>Action</th>
+<th>Slides</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0–25</td>
-<td>Open STEM Adventure Games — Advanced, test commands, save and reload a play record, and submit it with discuss.</td>
-<td>Commands, failed prerequisite, and play record</td>
+<td>0–10</td>
+<td>2:30–2:40</td>
+<td>Continue saved model and explain skill procedures</td>
+<td>1–3</td>
 </tr>
 <tr>
-<td>25–45</td>
-<td>Clone STEM Adventure Games — Advanced, remove inherited access grants, and save a private copy. Use Kale Skill Builder to draft one skill, save it, replace the existing attached skill, and update the private system prompt to name the draft.</td>
-<td>Private model and saved skill</td>
+<td>10–20</td>
+<td>2:40–2:50</td>
+<td>Add and test skill</td>
+<td>4–5</td>
 </tr>
 <tr>
-<td>45–65</td>
-<td>Attach Prism Laboratory JSON and request one aperture comparison. Run the resulting scenario. Compare the same request with and without the saved skill, keeping other settings and inputs fixed.</td>
-<td>Generated scenarios, test results, and records</td>
+<td>20–40</td>
+<td>2:50–3:10</td>
+<td>Explain, add, and test Adventure Kit</td>
+<td>6–9</td>
 </tr>
 <tr>
-<td>65–83</td>
-<td>Request a Python draft from CAIL Tool Creator and save it for review. Install provided tested code separately, attach that copy to the private model, update its system prompt to name it, and inspect an actual call and result.</td>
-<td>Creator draft, installed tested code, and tool result</td>
+<td>40–50</td>
+<td>3:10–3:20</td>
+<td>Choose revision or new item and copy content</td>
+<td>10</td>
 </tr>
 <tr>
-<td>83–90</td>
-<td>Save artifacts, compare game records with source evidence, and identify a next test.</td>
-<td>Artifacts, observed result, and next question</td>
+<td>50–70</td>
+<td>3:20–3:40</td>
+<td>Work with CAIL Workspace Support</td>
+<td>11</td>
+</tr>
+<tr>
+<td>70–90</td>
+<td>3:40–4:00</td>
+<td>Add chosen item, compare results, and reflect across series</td>
+<td>12–13</td>
 </tr>
 </tbody>
 </table>
-<p>The primary artifacts are <a href="examples/tools/stem_adventure.html">STEM Adventure</a>, <a href="examples/stem-game-skill.html">Extend STEM Adventures</a>, <a href="examples/adventure/prism.html">Prism Laboratory</a>, <a href="examples/adventure/aperture.html">Aperture Test</a>, and <a href="examples/adventure/winning-commands.html">winning commands</a>. The <a href="examples/adventure/preview.html">local preview</a> allows practice before Sandbox access is ready. It does not establish that a participant has permission to call the installed tool.</p>
-<p>The tool returns an interactive HTMLResponse with explicit model context. Its engine owns game state. The skill guides a procedural change and interpretation of a record; it cannot change state through prose. The discuss command fills the chat message box for review and sending. The save and load commands preserve progress after reloads; clicks inside the iframe do not automatically reach the model.</p>
-<p>Evaluate source use separately from game correctness. A deterministic winning sequence establishes software behavior. It does not validate a historical interpretation or establish a learning effect. The aperture extension is a scripted comparison based on a particular account, not a general optical simulation.</p>
-<h3 id="next-steps_1">Next steps</h3>
-<ul>
-<li>Save prompts, sources, skills, and tool settings</li>
-<li>Compare expected and observed behavior</li>
-<li>Revise instructions from recorded failures</li>
-<li>Verify shared access with intended users</li>
-<li>Retest after model or tool updates</li>
-</ul>
+<p>Skill explanation, addition and testing precede tool explanation, addition and testing. After both, participants revise either resource or create their own tool or skill in the same Support activity. Preserve originals and compare matching prompts, models, sources and settings</p>
+<p>Conclude with participants' next teaching or research task, changes in their approach across the series, and what they would develop next with prompts, knowledge collections, skills and tools</p>
+<p>Preparation records document an authorized Adventure Kit 2.0.0 save on October 14 with ID, ownership and Private access unchanged. An archive fixture was checked in a hosted QA chat. These records do not establish participant access or full acceptance against the standard STEM Adventure Games system prompt. Generic skill comparison and Support roundtrip remain unverified. This website publication installs no live tool and changes no permissions</p>
 <h2 id="source-documentation">Source Documentation</h2>
 <p>Interface instructions draw on the published <a href="https://ailab.gc.cuny.edu/sandbox-docs/">Sandbox documentation</a>, especially <a href="https://ailab.gc.cuny.edu/sandbox-docs/getting-started/">Getting Started</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/quick-tour/">Quick Tour</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/models/">Models</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/">Knowledge Bases</a>, <a href="https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/">Tools &amp; Skills</a>, and <a href="https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/">Roles &amp; Permissions</a>.</p>
 <p>The first workshop interface was inspected in Firefox on September 13–17, 2026. Knowledge workshop screenshots and model tests were refreshed on September 28, 2026. Creation, Clone, and access controls were checked in an administrator account. Participant-account checks remain with Zach before delivery. <a href="review/screenshot-sources.json" download="screenshot-sources.json">Download Screenshot provenance</a> records source hashes and crop coordinates. <a href="review/showcase-sources.json" download="showcase-sources.json">Download Showcase provenance</a> distinguishes archival comparison excerpts from current interface instructions. The unrelated fourth screenshot is excluded.</p>

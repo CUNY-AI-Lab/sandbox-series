@@ -805,13 +805,16 @@ Check responses against sources in your collection. Next workshop introduces too
 
 ## Configuring skills and tools — 1
 
+[![CUNY AI Lab](images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
+
+**Alt text:** CUNY AI Lab
+
 ### Configuring skills and tools
 
-Add tools and reusable instructions for teaching and research
+New Media Lab · Room 7388.01
+CUNY Graduate Center
 
-CUNY AI Lab Sandbox
-
-Developed by Zach Muhlbauer
+Thursday, October 15, 2026   2:30–4:00 p.m. Eastern
 
 [https://cuny-ai-lab.github.io/sandbox-series/skills](https://cuny-ai-lab.github.io/sandbox-series/skills)
 
@@ -819,435 +822,184 @@ Developed by Zach Muhlbauer
 
 ## Configuring skills and tools — 2
 
-### Workshop Agenda
+### Continue Your Model
 
-- Confirm Skills and Tools access
+Choose your saved model below message box
+Read its system prompt for setting, goals, and rules
+[Clone route](skills/navigation.html#clone) · [Earlier instructions and sources](skills/exercises.html#clone-or-continue)
 
-- Play STEM Adventure
+![Saved model in chat with model selector below message box](images/current/workshop3-clean-continue.png)
 
-- Inspect commands and results
-
-- Configure reusable skills
-
-- Create and test tools
-
-- Compare procedural changes
-
-Before attending, confirm individual access and Sandbox sign-in. Creating or editing resources also requires Workspace access. Knowledge access is needed when your task uses a collection.
+**Alt text:** Saved model in chat with model selector below message box
 
 ---
 
 ## Configuring skills and tools — 3
 
-### Tools & Skills
+### Skill Procedures
 
-Skills
+A skill is a plain-text procedure for a repeatable task
 
-Reusable instructions for tasks or procedures.
+Trigger
 
-Tools
+When a procedure applies
 
-Operations such as web search, code execution, or database queries.
+Procedure
 
-Test a request that needs your skill or tool. Check what your model used and whether its response is correct.
+Steps, conditions, and points that require a question
 
-[Tools & Skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
+Output
+
+Required response shape
 
 ---
 
 ## Configuring skills and tools — 4
 
-### Review Previous Work
+### Add Your Skill
 
-Review your model and source collection. This example builds on our chat adventure and source collection. Workshop 3 adds tools and skills. Select STEM Adventure Games — Advanced and review its system prompt.
+Open **Workspace → Skills → Create**
+Enter Name, ID, Description, and [complete instructions](examples/adventure-kit/conclude-adventure.html)
+Review **Access**, then **Save & Create**
 
-- Identify instructions for opening Prism Laboratory.
+![Skills Create form with Name, ID, Description, Access and Save & Create visible](images/current/workshop3-clean-skill-create.png)
 
-- Review attached STEM Wikipedia Experiments collection.
-
-- Distinguish source material, skill instructions, and tool operations.
-
-Use a private copy when adapting this configuration.
+**Alt text:** Skills Create form with Name, ID, Description, Access and Save & Create visible
 
 ---
 
 ## Configuring skills and tools — 5
 
-### Connect Resources
+### Test Your Skill
 
-System prompt
+Select your copy through **Integrations → Skills**
 
-Tell your model when to open a game or consult sources.
+Ask whether an observed record satisfies prompt goals
+Withhold required evidence and check for a question
+Ask to stop with unfinished goals and check its response
 
-Knowledge
-
-STEM Wikipedia Experiments contains scientific and historical sources.
-
-Skill
-
-Extend STEM Adventures describes how to change experimental procedures.
-
-Tool
-
-STEM Adventure opens a game and applies its rules.
-
-Use provided game files to describe rooms, objects, and rules.
+Which task in your teaching or research needs a repeatable procedure?
 
 ---
 
 ## Configuring skills and tools — 6
 
-### Enable Tools
+### Tool Actions
 
-![STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.](images/current/integrations-advanced-2026-09-17.png)
+A tool is a function a model calls to execute an operation
 
-**Alt text:** STEM Adventure Games — Advanced with CUNY AI Lab logo, message box, and Integrations menu showing Tools and Skills.
+Input
 
-With STEM Adventure Games — Advanced selected, open Integrations beside +. Under Tools, confirm STEM Adventure is enabled for this chat.
+Data for an operation
 
-[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
+Execution
+
+Code that applies specified rules
+
+Result
+
+Output a model can inspect or discuss
 
 ---
 
 ## Configuring skills and tools — 7
 
-### Inspect Game Rules
+### Add Adventure Kit
 
-![Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.](images/current/stem-advanced-clean-2026-09-17.png)
+Open **Integrations → Tools**
+Search **Adventure Kit** and select its toggle
 
-**Alt text:** Prism Laboratory running in STEM Adventure Games — Advanced, with room description, move status, command box, and chat message box.
+![Chat Integrations Tools menu with Adventure Kit toggle](images/current/workshop3-clean-kit-select.png)
 
-Send Begin Prism Laboratory to your selected model. Enter help inside its command box, then go north and take prism.
-
-[Open game  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/preview.html](examples/adventure/preview.html)[Read game file  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.html](examples/adventure/prism.html)[Model Registry  https://ailab.gc.cuny.edu/models/](https://ailab.gc.cuny.edu/models/)
+**Alt text:** Chat Integrations Tools menu with Adventure Kit toggle
 
 ---
 
 ## Configuring skills and tools — 8
 
-### Test Game Commands
+### Prepare Your Adventure
 
-- Enter **restart**, then try **record result** before completing required steps.
+Setting, goals, and rules come from your system prompt
 
-- Follow [winning command sequence](skills/reference.html#game-commands). Immediately after take prism, repeat take prism and check its response.
+Ask your model to show how those instructions map into scene, choices, and end conditions
 
-- Enter **save** to download your play record.
+Resolve absent or contradictory instructions
+Review proposed input, then run **Adventure Kit**
 
-- Enter **restart**, then **load** and choose your saved file.
-
-- Enter **inventory**. Check restored items, room, and completion. Enter **undo** to reverse your last move.
+[Copy preparation and run requests](skills/exercises.html#add-and-test-tool)
 
 ---
 
 ## Configuring skills and tools — 9
 
-### Discuss Play Records
+### Test Your Tool
 
-- Enter **discuss** inside your game.
+Compare rendered scene and choices with your prompt
 
-- Review record in message box, then send it.
+Try a choice before and after its prerequisite
+Inspect Undo and Stop
+Copy actual play record into chat
 
-- Check how your model explains a failed action.
-
-- Compare programmed observations with historical sources.
-
-A completed game does not establish conceptual understanding.
+Which step in your teaching or research needs an executable operation?
 
 ---
 
 ## Configuring skills and tools — 10
 
-### Choose Procedures
+### Choose Your Task
 
-Choose one procedure to change or examine.
+### Revise One Item
 
-- Change size of an opening that admits light, called an aperture.
+Copy complete tool code or skill instructions
 
-- Inspect a failed command and its prerequisite.
+Describe an observed problem and one change
 
-- Check a historical claim against source material.
+### Create Your Own
 
-Describe expected behavior before testing.
+Choose your own tool or skill
+
+Specify purpose, required input, and expected result
+
+[Tool copy route](skills/navigation.html#tool-copy) · [Skill instructions](examples/adventure-kit/conclude-adventure.html)
 
 ---
 
 ## Configuring skills and tools — 11
 
-### Define Skills
+### Work With Support
 
-Skills contain reusable Markdown instructions for tasks or procedures.
+Open **CAIL Workspace Support**
+Paste original content or your new task, system prompt, and required sources
+Request complete content, an explanation, and one test · [Copy request](skills/exercises.html#work-with-support)
 
-Models can load attached skills when needed. Enable a skill under Integrations → Skills to include its full instructions in this chat.
+![CAIL Workspace Support model identity with surrounding sidebar](images/current/workshop3-clean-support.png)
 
-Markdown is plain text with formatting such as headings and lists.
-
-[Tools & Skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)[Open WebUI Skills  https://docs.openwebui.com/features/workspace/skills/](https://docs.openwebui.com/features/workspace/skills/)
+**Alt text:** CAIL Workspace Support model identity with surrounding sidebar
 
 ---
 
 ## Configuring skills and tools — 12
 
-### Write Skills
+### Create Your Tool
+
+Open **Workspace → Tools → Create**
+Enter new Name and ID; replace sample code completely
+Review **Access**, then **Save & Create**
+
+For a skill, use [Skills → Create](#4) · Select new copy and [repeat original test](skills/exercises.html#add-new-version)
+
+![Tools Create form with code editor, Access and Save & Create visible](images/current/workshop3-clean-create-tool.png)
+
+**Alt text:** Tools Create form with code editor, Access and Save & Create visible
 
 ---
 
 ## Configuring skills and tools — 13
 
-### Structure Skills
+### Series Reflections
 
-Use three parts to draft this skill.
+What task in your teaching or research could benefit from a skill or tool?
 
-- **Trigger** — When should this skill activate?
+Across the series, how has your approach to custom models changed?
 
-- **Procedure** — Which steps should your model follow?
-
-- **Format** — How should responses appear?
-
- [Read blank template  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#write-instructions](skills/reference.html#write-instructions)[Read complete skill  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](examples/stem-game-skill.html)
-
----
-
-## Configuring skills and tools — 14
-
-### Define Triggers
-
-Describe when your skill should be used.
-
-- Should it load when users request a procedural change?
-
-- Should it also apply to submitted play records?
-
-- Which requests should leave it unused?
-
-```text
-Use this skill when users request an experimental variation in STEM Adventure or ask to examine a submitted play record.
-```
-
----
-
-## Configuring skills and tools — 15
-
-### Write Procedures
-
-Specify one change to your experiment. Use fields listed in [scenario instructions](examples/stem-game-skill.html) when editing your game file.
-
-```text
-1. Identify one experimental decision to change.
-2. Check source material for that procedure.
-3. Revise scenario JSON using fields listed in attached instructions.
-4. List commands that complete your game and one command that should fail, then open your game.
-5. Compare a submitted record with expected behavior.
-```
-
----
-
-## Configuring skills and tools — 16
-
-### Specify Format
-
-Separate your game file, source evidence, and test results.
-
-```text
-Scenario JSON: [Complete scenario]
-Source: [Relevant historical passage]
-Invented elements: [Rooms or simplified observations]
-Winning commands: [Sequence]
-Blocked command: [Command and missing prerequisite]
-Observed result: [Fill only after testing]
-```
-
----
-
-## Configuring skills and tools — 17
-
-### Clone Custom Models
-
-![Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.](images/current/model-clone-advanced-2026-09-17.png)
-
-**Alt text:** Workspace Models filtered to STEM Adventure Games — Advanced, with More menu open and Clone visible.
-
-In Workspace → Models, open ⋯ beside STEM Adventure Games — Advanced and choose Clone.
-
----
-
-## Configuring skills and tools — 18
-
-### Save Private Copy
-
-![Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.](images/current/model-private-3x-2026-09-16.svg)
-
-**Alt text:** Access Control on an unsaved STEM Adventure Games copy shows Private and No access grants. Private to you.
-
-Rename model and ID. Open Access, keep Private, and remove copied users or groups from Access List. Close Access and choose Save & Create.
-
----
-
-## Configuring skills and tools — 19
-
-### Draft Skills
-
-Kale Skill Builder is a custom model that drafts skills for tasks you describe.
-
-Select model ID on bottom right of message box. Choose Kale Skill Builder.
-
-Attach [scenario instructions](examples/stem-game-skill.html) before sending this example.
-
-```text
-Draft a skill for adding an aperture comparison to STEM Adventure. Use attached scenario instructions and preserve existing game rules. Include when to use it, 3–5 steps, expected output, and two proposed tests. Do not claim unrun tests passed.
-```
-
-[Open Kale Skill Builder  https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder)[Read tested skill  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](examples/stem-game-skill.html)[Review draft evaluation  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-skill-drafts](skills/reference.html#check-skill-drafts)[Download skill instructions  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.md](examples/stem-game-skill.md)
-
----
-
-## Configuring skills and tools — 20
-
-### Create Skills
-
-![Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.](images/current/skill-create-3x-2026-09-16.svg)
-
-**Alt text:** Create Skill form in Workspace with empty name, identifier, description, and Instructions fields; outline marks Instructions.
-
-Open Workspace → Skills → Create. Name your skill and add an identifier and description. Paste your saved draft into Instructions, review Access, and choose Save & Create.
-
----
-
-## Configuring skills and tools — 21
-
-### Attach Skills
-
-- Open your private copy under **Workspace → Models**.
-
-- Replace Extend STEM Adventures with your saved draft under **Skills**. Update System Prompt to name your skill.
-
-- Set **Function Calling** to **Native** under **Advanced Parameters**.
-
-- Select **Save & Update** and test a request that uses your skill.
-
-Native function calling lets your model call tools and load attached skill instructions.
-
-[Attach skills  https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/](https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/)
-
----
-
-## Configuring skills and tools — 22
-
-### Extend Procedures
-
-Open your private copy. Attach [Prism Laboratory JSON](examples/adventure/prism.html) and enable your saved draft under **Integrations → Skills**. Send this request.
-
-```text
-Add an aperture comparison to Prism Laboratory using Newton: Experimental Variants. Keep existing rooms and actions. Provide scenario JSON, a winning command sequence, and one command that must fail before its prerequisite. Open the revised game.
-```
-
-[Read skill instructions  https://cuny-ai-lab.github.io/sandbox-series/examples/stem-game-skill.html](examples/stem-game-skill.html)[Download tested scenario  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/aperture.json](examples/adventure/aperture.json)[Download Prism Laboratory  https://cuny-ai-lab.github.io/sandbox-series/examples/adventure/prism.json](examples/adventure/prism.json)
-
----
-
-## Configuring skills and tools — 23
-
-### Test Skills
-
-Use your private copy for both tests. Remove any additional skills from this copy before comparing your draft.
-
-- Remove your skill under **Workspace → Models → Skills**. Save, start a new chat, and confirm it is off under **Integrations → Skills**. Repeat your extension request with Prism Laboratory JSON attached.
-
-- Attach your skill again, save, and repeat that request in another new chat. Attach Prism Laboratory JSON and enable your saved draft under Integrations → Skills.
-
-- Keep base model, system prompt, sources, and tool unchanged.
-
-- Run winning and blocked commands. Compare expected and observed results.
-
-Save generated scenarios and play records.
-
----
-
-## Configuring skills and tools — 24
-
-### Create Adventure Tools
-
-CAIL Tool Creator is a custom model that drafts Python tools for tasks you describe. Save its output as a draft for review and testing. Use tested STEM Adventure code for installation in this workshop.
-
-```text
-Create a minimalist text adventure tool for Open WebUI. Return an interactive HTMLResponse and a description for the model. Track rooms, inventory, prerequisites, and completion. Use one command line with help, undo, restart, save, load, and discuss commands. Keep scenario JSON separate from executable code.
-```
-
-[Open CAIL Tool Creator  https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator)[Download tested tool  https://cuny-ai-lab.github.io/sandbox-series/examples/tools/stem_adventure.py](examples/tools/stem_adventure.py)[Review code evaluation  https://cuny-ai-lab.github.io/sandbox-series/skills/reference.html#check-generated-code](skills/reference.html#check-generated-code)
-
----
-
-## Configuring skills and tools — 25
-
-### Install Tool Code
-
-- Open **Workspace → Tools → Create**.
-
-- Enter a unique Name and ID, then add a Description.
-
-- Paste provided [tested STEM Adventure code](examples/tools/stem_adventure.html). Save your creator draft for separate review.
-
-- Select **Save & Create**.
-
-- In your private model, replace STEM Adventure under **Tools** with your installed copy. Update System Prompt to name it and select **Save & Update**.
-
----
-
-## Configuring skills and tools — 26
-
-### Inspect Tool Results
-
-Start a new chat with your private model. Under Integrations → Tools, select only your installed adventure tool. Send Begin Prism Laboratory, then open its tool-call details.
-
-- Check which scenario was passed to render_stem_adventure.
-
-- Compare returned result with your request.
-
-- Confirm displayed game matches that scenario.
-
-Save any error before revising your request.
-
----
-
-## Configuring skills and tools — 27
-
-### Compare Game Records
-
-Attach saved play records from original and revised games, then send this request.
-
-```text
-Review both play records. Which commands and prerequisites changed? Which observations were programmed? Which historical claims can the uploaded sources support?
-```
-
-Check your model’s account against commands and source passages. Keep expected and observed results separate.
-
----
-
-## Configuring skills and tools — 28
-
-### Record Test Results
-
-| Record | Include |
-| --- | --- |
-| Configuration | Model ID, system prompt, documents, skill instructions, and enabled tools. |
-| Action | Request, instructions used, tool calls and results, and final response. |
-| Judgment | What you expected, what happened, and any change you plan to test. |
-
-Before sharing, confirm others can access your model, collections, skills, and tools. Repeat relevant tests after updates.
-
----
-
-## Configuring skills and tools — 29
-
-### Repeat Tests
-
-- Save prompts, sources, skills, and tool settings
-
-- Compare expected and observed behavior
-
-- Revise instructions from recorded failures
-
-- Verify shared access with intended users
-
-- Retest after model or tool updates
-
-[Return to Composing System Prompts  https://cuny-ai-lab.github.io/sandbox-series/basics/](basics)
+What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?

@@ -33,7 +33,8 @@ def check_participant_copy(tree,location):
   headings=slide.all(lambda n:n.tag in {'h1','h2'})
   if not headings or headings[0].text().strip()!=slide.attrs.get('data-title'):issues.append(location+' heading and outline disagree')
  text=participant_text(tree)
- if re.search(r'\bthe\b',text.replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),re.I):issues.append(location+' definite article in participant copy outside quoted prompts or approved wording')
+ # Preserve exact series-summary questions approved by Zach on October 14.
+ if re.search(r'\bthe\b',text.replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?','').replace('Across the series, how has your approach to custom models changed?','').replace('What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?',''),re.I):issues.append(location+' definite article in participant copy outside quoted prompts or approved wording')
  if re.search(r'\b(facilitator|presenter)\b',text,re.I):issues.append(location+' presenter directions in participant copy')
  for phrase in ['preserve their original disciplinary purposes','instruction drafts, not measured outcomes','these excerpts are discussion material']:
   if phrase in text.lower():issues.append(location+' editorial commentary in participant copy: '+phrase)

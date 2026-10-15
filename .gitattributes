@@ -1,2 +1,3 @@
 *.diff -whitespace
 review/**/source.html -whitespace
+*.pdf binary
