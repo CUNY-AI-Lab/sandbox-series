@@ -4,7 +4,7 @@ When a model calls a tool, it sends a function name and arguments. Sandbox execu
 
 ## Check Your Configuration
 
-Use your private model copy. Record its ID, base model, system prompt, calling mode and attached tools. Confirm Adventure Kit is available and selected. Inspect actual call details after a test and retain errors and returned data
+Use your private model copy. Record its ID, base model, system prompt, calling mode and attached tools. Confirm Adventure Panel is available and selected. Inspect actual call details after a test and retain errors and returned data
 
 | Stage | Record |
 | --- | --- |
@@ -17,19 +17,19 @@ Use your private model copy. Record its ID, base model, system prompt, calling m
 
 ## Add Instructions Before Testing
 
-Add the [orchestration clause](exercises.html#add-skill-instructions) to your model’s system prompt. It calls Extend Adventure Games to coordinate Adventure Kit. Select both in the same model card and Save & Update before testing. Adventure Kit 2.1.0 exposes `render_adventure` with reviewed schema-version-2 JSON text in `scenario_json`; that function and argument were verified in the earlier hosted Clone invocation. The new orchestration sequence remains a separate live check.
+Add the [orchestration clause](exercises.html#add-skill-instructions) to your model’s system prompt. It loads Adventure Panel Play (ID: `extend-adventure-games`) and directs `show_scene` from the attached Adventure Panel tool. Select both on the same model card and Save & Update before testing. Preserve your prompt’s setting, goals, rules, and source instructions.
 
-Read the actual result. `needs_context` and `invalid_input` require correction before play. `render_requested` requests a player display; inspect the rendered player before calling it successful. The model needs the player’s copied Play record to discuss button choices, progress, or completion
+Inspect the emitted function, complete arguments, returned result, and visible panel. A selected button should send its numbered label into chat, possibly after **Confirm Prompt from Embed**. Verify the resulting user message before judging the next scene. If submission is interrupted, copy the displayed choice into chat and send it once. The skill interprets established events; the panel does not independently enforce a full game-state engine.
 
 ## Model Bound Tool Enabler
 
 Filters run before tool execution and can change a request. The existing CAIL Model Bound Tool Enabler filter restores tool IDs already attached to a model when chat composer state omits them. It does not make a model call a function or invent a missing tool binding
 
-Enable **Model Bound Tool Enabler** on your model card before adding Adventure Kit. It restores attached tools when a chat omits them. Keep the card open, check the knowledge collection, tool, skill, and filter, add the orchestration prompt, then Save & Update before testing. This exercise uses the existing filter on your model card.
+Enable **Model Bound Tool Enabler** on your model card before adding Adventure Panel. It restores attached tools when a chat omits them. Keep the card open, check the knowledge collection, tool, skill, and filter, add the orchestration prompt, then Save & Update before testing. This exercise uses the existing filter on your model card.
 
 The filter cannot fix unsupported function calling, malformed arguments, execution errors or a failed display. If the tool is absent from your model's attachments, attach it first. If it is present in the request schema but never called, inspect model support and call mode
 
-## Evidence Status
+## Earlier Adventure Kit Evidence
 
 The October 15 test used the user-authorized STEM Adventure Games (Clone), based on DeepSeek V4 Flash 0731. Adventure Kit 2.1.0 was actually called and rendered an interactive player. Prerequisite, completion, Undo, Stop, and Copy Play Record checks passed. The existing Model Bound Tool Enabler was selected. Its necessity remains unverified because no with/without hosted comparison was run. Local checks of ID merging do not establish necessity
 

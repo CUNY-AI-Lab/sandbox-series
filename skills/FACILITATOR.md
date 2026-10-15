@@ -4,26 +4,26 @@ Tools and Skills · October 15, 2026 · 2:30–4:00 p.m. Eastern
 
 ## Current flow
 
-The user confirmed the saved orchestration skill's menu label is Extend Adventure Games. Opening setup selects that skill, explains tools and examples while the model card remains open, enables Model Bound Tool Enabler, selects Adventure Kit, checks all four attachments, adds one minimal system-prompt clause, and saves the model card once both attachments are selected. Only then do participants open a fresh chat to test orchestration and play. No tester skill belongs in the opening.
+The supplied screenshots name Adventure Panel Play as the skill and Adventure Panel as the tool. Select both on the same model card, check the pictured Model Bound Tool Enabler filter, add the current prompt clause, and save before opening a fresh test chat. The skill supplies a procedure; the tool displays a scene and sends a selected numbered choice to chat. Setting, goals, rules, and sources come from each participant's system prompt.
 
-Adventure Outcomes and Conclude Adventures are later optional experiments. CAIL Workspace Support follows those experiments; participants can revise either component or create their own. The exact user-provided Adventure Outcomes instructions are preserved as a later reference, not an opening default.
+Adventure Outcomes and Conclude Adventure Game remain optional experiments after the first run. CAIL Workspace Support follows those experiments; participants can revise either component or create their own.
 
 | Time Eastern | Activity | Slides |
 | --- | --- | --- |
-| 2:30–2:40 | Continue or clone; define skills and browse examples | 1–5 |
-| 2:40–2:50 | Select Extend Adventure Games | 6 |
-| 2:50–3:00 | Explain tools; enable filter; select Adventure Kit; check the model card; add prompt clause and save | 7–13 |
-| 3:00–3:15 | Run the adventure, inspect calls, and play | 14–15 |
-| 3:15–3:25 | Experiment with other available skills | 16 |
-| 3:25–3:30 | Choose a revision or creation task | 17 |
-| 3:30–3:45 | Work with CAIL Workspace Support | 18–19 |
-| 3:45–4:00 | Add a new version, retest, and reflect | 20–21 |
+| 2:30–2:40 | Continue or clone; define skills and tools; select a base model | 1–5 |
+| 2:40–2:50 | Enable the filter and select Adventure Panel Play | 6–7 |
+| 2:50–3:00 | Select Adventure Panel; check the model card; add the prompt clause and save | 8–10 |
+| 3:00–3:15 | Run the adventure, inspect calls, and play | 11–12 |
+| 3:15–3:25 | Experiment with other available skills | 13 |
+| 3:25–3:30 | Choose a revision or creation task | 14 |
+| 3:30–3:45 | Work with CAIL Workspace Support | 15–16 |
+| 3:45–4:00 | Add a new version, retest, and reflect | 17–18 |
 
 ## Evidence limits
 
-The refreshed optional-skill picker capture is pending because user activity interrupted Firefox. The outdated selector screenshot is omitted from Explore Other Skills until the current saved concluding-skill label is verified.
+Slides 7–9 and 13 use the three user-supplied October 15 screenshots. The source images are embedded unchanged, with separate arrow annotations and numbered labels. The screenshots establish visible names and selection states. They do not establish a successful call, saved configuration, or participant access. The skill ID in the revised prompt clause is `extend-adventure-games`, as recorded in the existing Adventure Panel verification and current model-card text.
 
-The newly requested Extend Adventure Games orchestration sequence has not been live-tested by this task. The owner confirmed its current saved name; its current ID, full instructions, and participant visibility have not been read back. Browser control stopped on a prohibited current URL, and it was not retried or bypassed. Do not label earlier Adventure Outcomes or direct Adventure Kit tests as proof of this new orchestration sequence.
+The results below describe earlier tests at their stated versions. Adventure Kit's declarative state engine and its Undo/Play Record controls are not the same implementation as Adventure Panel's turn-by-turn display. Do not present earlier Kit checks as proof that Panel enforces game state. For Panel, confirm the choice's user message, next scene, rule consistency, and immediate stop. The current slide update runs no new model inference.
 
 The main deck now shows the user-provided live run with view_skill, show_scene, and the ADVENTURES panel. Collapsed call details do not identify the exact skill ID or prove the new minimal prompt was saved. The earlier Adventure Outcomes loading screenshot is kept in the evidence record, outside the opening deck. The original standard model was not resolved across all 67 catalog entries; the user authorized STEM Adventure Games (Clone), DeepSeek V4 Flash 0731, for the successful rehearsals. Advanced was not used for screenshots.
 
@@ -48,7 +48,7 @@ The existing Model Bound Tool Enabler was selected during the successful tests. 
 
 ## Access and Support
 
-Adventure Kit and Adventure Outcomes showed Private/no grants at inspection. The owner then reported granting participant read access to both; post-change visibility remains unverified. Extend Adventure Games is now the opening skill, so verify participant visibility of that saved resource too without expanding permissions or exposing student identifiers.
+Adventure Kit and Adventure Outcomes showed Private/no grants at inspection. The owner then reported granting participant read access to both; post-change visibility remains unverified. Adventure Panel Play is now the opening skill, so verify participant visibility of that saved resource too without expanding permissions or exposing student identifiers.
 
 Earlier CAIL Workspace Support returned a separate labeled Adventure Outcomes proposal with an explicitly unrun test. It was not installed or retested. That proposal is not an opening skill or proof of the new orchestration workflow. The current Support activity is general: revise or create a skill or tool, preserve the original, and test the actual saved result.
 

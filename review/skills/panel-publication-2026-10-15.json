@@ -1,0 +1,40 @@
+{
+  "baseline": "12e9159b6f8497fb08401e7e70e18d9b5e7af617",
+  "slides": 18,
+  "revision": "Adventure Panel Play and Adventure Panel",
+  "approval": "User supplied three current screenshots and instructed: Annotate and update and push.",
+  "source_pixels": "Original PNG bytes embedded unchanged beneath separate vector annotations.",
+  "annotation_note": "Missing arrow artwork reconstructed as vector callouts at recorded coordinates.",
+  "visual_review": {
+    "desktop_slides": 18,
+    "desktop_viewport": [
+      1600,
+      900
+    ],
+    "device_scale_factor": 2,
+    "desktop_overflow": [],
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "mobile_horizontal_overflow": [],
+    "all_slides_inspected": true,
+    "pdf_pages": 18,
+    "pdf_embedded_images_identical_to_browser_render": true,
+    "pdf_pages_rendered": 18,
+    "pdf_pages_visually_inspected": [
+      7,
+      9,
+      10,
+      13
+    ]
+  },
+  "pdf_sha256": "d80d9f5b82b5a02091d86c8aab7712b4e288b459a2537f88e791a870ee364614",
+  "evidence_limits": [
+    "Selection screenshots show configured names, not invocation or participant access.",
+    "Existing collapsed view_skill/show_scene screenshot does not expose the selected skill ID.",
+    "No new hosted model test is claimed by this publication.",
+    "Panel choices return to chat; this revision does not claim deterministic rule enforcement by the Panel."
+  ],
+  "source_provenance": "review/skills/user-panel-screenshots-2026-10-15.json"
+}

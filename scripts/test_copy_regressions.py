@@ -312,7 +312,7 @@ class CopyRegressions(unittest.TestCase):
             self.assertTrue(demo.all(lambda n:n.tag=='img'), 'A demonstration must contain actual visual evidence')
     def test_13_save_load_and_handoff_sequence(self):
         exercises=(ROOT/'skills/EXERCISES.md').read_text()
-        for term in ['system prompt','setting','goals','rules','missing or contradictory','prerequisite','Undo','Stop','actual play record']:
+        for term in ['system prompt','setting','goals','rules','missing or contradictory','prerequisite','Confirm Prompt from Embed','Stop','actual record of choices and results']:
             self.assertIn(term.lower(),exercises.lower())
         play=self.slide('skills/index.html','Test Your Adventure').text()
         for term in ['Run your updated adventure game','Verify configured skill and tool','Then play the rest']:
@@ -320,10 +320,10 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Prism Laboratory',' '.join(s.text() for s in self.decks['skills/index.html']))
     def test_14_skill_comparisons_remove_attached_skill(self):
         skill=self.slide('skills/index.html','Add Your Skill').text()
-        for term in ['Workspace → Models','Extend Adventure Games','Select Skill']:
+        for term in ['Workspace → Models','Adventure Panel Play','Select Skill']:
             self.assertIn(term,skill)
         clause=self.slide('skills/index.html','Add Skill Instructions to the Bottom of Your System Prompt')
-        self.assertEqual(clause.all(lambda n:n.tag=='pre')[0].text(), 'Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.')
+        self.assertEqual(clause.all(lambda n:n.tag=='pre')[0].text(), 'Load the attached Adventure Panel Play skill (extend-adventure-games) and follow it on every turn. Use show_scene from the Adventure Panel tool to display each scene and its choices. Follow this system prompt’s setting, goals, rules, and source instructions.')
         self.assertFalse(clause.all(lambda n:n.tag=='img'))
         self.assertFalse(clause.all(lambda n:n.tag=='p'))
         deck=self.decks['skills/index.html']
@@ -347,11 +347,11 @@ class CopyRegressions(unittest.TestCase):
             self.assertEqual(blocks[0].text(), source.read_text())
         skill=self.slide('skills/index.html','Add Your Skill')
         self.assertFalse(skill.all(lambda n:n.tag=='a'))
-        for term in ['Select Skill', 'Extend Adventure Games']:
+        for term in ['Select Skill', 'Adventure Panel Play']:
             self.assertIn(term,skill.text())
-        self.assertIn('Save & Update',self.slide('skills/index.html','Add the ‘Adventure Kit’ tool').text())
+        self.assertIn('Save & Update',self.slide('skills/index.html','Add the ‘Adventure Panel’ tool').text())
         experiment=self.slide('skills/index.html','Explore Other Skills')
-        self.assertTrue(experiment.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/current/workshop3-conclude-skill-current.svg'))
+        self.assertTrue(experiment.all(lambda n:n.tag=='img' and n.attrs.get('src')=='../images/current/workshop3-panel-other-skills.svg'))
         self.assertFalse(skill.all(lambda n:n.tag=='a' and 'conclude-adventure' in n.attrs.get('href','')))
     def test_16_creators_remain_general_purpose(self):
         config=json.loads((ROOT/'examples/creators/builder-copy.json').read_text())
@@ -831,7 +831,7 @@ class CopyRegressions(unittest.TestCase):
             ('basics/index.html', 'Try Again', 'Continue', self.test_07_controls_and_regeneration_are_explicit),
             ('basics/index.html', 'Led by ', REJECTED[0], self.test_04_explicit_deletions_stay_deleted),
             ('basics/index.html', 'class="prompt-container"', 'class="outside-prompt"', self.test_19_copy_controls_are_inside_prompt_containers),
-            ('skills/index.html', 'extend_adventure_games skill and follow it', 'Invent missing evidence', self.test_14_skill_comparisons_remove_attached_skill),
+            ('skills/index.html', 'attached Adventure Panel Play skill', 'Invent missing evidence', self.test_14_skill_comparisons_remove_attached_skill),
             ('basics/index.html', '<h3>Try Examples</h3>', '<h3>Try Examples</h3><p>Edit scenario_json variables.</p>', self.test_25_introductory_workshops_use_chat_adventure),
             ('basics/index.html', 'setup instructions', 'role instructions', self.test_26_definitions_and_winograd_context),
             ('basics/index.html', 'Continue with CUNY Login', 'Request individual access', self.test_09_access_and_stable_links),

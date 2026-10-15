@@ -212,8 +212,8 @@ class ParticipantContinuity(unittest.TestCase):
         titles=[s.attrs['data-title'] for s in self.decks['skills/index.html'].all(lambda n:n.has_class('slide'))]
         self.assertLess(titles.index('What Is a Tool?'),titles.index('Enable Filter'))
         self.assertEqual(titles.index('Enable Filter')+1,titles.index('Add Your Skill'))
-        self.assertEqual(titles.index('Add Your Skill')+1,titles.index('Add the ‘Adventure Kit’ tool'))
-        self.assertEqual(titles.index('Add the ‘Adventure Kit’ tool')+1,titles.index('Model Card Check-In'))
+        self.assertEqual(titles.index('Add Your Skill')+1,titles.index('Add the ‘Adventure Panel’ tool'))
+        self.assertEqual(titles.index('Add the ‘Adventure Panel’ tool')+1,titles.index('Model Card Check-In'))
         self.assertEqual(titles.index('Model Card Check-In')+1,titles.index('Add Skill Instructions to the Bottom of Your System Prompt'))
         self.assertEqual(titles.index('Add Skill Instructions to the Bottom of Your System Prompt')+1,titles.index('Test Your Adventure'))
         self.assertNotIn('Add Tool Instructions',titles)

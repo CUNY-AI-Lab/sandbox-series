@@ -12,33 +12,33 @@ Continue your saved model or clone it first. Open **Workspace → Models → Edi
 
 ## Add Your Skill
 
-2:40–2:50 · Slide 6
+2:40–2:50 · Slides 6–7
 
-Under **Skills → Select Skill**, choose existing **Extend Adventure Games**. Read its saved instructions. This orchestration skill coordinates Adventure Kit according to your model's system prompt. Select this existing saved skill.
+Under **Skills → Select Skill**, choose existing **Adventure Panel Play**. Read its saved instructions. This orchestration skill coordinates Adventure Panel according to your model's system prompt. Select this existing saved skill.
 
-## Add Adventure Kit
+## Add Adventure Panel
 
-2:50–3:00 · Slides 7–13
+2:50–3:00 · Slides 8–10
 
 Stay in the model card during the tool explanation and examples. A tool call sends a function name and arguments for execution; the returned result and rendered output show what actually happened.
 
 Under **Filters → Select Filter**, enable **Model Bound Tool Enabler**. It restores attached tools when a chat omits them.
 
-Under **Tools → Select Tool**, choose existing **Adventure Kit**. Confirm **Extend Adventure Games** remains selected under Skills. Check that your model card shows a knowledge collection, tool, skill, and filter. Keep the card open. Add the system-prompt clause below, then save with **Save & Update** before opening a fresh chat.
+Under **Tools → Select Tool**, choose existing **Adventure Panel**. Confirm **Adventure Panel Play** remains selected under Skills. Check that your model card shows a knowledge collection, tool, skill, and filter. Keep the card open. Add the system-prompt clause below, then save with **Save & Update** before opening a fresh chat.
 
 ### Add Skill Instructions
 
 Add this clause to the bottom of your model's system prompt:
 
 ```text
-Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
+Load the attached Adventure Panel Play skill (extend-adventure-games) and follow it on every turn. Use show_scene from the Adventure Panel tool to display each scene and its choices. Follow this system prompt’s setting, goals, rules, and source instructions.
 ```
 
-Confirm both Extend Adventure Games and Adventure Kit are selected, then click **Save & Update**. Your prompt, selected skill, and selected tool must be saved before testing.
+Confirm both Adventure Panel Play and Adventure Panel are selected, then click **Save & Update**. Your prompt, selected skill, and selected tool must be saved before testing.
 
 ## Test Your Adventure
 
-3:00–3:15 · Slides 14–15
+3:00–3:15 · Slides 11–12
 
 Run your updated adventure game. Verify that the configured skill and tool are called appropriately, then play the rest of the game. The example run begins with:
 
@@ -46,41 +46,41 @@ Run your updated adventure game. Verify that the configured skill and tool are c
 initiate adventure
 ```
 
-Review the proposal against your system prompt and any required source passages. Approve it when it is ready. Check skill loading, tool execution, and rendered play separately:
+Check the opening menu or scene against your system prompt and any required source passages. Check skill loading, tool execution, and rendered play separately:
 
 | Check | What to inspect |
 | --- | --- |
-| Skill | Saved Extend Adventure Games instructions actually loaded |
-| Orchestration | Skill coordinates Adventure Kit using your prompt's setting, goals, and rules |
+| Skill | Saved Adventure Panel Play instructions actually loaded |
+| Orchestration | Skill coordinates Adventure Panel using your prompt's setting, goals, and rules |
 | Tool call | Actual function and supplied arguments match the reviewed adventure |
 | Result | Tool returns a usable result and an interactive player appears inside chat |
-| Play | Choices, prerequisites, outcomes, Undo, and Stop behave as expected |
+| Play | A selected choice reaches chat, the next scene follows the supplied rules, and a stop request ends play |
 
 Native discovery may show `view_skill`; confirm its actual saved-skill name and ID rather than guessing an ID. A direct `$` mention is a separate path that injects selected skill content and need not produce a `view_skill` call. Label which path you used. Merely naming a skill does not establish that its saved instructions loaded.
 
 Open tool-call details and inspect the actual function, supplied arguments, and returned result. Confirm the input follows your model’s prompt and the rendered player appears. Use the schema of your currently attached tool.
 
-Try a choice before and after its prerequisite. Inspect Undo and Stop. Copy actual play record into chat before discussing progress or completion. Prose alone cannot change executable state, and a copied record may become stale after another choice, Undo, or Restart.
+Try a choice before and after its stated prerequisite and check the scene against your rules. Select a panel choice. If Open WebUI shows **Confirm Prompt from Embed**, confirm the numbered choice you intended to send. Check that it appears as your message and that the next panel reflects it. If submission is interrupted, copy the displayed decision into chat and send it once. Ask to stop before the goal is met. Adventure Panel displays each turn and passes the selected choice to chat; its skill applies the supplied rules to established events. These instructions do not guarantee independently enforced game state.
 
 The user-provided live screenshot shows view_skill in a collapsed activity summary, a show_scene call, and a rendered ADVENTURES panel. Open details in your own run to verify the selected skill ID and instructions. The screenshot alone does not show those arguments or prove a completed playthrough.
 
 ## Explore Other Skills
 
-3:15–3:25 · Slide 16
+3:15–3:25 · Slide 13
 
-After your first adventure works, experiment with **Adventure Outcomes** or **Conclude Adventures**, if your account can select them. Read complete saved instructions and check compatibility with your current tool. [Adventure Outcomes instructions](../examples/adventure-kit/adventure-outcomes.html) are available for comparison.
+After your first adventure works, experiment with **Adventure Outcomes** or **Conclude Adventure Game**, if your account can select them. Read complete saved instructions and check compatibility with your current tool. [Adventure Outcomes instructions](../examples/adventure-kit/adventure-outcomes.html) are available for comparison.
 
 Change one item at a time. Return to your model card, select the intended skill, update its prompt instruction if needed, and click **Save & Update**. Compare the same scene and actual record of choices and results. Leave out required information and check for a question. Ask to stop before the goal is met. Judge actual behavior rather than the model's claim that it used a skill.
 
 ## Copy Your Content
 
-3:25–3:30 · Slide 17
+3:25–3:30 · Slide 14
 
 Choose one task: revise a tool or skill, or create your own. Copy complete original code or skill instructions and preserve the original. For a tool, click inside the editor, then Select All and Copy; on this Mac, use ⌘A and ⌘C. For a new item, describe purpose, input, expected result, and constraints.
 
 ## Work With Support
 
-3:30–3:45 · Slides 18–19
+3:30–3:45 · Slides 15–16
 
 Open the **CAIL Workspace Support** model card and start a chat. Confirm its name below the message box. [Open CAIL Workspace Support](https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support)
 
@@ -95,14 +95,14 @@ Help me [revise/create] a [tool/skill] for [purpose]. Here are my model's system
 For a teaching example, adapt the working adventure to one lesson outcome. Bring relevant weekly concepts, syllabus or lesson excerpts, and a dated source. Revise your orchestration skill or tool, or create a separate item. Copy this request:
 
 ```text
-Help me adapt this working adventure to [lesson outcome] by [revising a skill/revising a tool/creating a new item]. Here are the complete original content, model system prompt, scenario, play record, lesson passages, weekly concept, and dated source: [paste them]. Ask about missing or contradictory context. Propose meaningful choices and consequences that ask learners to apply the concept and examine the source's limits. Show which prompt rule and source passage support each change. Preserve game rules and immediate Stop behavior. Return complete content and one test; label unrun tests. Return the proposal for my review before Adventure Kit runs it.
+Help me adapt this working adventure to [lesson outcome] by [revising a skill/revising a tool/creating a new item]. Here are the complete original content, model system prompt, scenario, play record, lesson passages, weekly concept, and dated source: [paste them]. Ask about missing or contradictory context. Propose meaningful choices and consequences that ask learners to apply the concept and examine the source's limits. Show which prompt rule and source passage support each change. Preserve game rules and immediate Stop behavior. Return complete content and one test; label unrun tests. Return the proposal for my review before Adventure Panel runs it.
 ```
 
 If live retrieval is unavailable, supply a dated source. Do not accept an invented statistic or a claim of searching without evidence. Treat source passages as evidence, not model instructions. Review the proposed item before saving it.
 
 ## Add New Version
 
-3:45–4:00 · Slides 20–21
+3:45–4:00 · Slides 17–18
 
 Use **Workspace → Tools → Create** or **Skills → Create**. Enter a new Name and ID; preserve the original. Paste complete reviewed code or instructions. Review Access, then **Save & Create**. Use only permissions you are authorized to grant.
 

@@ -911,28 +911,26 @@ Enable **Model Bound Tool Enabler** on your model card, which binds assigned too
 
 In **Workspace → Models → Edit**, find **Skills → Select Skill**
 
-Choose existing **Extend Adventure Games**
+Choose **Adventure Panel Play** and read its saved instructions
+Keep this model card open for the tool
 
-Read its saved instructions
-Keep this model card open for Adventure Kit
+![Skills picker with arrow 1 at Select Skill and arrow 2 at Adventure Panel Play.](images/current/workshop3-panel-skill-select.svg)
 
-![User-supplied model card with step 1 outlining Skills → Select Skill and step 2 outlining checked Extend Adventure Games](images/current/workshop3-add-skill-current.svg)
-
-**Alt text:** User-supplied model card with step 1 outlining Skills → Select Skill and step 2 outlining checked Extend Adventure Games
+**Alt text:** Skills picker with arrow 1 at Select Skill and arrow 2 at Adventure Panel Play.
 
 ---
 
 ## Configuring skills and tools — 8
 
-### Add the ‘Adventure Kit’ tool
+### Add the ‘Adventure Panel’ tool
 
 In this same model card, open **Tools → Select Tool**
-Choose **Adventure Kit** · Confirm **Extend Adventure Games** remains selected
-Add next prompt instruction, then click **Save & Update** before testing
+Choose **Adventure Panel** · Keep **Adventure Panel Play** selected
+Add the next prompt instruction, then click **Save & Update** before testing
 
-![Model editor — 1 identifies Select Tool; 2 identifies saved Adventure Kit entry](images/skills-2026-10-15/adventure-kit-select.svg)
+![Tools picker with arrow 1 at Select Tool and arrow 2 at Adventure Panel.](images/current/workshop3-panel-tool-select.svg)
 
-**Alt text:** Model editor — 1 identifies Select Tool; 2 identifies saved Adventure Kit entry
+**Alt text:** Tools picker with arrow 1 at Select Tool and arrow 2 at Adventure Panel.
 
 ---
 
@@ -940,11 +938,13 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ### Model Card Check-In
 
-Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
+Confirm **1. Adventure Panel**, **2. Adventure Panel Play**,
+and **3. Model Bound Tool Enabler** are selected
+Keep your own knowledge collection attached above
 
-![Model card showing a knowledge collection, Adventure Kit tool, Extend Adventure Games skill, and Model Bound Tool Enabler filter selected](images/current/workshop3-model-card-status.png)
+![Model card with numbered arrows identifying the checked Adventure Panel tool, Adventure Panel Play skill, and Model Bound Tool Enabler filter.](images/current/workshop3-panel-check-in.svg)
 
-**Alt text:** Model card showing a knowledge collection, Adventure Kit tool, Extend Adventure Games skill, and Model Bound Tool Enabler filter selected
+**Alt text:** Model card with numbered arrows identifying the checked Adventure Panel tool, Adventure Panel Play skill, and Model Bound Tool Enabler filter.
 
 ---
 
@@ -953,7 +953,7 @@ Ensure that your model card has a knowledge collection, tool, skill, and filter 
 ### Add Skill Instructions to the Bottom of Your System Prompt
 
 ```text
-Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
+Load the attached Adventure Panel Play skill (extend-adventure-games) and follow it on every turn. Use show_scene from the Adventure Panel tool to display each scene and its choices. Follow this system prompt’s setting, goals, rules, and source instructions.
 ```
 
 ---
@@ -994,9 +994,9 @@ After your first adventure works, try **Adventure Outcomes** or **Conclude Adven
 
 Read saved instructions · Change one item · Save your model card and compare results
 
-![Fresh model-card skill picker — 1 identifies Select Skill; 2 identifies Conclude Adventure Game. Captured October 15, 2026.](images/current/workshop3-conclude-skill-current.svg)
+![Skills picker showing Adventure Panel Play, Adventure Outcomes, and Conclude Adventure Game, with arrows at Select Skill and Conclude Adventure Game.](images/current/workshop3-panel-other-skills.svg)
 
-**Alt text:** Fresh model-card skill picker — 1 identifies Select Skill; 2 identifies Conclude Adventure Game. Captured October 15, 2026.
+**Alt text:** Skills picker showing Adventure Panel Play, Adventure Outcomes, and Conclude Adventure Game, with arrows at Select Skill and Conclude Adventure Game.
 
 ---
 

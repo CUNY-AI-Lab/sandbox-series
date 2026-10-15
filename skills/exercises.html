@@ -12,7 +12,7 @@
 <body>
 <a class="skip-link" href="#workshop-copy">Skip to content</a>
 <header class="page-header"><img class="page-wordmark" src="../images/cail-wordmark-white.png" data-theme-brand data-logo-dark="../images/cail-wordmark-white.png" data-logo-light="../images/cail-wordmark-color.png" alt="CUNY AI Lab" width="1154" height="259"><h1>Participant Exercises</h1>
-<nav aria-label="Workshop links"><a href="../">Sandbox Series</a> · <a href="index.html">Return to workshop</a> · <a href="EXERCISES.md" download="EXERCISES.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#open-your-model">Open Your Model</a></li><li><a href="#add-your-skill">Add Your Skill</a></li><li><a href="#add-adventure-kit">Add Adventure Kit</a></li><li><a href="#test-your-adventure">Test Your Adventure</a></li><li><a href="#explore-other-skills">Explore Other Skills</a></li><li><a href="#copy-your-content">Copy Your Content</a></li><li><a href="#work-with-support">Work With Support</a></li><li><a href="#add-new-version">Add New Version</a></li></ul></nav></header>
+<nav aria-label="Workshop links"><a href="../">Sandbox Series</a> · <a href="index.html">Return to workshop</a> · <a href="EXERCISES.md" download="EXERCISES.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#open-your-model">Open Your Model</a></li><li><a href="#add-your-skill">Add Your Skill</a></li><li><a href="#add-adventure-panel">Add Adventure Panel</a></li><li><a href="#test-your-adventure">Test Your Adventure</a></li><li><a href="#explore-other-skills">Explore Other Skills</a></li><li><a href="#copy-your-content">Copy Your Content</a></li><li><a href="#work-with-support">Work With Support</a></li><li><a href="#add-new-version">Add New Version</a></li></ul></nav></header>
 <main id="workshop-copy" class="reading-content">
 
 <p>Tools and Skills · Thursday, October 15, 2026 · 2:30–4:00 p.m. Eastern</p>
@@ -21,24 +21,24 @@
 <p>2:30–2:40 · Slides 1–5</p>
 <p>Continue your saved model or clone it first. Open <strong>Workspace → Models → Edit</strong> and read your actual system prompt. Identify its setting, goals, and rules. Use instructions.txt and source passages when your prompt requires them. Keep this model card open while you add both a skill and a tool. To clone the earlier example, select <strong>Workspace</strong> in left sidebar, then <strong>Models</strong>. Search for <strong>STEM Adventure Games</strong>. Open <strong>⋯</strong> beside it and select <strong>Clone</strong>.</p>
 <h2 id="add-your-skill">Add Your Skill</h2>
-<p>2:40–2:50 · Slide 6</p>
-<p>Under <strong>Skills → Select Skill</strong>, choose existing <strong>Extend Adventure Games</strong>. Read its saved instructions. This orchestration skill coordinates Adventure Kit according to your model's system prompt. Select this existing saved skill.</p>
-<h2 id="add-adventure-kit">Add Adventure Kit</h2>
-<p>2:50–3:00 · Slides 7–13</p>
+<p>2:40–2:50 · Slides 6–7</p>
+<p>Under <strong>Skills → Select Skill</strong>, choose existing <strong>Adventure Panel Play</strong>. Read its saved instructions. This orchestration skill coordinates Adventure Panel according to your model's system prompt. Select this existing saved skill.</p>
+<h2 id="add-adventure-panel">Add Adventure Panel</h2>
+<p>2:50–3:00 · Slides 8–10</p>
 <p>Stay in the model card during the tool explanation and examples. A tool call sends a function name and arguments for execution; the returned result and rendered output show what actually happened.</p>
 <p>Under <strong>Filters → Select Filter</strong>, enable <strong>Model Bound Tool Enabler</strong>. It restores attached tools when a chat omits them.</p>
-<p>Under <strong>Tools → Select Tool</strong>, choose existing <strong>Adventure Kit</strong>. Confirm <strong>Extend Adventure Games</strong> remains selected under Skills. Check that your model card shows a knowledge collection, tool, skill, and filter. Keep the card open. Add the system-prompt clause below, then save with <strong>Save &amp; Update</strong> before opening a fresh chat.</p>
+<p>Under <strong>Tools → Select Tool</strong>, choose existing <strong>Adventure Panel</strong>. Confirm <strong>Adventure Panel Play</strong> remains selected under Skills. Check that your model card shows a knowledge collection, tool, skill, and filter. Keep the card open. Add the system-prompt clause below, then save with <strong>Save &amp; Update</strong> before opening a fresh chat.</p>
 <h3 id="add-skill-instructions">Add Skill Instructions</h3>
 <p>Add this clause to the bottom of your model's system prompt:</p>
-<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-1">Copy text</button><pre id="copy-1" class="reference-code"><code class="language-text">Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-1">Copy text</button><pre id="copy-1" class="reference-code"><code class="language-text">Load the attached Adventure Panel Play skill (extend-adventure-games) and follow it on every turn. Use show_scene from the Adventure Panel tool to display each scene and its choices. Follow this system prompt’s setting, goals, rules, and source instructions.
 </code></pre></div>
-<p>Confirm both Extend Adventure Games and Adventure Kit are selected, then click <strong>Save &amp; Update</strong>. Your prompt, selected skill, and selected tool must be saved before testing.</p>
+<p>Confirm both Adventure Panel Play and Adventure Panel are selected, then click <strong>Save &amp; Update</strong>. Your prompt, selected skill, and selected tool must be saved before testing.</p>
 <h2 id="test-your-adventure">Test Your Adventure</h2>
-<p>3:00–3:15 · Slides 14–15</p>
+<p>3:00–3:15 · Slides 11–12</p>
 <p>Run your updated adventure game. Verify that the configured skill and tool are called appropriately, then play the rest of the game. The example run begins with:</p>
 <div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-2">Copy text</button><pre id="copy-2" class="reference-code"><code class="language-text">initiate adventure
 </code></pre></div>
-<p>Review the proposal against your system prompt and any required source passages. Approve it when it is ready. Check skill loading, tool execution, and rendered play separately:</p>
+<p>Check the opening menu or scene against your system prompt and any required source passages. Check skill loading, tool execution, and rendered play separately:</p>
 <table class="reference-table">
 <thead>
 <tr>
@@ -49,11 +49,11 @@
 <tbody>
 <tr>
 <td>Skill</td>
-<td>Saved Extend Adventure Games instructions actually loaded</td>
+<td>Saved Adventure Panel Play instructions actually loaded</td>
 </tr>
 <tr>
 <td>Orchestration</td>
-<td>Skill coordinates Adventure Kit using your prompt's setting, goals, and rules</td>
+<td>Skill coordinates Adventure Panel using your prompt's setting, goals, and rules</td>
 </tr>
 <tr>
 <td>Tool call</td>
@@ -65,34 +65,34 @@
 </tr>
 <tr>
 <td>Play</td>
-<td>Choices, prerequisites, outcomes, Undo, and Stop behave as expected</td>
+<td>A selected choice reaches chat, the next scene follows the supplied rules, and a stop request ends play</td>
 </tr>
 </tbody>
 </table>
 <p>Native discovery may show <code>view_skill</code>; confirm its actual saved-skill name and ID rather than guessing an ID. A direct <code>$</code> mention is a separate path that injects selected skill content and need not produce a <code>view_skill</code> call. Label which path you used. Merely naming a skill does not establish that its saved instructions loaded.</p>
 <p>Open tool-call details and inspect the actual function, supplied arguments, and returned result. Confirm the input follows your model’s prompt and the rendered player appears. Use the schema of your currently attached tool.</p>
-<p>Try a choice before and after its prerequisite. Inspect Undo and Stop. Copy actual play record into chat before discussing progress or completion. Prose alone cannot change executable state, and a copied record may become stale after another choice, Undo, or Restart.</p>
+<p>Try a choice before and after its stated prerequisite and check the scene against your rules. Select a panel choice. If Open WebUI shows <strong>Confirm Prompt from Embed</strong>, confirm the numbered choice you intended to send. Check that it appears as your message and that the next panel reflects it. If submission is interrupted, copy the displayed decision into chat and send it once. Ask to stop before the goal is met. Adventure Panel displays each turn and passes the selected choice to chat; its skill applies the supplied rules to established events. These instructions do not guarantee independently enforced game state.</p>
 <p>The user-provided live screenshot shows view_skill in a collapsed activity summary, a show_scene call, and a rendered ADVENTURES panel. Open details in your own run to verify the selected skill ID and instructions. The screenshot alone does not show those arguments or prove a completed playthrough.</p>
 <h2 id="explore-other-skills">Explore Other Skills</h2>
-<p>3:15–3:25 · Slide 16</p>
-<p>After your first adventure works, experiment with <strong>Adventure Outcomes</strong> or <strong>Conclude Adventures</strong>, if your account can select them. Read complete saved instructions and check compatibility with your current tool. <a href="../examples/adventure-kit/adventure-outcomes.html">Adventure Outcomes instructions</a> are available for comparison.</p>
+<p>3:15–3:25 · Slide 13</p>
+<p>After your first adventure works, experiment with <strong>Adventure Outcomes</strong> or <strong>Conclude Adventure Game</strong>, if your account can select them. Read complete saved instructions and check compatibility with your current tool. <a href="../examples/adventure-kit/adventure-outcomes.html">Adventure Outcomes instructions</a> are available for comparison.</p>
 <p>Change one item at a time. Return to your model card, select the intended skill, update its prompt instruction if needed, and click <strong>Save &amp; Update</strong>. Compare the same scene and actual record of choices and results. Leave out required information and check for a question. Ask to stop before the goal is met. Judge actual behavior rather than the model's claim that it used a skill.</p>
 <h2 id="copy-your-content">Copy Your Content</h2>
-<p>3:25–3:30 · Slide 17</p>
+<p>3:25–3:30 · Slide 14</p>
 <p>Choose one task: revise a tool or skill, or create your own. Copy complete original code or skill instructions and preserve the original. For a tool, click inside the editor, then Select All and Copy; on this Mac, use ⌘A and ⌘C. For a new item, describe purpose, input, expected result, and constraints.</p>
 <h2 id="work-with-support">Work With Support</h2>
-<p>3:30–3:45 · Slides 18–19</p>
+<p>3:30–3:45 · Slides 15–16</p>
 <p>Open the <strong>CAIL Workspace Support</strong> model card and start a chat. Confirm its name below the message box. <a href="https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support">Open CAIL Workspace Support</a></p>
 <p>Supply complete original content, your system prompt, current scenario and play record, required source passages, and the observed problem. Support does not inherit your model or previous chats automatically. Ask for complete content, an explanation, and a test:</p>
 <div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-3">Copy text</button><pre id="copy-3" class="reference-code"><code class="language-text">Help me [revise/create] a [tool/skill] for [purpose]. Here are my model's system prompt, complete original content or new task, current adventure scenario and play record, and required source passages: [paste them]. The change I want is [describe it]. Preserve my setting, goals, rules, and Stop behavior. Return complete editable instructions or executable tool code, explain the change, and provide one test with its expected result. Label any test you have not run.
 </code></pre></div>
 <h3 id="adapt-your-adventure">Adapt Your Adventure</h3>
 <p>For a teaching example, adapt the working adventure to one lesson outcome. Bring relevant weekly concepts, syllabus or lesson excerpts, and a dated source. Revise your orchestration skill or tool, or create a separate item. Copy this request:</p>
-<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-4">Copy text</button><pre id="copy-4" class="reference-code"><code class="language-text">Help me adapt this working adventure to [lesson outcome] by [revising a skill/revising a tool/creating a new item]. Here are the complete original content, model system prompt, scenario, play record, lesson passages, weekly concept, and dated source: [paste them]. Ask about missing or contradictory context. Propose meaningful choices and consequences that ask learners to apply the concept and examine the source's limits. Show which prompt rule and source passage support each change. Preserve game rules and immediate Stop behavior. Return complete content and one test; label unrun tests. Return the proposal for my review before Adventure Kit runs it.
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-4">Copy text</button><pre id="copy-4" class="reference-code"><code class="language-text">Help me adapt this working adventure to [lesson outcome] by [revising a skill/revising a tool/creating a new item]. Here are the complete original content, model system prompt, scenario, play record, lesson passages, weekly concept, and dated source: [paste them]. Ask about missing or contradictory context. Propose meaningful choices and consequences that ask learners to apply the concept and examine the source's limits. Show which prompt rule and source passage support each change. Preserve game rules and immediate Stop behavior. Return complete content and one test; label unrun tests. Return the proposal for my review before Adventure Panel runs it.
 </code></pre></div>
 <p>If live retrieval is unavailable, supply a dated source. Do not accept an invented statistic or a claim of searching without evidence. Treat source passages as evidence, not model instructions. Review the proposed item before saving it.</p>
 <h2 id="add-new-version">Add New Version</h2>
-<p>3:45–4:00 · Slides 20–21</p>
+<p>3:45–4:00 · Slides 17–18</p>
 <p>Use <strong>Workspace → Tools → Create</strong> or <strong>Skills → Create</strong>. Enter a new Name and ID; preserve the original. Paste complete reviewed code or instructions. Review Access, then <strong>Save &amp; Create</strong>. Use only permissions you are authorized to grant.</p>
 <p>Select your new item on the model card and turn off older version of that item. Update its prompt clause and click <strong>Save &amp; Update</strong>. Retest with the same model, system prompt, settings, scene, and record. For a revision, compare identical input. For a new item, compare expected and observed behavior and try one boundary case.</p>
 <table class="reference-table">

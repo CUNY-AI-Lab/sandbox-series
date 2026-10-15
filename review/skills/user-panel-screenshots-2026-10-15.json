@@ -1,0 +1,70 @@
+[
+  {
+    "file": "images/current/workshop3-panel-skill-select.svg",
+    "source": "User attachment: select-skill.png",
+    "source_sha256": "98620baf5d981a61ef0e3cdca87742f05b16c7ddd1b8f3286f1da644c9396616",
+    "source_dimensions": [
+      1302,
+      800
+    ],
+    "viewBox": [
+      0,
+      270,
+      840,
+      215
+    ],
+    "annotation": "Reconstructed vector arrows and numbers at recorded Air coordinates. Original PNG bytes embedded unchanged. Not byte-identical to the unavailable Air arrow bitmap.",
+    "evidence": "Selection/configuration only; no hosted execution claim."
+  },
+  {
+    "file": "images/current/workshop3-panel-tool-select.svg",
+    "source": "User attachment: select-tool.png",
+    "source_sha256": "5a1cb1eef3f712927ad0d9ea97642cbbec226322619904887b8103a9336bee87",
+    "source_dimensions": [
+      1694,
+      732
+    ],
+    "viewBox": [
+      0,
+      55,
+      840,
+      190
+    ],
+    "annotation": "Reconstructed vector arrows and numbers at recorded Air coordinates. Original PNG bytes embedded unchanged. Not byte-identical to the unavailable Air arrow bitmap.",
+    "evidence": "Selection/configuration only; no hosted execution claim."
+  },
+  {
+    "file": "images/current/workshop3-panel-check-in.svg",
+    "source": "User attachment: selected-integrations.png",
+    "source_sha256": "f4add125e3931b334e76cfb285072afdc5bf222241e3c3f243038ac0036da155",
+    "source_dimensions": [
+      1488,
+      518
+    ],
+    "viewBox": [
+      -110,
+      65,
+      1240,
+      440
+    ],
+    "annotation": "Reconstructed vector arrows and numbers at recorded Air coordinates. Original PNG bytes embedded unchanged. Not byte-identical to the unavailable Air arrow bitmap.",
+    "evidence": "Selection/configuration only; no hosted execution claim."
+  },
+  {
+    "file": "images/current/workshop3-panel-other-skills.svg",
+    "source": "User attachment: select-skill.png",
+    "source_sha256": "98620baf5d981a61ef0e3cdca87742f05b16c7ddd1b8f3286f1da644c9396616",
+    "source_dimensions": [
+      1302,
+      800
+    ],
+    "viewBox": [
+      0,
+      270,
+      840,
+      275
+    ],
+    "annotation": "Reconstructed vector arrows and numbers at recorded Air coordinates. Original PNG bytes embedded unchanged. Not byte-identical to the unavailable Air arrow bitmap.",
+    "evidence": "Selection/configuration only; no hosted execution claim."
+  }
+]
