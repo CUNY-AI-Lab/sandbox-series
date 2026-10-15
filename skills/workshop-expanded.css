@@ -38,3 +38,21 @@ body[data-workshop="skills"] .screenshot-slide .screenshot-img{
  body[data-workshop="skills"] .columns{grid-template-columns:1fr;gap:24px;}
  body[data-workshop="skills"] .screenshot-slide .screenshot-img{width:100%;max-height:none;}
 }
+
+/* Draft revision: follow fall-series left-aligned explanations in a centered content column. */
+body[data-workshop="skills"]{--body:clamp(26px,2.4vw,34px);--support:clamp(23px,2vw,30px);}
+body[data-workshop="skills"] .slide:not(.workshop-cover) .slide-inner{gap:22px;}
+body[data-workshop="skills"] .slide-body{align-items:flex-start;text-align:left;}
+body[data-workshop="skills"] .slide-body>h2,
+body[data-workshop="skills"] .slide-inner>h1,
+body[data-workshop="skills"] .feature-list dt,
+body[data-workshop="skills"] .feature-list dd{text-align:left;}
+body[data-workshop="skills"] .slide-inner>h1{width:100%;max-width:1120px;}
+body[data-workshop="skills"] .screenshot-slide figcaption{max-width:1120px;align-items:flex-start;text-align:left;line-height:1.35;}
+body[data-workshop="skills"] .screenshot-slide .screenshot-img{max-height:460px;}
+body[data-workshop="skills"] .feature-list{margin:4px 0 0;}
+body[data-workshop="skills"] .slide-body>p{max-width:1100px;}
+
+/* Full copyable system-prompt clause, kept readable on one slide. */
+body[data-workshop="skills"] .tool-prompt-clause{font-size:clamp(26px,2.2vw,32px);line-height:1.35;}
+body[data-workshop="skills"] .tool-prompt-check{font-size:var(--support);line-height:1.35;}

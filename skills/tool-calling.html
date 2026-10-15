@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check Tool Calling | CUNY AI Lab</title>
+<link rel="icon" type="image/svg+xml" href="../images/cail-favicon.svg">
+<link rel="stylesheet" href="../css/workshop-copy.css?v=8b578b460376">
+<link rel="stylesheet" href="../css/theme.css?v=20260929-controls">
+<script src="../js/theme.js?v=20260929-controls" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workshop-copy">Skip to content</a>
+<header class="page-header"><img class="page-wordmark" src="../images/cail-wordmark-white.png" data-theme-brand data-logo-dark="../images/cail-wordmark-white.png" data-logo-light="../images/cail-wordmark-color.png" alt="CUNY AI Lab" width="1154" height="259"><h1>Check Tool Calling</h1>
+<nav aria-label="Workshop links"><a href="../">Sandbox Series</a> · <a href="index.html">Return to workshop</a> · <a href="tool-calling.md" download="tool-calling.md">Download Markdown</a></nav><nav class="copy-outline" aria-label="Page outline"><ul><li><a href="#check-your-configuration">Check Your Configuration</a></li><li><a href="#add-instructions-before-testing">Add Instructions Before Testing</a></li><li><a href="#model-bound-tool-enabler">Model Bound Tool Enabler</a></li><li><a href="#evidence-status">Evidence Status</a></li></ul></nav></header>
+<main id="workshop-copy" class="reading-content">
+
+<p>When a model calls a tool, it sends a function name and arguments. Sandbox executes that function and returns a result. This is tool calling, otherwise known as function calling. A statement that a tool will run is not execution evidence</p>
+<h2 id="check-your-configuration">Check Your Configuration</h2>
+<p>Use your private model copy. Record its ID, base model, system prompt, calling mode and attached tools. Confirm Adventure Kit is available and selected. Inspect actual call details after a test and retain errors and returned data</p>
+<table class="reference-table">
+<thead>
+<tr>
+<th>Stage</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Configuration</td>
+<td>Model and base IDs, Native function calling, attached tool ID and available schema</td>
+</tr>
+<tr>
+<td>Request</td>
+<td>Exact prompt and supplied adventure context</td>
+</tr>
+<tr>
+<td>Call</td>
+<td>Emitted function name and complete arguments</td>
+</tr>
+<tr>
+<td>Execution</td>
+<td>Returned status, result or error</td>
+</tr>
+<tr>
+<td>Display</td>
+<td>Actual rendered player and one observed action</td>
+</tr>
+<tr>
+<td>Response</td>
+<td>Model follow-up compared with returned data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-instructions-before-testing">Add Instructions Before Testing</h2>
+<p>Every participant adds the <a href="exercises.html#add-tool-instructions">tool-calling clause</a> to their model’s system prompt, saves it, and preserves the existing adventure instructions. The clause calls <code>render_adventure</code> with reviewed schema-version-2 JSON text in <code>scenario_json</code> after the player approves the adventure. This function and argument are verified in the October 14 hosted 2.0.0 export. Current model binding and outgoing schema remain live checks</p>
+<p>Read the actual result. <code>needs_context</code> and <code>invalid_input</code> require correction before play. <code>render_requested</code> requests a player display; inspect the rendered player before calling it successful. The model needs the player’s copied Play record to discuss button choices, progress, or completion</p>
+<h2 id="model-bound-tool-enabler">Model Bound Tool Enabler</h2>
+<p>Filters run before tool execution and can change a request. The existing CAIL Model Bound Tool Enabler filter restores tool IDs already attached to a model when chat composer state omits them. It does not make a model call a function or invent a missing tool binding</p>
+<p>Use this conditional check before implementing your adventure. If call details show a model-attached tool is missing, inspect the existing filter on your private model card, select it if available, save your copy and repeat the identical test in a fresh chat. Confirm the current filter before use. Do not install a replacement or enable it globally for this exercise</p>
+<p>The filter cannot fix unsupported function calling, malformed arguments, execution errors or a failed display. If the tool is absent from your model's attachments, attach it first. If it is present in the request schema but never called, inspect model support and call mode</p>
+<h2 id="evidence-status">Evidence Status</h2>
+<p>Earlier agent preparation verified Adventure Kit execution in a separate DeepSeek V4 Flash 0731 QA configuration with Native calling and supplied fictional material. Current STEM model invocation and a live enabler comparison remain unverified. Eleven local checks verified the preserved enabler's ID-merging behavior. Those checks used no hosted model</p>
+<p>Generic tool and skill content contain no built-in adventure. Design your scene from your active model's system prompt. Resolve missing or contradictory goals before execution and copy actual Play record before discussing an executable run in chat</p>
+<p><a href="index.html">Slides</a> · <a href="exercises.html">Participant exercises</a> · <a href="facilitator.html">Facilitator notes</a></p>
+</main>
+<p aria-live="polite" role="status" id="copy-status"></p>
+<script src="../js/examples.js" defer></script>
+</body>
+</html>

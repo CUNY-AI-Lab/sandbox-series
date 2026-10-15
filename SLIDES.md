@@ -822,11 +822,11 @@ Thursday, October 15, 2026   2:30–4:00 p.m. Eastern
 
 ## Configuring skills and tools — 2
 
-### Continue Your Model
+### Choose Your Own Adventure
 
-Choose your saved model below message box
+Continue your saved model, or clone **STEM Adventure Games**
 Read its system prompt for setting, goals, and rules
-[Clone route](skills/navigation.html#clone) · [Earlier instructions and sources](skills/exercises.html#clone-or-continue)
+[Clone instructions](skills/navigation.html#clone) · [Adventure example](examples/stem-chat-system-prompt.html)
 
 ![Saved model in chat with model selector below message box](images/current/workshop3-clean-continue.png)
 
@@ -836,61 +836,113 @@ Read its system prompt for setting, goals, and rules
 
 ## Configuring skills and tools — 3
 
-### Skill Procedures
+### What Is a Skill?
 
-A skill is a plain-text procedure for a repeatable task
+**Skills** contain plain-text instructions for repeatable tasks
 
 Trigger
 
-When a procedure applies
+Request or condition that starts a procedure
 
 Procedure
 
-Steps, conditions, and points that require a question
+Steps, checks, and points that require a question
 
 Output
 
-Required response shape
+Required response content and form
 
 ---
 
 ## Configuring skills and tools — 4
 
-### Add Your Skill
+### Skill Examples
 
-Open **Workspace → Skills → Create**
-Enter Name, ID, Description, and [complete instructions](examples/adventure-kit/conclude-adventure.html)
-Review **Access**, then **Save & Create**
+Workspace → Skills · 1 of 3
+Examples from the host’s catalog. Your list depends on access
 
-![Skills Create form with Name, ID, Description, Access and Save & Create visible](images/current/workshop3-clean-skill-create.png)
+![Current skills catalog entries: History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-skills-1.png)
 
-**Alt text:** Skills Create form with Name, ID, Description, Access and Save & Create visible
+**Alt text:** Current skills catalog entries: History Of Ideas Abstract Critique, Historical Context Abstract Critique, Extend STEM Adventures, ChartJS Visualization. Interface screenshot captured October 15, 2026.
 
 ---
 
 ## Configuring skills and tools — 5
 
-### Test Your Skill
+### Skill Examples
 
-Select your copy through **Integrations → Skills**
+Workspace → Skills · 2 of 3
+Examples from the host’s catalog. Your list depends on access
 
-Ask whether an observed record satisfies prompt goals
-Withhold required evidence and check for a question
-Ask to stop with unfinished goals and check its response
+![Current skills catalog entries: Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-skills-2.png)
 
-Which task in your teaching or research needs a repeatable procedure?
+**Alt text:** Current skills catalog entries: Response Features, Error Handling, Language Adjustment, Writing-Support-Opener. Interface screenshot captured October 15, 2026.
 
 ---
 
 ## Configuring skills and tools — 6
 
-### Tool Actions
+### Skill Examples
 
-A tool is a function a model calls to execute an operation
+Workspace → Skills · 3 of 3
+Examples from the host’s catalog. Your list depends on access
+
+![Current skills catalog entries: Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-skills-3.png)
+
+**Alt text:** Current skills catalog entries: Conversational Etiquette, Native Orthography, One-Step Dialogue. Interface screenshot captured October 15, 2026.
+
+---
+
+## Configuring skills and tools — 7
+
+### Add Your Skill
+
+Open **Integrations → Skills** in your model’s chat
+
+Find a saved skill for your task and turn on its toggle
+Read its trigger, procedure, and expected response
+
+[Selection guide](skills/navigation.html#add-skill) · [Current workspace examples](skills/catalog.html)
+
+---
+
+## Configuring skills and tools — 8
+
+### Add Skill Instructions
+
+Add this clause with the saved skill’s task, name, and ID · [Copy clause](skills/exercises.html#add-skill-instructions)
+
+When I ask for [TASK], load [SKILL_NAME] (ID: [SKILL_ID]). Follow its saved instructions using this system prompt’s goals and rules and the latest information I have supplied. Ask about missing or conflicting details before deciding. Acknowledge a request to stop immediately, without requiring another action or reflection.
+
+Save your model, then check that the saved skill loads and follows its instructions
+
+---
+
+## Configuring skills and tools — 9
+
+### Test Your Skill
+
+Ask your model to use the selected skill for its stated task
+
+Use an actual record of choices and results
+Leave out required information and check for a question
+Ask to stop before the goal is met
+
+Which task in your teaching or research needs a repeatable procedure?
+
+---
+
+## Configuring skills and tools — 10
+
+### What Is a Tool?
+
+When a model calls a **tool**, Sandbox executes a function and returns its result
+
+**Tool calling**, otherwise known as **function calling**, sends a function name and arguments for execution
 
 Input
 
-Data for an operation
+Arguments supplied to a function
 
 Execution
 
@@ -898,43 +950,121 @@ Code that applies specified rules
 
 Result
 
-Output a model can inspect or discuss
+Returned output for a model to inspect
 
 ---
 
-## Configuring skills and tools — 7
+## Configuring skills and tools — 11
 
-### Add Adventure Kit
+### Tool Examples
+
+Workspace → Tools · 1 of 4
+Examples from the host’s catalog. Your list depends on access
+
+![Current tools catalog entries: Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-1.png)
+
+**Alt text:** Current tools catalog entries: Adventure Kit, Chat Export, Instructor Rubric. Interface screenshot captured October 15, 2026.
+
+---
+
+## Configuring skills and tools — 12
+
+### Tool Examples
+
+Workspace → Tools · 2 of 4
+Examples from the host’s catalog. Your list depends on access
+
+![Current tools catalog entries: OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-2.png)
+
+**Alt text:** Current tools catalog entries: OCR reader, Instructional Toolset, Pronunciation and Translation Tool. Interface screenshot captured October 15, 2026.
+
+---
+
+## Configuring skills and tools — 13
+
+### Tool Examples
+
+Workspace → Tools · 3 of 4
+Examples from the host’s catalog. Your list depends on access
+
+![Current tools catalog entries: Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-3.png)
+
+**Alt text:** Current tools catalog entries: Graphing, PhysicsPY, ChartJS, Charts (v1). Interface screenshot captured October 15, 2026.
+
+---
+
+## Configuring skills and tools — 14
+
+### Tool Examples
+
+Workspace → Tools · 4 of 4
+Examples from the host’s catalog. Your list depends on access
+
+![Current tools catalog entries: Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.](images/current/workshop3-catalog-tools-4.png)
+
+**Alt text:** Current tools catalog entries: Preflight Student Input, Kale GitHub, Whisper CUDA, cloudflare_whisper_tool. Interface screenshot captured October 15, 2026.
+
+---
+
+## Configuring skills and tools — 15
+
+### Check Tool Binding
+
+**Model Bound Tool Enabler** is a filter that restores model-attached tools when a chat request omits them
+
+If an attached tool is missing from call details, use this existing filter on your private model and repeat your test
+
+It restores availability; execution still requires a valid tool call
+
+[Configuration checks and evidence record](skills/tool-calling.html)
+
+---
+
+## Configuring skills and tools — 16
+
+### Add the ‘Adventure Kit’ tool
 
 Open **Integrations → Tools**
 Search **Adventure Kit** and select its toggle
 
-![Chat Integrations Tools menu with Adventure Kit toggle](images/current/workshop3-clean-kit-select.png)
+![Chat Integrations Tools menu with Adventure Kit toggle; arrows identify relevant steps without changing interface pixels](images/current/workshop3-arrow-kit-select.svg)
 
-**Alt text:** Chat Integrations Tools menu with Adventure Kit toggle
+**Alt text:** Chat Integrations Tools menu with Adventure Kit toggle; arrows identify relevant steps without changing interface pixels
 
 ---
 
-## Configuring skills and tools — 8
+## Configuring skills and tools — 17
 
 ### Prepare Your Adventure
 
-Setting, goals, and rules come from your system prompt
+Design your adventure from your system prompt
 
-Ask your model to show how those instructions map into scene, choices, and end conditions
+Instruct your model to map its setting, goals, and rules into scenes, choices, and end conditions
 
-Resolve absent or contradictory instructions
-Review proposed input, then run **Adventure Kit**
+Resolve missing or contradictory instructions
+Review proposed input for **Adventure Kit**
 
 [Copy preparation and run requests](skills/exercises.html#add-and-test-tool)
 
 ---
 
-## Configuring skills and tools — 9
+## Configuring skills and tools — 18
+
+### Add Tool Instructions
+
+Add this clause to your model’s system prompt · [Copy clause](skills/exercises.html#add-tool-instructions)
+
+After the player approves an adventure, call the attached Adventure Kit tool’s **render_adventure** function with the reviewed schema-version-2 JSON in **scenario_json**. Derive content and rules from this system prompt; resolve missing or conflicting instructions first. Read the returned result, resolve errors before play, and use the player’s copied Play record when discussing progress or completion.
+
+Save your model, then verify tool attachment, provider support, and the actual result
+
+---
+
+## Configuring skills and tools — 19
 
 ### Test Your Tool
 
-Compare rendered scene and choices with your prompt
+Run your reviewed adventure, then compare its scene and choices with your prompt
 
 Try a choice before and after its prerequisite
 Inspect Undo and Stop
@@ -944,7 +1074,7 @@ Which step in your teaching or research needs an executable operation?
 
 ---
 
-## Configuring skills and tools — 10
+## Configuring skills and tools — 20
 
 ### Choose Your Task
 
@@ -960,11 +1090,11 @@ Choose your own tool or skill
 
 Specify purpose, required input, and expected result
 
-[Tool copy route](skills/navigation.html#tool-copy) · [Skill instructions](examples/adventure-kit/conclude-adventure.html)
+[Copy tool code](skills/navigation.html#tool-copy) · [Skill instructions](skills/navigation.html#skill-copy)
 
 ---
 
-## Configuring skills and tools — 11
+## Configuring skills and tools — 21
 
 ### Work With Support
 
@@ -978,23 +1108,23 @@ Request complete content, an explanation, and one test · [Copy request](skills/
 
 ---
 
-## Configuring skills and tools — 12
+## Configuring skills and tools — 22
 
-### Create Your Tool
+### Add Tools or Skills
 
-Open **Workspace → Tools → Create**
-Enter new Name and ID; replace sample code completely
-Review **Access**, then **Save & Create**
+Create a new **tool** or **skill**, or save a revised copy
+Use **Workspace → Tools → Create** or [**Skills → Create**](skills/navigation.html#create-skill)
+Enter new Name and ID; paste complete reviewed content
 
-For a skill, use [Skills → Create](#4) · Select new copy and [repeat original test](skills/exercises.html#add-new-version)
+Review **Access**, then **Save & Create** · [Select and test your item](skills/exercises.html#add-new-version)
 
-![Tools Create form with code editor, Access and Save & Create visible](images/current/workshop3-clean-create-tool.png)
+![Tools Create form with code editor, Access and Save & Create visible; arrows identify relevant steps without changing interface pixels](images/current/workshop3-arrow-create-tool.svg)
 
-**Alt text:** Tools Create form with code editor, Access and Save & Create visible
+**Alt text:** Tools Create form with code editor, Access and Save & Create visible; arrows identify relevant steps without changing interface pixels
 
 ---
 
-## Configuring skills and tools — 13
+## Configuring skills and tools — 23
 
 ### Series Reflections
 

@@ -50,20 +50,30 @@
 </tbody>
 </table>
 <h2 id="add-and-test-skill">Add and Test Skill</h2>
-<p>2:40–2:50 · Slides 4–5</p>
-<p>Read <a href="../examples/adventure-kit/conclude-adventure.html">Conclude Adventures</a>. Identify Trigger, Procedure, and Format. Its procedure reads goals from active system prompt rather than imposing one goal on every adventure</p>
-<p>Open Workspace → Skills → Create. Enter your own Skill Name, Skill ID, Description, and complete Skill Instructions. Review Access, then Save &amp; Create. Open New Chat with your saved model and select your copy through Integrations → Skills</p>
-<p>Use actual prompt and observed play record for a completion check. Withhold evidence required by one prompt goal and check for a focused question. Ask to stop with unfinished goals and expect one brief acknowledgment with no completion claim or compulsory reflection. When no record exists, test absent evidence and stop only</p>
-<p>Record whether saved skill loaded. Pasted instructions test prose guidance; they do not prove a saved resource loaded</p>
+<p>2:40–2:50 · Slides 7–9</p>
+<p>Choose a skill already saved in Open WebUI for the task you want to try. In your model's chat, open <strong>Integrations → Skills</strong>, find your selected skill, and turn on its toggle. Read its description and complete instructions. Identify when it should run, what it checks, and what its answer should contain</p>
+<h3 id="add-skill-instructions">Add Skill Instructions</h3>
+<p>Add this clause to your own model's system prompt before Test Your Skill. Replace all three bracketed fields with the selected skill's actual task, name, and ID. Preserve your model's goals and rules</p>
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-1">Copy text</button><pre id="copy-1" class="reference-code"><code class="language-text">When I ask for [TASK], load [SKILL_NAME] (ID: [SKILL_ID]). Follow its saved instructions using this system prompt’s goals and rules and the latest information I have supplied. Ask about missing or conflicting details before deciding. Acknowledge a request to stop immediately, without requiring another action or reflection.
+</code></pre></div>
+<p>Save your model. Confirm the skill remains selected in Integrations → Skills. Check that the exact saved resource loads and that the answer follows its instructions. Naming a skill in a prompt or pasting its instructions does not prove that the saved resource loaded</p>
+<p>Test the skill's stated task with an actual record. Leave out information it requires and check that it asks a useful question. Ask to stop before the goals are met and expect an immediate acknowledgment without another required action. Model guidance does not change the embedded game's state</p>
+<p>Record the submitted request, the saved skill's loading result, and its answer. Check actual loading and use separately from selecting the toggle</p>
 <h2 id="add-and-test-tool">Add and Test Tool</h2>
-<p>2:50–3:10 · Slides 6–9</p>
+<p>2:50–3:10 · Slides 10–19</p>
 <p>Open Integrations → Tools, search Adventure Kit, and select its toggle. Confirm which version is available. Version 2 requires completed schema version 2. Older rooms/flags scenarios need explicit conversion before use</p>
-<p>Ask model to read its system prompt, show how each instruction maps into tool input, and ask about absent or contradictory context. Review scene, choices, state, and end conditions before invocation. Add source passages only when prompt goals require them</p>
+<p>Instruct your model to read its system prompt, show how each instruction maps into tool input, and ask about absent or contradictory context. Review scene, choices, state, and end conditions before invocation. Add source passages only when prompt goals require them</p>
+<h3 id="add-tool-instructions">Add Tool Instructions</h3>
+<p>Everyone adds a tool-calling clause to their own model’s system prompt before testing Adventure Kit. Preserve the setting, goals, and rules already there. Copy this clause, then save your model</p>
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-2">Copy text</button><pre id="copy-2" class="reference-code"><code class="language-text">After the player approves an adventure, call the attached Adventure Kit tool’s render_adventure function with the reviewed schema-version-2 JSON in scenario_json. Derive content and rules from this system prompt; resolve missing or conflicting instructions first. Read the returned result, resolve errors before play, and use the player’s copied Play record when discussing progress or completion.
+</code></pre></div>
+<p>This clause uses the exported Adventure Kit 2.0.0 signature: <code>render_adventure(scenario_json, theme, text_speed)</code>. <code>scenario_json</code> is JSON text, not a nested object. Theme and text speed are optional appearance settings; the clause leaves their existing defaults in place</p>
+<p>Confirm Adventure Kit is attached and selected and the base model supports tool calling. A saved prompt is an instruction, not evidence of execution. Inspect the emitted function and arguments, returned result, and rendered player. <code>needs_context</code> or <code>invalid_input</code> requires correction; <code>render_requested</code> still requires checking that the player appears. Copy the actual Play record before discussing progress or completion</p>
 <p>Copy this preparation request</p>
-<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-1">Copy text</button><pre id="copy-1" class="reference-code"><code class="language-text">Read my saved model system prompt for adventure setting, goals, and rules. Show how those instructions map into Adventure Kit input. Use my instructions.txt and source passages as that prompt directs. Ask if required context is absent or contradictory. Show me proposed scene, choices, and end conditions before you call the tool
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-3">Copy text</button><pre id="copy-3" class="reference-code"><code class="language-text">Read my saved model system prompt for adventure setting, goals, and rules. Show how those instructions map into Adventure Kit input. Use my instructions.txt and source passages as that prompt directs. Ask if required context is absent or contradictory. Show me proposed scene, choices, and end conditions before you call the tool
 </code></pre></div>
 <p>After review, copy this run request</p>
-<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-2">Copy text</button><pre id="copy-2" class="reference-code"><code class="language-text">Run render_adventure with reviewed scenario_json derived from my system prompt. Ask about missing or contradictory instructions before play
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-4">Copy text</button><pre id="copy-4" class="reference-code"><code class="language-text">Run render_adventure with reviewed scenario_json derived from my system prompt. Ask about missing or contradictory instructions before play
 </code></pre></div>
 <p>For a confirmed v2 run, ask for render_adventure with reviewed scenario_json. Compare rendered content and rules with the prompt. Try a choice before and after its prerequisite, inspect Undo, and test Stop. Open Play record and copy actual choices and results into chat before a narrative conclusion</p>
 <table class="reference-table">
@@ -104,21 +114,21 @@
 </table>
 <p>A model response cannot change executable state. A copied record may become stale after another choice, Undo, or Restart</p>
 <h2 id="copy-your-content">Copy Your Content</h2>
-<p>3:10–3:20 · Slide 10</p>
+<p>3:10–3:20 · Slide 13</p>
 <p>Choose one task after both tests: revise either tool or skill, or create your own tool or skill in this same activity</p>
 <p>For a tool revision, open Workspace → Tools → Adventure Kit. Click inside code editor, then Select All and Copy; on this Mac, use ⌘A and ⌘C. Copy complete code and preserve original. For a skill revision, copy complete instructions. For a new item, describe purpose, input, expected result, and constraints</p>
 <p>Include active system prompt with your request. It defines adventure behavior; Support does not automatically inherit it or your collection</p>
 <h2 id="work-with-support">Work With Support</h2>
-<p>3:20–3:40 · Slide 11</p>
+<p>3:20–3:40 · Slide 14</p>
 <p>Open <a href="https://chat.ailab.gc.cuny.edu/?model=cail-workspace-support">CAIL Workspace Support</a> and confirm its name below message box</p>
 <p>For revision, paste original, observed result, and one requested change. For creation, name one operation or procedure, required input, expected result, and limits. Include actual system prompt and any sources it requires</p>
 <p>Request complete content, an explanation, and one test. Reusable tool and skill must derive adventure setting, goals, and rules from active system prompt. Embed no scenario or genre. Ask about missing or contradictory instructions</p>
 <p>Copy this Support request and replace bracketed fields</p>
-<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-3">Copy text</button><pre id="copy-3" class="reference-code"><code class="language-text">Help me [revise/create] a [tool/skill] for [purpose]. My system prompt defines [setting, goals, rules]. Here are original content, observations, and requested change, or a new task and expected result. Return complete Sandbox content and one test. Reusable components must follow my prompt and embed no story or genre. Ask about missing or contradictory instructions. Label unrun tests
+<div class="prompt-container"><button type="button" class="copy-prompt" data-example-copy="copy-5">Copy text</button><pre id="copy-5" class="reference-code"><code class="language-text">Help me [revise/create] a [tool/skill] for [purpose]. My system prompt defines [setting, goals, rules]. Here are original content, observations, and requested change, or a new task and expected result. Return complete Sandbox content and one test. Reusable components must follow my prompt and embed no story or genre. Ask about missing or contradictory instructions. Label unrun tests
 </code></pre></div>
-<p>One possible skill revision asks a conclusion to name each prompt goal and its recorded evidence. Preserve goals and immediate-stop rules. Compare identical prompt and record across versions. This changes an evidence check rather than inventing a new adventure goal</p>
+<p>For a skill revision, change one check or part of its answer. Preserve the adventure goals and immediate-stop rule. Compare the same request and record across versions</p>
 <h2 id="add-new-version">Add New Version</h2>
-<p>3:40–4:00 · Slides 12–13</p>
+<p>3:40–4:00 · Slides 15–16</p>
 <p>Use Workspace → Tools → Create or Skills → Create. Enter new Name and ID; preserve original. For a tool, replace all sample code with reviewed complete content. For a skill, paste complete Skill Instructions. Review Access, then Save &amp; Create</p>
 <p>Select your new item through Integrations and turn off older version of that item. Use a fresh chat with the same model, system prompt, settings, scene, and record. For a revision, compare identical input. For a new item, compare expected and observed behavior and try one boundary case</p>
 <table class="reference-table">
