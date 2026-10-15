@@ -104,7 +104,7 @@
     "review/skills/hosted-skill-evidence-2026-10-15.json",
     "review/skills/hosted-tool-evidence-2026-10-15.json"
   ],
-  "pdf_sha256": "d50fc2c6db9eedaac4f217e366b403bc8eff4e643e36a767d2c4366da55d4abd",
+  "pdf_sha256": "c87bdb66bba567871f8391130a0c91aca477e13775fdb3b3215820ff88af8ddc",
   "pdf_pages": 19,
   "visual_review": "Rendered all 19 slides. Desktop overflow and mobile horizontal overflow checks passed. Visually reviewed curated tools, fresh skill selector and enlarged results slide.",
   "access": "Private/no grants at inspection for Adventure Kit and Adventure Outcomes; owner subsequently reported granting participant read access; post-change participant visibility unverified.",
@@ -120,7 +120,7 @@
     "Enable Model Bound Tool Enabler on your model card.",
     "Why: It restores attached tools when a chat omits them."
   ],
-  "status_slide": "Only exact supplied sentence and original screenshot are visible; heading retained for assistive technology.",
+  "status_slide": "Visible Model Card Check-In header, requested sentence, and original screenshot.",
   "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked.",
   "curated_examples": {
     "skill_slides": 1,

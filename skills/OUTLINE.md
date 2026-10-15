@@ -124,7 +124,7 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## 10. Model Card Check
+## 10. Model Card Check-In
 
 Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
 
