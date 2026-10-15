@@ -1130,6 +1130,6 @@ Review **Access**, then **Save & Create** · [Select and test your item](skills/
 
 What task in your teaching or research could benefit from a skill or tool?
 
-Across the series, how has your approach to custom models changed?
+Would you be interested in joining our coworking session on October 29,  2–4pm,  to build your adventure into a collection so that we can showcase our work over the course of the series?
 
 What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?

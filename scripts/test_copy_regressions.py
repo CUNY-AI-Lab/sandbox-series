@@ -263,7 +263,11 @@ class CopyRegressions(unittest.TestCase):
             if route=='skills/index.html':
                 reflection=self.slide(route,'Series Reflections')
                 self.assertEqual(len(reflection.all(lambda n:n.tag=='p')),3)
-                self.assertIn('Across the series',reflection.text())
+                self.assertEqual([p.text() for p in reflection.all(lambda n:n.tag=='p')], [
+                    'What task in your teaching or research could benefit from a skill or tool?',
+                    'Would you be interested in joining our coworking session on October 29, 2–4pm, to build your adventure into a collection so that we can showcase our work over the course of the series?',
+                    'What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?',
+                ])
                 continue
             next_steps=[self.decks[route][-1]] if route=='basics/index.html' else [s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
             self.assertEqual(len(next_steps),1,route)
