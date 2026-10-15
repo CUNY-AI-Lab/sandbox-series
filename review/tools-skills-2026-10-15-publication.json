@@ -1,8 +1,8 @@
 {
-  "slides": 20,
+  "slides": 18,
   "date": "2026-10-15",
   "approval": "User authorized publication to the existing workshop repository and phone review; continued file-based publication explicitly requested after browser control stopped.",
-  "scope": "20-slide workshop with one example slide per category, updated model-card screenshots, synchronized outline and PDF",
+  "scope": "18-slide workshop with sample Skill Examples and Tool Examples slides removed; instructional steps and actual demonstrations preserved",
   "screenshots": [
     {
       "source": "select-copy-raw.png",
@@ -44,19 +44,6 @@
       "annotation": "none; original screenshot pixels"
     },
     {
-      "source": "support-chat-raw.png",
-      "source_sha256": "b0902a255eb5368ebb877115ddf97160dff07532fb32c813522bc71bb9cb5537",
-      "file": "images/current/workshop3-clean-support.png",
-      "sha256": "04ec0aa0b2ebc7315c120ebdc7c6e9c71c768783bea3ff66af98eff18684baed",
-      "crop": [
-        0,
-        238,
-        2560,
-        1110
-      ],
-      "annotation": "none; original screenshot pixels"
-    },
-    {
       "source": "create-tool-raw.png",
       "source_sha256": "518defae452add652cfc3c9a9d00c336c2ea6c05b25ff6b3ca62085bc5a7ac73",
       "file": "images/current/workshop3-clean-create-tool.png",
@@ -92,6 +79,23 @@
         900
       ],
       "sha256": "d41400108793f509bbb0a0099e1d7901bf5a6ed7a29650f2c4aadb5f40e1b3a4"
+    },
+    {
+      "source": "/Users/milwright/Documents/Codex/2026-10-15/pul/work/workspace-support-current-full.png",
+      "source_sha256": "3b59669c761e2c9ad114129d0ff5e5e3bbfa1cb713f6fdb290d7754f4eb97ffb",
+      "file": "images/current/workshop3-support-live-20261015.svg",
+      "sha256": "8d9e3f39f0fb3f245bcedbf41fc6b2a13e492981cefd751f8fd8b231b1bcf5b0",
+      "source_dimensions": [
+        2820,
+        2414
+      ],
+      "crop_viewbox": [
+        200,
+        920,
+        2500,
+        980
+      ],
+      "annotation": "None; original current Firefox JPEG bytes embedded unchanged; viewport removes browser chrome and excess whitespace."
     }
   ],
   "export": "PDF uses exact browser-rendered page images and searchable text; no print stylesheet layout",
@@ -104,37 +108,50 @@
     "review/skills/hosted-skill-evidence-2026-10-15.json",
     "review/skills/hosted-tool-evidence-2026-10-15.json"
   ],
-  "pdf_sha256": "28e741f340c1b9b5fab187222ea8bd0d0537dde6363a76e51265089f1852eb85",
-  "pdf_pages": 20,
-  "visual_review": "Rendered all 20 slides. Desktop overflow and mobile horizontal overflow checks passed. Visually reviewed curated tools, fresh skill selector and enlarged results slide.",
+  "pdf_sha256": "f77ffa6d1f3381780aec0d7a195b93dc9cf4b5b45d6a5026621ecdc27e3fa848",
+  "pdf_pages": 18,
+  "visual_review": "18 slides rendered with no desktop overflow or mobile horizontal overflow. Visually verified approved skill-selection screenshot at slide 7, exact numbered Test Your Adventure at slide 11, and fresh real Support capture at slide 15. PDF exported from those exact rendered pages and reopened as 18 pages.",
   "access": "Private/no grants at inspection for Adventure Kit and Adventure Outcomes; owner subsequently reported granting participant read access; post-change participant visibility unverified.",
   "remaining_live_check": "Save and retest the separate Workspace Support revision; browser control stopped.",
   "concurrent_revision": "Preserved concurrent repository changes where compatible, then applied the latest user-directed opening reorganization and confirmed saved name Extend Adventure Games.",
-  "latest_user_revision": "Select Extend Adventure Games; explain tools/examples; enable Model Bound Tool Enabler; select Adventure Kit in the same model card; check all four attachments; add exact orchestration prompt; Save & Update; test and inspect actual user-run screenshot; experiment with later skills and Support.",
+  "latest_user_revision": "Remove sample Skill Examples and Tool Examples slides; Explain skills and tools; update base model; Enable Filter \u2192 Add Your Skill \u2192 Adventure Kit; check attachments; add exact orchestration prompt; Save & Update; three numbered test steps; inspect real results; experiment with later skills and Support.",
   "opening_orchestration_live_test": "Not run after browser control stopped. Owner confirmed saved name Extend Adventure Games; current ID/instructions/participant visibility not read back.",
   "user_run_screenshot": "review/skills/user-orchestration-screenshot-2026-10-15.json",
   "exact_orchestration_clause": "Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.",
   "prompt_slide": "Only exact copyable code block; separate editor screenshot intentionally omitted per latest user instruction.",
   "title_credit": "Developed by Zach Muhlbauer",
   "filter_copy": [
-    "Enable Model Bound Tool Enabler on your model card.",
-    "Why: It restores attached tools when a chat omits them."
+    "Enable Model Bound Tool Enabler on your model card, which binds assigned tools to the model\u2019s operations."
   ],
   "status_slide": "Visible Model Card Check-In header, requested sentence, and original screenshot.",
   "clone_walkthrough": "Slide2 retains existing introduction, then exact earlier Clone instructions and original annotated screenshot on the same slide. Desktop/mobile layout and exported PDF page2 visually checked.",
-  "curated_examples": {
-    "skill_slides": 1,
-    "skill": "Extend Adventure Games",
-    "tool_slides": 1,
-    "tools": [
-      "Adventure Kit",
-      "Chat Export",
-      "Instructional Toolset",
-      "Pronunciation and Translation Tool",
-      "ChartJS"
-    ]
-  },
-  "previous_deployed_content_commit": "eb29f6d",
-  "previous_deployed_readback": "Confirmed by publishing task: Pages and workshop checks succeeded, live HTML has24slides and latest exact copy; screenshot and24pagePDF URLs return200.",
-  "base_model_slide": "Update Model for Tool Calling; heading and annotated live DeepSeek V4 Flash 0731 picker only; immediately before Enable Filter."
+  "previous_deployed_content_commit": "91968d7",
+  "previous_deployed_readback": "Independently verified live HTML, Markdown, outline, PDF and updated screenshots byte-match 91968d7 before the requested removals.",
+  "base_model_slide": "Update Model for Tool Calling; heading and annotated live DeepSeek V4 Flash 0731 picker only; immediately before Enable Filter.",
+  "removed_sample_slides": [
+    "Skill Examples",
+    "Tool Examples"
+  ],
+  "opening_review_copy": [
+    "Open Workspace \u2192 Models \u2192 Edit",
+    "Review your system prompt to identify setting, goals, and rules from last time"
+  ],
+  "tool_definition_copy": [
+    "When a model calls a tool, it is given the ability to execute a function and return its result, usually through a Python script",
+    "This is called tool calling (aka function calling)"
+  ],
+  "tool_input_copy": "Information passed to a function",
+  "skill_selection_asset": "images/current/workshop3-add-skill-current.svg",
+  "skill_selection_order": [
+    "Enable Filter",
+    "Add Your Skill",
+    "Add the \u2018Adventure Kit\u2019 tool"
+  ],
+  "test_steps": [
+    "Run your updated adventure game",
+    "Verify configured skill and tool are called appropriately",
+    "Then play the rest of your game"
+  ],
+  "support_copy": "Prompt CAIL Workspace Support to generate a skill and/or tool that continues to support or further extends your adventure game, adapting an existing skill/tool or making your own.",
+  "add_tools_or_skills_copy": "Copy and paste all code for tools or plain text for skills, then save your item. On your model card, select your new tool or skill, and signpost it in your system prompt."
 }

@@ -304,12 +304,8 @@ class CopyRegressions(unittest.TestCase):
         core=[s.attrs['data-title'] for s in slides if not s.has_class('catalog-slide') and not s.has_class('demonstration-slide')]
         self.assertEqual(core,list(SKILLS_CORE_SEQUENCE))
         self.assertIn('system prompt',self.slide('skills/index.html','Choose Your Own Adventure').text())
-        for definition,title,count in [('What Is a Skill?','Skill Examples',1),('What Is a Tool?','Tool Examples',1)]:
-            position=slides.index(self.slide('skills/index.html',definition))
-            examples=slides[position+1:position+count+1]
-            self.assertEqual(len(examples),count)
-            self.assertTrue(all(s.has_class('catalog-slide') and s.attrs['data-title']==title for s in examples))
-            self.assertEqual(sum(s.attrs['data-title']==title for s in slides),count)
+        self.assertFalse(any(s.has_class('catalog-slide') for s in slides))
+        self.assertFalse(any(s.attrs['data-title'] in ('Skill Examples','Tool Examples') for s in slides))
         for demo in [s for s in slides if s.has_class('demonstration-slide')]:
             preceding=slides[slides.index(demo)-1].attrs['data-title']
             self.assertIn(preceding,('Test Your Adventure',))
@@ -336,8 +332,8 @@ class CopyRegressions(unittest.TestCase):
         self.assertNotIn('Conclude Adventures',setup)
         self.assertIn('Adventure Outcomes',self.slide('skills/index.html','Explore Other Skills').text())
         create=self.slide('skills/index.html','Add Tools or Skills')
-        self.assertIn('Copy and paste all code, then save your item.',create.text())
-        self.assertIn('Update the system prompt to tell the model which tool to use and when.',create.text())
+        self.assertIn('Copy and paste all code for tools or plain text for skills, then save your item.',create.text())
+        self.assertIn('On your model card, select your new tool or skill, and signpost it in your system prompt.',create.text())
         exercises=(ROOT/'skills/EXERCISES.md').read_text()
         for term in ['turn off older version','compare identical input','same model, system prompt, settings, scene, and record','Immediate acknowledgment, no false completion']:
             self.assertIn(term,exercises)

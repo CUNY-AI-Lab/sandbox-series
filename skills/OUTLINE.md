@@ -22,8 +22,7 @@ Developed by Zach Muhlbauer
 Continue your saved model or clone it first
 
 Open **Workspace → Models → Edit**
-Read your actual system prompt
-Identify setting, goals, and rules
+Review your system prompt to identify setting, goals, and rules from last time
 
 Keep this model card open while you add a skill and a tool
 
@@ -51,19 +50,41 @@ Required response content and form
 
 ---
 
-## 4. Skill Examples
+## 4. What Is a Tool?
 
-### Extend Adventure Games
+When a model calls a **tool**, it is given the ability to execute a function and return its result, usually through a Python script
 
-Follow a saved adventure procedure
+This is called **tool calling** (aka **function calling**)
 
-Call Adventure Kit as directed by the skill
+Input
 
-Read the saved instructions in **Workspace → Skills**
+Information passed to a function
+
+Execution
+
+Code that applies specified rules
+
+Result
+
+Returned output for a model to inspect
 
 ---
 
-## 5. Add Your Skill
+## 5. Update Model for Tool Calling
+
+![Model card base-model picker — 1 identifies Base Model; 2 identifies DeepSeek V4 Flash 0731](../images/current/workshop3-deepseek-base-model.svg)
+
+---
+
+## 6. Enable Filter
+
+Enable **Model Bound Tool Enabler** on your model card, which binds assigned tools to the model’s operations.
+
+![Model card filter picker with Model Bound Tool Enabler outlined](../images/current/workshop3-model-bound-filter.svg)
+
+---
+
+## 7. Add Your Skill
 
 In **Workspace → Models → Edit**, find **Skills → Select Skill**
 
@@ -76,51 +97,7 @@ Keep this model card open for Adventure Kit
 
 ---
 
-## 6. What Is a Tool?
-
-When a model calls a **tool**, Sandbox executes a function and returns its result
-
-**Tool calling**, otherwise known as **function calling**, sends a function name and arguments for execution
-
-Input
-
-Arguments supplied to a function
-
-Execution
-
-Code that applies specified rules
-
-Result
-
-Returned output for a model to inspect
-
----
-
-## 7. Tool Examples
-
-Workspace → Tools
-Examples from the host’s catalog. Your list depends on access
-
-![Selected tools — Adventure Kit, Chat Export, Instructional Toolset, Pronunciation and Translation Tool, and ChartJS once](../images/current/workshop3-selected-tools.svg)
-
----
-
-## 8. Update Model for Tool Calling
-
-![Model card base-model picker — 1 identifies Base Model; 2 identifies DeepSeek V4 Flash 0731](../images/current/workshop3-deepseek-base-model.svg)
-
----
-
-## 9. Enable Filter
-
-Enable **Model Bound Tool Enabler** on your model card.
-Why: It restores attached tools when a chat omits them.
-
-![Model card filter picker with Model Bound Tool Enabler outlined](../images/current/workshop3-model-bound-filter.svg)
-
----
-
-## 10. Add the ‘Adventure Kit’ tool
+## 8. Add the ‘Adventure Kit’ tool
 
 In this same model card, open **Tools → Select Tool**
 Choose **Adventure Kit** · Confirm **Extend Adventure Games** remains selected
@@ -130,7 +107,7 @@ Add next prompt instruction, then click **Save & Update** before testing
 
 ---
 
-## 11. Model Card Check-In
+## 9. Model Card Check-In
 
 Ensure that your model card has a knowledge collection, tool, skill, and filter configured like the image below.
 
@@ -138,7 +115,7 @@ Ensure that your model card has a knowledge collection, tool, skill, and filter 
 
 ---
 
-## 12. Add Skill Instructions to the Bottom of Your System Prompt
+## 10. Add Skill Instructions to the Bottom of Your System Prompt
 
 ```text
 Load the extend_adventure_games skill and follow it on every turn, calling the adventure_kit tool only as the skill directs. Use no other skills or tools.
@@ -146,15 +123,17 @@ Load the extend_adventure_games skill and follow it on every turn, calling the a
 
 ---
 
-## 13. Test Your Adventure
+## 11. Test Your Adventure
 
-Run your updated adventure game
-Verify configured skill and tool are called appropriately
-Then play the rest of your game
+- Run your updated adventure game
+
+- Verify configured skill and tool are called appropriately
+
+- Then play the rest of your game
 
 ---
 
-## 14. Observe Game Results
+## 12. Observe Game Results
 
 ① Check skill call
 ② Check tool call
@@ -165,9 +144,9 @@ Open details to confirm selected skill
 
 ---
 
-## 15. Explore Other Skills
+## 13. Explore Other Skills
 
-After your first adventure works, try **Adventure Outcomes** or **Conclude Adventure Game** if available
+After your first adventure works, try **Adventure Outcomes** or **Conclude Adventure Game**
 
 Read saved instructions · Change one item · Save your model card and compare results
 
@@ -175,7 +154,7 @@ Read saved instructions · Change one item · Save your model card and compare r
 
 ---
 
-## 16. Choose Your Task
+## 14. Choose Your Task
 
 ### Revise One Item
 
@@ -193,17 +172,15 @@ Specify purpose, required input, and expected result
 
 ---
 
-## 17. Work With Support
+## 15. Work With Support
 
-Open **CAIL Workspace Support**
-Paste original content or your new task, system prompt, and required sources
-Request complete content, an explanation, and one test · [Copy request](exercises.html#work-with-support)
+Prompt CAIL Workspace Support to generate a skill and/or tool that continues to support or further extends your adventure game, adapting an existing skill/tool or making your own.
 
-![CAIL Workspace Support model identity with surrounding sidebar](../images/current/workshop3-clean-support.png)
+![Fresh live CAIL Workspace Support interface with model identity, description, composer, and Get started suggestion](../images/current/workshop3-support-live-20261015.svg)
 
 ---
 
-## 18. Adapt Your Adventure
+## 16. Adapt Your Adventure
 
 Introduce a lesson plan, learning outcome, or disciplinary focus to your use of **CAIL Workspace Support** card
 
@@ -211,19 +188,15 @@ Prompted to generate a skill and/or tool that continues to support or further ex
 
 ---
 
-## 19. Add Tools or Skills
+## 17. Add Tools or Skills
 
-Copy and paste all code, then save your item.
-
-On your model card, select your new tool or skill.
-
-Update the system prompt to tell the model which tool to use and when. Save the model card.
+Copy and paste all code for tools or plain text for skills, then save your item. On your model card, select your new tool or skill, and signpost it in your system prompt.
 
 ![Tools Create form with code editor, Access and Save & Create visible; arrows identify relevant steps without changing interface pixels](../images/current/workshop3-arrow-create-tool.svg)
 
 ---
 
-## 20. Series Reflections
+## 18. Series Reflections
 
 What task in your teaching or research could benefit from a skill or tool?
 
