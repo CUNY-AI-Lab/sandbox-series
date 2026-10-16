@@ -436,6 +436,16 @@ Keep your draft and choose source documents for your next workshop.
 
 - [Consult AI Lab guides  https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
 
+---
+
+## Composing System Prompts — 25
+
+### Next Workshop
+
+Continue with **Curating knowledge collections**.
+
+[Open October 1 workshop](knowledge) to build a source collection for your model.
+
 
 ## Curating knowledge collections — 1
 
@@ -802,6 +812,16 @@ Check responses against sources in your collection. Next workshop introduces too
 
 - Open STEM Adventure Games <https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
 
+---
+
+## Curating knowledge collections — 24
+
+### Next Workshop
+
+Continue with **Configuring skills and tools**.
+
+[Open October 15 workshop](skills) to extend your adventure with a skill and a tool.
+
 
 ## Configuring skills and tools — 1
 
@@ -1066,14 +1086,10 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
 ## Configuring skills and tools — 18
 
-### Sandbox Workshops
+### CUNY AI Lab | Coworking Sessions
 
-Bring your Sandbox projects into our coworking sessions and extend them through vibe coding.
+Bring your Sandbox projects into coworking sessions and extend them through vibe coding.
 
-Next session · October 29,  2–4pm
+[Explore updated Sandbox Workshops and guides](https://ailab.gc.cuny.edu/guides/).
 
-Updated workshop materials
-[https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
-
-Upcoming workshops and coworking sessions
-[https://ailab.gc.cuny.edu/events/](https://ailab.gc.cuny.edu/events/)
+[Find CUNY AI Lab coworking sessions and events](https://ailab.gc.cuny.edu/events/).

@@ -413,3 +413,13 @@ Keep your draft and choose source documents for your next workshop.
 - [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
 
 - [Consult AI Lab guides  https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
+
+---
+
+## Slide 25: Next Workshop
+
+### Next Workshop
+
+Continue with **Curating knowledge collections**.
+
+[Open October 1 workshop](../knowledge/) to build a source collection for your model.

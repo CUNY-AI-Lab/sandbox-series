@@ -207,14 +207,10 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
 ---
 
-## 18. Sandbox Workshops
+## 18. CUNY AI Lab | Coworking Sessions
 
-Bring your Sandbox projects into our coworking sessions and extend them through vibe coding.
+Bring your Sandbox projects into coworking sessions and extend them through vibe coding.
 
-Next session · October 29,  2–4pm
+[Explore updated Sandbox Workshops and guides](https://ailab.gc.cuny.edu/guides/).
 
-Updated workshop materials
-[https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
-
-Upcoming workshops and coworking sessions
-[https://ailab.gc.cuny.edu/events/](https://ailab.gc.cuny.edu/events/)
+[Find CUNY AI Lab coworking sessions and events](https://ailab.gc.cuny.edu/events/).

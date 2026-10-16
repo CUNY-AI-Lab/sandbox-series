@@ -262,9 +262,8 @@ class CopyRegressions(unittest.TestCase):
         verbs={'Open','Test','Introduce','Sign','Draft','Consult','Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
         for route in ROUTES:
             if route=='skills/index.html':
-                closing=self.slide(route,'Sandbox Workshops')
-                self.assertIn('Bring your Sandbox projects into our coworking sessions and extend them through vibe coding.',closing.text())
-                self.assertIn('October 29',closing.text())
+                closing=self.slide(route,'CUNY AI Lab | Coworking Sessions')
+                self.assertIn('extend them through vibe coding',closing.text())
                 self.assertEqual([a.attrs['href'] for a in closing.all(lambda n:n.tag=='a')], [
                     'https://ailab.gc.cuny.edu/guides/',
                     'https://ailab.gc.cuny.edu/events/',
@@ -394,7 +393,7 @@ class CopyRegressions(unittest.TestCase):
         for tree in [*self.trees.values(),*self.references.values()]:visit(tree)
 
     def test_22_continuous_exercises_and_visible_references(self):
-        self.assertEqual(len(self.decks['knowledge/index.html']),23)
+        self.assertEqual(len(self.decks['knowledge/index.html']),24)
         self.assertIn('four adventure options',self.slide('knowledge/index.html','Test Custom Model').text())
         citation=self.slide('knowledge/index.html','Check Citations')
         for term in ['In same chat','Select a citation beside a response','Does its source passage support that response?']:self.assertIn(term,citation.text())
@@ -723,7 +722,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(path.read_text(),build(),'Regenerate basics/workshop-copy.html after slide changes')
         copy=Parser(path.read_text()).root
         sections=copy.all(lambda n:n.has_class('copy-section'))
-        self.assertEqual(len(sections),24)
+        self.assertEqual(len(sections),25)
         self.assertEqual([section.all(lambda n:n.tag=='h2')[0].text() for section in sections],
                          [slide.attrs['data-title'] for slide in self.decks['basics/index.html']])
         for source,destination in zip(self.decks['basics/index.html'],sections):

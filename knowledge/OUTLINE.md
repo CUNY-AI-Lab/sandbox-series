@@ -292,3 +292,11 @@ Check responses against sources in your collection. Next workshop introduces too
 ### Example Model
 
 - Open STEM Adventure Games <https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games>
+
+---
+
+## 24. Next Workshop
+
+Continue with **Configuring skills and tools**.
+
+[Open October 15 workshop](../skills/) to extend your adventure with a skill and a tool.

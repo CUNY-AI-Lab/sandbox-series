@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,415 @@
+@@ -1,487 +1,425 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -896,3 +896,13 @@
 +- [Check monthly usage  https://tools.ailab.gc.cuny.edu/model-access](https://tools.ailab.gc.cuny.edu/model-access)
 +
 +- [Consult AI Lab guides  https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
++
++---
++
++## Slide 25: Next Workshop
++
++### Next Workshop
++
++Continue with **Curating knowledge collections**.
++
++[Open October 1 workshop](../knowledge/) to build a source collection for your model.
