@@ -243,8 +243,12 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
 ### CUNY AI Lab | Coworking Sessions
 
+ CUNY AI Lab | Coworking Sessions  ➳   — reveal links
+
 Bring your Sandbox projects into coworking sessions and extend them through vibe coding.
 
-[Explore updated Sandbox Workshops and guides](https://ailab.gc.cuny.edu/guides/).
+[Explore updated Sandbox Workshops and guides](https://ailab.gc.cuny.edu/guides/)
 
-[Find CUNY AI Lab coworking sessions and events](https://ailab.gc.cuny.edu/events/).
+[Find CUNY AI Lab coworking sessions and events](https://ailab.gc.cuny.edu/events/)
+
+ [Molnár · Quimbot / Creative Clawing](https://creative-clawing.com/artifacts/molnar.html)

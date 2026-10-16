@@ -347,4 +347,4 @@ Check responses against sources in your collection. Next workshop introduces too
 
 [Open workshop  ➳](../skills/)
 
- [Molnár · Quimbot / Creative Clawing](https://creative-clawing.com/artifacts/molnar.html)
+ [Logistic Map · Petrarch / Creative Clawing](https://creative-clawing.com/artifacts/logistic.html)

@@ -19,3 +19,6 @@
 @media(max-width:600px) { .handoff-signpost { padding:12px 16px; } .handoff-signpost summary { gap:14px; } }
 @media(prefers-reduced-motion:reduce) { .workshop-handoff { transition:none; } }
 @media print { .handoff-art { display:none; } .handoff-signpost>p { display:block!important; } }
+
+.coworking-handoff:has(.handoff-signpost[open]) { --handoff-gap: 150px; }
+.coworking-handoff .handoff-signpost p { text-align:left; font-size:16px; }

@@ -264,7 +264,7 @@ class CopyRegressions(unittest.TestCase):
             if route=='skills/index.html':
                 closing=self.slide(route,'CUNY AI Lab | Coworking Sessions')
                 self.assertIn('extend them through vibe coding',closing.text())
-                self.assertEqual([a.attrs['href'] for a in closing.all(lambda n:n.tag=='a')], [
+                self.assertEqual([a.attrs['href'] for a in closing.all(lambda n:n.tag=='a' and not n.has_class('handoff-credit'))], [
                     'https://ailab.gc.cuny.edu/guides/',
                     'https://ailab.gc.cuny.edu/events/',
                 ])
