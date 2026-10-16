@@ -74,10 +74,13 @@
   letter-spacing: .005em;
 }
 .workshop-cover .cover-credit {
+  margin: 12px 0 0;
   font-size: clamp(21px, 1.85vw, 25px);
   font-weight: 400;
   color: #ededed;
   line-height: 1.5;
+  text-align: center;
+  letter-spacing: .005em;
 }
 .workshop-cover .cover-location,
 .workshop-cover .cover-date {

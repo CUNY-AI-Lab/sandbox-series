@@ -4,9 +4,9 @@
 
 [![CUNY AI Lab](../images/cail-wordmark-white.png)](https://ailab.gc.cuny.edu/)
 
-
-
 Led by  Zach Muhlbauer  and  Meha Gupta
+
+
 
 New Media Lab · Room 7388.01
 CUNY Graduate Center
