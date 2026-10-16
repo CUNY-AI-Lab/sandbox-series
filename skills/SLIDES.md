@@ -245,10 +245,10 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
  CUNY AI Lab | Coworking Sessions  ➳   — reveal links
 
-Bring your Sandbox projects into coworking sessions and extend them through vibe coding.
+The [Sandbox Workshops](../) and [Vibe Coding series](https://ailab.gc.cuny.edu/events/#vibe-coding) dovetail. Design an AI workflow with prompts, knowledge collections, skills, and tools, then extend it into a working digital project.
 
-[Explore updated Sandbox Workshops and guides](https://ailab.gc.cuny.edu/guides/)
+Use [coworking sessions](https://ailab.gc.cuny.edu/events/#coworking) to bring these approaches together—build on your adventure game, test a prototype, and get feedback as you develop it further.
 
-[Find CUNY AI Lab coworking sessions and events](https://ailab.gc.cuny.edu/events/)
+[Workshop materials and guides  ➳](https://ailab.gc.cuny.edu/guides/)
 
  [Molnár · Quimbot / Creative Clawing](https://creative-clawing.com/artifacts/molnar.html)

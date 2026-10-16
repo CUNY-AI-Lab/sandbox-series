@@ -24,3 +24,5 @@
 .coworking-handoff .handoff-signpost p { text-align:left; font-size:clamp(24px,2vw,28px); }
 
 @media(max-width:600px) { .coworking-handoff .handoff-signpost p { font-size:22px; } .coworking-handoff:has(.handoff-signpost[open]) { --handoff-gap: 260px; } }
+
+@media(max-width:600px) { .coworking-handoff .handoff-credit { position:relative; display:block; bottom:auto; right:auto; width:max-content; margin:0 24px 18px auto; } .coworking-handoff .slide-inner { padding-bottom:28px; } }
