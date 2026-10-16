@@ -1068,8 +1068,8 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
 ### Series Reflections
 
-- Where could a skill or tool help your teaching or research?
+- What task in your teaching or research could benefit from a skill or tool?
 
-- What would you extend next?
+- What would you develop next using the prompts, knowledge collections, skills, and tools you’ve explored?
 
-Join us October 29,  2–4pm,  to build a shared adventure collection.
+Would you join us October 29,  2–4pm,  to develop your adventure further and bring our games together in a collection that showcases the series?

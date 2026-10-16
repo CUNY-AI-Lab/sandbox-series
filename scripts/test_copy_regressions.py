@@ -155,7 +155,7 @@ class CopyRegressions(unittest.TestCase):
         for route,tree in [*self.trees.items(),*self.references.items()]:
             copy=authored(tree)
             banned=r'(?i)\b(facilitator|presenter)\b' if route.startswith('skills') else r'(?i)\b(the|facilitator|presenter)\b'
-            self.assertNotRegex(copy.replace('Across the series, how has your approach to custom models changed?','').replace('What would you extend next?','').replace('RAG Under the Hood','').replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),banned)
+            self.assertNotRegex(copy.replace('Across the series, how has your approach to custom models changed?','').replace('What would you develop next using the prompts, knowledge collections, skills, and tools you’ve explored?','').replace('RAG Under the Hood','').replace(REFLECTION_QUESTION,'').replace('How else could you see yourself using knowledge collections in the future?','').replace('What are the limitations of this approach?',''),banned)
             self.assertFalse(prose_colons(copy))
             self.assertFalse(tree.all(lambda n:n.tag=='a' and n.attrs.get('href','').endswith('WORKSHOP.md')))
     def test_04_explicit_deletions_stay_deleted(self):
@@ -264,11 +264,11 @@ class CopyRegressions(unittest.TestCase):
             if route=='skills/index.html':
                 reflection=self.slide(route,'Series Reflections')
                 self.assertEqual([p.text() for p in reflection.all(lambda n:n.tag=='li')], [
-                    'Where could a skill or tool help your teaching or research?',
-                    'What would you extend next?',
+                    'What task in your teaching or research could benefit from a skill or tool?',
+                    'What would you develop next using the prompts, knowledge collections, skills, and tools you’ve explored?',
                 ])
                 self.assertEqual([p.text() for p in reflection.all(lambda n:n.tag=='p')], [
-                    'Join us October 29, 2–4pm, to build a shared adventure collection.',
+                    'Would you join us October 29, 2–4pm, to develop your adventure further and bring our games together in a collection that showcases the series?',
                 ])
                 continue
             next_steps=[self.decks[route][-1]] if route=='basics/index.html' else [s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
