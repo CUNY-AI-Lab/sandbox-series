@@ -75,7 +75,7 @@
 }
 .workshop-cover .cover-credit {
   font-size: clamp(21px, 1.85vw, 25px);
-  font-weight: 500;
+  font-weight: 400;
   color: #ededed;
   line-height: 1.5;
 }

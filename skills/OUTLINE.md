@@ -11,7 +11,7 @@ CUNY Graduate Center
 
 Thursday, October 15, 2026   2:30–4:00 p.m. Eastern
 
-Developed by Zach Muhlbauer
+Led by  Zach Muhlbauer  and  Meha Gupta
 
 [https://cuny-ai-lab.github.io/sandbox-series/skills](https://cuny-ai-lab.github.io/sandbox-series/skills)
 
