@@ -58,6 +58,9 @@ def render(node):
     if tag in {'h1','h2','h3','h4'}:return '\n\n### '+inside.strip()+'\n\n'
     if tag=='br':return '\n'
     if tag=='span':return ' '+inside+' '
+    if tag=='ol' and node.has_class('workshop-steps'):
+        items=[c for c in node.children if isinstance(c,Node) and c.tag=='li']
+        return '\n\n'+'\n\n'.join(str(i)+'. '+''.join(render(c) for c in item.children).strip() for i,item in enumerate(items,1))+'\n\n'
     if tag=='li':return '\n- '+inside.strip()+'\n'
     if tag=='table':
         rows=[]

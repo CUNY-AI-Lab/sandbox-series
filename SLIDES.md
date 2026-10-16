@@ -826,14 +826,11 @@ Developed by Zach Muhlbauer
 
 ### Choose Your Own Adventure
 
-Continue your saved model or clone it first
+1. Continue your saved model, or clone **STEM Adventure Games** in **Workspace → Models → ⋯ → Clone**
 
-Open **Workspace → Models → Edit**
-Review your system prompt to identify setting, goals, and rules from last time
+2. Open **Workspace → Models → Edit** and review your system prompt’s setting, goals, and rules
 
-Keep this model card open while you add a skill and a tool
-
-Select **Workspace** in left sidebar, then **Models**. Search for **STEM Adventure Games**. Open **⋯** beside it and select **Clone**.
+3. Keep your model card open to add a skill and a tool
 
 ![Workspace Models filtered to STEM Adventure Games, with annotations identifying Workspace in left sidebar and Clone for original model](images/knowledge-stem-2026-09-28/clone-model.svg)
 
@@ -909,10 +906,11 @@ Enable **Model Bound Tool Enabler** on your model card, which binds assigned too
 
 ### Add Your Skill
 
-In **Workspace → Models → Edit**, find **Skills → Select Skill**
+1. Open **Workspace → Models → Edit → Skills → Select Skill**
 
-Choose **Adventure Panel Play** and read its saved instructions
-Keep this model card open for the tool
+2. Choose **Adventure Panel Play** and read its saved instructions
+
+3. Keep your model card open to add **Adventure Panel**
 
 ![Skills picker with arrow 1 at Select Skill and arrow 2 at Adventure Panel Play.](images/current/workshop3-panel-skill-select.svg)
 
@@ -924,9 +922,11 @@ Keep this model card open for the tool
 
 ### Add the ‘Adventure Panel’ tool
 
-In this same model card, open **Tools → Select Tool**
-Choose **Adventure Panel** · Keep **Adventure Panel Play** selected
-Add the next prompt instruction, then click **Save & Update** before testing
+1. Open **Tools → Select Tool** on the same model card
+
+2. Choose **Adventure Panel** and keep **Adventure Panel Play** selected
+
+3. Add the system-prompt instructions on slide 10, then select **Save & Update**
 
 ![Tools picker with arrow 1 at Select Tool and arrow 2 at Adventure Panel.](images/current/workshop3-panel-tool-select.svg)
 
@@ -938,9 +938,15 @@ Add the next prompt instruction, then click **Save & Update** before testing
 
 ### Model Card Check-In
 
-Confirm **1. Adventure Panel**, **2. Adventure Panel Play**,
-and **3. Model Bound Tool Enabler** are selected
-Keep your own knowledge collection attached above
+Confirm these selections on your model card
+
+1. **Adventure Panel** tool
+
+2. **Adventure Panel Play** skill
+
+3. **Model Bound Tool Enabler** filter
+
+Keep your knowledge collection attached
 
 ![Model card with numbered arrows identifying the checked Adventure Panel tool, Adventure Panel Play skill, and Model Bound Tool Enabler filter.](images/current/workshop3-panel-check-in.svg)
 
@@ -962,11 +968,11 @@ Load the attached Adventure Panel Play skill (extend-adventure-games) and follow
 
 ### Test Your Adventure
 
-- Run your updated adventure game
+1. Run your updated adventure game
 
-- Verify configured skill and tool are called appropriately
+2. Verify configured skill and tool are called appropriately
 
-- Then play the rest of your game
+3. Then play the rest of your game
 
 ---
 
@@ -974,11 +980,11 @@ Load the attached Adventure Panel Play skill (extend-adventure-games) and follow
 
 ### Observe Game Results
 
-- Check skill call
+1. Check the **Adventure Panel Play** skill call
 
-- Check tool call
+2. Check the **Adventure Panel** tool call
 
-Open details to confirm selected skill
+Open call details to confirm the skill and show_scene function
 
 ![User-provided live Clone response with numbered callouts for view_skill and show_scene above rendered ADVENTURES panel](images/current/workshop3-skill-tool-run.svg)
 
@@ -990,9 +996,11 @@ Open details to confirm selected skill
 
 ### Explore Other Skills
 
-After your first adventure works, try **Adventure Outcomes** or **Conclude Adventure Game**
+1. Read **Adventure Outcomes** or **Conclude Adventure Game** after your first adventure works
 
-Read saved instructions · Change one item · Save your model card and compare results
+2. Change one skill and save your model card
+
+3. Run your adventure again and compare results
 
 ![Skills picker showing Adventure Panel Play, Adventure Outcomes, and Conclude Adventure Game, with arrows at Select Skill and Conclude Adventure Game.](images/current/workshop3-panel-other-skills.svg)
 
@@ -1006,15 +1014,15 @@ Read saved instructions · Change one item · Save your model card and compare r
 
 ### Revise One Item
 
-Copy complete tool code or skill instructions
+1. Copy complete tool code or skill instructions
 
-Describe an observed problem and one change
+2. Describe an observed problem and one change
 
 ### Create Your Own
 
-Choose your own tool or skill
+1. Choose a task for your tool or skill
 
-Specify purpose, required input, and expected result
+2. Specify its purpose, required input, and expected result
 
 [Copy tool code](skills/navigation.html#tool-copy) · [Skill instructions](skills/navigation.html#skill-copy)
 
@@ -1036,9 +1044,9 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
 ### Adapt Your Adventure
 
-Introduce a lesson plan, learning outcome, or disciplinary focus to your use of **CAIL Workspace Support** card
+1. Give **CAIL Workspace Support** your lesson plan, learning outcome, or disciplinary focus
 
-Prompted to generate a skill and/or tool that continues to support or further extends your adventure game, either adapting an existing skill or tool, or making your own.
+2. Ask it to adapt or create a skill or tool that extends your adventure toward that outcome
 
 ---
 
@@ -1046,7 +1054,9 @@ Prompted to generate a skill and/or tool that continues to support or further ex
 
 ### Add Tools or Skills
 
-Copy and paste all code for tools or plain text for skills, then save your item. On your model card, select your new tool or skill, and signpost it in your system prompt.
+1. Copy and paste all code for tools or plain text for skills, then save your item
+
+2. On your model card, select your new tool or skill, and signpost it in your system prompt
 
 ![Tools Create form with code editor, Access and Save & Create visible; arrows identify relevant steps without changing interface pixels](images/current/workshop3-arrow-create-tool.svg)
 
@@ -1058,8 +1068,8 @@ Copy and paste all code for tools or plain text for skills, then save your item.
 
 ### Series Reflections
 
-What task in your teaching or research could benefit from a skill or tool?
+- Where could a skill or tool help your teaching or research?
 
-Would you be interested in joining our coworking session on October 29,  2–4pm,  to build your adventure into a collection so that we can showcase our work over the course of the series?
+- What would you extend next?
 
-What would you develop next with the prompts, knowledge collections, skills, and tools you have explored?
+Join us October 29,  2–4pm,  to build a shared adventure collection.

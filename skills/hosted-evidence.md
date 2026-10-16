@@ -48,7 +48,7 @@ CAIL Workspace Support returned a complete separate “Adventure Outcomes — La
 
 ## Earlier rehearsal setup
 
-The hosted evidence above used these longer system-prompt clauses. The current workshop opening instead uses Extend Adventure Games to orchestrate Adventure Kit. That sequence has not received a live retest; these earlier calls do not prove it. Adventure Outcomes remains an optional later experiment with unchanged saved instructions.
+The hosted evidence above used these longer system-prompt clauses. The current workshop opening uses Adventure Panel Play with Adventure Panel. That sequence has not received a live retest; these earlier calls do not prove it. Adventure Outcomes remains an optional later experiment with unchanged saved instructions.
 
 ### Skill clause
 
