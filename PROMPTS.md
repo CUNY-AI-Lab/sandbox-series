@@ -365,32 +365,7 @@ Select Workspace → Models → Create to configure your own model.
 
 ---
 
-## Slide 23: Next Workshops
-
-### Next Workshops
-
-### Knowledge Collections
-
-**Building Custom Models with Knowledge Collections**
-
-Thursday, October 1, 2026
-2:30–4:00 pm
-
-### Skills & Tools
-
-**Extending Custom Models with Skills & Tools**
-
-Thursday, October 15, 2026
-2:30–4:00 pm
-
-New Media Lab · Room 7388.01
-CUNY Graduate Center
-
-[Register for workshops  https://cail-workshop-registration.ailab-452.workers.dev/](https://cail-workshop-registration.ailab-452.workers.dev/)
-
----
-
-## Slide 24: Workshop Resources
+## Slide 23: Workshop Resources
 
 ### Workshop Resources
 
@@ -416,10 +391,12 @@ Keep your draft and choose source documents for your next workshop.
 
 ---
 
-## Slide 25: Next Workshop
+## Slide 24: Next Workshop
 
 ### Next Workshop
 
-Continue with **Curating knowledge collections**.
+ 1  ➳  2  Curating knowledge collections   — reveal workshop link
 
-[Open October 1 workshop](../knowledge/) to build a source collection for your model.
+[Open workshop  ➳](../knowledge/)
+
+ [A* · Creative Clawing](https://creative-clawing.com/microblog/entry-45.html)

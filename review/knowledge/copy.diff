@@ -1,6 +1,6 @@
 --- before original HTML
 +++ after consolidated workshop
-@@ -1,828 +1,348 @@
+@@ -1,828 +1,350 @@
 -![CUNY AI Lab](images/logo-horizontal.png)
 -
 -### Curating Knowledge Collections
@@ -1171,6 +1171,8 @@
 +
 +### Next Workshop
 +
-+Continue with **Configuring skills and tools**.
++ 2  ➳  3  Configuring skills and tools   — reveal workshop link
 +
-+[Open October 15 workshop](../skills/) to extend your adventure with a skill and a tool.
++[Open workshop  ➳](../skills/)
++
++ [Molnár · Quimbot / Creative Clawing](https://creative-clawing.com/artifacts/molnar.html)

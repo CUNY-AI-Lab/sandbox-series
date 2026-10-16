@@ -22,11 +22,11 @@ class TeachingResearchSequence(unittest.TestCase):
         return stages
 
     def test_introductions_preserve_exercise_order(self):
-        self.assertEqual(len(self.slides), 25, 'Include workshop handoff while preserving exercise order')
+        self.assertEqual(len(self.slides), 24, 'Include workshop handoff while preserving exercise order')
         self.assertEqual(self.titles[2:5], ['Workshop Agenda', 'Introductions', 'Sandbox Access'])
         self.assertEqual(self.titles[17:], [
             'Explore', 'Clone Models', 'Compare Configurations',
-            'Draft System Prompts', 'Create Models', 'Next Workshops', 'Workshop Resources', 'Next Workshop',
+            'Draft System Prompts', 'Create Models', 'Workshop Resources', 'Next Workshop',
         ])
         labels = ['Try Examples', 'Review Settings']
         for stage, label in zip(self.stages(), labels):

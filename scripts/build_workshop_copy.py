@@ -15,7 +15,7 @@ DECKS = [('basics', 'Composing System Prompts'),
          ('knowledge', 'Curating knowledge collections'),
          ('skills', 'Configuring skills and tools')]
 EXCLUDED_TAGS = {'canvas', 'script', 'style'}
-EXCLUDED_CLASSES = {'slide-notes', 'progression-dots', 'sr-only'}
+EXCLUDED_CLASSES = {'slide-notes', 'progression-dots', 'sr-only', 'handoff-art'}
 
 
 def attribute(name, value):
@@ -38,7 +38,7 @@ def render(node, slide_heading, route='', destination='workshop-copy.html'):
                 attribute('data-example-copy', target) + '>' +
                 escape(node.text()) + '</button>')
 
-    tag = {'h1': 'h3', 'h2': 'h3', 'h3': 'h3'}.get(node.tag, node.tag)
+    tag = {'details': 'div', 'summary': 'p', 'h1': 'h3', 'h2': 'h3', 'h3': 'h3'}.get(node.tag, node.tag)
     attrs = {}
     for name, value in node.attrs.items():
         if name in {'id', 'class', 'href', 'src', 'alt', 'title', 'target', 'rel',

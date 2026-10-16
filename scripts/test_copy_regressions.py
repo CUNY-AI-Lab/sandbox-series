@@ -169,7 +169,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual((ROOT/'examples/assumption-check.txt').read_text().strip(),SHORT_SYSTEM)
         self.assertLess(len(SHORT_SYSTEM),280)
     def test_06_comparison_scaffolding(self):
-        self.assert_order('basics/index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Explore','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Next Workshops','Workshop Resources'])
+        self.assert_order('basics/index.html',['System Prompts','Chat Features','Select Models','Who Was Late?','Winograd Schema Challenge','Compare Outputs','Add System Prompt','Regenerate Responses','Debrief Questions','Explore','Clone Models','Compare Configurations','Draft System Prompts','Create Models','Workshop Resources'])
         self.assertIn('Custom Models',self.slide('basics/index.html','System Prompts').text())
         question=self.slide_containing_id('basics/index.html','car-wash-task')
         self.assertIn('What do you think this person wants to accomplish?',question.text())
@@ -239,7 +239,7 @@ class CopyRegressions(unittest.TestCase):
         for slide in self.decks['knowledge/index.html']:
             for link in slide.all(lambda n:n.tag=='a' and n.attrs.get('href','').startswith('http')):
                 if link.all(lambda n:n.tag=='img'):self.assertEqual(link.attrs['href'],'https://ailab.gc.cuny.edu/')
-                else:self.assertEqual(link.text().strip(),link.attrs['href'])
+                elif not slide.has_class('workshop-handoff'):self.assertEqual(link.text().strip(),link.attrs['href'])
         self.assertIn('Skills and Tools access',(ROOT/'README.md').read_text())
         self.assertIn('Check monthly usage',agenda.text())
         self.assertTrue(agenda.all(lambda n:n.tag=='a' and n.attrs.get('href')=='https://tools.ailab.gc.cuny.edu/model-access'))
@@ -706,11 +706,10 @@ class CopyRegressions(unittest.TestCase):
             self.assertIn(href,links)
 
     def test_next_workshops_and_resource_groups(self):
-        upcoming=self.slide('basics/index.html','Next Workshops')
-        for text in ['Thursday, October 1, 2026','Thursday, October 15, 2026','2:30–4:00 pm','Room 7388.01']:
-            self.assertIn(text,upcoming.text())
-        self.assertIn('https://cail-workshop-registration.ailab-452.workers.dev/',
-                      {n.attrs.get('href') for n in upcoming.all(lambda n:n.tag=='a')})
+        for route,destination in [('basics','knowledge'),('knowledge','skills')]:
+            handoff=self.slide(route+'/index.html','Next Workshop')
+            self.assertFalse(handoff.all(lambda n:'data-fragment-step' in n.attrs))
+            self.assertIn('../'+destination+'/',{n.attrs.get('href') for n in handoff.all(lambda n:n.tag=='a')})
         groups=self.slide('basics/index.html','Workshop Resources').all(lambda n:n.has_class('resource-group'))
         self.assertIn('Consult Open WebUI Models',groups[0].text())
         self.assertNotIn('Consult Open WebUI Models',groups[1].text())
@@ -722,7 +721,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertEqual(path.read_text(),build(),'Regenerate basics/workshop-copy.html after slide changes')
         copy=Parser(path.read_text()).root
         sections=copy.all(lambda n:n.has_class('copy-section'))
-        self.assertEqual(len(sections),25)
+        self.assertEqual(len(sections),24)
         self.assertEqual([section.all(lambda n:n.tag=='h2')[0].text() for section in sections],
                          [slide.attrs['data-title'] for slide in self.decks['basics/index.html']])
         for source,destination in zip(self.decks['basics/index.html'],sections):

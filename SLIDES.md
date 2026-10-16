@@ -389,31 +389,6 @@ Select Workspace → Models → Create to configure your own model.
 
 ## Composing System Prompts — 23
 
-### Next Workshops
-
-### Knowledge Collections
-
-**Building Custom Models with Knowledge Collections**
-
-Thursday, October 1, 2026
-2:30–4:00 pm
-
-### Skills & Tools
-
-**Extending Custom Models with Skills & Tools**
-
-Thursday, October 15, 2026
-2:30–4:00 pm
-
-New Media Lab · Room 7388.01
-CUNY Graduate Center
-
-[Register for workshops  https://cail-workshop-registration.ailab-452.workers.dev/](https://cail-workshop-registration.ailab-452.workers.dev/)
-
----
-
-## Composing System Prompts — 24
-
 ### Workshop Resources
 
 Keep your draft and choose source documents for your next workshop.
@@ -438,13 +413,15 @@ Keep your draft and choose source documents for your next workshop.
 
 ---
 
-## Composing System Prompts — 25
+## Composing System Prompts — 24
 
 ### Next Workshop
 
-Continue with **Curating knowledge collections**.
+ 1  ➳  2  Curating knowledge collections   — reveal workshop link
 
-[Open October 1 workshop](knowledge) to build a source collection for your model.
+[Open workshop  ➳](knowledge)
+
+ [A* · Creative Clawing](https://creative-clawing.com/microblog/entry-45.html)
 
 
 ## Curating knowledge collections — 1
@@ -818,9 +795,11 @@ Check responses against sources in your collection. Next workshop introduces too
 
 ### Next Workshop
 
-Continue with **Configuring skills and tools**.
+ 2  ➳  3  Configuring skills and tools   — reveal workshop link
 
-[Open October 15 workshop](skills) to extend your adventure with a skill and a tool.
+[Open workshop  ➳](skills)
+
+ [Molnár · Quimbot / Creative Clawing](https://creative-clawing.com/artifacts/molnar.html)
 
 
 ## Configuring skills and tools — 1
