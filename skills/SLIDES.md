@@ -241,10 +241,14 @@ Prompt CAIL Workspace Support to generate a skill and/or tool that continues to 
 
 ## Configuring skills and tools — 18
 
-### Series Reflections
+### Sandbox Workshops
 
-- What task in your teaching or research could benefit from a skill or tool?
+Bring your Sandbox projects into our coworking sessions and extend them through vibe coding.
 
-- What would you develop next using the prompts, knowledge collections, skills, and tools you’ve explored?
+Next session · October 29,  2–4pm
 
-Would you join us October 29,  2–4pm,  to develop your adventure further and bring our games together in a collection that showcases the series?
+Updated workshop materials
+[https://ailab.gc.cuny.edu/guides/](https://ailab.gc.cuny.edu/guides/)
+
+Upcoming workshops and coworking sessions
+[https://ailab.gc.cuny.edu/events/](https://ailab.gc.cuny.edu/events/)

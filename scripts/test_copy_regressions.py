@@ -262,13 +262,12 @@ class CopyRegressions(unittest.TestCase):
         verbs={'Open','Test','Introduce','Sign','Draft','Consult','Clone','Request','Define','Compare','Revise','Explore','Save','Confirm','Select','Create','Attach','Check','Choose','Play','Inspect','Configure','Prepare','Review','Continue','Verify','Retest'}
         for route in ROUTES:
             if route=='skills/index.html':
-                reflection=self.slide(route,'Series Reflections')
-                self.assertEqual([p.text() for p in reflection.all(lambda n:n.tag=='li')], [
-                    'What task in your teaching or research could benefit from a skill or tool?',
-                    'What would you develop next using the prompts, knowledge collections, skills, and tools you’ve explored?',
-                ])
-                self.assertEqual([p.text() for p in reflection.all(lambda n:n.tag=='p')], [
-                    'Would you join us October 29, 2–4pm, to develop your adventure further and bring our games together in a collection that showcases the series?',
+                closing=self.slide(route,'Sandbox Workshops')
+                self.assertIn('Bring your Sandbox projects into our coworking sessions and extend them through vibe coding.',closing.text())
+                self.assertIn('October 29',closing.text())
+                self.assertEqual([a.attrs['href'] for a in closing.all(lambda n:n.tag=='a')], [
+                    'https://ailab.gc.cuny.edu/guides/',
+                    'https://ailab.gc.cuny.edu/events/',
                 ])
                 continue
             next_steps=[self.decks[route][-1]] if route=='basics/index.html' else [s for s in self.decks[route] if s.attrs.get('data-group')=='Next']
