@@ -1,6 +1,13 @@
 (() => {
   'use strict';
   const slides = [...document.querySelectorAll('.workshop-handoff')];
+  slides.forEach(slide => {
+    const signpost = slide.querySelector('details');
+    signpost.addEventListener('pointerdown', event => event.stopPropagation());
+    signpost.querySelector('summary').addEventListener('keydown', event => {
+      if (event.key === ' ' || event.key === 'Enter') event.stopPropagation();
+    });
+  });
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const sync = () => slides.forEach(slide => {
     const frame = slide.querySelector('iframe[data-art-src]');
