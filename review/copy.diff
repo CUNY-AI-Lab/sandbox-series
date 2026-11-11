@@ -1,6 +1,6 @@
 --- before: original HTML copy
 +++ after: revised HTML copy
-@@ -1,487 +1,402 @@
+@@ -1,487 +1,404 @@
 -# Before: original HTML slide copy
 -
 -Source: origin/main at 6e66d3b8bb9fda75dbd3de44ccbabdd68c4a6a20
@@ -20,6 +20,8 @@
 +### Composing System Prompts
 +
 +Led by  Zach Muhlbauer
++
++© 2026 CUNY AI Lab, CUNY Graduate Center · Licensed under CC BY-NC 4.0
 +
 +New Media Lab · Room 7388.01
 +CUNY Graduate Center

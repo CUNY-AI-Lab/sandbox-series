@@ -10,6 +10,8 @@
 
 Led by  Zach Muhlbauer
 
+© 2026 CUNY AI Lab, CUNY Graduate Center · Licensed under CC BY-NC 4.0
+
 New Media Lab · Room 7388.01
 CUNY Graduate Center
 
@@ -434,6 +436,8 @@ Keep your draft and choose source documents for your next workshop.
 
 Led by  Zach Muhlbauer  and  Meha Gupta
 
+© 2026 CUNY AI Lab, CUNY Graduate Center · Licensed under CC BY-NC 4.0
+
 New Media Lab · Room 7388.01
 CUNY Graduate Center
 
@@ -811,6 +815,8 @@ Check responses against sources in your collection. Next workshop introduces too
 ### Configuring skills and tools
 
 Led by  Zach Muhlbauer  and  Meha Gupta
+
+© 2026 CUNY AI Lab, CUNY Graduate Center · Licensed under CC BY-NC 4.0
 
 New Media Lab · Room 7388.01
 CUNY Graduate Center
