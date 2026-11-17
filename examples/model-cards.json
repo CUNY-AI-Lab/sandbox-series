@@ -25,8 +25,8 @@
       "id": "stem-adventure-games-sources",
       "name": "STEM Adventure Games — Sources",
       "description": "Explore scientific experiments through a text adventure with numbered choices.",
-      "base_model": "deepseek-v4-flash-0731",
-      "base_label": "DeepSeek V4 Flash 0731",
+      "base_model": "deepseek-v4.1-flash-1017",
+      "base_label": "DeepSeek V4.1 Flash 1017",
       "prompt_file": "examples/stem-chat-system-prompt.txt",
       "starters": [
         {
@@ -46,8 +46,8 @@
       "id": "stem-adventure-games-advanced",
       "name": "STEM Adventure Games — Advanced",
       "description": "Play Prism Laboratory, then review or change its experimental procedures.",
-      "base_model": "deepseek-v4-pro-0813",
-      "base_label": "DeepSeek V4 Pro 0813",
+      "base_model": "glm-5.3",
+      "base_label": "Z.ai: GLM 5.3",
       "prompt_file": "examples/stem-system-prompt.txt",
       "starters": [
         {
@@ -85,8 +85,8 @@
           "content": "Help me revise an existing skill. I will provide its instructions, a test request, and the output that needs to change."
         }
       ],
-      "base_model": "deepseek-v4-flash-0731",
-      "base_label": "DeepSeek V4 Flash 0731",
+      "base_model": "deepseek-v4.1-flash-1017",
+      "base_label": "DeepSeek V4.1 Flash 1017",
       "logo_file": "images/cail-logo.png"
     },
     {
@@ -106,8 +106,8 @@
           "content": "Help me revise an existing Python tool for Open WebUI. I will provide its code, a test input, and the result that needs to change."
         }
       ],
-      "base_model": "kimi-k2.7-code",
-      "base_label": "Kimi K2.7 Code",
+      "base_model": "glm-5.3",
+      "base_label": "Z.ai: GLM 5.3",
       "logo_file": "images/cail-logo.png"
     },
     {
