@@ -9,10 +9,10 @@ Complete descriptions, base models, prompt suggestions, and system prompts for s
 | Model | Base model | Open |
 | --- | --- | --- |
 | STEM Adventure Games | Z.ai: GLM 5.3 | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games) |
-| STEM Adventure Games — Sources | DeepSeek V4 Flash 0731 | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-sources) |
-| STEM Adventure Games — Advanced | DeepSeek V4 Pro 0813 | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced) |
-| Kale Skill Builder | DeepSeek V4 Flash 0731 | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) |
-| CAIL Tool Creator | Kimi K2.7 Code | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) |
+| STEM Adventure Games — Sources | DeepSeek V4.1 Flash 1017 | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-sources) |
+| STEM Adventure Games — Advanced | Z.ai: GLM 5.3 | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced) |
+| Kale Skill Builder | DeepSeek V4.1 Flash 1017 | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) |
+| CAIL Tool Creator | Z.ai: GLM 5.3 | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) |
 | Compare Wikipedia Edits | Z.ai: GLM 5.3 | [Open model](https://chat.ailab.gc.cuny.edu/?model=compare-wikipedia-revisions) |
 
 ## STEM Adventure Games
@@ -121,8 +121,8 @@ Explore scientific experiments through a text adventure with numbered choices.
 | Field | Value |
 | --- | --- |
 | Model ID | `stem-adventure-games-sources` |
-| Base Model | DeepSeek V4 Flash 0731 |
-| Base Model ID | `deepseek-v4-flash-0731` |
+| Base Model | DeepSeek V4.1 Flash 1017 |
+| Base Model ID | `deepseek-v4.1-flash-1017` |
 | Sandbox Model | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-sources) |
 | Logo | [CUNY AI Lab logo](../images/cail-logo.png) |
 | System Prompt | [Open prompt file](stem-chat-system-prompt.txt) |
@@ -217,8 +217,8 @@ Play Prism Laboratory, then review or change its experimental procedures.
 | Field | Value |
 | --- | --- |
 | Model ID | `stem-adventure-games-advanced` |
-| Base Model | DeepSeek V4 Pro 0813 |
-| Base Model ID | `deepseek-v4-pro-0813` |
+| Base Model | Z.ai: GLM 5.3 |
+| Base Model ID | `glm-5.3` |
 | Sandbox Model | [Open model](https://chat.ailab.gc.cuny.edu/?model=stem-adventure-games-advanced) |
 | Logo | [CUNY AI Lab logo](../images/cail-logo.png) |
 | System Prompt | [Open prompt file](stem-system-prompt.txt) |
@@ -284,8 +284,8 @@ Create, revise, and test reusable skills for CAIL Sandbox.
 | Field | Value |
 | --- | --- |
 | Model ID | `cail-sandbox-skill-builder` |
-| Base Model | DeepSeek V4 Flash 0731 |
-| Base Model ID | `deepseek-v4-flash-0731` |
+| Base Model | DeepSeek V4.1 Flash 1017 |
+| Base Model ID | `deepseek-v4.1-flash-1017` |
 | Sandbox Model | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-skill-builder) |
 | Logo | [CUNY AI Lab logo](../images/cail-logo.png) |
 | System Prompt | [Open prompt file](creators/skill-creator-system-prompt.txt) |
@@ -341,8 +341,8 @@ Create, revise, and test Python tools for CAIL Sandbox.
 | Field | Value |
 | --- | --- |
 | Model ID | `cail-sandbox-tool-creator` |
-| Base Model | Kimi K2.7 Code |
-| Base Model ID | `kimi-k2.7-code` |
+| Base Model | Z.ai: GLM 5.3 |
+| Base Model ID | `glm-5.3` |
 | Sandbox Model | [Open model](https://chat.ailab.gc.cuny.edu/?model=cail-sandbox-tool-creator) |
 | Logo | [CUNY AI Lab logo](../images/cail-logo.png) |
 | System Prompt | [Open prompt file](creators/tool-creator-system-prompt.txt) |
