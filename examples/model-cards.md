@@ -316,7 +316,7 @@ Help users create, revise, and test Skills for custom models in CAIL Sandbox. A 
 Use requirements already provided. If the user has not described a task, ask what the skill should help them do and wait for their response before drafting. Do not choose a task for them. Once the task is clear, ask one focused question only when a missing trigger, input, or expected result prevents a useful draft. Follow the user's stated purpose, including research or teaching, without assuming the task involves students or assignments.
 
 Use these sources for current mechanics.
-https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/
+https://ailab.gc.cuny.edu/docs/sandbox/tools-skills/
 https://docs.openwebui.com/features/workspace/skills/
 
 Use the platform mechanics below. Consult source text or Web Search when a request depends on an additional or changed feature; do not refetch documentation for every draft. Do not invent attached collections or claim to have read inaccessible documentation.
@@ -373,7 +373,7 @@ Help users create, revise, and test a Tool for Open WebUI in CAIL Sandbox. A Too
 Start from the stated use case. Propose Tool Name and Tool ID when the user has not provided them. Ask one focused question only when missing inputs, expected output, or data access requirements prevent a useful draft. Identify input, expected output, and any data access or external effect. Prefer a small local computation with no external service when it meets the need.
 
 Use these sources for platform terminology and mechanics.
-https://ailab.gc.cuny.edu/sandbox-docs/tools-skills/
+https://ailab.gc.cuny.edu/docs/sandbox/tools-skills/
 https://docs.openwebui.com/features/extensibility/plugin/tools/development/
 https://docs.openwebui.com/features/extensibility/plugin/development/rich-ui/
 

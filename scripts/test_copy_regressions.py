@@ -530,7 +530,7 @@ class CopyRegressions(unittest.TestCase):
         for old in ['A base model generates responses.','without training a new base model','role, behavior, and focus']:
             self.assertNotIn(old,definition.text())
         links=[n.attrs.get('href') for n in definition.all(lambda n:n.tag=='a')]
-        for source in ['https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/','https://ailab.gc.cuny.edu/sandbox-docs/models/']:
+        for source in ['https://ailab.gc.cuny.edu/docs/sandbox/basic-concepts/','https://ailab.gc.cuny.edu/docs/sandbox/models/']:
             self.assertIn(source,links)
         context=self.slide('basics/index.html','Winograd Schema Challenge')
         for term in ['ambiguous pronouns','context','common-sense reasoning','either person could be late']:
@@ -702,7 +702,7 @@ class CopyRegressions(unittest.TestCase):
         self.assertIn('../skills/',second_links)
         resources=self.slide('basics/index.html','Workshop Resources')
         links={link.attrs.get('href') for link in resources.all(lambda n:n.tag=='a')}
-        for href in ['workshop-copy.html','https://ailab.gc.cuny.edu/sandbox-docs/',
+        for href in ['workshop-copy.html','https://ailab.gc.cuny.edu/docs/sandbox/',
                      'https://docs.openwebui.com/features/workspace/models/',
                      'https://tools.ailab.gc.cuny.edu/model-access','https://ailab.gc.cuny.edu/guides/']:
             self.assertIn(href,links)

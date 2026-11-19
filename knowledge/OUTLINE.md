@@ -27,7 +27,7 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 - **Configuring Skills and Tools**  Extend model capabilities with skills and tools. Thursday, October 15
 
-[https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
+[https://ailab.gc.cuny.edu/docs/sandbox/](https://ailab.gc.cuny.edu/docs/sandbox/)
 
 ---
 
@@ -265,7 +265,7 @@ In your copy’s editor, open **Access** and grant intended users or groups **Re
 
 Ask someone to try your copy and check its citations.
 
- Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/>
+ Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/docs/sandbox/roles-permissions/>
 
 ---
 
@@ -285,7 +285,7 @@ Check responses against sources in your collection. Next workshop introduces too
 
 - Review Composing System Prompts <https://cuny-ai-lab.github.io/sandbox-series/basics/>
 
-- Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/>
+- Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/docs/sandbox/knowledge-bases/>
 
 - Consult Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
 

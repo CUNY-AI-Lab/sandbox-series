@@ -50,7 +50,7 @@ Use arrow keys, the slider, or **Outline** to navigate. On mobile, the slider oc
 
 Developed by Zach Muhlbauer from [system-prompting](https://github.com/CUNY-AI-Lab/system-prompting), [knowledge-collections](https://github.com/CUNY-AI-Lab/knowledge-collections), and [skills-tools](https://github.com/CUNY-AI-Lab/skills-tools). Original repositories remain available.
 
-Platform instructions follow the [CUNY AI Lab Sandbox documentation](https://ailab.gc.cuny.edu/sandbox-docs/). Current UI screenshots were captured in Firefox. Reused comparison screenshots exclude obsolete controls. Capture provenance and source limitations remain in review files.
+Platform instructions follow the [CUNY AI Lab Sandbox documentation](https://ailab.gc.cuny.edu/docs/sandbox/). Current UI screenshots were captured in Firefox. Reused comparison screenshots exclude obsolete controls. Capture provenance and source limitations remain in review files.
 
 ## License
 

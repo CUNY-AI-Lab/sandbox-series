@@ -31,7 +31,7 @@ Thursday, September 17, 2026   2:30–4:00 p.m.
 
 - **Configuring skills and tools** Extend model capabilities with skills and tools. Thursday, October 15
 
-[Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
+[Sandbox documentation  https://ailab.gc.cuny.edu/docs/sandbox/](https://ailab.gc.cuny.edu/docs/sandbox/)
 
 ---
 
@@ -85,7 +85,7 @@ Already approved? Open [Sandbox](https://chat.ailab.gc.cuny.edu/).
 
 - Complete two-factor authentication if prompted.
 
-[https://ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/sandbox-docs/getting-started/](https://ailab.gc.cuny.edu/sandbox-docs/getting-started/)
+[https://ailab.gc.cuny.edu/request-access/](https://ailab.gc.cuny.edu/request-access/)[https://chat.ailab.gc.cuny.edu/](https://chat.ailab.gc.cuny.edu/)[Access and sign-in  https://ailab.gc.cuny.edu/docs/sandbox/getting-started/](https://ailab.gc.cuny.edu/docs/sandbox/getting-started/)
 
 ---
 
@@ -103,7 +103,7 @@ Questions or tasks you enter in chat.
 
 You create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.
 
-[Basic Concepts  https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/](https://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/)[Custom Models  https://ailab.gc.cuny.edu/sandbox-docs/models/](https://ailab.gc.cuny.edu/sandbox-docs/models/)
+[Basic Concepts  https://ailab.gc.cuny.edu/docs/sandbox/basic-concepts/](https://ailab.gc.cuny.edu/docs/sandbox/basic-concepts/)[Custom Models  https://ailab.gc.cuny.edu/docs/sandbox/models/](https://ailab.gc.cuny.edu/docs/sandbox/models/)
 
 ---
 
@@ -123,7 +123,7 @@ Message actions
 
 Find actions beneath each response to copy, edit, or regenerate it. Open More (⋯) for additional actions.
 
-[Sandbox Basics  https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/](https://ailab.gc.cuny.edu/sandbox-docs/sandbox-basics/)
+[Sandbox Basics  https://ailab.gc.cuny.edu/docs/sandbox/sandbox-basics/](https://ailab.gc.cuny.edu/docs/sandbox/sandbox-basics/)
 
 ---
 
@@ -401,7 +401,7 @@ Keep your draft and choose source documents for your next workshop.
 
 - [Review workshop copy  https://cuny-ai-lab.github.io/sandbox-series/basics/workshop-copy.html](basics/workshop-copy.html)
 
-- [Consult Sandbox documentation  https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
+- [Consult Sandbox documentation  https://ailab.gc.cuny.edu/docs/sandbox/](https://ailab.gc.cuny.edu/docs/sandbox/)
 
 - [Consult Open WebUI Models  https://docs.openwebui.com/features/workspace/models/](https://docs.openwebui.com/features/workspace/models/)
 
@@ -457,7 +457,7 @@ Thursday, October 1, 2026   2:30–4:00 p.m.
 
 - **Configuring Skills and Tools**  Extend model capabilities with skills and tools. Thursday, October 15
 
-[https://ailab.gc.cuny.edu/sandbox-docs/](https://ailab.gc.cuny.edu/sandbox-docs/)
+[https://ailab.gc.cuny.edu/docs/sandbox/](https://ailab.gc.cuny.edu/docs/sandbox/)
 
 ---
 
@@ -759,7 +759,7 @@ In your copy’s editor, open **Access** and grant intended users or groups **Re
 
 Ask someone to try your copy and check its citations.
 
- Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/sandbox-docs/roles-permissions/>
+ Sandbox Roles & Permissions <https://ailab.gc.cuny.edu/docs/sandbox/roles-permissions/>
 
 ---
 
@@ -783,7 +783,7 @@ Check responses against sources in your collection. Next workshop introduces too
 
 - Review Composing System Prompts <https://cuny-ai-lab.github.io/sandbox-series/basics/>
 
-- Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/>
+- Consult Sandbox Knowledge documentation <https://ailab.gc.cuny.edu/docs/sandbox/knowledge-bases/>
 
 - Consult Open WebUI Knowledge <https://docs.openwebui.com/features/workspace/knowledge/>
 

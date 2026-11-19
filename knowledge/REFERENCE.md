@@ -14,7 +14,7 @@ Build a collection from research papers or methods you want to compare.
 
 - Check its citations against your uploaded documents.
 
-[Knowledge collections for research](https://ailab.gc.cuny.edu/sandbox-docs/knowledge-bases/)
+[Knowledge collections for research](https://ailab.gc.cuny.edu/docs/sandbox/knowledge-bases/)
 
 ### Describe Experimental Context
 
