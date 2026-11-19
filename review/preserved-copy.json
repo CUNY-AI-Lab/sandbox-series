@@ -640,6 +640,11 @@
         "before": "System PromptsSystem prompts are setup instructions that describe how a model should behave.User PromptsQuestions or tasks you enter in chat.Custom ModelsYou create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.Basic Concepts · Custom Models",
         "after": "System PromptsSystem prompts are setup instructions that describe how a model should behave.User PromptsQuestions or tasks you enter in chat.Custom ModelsYou create a custom model by choosing a base model, such as Gemma, and adding instructions and documents for it to use.Basic Conceptshttps://ailab.gc.cuny.edu/sandbox-docs/basic-concepts/Custom Modelshttps://ailab.gc.cuny.edu/sandbox-docs/models/",
         "reason": "User requested references in bottom footers with full visible URLs and two-column layouts; instructional wording and prompt text preserved."
+      },
+      {
+        "before": "https://ailab.gc.cuny.edu/sandbox-docs/",
+        "after": "https://ailab.gc.cuny.edu/docs/sandbox/",
+        "reason": "Point the visible documentation links to their canonical location on the Lab website."
       }
     ],
     "allowed_additions": []
